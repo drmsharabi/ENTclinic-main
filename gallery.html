@@ -13,147 +13,200 @@
       padding: 0;
       background-color: #f9f9f9;
       text-align: right;
-    }nav {
-  background-color: #E0F2F1;
-  padding: 8px 4px;
-  text-align: center;
-  font-size: 11px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
+    }
 
-nav a {
-  margin: 0 6px;
-  color: #004D40;
-  font-weight: bold;
-  text-decoration: none;
-}
+    nav {
+      background-color: #E0F2F1;
+      padding: 8px 4px;
+      text-align: center;
+      font-size: 11px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
 
-@media (min-width: 768px) {
-  nav { font-size: 16px; }
-  nav a { margin: 0 14px; }
-}
+    nav a {
+      margin: 0 6px;
+      color: #004D40;
+      font-weight: bold;
+      text-decoration: none;
+    }
 
-header {
-  background-color: #004D40;
-  color: white;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
+    @media (min-width: 768px) {
+      nav { font-size: 16px; }
+      nav a { margin: 0 14px; }
+    }
 
-.logo {
-  height: 40px;
-  width: auto;
-}
+    header {
+      background-color: #004D40;
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
 
-.header-text {
-  display: flex;
-  flex-direction: column;
-}
+    .logo {
+      height: 40px;
+      width: auto;
+    }
 
-.main-title {
-  font-size: 16px;
-  font-weight: bold;
-  color: #ffffff;
-  white-space: nowrap;
-}
+    .header-text {
+      display: flex;
+      flex-direction: column;
+    }
 
-.sub-title {
-  font-size: 12px;
-  color: #B2DFDB;
-  white-space: nowrap;
-}
+    .main-title {
+      font-size: 16px;
+      font-weight: bold;
+      color: #ffffff;
+      white-space: nowrap;
+    }
 
-@media (min-width: 768px) {
-  .main-title {
-    font-size: 40px;
-  }
+    .sub-title {
+      font-size: 12px;
+      color: #B2DFDB;
+      white-space: nowrap;
+    }
 
-  .sub-title {
-    font-size: 29px;
-  }
+    @media (min-width: 768px) {
+      .main-title { font-size: 40px; }
+      .sub-title  { font-size: 29px; }
+      .logo       { height: 85px; }
+    }
 
-  .logo {
-    height: 85px;
-  }
-}
+    .container {
+      padding: 20px;
+      max-width: 1100px;
+      margin: auto;
+      background-color: white;
+    }
 
-.container {
-  padding: 20px;
-  max-width: 1100px;
-  margin: auto;
-  background-color: white;
-}
+    h2 {
+      color: #004D40;
+      text-align: center;
+      margin-bottom: 20px;
+    }
 
-h2 {
-  color: #004D40;
-  text-align: center;
-  margin-bottom: 20px;
-}
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+    }
 
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
-}
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
 
-.gallery img {
-  width: 100%;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
 
-.gallery img:hover {
-  transform: scale(1.05);
-}
+    .return-home {
+      text-align: center;
+      margin: 40px 0;
+    }
 
-.return-home {
-  text-align: center;
-  margin: 40px 0;
-}
+    .return-home a {
+      color: #00796B;
+      text-decoration: underline;
+      font-weight: bold;
+      font-size: 14px;
+    }
 
-.return-home a {
-  color: #00796B;
-  text-decoration: underline;
-  font-weight: bold;
-  font-size: 14px;
-}
- <footer style="background-color: #004D40; color: white; text-align: center; padding: 30px 10px;">
+    footer {
+      background-color: #004D40;
+      color: white;
+      text-align: center;
+      padding: 30px 10px;
+      font-size: 11px;
+      line-height: 1.7;
+    }
+
+    footer img {
+      width: 30px;
+      height: 30px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ✅ شريط التنقل -->
+<nav>
+  <a href="index.html">🏠 الرئيسية</a>
+  <a href="about.html">📘 قصتنا</a>
+  <a href="services.html">🩺 من خدماتنا</a>
+  <a href="gallery.html">📷 معرض الصور</a>
+  <a href="blog.html">📚 المدونة</a>
+  <a href="testimonials.html">💬 رأي الجمهور</a>
+  <a href="contact.html">📍 تواصل معنا</a>
+</nav>
+
+<header>
+  <img src="images/clinic-logo.png" alt="شعار العيادة" class="logo">
+  <div class="header-text">
+    <div class="main-title">عيادة د. مختار الشرعبي</div>
+    <div class="sub-title">الإستشارية للأنف والأذن والحنجرة</div>
+  </div>
+</header>
+
+<div class="container">
+  <h2>معرض الصور - نتائج العمليات</h2>
+  <div class="gallery">
+    <img src="images/operations/tympanoplasty.webp" alt="نتيجة عملية 1">
+    <img src="images/operations/rhinoplasty.webp" alt="نتيجة عملية 2">
+    <img src="images/operations/plastic.jpeg" alt="نتيجة عملية 3">
+    <img src="images/operations/foreign.webp" alt="نتيجة عملية 4">
+    <img src="images/operations/fess.webp" alt="نتيجة عملية 5">
+    <img src="images/operations/rhinoplasty1.webp" alt="نتيجة عملية 6">
+    <img src="images/operations/nasal-fracture2.webp" alt="نتيجة عملية 7">
+    <img src="images/operations/Nasal-fracture.webp" alt="نتيجة عملية 8">
+    <img src="images/operations/ootoplasty.webp" alt="نتيجة عملية 9">
+  </div>
+</div>
+
+<div class="return-home">
+  <a href="index.html">← العودة للرئيسية</a>
+</div>
+
+<footer>
   <p style="font-size: 9px; margin-bottom: 25px; font-weight: bold;">
     عيادة د. مختار الشرعبي - تعز، ركن مفرق ماوية
   </p>
 
   <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
     <a href="https://www.facebook.com/profile.php?id=100082372405434" target="_blank">
-      <img src="images/social/‪facebook.png" alt="فيسبوك" width="30" height="30" />
+      <img src="images/social/facebook.png" alt="فيسبوك" />
     </a>
 
     <a href="https://wa.me/967730433592" target="_blank">
-      <img src="images/social/‪whatsapp.png" alt="واتساب" width="30" height="30" />
+      <img src="images/social/whatsapp.png" alt="واتساب" />
     </a>
 
     <a href="https://youtube.com/@ENTsharabi" target="_blank">
-      <img src="images/social/‪youtube.png" alt="يوتيوب" width="30" height="30" />
+      <img src="images/social/youtube.png" alt="يوتيوب" />
     </a>
 
     <a href="https://www.instagram.com/dr.mokhtar_alsharabi" target="_blank">
-      <img src="images/social/‪instagram.png" alt="انستغرام" width="30" height="30" />
+      <img src="images/social/instagram.png" alt="انستغرام" />
     </a>
 
     <a href="https://x.com/Dr_Alsharaabi" target="_blank">
-      <img src="images/social/twiter.png" alt="تويتر (إكس)" width="30" height="30" />
+      <img src="images/social/twiter.png" alt="تويتر" />
     </a>
 
     <a href="https://www.tiktok.com/@dr_mokhtar_sharabi" target="_blank">
-      <img src="images/social/‪tiktok.png" alt="تيك توك" width=30" height="30" />
+      <img src="images/social/tiktok.png" alt="تيك توك" />
     </a>
 
     <a href="mailto:drm9khtarnajy@gmail.com" target="_blank">
-      <img src="images/social/‪gmail.png" alt="بريد إلكتروني" width="30" height="30" />
+      <img src="images/social/gmail.png" alt="بريد إلكتروني" />
     </a>
   </div>
 </footer>
+
+</body>
+</html>
