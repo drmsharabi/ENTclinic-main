@@ -3,8 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>د. مختار الشرعبي - أحد أفضل الجراحين الاستشاريين في اليمن</title>
-  <meta name="description" content="في تعز، مفرق ماوية، استشاري حاصل على الدكتوراه في أمراض وجراحة ومناظير الأنف، وعضو الأكاديمية الأمريكية للأنف والأذن والحنجرة.">
+  <link rel="canonical" href="https://drmsharabi.github.io/ENTclinic/services" />
+  <title>خدمات العيادة | د. مختار الشرعبي - استشاري الأنف والأذن والحنجرة</title>
+  <meta name="description" content="خدمات متقدمة في تشخيص وعلاج أمراض الأنف والأذن والحنجرة في تعز. مناظير، عمليات دقيقة، وأجهزة حديثة بإشراف د. مختار الشرعبي." />
+  <meta property="og:title" content="خدمات العيادة | د. مختار الشرعبي - استشاري الأنف والأذن والحنجرة" />
+  <meta property="og:description" content="استعرض أبرز خدمات وعمليات عيادة د. مختار الشرعبي في تعز - مناظير، ترقيع طبلة، جراحات تجميل، تشخيص دقيق، وأكثر." />
+  <meta property="og:image" content="https://drmsharabi.github.io/ENTclinic/images/clinic-logo.png" />
+  <meta property="og:url" content="https://drmsharabi.github.io/ENTclinic/services" />
+  <meta property="og:type" content="website" />
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -13,24 +19,43 @@
       padding: 0;
       direction: rtl;
       background-color: #f9f9f9;
+      text-align: right;
     }
     nav {
       background-color: #E0F2F1;
-      padding: 8px 4px;
+      padding: 12px 4px;
       text-align: center;
-      font-size: 11px;
+      font-size: 10px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
     }
-    nav a {
-      margin: 0 6px;
-      color: #004D40;
+    .nav-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+    .nav-link {
+      background-color: #ffffff;
+      padding: 8px 14px;
+      border-radius: 20px;
+      color: black;
       font-weight: bold;
       text-decoration: none;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
       display: inline-block;
     }
+    .nav-link:hover {
+      background-color: red;
+      color: #00332E;
+    }
     @media (min-width: 768px) {
-      nav { font-size: 16px; }
-      nav a { margin: 0 14px; }
+      nav { font-size: 15px; padding: 20px; gap: 20px; }
+      .nav-row { gap: 30px; }
+      .nav-link { padding: 12px 24px; font-size: 18px; }
     }
     header {
       background-color: #004D40;
@@ -72,25 +97,65 @@
       max-width: 960px;
       margin: auto;
       background-color: white;
+      font-size: 13px;
     }
-    h2 {
+    h2, h3 {
       color: #004D40;
       text-align: center;
     }
-    p {
-      font-size: 14px;
+    p, li {
+      font-size: 13px;
       line-height: 1.8;
+      color: #333;
     }
-    .map {
-      width: 80%;
-      height: 300px;
-      border: none;
+    ul {
+      padding-right: 20px;
+      margin-top: 10px;
+    }
+    .section-title {
+      background-color: #fff;
+      color: #AD1457;
+      text-align: center;
+      padding: 15px 10px;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-size: 22px;
+      font-weight: bold;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 12px;
+      padding: 10px;
+      background-color: #e3f2fd;
       border-radius: 10px;
-      margin: 20px 0;
+      margin-bottom: 40px;
+    }
+    @media (min-width: 768px) {
+      .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    .grid-item {
+      background-color: #ffffff;
+      padding: 15px;
+      text-align: center;
+      border-radius: 6px;
+      font-size: 14px;
+      color: #00332E;
+      font-weight: bold;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .grid-item:hover {
+      transform: scale(1.05);
+      background-color: #f1f1f1;
     }
     .whatsapp-section {
       text-align: center;
-      margin: 30px auto;
+      margin: 40px auto 20px;
     }
     .whatsapp-icon {
       width: 80px;
@@ -106,88 +171,119 @@
       font-weight: bold;
       text-decoration: underline;
     }
-    .return-home {
+    .back-home {
       text-align: center;
       margin: 40px 0;
     }
-    .return-home a {
+    .back-home a {
       color: #00796B;
       text-decoration: underline;
       font-weight: bold;
       font-size: 14px;
     }
-
     footer {
       background-color: #004D40;
-      color: white;
+      color: white !important;
       text-align: center;
-      padding: 15px;
-      font-size: 10px;
-      line-height: 1.6;
+      padding: 30px 10px;
+      font-size: 11px;
+      line-height: 1.7;
+    }
+    footer a img {
+      width: 30px;
+      height: 30px;
+    }
+    @media (min-width: 768px) {
+      footer a img {
+        width: 55px;
+        height: 55px;
+      }
     }
   </style>
 </head>
 <body>
+  <nav>
+    <div class="nav-row">
+      <a href="index.html" class="nav-link">🏠 الرئيسية</a>
+      <a href="about.html" class="nav-link">📘 قصتنا</a>
+      <a href="services.html" class="nav-link">🩺 من خدماتنا</a>
+      <a href="gallery.html" class="nav-link">📷 معرض الصور</a>
+    </div>
+    <div class="nav-row">
+      <a href="blog.html" class="nav-link">📚 المدونة</a>
+      <a href="testimonials.html" class="nav-link">💬 رأي الجمهور</a>
+      <a href="contact.html" class="nav-link">📍 تواصل معنا</a>
+    </div>
+  </nav>
 
-<body><!-- ✅ شريط التنقل --><nav>
-  <a href="index.html">🏠 الرئيسية</a>
-  <a href="about.html">📘 قصتنا</a>
-  <a href="services.html">🩺 من خدماتنا</a>
-  <a href="gallery.html">📷 معرض الصور</a>
-  <a href="blog.html">📚 المدونة</a>
-  <a href="testimonials.html">💬 رأي الجمهور</a>
-  <a href="contact.html">📍 تواصل معنا</a>
-</nav>
-  
-<header class="header-logo">
-  <img src="images/clinic-logo.png" alt="شعار العيادة">
-  <div class="header-text">
-    <div class="main-title">عيادة د. مختار الشرعبي</div>
-    <div class="sub-title">الإستشارية للأنف والأذن والحنجرة</div>
+  <header class="header-logo">
+    <img src="images/clinic-logo.png" alt="شعار العيادة">
+    <div class="header-text">
+      <div class="main-title">عيادة د. مختار الشرعبي</div>
+      <div class="sub-title">الإستشارية للأنف والأذن والحنجرة</div>
+    </div>
+  </header>
+
+  <div class="container">
+    <img src="images/endoscope.jpeg" alt="مناظير تشخيصية" style="width: 100%; border-radius: 12px;">
+    <h1 style="text-align:center;">من خدماتنا</h1>
+    <p>
+      تقدم عيادة د. مختار الشرعبي في محافظة تعز مجموعة متكاملة من الخدمات الطبية المتخصصة في مجال الأنف والأذن والحنجرة. نتميز بتقديم تشخيص دقيق باستخدام أحدث أجهزة التنظير، مع متابعة دقيقة للحالات المزمنة، وحرص دائم على التطوير المهني وتقديم الرعاية الإنسانية بأعلى المعايير.
+    </p>
+    <h3>أدوات التشخيص</h3>
+    <ul>
+      <li>مناظير الأنف والجيوب الأنفية لتشخيص الانسدادات والالتهابات.</li>
+      <li>تنظير الحنجرة والبلعوم لتقييم الصوت والبلع.</li>
+      <li>أجهزة متقدمة لتخطيط وقياس السمع للكبار والأطفال.</li>
+    </ul>
+
+    <div class="section-title">أهم الأمراض التي نعالجها</div>
+    <div class="grid-container">
+      <div class="grid-item">تحسس الأنف</div>
+      <div class="grid-item">معالجة الدوار والصداع</div>
+      <div class="grid-item">التهابات الجيوب الأنفية</div>
+      <div class="grid-item">التهابات الأذن</div>
+      <div class="grid-item">أمراض الفم واللثة</div>
+      <div class="grid-item">التهابات الحلق والحنجرة</div>
+      <div class="grid-item">الشخير ومشاكل التنفس</div>
+      <div class="grid-item">الطنين وضعف السمع</div>
+      <div class="grid-item">بحة الصوت وارتجاع المريء</div>
+      <div class="grid-item">أمراض الرقبة والغدد اللمفاوية</div>
+      <div class="grid-item">التهابات المجاري التنفسية العليا</div>
+      <div class="grid-item">مشاكل التنفس عند الأطفال</div>
+    </div>
+
+    <div class="section-title">أهم العمليات التي نجريها</div>
+    <div class="grid-container">
+      <div class="grid-item">ترقيع طبلة الأذن بالمنظار</div>
+      <div class="grid-item">زراعة أنابيب تهوية لطبلات الأذن</div>
+      <div class="grid-item">كي رعاف الأنف بالمنظار</div>
+      <div class="grid-item">تعديل الحاجز الأنفي بالمنظار</div>
+      <div class="grid-item">استئصال اللحميات الأنفية بالمنظار</div>
+      <div class="grid-item">جراحة الجيوب الأنفية بالمنظار</div>
+      <div class="grid-item">استئصال اللوزتين واللحميات البلعومية</div>
+      <div class="grid-item">زراعة طبلة الأذن بالمنظار</div>
+      <div class="grid-item">تجميل تشوهات الأنف الخارجية</div>
+      <div class="grid-item">استخراج الأجسام الغريبة من الأنف والحنجرة</div>
+      <div class="grid-item">الجراحة التجميلية لإصابات الوجه والرقبة</div>
+      <div class="grid-item">شد سقف الحلق وفك التصاقات اللسان</div>
+      <div class="grid-item">فتح الرغامي التنفسي</div>
+    </div>
+
+    <div class="whatsapp-section">
+      <a href="https://wa.me/967730433592" target="_blank">
+        <img src="images/whatsapp-icon.png" class="whatsapp-icon" alt="واتساب">
+      </a>
+      <a class="cta-text" href="https://wa.me/967730433592" target="_blank">احجز موعدك الآن ←</a>
+    </div>
+
+    <div class="back-home">
+      <a href="index.html">← العودة للرئيسية</a>
+    </div>
   </div>
-</header>
-
-<div class="container">
-        <div style="width: 100%; max-width: 800px; margin: auto; overflow: hidden; border-radius: 12px;">
-      <img src="images/endoscope.jpeg" alt="مناظير تشخيصية" style="width: 100%; height: auto; display: block;" />
-  <h2>أبرز أدوات تشخيصنا</h2>
-  <ul>
-    <li>مناظير الأنف والجيوب الأنفية لتشخيص مشاكل الانسداد والالتهابات.</li>
-    <li>تنظير الحنجرة والبلعوم لتقييم الصوت وصعوبة البلع.</li>
-    <li>تخطيط وقياس السمع للأطفال والكبار بأجهزة دقيقة.</li>
-  </ul>
-
-  <h2>أهم الأمراض التي نعالجها</h2>
-  <ul>
-    <li>التهابات الجيوب الأنفية والأذن الوسطى</li>
-    <li>علاج التهابات الأذن الوسطى وتنظيف الأذن بأمان</li>
-    <li>مشاكل السمع والدوخة والصداع</li>
-    <li>الشخير واضطرابات التنفس</li>
-    <li>بحة الصوت وتحسس الأنف والتهابات الحلق</li>
-    <li>طنين الأذن، ارتجاع المريء، أمراض الرقبة والغدد الليمفاوية</li>
-  </ul>
-
-  <h2>أهم العمليات التي نجريها</h2>
-  <ul>
-    <li>ترقيع طبلة الأذن بالمنظار</li>
-    <li>زراعة أنابيب تهوية الأذن بالمنظار</li>
-    <li>كي رعاف الأنف بالمنظار</li>
-    <li>تعديل الحاجز الأنفي بالمنظار</li>
-    <li>جراحة الجيوب الأنفية والمناظير المتقدمة</li>
-    <li>استخراج الأجسام الغريبة بالمنظار</li>
-    <li>تجميل الأنف، إصلاح إصابات الوجه والرقبة</li>
-    <li>استئصال اللوزتين واللحميات الأنفية والبلعومية</li>
-    <li>فتح الرغامي، شد سقف الحلق، وفك التصاقات اللسان</li>
-  </ul>
-
-  <div class="back-home">
-    <a href="index.html">العودة للرئيسيـة ←</a>
-  </div>
-
-</div>
 
 <footer style="background-color: #004D40; color: white; text-align: center; padding: 30px 10px;">
-  <p style="font-size: 9px; margin-bottom: 25px; font-weight: bold;">
+  <p style="font-size: 9px; margin-bottom: 25px;color: white !important; font-weight: bold;">
     عيادة د. مختار الشرعبي - تعز، ركن مفرق ماوية
   </p>
 
