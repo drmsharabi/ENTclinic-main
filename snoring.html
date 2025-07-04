@@ -2,8 +2,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>الشخير - د. مختار الشرعبي</title>
+  <title>الحلول الفعالة للتقليل من مشكلة الشخير - د. مختار الشرعبي</title>
   <meta name="description" content="دليل شامل حول أسباب الشخير ومخاطره وطرق علاجه وتحسين جودة النوم مع د. مختار الشرعبي، استشاري الأنف والأذن والحنجرة في تعز.">
+  <link rel="canonical" href="https://entclinic.netlify.app/snoring" />
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -14,23 +15,49 @@
       background-color: #f9f9f9;
       text-align: right;
     }
+
+    /* ✅ NAV */
     nav {
       background-color: #E0F2F1;
-      padding: 8px 4px;
+      padding: 12px 4px;
       text-align: center;
-      font-size: 11px;
+      font-size: 10px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
     }
-    nav a {
-      margin: 0 6px;
-      color: #004D40;
+
+    .nav-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+
+    .nav-link {
+      background-color: #ffffff;
+      padding: 8px 14px;
+      border-radius: 20px;
+      color: black;
       font-weight: bold;
       text-decoration: none;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
     }
+
+    .nav-link:hover {
+      background-color: red;
+      color: #ffffff;
+    }
+
     @media (min-width: 768px) {
-      nav { font-size: 16px; }
-      nav a { margin: 0 14px; }
+      nav { font-size: 15px; padding: 20px; gap: 20px; }
+      .nav-row { gap: 30px; }
+      .nav-link { padding: 12px 24px; font-size: 18px; }
     }
+
+    /* ✅ HEADER */
     header {
       background-color: #004D40;
       color: white;
@@ -41,21 +68,37 @@
       flex-wrap: wrap;
       gap: 12px;
     }
-    header img {
+
+    .header-logo img {
       height: 60px;
+      width: auto;
     }
+
     .header-text {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
     }
-    .main-title { font-size: 20px; font-weight: bold; }
-    .sub-title { font-size: 15px; color: #B2DFDB; }
+
+    .main-title {
+      font-size: 20px;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    .sub-title {
+      font-size: 15px;
+      white-space: nowrap;
+      color: #B2DFDB;
+    }
+
     @media (min-width: 768px) {
-      .main-title { font-size: 40px; }
-      .sub-title  { font-size: 29px; }
-      header img  { height: 90px; }
+      .main-title { font-size: 40px !important; }
+      .sub-title { font-size: 29px !important; }
+      .header-logo img { height: 90px !important; }
     }
+
+    /* ✅ CONTENT */
     .container {
       max-width: 960px;
       margin: 30px auto;
@@ -63,36 +106,49 @@
       padding: 30px;
       border-radius: 8px;
     }
+
     h1 {
-      color: #004D40;
+      color: #880E4F;
+      text-align: center;
       font-size: 20px;
-      margin-bottom: 16px;
+      margin-bottom: 20px;
     }
+
     h2 {
       color: #00796B;
-      margin-top: 20px;
-      font-size: 17px;
+      margin-top: 30px;
+      font-size: 20px;
     }
-    p, li {
-      font-size: 15px;
+
+    p {
+      font-size: 16px;
       line-height: 1.8;
       color: #333;
     }
+
     ul {
       padding-right: 20px;
     }
+
+    li {
+      font-size: 15px;
+      margin-bottom: 8px;
+    }
+
     .blog-img {
-      width: 80%;
-      max-width: 700px;
+      width: 90%;
+      max-width: 500px;
       display: block;
       margin: 20px auto;
       border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
+
     .cta-link {
       margin-top: 40px;
       text-align: center;
     }
+
     .cta-link a {
       color: #00796B;
       text-decoration: underline;
@@ -100,24 +156,64 @@
       font-weight: bold;
       font-size: 16px;
     }
+
+    /* ✅ FOOTER */
+    footer {
+      background-color: #004D40;
+      color: white !important;
+      text-align: center;
+      padding: 30px 10px;
+      font-size: 11px;
+      line-height: 1.7;
+    }
+
+    footer a img {
+      width: 30px;
+      height: 30px;
+    }
+
+    @media (min-width: 768px) {
+      footer a img {
+        width: 55px;
+        height: 55px;
+      }
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 15px;
+    }
   </style>
 </head>
-<body><nav>
-  <a href="index.html">🏠 الرئيسية</a>
-  <a href="about.html">📘 قصتنا</a>
-  <a href="services.html">🩺 من خدماتنا</a>
-  <a href="gallery.html">📷 معرض الصور</a>
-  <a href="blog.html">📚 المدونة</a>
-  <a href="testimonials.html">💬 رأي الجمهور</a>
-  <a href="contact.html">📍 تواصل معنا</a>
-</nav><header>
+<body>
+
+<!-- ✅ NAV -->
+<nav>
+  <div class="nav-row">
+    <a href="index.html" class="nav-link">🏠 الرئيسية</a>
+    <a href="about.html" class="nav-link">📘 قصتنا</a>
+    <a href="services.html" class="nav-link">🩺 من خدماتنا</a>
+    <a href="gallery.html" class="nav-link">📷 معرض الصور</a>
+  </div>
+  <div class="nav-row">
+    <a href="blog.html" class="nav-link">📚 المدونة</a>
+    <a href="testimonials.html" class="nav-link">💬 رأي الجمهور</a>
+    <a href="contact.html" class="nav-link">📍 تواصل معنا</a>
+  </div>
+</nav>
+
+<header class="header-logo">
   <img src="images/clinic-logo.png" alt="شعار العيادة">
   <div class="header-text">
     <div class="main-title">عيادة د. مختار الشرعبي</div>
     <div class="sub-title">الإستشارية للأنف والأذن والحنجرة</div>
   </div>
-</header><div class="container">
-  <h1>،،، الشخير مشكلة أكبر مما تتصور! تعرَّف على الحلول الآن ،،،</h1>
+</header>
+<div class="container">
+  <h1>،،، الشخير مشكلة أكبر مما تتصور<p><p>! تعرَّف على الحلول الآن ،،،</h1><p>
   <p>هل تشخر أنت أو شخص تحبه؟ لا تتجاهله! الشخير قد يكون جرس إنذار لمشاكل صحية.. إليك نصائح ذهبية للتغلب عليه:</p>  <h2>أرقام صادمة عن الشخير</h2>
   <ul>
     <li>25% من البالغين يشخرون أحيانًا، و25% بشكل مزمن.</li>
