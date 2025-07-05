@@ -3,70 +3,70 @@
 
   <!-- ✅ الصفحة الرئيسية -->
   <url>
-    <loc>https://drmsharabi.github.io/ENTclinic/</loc>
+    <loc>https://drmsharabi.github.io/ENTclinic.html/</loc>
     <priority>1.0</priority>
   </url>
 
   <!-- ✅ الصفحات الرئيسية -->
   <url>
-    <loc>https://drmsharabi.github.io/ENTclinic/about</loc>
+    <loc>https://drmsharabi.github.io/ENTclinic/about.html</loc>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://drmsharabi.github.io/ENTclinic/services</loc>
+    <loc>https://drmsharabi.github.io/ENTclinic/services.html</loc>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://drmsharabi.github.io/ENTclinic/gallery</loc>
+    <loc>https://drmsharabi.github.io/ENTclinic/gallery.html</loc>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://drmsharabi.github.io/ENTclinic/testimonials</loc>
+    <loc>https://drmsharabi.github.io/ENTclinic/testimonials.html</loc>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://drmsharabi.github.io/ENTclinic/contact</loc>
+    <loc>https://drmsharabi.github.io/ENTclinic/contact.html</loc>
     <priority>0.9</priority>
   </url>
 
   <!-- ✅ صفحة المدونة -->
   <url>
-    <loc>https://drmsharabi.github.io/ENTclinic/blog</loc>
+    <loc>https://drmsharabi.github.io/ENTclinic/blog.html</loc>
     <priority>0.85</priority>
   </url>
 
   <!-- ✅ روابط المقالات -->
   <url>
-    <loc>https://drmsharabi.github.io/ENTclinic/blog-polyps</loc>
+    <loc>https://drmsharabi.github.io/ENTclinic/blog-polyps.html</loc>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://drmsharabi.github.io/ENTclinic/blog-fluid-ear</loc>
+    <loc>https://drmsharabi.github.io/ENTclinic/blog-fluid-ear.html</loc>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://drmsharabi.github.io/ENTclinic/tinnitus</loc>
+    <loc>https://drmsharabi.github.io/ENTclinic/tinnitus.html</loc>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://drmsharabi.github.io/ENTclinic/tympanoplasty</loc>
+    <loc>https://drmsharabi.github.io/ENTclinic/tympanoplasty.html</loc>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://drmsharabi.github.io/ENTclinic/migraine</loc>
+    <loc>https://drmsharabi.github.io/ENTclinic/migraine.html</loc>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://drmsharabi.github.io/ENTclinic/snoring</loc>
+    <loc>https://drmsharabi.github.io/ENTclinic/snoring.html</loc>
     <priority>0.7</priority>
   </url>
 
