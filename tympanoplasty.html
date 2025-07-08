@@ -196,19 +196,45 @@
 <body>
 
 <!-- ✅ NAV -->
-<nav>
-  <div class="nav-row">
-    <a href="index.html" class="nav-link">🏠 الرئيسية</a>
-    <a href="about.html" class="nav-link">📘 قصتنا</a>
-    <a href="services.html" class="nav-link">🩺 من خدماتنا</a>
-    <a href="gallery.html" class="nav-link">📷 معرض الصور</a>
-  </div>
-  <div class="nav-row">
-    <a href="blog.html" class="nav-link">📚 المدونة</a>
-    <a href="testimonials.html" class="nav-link">💬 رأي الجمهور</a>
-    <a href="contact.html" class="nav-link">📍 تواصل معنا</a>
-  </div>
-</nav>
+ /* ✅ NAV */
+         nav {
+      background-color: #E0F2F1;
+      padding: 8px 4px;
+      text-align: center;
+      font-size: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .nav-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 5px
+      ;gap: 9px;
+    }
+    .nav-link {
+      background-color: #ffffff;
+      padding: 3px 5px;
+      border-radius: 9px;
+      color: black;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+    .nav-link:hover {
+      background-color: red;
+      color: #00332E;
+    }
+    @media (min-width: 768px) {
+      nav { font-size: 15px; padding: 20px; gap: 20px; }
+      .nav-row { gap: 50px; }
+      .nav-link { padding: 3px 9px; font-size: 22px; }
+    }  
+
 
 <header class="header-logo">
   <img src="images/clinic-logo.png" alt="شعار العيادة">
