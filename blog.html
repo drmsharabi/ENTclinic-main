@@ -22,37 +22,35 @@
       background-color: #f9f9f9;
     }
 
-    /* ✅ NAV */
     nav {
-      background-color: #E0F2F1;
-      padding: 12px 4px;
+      background-color: #D4F2FF;
+      padding: 8px 4px;
       text-align: center;
-      font-size: 10px;
+      font-size: 11px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
+    }
+
+    nav a {
+      margin: 0 6px;
+      color: #004D40;
+      font-weight: bold;
+      text-decoration: none;
     }
     .nav-row {
       display: flex;
+      flex-wrap: nowrap;
       justify-content: center;
-      flex-wrap: wrap;
-      gap: 9px;
+      gap: 10px;
+      flex-direction: row;
+      margin: 5px 0;
     }
-    .nav-link {
-      background-color: #ffffff;
-      padding: 8px 14px;
-      border-radius: 20px;
-      color: black;
+    .nav-row a {
+      color: #004D40;
       font-weight: bold;
       text-decoration: none;
-      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-      transition: all 0.3s ease;
+      font-size: 13px;
+      padding: 4px 6px;
       display: inline-block;
-    }
-    .nav-link:hover {
-      background-color: red;
-      color: #00332E;
     }
     @media (min-width: 768px) {
       nav { font-size: 15px; padding: 20px; gap: 20px; }
@@ -119,57 +117,71 @@
       max-width: 960px;
       margin: 30px auto;
       background: white;
-      padding: 35px;
+      padding: 20px;
       border-radius: 8px;
       font-size: 13px;
     }
-
     h1 {
       color: #880E4F;
       text-align: center;
       font-size: 18px;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
     }
-
     .blog-img {
-      width: 80%;
+      width: 70%;
       max-width: 700px;
       display: block;
-      margin: 0 auto 30px;
+      margin: 10 auto 30px;
       border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
 
-    .post {
-      border-bottom: 1px solid #ddd;
-      padding: 20px 0;
+    @media (min-width: 768px) {
+      .post a {
+        font-size: 26px;
+      }
     }
-
     .post h2 {
       margin: 0;
-      font-size: 15px;
+      font-size: 18px;
       color: #00796B;
     }
-
-    .post p {
+.post p {
       color: #444;
       margin: 6px 0 0;
+      font-size: 14px;
       line-height: 1.6;
     }
-
+hr {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0 0px;
+}
+    .post {
+  border-bottom: 0px solid #ddd;
+  padding: 20px 0;
+  margin-right: 0px;
+  margin-bottom: 10px; /* ⇦ هذه تضيف تباعداً بين المقالات */
+}
     .post a {
       text-decoration: underline;
       font-weight: bold;
       color: #00796B;
       display: inline-block;
       font-size: 16px;
-      margin-top: 14px;
       font-style: italic;
+      margin-left: 10px
+      margin-right: 0px;
+      margin-top: 10px;
+      text-align: right;
     }
 
     @media (min-width: 768px) {
-      .post a { font-size: 20px; }
+      .post a {
+        font-size: 50px;
+      }
     }
+
 
     footer {
       background-color: #004D40;
@@ -220,7 +232,10 @@
 </header>
 
 <!-- ✅ CONTENT -->
-</div>
+<div class="container">
+  <h1>📚 المدونة الطبية</h1>
+  <img src="images/blog/blog.jpeg" alt="ثقف نفسك" class="blog-img" />
+
 <div class="post">
     <a href="blog-fluid-ear.html"> لحميات الأنف - الأنواع والعلاج  ←  </a>
      </p> <div style="margin-right:0px">ما الفرق بين لحمية البلعوم، السلائل والقرينات ومتى يحتاج الأمر إلى جراحة؟.
@@ -248,9 +263,9 @@
     </p> <div style="margin-right:10px">تعرف على الأسباب الصحية والحلول الممكنة بطرق علمية وفعالة..
 
 <hr>
-    </div>
-
-<footer style="background-color: #004D40; color: white; text-align: center; padding: 30px 10px;">
+</div>
+</div>
+<footer style="background-color: #004D40; color: white; text-align: center; padding: 30px 7px;">
   <p style="font-size: 9px; margin-bottom: 25px;color: white !important; font-weight: bold;">
     عيادة د. مختار الشرعبي - تعز، ركن مفرق ماوية
   </p>
