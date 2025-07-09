@@ -110,18 +110,18 @@
     h1 {
       color: #880E4F;
       text-align: center;
-      font-size: 18px;
+      font-size: 16px;
       margin-bottom: 20px;
     }
 
     h2 {
       color: #00796B;
       margin-top: 30px;
-      font-size: 16px;
+      font-size: 14px;
     }
 
     p {
-      font-size: 14px;
+      font-size: 12px;
       line-height: 1.8;
       color: #333;
     }
@@ -145,47 +145,61 @@
     }
 
     .cta-link {
-      margin-top: 40px;
+      margin-bottom: 20;
+      margin-top: 10px;
       text-align: center;
     }
 
-     .cta-link a {
+    .cta-link a {
       color: #00796B;
       text-decoration: underline;
       font-style: italic;
       font-weight: bold;
+      margin-bottom: 80px;
+  }
+
+  .cta-link a {
+    font-size: 20px;
       font-size: 11px;
     }
 
+@media (min-width: 768px) {
+  .cta-link {
+    margin-bottom: 80px; /* زيادة المسافة قبل الفوتر */
+  }
+
+  .cta-link a {
+    font-size: 11px; /* تكبير الخط في نسخة سطح المكتب */
+  }
+}
     /* ✅ FOOTER */
-    footer {
-      background-color: #004D40;
-      color: white !important;
-      text-align: center;
-      padding: 30px 10px;
-      font-size: 11px;
-      line-height: 1.7;
-    }
+footer {
+  background-color: #004D40;
+  color: white !important;
+  text-align: center;
+  padding: 30px 10px;
+  font-size: 14px;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 1.7;
+}
 
-    footer a img {
-      width: 25px;
-      height: 25px;
-    }
+footer a img {
+  width: 25px;
+  height: 25px;
+}
 
-    @media (min-width: 768px) {
-      footer a img {
-        width: 55px;
-        height: 55px;
-      }
-    }
+@media (min-width: 768px) {
+  footer {
+    font-size: 20px;
+  }
 
-    .social-icons {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      flex-wrap: wrap;
-      margin-top: 15px;
-    }
+  footer a img {
+    width: 55px;
+    height: 55px;
+  }
+}
   </style>
 </head>
 <body>
@@ -299,22 +313,22 @@
       <h2>📌 الخلاصة</h2>
       <p>طنين الأذن تحدٍّ يتطلب صبرًا وتكيّفًا. ركّز على إدارة الأعراض من خلال الدمج بين العلاجات الطبية والتأقلم النفسي. استعن بطبيبك وأخصائي السمع لوضع خطة علاجية مناسبة لك، وتذكر أن التعايش الفعّال مع الطنين ممكن عند اتباع الإرشادات الصحيحة.</p>
     </section>
-    <p>في عيادة </strong>دكتور مختار الشرعبي الإستشارية </strong> نوفر أحدث تقنيات تشخيص السمع والمنظار لتحديد السبب بدقة وبدء العلاج المناسب. بإذن الله.</p>
-    </section>
-    </section>
-    <div class="cta-link">
-      <a href="https://wa.me/967730433592" class="btn-whatsapp">احجز موعدك عبر الواتساب</a>
-  </main>
-    <div class="cta-link">
-    <a href="index.html">← عودة للصفحة الرئيسية </a>
+    <p><strong>في عيادة دكتور مختار الشرعبي الإستشارية</strong> نوفر أحدث تقنيات تشخيص السمع والمنظار لتحديد السبب بدقة وبدء العلاج المناسب. بإذن الله.</p>
 
-  </div>
-   <div class="cta-link">
-    <a href="blog.html">← عودة لصفحة المدونة</a>
-  </div>
+<div class="cta-link">
+  <a href="https://wa.me/967730433592" class="btn-whatsapp">احجز موعدك عبر الواتساب</a>
 </div>
-<footer style="background-color: #004D40; color: white; text-align: center; padding: 30px 10px;">
-  <p style="font-size: 8px; margin-bottom: 25px;color: white !important; font-weight: bold;">
+
+<div class="cta-link">
+  <a href="index.html">← عودة للصفحة الرئيسية</a>
+</div>
+
+<div class="cta-link">
+  <a href="blog.html">← عودة لصفحة المدونة</a>
+</div>
+
+<footer>
+  <p style="font-size: 11px; margin-bottom: 25px; color: white !important; font-weight: bold;">
     عيادة د. مختار الشرعبي - تعز، ركن مفرق ماوية
   </p>
 
