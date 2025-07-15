@@ -155,7 +155,7 @@
 
     .cta-link a,
     .back-home a {
-      padding: 7px;
+      padding:2px 7px;
       background-color: #238A80;
       border-radius: 8px;
       color: white;
@@ -163,7 +163,13 @@
       font-weight: bold;
       font-size: 12px;
     }
-
+@media (min-width: 768px) {
+  .cta-link a {
+    font-size: 35px;
+    border-radius: 16px;
+    padding: 6px 18px;
+  }
+} 
     .whatsapp-section {
       text-align: center;
       flex-wrap: wrap;
@@ -280,15 +286,11 @@ footer a img {
       <li>أسعار مدروسة تراعي الظروف المعيشية</li>
     </ul>
 
-    <div class="whatsapp-section">
-      <a href="https://wa.me/967730433592" target="_blank">
-        <img src="images/social/whatsapp.jpeg" alt="واتساب" class="whatsapp-icon">
-      </a>
-      <br>
-      <a class="cta-link" href="https://wa.me/967730433592" target="_blank">← احجز موعدك الآن</a>
-    </div>
-   <br>
-    <div class="cta-link">
+
+         <hr>   <br>
+<div class="cta-link" style="margin-top: 5px">
+      <a href="https://wa.me/967730433592"> احجز موعدك الآن  ⇦ </a> </div>
+       <hr>   <div class="cta-link">
       <a href="index.html">← العودة للرئيسية</a>
     </div>
   </div>
