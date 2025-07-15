@@ -14,7 +14,8 @@
       text-align: right;
       background-color: #f9f9f9;
     }
-    nav {
+     /* ✅ NAV */
+         nav {
       background-color: #E0F2F1;
       padding: 8px 4px;
       text-align: center;
@@ -51,6 +52,7 @@
       .nav-row { gap: 50px; }
       .nav-link { padding: 3px 9px; font-size: 22px; }
     }  
+
     header {
       background-color: #004D40;
       color: white;
@@ -89,85 +91,112 @@
     .container {
       padding: 35px;
       max-width: 960px;
-      margin: 10 auto;
+      margin: auto;
       background-color: white;
-      font-size: 14px;
-    }
-      h1 {
-      color: #880E4F;
-      text-align: center;
-      font-size: 22px;
-      margin-bottom: 20px;
-    }
-     h3 {
-           color: #016D55;
       font-size: 13px;
     }
-     h2 {
-      color: #A50100;
+    .container img {
+      max-width: 70%;
+      border-radius: 12px;
+      margin: 0 auto 20px;
+      display: block;
+    }
+    h1 {
+      color: #880E4F;
+      text-align: center;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+        h2 {
+      color: #004D40;
       font-size: 15px;
     }
+    h2, h3 {
+      color: #004D40;
+      text-align: center;
+    }
     p, li {
-      font-size: 14px;
+      font-size: 13px;
       line-height: 1.8;
-      margin-right: 10px
-      ;color: #333;
+      color: #333;
     }
     ul {
       padding-right: 20px;
+      margin-top: 10px;
     }
-    .cta-link, .back-home {
-      text-align: center;
-      margin: 30px auto;
-    }
-    .cta-link a,
-    .back-home a {
-      padding: 10px
-      ;background-color: #238A80;
-      border-radius: 8px;
-      color: white;
-      text-decoration: underline;
-      font-weight: bold;
-      font-size: 12px;
-    }
-    .whatsapp-section {
-      text-align: center;
-      margin: 30px auto;
-    }
-
-    .whatsapp-icon {
-      width: 90px;
-      height: 90px;
-      display: block;
-      margin: 0 auto;
-    }
-        .blog-img {
-      width: 70%;
+    .blog-img {
+      width: 60%;
       max-width: 500px;
-      align-items: center
-      ;display: block;
+      display: block;
       margin: 20px auto;
       border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
+.cta-link {
+  text-align: center;
+  margin: 30px auto;
+}
+
+.cta-link a {
+  background-color: #238A80;
+  color: white;
+  padding: 3px 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  line-height: 1.6;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .cta-link a {
+    font-size: 35px;
+    padding: 6px 18px;
+  }
+}
     footer {
       background-color: #004D40;
       color: white;
       text-align: center;
-      padding: 20px 10px;
-      font-size: 11px;
+      padding: 5px 0 10px;
+      font-size: 13px;
       line-height: 1.7;
     }
-    footer a img {
-      width: 25px;
-      height: 25px;
-    }
-    @media (min-width: 768px) {
-      footer a img {
-        width: 55px;
-        height: 55px;
-      }
-    }
+.footer-icons {
+  margin-bottom: 20px; /* للموبايل */
+}
+
+@media (min-width: 768px) {
+  .footer-icons {
+    margin-bottom: 40px; /* لسطح المكتب */
+  }
+}
+footer a img {
+  width: 30px;
+  height: 30px;
+}
+
+@media (min-width: 768px) {
+  footer a img {
+    width: 60px;
+    height: 60px;
+  }
+}
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* مسافة بين الأيقونات في الموبايل */
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .footer-icons {
+    gap: 55px; /* مسافة أكبر في سطح المكتب */
+  }
+}
   </style>
 </head>
 <body>
@@ -194,7 +223,7 @@
  <div class="container">
     <h1>متى تحتاج او يحتاج طفلك لعملية اللوزتين؟!</h1>
     <p><strong>  <p style="color: blue">
-     ">✍ دكتور/ مختار الشرعبي</p>
+     ">✍ دكتور/ مختار الشرعبي</p><br>
     <img src="images/blog/tonsil.jpeg" alt="عملية اللوزتين" class="blog-img">
 
   <p><strong>التهابات اللوزتين تعد من المشكلات الصحية الشائعة، وتؤثر على الكثيرين من الأطفال والبالغين. تلعب اللوزتان دورًا رئيسيًا في جهاز المناعة، لكن عند الإصابة بالتلوث، يمكن أن تصبحا مصدرًا للألم والمضاعفات. في هذا المقال، سنتناول بشكل تفصيلي التهابات اللوزتين ودواعي استئصالها.</strong></p>
@@ -253,51 +282,49 @@
   <p>إذا كانت اللحمية تؤثر على نمو الفك أو الأسنان، فقد يكون من الأفضل إزالتها أثناء إجراء عملية اللوزتين.</p>  <h3>4. وجود مشاكل صحية أخرى</h3>
   <p>إذا كان هناك مشاكل صحية أخرى مرتبطة باللحمية مثل التهاب مزمن أو تكوين خراج، يمكن أن يستدعي ذلك استئصالها.</p>  <p><strong>يجب دائمًا استشارة طبيب الأطفال أو أخصائي الأنف والأذن والحنجرة لتحديد الحاجة الفعلية لاستئصال اللحمية البلعومية أثناء إجراء عملية اللوزتين. الطبيب سيقوم بتقييم الحالة الصحية العامة للطفل قبل اتخاذ القرار</strong></p>
 </div>
-<div class="cta-link">
-    <a href="blog.html">← عودة لصفحة المدونة</a>
-  </div>
   <div class="cta-link">
-    <a href="index.html">← عودة لصفحة للصفحة الرئيسية</a>
-  </div><br>
+    <a href="index.html">← عودة للصفحة الرئيسية </a>
+<hr>
+
+   <div class="cta-link">
+    <a href="blog.html">← عودة لصفحة المدونة</a>
+  </div></div></div>
 </div>
+<hr>
 
-<footer style="background-color: #004D40; color: white; text-align: center; padding: 30px 10px;">
-  <style>
-    footer, footer p, footer a {
-      color: white !important;
-    }
-  </style>
-  <p style="font-size: 10px; margin-bottom: 25px; font-weight: bold;">
-    عيادة د. مختار الشرعبي - تعز، ركن مفرق ماوية
-  </p>
+ <footer>
+    <p style="font-size: 11px; margin-bottom: 25px; color: white !important; font-weight: bold;">
+      عيادة د. مختار الشرعبي - تعز، ركن مفرق ماوية
+    </p>
 
-  <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
+<div class="footer-icons">
+
     <a href="https://www.facebook.com/profile.php?id=100082372405434" target="_blank">
-      <img src="images/social/‪facebook.png" alt="فيسبوك" width="30" height="30" />
+      <img src="images/social/facebook.jpeg" alt="فيسبوك" width="30" height="30" />
     </a>
 
     <a href="https://wa.me/967730433592" target="_blank">
-      <img src="images/social/‪whatsapp.png" alt="واتساب" width="30" height="30" />
+      <img src="images/social/whatsapp.jpeg" alt="واتساب" width="30" height="30" />
     </a>
 
     <a href="https://youtube.com/@ENTsharabi" target="_blank">
-      <img src="images/social/‪youtube.png" alt="يوتيوب" width="30" height="30" />
+      <img src="images/social/youtube.jpeg" alt="يوتيوب" width="30" height="30" />
     </a>
 
     <a href="https://www.instagram.com/dr.mokhtar_alsharabi" target="_blank">
-      <img src="images/social/‪instagram.png" alt="انستغرام" width="30" height="30" />
+      <img src="images/social/instagram.jpeg" alt="انستغرام" width="30" height="30" />
     </a>
 
     <a href="https://x.com/Dr_Alsharaabi" target="_blank">
-      <img src="images/social/twiter.png" alt="تويتر (إكس)" width="30" height="30" />
+      <img src="images/social/x.jpeg" alt="تويتر (إكس)" width="30" height="30" />
     </a>
 
     <a href="https://www.tiktok.com/@dr_mokhtar_sharabi" target="_blank">
-      <img src="images/social/‪tiktok.png" alt="تيك توك" width=30" height="30" />
+      <img src="images/social/tiktok.jpeg" alt="تيك توك" width=30" height="30" />
     </a>
 
     <a href="mailto:drm9khtarnajy@gmail.com" target="_blank">
-      <img src="images/social/‪gmail.png" alt="بريد إلكتروني" width="30" height="30" />
-    </a>
+      <img src="images/social/gmail.jpeg" alt="بريد إلكتروني" width="30" height="30" />
+  </div>    </a>
   </div>
-</footer>
+ </footer>
