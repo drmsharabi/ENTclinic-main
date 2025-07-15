@@ -228,7 +228,7 @@
       margin: 40px 0;
     }
     .back-home a {
-      padding: 7px
+      padding: 2px 6px
       ;background-color: #238A80;
       border-radius: 8px;
       color: white;
@@ -236,6 +236,13 @@
       font-weight: bold;
       font-size: 12px;
     }
+    @media (min-width: 768px) {
+  .cta-link a {
+    font-size: 35px;
+    border-radius: 16px;
+    padding: 2px 18px;
+  }
+} 
     footer {
       background-color: #004D40;
       color: white;
@@ -267,13 +274,13 @@ footer a img {
 .footer-icons {
   display: flex;
   justify-content: center;
-  gap: 10px; /* مسافة بين الأيقونات في الموبايل */
+  gap: 15px; /* مسافة بين الأيقونات في الموبايل */
   flex-wrap: wrap;
 }
 
 @media (min-width: 768px) {
   .footer-icons {
-    gap: 35px; /* مسافة أكبر في سطح المكتب */
+    gap: 55px; /* مسافة أكبر في سطح المكتب */
   }
 }
   </style>
@@ -346,19 +353,12 @@ footer a img {
       <div class="grid-item">شد سقف الحلق وفك التصاقات اللسان</div>
       <div class="grid-item">فتح الرغامي التنفسي</div>
     </div>
-<br>
-    <div class="whatsapp-section">
-      <a href="https://wa.me/967730433592" target="_blank">
-        <img src="images/whatsapp-icon.png" class="whatsapp-icon" alt="واتساب">
-      </a>
-      <a class="cta-text" href="https://wa.me/967730433592" target="_blank">احجز موعدك الآن ←</a>
-    </div>
-<br><br>
+
     <div class="back-home">
       <a href="index.html">← العودة للرئيسية</a>
     </div>
   </div>
-<br>
+
  <footer>
     <p style="font-size: 11px; margin-bottom: 25px; color: white !important; font-weight: bold;">
       عيادة د. مختار الشرعبي - تعز، ركن مفرق ماوية
