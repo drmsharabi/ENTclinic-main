@@ -149,7 +149,7 @@
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 15px;
+      gap: 20px;
     }
     @media (min-width: 768px) {
       .gallery {
@@ -157,7 +157,7 @@
       }
     }
     @media (max-width: 767px) {
-      .gallery {
+      gap: 20px;.gallery {
         grid-template-columns: repeat(1, 1fr);
       }
     }
