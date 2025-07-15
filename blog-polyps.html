@@ -26,8 +26,8 @@
       text-align: right;
     }
 
-    /* ✅ NAV */
-        nav {
+     /* ✅ NAV */
+         nav {
       background-color: #E0F2F1;
       padding: 8px 4px;
       text-align: center;
@@ -64,7 +64,7 @@
       .nav-row { gap: 50px; }
       .nav-link { padding: 3px 9px; font-size: 22px; }
     }  
-    /* ✅ HEADER */
+
     header {
       background-color: #004D40;
       color: white;
@@ -75,131 +75,125 @@
       flex-wrap: wrap;
       gap: 12px;
     }
-
     .header-logo img {
       height: 60px;
       width: auto;
     }
-
     .header-text {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
     }
-
     .main-title {
       font-size: 20px;
       font-weight: bold;
       color: #ffffff;
+      white-space: nowrap;
     }
-
     .sub-title {
       font-size: 15px;
-      white-space: nowrap;
       color: #B2DFDB;
+      white-space: nowrap;
     }
-
     @media (min-width: 768px) {
       .main-title { font-size: 40px !important; }
       .sub-title { font-size: 29px !important; }
       .header-logo img { height: 90px !important; }
     }
-
-    /* ✅ CONTENT */
     .container {
-      max-width: 960px;
-      margin: 30px auto;
-      background: white;
       padding: 35px;
-      border-radius: 8px;
+      max-width: 960px;
+      margin: auto;
+      background-color: white;
+      font-size: 13px;
     }
-
+    .container img {
+      max-width: 70%;
+      border-radius: 12px;
+      margin: 0 auto 20px;
+      display: block;
+    }
     h1 {
       color: #880E4F;
       text-align: center;
       font-size: 16px;
       margin-bottom: 20px;
     }
-
-    h2 {
-      color: #00796B;
-      margin-top: 30px;
+        h2 {
+      color: #004D40;
       font-size: 15px;
     }
-
-    p {
-      font-size: 12px;
+    h2, h3 {
+      color: #004D40;
+      text-align: center;
+    }
+    p, li {
+      font-size: 13px;
       line-height: 1.8;
       color: #333;
     }
-
     ul {
       padding-right: 20px;
+      margin-top: 10px;
     }
+.cta-link {
+  text-align: center;
+  margin: 0px auto;
+}
 
-    li {
-      font-size: 12px;
-      margin-bottom: 8px;
-    }
-
-    .blog-img {
-      width: 70%;
-      max-width: 500px;
-      display: block;
-      margin: 20px auto;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .cta-link {
-      margin-top: 40px;
-      text-align: center;
-    }
-
-    cta-link a,
-    .back-home a {
-      padding: 7px
-      ;background-color: #238A80;
-      border-radius: 8px;
-      color: white;
-      text-decoration: underline;
-      font-weight: bold;
-      font-size: 12px;
-    }
-
-
-    /* ✅ FOOTER */
+.cta-link a {
+  background-color: #238A80;
+  color: white;
+  padding: 3px 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block; /* تغيير من block إلى inline-block */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  line-height: 1.6;
+  margin: 0 auto; /* إضافة هذه السطر */
+}
     footer {
       background-color: #004D40;
-      color: white !important;
+      color: white;
       text-align: center;
-      padding: 30px 10px;
-      font-size: 9px;
+      padding: 5px 0 10px;
+      font-size: 13px;
       line-height: 1.7;
     }
+.footer-icons {
+  margin-bottom: 20px; /* للموبايل */
+}
 
-    footer a img {
-      width: 25px;
-      height: 25px;
-    }
+@media (min-width: 768px) {
+  .footer-icons {
+    margin-bottom: 40px; /* لسطح المكتب */
+  }
+}
+footer a img {
+  width: 30px;
+  height: 30px;
+}
 
-    @media (min-width: 768px) {
-      footer {
-        font-size: 10px;
-      }
-      footer a img {
-        width: 65px;
-        height: 65px;
-      }
-    }
+@media (min-width: 768px) {
+  footer a img {
+    width: 60px;
+    height: 60px;
+  }
+}
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* مسافة بين الأيقونات في الموبايل */
+  flex-wrap: wrap;
+}
 
-    .social-icons {
-      display: flex;
-      justify-content: center;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin-top: 15px;
-    }
+@media (min-width: 768px) {
+  .footer-icons {
+    gap: 55px; /* مسافة أكبر في سطح المكتب */
+  }
+}
   </style>
 </head>
 <body>
@@ -229,7 +223,7 @@
 </header>
 <div class="container">
   <h1>لحميات الأنف – الأنواع والعلاج</h1>  
-  <p  style="color: 0189F9;font-size: 11px;;" >
+  <p  style="color: #0189F9;font-size: 11px;;" >
  ✍ دكتور/ مختار الشرعبي</p>
       <p>
 </p>
@@ -296,50 +290,46 @@
 
   <div class="cta-link">
     <a href="index.html">← عودة للصفحة الرئيسية </a>
-
+<hr>
 
    <div class="cta-link">
     <a href="blog.html">← عودة لصفحة المدونة</a>
   </div></div></div>
 </div>
-<footer style="background-color: #004D40; color: white; text-align: center; padding: 20px 10px;">
-  <style>
 
-    footer, footer p, footer a {
-      color: white !important;
-    }
-  </style>
-  <p style="font-size: 8px; margin-bottom: 25px; font-weight: bold;">
-    عيادة د. مختار الشرعبي - تعز، ركن مفرق ماوية
-  </p>
+ <footer>
+    <p style="font-size: 11px; margin-bottom: 25px; color: white !important; font-weight: bold;">
+      عيادة د. مختار الشرعبي - تعز، ركن مفرق ماوية
+    </p>
 
-  <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
+<div class="footer-icons">
+
     <a href="https://www.facebook.com/profile.php?id=100082372405434" target="_blank">
-      <img src="images/social/‪facebook.png" alt="فيسبوك" width="30" height="30" />
+      <img src="images/social/facebook.jpeg" alt="فيسبوك" width="30" height="30" />
     </a>
 
     <a href="https://wa.me/967730433592" target="_blank">
-      <img src="images/social/‪whatsapp.png" alt="واتساب" width="30" height="30" />
+      <img src="images/social/whatsapp.jpeg" alt="واتساب" width="30" height="30" />
     </a>
 
     <a href="https://youtube.com/@ENTsharabi" target="_blank">
-      <img src="images/social/‪youtube.png" alt="يوتيوب" width="30" height="30" />
+      <img src="images/social/youtube.jpeg" alt="يوتيوب" width="30" height="30" />
     </a>
 
     <a href="https://www.instagram.com/dr.mokhtar_alsharabi" target="_blank">
-      <img src="images/social/‪instagram.png" alt="انستغرام" width="30" height="30" />
+      <img src="images/social/instagram.jpeg" alt="انستغرام" width="30" height="30" />
     </a>
 
     <a href="https://x.com/Dr_Alsharaabi" target="_blank">
-      <img src="images/social/twiter.png" alt="تويتر (إكس)" width="30" height="30" />
+      <img src="images/social/x.jpeg" alt="تويتر (إكس)" width="30" height="30" />
     </a>
 
     <a href="https://www.tiktok.com/@dr_mokhtar_sharabi" target="_blank">
-      <img src="images/social/‪tiktok.png" alt="تيك توك" width=30" height="30" />
+      <img src="images/social/tiktok.jpeg" alt="تيك توك" width=30" height="30" />
     </a>
 
     <a href="mailto:drm9khtarnajy@gmail.com" target="_blank">
-      <img src="images/social/‪gmail.png" alt="بريد إلكتروني" width="30" height="30" />
-    </a>
+      <img src="images/social/gmail.jpeg" alt="بريد إلكتروني" width="30" height="30" />
+  </div>    </a>
   </div>
-</footer>
+ </footer>
