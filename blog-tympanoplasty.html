@@ -245,9 +245,9 @@
    padding: 6px 20px;
   }
 }
-           .blog-img {
+           . container-img {
       width: 70%;
-      align-items: center
+      align-items: center;
       ;max-width: 700px;
       display: block;
       margin: 10 auto ;
@@ -255,7 +255,19 @@
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
 
- 
+ img {
+      width: 70%;
+      max-width: 700px;
+      display: block;
+      margin: 10 auto ;
+      border-radius: 15px;
+      box-shadow: 0 0 44px rgba(56, 46, 158, 11);
+    }
+  @media (min-width: 768px) {
+    img { 
+      border-radius: 50px
+ }
+  }   
     footer {
       background-color: #004D40;
       color: white;
@@ -273,19 +285,7 @@
     margin-bottom: 40px; /* لسطح المكتب */
   }
 }
-    img {
-      width: 70%;
-      max-width: 700px;
-      display: block;
-      margin: 10 auto ;
-      border-radius: 15px;
-      box-shadow: 0 0 44px rgba(56, 46, 158, 11);
-    }
-  @media (min-width: 768px) {
-    img { 
-      border-radius: 50px
- }
-  }   
+    
 footer {
       
       ;background-color: #004B8C;
