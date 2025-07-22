@@ -211,6 +211,68 @@
   border-bottom: 3px solid #ccc;
   margin-top: 20px;
 }
+   .whatsapp-section {
+  background-color: white;
+  text-align: center;
+  flex-wrap: wrap;
+ 
+}
+
+.whatsapp-icon {
+  width: 90px;
+  height: 90px;
+  
+  object-fit: contain;
+  animation: pulse 2s infinite; /* تطبيق تأثير النبض */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1); /* الحجم الأصلي */
+  }
+  50% {
+    transform: scale(1.1); /* تكبير الأيقونة بنسبة 10% */
+  }
+  100% {
+    transform: scale(1); /* العودة للحجم الأصلي */
+  }
+}
+
+@media (min-width: 768px) {
+  .whatsapp-icon {
+    width: 195px;
+    height: 195px;
+  }
+}
+    .whatsapp-link{
+  text-align: center;
+  margin: 10px 0;
+}
+
+.whatsapp-link {
+  text-align: center;
+  
+}
+
+.whatsapp-link a {
+  background-color: #00A19D;
+  color: white !important;  /* ✅ تم التصحيح هنا */
+  padding: 5px 12px 4px;
+  ;border-radius: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 1.6;
+}
+@media (min-width: 768px) {
+  .whatsapp-link a {
+    margin-top: 20px
+    ;font-size: 35px;
+    border-radius: 16px;
+    padding: 6px 18px;
+  }
+} 
 .cta-link {
   text-align: center;
   margin: 30px auto;
@@ -368,9 +430,17 @@ footer a img {
   <ul>  
     <li>العلاج الأولي يشمل أدوية مثل مضادات الحساسية، أو مزيلات الاحتقان، أو كورتيزون موضعي.</li>  
     <li>إذا استمر وجود السوائل لأكثر من 3 أشهر أو أثرت على السمع، يتم تركيب أنبوب تهوية (Ventilation Tube) باستخدام المنظار.</li>  
-<img style="display: block; margin:20px auto;" src="images/blog/grommet.jpeg" alt="نتيجة عملية ترقيع الطبلة" class="blog-img" />
-  <a style="display: block; text-align: center; font-size: 10px;" href="https://youtu.be/2p9La2_KpV0?feature=shared" target="_blank">🎥 شاهد نموذج إحدى عملياتنا على YouTube</a>
-  </ul>  
+<hr><br><div class="whatsapp-section" style="margin-top: 5px">
+  <a href="https://youtu.be/2p9La2_KpV0?feature=shared" target="_blank">
+    <img src="images/social/youtube.jpeg" alt="واتساب" class="whatsapp-icon">
+  </a>
+</div>
+    <div class="whatsapp-link">
+    <a href="https://youtu.be/2p9La2_KpV0?feature=shared"> شاهد نموذج عملياتنا  على YouTub </a>
+
+<hr>
+    
+    
  
 <hr><br>
     </div>
