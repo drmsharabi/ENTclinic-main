@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://drmsharabi.github.io/ENTclinic/sitemap.xml
