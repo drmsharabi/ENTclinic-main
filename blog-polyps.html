@@ -206,6 +206,68 @@
   border-bottom: 3px solid #ccc;
   margin-top: 20px;
 }
+.whatsapp-section {
+  background-color: white;
+  text-align: center;
+  flex-wrap: wrap;
+ 
+}
+
+.whatsapp-icon {
+  width: 90px;
+  height: 90px;
+  
+  object-fit: contain;
+  animation: pulse 2s infinite; /* تطبيق تأثير النبض */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1); /* الحجم الأصلي */
+  }
+  50% {
+    transform: scale(1.1); /* تكبير الأيقونة بنسبة 10% */
+  }
+  100% {
+    transform: scale(1); /* العودة للحجم الأصلي */
+  }
+}
+
+@media (min-width: 768px) {
+  .whatsapp-icon {
+    width: 195px;
+    height: 195px;
+  }
+}
+    .whatsapp-link{
+  text-align: center;
+  margin: 10px 0;
+}
+
+.whatsapp-link {
+  text-align: center;
+  
+}
+
+.whatsapp-link a {
+  background-color: #00A19D;
+  color: white !important;  /* ✅ تم التصحيح هنا */
+  padding: 5px 12px 4px;
+  ;border-radius: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 1.6;
+}
+@media (min-width: 768px) {
+  .whatsapp-link a {
+    margin-top: 20px
+    ;font-size: 35px;
+    border-radius: 16px;
+    padding: 6px 18px;
+  }
+}
 .cta-link {
   text-align: center;
   margin: 30px auto;
@@ -375,10 +437,16 @@ footer a img {
   <ul>  
     <li>دوائي: بخاخات الكورتيزون، مضادات التحسس، أدوية مضادة للالتهاب</li>  
     <li>جراحي: استئصال السلائل بمنظار الجيوب الأنفية تحت تخدير عام</li>  
-   
-  <hr> <p class="cta-link">
-    <a href="https://youtu.be/i0Va72Gpp-s?feature=shared" target="_blank">🎥 شاهد إحدى عملياتنا بالمنظار على YouTube</a> <hr>
-  </ul>    <p>بعد العملية، يحتاج المريض إلى متابعة واستخدام بخاخات وقائية لتقليل عودة اللحميات.</p>    <h2 style="color: #00796B">3. القرينات الأنفية</h2>  
+   <hr><div class="whatsapp-section" style="margin-top: 5px">
+  <a href="https://youtu.be/i0Va72Gpp-s?feature=shared" target="_blank">
+    <img src="images/social/youtube.jpeg" alt="واتساب" class="whatsapp-icon">
+  </a>
+</div>
+    <div class="whatsapp-link">
+    <a href="https://youtu.be/i0Va72Gpp-s?feature=shared"> شاهد نموذج عملياتنا  على YouTub </a>
+
+<hr>
+      </ul>    <p>بعد العملية، يحتاج المريض إلى متابعة واستخدام بخاخات وقائية لتقليل عودة اللحميات.</p>    <h2 style="color: #00796B">3. القرينات الأنفية</h2>  
     <img style="display: block; margin:20px auto;" src="images/blog/turbinate.jpeg" alt="القرينات الأنفية" class="blog-img" />  
   <p>هي تراكيب طبيعية في الأنف تقوم بترطيب وتدفئة الهواء الداخل وتنقيته.</p>    <p><strong>الأعراض:</strong></p>  
   <ul>  
