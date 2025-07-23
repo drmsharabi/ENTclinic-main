@@ -27,6 +27,16 @@
     <lastmod>2025-07-23</lastmod>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://ent.drmsharabi.com/gallery</loc>
+    <lastmod>2025-07-23</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ent.drmsharabi.com/blog</loc>
+    <lastmod>2025-07-23</lastmod>
+    <priority>0.8</priority>
+  </url>
 
   <!-- المقالات الطبية السبعة -->
   <url>
@@ -65,4 +75,4 @@
     <priority>0.7</priority>
   </url>
 
-</urlset>
+</urlset>ما
