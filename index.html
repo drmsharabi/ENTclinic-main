@@ -148,7 +148,9 @@
   background-color: white;
   text-align: center;
   flex-wrap: wrap;
- 
+ display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .whatsapp-icon {
@@ -176,6 +178,11 @@
     width: 195px;
     height: 195px;
   }
+  .whatsapp-section {
+  flex-direction: row; 
+    justify-content: center;
+    gap: 20px;
+    }
 }
      .whatsapp-link{
   text-align: center;
@@ -261,7 +268,9 @@
       padding-right: 20px;
     }
 .cta-button {
-    color: #008000;
+
+  white-space: nowrap; 
+  color: #008000;
     background-color: white;
     border: 1px solid black;
     text-decoration: none;
@@ -274,7 +283,7 @@
     text-align: center;
     border-radius: 8px;
     padding: 1px 6px;
-    font-size: 14px;
+    font-size: 35px;
     max-width: fit-content;
     animation: pulse 3s infinite; /* تطبيق تأثير النبض */
 }
@@ -295,16 +304,25 @@
    margin: 10px auto; background-color: #f0fff0;
     max-width: fit-content;
     box-shadow: 0 6px 12px rgba(0, 128, 0, 0.3);
-    font-size: 20px;
+    font-size: 28px;
     transform: translateY(-2px);
+    margin-top: 0; 
     
+}
+@media (min-width: 768px) {
+ .cta-button {
+font-size: 34px!important
+}
 }
 
 /* تنسيق سطح المكتب */
 @media (min-width: 768px) {
     .cta-button {
-        max-width: fit-content;padding: 5px 
-        font-size: 38px;
+       .
+  display: block;
+  
+  max-width: fit-content;padding: 5px 
+        font-size: 58px;
         border-radius: 12px!important;
         margin: 20px auto;
     }
@@ -458,9 +476,9 @@ footer a img {
        <hr>    <br>
     <div class="whatsapp-section">
     <a href="https://wa.me/967730433592" target="_blank">
-      <img style="align" src="images/social/whatsapp.jpeg" alt="واتساب" class="whatsapp-icon">
+      <img  src="images/social/whatsapp.jpeg" alt="واتساب" class="whatsapp-icon">
     </a></div>
-    <a style="font-size: 12px" href="https://wa.me/967730433592" target="_blank" class="cta-button">← احجز موعدك الآن</a>
+    <a style="font-size: 14px " href="https://wa.me/967730433592" target="_blank" class="cta-button">← احجز موعدك الآن</a>
 </div>
 <hr>  
 
