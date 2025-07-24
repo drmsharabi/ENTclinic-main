@@ -67,7 +67,7 @@ nav {
       .nav-link {
         margin-top: 20px;padding: 12px 18px;
        box-shadow: 0 0 0 0.8px rgba(243, 245, 212, 8);
-       border-radius: 20px; font-size: 28px;
+       border-radius: 20px; font-size: 38px;
       }
     }
 
@@ -113,7 +113,7 @@ nav {
         font-size: 23px;
       }
     }
-    h1 {
+   h1 {
       background-color: #EEFFFE;
       color: #A1115E;
       border: 1px solid #004D40;
@@ -137,7 +137,7 @@ nav {
 hr {
   margin: 25px 0;  /* هامش علوي وسفلي صغير (5px) وبدون هوامش جانبية */
   padding: 0;     /* إزالة أي padding */
-  height: 2px;    /* ارتفاع الخط نفسه */
+  height: 4px;    /* ارتفاع الخط نفسه */
   border: none;   /* إزالة الحدود الافتراضية */
   background-color: #ddd; /* لون الخط */
 }
@@ -166,10 +166,10 @@ h2 {
 /* سطح المكتب */
 @media (min-width: 768px) {
   h2 {
-    font-size: 25px;
+    font-size: 30px;
     border-radius: 16px;
     padding: 6px 1px;
-    margin: 3px;
+    margin: 3px auto;
     text-align: center;
     
     /* إعادة تعيين nowrap لسطح المكتب */
@@ -178,6 +178,53 @@ h2 {
     text-overflow: clip;
     max-width: 100%;
   }
+}
+/* تنسيق الأزرار الخضراء */
+.cta-button {
+    color: #008000;
+    background-color: white;
+    border: 2px solid #008000;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 128, 0, 0.2);
+    display: inline-block;
+    margin: 10px auto;
+    transition: all 0.3s ease;
+    text-align: center;
+    border-radius: 8px;
+    padding: 4px 16px;
+    font-size: 14px;
+    animation: pulse 3s infinite; /* تطبيق تأثير النبض */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1); /* الحجم الأصلي */
+  }
+  50% {
+    transform: scale(1.1); /* تكبير الأيقونة بنسبة 10% */
+  }
+  100% {
+    transform: scale(1); /* العودة للحجم الأصلي */
+  }
+
+}
+}
+
+.cta-button:hover {
+    background-color: #f0fff0;
+    box-shadow: 0 6px 12px rgba(0, 128, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+/* تنسيق سطح المكتب */
+@media (min-width: 768px) {
+    .cta-button {
+        padding: 12px 24px;
+        font-size: 38px;
+        border-radius: 12px;
+        margin: 20px auto;
+    }
 }
 
     p {
@@ -188,7 +235,7 @@ h2 {
     }
 
     .map {
-      width: 60%;
+      width: 90%;
       height: 300px;
       border: none;
       margin-top: 30px;border-radius: 10px;
@@ -201,10 +248,25 @@ h2 {
     }
 
     .whatsapp-icon {
-      width: 180px;
-      height: 180px;
+      width: 120px;
+      height: 120px;
       display: block;
       margin: 0 auto;
+      animation: pulse 3s infinite; /* تطبيق تأثير النبض */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1); /* الحجم الأصلي */
+  }
+  50% {
+    transform: scale(1.1); /* تكبير الأيقونة بنسبة 10% */
+  }
+  100% {
+    transform: scale(1); /* العودة للحجم الأصلي */
+  }
+
+
     }
 
     
@@ -214,6 +276,10 @@ h2 {
     padding: 20px;
     gap: 20px;
   }
+      .whatsapp-icon {
+      width: 240px;
+      height: 240px;
+     }   
   .nav-row {
     gap: 30px;
   }
@@ -224,98 +290,69 @@ h2 {
     ;font-size: 18px;
   }
       .map {
-      width: 90%;
+      width: 75%;
       height: 400px;
 }
-  .cta-text {
-     color: white; text-align: center;
-      border-radius: 15px;
-      background-color: #238A80
-      ;display: block;
-      margin-left: 95px;margin-top: 30px;
-      padding: 10px;
-      margin-right: 95;
-      font-size: 14px;
-      color: white;margin-top:40px
-    }
-
-    .return-home {
-      text-align: center;
-     margin-bottom: 20px
-     margin-top: 10;;
-      margin: 40px 40px;
-    }
-
-    .return-home a {
-      padding: 8px 9px
-      ;background-color: #238A80;
-      border-radius: 8px;
-      color: white;
-      text-decoration: underline;
-      font-weight: bold;
-      font-size: 11px;
-    }
-@media (min-width: 768px) {
-  .return-home a {
-    margin-top: 20px
-    ;font-size: 35px;
-    border-radius: 16px;
-    padding: 6px 18px;
-  }
 }
 footer {
-      margin-top: 10px
-      ;background-color: #004B8C;
-      color: white !important;
-      text-align: center;
-      padding: 10px 10px;
-      font-size: 9px;
-      line-height: 1.7;
-    }
+  margin-top: 10px;
+  background-color: #004B8C;
+  color: white !important;
+  text-align: center;
+  padding: 10px 10px;
+  font-size: 9px;
+  line-height: 1.7;
+}
 
 footer a img {
-  width: 20px;
-  height: 20px;
+  width: 30px; /* حجم مناسب للجوال */
+  height: 30px;
 }
 
-@media (min-width: 768px) {
-  footer a img {
-    width: 40px;
-    height: 40px;
-  }
-}
-.footer-icons {
-  margin-top: 20px;
-  margin-bottom: 10px; /* للموبايل */
-}
-@media (min-width: 768px) {
-  .footer-icons {
-    margin-top: 40px;
-    margin-bottom: 30px; /* لسطح المكتب */
-  }
-}
 .footer-icons {
   display: flex;
-      gap: 25px; 
-      justify-content: center;/
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 20px; /* مسافة أقل في الجوال */
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
- footer p {
-  padding: 1px 5px;border-radius:8px;font-size: 10px;background-color:#EEFFFE; margin: 7px; color: #004B8C !important; font-weight: bold;
+
+footer p {
+  padding: 1px 5px;
+  border-radius: 8px;
+  font-size: 10px;
+  background-color: #EEFFFE;
+  margin: 7px auto;
+  color: #004B8C !important;
+  font-weight: bold;
 }
-  footer p {
-  font-size: 9px;!important
-  }
 @media (min-width: 768px) {
-  .footer-icons {
-    gap: 75px; /* مسافة أكبر في سطح المكتب */
+footer p {
+    font-size: 10px!important;
+}
+}
+/* نسخة سطح المكتب */
+@media (min-width: 768px) {
+  footer a img {
+    width: 50px;
+    height: 50px;
   }
-  footer p {
-  font-size: 9px;!important
-  padding: 35px 5px;
-  border-radius: 20px
-  ;margin: 20px;
-    }
+        .nav-link {
+       font-size: 28px;     
+  }
+  .footer-icons {
+    gap: 60px; /* مسافة أكبر في سطح المكتب */
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  }
+ @media (min-width: 768px) { footer p {
+    font-size: 11px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin: 20px;
+  }
 }
   </style>
 </head>
@@ -350,12 +387,12 @@ footer a img {
     </div>
   </main>
        <hr>    <br>
-  <div class="whatsapp-section">
+    <div class="whatsapp-section">
     <a href="https://wa.me/967730433592" target="_blank">
-      <img src="images/whatsapp-icon.png" alt="واتساب" class="whatsapp-icon">
+      <img src="images/social/whatsapp.jpeg" alt="واتساب" class="whatsapp-icon">
     </a>
-    <a class="cta-text" href="https://wa.me/967730433592" target="_blank">← احجز موعدك الآن</a>
-  </div>
+    <a href="https://wa.me/967730433592" target="_blank" class="cta-button">← احجز موعدك الآن</a>
+</div>
      <hr>      <br>
   <div style="text-align: center;">
     <p><strong>الموقع الالكتروني للعيادة:</strong><br>
@@ -364,7 +401,7 @@ footer a img {
     <p><strong>الموقع البديل:</strong><br>
       <a href="https://entclinic.netlify.app/" target="_blank" style="color:blue; text-decoration: underline; font-style: italic;">على netlify</a>
     </p>
-    <br>
+  <hr>     <br> 
     <iframe
   class="map"
   src="https://maps.google.com/maps?q=عيادة د. مختار الشرعبي تعز&t=&z=15&ie=UTF8&iwloc=&output=embed"
@@ -375,15 +412,23 @@ footer a img {
 </iframe>
 
 
-  <div class="cta-text-link">
-    <a href="https://maps.app.goo.gl/QkJ4ynAf3jjxdw8W6">العرض على خرائط جوجل</a>
-    
-    
+  
     <br>
-     <hr>    <div class="cta-text">
-    <a href="index.html"style="color: white;background-color: #238A80; padding:5px;border-radius:8px">العودة للرئيسية ←</a>
-  </div>
+
+<div class="cta-text" style="text-align: center;">
+    <a href="https://maps.app.goo.gl/QkJ4ynAf3jjxdw8W6" class="cta-button">العرض على خرائط جوجل</a>
+    </div>
+    <hr>
+    
+
+
+<div class="cta-text" style="text-align: center;">
+    <a href="index.html" class="cta-button">العودة للرئيسية ←</a>
+</div>
 <br>
+</div>
+
+
 
 
 <footer style="background-color: #004D40; color: white; text-align: center; padding: 10px 10px;">
@@ -403,7 +448,7 @@ footer a img {
    <a href="https://wa.me/967730433592" class="nav-link">✉️ إحجز الآن</a>
     </div>
   </nav>  
-     <p style="color:black; background-color: white; font-size:11px">📌 تعز، مفرق ماوية , مختبرات دار الصحة
+     <p style="color:black; background-color: white;font-size:10px">📌 تعز، مفرق ماوية , مبنى مختبرات دار الصحة
     </p> 
 <div class="footer-icons">
 
