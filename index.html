@@ -214,6 +214,11 @@
         font-size: 23px;
       }
     }
+        @media (min-width: 768px) {
+      .main-title { font-size: 40px !important; }
+      .sub-title { font-size: 29px !important; }
+      .header-logo img { height: 90px !important; }
+    }
 .whatsapp-section {
   background-color: white;
   text-align: center;
@@ -224,9 +229,9 @@
 }
 
 .whatsapp-icon {
-  width: 90px;
-  height: 90px;
-  
+  width: 70px;
+  height: 70px;
+  box-shadow: 0 1px 2px rgba(33, 95, 57, 0.9);
   object-fit: contain;
   animation: pulse 2s infinite; /* تطبيق تأثير النبض */
 }
@@ -284,11 +289,7 @@
     padding: 6px 18px;
   }
 }
-    @media (min-width: 768px) {
-      .main-title { font-size: 40px !important; }
-      .sub-title { font-size: 29px !important; }
-      .header-logo img { height: 90px !important; }
-    }
+
     .container {
       padding: 33px;
       max-width: 960px;
@@ -340,34 +341,21 @@
 .cta-button {
 
   white-space: nowrap; 
-  color: #008000;
+  color: black;
     background-color: white;
-    border: 1px solid black;
+    border: 1.0px solid  green;
     text-decoration: none;
     font-weight: bold;
     box-shadow: 0 4px 8px rgba(0, 128, 0, 0.2);
     width: fit-content;
     display: block;
-    margin: 10px auto;
+    margin: 20px auto;
     transition: all 0.3s ease;
     text-align: center;
     border-radius: 8px;
-    padding: 1px 6px;
+    padding: 1px 9px;
     font-size: 35px;
     max-width: fit-content;
-    animation: pulse 3s infinite; /* تطبيق تأثير النبض */
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1); /* الحجم الأصلي */
-  }
-  50% {
-    transform: scale(1.1); /* تكبير الأيقونة بنسبة 10% */
-  }
-  100% {
-    transform: scale(1); /* العودة للحجم الأصلي */
-  }
 }
 
 .cta-button:hover {
@@ -381,7 +369,7 @@
 }
 @media (min-width: 768px) {
  .cta-button {
-font-size: 34px!important
+font-size: 44px!important
 }
 }
 
@@ -408,34 +396,20 @@ font-size: 34px!important
 .cta-link a {
   background-color: #A1115E;
   color: white;
-  padding: 3px 12px;
-  border-radius: 10px;
-  font-size: 12px;
-  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 11px;
+  
   text-decoration: none;
   display: inline-block;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border: 1.5px solid white;
+  margin-top: 20px;box-shadow: 0 0 5px rgba(0, 35, 50, 0.7);
   line-height: 1.6;
   max-width: fit-content;
-  animation: pulse 3s infinite; /* تطبيق تأثير النبض */
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1); /* الحجم الأصلي */
-  }
-  50% {
-    transform: scale(1.1); /* تكبير الأيقونة بنسبة 10% */
-  }
-  100% {
-    transform: scale(1); /* العودة للحجم الأصلي */
-  }
-
-}
-
-@media (min-width: 768px) {
+    }
+ @media (min-width: 768px) {
   .cta-link a {
-    font-size: 35px;
+    font-size: 45px;
     border-radius: 16px;
     padding: 6px 18px;
   }
@@ -445,12 +419,14 @@ hr {
   margin: 25px 0;  /* هامش علوي وسفلي صغير (5px) وبدون هوامش جانبية */
   padding: 0;     /* إزالة أي padding */
   height: 3px;    /* ارتفاع الخط نفسه */
-  border: none;   /* إزالة الحدود الافتراضية */
+  border: 1px;   /* إزالة الحدود الافتراضية */
   background-color: #ddd; /* لون الخط */
 }
 /* سطح المكتب */
 @media (min-width: 768px) {
- 
+  hr {
+      margin: 65px 0; 
+          }
       p {
       padding-right: 20px;
     }
@@ -513,6 +489,7 @@ footer a img {
   ;margin: 20px;
     }
 }
+ 
   </style>
 </head>
 
@@ -531,27 +508,56 @@ footer a img {
     <p>استشاري متخصص في طب وجراحة ومناظير الأنف والأذن والحنجرة والرأس والعنق في محافظة تعز – اليمن.
       يقدم د. مختار الشرعبي رعاية طبية متخصصة تستند إلى خبرة علمية وعملية تمتد لعشر سنوات، مع استخدام أحدث الأجهزة والمناظير التشخيصية و الجراحية.</p><h2>المؤهلات والخبرة:</h2>
 <ul>
-  <li>دكتوراه في أمراض وجراحة ومناظير الأنف والأذن والحنجرة والرأس والعنق ، (بورد عربي) من سوريا.</li>
-  <li> حاصل على شهادة البورد العربي (الزمالة العربية) من المجلس العربي للإختصاصات الصحية التابع لجامعة الدول العربية في سوريا .. والتي تعتبر إحدى أرفع الشهادات العربية والعالمية..</li>
+  <li> <a href="images/S-cert..jpg" target="_blank" style="color:#227A9E; font-size:13px;" >  دكتوراه مهنية   </a>في أمراض وجراحة ومناظير الأنف والأذن والحنجرة والرأس والعنق ، </li>
+  <li> حاصل على شهادة
+  <a href="images/B-cert..jpg" target="_blank" style="color:#227A9E; font-size:13px;"> شهادة   البود العربي  </a> (الزمالة العربية) من المجلس العربي للإختصاصات الصحية التابع لجامعة الدول العربية في سوريا .. والتي تعتبر إحدى أرفع الشهادات العربية والعالمية..</li>
   <li>دورات متقدمة في الجراحة التنظيرية للأنف والأذن والحنجرة وقاع الجمجمة من جامعة عين شمس في القاهرة - جمهورية مصر العربية .</li>
-  <li>عضوية الأكاديمية الأمريكية والجمعية اليمنية لجراحة الأنف والأذن والحنجرة.</li>
+  <li>عضوية  
+  <a href="images/A-cert..jpg" target="_blank" style="color:#227A9E; font-size:13px;"> الأكاديمية الأمريكية  </a>  والجمعية اليمنية لجراحة الأنف والأذن والحنجرة.</li>
 </ul>
 
 <h2>ما يقدمه :</h2>
 <p>يهدف الدكتور مختار الشرعبي من خلال عيادته في محافظة تعز ، ركن مفرق ماوية إلى تقديم خدمة طبية متكاملة تقوم على الثقة والدقة والرعاية الإنسانية وبتكاليف تراعي الظروف المعيشية لذوي الدخل المحدود.
   الرقي بمستوى الخدمات الصحية في محافظة تعز والمحافظات المجاورة وجعل العيادة الخيار الأنسب لكل من يبحث عن أفضل دكتور استشاري متخصص في اليمن
-  <a href="about.html" style=" text-align: right;font-size: 11px; color: #007662; padding: 10px 10px"><strong>إقرأ المزيد<strong> ←</a></p>
+ <h2>
+    التزام مجتمعي وإنساني
+  </h2>
+  <ul>
+    <li>تقديم <strong>استشارات منخفضة التكلفة</strong> لغير القادرين.</li>
+    
+    <li>تقديم <strong>خصومات كبيرة للحالات غير القادرة</strong> والتعامل بمرونة مع الظروف المادية للمرضى.</li>
+  </ul>
+<a href="testimonials.html" style="text-decoration:underline;"> <h2 style="color: #227A9E;">سمعة طيبة  وثقة عالية </h2>  </a>
+ 
+  <ul style="margin: 0 0 20px 0; padding-right: 20px; color: #444; font-size: 12px;">
+    <li><strong>مصداقية وشفافية</strong> في شرح خطة العلاج والتكاليف دون أي رسوم خفية.</li>
+    <li>تطبيق <strong>بروتوكولات علاجية عالمية</strong> مع تقليل مدة الانتظار داخل العيادة.</li>
+  </ul>
+
+  <blockquote style="border-right: 4px solid #880E4F; padding: 10px 12px; margin: 20px 0; background-color: #fff; font-size: 12px; color: #555;">
+    <em>“إذا كنت تبحث عن أفضل دكتور أنف وأذن وحنجرة في اليمن أو استشاري حنجرة موثوق في تعز، فإن الدكتور مختار الشرعبي هو الخيار الأمثل – يجمع بين تقنيات المستشفيات العالمية وروح الطب الإنساني.”</em>
+  </blockquote>
+
+  <h2>
+    📍 موقع العيادة
+  </h2>
+  <p style="font-size: 12px; margin-bottom: 20px;">
+    <strong>العنوان:</strong>   تتميز العيادة بموقع جغرافي وسطي مناسب لكل المواطنين سواءاُ في القرى أو المدينة أو والمحافظات المجاورة، وذلك في محافظة تعز ، الحوبان، ركن مفرق ماوية, الشارع العام،  – مبنى مختبرات دار الصحة، تعز – اليمن
+  <a href="about.html" style=" text-align: right;font-size: 11px; color: #227A9E; padding: 10px 10px"><strong>إقرأ المزيد<strong> ←</a></p>
   <hr style="margin: 5px 0">
 </div>
-       <hr>    <br>
+    
     <div class="whatsapp-section">
     <a href="https://wa.me/967730433592" target="_blank">
       <img  src="images/social/whatsapp.jpeg" alt="واتساب" class="whatsapp-icon">
     </a></div>
-    <a style="font-size: 14px " href="https://wa.me/967730433592" target="_blank" class="cta-button">← احجز موعدك الآن</a>
+    <a style="font-size: 12px " href="https://wa.me/967730433592" target="_blank" class="cta-button">← احجز موعدك الآن</a>
 </div>
-<hr>  
 
+   <hr><div class="whatsapp-section" style="margin-top: 5px">
+  <a href="https://youtu.be/i0Va72Gpp-s?feature=shared" target="_blank">
+    <img src="images/social/youtube.jpeg" alt="واتساب" class="whatsapp-icon">
+  </a>
 <div class="cta-link">
   <a href="https://youtube.com/@ENTsharabi" target="_blank">👁 شاهد عملياتنا على YouTube</a></div>
   </div> <hr style="margin-bottom: 10px"> </div></div>
@@ -599,7 +605,7 @@ footer a img {
     </a>
 
     <a href="https://www.tiktok.com/@dr_mokhtar_sharabi" target="_blank">
-      <img src="images/social/tiktok.jpeg" alt="تيك توك" width=30" height="30" />
+      <img src="images/social/tiktok.jpeg" alt="تيك توك" width="30" height="30" />
     </a>
 
     <a href="mailto:drm9khtarnajy@gmail.com" target="_blank">
