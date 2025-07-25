@@ -303,7 +303,7 @@ nav {
       h1{
  margin-top: 0;!important
  }
-2 {
+h2 {
       margin-right: 20px;
       color: #0355AD;
       font-size: 13px;
@@ -327,16 +327,17 @@ nav {
     }
 
     .section-title {
-      background-color: #238A80;
-      color: white;
+      color: #BB0027;
+    background-color: white;
+    border: 1.5px solid  #004D40;
       text-align: center;
       padding: 15px 10px;
-      margin-top: 40px;
+      border: 1.5px solid red;margin-top: 40px;
       margin-bottom: 20px;
       font-size: 13px;
       font-weight: bold;
       border-radius: 8px;
-      box-shadow:  8px 8px rgba(1,0,0,0.1);
+      box-shadow: 0  6px rgba(65, 19, 57, 0.7);
     }    .blog-img {
       width: 90%;
       max-width: 500px;
@@ -345,24 +346,24 @@ nav {
       border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
-.back-link {
-  text-align: center;
-  margin: 10px 0;
-}
-
-.back-link a {
-  background-color: #238A80;
-  color: white;
-  padding: 3px 12px;
-  border-radius: 10px;
-  font-size: 14px;
-  font-weight: bold;
-  text-decoration: none;
-  display: inline-block;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  line-height: 1.6;
-  max-width: fit-content;
-  animation: pulse 3s infinite; /* تطبيق تأثير النبض */
+.cta-button {
+ white-space: nowrap; 
+  color: #004D40;
+    background-color: white;
+    border: 1.5px solid  #004D40;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(65, 18, 57, 0.2);
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    transition: all 0.3s ease;
+    text-align: center;
+    border-radius: 8px;
+    padding: 4px 9px;
+    font-size: 13px;
+    max-width: fit-content;
+    animation: pulse 3s infinite; /* تطبيق تأثير النبض */
 }
 
 @keyframes pulse {
@@ -378,27 +379,48 @@ nav {
 
 }
 
-/* سطح المكتب */
-@media (min-width: 768px) {
-  .back-link a {
-    font-size: 35px;
-    padding: 6px 18px;
-  }
+.cta-button:hover {
+   margin: 10px auto; background-color: #f0fff0;
+    max-width: fit-content;
+    box-shadow: 0 6px 12px rgba(0, 128, 0, 0.3);
+    font-size: 13px;
+    transform: translateY(-2px);
+    margin-top: 0; 
+    
 }
 
-    @media (min-width: 768px) {
-      .back-link a {
-        font-size: 30px;
-      }
+
+/* تنسيق سطح المكتب */
+@media (min-width: 768px) {
+    .cta-button {
+       .
+  display: block;
+  
+  max-width: fit-content;padding: 5px 25px 
+        font-size: 40px;
+        border-radius: 12px!important;
+        margin: 20px auto;
     }
+}
+@media (min-width: 768px) {
+ .cta-button {
+font-size: 54px!important
+}
+}
+      .cta-button {
+   text-align: center important;
+  } 
    .grid-container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 12px;
-      padding: 10px;
-      background-color: #BACEF9;
+      margin: 15px auto;
+      max-width: 98%;
+      grid-template-columns: repeat(auto-fit, minmax(1, 1fr));
+      gap: 22px 5px;
+      padding: 10px 10px;
+      border: 1px solid green;
+      background-color: #F2FFFF;
       border-radius: 10px;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
     @media (min-width: 768px) {
       .grid-container {
@@ -406,14 +428,15 @@ nav {
       }
     }
     .grid-item {
-      background-color: #ffffff;
-      padding: 15px;
+     border: 1px solid green;
+     background-color: #ffffff;
+      padding: 15px 10px;
       text-align: center;
       border-radius: 6px;
       font-size: 14px;
       color: #00332E;
       font-weight: bold;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+      box-shadow: 0 9px 6px rgba(33, 95, 97, 0.7);
       transition: transform 0.2s;
     }
     .grid-item:hover {
@@ -527,8 +550,8 @@ footer a img {
       <div class="grid-item">شد سقف الحلق وفك التصاقات اللسان</div>
       <div class="grid-item">فتح الرغامي التنفسي</div>
 </div>  <hr>
-  <div class="back-link">
-    <a href="index.html">← عودة للصفحة الرئيسية </a>
+  <div class="cta-button">
+    <a href="index.html" style="color: #004D40;">← عودة للصفحة الرئيسية </a>
   </div>
     </div>
 </a>
