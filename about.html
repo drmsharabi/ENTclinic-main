@@ -145,74 +145,7 @@ nav {
         font-size: 23px;
       }
     }
-.whatsapp-section {
-  background-color: white;
-  text-align: center;
-  flex-wrap: wrap;
- 
-}
 
-.whatsapp-icon {
-  width: 90px;
-  height: 90px;
-  
-  object-fit: contain;
-  animation: pulse 2s infinite; /* تطبيق تأثير النبض */
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1); /* الحجم الأصلي */
-  }
-  50% {
-    transform: scale(1.1); /* تكبير الأيقونة بنسبة 10% */
-  }
-  100% {
-    transform: scale(1); /* العودة للحجم الأصلي */
-  }
-}
-
-@media (min-width: 768px) {
-  .whatsapp-icon {
-    width: 195px;
-    height: 195px;
-  }
-}
-     .whatsapp-link{
-  text-align: center;
-  margin: 10px 0;
-}
-
-.whatsapp-link {
-  text-align: center;
-  
-}
-
-.whatsapp-link a {
-  background-color: #00A19D;
-  color: white !important;  /* ✅ تم التصحيح هنا */
-  padding: 5px 12px 4px;
-  ;border-radius: 10px;
-  font-size: 12px;
-  font-weight: bold;
-  text-decoration: none;
-  display: inline-block;
-  line-height: 1.6;
-}
-
-@media (min-width: 768px) {
-  .whatsapp-link a {
-    margin-top: 20px
-    ;font-size: 35px;
-    border-radius: 16px;
-    padding: 6px 18px;
-  }
-}
-    @media (min-width: 768px) {
-      .main-title { font-size: 40px !important; }
-      .sub-title { font-size: 29px !important; }
-      .header-logo img { height: 90px !important; }
-    }
     .container {
       padding: 33px;
       max-width: 960px;
@@ -275,28 +208,83 @@ hr {
     ul {
       padding-right: 20px;
     }
-    .cta-link, .back-home {
-      text-align: center;
-      margin: 30px auto;
-    }
+.cta-button {
 
-    .cta-link a,
-    .back-home a {
-      padding:7px 12px;
-      background-color: #238A80;
-      border-radius: 8px;
-      color: white;
-      
-      font-weight: bold;
-      font-size: 12px;
-    }
+  white-space: nowrap; 
+  color: black;
+    background-color: white;
+    border: 1.0px solid  green;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 128, 0, 0.2);
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    transition: all 0.3s ease;
+    text-align: center;
+    border-radius: 8px;
+    padding: 4px 9px;
+    font-size: 13px;
+    max-width: fit-content;
+}
+
+.cta-button:hover {
+   margin: 10px auto; background-color: #f0fff0;
+    max-width: fit-content;
+    box-shadow: 0 6px 12px rgba(0, 128, 0, 0.3);
+    font-size: 13px;
+    transform: translateY(-2px);
+    margin-top: 0; 
+    
+}
 @media (min-width: 768px) {
+ .cta-button {
+font-size: 54px!important
+}
+}
+
+/* تنسيق سطح المكتب */
+@media (min-width: 768px) {
+    .cta-button {
+       .
+  display: block;
+  
+  max-width: fit-content;padding: 5px 18px 
+        font-size: 40px;
+        border-radius: 12px!important;
+        margin: 20px auto;
+    }
+}
+      .cta-button {
+   text-align: center important;
+  } 
+.cta-link {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.cta-link a {
+  background-color: #A1115E;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 11px;
+  
+  text-decoration: none;
+  display: inline-block;
+  border: 1.5px solid white;
+  margin-top: 20px;box-shadow: 0 0 5px rgba(0, 35, 50, 0.7);
+  line-height: 1.6;
+  max-width: fit-content;
+    }
+ @media (min-width: 768px) {
   .cta-link a {
-    font-size: 10px;
+    font-size: 40px;
     border-radius: 16px;
-    padding: 8px 18px;
+    padding: 6px 18px;
   }
-} 
+  }
+
     .whatsapp-section {
       text-align: center;
       flex-wrap: wrap;
@@ -399,8 +387,8 @@ footer a img {
       <li>أحدث التقنيات في جراحات الجيوب الأنفية، الأذن، اضطرابات البلع، الصوت، التنفس</li>
     </ul>
   <hr>   <br>
-    <div class="cta-link">
-      <a href="services.html">📋 استعرض جميع الخدمات</a>
+    <div class="cta-button">
+      <a style="color: black" href="services.html">📋 استعرض جميع الخدمات</a>
     </div>  <hr>   
 
     <h2>لماذا تختارنا؟</h2>
@@ -413,13 +401,18 @@ footer a img {
 
 
          <hr>   <br>
-<div class="cta-link" style="margin-top: 5px">
-      <a href="https://wa.me/967730433592"> احجز موعدك الآن  ⇦ </a> </div>
-       <hr>   <div class="cta-link">
-      <a href="index.html">← العودة للرئيسية</a>
-    </div><hr>
+        <div class="whatsapp-section">
+    <a href="https://wa.me/967730433592" target="_blank">
+      <img  src="images/social/whatsapp.jpeg" alt="واتساب" class="whatsapp-icon">
+    </a></div>
+    <a style="font-size: 13px " href="https://wa.me/967730433592" target="_blank" class="cta-button">← احجز موعدك الآن</a>
+<hr>
+  
+        <div class="cta-button">
+      <a href="index.html" style="font-size;color:black">← العودة للرئيسية</a>
+    </div>
   </div>
-
+</div>
 <footer style="background-color: #004D40; color: white; text-align: center; padding: 10px 10px;">
 
   <nav style= "padding: 10px 0;gap: 3px">
