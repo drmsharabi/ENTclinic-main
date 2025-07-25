@@ -186,15 +186,14 @@
       ;font-size: 14
       29px;
     }
-    .blog-img {
-      width: 70%;
-      max-width: 700px;
+    .blog-img  {
+      width: 70% !important;
+      max-width: 600px !important;
+      height: auto !important;
       display: block;
-      margin: 10 auto 30px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      margin: 0 auto 20px;
+      border-radius: 12px;
     }
-
 
 .post p {
       color: #444;
@@ -213,19 +212,70 @@ hr {
   margin-right: 0px;
   margin-bottom: 0px; /* ⇦ هذه تضيف تباعداً بين المقالات */
 }
-    .back-home {
-      text-align: center;
-      margin: 40px 0;
-    } 
-   .back-home a {
-      padding: 7px
-      ;background-color: #238A80;
-      border-radius: 8px;
-      color: white;
-      text-decoration: underline;
-      font-weight: bold;
-      font-size: 12px;
+.cta-button {
+ white-space: nowrap; 
+  color: #004D40;
+    background-color: white;
+    border: 1.5px solid  #004D40;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(65, 18, 57, 0.2);
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    transition: all 0.3s ease;
+    text-align: center;
+    border-radius: 8px;
+    padding: 4px 9px;
+    font-size: 13px;
+    max-width: fit-content;
+    animation: pulse 3s infinite; /* تطبيق تأثير النبض */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1); /* الحجم الأصلي */
+  }
+  50% {
+    transform: scale(1.1); /* تكبير الأيقونة بنسبة 10% */
+  }
+  100% {
+    transform: scale(1); /* العودة للحجم الأصلي */
+  }
+
+}
+
+.cta-button:hover {
+   margin: 10px auto; background-color: #f0fff0;
+    max-width: fit-content;
+    box-shadow: 0 6px 12px rgba(0, 128, 0, 0.3);
+    font-size: 13px;
+    transform: translateY(-2px);
+    margin-top: 0; 
+    
+}
+
+
+/* تنسيق سطح المكتب */
+@media (min-width: 768px) {
+    .cta-button {
+       .
+  display: block;
+  
+  max-width: fit-content;padding: 5px 25px 
+        font-size: 40px;
+        border-radius: 12px!important;
+        margin: 20px auto;
     }
+}
+@media (min-width: 768px) {
+ .cta-button {
+font-size: 54px!important
+}
+}
+      .cta-button {
+   text-align: center important;
+  } 
     .post a {
       text-decoration: underline;
       font-weight: bold;
@@ -369,7 +419,7 @@ footer a img {
 <br><br><hr><br>
 </div>
 </div>
-      <div class="back-home">
+      <div class="cta-button">
     <a href="index.html">← عودة للصفحة الرئيسية</a></div>
     <br>
 <footer style="background-color: #004D40; color: white; text-align: center; padding: 10px 10px;">
