@@ -21,10 +21,10 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "MedicalClinic",
-    "name": "عيادة د. مختار الشرعبي",
-    "image": "https://ent.drmsharabi.com-logo.png",
-    "url": "https://ent.drmsharabi.com",
+    "@type": "medicalArticlesIndex",
+    "name": "المدونة الطبية",
+    "image": "https://ent.drmsharabi.com/images/clinic-logo.png",
+    "url": "https://ent.drmsharabi.com/blog",
     "telephone": "+967730433592",
     "address": {
       "@type": "PostalAddress",
@@ -67,7 +67,7 @@
       shadow: 0 6px 4px rgba(236, 235, 255, 0.9);
       margin: 2px;display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 15px;
     }
     .nav-row {
      text-decoration: underline; display: flex;
@@ -78,12 +78,13 @@
     }
     .nav-link {
      background-color: #004D40;
-      padding: 2px 7px;
+      padding: 2px 5px;
       border-radius: 9px;
       color: #E0F2F1;
       font-weight: bold;
       text-decoration: none;
       box-shadow: 0 0 0 0.3px rgba(243, 245, 212, 4);
+      font-size: 10px;
       transition: all 0.3s ease;
       display: inline-block;
     }
@@ -155,7 +156,7 @@
       background: white;
       padding: 30px;
       border-radius: 8px;
-      font-size: 11px;
+      font-size: 13px;
     }
     h1 {
       background-color: #EEFFFE;
@@ -165,7 +166,7 @@
       padding: 5px;
       box-shadow: 0 9px 6px rgba(33, 95, 97, 0.7);
       border-radius: 9px;
-      font-size: 15px;
+      font-size: 13px;
       margin: 5px auto;
       width: 90%;
       max-width: 70%;
@@ -173,58 +174,85 @@
    @media (min-width: 768px) {
      h1{
  border-radius: 20px;
- font-size: 37px;
+ font-size: 47px;
  margin: 40px auto;
  padding-right: 20px;
  }
   }
-        h2 {
+    h2 {
       color: #004D40;
-      font-size: 15px;
+      ;font-size: 13px;
     }
-    h2, h3 {
-      color: #004D40;
-      text-align: center;
+        h3 {
+      color: blue;
+      margin-top: 10px;
+      margin-right: 22px;
+      font-size: 13px;
     }
-    p, li {
-      margin-right: 21px;font-size: 13px;
-      line-height: 1.8;
+    p {
+      font-size: 11px;
+      padding: 15px;line-height: 1.8;
+      margin-right: 15px;
       color: #333;
     }
-        p, {
-      margin-right: 10px;font-size: 14px
-    }
+
     ul {
-      padding-right: 10px;
-      margin-top: 10px;
+      padding-right: 15px;
     }
-       @media (min-width: 768px) {
-    p, {
-      margin-right: 40px;font-size: 12px
-    }
-    p, li {
-      margin-right: 80px;font-size: 13px
-    }
-        ul {
-      maegin-right: 90px;
-        }
-    }
- hr {
-  border: none;
-  border-bottom: 3px solid #ccc;
-  margin-top: 20px;
+hr {
+  margin: 15px 0 15 ;  /* هامش علوي وسفلي صغير (5px) وبدون هوامش جانبية */
+  padding: 1;     /* إزالة أي padding */
+  height: 1px;    /* ارتفاع الخط نفسه */
+  border: none;   /* إزالة الحدود الافتراضية */
+  background-color: #ddd; /* لون الخط */
 }
-   .whatsapp-section {
+    li {
+      font-size: 12px;
+     margin-right: 12px
+    }
+  @media (min-width: 768px) {
+      ul {
+      margin-right: 45px;
+   font-size: 11px;
+      padding-right: 45px;
+    }
+       post a {
+          padding: 95px;font-size: 11px;
+     margin-right: 95px;
+         }
+      li {
+     margin-top: 5px;
+     font-size: 10px;
+     padding: 40px;font-size: 12px;
+     margin-right: 40px;
+   }
+   hr {
+      
+      margin: 45px 0;   
+    }
+    }
+    .blog-img  {
+      width: 70% !important;
+      max-width: 600px !important;
+      height: auto !important;
+      display: block;
+      margin: 0 auto 20px;
+            box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
+      border-radius: 12px;
+    }
+.whatsapp-section {
   background-color: white;
   text-align: center;
   flex-wrap: wrap;
- 
+ display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .whatsapp-icon {
-  width: 90px;
-  height: 90px;
-  
+  width: 70px;
+  height: 70px;
+        box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
   object-fit: contain;
   animation: pulse 2s infinite; /* تطبيق تأثير النبض */
 }
@@ -243,11 +271,16 @@
 
 @media (min-width: 768px) {
   .whatsapp-icon {
-    width: 195px;
-    height: 195px;
+    width: 165px;
+    height: 165px;
   }
+  .whatsapp-section {
+  flex-direction: row; 
+    justify-content: center;
+    gap: 20px;
+    }
 }
-    .whatsapp-link{
+     .whatsapp-link{
   text-align: center;
   margin: 10px 0;
 }
@@ -268,6 +301,7 @@
   display: inline-block;
   line-height: 1.6;
 }
+
 @media (min-width: 768px) {
   .whatsapp-link a {
     margin-top: 20px
@@ -275,53 +309,127 @@
     border-radius: 16px;
     padding: 6px 18px;
   }
-} 
-.cta-link {
-  text-align: center;
-  margin: 30px auto;
 }
 
-.cta-link a {
-  background-color: #238A80;
-  color: white;
-  padding: 3px 12px;
-  border-radius: 10px;
-  font-size: 14px;
-  font-weight: bold;
-  text-decoration: none;
-  display: inline-block;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  line-height: 1.6;
-  margin: 3px auto;
+.post p {
+      color: #444;
+      margin: 6px 8px 8px;
+      font-size: 12px;
+      line-height: 1.6;
+    }
+
+    .post {
+  border-bottom: 0px solid #ddd;
+  padding: 20px 0;
+  margin-right: 0px;
+  margin-bottom: 0px; /* ⇦ هذه تضيف تباعداً بين المقالات */
+}
+.cta-button {
+ white-space: nowrap; 
+  color: #004D40;
+    background-color: white;
+    border: 1.5px solid  #004D40;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(65, 18, 57, 0.2);
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    transition: all 0.3s ease;
+    text-align: center;
+    border-radius: 8px;
+    padding: 4px 9px;
+    font-size: 11px;
+    max-width: fit-content;
+    animation: pulse 3s infinite; /* تطبيق تأثير النبض */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1); /* الحجم الأصلي */
+  }
+  50% {
+    transform: scale(1.1); /* تكبير الأيقونة بنسبة 10% */
+  }
+  100% {
+    transform: scale(1); /* العودة للحجم الأصلي */
+  }
+
+}
+
+.cta-button:hover {
+   margin: 10px auto; background-color: #f0fff0;
+    max-width: fit-content;
+    box-shadow: 0 6px 12px rgba(0, 128, 0, 0.3);
+    font-size: 13px;
+    transform: translateY(-2px);
+    margin-top: 0; 
+    
+}
+
+
+/* تنسيق سطح المكتب */
+@media (min-width: 768px) {
+    .cta-button {
+       .
+  display: block;
+  
+  max-width: fit-content;padding: 5px 25px 
+        font-size: 30px;
+        border-radius: 12px!important;
+        margin: 20px auto;
+    }
+}
+@media (min-width: 768px) {
+ .cta-button {
+font-size: 44px!important
+}
+}
+      .cta-button {
+   text-align: center important;
+  } 
+    .post a {
+      text-decoration: underline;
+      font-weight: bold;
+      color: #004D40;
+      display: inline-block;
+      font-size: 16px;
+      font-style: italic;
+      margin-left: 10px
+      margin-right: 0px;
+      margin-top: 10px;
+      text-align: center;
+      text-align: right;
+    }
+
+    @media (min-width: 768px) {
+      .post a {
+        font-size: 50px;
+      }
+    }
+
+
+
+    footer {
+      background-color: #004D40;
+      color: white;
+      text-align: center;
+      padding: 5px 0 10px;
+      font-size: 13px;
+      line-height: 1.7;
+    }
+.footer-icons {
+  margin-bottom: 20px; /* للموبايل */
 }
 
 @media (min-width: 768px) {
-  .cta-link a {
-    font-size: 35px;
-    padding: 6px 18px;
+  .footer-icons {
+    margin-bottom: 40px; /* لسطح المكتب */
   }
 }
 
-    .blog-img {
-      width: 70%;
-      max-width: 700px;
-      display: block;
-      border: 1px solid white;
-      margin: 10 auto ;
-      border-radius: 15px;
-      box-shadow: 0 0 4px rgba(56, 46, 58, 1);
-    }
-  @media (min-width: 768px) {
-    img { 
-      border-radius: 50px
-      border: 66px solid white;
-      margin: 10 auto ;
-      box-shadow: 0 0 18px rgba(56, 46, 158, 5);
-    }
-  }
-
 footer {
-      
+      margin-top: 10px
       ;background-color: #004B8C;
       color: white !important;
       text-align: center;
@@ -388,8 +496,7 @@ footer a img {
   <h1>تجمع السوائل في الأذن الوسطى – الأسباب والعلاج</h1>
   
       <p style="color: blue"style="font-size:11px">✍️ دكتور / مختار الشرعبي</p>
-     
-  <div>     <img style="display: block; margin:20px auto;" src="images/blog/hearing.jpeg" alt="طفل ضعيف السمع" style="width: 70%; height: auto; display: block;" class="blog-img" />
+  <div>  <img style="display: block; margin:20px auto;" src="images/blog/hearing.jpeg" alt="طفل ضعيف السمع" style="width: 70%; height: auto; display: block;" class="blog-img" />
     </div>
   <p>تجمع السوائل في الأذن الوسطى (الارتشاح) هو حالة شائعة خصوصًا عند الأطفال، وقد تكون مزمنة دون أعراض واضحة في بدايتها. يُعد هذا التجمع سببًا رئيسيًا لانخفاض السمع المؤقت وتأخر النطق عند الأطفال.</p>    <h2>ما الأسباب الشائعة؟</h2>  
   <ul>  
@@ -407,32 +514,24 @@ footer a img {
   <p>يُعتمد على الفحص السريري بمنظار الأذن، ويُؤكد التشخيص بإجراء تخطيط السمع (Tympanometry) الذي يُظهر وجود سائل خلف طبلة الأذن.</p>    <h2>ما هو العلاج؟</h2>  
   <ul>  
     <li>العلاج الأولي يشمل أدوية مثل مضادات الحساسية، أو مزيلات الاحتقان، أو كورتيزون موضعي.</li>  
-    <li>إذا استمر وجود السوائل لأكثر من 3 أشهر أو أثرت على السمع، يتم تركيب أنبوب تهوية (Ventilation Tube) باستخدام المنظار.</li>  
-<hr><br><div class="whatsapp-section" style="margin-top: 5px">
+    <li>إذا استمر وجود السوائل لأكثر من 3 أشهر أو أثرت على السمع، يتم تركيب أنبوب تهوية (Ventilation Tube) باستخدام المنظار.</li>   <hr> 
+<div class="whatsapp-section" style="margin-top: 5px">
   <a href="https://youtu.be/2p9La2_KpV0?feature=shared" target="_blank">
-    <img src="images/social/youtube.jpeg" alt="واتساب" class="whatsapp-icon">
+    <img src="images/social/youtube.jpeg" alt="يوتيوب" class="whatsapp-icon">
   </a>
 
-    <div class="whatsapp-link">
-    <a href="https://youtu.be/2p9La2_KpV0?feature=shared"> شاهد نموذج عملياتنا  على YouTub </a>
+    
+    <a href="https://youtu.be/2p9La2_KpV0?feature=shared" style="color:#004D40" class="cta-button" />
+ شاهد نموذج عملياتنا </a>
 
-<hr>
-    
-    
-  </div>
-<br>
-    
-    
-    <div class="cta-link">
-    <a href="index.html">← عودة للصفحة الرئيسية </a> 
-<hr>
+</div>
+      <hr> 
+    <a href="blog.html" style="color:#004D40" class="cta-button" />>← عودة لصفحة المدونة</a>
+ <hr> 
+    <a href="index.html"style=":color:#004D40" class="cta-button">← عودة للصفحة الرئيسية</a></div>
+  </div> 
 
-   <div class="cta-link">
-    <a href="blog.html">← عودة لصفحة المدونة</a>
-  </div>
- </div>
- </div> </div>
-<footer style="background-color: #004D40; color: white; text-align: center; padding: 10px 10px;">
+<footer style="background-color: #004D40; color: white; text-align: center; padding: 10px 4px;">
 
   <nav style= "padding: 10px 0;gap: 3px">
     <div class="nav-row">
@@ -449,7 +548,7 @@ footer a img {
    <a href="https://wa.me/967730433592" class="nav-link">✉️ إحجز الآن</a>
     </div>
   </nav>  
-     <p>📌️  محافظة تعز، ركن مفرق ماوية , مختبرات دار الصحة
+     <p style="font-size:9px">📌 تعز، ركن مفرق ماوية , مبنى مختبرات دار الصحة
     </p> 
       
 <div class="footer-icons">
@@ -475,11 +574,11 @@ footer a img {
     </a>
 
     <a href="https://www.tiktok.com/@dr_mokhtar_sharabi" target="_blank">
-      <img src="images/social/tiktok.jpeg" alt="تيك توك" width=30" height="30" />
+      <img src="images/social/tiktok.jpeg" alt="تيك توك" width="30" height="30" />
     </a>
 
     <a href="mailto:drm9khtarnajy@gmail.com" target="_blank">
-      <img src="images/social/gmail.jpeg" alt="بريد إلكتروني" width="30" height="30" />
-  </div>    </a>
+            <img src="images/social/gmail.jpeg" alt="بريد إلكتروني" width="30" height="30" />
+  </a>  </div>  
   </div>
- </footer>
+</footer>
