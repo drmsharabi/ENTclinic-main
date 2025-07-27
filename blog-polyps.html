@@ -57,6 +57,7 @@
   <style>
     body {
       font-family: 'Cairo', sans-serif;
+        overflow-x: hidden; /* لمنع التمرير الأفقي */
       margin: 0;
       padding: 0;
       direction: rtl;
@@ -157,13 +158,12 @@
     
     }
     .container {
-      max-width: 960px;
-      margin: 30px auto;
-      background: white;
-      padding: 30px;
-      border-radius: 8px;
-      font-size: 13px;
-    }
+  max-width: 100%; /* بدلاً من 960px */
+  margin: 15px auto;
+  padding: 7px; /* تقليل الحشوة */
+  box-sizing: border-box; /* مهم جداً */
+}
+
     h1 {
       background-color: #EEFFFE;
       color: #A1115E;
@@ -197,14 +197,19 @@
     }
     p {
       font-size: 12px;
-      padding: 15px;line-height: 1.8;
-      margin-right: 15px;
+      padding: 7px;line-height: 1.8;
+      margin-right: 7px;
       color: #333;
     }
 
-    ul {
-      padding-right: 15px;
-    }
+ul {
+  padding-right: 10px; /* تقليل من 15px */
+  margin-right: 0;
+}
+
+li {
+  margin-right: 5px; /* تقليل من 12px */
+}
 hr {
   margin: 15px 0 15 ;  /* هامش علوي وسفلي صغير (5px) وبدون هوامش جانبية */
   padding: 1;     /* إزالة أي padding */
@@ -397,7 +402,7 @@ font-size: 44px!important
       font-weight: bold;
       color: #004D40;
       display: inline-block;
-      font-size: 16px;
+      font-size: 1px;
       font-style: italic;
       margin-left: 10px
       margin-right: 0px;
@@ -513,7 +518,7 @@ footer a img {
     <li>شخير أثناء النوم</li>  
     <li>التهابات متكررة في الأذن الوسطى</li>  
     <li>اضطرابات في النوم وتأخر النطق أحيانًا</li>  
-  </ul>    <p style="color:#880E4F"><strong>   ✓ إرتباط اللحمية باللوزتين:</strong> <p></p>في كثير من الحالات، يكون تضخم اللحمية البلعومية مترافقًا مع تضخم اللوزتين. وقد يتطلب العلاج استئصالًا مزدوجًا للحمية البلعومية واللوزتين لضمان تحسن أفضل.  </ul>    <p style="color:#880E4F"><strong>   ❌من الأخطاء الشائعة :</strong> <p></p>قيام بعض غير المختصين باستئصال اللوزتين فقط، رغم وجود تضخم واضح في اللحمية، مما يؤدي إلى:</p>  
+  </ul>    <p style="color:#880E4F"><strong>   ✓ إرتباط اللحمية باللوزتين:</strong> <p>في كثير من الحالات، يكون تضخم اللحمية البلعومية مترافقًا مع تضخم اللوزتين. وقد يتطلب العلاج استئصالًا مزدوجًا للحمية البلعومية واللوزتين لضمان تحسن أفضل.  </ul>    <p style="color:#880E4F"><strong>   ❌من الأخطاء الشائعة :</strong> <p>قيام بعض غير المختصين باستئصال اللوزتين فقط، رغم وجود تضخم واضح في اللحمية، مما يؤدي إلى:</p>  
   <ul>  
     <li>رد فعل مناعي وتضخم مضاعف في اللحمية</li>  
     <li>تفاقم أعراض الانسداد</li>  
@@ -556,7 +561,7 @@ footer a img {
     <li>صوت أنفي عند الكلام</li>  
     <li>سعال مزمن</li>  
 </ul>    <p style="color:#880E4F"><strong> ⚠️ تنبيه:</strong></p> 
-<p style="color:blue">
+<p style="color:#00709E">
 القرينات ليست لحميات، واستئصالها الكامل مضر. يُجرى فقط تصغير جزئي في حالات محددة.</p>    <p><strong>التدخل الجراحي للقرينات الأنفية:</strong></p>  
   <ul>  <li>يُجرى فقط عند فشل العلاج الدوائي</li>  
 <li>تصغير جزئي وليس استئصالًا كاملاً</li>  
@@ -567,7 +572,7 @@ footer a img {
   <p>  
     التشخيص السليم والتقييم بالمنظار ضروري لتحديد سبب انسداد الأنف بدقة.<br><br>  
 <p style="color:#880E4F; text-decoration: underline"><strong> ⚠️ تنبيه:</strong></p> 
-<p style="color:blue"> <strong> </strong> نحذر من إجراء عمليات على يد غير المختصين، فالتدخل الخاطئ قد يزيد من تعقيد الحالة.<p><br>
+<p style="color:#00709E"> <strong>نحذر من إجراء عمليات على يد غير المختصين، فالتدخل الخاطئ قد يزيد من تعقيد الحالة.<p><br>
 
   
      <hr>   
