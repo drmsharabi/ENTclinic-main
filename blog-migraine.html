@@ -156,14 +156,22 @@
       }
     
     }
-    .container {
-      max-width: 960px;
-      margin: 10px auto;
-      background: white;
-      padding: 30px;
-      border-radius: 8px;
-      font-size: 13px;
+
+   hr {
+      hight: 6px;
+      margin: 45px 0;   
     }
+    }
+    .blog-img  {
+      width: 70% !important;
+      max-width: 600px !important;
+     .container {
+  max-width: 100%; /* بدلاً من 960px */
+  margin: 15px auto;
+  padding: 7px; /* تقليل الحشوة */
+  box-sizing: border-box; /* مهم جداً */
+}
+
     h1 {
       background-color: #EEFFFE;
       color: #A1115E;
@@ -186,25 +194,30 @@
  }
   }
     h2 {
-      color: #00735F;
+      color: #004D40;
       ;font-size: 13px;
     }
         h3 {
-      color: blue;
+      color: #00709E;
       margin-top: 10px;
-      margin-right: 10px;
+      margin-right: 22px;
       font-size: 13px;
     }
     p {
       font-size: 12px;
-      padding: 15px;line-height: 1.8;
-      margin-right: 5px;
+      padding: 7px;line-height: 1.8;
+      margin-right: 7px;
       color: #333;
     }
 
-    ul {
-      padding-right: 2px;
-    }
+ul {
+  padding-right: 10px; /* تقليل من 15px */
+  margin-right: 0;
+}
+
+li {
+  margin-right: 5px; /* تقليل من 12px */
+}
 hr {
   margin: 15px 0 15 ;  /* هامش علوي وسفلي صغير (5px) وبدون هوامش جانبية */
   padding: 1;     /* إزالة أي padding */
@@ -214,38 +227,33 @@ hr {
 }
     li {
       font-size: 12px;
-     margin-right: 4px
+     margin-right: 12px
     }
   @media (min-width: 768px) {
       ul {
-      margin-right: 15px;
+      margin-right: 45px;
    font-size: 12px;
-      padding-right: 15px;
+      padding-right: 45px;
     }
        post a {
           padding: 95px;font-size: 12px;
-     margin-right: 5px;
+     margin-right: 95px;
          }
-      li {
-     margin-top: 5px;
-     font-size: 12px;
-     padding: 40px;font-size: 12px;
-     margin-right: 25px;
-   }
+
+  li {
+    margin-top: 2px; /* قللت من 5px إلى 2px */
+    font-size: 12px;
+    padding: 5px 10px; /* بدلاً من 40px في جميع الجهات */
+    margin-right: 20px; /* قللت من 40px */
+    line-height: 1.4; /* للتحكم في المسافة بين الأسطر */
+  } 
    hr {
-      hight: 6px;
-      margin: 45px 0;   
-    }
-    }
-    .blog-img  {
-      width: 70% !important;
-      max-width: 600px !important;
-      height: auto !important;
+     height: auto !important;
       display: block;
       margin: 2px auto;
             box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
       border-radius: 12px;
-    }
+    }}
 .whatsapp-section {
   background-color: white;
   text-align: center;
