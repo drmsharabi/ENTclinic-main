@@ -16,7 +16,7 @@
   <meta property="og:type" content="article" />
 
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
-<!-- ✅ وسوم تحديد الموقع الجغرافي -->
+<!-- ✅ وسوم تحديد الموقع الجغرافي --> 
   <meta name="geo.region" content="YE" />
   <meta name="geo.placename" content="Taiz" />
   <meta name="geo.position" content="13.5786;44.0211" />
@@ -53,7 +53,6 @@
   </script>
 
   <!-- ✅ تنسيقات CSS -->
-
   <style>
     body {
       font-family: 'Cairo', sans-serif;
@@ -63,32 +62,34 @@
       text-align: right;
       background-color: #f9f9f9;
     }
+  
  /* ✅ NAV */
     nav {
      
      
-      text-align: center;
-      font-size: 11px;
+     text-align: center;
+      font-size: 13px;
       shadow: 0 6px 4px rgba(236, 235, 255, 0.9);
       margin: 2px;display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 25px;
     }
     .nav-row {
      text-decoration: underline; display: flex;
       justify-content: center;
       flex-wrap: wrap;
       text-decoration: none;
-      rgba(236, 235, 255, 0.9);gap: 17px;
+      rgba(236, 235, 255, 0.9);gap: 10px;
     }
     .nav-link {
      background-color: #004D40;
-      padding: 2px 7px;
+      padding: 2px 5px;
       border-radius: 9px;
       color: #E0F2F1;
-      font-weight: bold;
+      
       text-decoration: none;
       box-shadow: 0 0 0 0.3px rgba(243, 245, 212, 4);
+      font-size: 11px;
       transition: all 0.3s ease;
       display: inline-block;
     }
@@ -139,7 +140,7 @@
       white-space: nowrap;
     }
     .sub-title {
-      font-size: 10px;
+      font-size: 13px;
       color: #D0FFFC;
       white-space: nowrap;
     }
@@ -151,16 +152,17 @@
         font-size: 30px;
       }
       .sub-title {
-        font-size: 23px;
+        font-size: 30px;
       }
+    
     }
     .container {
       max-width: 960px;
-      margin: 30px auto;
+      margin: 10px auto;
       background: white;
-      padding: 10px;
+      padding: 30px;
       border-radius: 8px;
-      font-size: 11px;
+      font-size: 13px;
     }
     h1 {
       background-color: #EEFFFE;
@@ -170,7 +172,7 @@
       padding: 5px;
       box-shadow: 0 9px 6px rgba(33, 95, 97, 0.7);
       border-radius: 9px;
-      font-size: 17px;
+      font-size: 13px;
       margin: 5px auto;
       width: 90%;
       max-width: 70%;
@@ -178,76 +180,228 @@
    @media (min-width: 768px) {
      h1{
  border-radius: 20px;
- font-size: 42px;
- margin: 40px auto;
+ font-size: 47px;
+ margin: 10px auto;
  padding-right: 20px;
  }
   }
-        h2 {
-      color: #A1115E;
-      font-size: 14px;
+    h2 {
+      color: #00735F;
+      ;font-size: 13px;
     }
-     h3 {
+        h3 {
       color: blue;
+      margin-top: 10px;
+      margin-right: 10px;
       font-size: 13px;
     }
-  p, li {
-     list-style-type: disc;
-     margin-right: 20px;font-size: 12px;
-      line-height: 1.8;
+    p {
+      font-size: 12px;
+      padding: 15px;line-height: 1.8;
+      margin-right: 5px;
       color: #333;
     }
-     p, {
-      margin-right: 10px;font-size: 12px
-    }
+
     ul {
+      padding-right: 2px;
+    }
+hr {
+  margin: 15px 0 15 ;  /* هامش علوي وسفلي صغير (5px) وبدون هوامش جانبية */
+  padding: 1;     /* إزالة أي padding */
+  height: 1px;    /* ارتفاع الخط نفسه */
+  border: none;   /* إزالة الحدود الافتراضية */
+  background-color: #ddd; /* لون الخط */
+}
+    li {
       font-size: 12px;
-      padding-right: 10px;
-      margin-top: 10px;
+     margin-right: 4px
     }
-       @media (min-width: 768px) {
-    p, {
-      margin-right: 20px;font-size: 12px
+  @media (min-width: 768px) {
+      ul {
+      margin-right: 15px;
+   font-size: 12px;
+      padding-right: 15px;
     }
-    p, li {
-      margin-right: 50px;font-size: 13px
+       post a {
+          padding: 95px;font-size: 12px;
+     margin-right: 5px;
+         }
+      li {
+     margin-top: 5px;
+     font-size: 12px;
+     padding: 40px;font-size: 12px;
+     margin-right: 25px;
+   }
+   hr {
+      hight: 6px;
+      margin: 45px 0;   
     }
-        ul {
-      maegin-right: 30px;
-        }
     }
- hr {
-  border: none;
-  border-bottom: 3px solid #ccc;
-  margin-top: 20px;
-}
-
-.cta-link {
+    .blog-img  {
+      width: 70% !important;
+      max-width: 600px !important;
+      height: auto !important;
+      display: block;
+      margin: 2px auto;
+            box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
+      border-radius: 12px;
+    }
+.whatsapp-section {
+  background-color: white;
   text-align: center;
-  margin: 30px auto;
+  flex-wrap: wrap;
+ display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.cta-link a {
-  background-color: #238A80;
-  color: white;
-  padding: 3px 12px;
-  border-radius: 10px;
-  font-size: 14px;
+.whatsapp-icon {
+  width: 70px;
+  height: 70px;
+        box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
+  object-fit: contain;
+  animation: pulse 2s infinite; /* تطبيق تأثير النبض */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1); /* الحجم الأصلي */
+  }
+  50% {
+    transform: scale(1.1); /* تكبير الأيقونة بنسبة 10% */
+  }
+  100% {
+    transform: scale(1); /* العودة للحجم الأصلي */
+  }
+}
+
+@media (min-width: 768px) {
+  .whatsapp-icon {
+    width: 195px;
+    height: 195px;
+  }
+  .whatsapp-section {
+  flex-direction: row; 
+    justify-content: center;
+    gap: 20px;
+    }
+}
+     .whatsapp-link{
+  text-align: center;
+  margin: 10px 0;
+}
+
+.whatsapp-link {
+  text-align: center;
+  
+}
+
+.whatsapp-link a {
+  background-color: #EEFAFF;
+  color: black !important;  /* ✅ تم التصحيح هنا */
+  padding: 5px 12px 4px;
+  ;border-radius: 10px;
+  font-size: 12px;
   font-weight: bold;
   text-decoration: none;
   display: inline-block;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   line-height: 1.6;
-  margin: 3px auto;
 }
 
 @media (min-width: 768px) {
-  .cta-link a {
-    font-size: 45px;
-   border-radius: 20px;
-   padding: 6px 20px;
+  .whatsapp-link a {
+    margin-top: 20px
+    ;font-size: 35px;
+    border-radius: 16px;
+    padding: 6px 18px;
   }
 }
+
+.post p {
+      color: #444;
+      
+      font-size: 12px;
+      line-height: 1.6;
+    }
+
+    .post {
+  border-bottom: 0px solid #ddd;
+  padding: 10px 0;
+  margin-right: 2px;
+  margin-bottom: 0px; /* ⇦ هذه تضيف تباعداً بين المقالات */
+}
+.cta-button {
+ white-space: nowrap; 
+  color: black;
+    background-color: #EEFAFF;
+    border: 1.5px solid  #004D40;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(65, 18, 57, 0.2);
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    transition: all 0.3s ease;
+    text-align: center;
+    border-radius: 8px;
+    padding: 2px 9px;
+    font-size: 12px;
+    max-width: fit-content;
+    animation: pulse 3s infinite; /* تطبيق تأثير النبض */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1); /* الحجم الأصلي */
+  }
+  50% {
+    transform: scale(1.1); /* تكبير الأيقونة بنسبة 10% */
+  }
+  100% {
+    transform: scale(1); /* العودة للحجم الأصلي */
+  }
+
+}
+
+.cta-button:hover {
+   margin: 10px auto; background-color: #FAFFD4;
+    max-width: fit-content;
+    box-shadow: 0 6px 12px rgba(0, 128, 0, 0.3);
+    font-size: 13px;
+    transform: translateY(-2px);
+    margin-top: 0; 
+    
+}
+
+
+/* تنسيق سطح المكتب */
+@media (min-width: 768px) {
+    .cta-button {
+       .
+  display: block;
+  
+  max-width: fit-content;padding: 5px 25px 
+        font-size: 30px;
+        border-radius: 12px!important;
+        margin: 20px auto;
+    }
+}
+@media (min-width: 768px) {
+ .cta-button {
+font-size: 44px!important
+}
+}
+      .cta-button {
+   text-align: center important;
+  } 
+
+    @media (min-width: 768px) {
+      .post a {
+        font-size: 50px;
+      }
+    }
+
+
     footer {
       background-color: #004D40;
       color: white;
@@ -265,42 +419,15 @@
     margin-bottom: 40px; /* لسطح المكتب */
   }
 }
-    .blog-img {
-      width: 70%;
-      max-width: 700px;
-      display: block;
-      border: 1px solid white;
-      margin: 10 auto ;
-      border-radius: 15px;
-      box-shadow: 0 0 4px rgba(56, 46, 58, 1);
-    }
-  @media (min-width: 768px) {
-    .blog-img { 
-      border-radius: 50px
-      border: 66px solid white;
-      margin: 10 auto ;
-      box-shadow: 0 0 18px rgba(56, 46, 158, 5);
-    }
-  }
-
-    footer {
-      background-color: #004D40;
-      color: white;
+footer {
+      
+      ;background-color: #004B8C;
+      color: white !important;
       text-align: center;
-      padding: 5px 0 10px;
-      font-size: 13px;
+      padding: 10px 10px;
+      font-size: 12px;
       line-height: 1.7;
     }
-.footer-icons {
-  margin-bottom: 20px; /* للموبايل */
-}
-
-@media (min-width: 768px) {
-  .footer-icons {
-    margin-bottom: 40px; /* لسطح المكتب */
-  }
-}
-
 
 footer a img {
   width: 20px;
@@ -330,7 +457,7 @@ footer a img {
   flex-wrap: wrap;
 }
  footer p {
-  padding: 1px 5px;border-radius:8px;font-size: 10px;background-color:#EEFFFE; margin: 7px; color: #004B8C !important; font-weight: bold;
+  padding: 1px 5px;border-radius:8px;font-size: 12px;background-color:#EEFFFE; margin: 7px; color: #004B8C !important; font-weight: bold;
 }
 @media (min-width: 768px) {
   .footer-icons {
@@ -345,14 +472,11 @@ footer a img {
 }
   </style>
 </head>
-
-
-<body>
   <header class="header-logo">
     <img src="images/clinic-logo.png" alt="شعار العيادة">
     <div class="header-text">
       <div class="main-title">عيادة د. مختار الشرعبي الإستشارية</div>
-      <div class="sub-title">الإستشارية للأنف والأذن والحنجرة والرأس والعنق،</div>
+      <div class="sub-title"> للأنف والأذن والحنجرة والرأس والعنق</div>
     </div>
   </header>
 
@@ -416,17 +540,13 @@ footer a img {
     <li>الاسترخاء في مكان هادئ ومعتم أثناء النوبة.</li>
   </ul>
 
-  <p>في عيادة <strong>د. مختار الشرعبي</strong> – تعز، ركن مفرق ماوية – نحرص على تقييم كل حالة بدقة وتقديم خطة علاجية شخصية تشمل الجانب الوقائي والنفسي والدوائي.</p>
-  <div class="cta-link">
-    <a href="index.html">← عودة للصفحة الرئيسية </a>
-<hr>
+ <p><em> في عيادة <strong>د. مختار الشرعبي</strong> – تعز، ركن مفرق ماوية – نحرص على تقييم كل حالة بدقة وتقديم خطة علاجية شخصية تشمل الجانب الوقائي والنفسي والدوائي.</em></p>
+  <hr>    <a href="blog.html" style="color:#004D40" class="cta-button" />>← عودة لصفحة المدونة</a>
+ <hr> 
+    <a href="index.html"style=":color:#004D40" class="cta-button">← عودة للصفحة الرئيسية</a></div>
+  </div>  <hr> 
 
-   <div class="cta-link">
-    <a href="blog.html">← عودة لصفحة المدونة</a>
-  </div></div></div>
-</div>
-
-<footer style="background-color: #004D40; color: white; text-align: center; padding: 10px 10px;">
+<footer style="background-color: #004D40; color: white; text-align: center; padding: 10px 4px;">
 
   <nav style= "padding: 10px 0;gap: 3px">
     <div class="nav-row">
@@ -443,7 +563,7 @@ footer a img {
    <a href="https://wa.me/967730433592" class="nav-link">✉️ إحجز الآن</a>
     </div>
   </nav>  
-     <p>📌️  محافظة تعز، ركن مفرق ماوية , مختبرات دار الصحة
+     <p style="font-size:9px">📌 تعز، ركن مفرق ماوية , مبنى مختبرات دار الصحة
     </p> 
       
 <div class="footer-icons">
@@ -469,13 +589,11 @@ footer a img {
     </a>
 
     <a href="https://www.tiktok.com/@dr_mokhtar_sharabi" target="_blank">
-      <img src="images/social/tiktok.jpeg" alt="تيك توك" width=30" height="30" />
+      <img src="images/social/tiktok.jpeg" alt="تيك توك" width="30" height="30" />
     </a>
 
     <a href="mailto:drm9khtarnajy@gmail.com" target="_blank">
-      <img src="images/social/gmail.jpeg" alt="بريد إلكتروني" width="30" height="30" />
-  </div>    </a>
+            <img src="images/social/gmail.jpeg" alt="بريد إلكتروني" width="30" height="30" />
+  </a>  </div>  
   </div>
- </footer>
-
-
+</footer>
