@@ -568,7 +568,7 @@ footer a img {
     <div class="container">
       <h1>شارك برأيك</h1>
       <p>نرحب بجميع مرضانا وزوارنا الكرام! إذا كانت لديك تجربة في العيادة، يمكنك مشاركتها معنا عبر Google لتفيد الآخرين.</p>
-  <div class="custom-comment-form" style="margin-top: 40px; border: 1px solid #ccc; padding: 20px; border-radius: 10px;">    
+<div class="custom-comment-form" style="margin-top: 40px; border: 1px solid #ccc; padding: 20px; border-radius: 10px;">    
              <h3>أضف تعليقك</h3>
             <form id="commentForm">
                 <label for="name">الاسم:</label>
@@ -582,111 +582,123 @@ footer a img {
         </div>
 
         <hr>
-        
+          <script type="module">
+    // استيراد وظائف Firebase من SDK
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+    import { 
+        getFirestore, 
+        collection, 
+        addDoc, 
+        serverTimestamp, 
+        onSnapshot, 
+        query, 
+        orderBy 
+    } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js"; 
 
-            <!-- This is where the comments will be inserted by the JavaScript -->
-            <div id="commentsList"></div> 
-        </div>
-    </div>
+    // تكوين Firebase الخاص بك
+    const firebaseConfig = {
+        apiKey: "AIzaSyC3_MsaHSOAq-YpWV43vS3pwymCHEx8Ju4",
+        authDomain: "testimonials-35bfe.firebaseapp.com",
+        projectId: "testimonials-35bfe",
+        storageBucket: "testimonials-35bfe.firebasestorage.app",
+        messagingSenderId: "1002449829561",
+        appId: "1:1002449829561:web:2058d451c32a28c8456568"
+    };
 
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-app.js";
-        // Import Firestore functions for adding, getting, querying, and listening for data
-        import { 
-            getFirestore, 
-            collection, 
-            addDoc, 
-            serverTimestamp, 
-            onSnapshot, 
-            query, 
-            orderBy 
-        } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js"; 
+    // تهيئة Firebase
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app); 
 
-        // Your web app's Firebase configuration
-        const firebaseConfig = {
-            apiKey: "AIzaSyC3_MsaHSOAq-YpWV43vS3pwymCHEx8Ju4", // Your actual API Key
-            authDomain: "testimonials-35bfe.firebaseapp.com",
-            projectId: "testimonials-35bfe",
-            storageBucket: "testimonials-35bfe.firebasestorage.app",
-            messagingSenderId: "1002449829561",
-            appId: "1:1002449829561:web:2058d451c32a28c8456568"
-        };
+    // الحصول على عناصر HTML
+    const commentForm = document.getElementById('commentForm');
+    const nameInput = document.getElementById('name');
+    const commentTextarea = document.getElementById('comment');
+    const commentsListDiv = document.getElementById('commentsList');
 
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        // Initialize Firestore and get a reference to the service
-        const db = getFirestore(app); 
+    // عرض رسالة تحميل
+    commentsListDiv.innerHTML = '<div class="comment-box"><p>جارٍ تحميل التعليقات...</p></div>';
 
-        // Get references to your HTML form elements
-        const commentForm = document.getElementById('commentForm');
-        const nameInput = document.getElementById('name');
-        const commentTextarea = document.getElementById('comment');
-        
-        // Get reference to the div where comments will be displayed
-        const commentsListDiv = document.getElementById('commentsList');
+    // إرسال تعليق جديد
+    commentForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
 
-        // --- Code to ADD new comments ---
-        commentForm.addEventListener('submit', async (e) => {
-            e.preventDefault(); // Prevent the default form submission behavior (page reload)
+        const name = nameInput.value.trim();
+        const comment = commentTextarea.value.trim();
 
-            const name = nameInput.value;
-            const comment = commentTextarea.value;
+        if (!name || !comment) {
+            alert("الرجاء إدخال اسم وتعليق صالحين.");
+            return;
+        }
 
-            // Basic validation
-            if (!name.trim() || !comment.trim()) {
-                alert("الاسم والتعليق لا يمكن أن يكونا فارغين."); // Name and comment cannot be empty
+        try {
+            await addDoc(collection(db, "patientComments"), {
+                name: name,
+                comment: comment,
+                timestamp: serverTimestamp()
+            });
+            
+            nameInput.value = '';
+            commentTextarea.value = '';
+            
+            alert("تم إرسال تعليقك بنجاح! سيظهر بعد المراجعة.");
+        } catch (error) {
+            console.error("Error adding comment: ", error);
+            alert("حدث خطأ أثناء إضافة التعليق: " + error.message);
+        }
+    });
+
+    // استقبال التعليقات في الوقت الحقيقي
+    const q = query(collection(db, "patientComments"), orderBy("timestamp", "desc"));
+    
+    onSnapshot(q, 
+        (snapshot) => {
+            commentsListDiv.innerHTML = '';
+
+            if (snapshot.empty) {
+                commentsListDiv.innerHTML = '<div class="comment-box"><p>لا توجد تعليقات بعد. كن أول من يشارك!</p></div>';
                 return;
             }
-
-            try {
-                // Add a new document to the "patientComments" collection in Firestore
-                await addDoc(collection(db, "patientComments"), {
-                    name: name,
-                    comment: comment,
-                    timestamp: serverTimestamp() // Add a server-generated timestamp for sorting
-                });
-                console.log("Comment added successfully!");
-                // Clear the form fields after successful submission
-                nameInput.value = '';
-                commentTextarea.value = '';
-            } catch (error) {
-                console.error("Error adding comment: ", error);
-                alert("فشل في إضافة التعليق. الرجاء المحاولة مرة أخرى."); // Failed to add comment. Please try again.
-            }
-        });
-
-        // --- Code to DISPLAY existing comments (real-time) ---
-        // Create a query to get comments, ordered by timestamp (newest first)
-        const q = query(collection(db, "patientComments"), orderBy("timestamp", "desc"));
-
-        // Set up a real-time listener for comments
-        onSnapshot(q, (snapshot) => {
-            // Clear existing comments before adding updated ones
-            commentsListDiv.innerHTML = ''; 
 
             snapshot.forEach((doc) => {
                 const data = doc.data();
                 const commentDiv = document.createElement('div');
-                commentDiv.classList.add('comment-item'); // Add a class for styling
+                commentDiv.classList.add('comment-box');
 
-                // Format the timestamp nicely, handling cases where it might not be immediately available
-                const date = data.timestamp ? new Date(data.timestamp.toDate()).toLocaleString('ar-SA') : 'الآن'; // Format for Arabic, Saudi Arabia
+                // تنسيق التاريخ
+                let dateString = 'جديد';
+                if (data.timestamp) {
+                    try {
+                        const date = data.timestamp.toDate();
+                        dateString = date.toLocaleString('ar-SA', {
+                            year: 'numeric',
+                            month: 'long',
+                            day: 'numeric'
+                        });
+                    } catch (e) {
+                        console.error("Error formatting date:", e);
+                    }
+                }
 
                 commentDiv.innerHTML = `
-                    <p><strong>${data.name}</strong> - <small>${date}</small></p>
                     <p>${data.comment}</p>
-                `; // Removed <hr> from here to avoid double lines
+                    <span>– ${data.name} (${dateString})</span>
+                `;
 
                 commentsListDiv.appendChild(commentDiv);
             });
-        }, (error) => {
+        },
+        (error) => {
             console.error("Error fetching comments: ", error);
-            // Optionally, display an error message to the user
-            commentsListDiv.innerHTML = `<p style="color: red;">فشل في تحميل التعليقات: ${error.message}</p>`; // Failed to load comments
-        });
-    </script>
-      <hr>
+            commentsListDiv.innerHTML = `
+                <div class="comment-box">
+                    <p style="color: red;">
+                        فشل في تحميل التعليقات: ${error.message}
+                    </p>
+                </div>
+            `;
+        }
+    );
+</script>     <hr>
       
 
 
@@ -740,7 +752,7 @@ footer a img {
   <div class="comment-box">
     <p>"أفضل حاجة لنا في مجال الطب لما في حد من أصدقائك أو عائلتك أو حتى شخص غريب يسأل فين يلاقي أفضل دكتور في أي تخصص وتكون تعرف دكتور شاطر وتكون واثق فيه.. وهذا اللي يحصل معي لما حدا يطلب دكتور شاطر في تخصص الأنف والأذن والحنجرة، وخاصة عمليات المناظير. تواجد عيادة الدكتور مختار الشرعبي تحت إشرافه نعمة من الله."</p>
     <span>– طارق الحاشدي</span>
-   </div>   </div> <div>     <div style="background-color: #f0f0f0; border-radius: 10px; padding: 20px; margin: 30px auto; max-width: 800px; text-align: center;">
+   </div>   </div> </div>     <div style="background-color: #f0f0f0; border-radius: 10px; padding: 20px; margin: 30px auto; max-width: 800px; text-align: center;">
         <div style="display: flex; justify-content: center; margin-bottom: 20px;">
    <br>     <script src="https://static.elfsight.com/platform/platform.js" async></script>
         <div class="elfsight-app-906a74ff-8ce8-484c-8cbd-c2892abc43a6" data-elfsight-app-lazy></div>
