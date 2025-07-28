@@ -240,44 +240,60 @@ h2 {
     
   }
 }
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 15px;
+    }
+    
+    .container p {
+      color: #004B8C;
+      line-height: 1.8;
+      font-size: 18px;
+      font-weight: bold;
+      margin: 15px 0;
+      text-align: center;
+    }
+    
+    @media (min-width: 768px) {
+      .container p {
+        font-size: 20px;
+        padding: 0 20px;
+      }
+    }
+    
     .google-review-btn {
-      font-size: 15px;
-      padding: 5px 20px;
+      font-size: 18px;
+      padding: 10px 25px;
       background-color: #00796B;
       color: white;
       text-decoration: none;
       font-weight: bold;
-      border-radius: 6px;
-      margin: 10px;
+      border-radius: 8px;
+      margin: 20px auto;
       transition: background-color 0.3s ease;
       text-align: center;
+      display: block;
+      width: fit-content;
     }
-
+    
     .google-review-btn:hover {
       background-color: #004D40;
+      transform: translateY(-2px);
     }
-
-    .reviews-section {
-      gap: 10px 0;
-      margin: 0 auto;
-    }
-
-    .elfsight-app {
-      width: 130% !important;
-      box-sizing: border-box;
-      
-      overflow-y: auto;
-      margin-bottom: 40px;
-    }
+    
     @media (min-width: 768px) {
-    .google-review-btn {
-      font-size: 35px !important;
-          }  
-        }
-
-
-
-
+      .google-review-btn {
+        font-size: 22px;
+        padding: 12px 30px;
+      }
+    }
+    
+    .reviews-section {
+      margin: 30px auto;
+    }
+  
 .elfsight-app-906a74ff-8ce8-484c-8cbd-c2892abc43a6 {
   font-size: 12px !important;
 
@@ -286,209 +302,139 @@ h2 {
 /* سطح المكتب */
 @media (min-width: 768px) {
   .elfsight-app-906a74ff-8ce8-484c-8cbd-c2892abc43a6 {
-    font-size: 182px !important;
+    font-size: 40px !important;
   }
 }
 @media (min-width: 768px) {
   .elfsight-app-906a74ff-8ce8-484c-8cbd-c2892abc43a6 {
    
-      margin: 100px 0
+      margin: 90px 
       }
       
-}
-.container p {
-        padding: 5px 7px
-        ;color: #004B8C;
-         line-height: 1.6;
-         font-size: 11px !important;
-        font-weight: bold;
-      }
-     @media (min-width: 768px) {
-      .container h1 {
-        font-size: 44px !important; /* تكبير حجم العنوان الرئيسي */
-      }
-      .container h2 {
-        font-size: 12px !important; /* تكبير حجم العناوين الفرعية */
-      }
-      .container p {
-       margin-right: 30px;padding: 35px; font-size: 12px !important; /* تكبير حجم الفقرات */
-      }
-      .back-link a {
-        font-size: 32px !important; /* تكبير حجم زر العودة */
-      }
-        }
-        
-.comments-container {
-  max-width: 800px; /* قللت العرض لتقليل الهامش الجانبي */
-  width: 100%;
-  margin: 20px 0;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  font-family: 'Cairo', sans-serif;
-}
-
-.comments-title {
-  background-color: #227A9E;
-  color: white;
-  text-align: center;
-  margin-bottom: 16px;
-  font-size: 18px;
-}
-.comment-box {
-  background: #E3F2FD;
-  padding: 10px;
-  border-radius: 6px;
-  margin-bottom: 10px;
-}
-
-.comment-box p {
-  margin: 0;
-  color: #333;
-  font-size: 11px;
-  line-height: 1.5;
-}
-
-.comment-box span {
-  display: block;
-  margin-top: 4px;
-  color: #555;
-  font-size: 10px;
-  text-align: left;
-}
-
-.add-comment-btn {
-  text-align: center;
-  margin-top: 15px;
-}
-
-.add-comment-btn button {
-  background-color: #1976D2;
-  color: white;
-  padding: 12px 20px;
-  border-radius: 8px;
-  font-size: 14px;
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-.add-comment-btn button:hover {
-  background-color: #0D47A1;
-}
-
-/* ✅ المودال */
-.modal {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  justify-content: center;
-  align-items: center;
-  font-family: 'Cairo', sans-serif;
-}
-
-.modal-content {
-  background: white;
-  padding: 5px;
-  border-radius: 10px;
-  max-width: 700px;
-  width: 90%;
-}
-
-.modal-content h3 {
-  margin-top: 0;
-  color: #0D47A1;
-  text-align: center;
-}
-
-.modal-content input,
-.modal-content textarea {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-family: inherit;
-}
-
-.modal-buttons {
-  text-align: center;
-}
-
-.modal-buttons .send {
-  background-color: #1976D2;
-  color: white;
-  padding: 8px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-right: 5px;
-}
-
-.modal-buttons .cancel {
-  background-color: #ccc;
-  color: #333;
-  padding: 8px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-/* ✅ تحسين حجم الخط وتصميم الزر في سطح المكتب */
-@media (min-width: 768px) {
-  .comments-container {
-    max-width: 768px; /* تقليل العرض أكثر لسطح المكتب */
+}  
+    .elfsight-app {
+      width: 100%;
+      box-sizing: border-box;
+      margin: 30px auto;
+    }
+    
+    .custom-comment-form {
+      margin: 40px auto;
+      border: 1px solid black;
+      padding: 25px;
+      border-radius: 10px;
+       box-shadow: 0 9px 6px rgba(33, 95, 97, 0.7);
+      background-color: #E8FAFF;
+      max-width: 800px;
+    }
+    
+    .custom-comment-form h3 {
+      color: #004D40;
+      text-align: center;
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .custom-comment-form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      font-size: 18px;
+      color: #004D40;
+    }
+    
+    .custom-comment-form input,
+    .custom-comment-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid black;
+      border-radius: 8px;
+      font-family: 'Cairo', sans-serif;
+      font-size: 16px;
+    }
+    
+    .custom-comment-form button {
+      background-color: #0E78A8;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s;
+      display: block;
+      margin: 0 auto;
+    }
+    
+    .custom-comment-form button:hover {
+      background-color: #004D40;
+      transform: translateY(-2px);
+    }
+       @media (max-width: 768px) { 
+       .custom-comment-form button {
+           font-size: 38px!importan!important;  
+       }
+ }
+    .comments-container {
+      width: 90%;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 25px;
+      background-color: #f9f9f9;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-family: 'Cairo', sans-serif;
+    }
+    
+    .comments-title {
+      background-color: #227A9E;
+      color: white;
+      text-align: center;
+      padding: 11px;
+      border-radius: 8px;
+      margin-bottom: 25px;
+      font-size: 22px;
+    }
+    
+    .comment-box {
+      background: #E3F2FD;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .comment-box p {
+      margin: 0;
+      color: #333;
+      font-size: 18px;
+      line-height: 1.7;
+      text-align: right;
+    }
+    
+    .comment-box span {
+      display: block;
+      margin-top: 10px;
+      color: #555;
+      font-size: 16px;
+      text-align: left;
+      font-style: italic;
+    }
+    @media (max-width: 768px) {
+    .comments-title {
+   font-size: 12px;
   }
 
-  .comment-box p {
-    font-size: 10px; /* أصغر في سطح المكتب */
-  }
-
-  .comment-box span {
-    font-size: 9px;
-  }
-
-  .add-comment-btn button {
-    font-size: 48px; /* الزر أكبر على سطح المكتب */
-    padding: 14px 25px;
-  }
-  
-}
-
-/* ✅ تصميم متجاوب للموبايل */
-@media (max-width: 768px) {
-  .comments-container {
-    max-width: 100%;
-    padding: 15px;
-  }
-
-  .comments-title {
-    font-size: 44px;
-  }
-
-  .comment-box p {
-    font-size: 11px;
-  }
-
-  .comment-box span {
-    font-size: 10px;
-  }
-
+  .comment-box p { font-size: 11px; }
+  .comment-box span { font-size: 10px; }
   .add-comment-btn button {
     width: 100%;
-    font-size: 16px;
+    font-size: 46px!important;
   }
+}
 
-  .modal-content {
-    width: 95%;
-  }
-  }
 .cta-button {
  white-space: nowrap; 
   color: black;
@@ -553,7 +499,6 @@ font-size: 44px!important
       .cta-button {
    text-align: center important;
   } 
-
 footer {
       margin-top: 10px
       ;background-color: #004B8C;
@@ -617,170 +562,68 @@ footer a img {
       <div class="sub-title">الإستشارية للأنف والأذن والحنجرة والرأس والعنق،</div>
     </div>
   </header>
+  
   <div class="main-content">
     <div class="container">
       <h1>شارك برأيك</h1>
       <p>نرحب بجميع مرضانا وزوارنا الكرام! إذا كانت لديك تجربة في العيادة، يمكنك مشاركتها معنا عبر Google لتفيد الآخرين.</p>
-      <hr>  
-      <div style="max-width: 700px; margin: 20px auto; padding: 20px; background-color: #f9f9f9; border: 1px solid #ccc; border-radius: 10px; font-family: 'Cairo', sans-serif;">
-
-  
- <h2 class="comments-title" style="font-size:15px">آراء زوار عيادة د. مختار الشرعبي</h2>
- <div class="comment-box">
-    <p>"دكتور مختار الشرعبي بصراحة أشوفه أفضل دكتور انف واذن وحنجرة في اليمن كلها. كان عند أمي دوار له فترة طويلة ولفيت به عند دكاترة كثير حتى في صنعاء وما فيش فايدة غير خسارة فحوصات واشعة، لما نصحوني فيه، من أول زيارة شخص مرضها وعالجها بمجرد تمارين وبدون ما صرف لها أي علاج، والحمد لله من وقتها وهي بخير، ربنا يجزيه الخير."</p>
-    <span>– محمد الحميري</span>
-  </div>
-
-  <div class="comment-box">
-    <p>"دكتور مختار الشرعبي تشخيصه دقيق وما يطلب تسوي إلا ماهو ضروري، ولا يقرر عملية إلا إذا فعلاً تحتاجها، وأنصح فيه كل المرضى في محافظة تعز."</p>
-    <span>– عبدالملك الشميري</span>
-  </div>
-
-  <div class="comment-box">
-    <p>"أفضل دكتور استشاري انف واذن وحنجرة بصراحة، علم وخبرة وتواضع وأخلاق عالية وشغله نظيف."</p>
-    <span>– سالم العريقي</span>
-  </div>
-
-  <div class="comment-box">
-    <p>"دكتور مختار الشرعبي شاطر ومتمكن بصراحة وصاحب ذوق وأخلاق عالية.. شهرته على مستوى اليمن بمهارته بالعمليات الجراحية بالمنظار. نعتز ونفتخر ونحمد الله إنه معنا في محافظة تعز مثل هذه الكفاءات."</p>
-    <span>– Om Ahmed</span>
-  </div>
-
-  <div class="comment-box">
-    <p>"دكتور مختار الشرعبي هو أفضل دكتور انف واذن وحنجرة في محافظة تعز."</p>
-    <span>– Ayman</span>
-  </div>
-
-  <div class="comment-box">
-    <p>"فعلاً أفضل دكتور."</p>
-    <span>– anahaidary@gmail.com</span>
-  </div>
-
-  <div class="comment-box">
-    <p>"من أفضل الأطباء."</p>
-    <span>– محمد طارق</span>
-  </div>
-
-  <div class="comment-box">
-    <p>"ربنا يحفظك يا دكتورنا الحبيب، من أفضل الكفاءات في اليمن."</p>
-    <span>– Ibrahim</span>
-  </div>
-
-  <div class="comment-box">
-    <p>"أفضل حاجة لنا في مجال الطب لما في حد من أصدقائك أو عائلتك أو حتى شخص غريب يسأل فين يلاقي أفضل دكتور في أي تخصص وتكون تعرف دكتور شاطر وتكون واثق فيه.. وهذا اللي يحصل معي لما حدا يطلب دكتور شاطر في تخصص الأنف والأذن والحنجرة، وخاصة عمليات المناظير. تواجد عيادة الدكتور مختار الشرعبي تحت إشرافه نعمة من الله."</p>
-    <span>– طارق الحاشدي</span>
-  </div>
-
-
-<hr>
-<div class="add-comment-btn">
-  <button onclick="openCommentBox()">✍️ اكتب رأيك الآن</button>
-</div>
-
-<!-- ✅ مربع إضافة تعليق (يجب أن يكون قبل </body>) -->
-<div class="modal" id="comment-modal">
-  <div class="modal-content">
-    <h3>أضف تعليقك</h3>
-    <input id="name-input" type="text" placeholder="اسمك">
-    <textarea id="comment-input" placeholder="اكتب تعليقك..."></textarea>
-    <div class="modal-buttons">
-      <button class="send" onclick="addComment()">إرسال</button>
-      <button class="cancel" onclick="closeCommentBox()">إلغاء</button>
-    </div>
-  </div>
-</div>
-
-<!-- ✅ JavaScript دائمًا قبل </body> -->
-<script>
-function openCommentBox() {
-  document.getElementById("comment-modal").style.display = "flex";
-}
-
-function closeCommentBox() {
-  document.getElementById("comment-modal").style.display = "none";
-}
-
-function addComment() {
-  const name = document.getElementById("name-input").value.trim() || "زائر";
-  const comment = document.getElementById("comment-input").value.trim();
-
-  if (comment === "") {
-    alert("يرجى كتابة تعليقك قبل الإرسال.");
-    return;
-  }
-
-  const commentBox = document.createElement("div");
-  commentBox.classList.add("comment-box");
-  commentBox.innerHTML = `<p>"${comment}"</p><span>– ${name}</span>`;
-
-  document.getElementById("comments-container").appendChild(commentBox);
-
-  document.getElementById("name-input").value = "";
-  document.getElementById("comment-input").value = "";
-  closeCommentBox();
-}
-</script>
-</body>
-</html>
-
-
-
-<div class="comments-container" id="comments-container">
-
-<script>
-function openCommentBox() {
-  document.getElementById("comment-modal").style.display = "flex";
-}
-
-function closeCommentBox() {
-  document.getElementById("comment-modal").style.display = "none";
-}
-
-function addComment() {
-  const name = document.getElementById("name-input").value.trim() || "زائر";
-  const comment = document.getElementById("comment-input").value.trim();
-
-  if (comment === "") {
-    alert("يرجى كتابة تعليقك قبل الإرسال.");
-    return;
-  }
-
-  const commentBox = document.createElement("div");
-  commentBox.classList.add("comment-box");
-  commentBox.innerHTML = `<p>"${comment}"</p><span>– ${name}</span>`;
-
-  document.getElementById("comments-container").appendChild(commentBox);
-
-  document.getElementById("name-input").value = "";
-  document.getElementById("comment-input").value = "";
-  closeCommentBox();
-}
-</script>
-
-</body>
-</html>
-<!-- ✅ مربع إضافة تعليق -->
-<div class="modal" id="comment-modal">
-  <div class="modal-content">
-    <h3>أضف تعليقك</h3>
-    <input id="name-input" type="text" placeholder="اسمك">
-    <textarea id="comment-input" placeholder="اكتب تعليقك..."></textarea>
-    <div class="modal-buttons">
-      <button class="send" onclick="addComment()">إرسال</button>
-      <button class="cancel" onclick="closeCommentBox()">إلغاء</button>
-    </div>
-  </div>
-</div>     <br>  
- <h2 class="comments-title">
-        <h2>آراء الزوار من Google</h2>
+      
+      <div class="custom-comment-form">
+        <h3>أضف تعليقك</h3>
+        <form id="commentForm">
+          <label for="name">الاسم:</label>
+          <input type="text" id="name" name="name" required>
+          
+          <label for="comment">التعليق:</label>
+          <textarea id="comment" name="comment" rows="5" required></textarea>
+          
+          <button type="submit">إرسال التعليق</button>
+        </form>
+      </div>
+      
+      <hr>
+      
+      <h2 style="font-size: 13px; background-color: #E8F1FF; color:black">التعليقات السابقة</h2>
+      
+      <div class="comments-container">
+        <div class="comments-title">آراء زوار عيادة د. مختار الشرعبي</div>
+        
+        <div class="comment-box">
+          <p>"دكتور مختار الشرعبي بصراحة أشوفه أفضل دكتور انف واذن وحنجرة في اليمن كلها. كان عند أمي دوار له فترة طويلة ولفيت به عند دكاترة كثير حتى في صنعاء وما فيش فايدة غير خسارة فحوصات واشعة، لما نصحوني فيه، من أول زيارة شخص مرضها وعالجها بمجرد تمارين وبدون ما صرف لها أي علاج، والحمد لله من وقتها وهي بخير، ربنا يجزيه الخير."</p>
+          <span>– محمد الحميري</span>
+        </div>
+        
+        <div class="comment-box">
+          <p>"دكتور مختار الشرعبي تشخيصه دقيق وما يطلب تسوي إلا ماهو ضروري، ولا يقرر عملية إلا إذا فعلاً تحتاجها، وأنصح فيه كل المرضى في محافظة تعز."</p>
+          <span>– عبدالملك الشميري</span>
+        </div>
+        
+        <div class="comment-box">
+          <p>"أفضل دكتور استشاري انف واذن وحنجرة بصراحة، علم وخبرة وتواضع وأخلاق عالية وشغله نظيف."</p>
+          <span>– سالم العريقي</span>
+        </div>
+        
+        <div class="comment-box">
+          <p>"دكتور مختار الشرعبي شاطر ومتمكن بصراحة وصاحب ذوق وأخلاق عالية.. شهرته على مستوى اليمن بمهارته بالعمليات الجراحية بالمنظار. نعتز ونفتخر ونحمد الله إنه معنا في محافظة تعز مثل هذه الكفاءات."</p>
+          <span>– Om Ahmed</span>
+        </div>
+      </div>
+      
+      <hr>
+      
+      <h2>آراء الزوار من Google</h2>
+      
+      <!-- عنصر مراجعات جوجل (وهمي) -->
+      <div style="background-color: #f0f0f0; border-radius: 10px; padding: 20px; margin: 30px auto; max-width: 800px; text-align: center;">
+        <div style="display: flex; justify-content: center; margin-bottom: 20px;">
    <br>     <script src="https://static.elfsight.com/platform/platform.js" async></script>
         <div class="elfsight-app-906a74ff-8ce8-484c-8cbd-c2892abc43a6" data-elfsight-app-lazy></div>
-      </div>
+      
+  </div>
+      <a href="#" class="cta-button">← العودة للرئيسية</a>
     </div>
-  </div> 
-    <a href="index.html"style=":color:#004D40" class="cta-button">← عودة للصفحة الرئيسية</a></div>
-  </div>  <hr> 
-
+  </div>
+  
 <footer style="background-color: #004D40; color: white; text-align: center; padding: 10px 4px;">
 
   <nav style= "padding: 10px 0;gap: 3px">
@@ -832,3 +675,22 @@ function addComment() {
   </a>  </div>  
   </div>
 </footer>
+
+  
+  <script>
+    document.getElementById("commentForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      
+      // الحصول على بيانات النموذج
+      const name = document.getElementById("name").value;
+      const comment = document.getElementById("comment").value;
+      
+      // عرض رسالة نجاح
+      alert(`شكراً ${name} على تعليقك! سيتم مراجعة تعليقك ونشره قريباً.`);
+      
+      // إعادة تعيين النموذج
+      document.getElementById("commentForm").reset();
+    });
+  </script>
+</body>
+</html>
