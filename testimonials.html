@@ -567,39 +567,128 @@ footer a img {
     <div class="container">
       <h1>شارك برأيك</h1>
       <p>نرحب بجميع مرضانا وزوارنا الكرام! إذا كانت لديك تجربة في العيادة، يمكنك مشاركتها معنا عبر Google لتفيد الآخرين.</p>
-      
-      <div class="custom-comment-form">
-        <h3>أضف تعليقك</h3>
-        <form id="commentForm">
-          <label for="name">الاسم:</label>
-          <input type="text" id="name" name="name" required>
-          
-          <label for="comment">التعليق:</label>
-          <textarea id="comment" name="comment" rows="5" required></textarea>
-          
-          <button type="submit">إرسال التعليق</button>
-        </form>
-      </div>
-      <script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-app.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
+  <div class="custom-comment-form" style="margin-top: 40px; border: 1px solid #ccc; padding: 20px; border-radius: 10px;">    
+             <h3>أضف تعليقك</h3>
+            <form id="commentForm">
+                <label for="name">الاسم:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="comment">التعليق:</label>
+                <textarea id="comment" name="comment" rows="5" required></textarea>
+                
+                <button type="submit">إرسال التعليق</button>
+            </form>
+        </div>
 
-  // Your web app's Firebase configuration
-  const firebaseConfig = {
-    apiKey: "AIzaSyC3_MsaHSOAq-YpWV43vS3pwymCHEx8Ju4",
-    authDomain: "testimonials-35bfe.firebaseapp.com",
-    projectId: "testimonials-35bfe",
-    storageBucket: "testimonials-35bfe.firebasestorage.app",
-    messagingSenderId: "1002449829561",
-    appId: "1:1002449829561:web:2058d451c32a28c8456568"
-  };
+        <hr>
+        
 
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-</script>
+            <!-- This is where the comments will be inserted by the JavaScript -->
+            <div id="commentsList"></div> 
+        </div>
+    </div>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-app.js";
+        // Import Firestore functions for adding, getting, querying, and listening for data
+        import { 
+            getFirestore, 
+            collection, 
+            addDoc, 
+            serverTimestamp, 
+            onSnapshot, 
+            query, 
+            orderBy 
+        } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js"; 
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyC3_MsaHSOAq-YpWV43vS3pwymCHEx8Ju4", // Your actual API Key
+            authDomain: "testimonials-35bfe.firebaseapp.com",
+            projectId: "testimonials-35bfe",
+            storageBucket: "testimonials-35bfe.firebasestorage.app",
+            messagingSenderId: "1002449829561",
+            appId: "1:1002449829561:web:2058d451c32a28c8456568"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        // Initialize Firestore and get a reference to the service
+        const db = getFirestore(app); 
+
+        // Get references to your HTML form elements
+        const commentForm = document.getElementById('commentForm');
+        const nameInput = document.getElementById('name');
+        const commentTextarea = document.getElementById('comment');
+        
+        // Get reference to the div where comments will be displayed
+        const commentsListDiv = document.getElementById('commentsList');
+
+        // --- Code to ADD new comments ---
+        commentForm.addEventListener('submit', async (e) => {
+            e.preventDefault(); // Prevent the default form submission behavior (page reload)
+
+            const name = nameInput.value;
+            const comment = commentTextarea.value;
+
+            // Basic validation
+            if (!name.trim() || !comment.trim()) {
+                alert("الاسم والتعليق لا يمكن أن يكونا فارغين."); // Name and comment cannot be empty
+                return;
+            }
+
+            try {
+                // Add a new document to the "patientComments" collection in Firestore
+                await addDoc(collection(db, "patientComments"), {
+                    name: name,
+                    comment: comment,
+                    timestamp: serverTimestamp() // Add a server-generated timestamp for sorting
+                });
+                console.log("Comment added successfully!");
+                // Clear the form fields after successful submission
+                nameInput.value = '';
+                commentTextarea.value = '';
+            } catch (error) {
+                console.error("Error adding comment: ", error);
+                alert("فشل في إضافة التعليق. الرجاء المحاولة مرة أخرى."); // Failed to add comment. Please try again.
+            }
+        });
+
+        // --- Code to DISPLAY existing comments (real-time) ---
+        // Create a query to get comments, ordered by timestamp (newest first)
+        const q = query(collection(db, "patientComments"), orderBy("timestamp", "desc"));
+
+        // Set up a real-time listener for comments
+        onSnapshot(q, (snapshot) => {
+            // Clear existing comments before adding updated ones
+            commentsListDiv.innerHTML = ''; 
+
+            snapshot.forEach((doc) => {
+                const data = doc.data();
+                const commentDiv = document.createElement('div');
+                commentDiv.classList.add('comment-item'); // Add a class for styling
+
+                // Format the timestamp nicely, handling cases where it might not be immediately available
+                const date = data.timestamp ? new Date(data.timestamp.toDate()).toLocaleString('ar-SA') : 'الآن'; // Format for Arabic, Saudi Arabia
+
+                commentDiv.innerHTML = `
+                    <p><strong>${data.name}</strong> - <small>${date}</small></p>
+                    <p>${data.comment}</p>
+                `; // Removed <hr> from here to avoid double lines
+
+                commentsListDiv.appendChild(commentDiv);
+            });
+        }, (error) => {
+            console.error("Error fetching comments: ", error);
+            // Optionally, display an error message to the user
+            commentsListDiv.innerHTML = `<p style="color: red;">فشل في تحميل التعليقات: ${error.message}</p>`; // Failed to load comments
+        });
+    </script>
       <hr>
+      
+
+
       
       <h2 style="font-size: 13px; background-color: #E8F1FF; color:black">التعليقات السابقة</h2>
       
