@@ -582,8 +582,7 @@ footer a img {
         </div>
 
         <hr>
-          <script type="module">
-    // استيراد وظائف Firebase من SDK
+<script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
     import { 
         getFirestore, 
@@ -595,7 +594,6 @@ footer a img {
         orderBy 
     } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js"; 
 
-    // تكوين Firebase الخاص بك
     const firebaseConfig = {
         apiKey: "AIzaSyC3_MsaHSOAq-YpWV43vS3pwymCHEx8Ju4",
         authDomain: "testimonials-35bfe.firebaseapp.com",
@@ -605,18 +603,13 @@ footer a img {
         appId: "1:1002449829561:web:2058d451c32a28c8456568"
     };
 
-    // تهيئة Firebase
     const app = initializeApp(firebaseConfig);
     const db = getFirestore(app); 
 
-    // الحصول على عناصر HTML
     const commentForm = document.getElementById('commentForm');
     const nameInput = document.getElementById('name');
     const commentTextarea = document.getElementById('comment');
     const commentsListDiv = document.getElementById('commentsList');
-
-    // عرض رسالة تحميل
-    commentsListDiv.innerHTML = '<div class="comment-box"><p>جارٍ تحميل التعليقات...</p></div>';
 
     // إرسال تعليق جديد
     commentForm.addEventListener('submit', async (e) => {
@@ -640,7 +633,7 @@ footer a img {
             nameInput.value = '';
             commentTextarea.value = '';
             
-            alert("تم إرسال تعليقك بنجاح! سيظهر بعد المراجعة.");
+            alert("تم إرسال تعليقك بنجاح!");
         } catch (error) {
             console.error("Error adding comment: ", error);
             alert("حدث خطأ أثناء إضافة التعليق: " + error.message);
@@ -698,7 +691,7 @@ footer a img {
             `;
         }
     );
-</script>     <hr>
+</script>    <hr>
       
 
 
