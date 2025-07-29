@@ -33,10 +33,9 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": ["Physician", "MedicalBusiness"],
+  "@type": "physician",
   "name": "عيادة د. مختار الشرعبي - أفضل دكتور أنف وأذن وحنجرة في تعز",
-  "medicalSpecialty": "Otolaryngology",
-    "description": "عيادة دكتور مختار الشرعبي: أفضل دكتور إستشاري متخصص في أمراض وجراحات الأنف، الأذن، الحنجرة، الجيوب الأنفية، السمع، الصداع في تعز. نقدم تشخيصًا دقيقًا وعلاجًا متقدمًا بأحدث التقنيات.",
+  "description": "عيادة دكتور مختار الشرعبي: أفضل دكتور إستشاري متخصص في أمراض وجراحات الأنف، الأذن، الحنجرة، الجيوب الأنفية، السمع، الصداع في تعز. نقدم تشخيصًا دقيقًا وعلاجًا متقدمًا بأحدث التقنيات.",
   "image": "https://ent.drmsharabi.com/images/clinic-logo.png",
   "url": "https://ent.drmsharabi.com",
   "telephone": "+967730433592",
@@ -46,7 +45,6 @@
     "addressCountry": "YE",
     "streetAddress": "الحوبان - ركن مفرق ماوية، مبنى مختبرات دار الصحة"
   },
-  
   "geo": {
     "@type": "GeoCoordinates",
     "latitude": 13.5786,
@@ -103,17 +101,7 @@
     "bestRating": "5",
     "worstRating": "1"
   }
-
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "127",
-    "bestRating": "5",
-    "worstRating": "1"
-  }
 }
-</script>
-
 </script><!-- ✅ Google Analytics افتراضي -->
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments); }
   gtag('js', new Date());
@@ -349,6 +337,21 @@
     ul {
       padding-right: 20px;
     }
+      .contact-title {
+            white-space: nowrap;
+            text-align: center;
+            
+            color: #C00060;
+            font-size: 15px;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+    
+  @media (min-width: 768px) {
+ .contact-title {
+font-size: 44px!important
+}
+}
 .cta-button {
 
   white-space: nowrap; 
@@ -364,8 +367,8 @@
     transition: all 0.3s ease;
     text-align: center;
     border-radius: 8px;
-    padding: 1px 9px;
-    font-size: 35px;
+    padding: 1px 19px;
+    font-size: 15px;
     max-width: fit-content;
 }
 
@@ -390,10 +393,10 @@ font-size: 44px!important
        .
   display: block;
   
-  max-width: fit-content;padding: 5px 
+  max-width: fit-content;padding: 5px 10px 
         font-size: 58px;
         border-radius: 12px!important;
-        margin: 20px auto;
+        margin: 50px auto;
     }
 }
       .cta-button {
@@ -606,14 +609,8 @@ footer a img {
   <hr>
 <div>
     
-   <div class="whatsapp-section">
-    <a href="https://wa.me/967730433592" target="_blank">
-      <img  src="images/social/whatsapp.jpeg" alt="واتساب" class="whatsapp-icon">
-    </a></div>
-    <a style="font-size: 12px; margin-right20px;" href="https://wa.me/967730433592" target="_blank" class="cta-button">← احجز موعدك الآن</a>
-</div> 
 
-   <hr><div class="whatsapp-section" style="margin-top: 5px">
+   <hr><div class="whatsapp-section" style="margin-top: 5px; flex-direction: column;">
   <a href="https://youtu.be/i0Va72Gpp-s?feature=shared" target="_blank">
     <img src="images/social/youtube.jpeg" alt="يوتيوب" class="whatsapp-icon">
   </a>
@@ -621,8 +618,24 @@ footer a img {
   <a href="https://youtube.com/@ENTsharabi" target="_blank">👁 شاهد عملياتنا على YouTube</a></div>
   </div> 
     </div>
+  
+
+         <hr>   
+ 
+  
+    
+     <div class="contact-item">
+        <div class="contact-title">للحجز أرسل الإسم </div>
+     <div class="whatsapp-section">
+    <a href="https://wa.me/967730433592" target="_blank">
+      <img  src="images/social/whatsapp.jpeg" alt="واتساب" class="whatsapp-icon">
+    </a></div>   <a href="https://wa.me/967730433592" target="_blank" class="cta-button">برسالة واتساب ✉</a>
+
+      <a href="sms:+967730433592" class="cta-button">برسالة نصية ✉</a>
+
+
   </div>
-</div>
+
 <footer style="background-color: #004D40; color: white; text-align: center; padding: 10px 4px;">
 
   <nav style= "padding: 10px 0;gap: 3px">
@@ -639,9 +652,15 @@ footer a img {
             
    <a href="https://wa.me/967730433592" class="nav-link">✉️ إحجز الآن</a>
     </div>
-  </nav>  
-     <p style="font-size:9px">📌 تعز، ركن مفرق ماوية , مبنى مختبرات دار الصحة
-    </p> 
+  </nav>
+<div class="footer-address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+  <p>
+    <span itemprop="streetAddress"> ركن مفرق ماوية، مبنى مختبرات دار الصحة</span>,
+    <span itemprop="addressLocality">تعز</span>,
+    <span itemprop="addressCountry">اليمن</span>
+  </p>
+</div>
+ 
       
 <div class="footer-icons">
 
@@ -674,3 +693,5 @@ footer a img {
   </a>  </div>  
   </div>
 </footer>
+
+
