@@ -35,7 +35,7 @@
 {
   "@context": "https://schema.org",
   "@type": "MedicalClinic",
-  "name": "عيادة د. مختار الشرعبي - أفضل دكتور أنف وأذن وحنجرة في تعز",
+  "name": "خدمات عيادة د. مختار الشرعبي - أفضل دكتور أنف وأذن وحنجرة في تعز",
   "description": "عيادة متخصصة في جراحات وتشخيص أمراض الأنف، الأذن، الحنجرة، الجيوب الأنفية، السمع، والتخاطب. أفضل دكتور ENT في تعز",
   "image": "https://ent.drmsharabi.com/images/clinic-logo.png",
   "url": "https://ent.drmsharabi.com/services",
@@ -46,7 +46,27 @@
     "addressCountry": "YE",
     "streetAddress": "الحوبان - ركن مفرق ماوية، مبنى مختبرات دار الصحة "
   },
-  "geo": {
+ "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "MedicalProcedure",
+        "name": "جراحات الأنف والجيوب الأنفية",
+        "description": "عمليات تصحيح الحاجز الأنفي، استئصال الزوائد اللحمية، استئصال اللوزتين"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "MedicalProcedure",
+        "name": "جراحات الأذن وعلاج السمع",
+        "description": "علاج الدوخة والدوار ، علاج الصداع والشقيقة ، علاج طنين الأذن"
+      }
+    }
+  ]
+ "geo": {
     "@type": "GeoCoordinates",
     "latitude": 13.5786,
     "longitude": 44.0211
@@ -98,6 +118,26 @@
     "bestRating": "5",
     "worstRating": "1"
   }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "الرئيسية",
+      "item": "https://ent.drmsharabi.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": ,
+      "name": "معرض الصور",
+      "item": "https://ent.drmsharabi.com/gallery"
+    }
+  ]
 }
 </script>
   <!-- ✅ تنسيقات CSS -->
@@ -346,14 +386,30 @@ h2 {
       border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
+          .contact-title {
+            white-space: nowrap;
+            text-align: center;
+            
+            color: #C00060;
+            font-size: 15px;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+    
+  @media (min-width: 768px) {
+ .contact-title {
+font-size: 44px!important
+}
+}
 .cta-button {
- white-space: nowrap; 
-  color: white;
-    background-color: #004D40;
-    border: 1.5px solid  #004D40;
+
+  white-space: nowrap; 
+  color: black;
+    background-color: white;
+    border: 1.0px solid  green;
     text-decoration: none;
     font-weight: bold;
-    box-shadow: 0 4px 8px rgba(65, 18, 57, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 128, 0, 0.2);
     width: fit-content;
     display: block;
     margin: 20px auto;
@@ -363,24 +419,10 @@ h2 {
     padding: 4px 9px;
     font-size: 13px;
     max-width: fit-content;
-    animation: pulse 3s infinite; /* تطبيق تأثير النبض */
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1); /* الحجم الأصلي */
-  }
-  50% {
-    transform: scale(1.1); /* تكبير الأيقونة بنسبة 10% */
-  }
-  100% {
-    transform: scale(1); /* العودة للحجم الأصلي */
-  }
-
 }
 
 .cta-button:hover {
-   margin: 10px auto; background-color: ##004B8C;
+   margin: 10px auto; background-color: #f0fff0;
     max-width: fit-content;
     box-shadow: 0 6px 12px rgba(0, 128, 0, 0.3);
     font-size: 13px;
@@ -388,7 +430,11 @@ h2 {
     margin-top: 0; 
     
 }
-
+@media (min-width: 768px) {
+ .cta-button {
+font-size: 54px!important
+}
+}
 
 /* تنسيق سطح المكتب */
 @media (min-width: 768px) {
@@ -396,20 +442,35 @@ h2 {
        .
   display: block;
   
-  max-width: fit-content;padding: 5px 25px 
+  max-width: fit-content;padding: 5px 18px 
         font-size: 40px;
         border-radius: 12px!important;
         margin: 20px auto;
     }
 }
-@media (min-width: 768px) {
- .cta-button {
-font-size: 54px!important
-}
-}
       .cta-button {
    text-align: center important;
   } 
+      .whatsapp-section {
+      text-align: center;
+      flex-wrap: wrap;
+      margin: 30px auto;
+    }
+
+    .whatsapp-icon {
+      width: 120px;
+      height: 120px;
+      object-fit: contain;
+    }
+
+    @media (min-width: 768px) {
+      .whatsapp-icon {
+        width: 195px;
+        height: 195px;
+      }
+    }
+
+
    .grid-container {
       display: grid;
       margin: 15px auto;
@@ -560,12 +621,17 @@ footer a img {
       <div class="grid-item">فتح الرغامي التنفسي</d<footer style="background-color: #004D40; color: white; text-align: center; padding: 10px 4px;">
 </div>
 </div>  <hr>
-  <div class="cta-button">
-    <a href="index.html"style="color:white">← عودة للصفحة الرئيسية </a>
-  </div>
-    </div>
-</a>
+    <div class="contact-item">
+        <div class="contact-title">للحجز أرسل الإسم </div>
+     <div class="whatsapp-section">
+    <a href="https://wa.me/967730433592" target="_blank">
+      <img  src="images/social/whatsapp.jpeg" alt="واتساب" class="whatsapp-icon">
+    </a></div>   <a href="https://wa.me/967730433592" target="_blank" class="cta-button">برسالة واتساب ✉</a>
 
+      <a href="sms:+967730433592" class="cta-button">برسالة نصية ✉</a>
+
+
+  </div>  </div>
 <footer style="background-color: #004D40; color: white; text-align: center; padding: 10px 4px;">
 
   <nav style= "padding: 10px 0;gap: 3px">
@@ -582,9 +648,15 @@ footer a img {
             
    <a href="https://wa.me/967730433592" class="nav-link">✉️ إحجز الآن</a>
     </div>
-  </nav>  
-     <p style="font-size:9px">📌 تعز، ركن مفرق ماوية , مبنى مختبرات دار الصحة
-    </p> 
+  </nav>
+<div class="footer-address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+  <p>
+    <span itemprop="streetAddress"> ركن مفرق ماوية، مبنى مختبرات دار الصحة</span>,
+    <span itemprop="addressLocality">تعز</span>,
+    <span itemprop="addressCountry">اليمن</span>
+  </p>
+</div>
+ 
       
 <div class="footer-icons">
 
