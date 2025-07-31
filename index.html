@@ -307,15 +307,44 @@
       margin: auto;
       background-color: white;
     }
-    img.main-image {
-      width: 100% !important;
-      box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
-      height: auto !important;
-      display: block;
-      margin: 0 auto;
-      border-radius: 12px;
-    }
+    
+img.main-image {
+  width: calc(100% + 66px); /* تعويض padding: 33px يمين ويسار */
+  margin-left: -33px;
+  margin-right: -33px;
+  display: block;
+  height: auto !important;
+  border-radius: 12px;
+  box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
+}
+.profile-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
 
+.profile-image picture,
+.profile-image img {
+  max-width: 100%;
+  width: 487px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 6px rgba(3, 95, 97, 0.4);
+}
+
+.profile-text {
+  flex: 1;
+  background-color: white;
+  border: 1px solid green;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: 'Cairo', sans-serif;
+  text-align: right;
+  color: #333;
+  min-width: 250px;
+}
     h1 {
       background-color: #EEFFFE;
       color: #A1115E;
@@ -460,37 +489,96 @@ hr {
       padding-right: 40px;
     }
 } 
-.qualification-item {
-  margin-bottom: 0.5rem;
-  font-size: 1.1rem;
+/* تحسين عرض الصورة والنص */
+.profile-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: white;
+  border: 1px solid #004D40;
+  padding: 2px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 8px rgba(0, 128, 0, 0.2);
+  border-radius: 8px;
 }
 
-.qualification-item {
-  margin-bottom: 0.5rem;
-  font-size: 1.1rem;
+.profile-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  flex: 1 1 300px;
 }
 
-.certificate-link {
-  color: #0290B7;
-  text-decoration: underline;
-  font-weight: 600;
-  transition: all 0.2s ease;
+/* تنسيق النص */
+.profile-text {
+  flex: 1 1 300px;
+  padding: 20px;
+  font-family: 'Cairo', sans-serif;
+  line-height: 1.8;
+  color: #333;
 }
 
-.certificate-link:hover {
-  color: #017294;
-  text-decoration: none;
+.profile-text h2 {
+  color: #00695c;
+  font-size: 15px;
+  margin-bottom: 10px;
 }
 
-.parenthetical {
-  color: #666;
-  font-size: 0.9em;
+.profile-text p {
+  margin-right: 10px;
+  font-size: 12px;
+  margin-bottom: 1px;
 }
 
-/* مؤشر للروابط التي تفتح في نافذة جديدة */
-.certificate-link[target="_blank"]::after {
-  content: " ↗";
-  font-size: 0.8em;
+/* نسخة سطح المكتب */
+@media (min-width: 768px) {
+    .profile-section img {
+        border-bottom: 57px solid #004D40;
+  .profile-text h2 {
+    font-size: 30px; /* تكبير اسم د. مختار */
+  }
+
+  .profile-text p {
+    font-size: 12px;
+  }
+}
+
+/* نسخة الموبايل */
+/* نسخة سطح المكتب - خارج media query */
+.profile-text p {
+  font-size: 20px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.profile-text h2 {
+  font-size: 28px;
+}
+
+/* نسخة الموبايل */
+@media (max-width: 767px) {
+  .profile-section {
+    margin-top: 80px;flex-direction: column;
+    padding: 5px;
+    margin-bottom: 5px; /* تقليل الهامش السفلي */
+  }
+
+  .profile-text {
+    padding: 10px 0 0 0;
+  }
+
+  .profile-text h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .profile-text p {
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 10px;
+  }
 }
 footer {
       margin-top: 10px
@@ -529,6 +617,7 @@ footer a img {
       justify-content: center;/
   flex-wrap: wrap;
 }
+
  footer p {
   padding: 1px 5px;border-radius:8px;font-size: 10px;background-color:#EEFFFE; margin: 7px; color: #004B8C !important; font-weight: bold;
 }
@@ -559,10 +648,25 @@ footer a img {
     </div>
   </header>
  <div class="container">
-<img src="images/dr.profile.jpeg" alt="صورة الدكتور مختار الشرعبي أفضل دكتور بتعز" 
-     class="main-image" width="519" height="361" loading="lazy"
-     decoding="async" class="main-image">
+
     <h1>من هو الدكتور مختار الشرعبي؟</h1> 
+
+
+<div class="profile-section">
+  <div class="profile-image">
+    <img src="images/dr.profile.webp" alt="د. مختار الشرعبي">
+  </div>
+  <div class="profile-text">
+    <h2 style="color:#00695C;">د. مختار عبده خالد الشرعبي</h2>
+    <p>•
+      استشاري الأنف والأذن والحنجرة<br>•
+     دكتوراة في أمراض وجراحة ومناظير الأنف والأذن والحنجرة (بورد عربي)<br>•
+      عضو الأكاديمية الإمريكية لجراحة الأنف والأذن والحنجرة<br>•
+        عضو الجمعية اليمنية للأنف والأذن والحنجرة <br>•
+      خبرة أكثر من 10 سهوات في علاج أمراض وجراحات الأنف والأذن والحنجرة
+    </p>
+  </div>
+</div>
     <p>استشاري متخصص في طب وجراحة ومناظير الأنف والأذن والحنجرة والرأس والعنق في محافظة تعز – اليمن.
       يقدم د. مختار الشرعبي رعاية طبية متخصصة تستند إلى خبرة علمية وعملية تمتد لعشر سنوات، مع استخدام أحدث الأجهزة والمناظير التشخيصية و الجراحية.</p>
   <hr>     
