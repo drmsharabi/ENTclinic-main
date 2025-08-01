@@ -1,5 +1,79 @@
-# إزالة امتداد .html
 RewriteEngine On
+
+# =============================================
+# إعادة التوجيهات الدائمة (301) للموقع القديم
+# =============================================
+
+# 1. توجيه النطاق القديم بالكامل إلى الجديد مع الحفاظ على المسارات
+RewriteCond %{HTTP_HOST} ^drmsharabi\.github\.io$ [NC]
+RewriteRule ^ENTclinic(.*)$ https://ent.drmsharabi.com$1 [R=301,L,NE]
+
+# 2. توجيه المسارات التي تبدأ بـ /ENTclinic
+RewriteRule ^ENTclinic/(.*)$ https://ent.drmsharabi.com/$1 [R=301,L,NE]
+
+# 3. توجيه الصفحات الرئيسية القديمة
+Redirect 301 /ENTclinic/index.html https://ent.drmsharabi.com
+Redirect 301 /ENTclinic/ https://ent.drmsharabi.com
+
+# =============================================
+# تحسينات SEO وهيكلة URL
+# =============================================
+
+# 1. إزالة index.html من نهاية المسارات
+RewriteCond %{THE_REQUEST} /index\.html [NC]
+RewriteRule ^(.*?)index\.html$ /$1 [L,R=301,NC,NE]
+
+# 2. إزالة امتداد .html (القاعدة الأصلية)
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html [L]
+
+# 3. توحيد المسارات مع/بدون شرطة مائلة في النهاية
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} (.+)/$
+RewriteRule ^ %1 [R=301,L]
+
+# 4. إضافة شرطة مائلة للنهايات التي تفتقر إليها
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule [^/]$ %{REQUEST_URI}/ [R=301,L]
+
+# =============================================
+# إعدادات الأمان والأداء
+# =============================================
+
+# 1. منع الوصول إلى الملفات المخفية
+RedirectMatch 404 /\..*$
+
+# 2. تعطيل فهرسة المجلدات
+Options -Indexes
+
+# 3. توجيه صفحة 404
+ErrorDocument 404 /404.html
+
+# 4. ضغط الملفات
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript
+</IfModule>
+
+# 5. التخزين المؤقت للمتصفح
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpg "access 1 year"
+  ExpiresByType image/jpeg "access 1 year"
+  ExpiresByType image/gif "access 1 year"
+  ExpiresByType image/png "access 1 year"
+  ExpiresByType text/css "access 1 month"
+  ExpiresByType text/html "access 1 month"
+  ExpiresByType application/pdf "access 1 month"
+  ExpiresByType text/javascript "access 1 month"
+  ExpiresByType application/javascript "access 1 month"
+  ExpiresByType application/x-javascript "access 1 month"
+  ExpiresByType image/x-icon "access 1 year"
+  ExpiresDefault "access 1 month"
+</IfModule>
+
+# 6. حماية ملف .htaccess
+<Files .htaccess>
+  Order allow,deny
+  Deny from all
+</Files>
