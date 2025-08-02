@@ -1,0 +1,16 @@
+---
+layout: default
+title: Search
+---
+<h1>نتائج البحث</h1>
+<div id="search-results"></div>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const query = params.get('q');
+  if (query) {
+    // سيتم تعبئة النتائج هنا
+    document.getElementById('search-results').innerHTML = 
+      `<p>نتائج البحث عن: <strong>${query}</strong></p>`;
+  }
+</script>
