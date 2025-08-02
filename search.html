@@ -1,16 +1,33 @@
----
-layout: default
-title: Search
----
-<h1>نتائج البحث</h1>
-<div id="search-results"></div>
-
 <script>
-  const params = new URLSearchParams(window.location.search);
-  const query = params.get('q');
+// ملف search.html
+window.addEventListener('DOMContentLoaded', () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  const query = urlParams.get('q');
+  
   if (query) {
-    // سيتم تعبئة النتائج هنا
-    document.getElementById('search-results').innerHTML = 
-      `<p>نتائج البحث عن: <strong>${query}</strong></p>`;
+    // 1. احصل على كل الصفحات (يتطلب ملف index.json)
+    fetch('/index.json')
+      .then(res => res.json())
+      .then(pages => {
+        // 2. فلترة النتائج
+        const results = pages.filter(page => 
+          page.title.includes(query) || 
+          page.content.includes(query)
+        );
+        
+        // 3. عرض النتائج
+        const container = document.getElementById('search-results');
+        if (results.length > 0) {
+          container.innerHTML = results.map(page => `
+            <article>
+              <h3><a href="${page.url}">${page.title}</a></h3>
+              <p>${page.excerpt}</p>
+            </article>
+          `).join('');
+        } else {
+          container.innerHTML = "<p>لا توجد نتائج</p>";
+        }
+      });
   }
+});
 </script>
