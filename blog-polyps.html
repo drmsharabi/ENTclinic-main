@@ -55,11 +55,37 @@
   "dateModified": "2025-07-30T00:00:00+03:00"
 }
 </script>
-
+<!-- ✅ بيانات منظمة: تتبع الخبز (Breadcrumb) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "الرئيسية",
+      "item": "https://ent.drmsharabi.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "المدونة الطبية",
+      "item": "https://ent.drmsharabi.com/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "أنواع لحميات الأنف",
+      "item": "https://ent.drmsharabi.com/blog-polyps"
+    }
+  ]
+}
 <!-- ✅ بيانات منظمة: العيادة -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
+  
   "@type": "MedicalClinic",
   "name": "عيادة د. مختار الشرعبي",
   "url": "https://ent.drmsharabi.com",
@@ -453,9 +479,11 @@ font-size: 44px!important
       }
     }
 
-
-    
-footer {
+ .post-section {
+     margin: 10px 20px;
+     box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
+        }
+ footer {
       margin-top: 10px
       ;background-color: #004B8C;
       color: white !important;
@@ -528,26 +556,26 @@ footer a img {
         <p style="color: blue"style="font-size:11px">✍️ دكتور / مختار الشرعبي</p>
       
       <p>يعاني الكثير من الأشخاص من انسداد الأنف وصعوبة التنفس، لكن الأسباب تختلف حسب الحالة. ومن أكثر الأسباب شيوعًا : انحراف الحاجز الأنفي واللحميات الأنفية:</p>    <p><strong>سنتطرق في هذا المقال إلى موضوع اللحميات الأنفية و الفروقات بين أنواعها</strong></p>    <h2>أنواع لحميات الأنف</h2>  
-  <ul>  
+  <ul class="post-section">  
     <li>السلائل الأنفية (Nasal Polyps)</li>  
     <li>اللحمية البلعومية (Adenoid)</li>  
     <li>القرينات الأنفية (Turbinates)</li>   </ul>  
 <hr>    <h2 style="color: #00796B">1. اللحمية البلعومية</h2>  
     <img style="display: block; margin:20px auto;" src="images/blog/adenoid.jpeg" alt="اللحمية البلعومية" class="blog-img" />  
   <p>نسيج لمفاوي يوجد طبيعيًا خلف الأنف (في البلعوم الأنفي)، ويساهم في المناعة لدى الأطفال. لكنها قد تتضخم وتسبب انسدادًا في مجرى التنفس.</p>    <p><strong>الأعراض:</strong></p>  
-  <ul>  
+    <ul class="post-section">  
     <li>انسداد أنفي مزمن</li>  
     <li>تنفس عن طريق الفم</li>  
     <li>شخير أثناء النوم</li>  
     <li>التهابات متكررة في الأذن الوسطى</li>  
     <li>اضطرابات في النوم وتأخر النطق أحيانًا</li>  
   </ul>    <p style="color:#880E4F"><strong>   ✓ إرتباط اللحمية باللوزتين:</strong> <p>في كثير من الحالات، يكون تضخم اللحمية البلعومية مترافقًا مع تضخم اللوزتين. وقد يتطلب العلاج استئصالًا مزدوجًا للحمية البلعومية واللوزتين لضمان تحسن أفضل.  </ul>    <p style="color:#880E4F"><strong>   ❌من الأخطاء الشائعة :</strong> <p>قيام بعض غير المختصين باستئصال اللوزتين فقط، رغم وجود تضخم واضح في اللحمية، مما يؤدي إلى:</p>  
-  <ul>  
+  <ul class="post-section"> 
     <li>رد فعل مناعي وتضخم مضاعف في اللحمية</li>  
     <li>تفاقم أعراض الانسداد</li>  
     <li>عدم تحسُّن الحالة أو زيادتها سوءًا</li>  
   </ul>    <p><strong>دواعي الاستئصال:</strong></p>  
-  <ul> 
+    <ul class="post-section"> 
     <li>انسداد تنفسي مزمن</li>  
     <li>توقف النفس الليلي</li>  
     <li>التهابات أذن متكررة</li>  
@@ -556,14 +584,14 @@ footer a img {
  </ul> <hr>    <h2 style="color: #00796B">2. السلائل الأنفية</h2>  
   <img style="display: block; margin:20px auto;" src="images/blog/polyps.jpeg" alt="السلائل الأنفية" class="blog-img" />  
   <p>لحمية غير سرطانية تنمو من بطانة الأنف أو الجيوب نتيجة التهابات مزمنة أو تحسس شديد.</p>    <p><strong>الأعراض:</strong></p>  
-  <ul>  
+    <ul class="post-section"> 
     <li>انسداد أنفي دائم</li>  
     <li>ضعف أو فقدان حاسة الشم</li>  
     <li>سيلان أنف مزمن</li>  
     <li>صداع أو ضغط في الوجه</li>  
   </ul>    <p><strong>العلاج:</strong></p>  
 
- <ul>    <li>دوائي: بخاخات الكورتيزون، مضادات التحسس، أدوية مضادة للالتهاب</li>  
+  <ul class="post-section">   <li>دوائي: بخاخات الكورتيزون، مضادات التحسس، أدوية مضادة للالتهاب</li>  
     <li>جراحي: استئصال السلائل بمنظار الجيوب الأنفية تحت تخدير عام</li>  </ul> 
   <br> <div class="whatsapp-section" style="margin-top: 5px">
   <a href="https://youtu.be/i0Va72Gpp-s?feature=shared" target="_blank">
@@ -575,29 +603,29 @@ footer a img {
  شاهد نموذج عملياتنا </a>
 
 <hr>
-    <ul>       <li>بعد العملية، يحتاج المريض إلى متابعة واستخدام بخاخات وقائية لتقليل عودة اللحميات.</li>   </ul> 
+  <ul class="post-section">      <li>بعد العملية، يحتاج المريض إلى متابعة واستخدام بخاخات وقائية لتقليل عودة اللحميات.</li>   </ul> 
       <hr><h2 style="color: #00796B">3. القرينات الأنفية</h2>  
     <img style="display: block; margin:20px auto;" src="images/blog/turbinate.jpeg" alt="القرينات الأنفية" class="blog-img" />  
   <p>هي تراكيب طبيعية في الأنف تقوم بترطيب وتدفئة الهواء الداخل وتنقيته.</p>    <p><strong>الأعراض:</strong></p>  
-  <ul>  
+    <ul class="post-section">   
     <li>انسداد أنفي مستمر</li>  
     <li>صوت أنفي عند الكلام</li>  
     <li>سعال مزمن</li>  
 </ul>    <p style="color:#880E4F"><strong> ⚠️ تنبيه:</strong></p> 
 <p style="color:#00709E">
 القرينات ليست لحميات، واستئصالها الكامل مضر. يُجرى فقط تصغير جزئي في حالات محددة.</p>    <p><strong>التدخل الجراحي للقرينات الأنفية:</strong></p>  
-  <ul>  <li>يُجرى فقط عند فشل العلاج الدوائي</li>  
+    <ul class="post-section">   <li>يُجرى فقط عند فشل العلاج الدوائي</li>  
 <li>تصغير جزئي وليس استئصالًا كاملاً</li>  
 <li>يجب أن يُجرى من قبل طبيب مختص</li>
 
-  </ul>    <h2>طرق التشخيص</h2>  
+   <ul class="post-section">     <h2>طرق التشخيص</h2>  
   <p>يتم التشخيص عبر الفحص السريري باستخدام المنظار، وقد تُطلب أشعة مقطعية في بعض الحالات لتحديد حجم ونوع اللحميات بدقة.</p>    <h2>ختامًا</h2>  
   <p>  
-    التشخيص السليم والتقييم بالمنظار ضروري لتحديد سبب انسداد الأنف بدقة.<br><br>  
-<p style="color:#880E4F; text-decoration: underline"><strong> ⚠️ تنبيه:</strong></p> 
+    التشخيص السليم والتقييم بالمنظار ضروري لتحديد سبب انسداد الأنف بدقة.<br>  
+</div> <p style="color:#880E4F; text-decoration: underline"><strong> ⚠️ تنبيه:</strong></p> 
 <p style="color:#00709E"> نحذر من إجراء عمليات على يد غير المختصين، فالتدخل الخاطئ قد يزيد من تعقيد الحالة.<p><br>
 
-  
+  </div> 
      <hr>   
  <p><em> في عيادة <strong>د. مختار الشرعبي</strong> – تعز، ركن مفرق ماوية – نحرص على تقييم كل حالة بدقة وتقديم خطة علاجية شخصية تشمل الجانب الوقائي والنفسي والدوائي.</em></p>
 <hr>          
