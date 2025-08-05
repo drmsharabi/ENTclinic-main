@@ -228,7 +228,7 @@
 
         
 .whatsapp-section {
-  background-color: white;
+  
   text-align: center;
   flex-wrap: wrap;
  display: flex;
@@ -237,6 +237,7 @@
 }
 
 .whatsapp-icon {
+  background-color: #F4FCFF;
   width: 50px;
   height: 50px;
   box-shadow: 0 1px 2px rgba(33, 95, 57, 0.9);
@@ -278,7 +279,7 @@
 }
 
 .whatsapp-link a {
-  background-color: #00A19D;
+  background-color: #F4FCFF;
   color: white !important;  /* ✅ تم التصحيح هنا */
   padding: 5px 12px 4px;
   ;border-radius: 10px;
@@ -298,29 +299,17 @@
   }
 }
 
-    .container {
-      padding: 33px;
-      max-width: 960px;
-      margin: auto;
-      background-color: white;
-    }
-    
+
 .container {
       padding: 33px;
       max-width: 960px;
       margin: auto;
-      background-color: white;
+      background-color: #F9FDFF;
     }
-    
-img.main-image {
-  width: calc(100% + 66px); /* تعويض padding: 33px يمين ويسار */
-  margin-left: -33px;
-  margin-right: -33px;
-  display: block;
-  height: auto !important;
-  border-radius: 12px;
-  box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
-}
+    .certificate-link {
+    color: blue;
+        }
+ 
    h1 {
       background-color: #EEFFFE;
       color: #A1115E;
@@ -373,7 +362,7 @@ font-size: 44px!important
 .cta-button {
 
   white-space: nowrap; 
-  color: black;
+  color: #016B8E;
     background-color: white;
     border: 1.0px solid  green;
     text-decoration: none;
@@ -401,7 +390,7 @@ font-size: 44px!important
 }
 @media (min-width: 768px) {
  .cta-button {
-font-size: 44px!important
+font-size: 34px!important
 }
 }
 
@@ -412,14 +401,16 @@ font-size: 44px!important
   display: block;
   
   max-width: fit-content;padding: 5px 10px 
-        font-size: 58px;
+        font-size: 34px;
         border-radius: 12px!important;
         margin: 50px auto;
     }
 }
       .cta-button {
    text-align: center important;
-  } 
+  }
+
+  
 .cta-link {
   text-align: center;
   margin: 10px 0;
@@ -446,8 +437,19 @@ font-size: 44px!important
     padding: 6px 18px;
   }
   }
+ .p-box  {
+    box-shadow: 0 0 3px rgba(92, 95, 96, 0.4);
+    border-radius:10px;
+    border-right: 1px solid #007D8E; 
+    padding: 10px 32px; 
+    margin: 20px 0; 
+    background-color: white;
+    
+    font-size: 12px;
+    color: #555;
+   }
 
-hr {
+ hr {
   margin: 25px 0;  /* هامش علوي وسفلي صغير (5px) وبدون هوامش جانبية */
   padding: 0;     /* إزالة أي padding */
   height: 3px;    /* ارتفاع الخط نفسه */
@@ -465,83 +467,197 @@ hr {
       ul {
       padding-right: 40px;
     }
+          li {
+      margin-right: 40px;
+    }
 } 
-/* تحسين عرض الصورة والنص */
-img.main-image {
-  width: calc(100% + 66px);
-  margin-left: -33px;
-  margin-right: -33px;
-  display: block;
-  height: auto !important;
-  border-radius: 12px;
-  box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
-}
+
 
 .profile-section {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 0; /* لجعل النص ملاصق للصورة */
+  flex-direction: column;
+  align-items: center;
   background-color: white;
   border: 1px solid #004D40;
-  padding: 2px;
-  margin: 20px 0 30px;
+  padding: 5px;
+  margin: 20px 10px; /* هامش بسيط على الجوانب للموبايل */
   box-shadow: 0 0 8px rgba(0, 128, 0, 0.2);
   border-radius: 8px;
+  overflow: visible; /* allow image to shift outside */
 }
 
-.profile-image picture,
 .profile-image img {
-  width: 90%;
+  width: 100%;
+  max-width: 100%;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 0 6px rgba(3, 95, 97, 0.4);
   display: block;
+  margin: 0; /* default: remove any margin */
 }
 
 .profile-text {
-  flex: 1 1 300px;
   background-color: white;
-  border: 0px solid green;
-  padding: 5px;
   border-radius: 10px;
   font-family: 'Cairo', sans-serif;
   color: #333;
   text-align: right;
-  line-height: 1.6;
+  line-height: 1.7;
+  width: 100%;
+  padding: 10px 5px 5px 5px;
+  box-sizing: border-box;
 }
+
 /* نسخة سطح المكتب */
 @media (min-width: 768px) {
   .profile-section {
-    display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     padding: 30px;
-    gap: 0; /* إزالة المسافة بين الصورة والنص */
+    margin: 30px auto;
+    max-width: 1000px;
+    gap: 20px; /* space between image and text */
   }
 
-  .profile-section img {
-    width: 80%;
+  .profile-image {
+    flex: 0 0 43%;
     max-width: 400px;
+  }
+
+  .profile-image img {
+    width: 100%;
     height: auto;
+    transform: none; /* cancel mobile shift */
   }
 
   .profile-text {
+    flex: 1;
     width: 60%;
-    padding-left: 10px; /* لصق النص بجانب الصورة */
-    box-sizing: border-box;
+    padding: 0 10px;
   }
 
   .profile-text h2 {
-    font-size: 17px;
+    font-size: 20px;
+    margin-bottom: 10px;
   }
 
   .profile-text p {
-    font-size: 13px;
+    font-size: 15px;
   }
 }
 
+/* نسخة الموبايل */
+@media (max-width: 767px) {
+  .profile-image img {
+    transform: translateX(20px); /* shifts image to right (less margin on right) */
+  }
+}
+.booking-container {
+  border: 2px solid #009688;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  max-width: 100%;
+  margin: 10px ; /* هامش الجوانب في الموبايل */
+  font-family: 'Cairo', sans-serif;
+  background-color: #f0fafa;
+  box-sizing: border-box;
+}
+
+.booking-title {
+  color: #0147AA;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.booking-subtitle {
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.booking-numbers {
+  color: #880E4F;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 18px;
+  line-height: 1.6;
+}
+
+.booking-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.booking-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  font-weight: bold;
+  font-size: 17px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.booking-button.sms {
+  background-color: #ffffff;
+  color: #009688;
+  border: 2px solid #009688;
+}
+
+.booking-button.sms:hover {
+  background-color: #e0f2f1;
+}
+
+.booking-button.whatsapp {
+  background-color: #009688;
+  color: #ffffff;
+  border: 2px solid #009688;
+}
+
+.booking-button.whatsapp:hover {
+  background-color: #00796B;
+}
+
+.booking-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+/* نسخة سطح المكتب */
+@media (min-width: 768px) {
+  .booking-container {
+    max-width: 90٪; /* تكبير العرض */
+    margin: 20px; /* هامش جوانب أكبر */
+  }
+  .booking-button {
+    font-size: 19px; /* تكبير الخط */
+    padding: 14px 22px; /* تكبير الأزرار */
+  }
+  .booking-icon {
+    width: 58px; /* تكبير الأيقونة */
+    height: 58px;
+  }
+  .booking-title {
+      font-size: 12px; 
+}
+ .booking-subtitle {
+      font-size: 11px; 
+}
+.booking-button {
+    font-size: 31px; 
+}
+.booking-buttons {
+    gap: 91px; 
+}
+}
 footer {
       margin-top: 10px
       ;background-color: #004B8C;
@@ -639,7 +755,7 @@ footer a img {
       يقدم د. مختار الشرعبي رعاية طبية متخصصة تستند إلى خبرة علمية وعملية تمتد لعشر سنوات، مع استخدام أحدث الأجهزة والمناظير التشخيصية و الجراحية.</p>
   <hr>     
       <h2>المؤهلات والخبرة:</h2>
-<ul>
+<ul class="p-box">
   <li>   <p>
   <a href="images/S-cert..jpg" target="_blank" class="certificate-link" aria-label="اطلع على صورة شهادة الدكتوراه المهنية">
 .     دكتوراه مهنية
@@ -656,10 +772,13 @@ footer a img {
   <li>عضوية  .
   <a href="images/A-cert..jpg" target="_blank" class="certificate-link" aria-label="اطلع على صورة شهادة العضوية">.   الأكاديمية الأمريكية  </a>  </em>  والجمعية اليمنية لجراحة.   الأنف والأذن والحنجرة.</li>
 </ul>
-<hr> 
+
+
+
 <h2>ما الذي يهدف إليه:</h2>
-<p>يهدف الدكتور مختار الشرعبي من خلال عيادته في محافظة تعز ، ركن مفرق ماوية إلى<ul>
-    <li> تقديم خدمة طبية متكاملة تقوم على الثقة والدقة والرعاية الإنسانية </li>  <li>  تشخيص ومعالجة كافة مشاكل الأنف والأذن والحنجرة، وإجراء
+<p>يهدف الدكتور مختار الشرعبي من خلال عيادته في محافظة تعز ، ركن مفرق ماوية إلى<ul class="p-box">
+    <li> تقديم خدمة طبية متكاملة تقوم على الثقة والدقة والرعاية الإنسانية </li>
+    <li>  تشخيص ومعالجة كافة مشاكل الأنف والأذن والحنجرة، وإجراء
   <a href="gallery.html" class="certificate-link" aria-label="العمليات الجراحية المعقدة - اطلع على معرض الصور">
     العمليات الجراحية المعقدة
   </a>
@@ -668,59 +787,74 @@ footer a img {
 مما يسهل للمرضى تكالف وتعب السفر بعيداً للبحث عنها ،
   وبتكاليف تراعي الظروف المعيشية لذوي الدخل المحدود ..</p></li>
 <li>  الرقي بمستوى الخدمات الصحية في محافظة تعز والمحافظات المجاورة لجعل العيادة الخيار الأنسب لكل من يبحث عن أفضل دكتور استشاري متخصص في اليمن</li></ul>
-<hr>  <h2>
+  <h2>
     التزام مجتمعي وإنساني
   </h2>
-  <ul>
+  <ul class="p-box">
     <li>تقديم <strong>استشارات منخفضة التكلفة</strong> لغير القادرين.</li>
     
     <li>تقديم <strong>خصومات كبيرة للحالات غير القادرة</strong> والتعامل بمرونة مع الظروف المادية للمرضى.</li>
   </ul>
- <hr> <a href="testimonials.html" class="certificate-link" aria-label="إطلع على معرض آراء المرضى"> <h2>سمعة طيبة وثقة عالية :</h2> </a></em> 
+  <h2> سمعة طيبة وثقة عالية : </h2>
  
-  <ul style="margin: 0 0 20px 0; padding-right: 20px; color: #444; font-size: 12px;">
-    <li><strong>مصداقية وشفافية</strong> في شرح خطة العلاج والتكاليف دون أي رسوم خفية.</li>
-    <li>تطبيق <strong>بروتوكولات علاجية عالمية</strong> وفق أحدث الدراسات والأبحاث .</li>
-  </ul>
-
-  <blockquote style="border-right: 4px solid #0290B7; padding: 10px 12px; margin: 20px 0; background-color: #fff; font-size: 12px; color: #555;">
-    <em>“إذا كنت تبحث عن أفضل دكتور أنف وأذن وحنجرة في اليمن أو استشاري حنجرة موثوق في تعز، فإن الدكتور مختار الشرعبي هو خيارك الأمثل</em>  </blockquote>
-    </em> <hr><h2>  📍       <a href="contact.html" class="certificate-link" aria-label="إطلع على تفاصيل موقع العيادة">موقع العيادة : </h2>  </a>  </p>   
-  <p style="font-size: 12px; margin-bottom: 20px;">
-    <strong>العنوان:</strong>   تتميز العيادة بموقع جغرافي وسطي مناسب لكل المواطنين سواءاُ في القرى أو المدينة أو والمحافظات المجاورة، وذلك في محافظة تعز ، الحوبان، ركن مفرق ماوية, الشارع العام،  – مبنى مختبرات دار الصحة، تعز – اليمن
-  <em> <a href="about.html" style=" text-align: right;font-size: 11px; color: #0290B7; padding: 10px 10px"><strong>إقرأ المزيد<strong> ←</a></p> </em>
+  <ul class="p-box">
+    <li> <em> <a href="testimonials.html" class="certificate-link" aria-label=" آراء المرضى">مصداقية وشفافية</a></em>  في شرح خطة العلاج والتكاليف دون أي رسوم خفية.</li>
+    <li>تطبيق <strong>بروتوكولات علاجية عالمية</strong> وفق أحدث الدراسات والأبحاث   </li> 
+<div class="certificate-link" style="font-size:11px;text-align: left;">
+  <em>
+    <a href="about.html" class="cta-link" style="color: blue;">إقرأ المزيد ←</a>
+  </em>
 </div>
-  <hr>
+ </ul>
+ <br> 
+
+    <div class="whatsapp-section" style="margin-top: 5px; flex-direction: column;">
+  <a href="https://youtu.be/i0Va72Gpp-s?feature=shared" target="_blank">
+    <img style="margin-bottom:20px"src="images/social/youtube.jpeg" alt="يوتيوب" class="whatsapp-icon">
+  </a>
+<div  class="cta-button">
+  <a href="https://youtube.com/@ENTsharabi" aria-label="موقنا على يوتيوب" target="_blank" style="color: #016B8E">👁 شاهد عملياتنا على YouTube</a></div>
+  </div>    
+     
+     <h2>     📍     موقع العيادة :   </h2>   
+ <p>     تتميز العيادة بموقع جغرافي وسطي مناسب لكل المواطنين سواءاُ في القرى أو المدينة أو والمحافظات المجاورة،</p>   
+  <div class="p-box">        <a href="contact.html" class="certificate-link" aria-label="إطلع على تفاصيل موقع العيادة" style="padding-right:20px">العنوان :   </a>  
+    <p><strong>      محافظة تعز </strong> ، الحوبان،<strong> ركن مفرق ماوية</strong>, الشارع العام،  – مبنى مختبرات دار الصحة، – اليمن </p>   </p>  </div>   <br>
+   <blockquote class="p-box" style=" border-right: 4px solid red; background-color:#007D8E;color:white">
+    <em>“إذا كنت تبحث عن أفضل دكتور أنف وأذن وحنجرة في اليمن أو استشاري حنجرة موثوق في تعز، فإن الدكتور مختار الشرعبي هو خيارك الأمثل</em>  </blockquote>
+
+</div>
+  
 <div>
     
 
-   <hr><div class="whatsapp-section" style="margin-top: 5px; flex-direction: column;">
-  <a href="https://youtu.be/i0Va72Gpp-s?feature=shared" target="_blank">
-    <img src="images/social/youtube.jpeg" alt="يوتيوب" class="whatsapp-icon">
-  </a>
-<div class="cta-link">
-  <a href="https://youtube.com/@ENTsharabi" target="_blank">👁 شاهد عملياتنا على YouTube</a></div>
-  </div> 
+ 
     </div>
   
+<div class="booking-container">
+  <div class="booking-title">
+    للحجز في عيادة دكتور مختار الشرعبي
+  </div>
+  <div class="booking-subtitle">
+    أرسل الإسم برسالة على الأرقام
+  </div>
+  <div class="booking-numbers">
+    730433592<br>777421224
+  </div>
+  <div class="booking-buttons">
+    <!-- زر رسالة نصية -->
+    <a href="sms:+967730433592" target="_blank" class="booking-button sms">
+      <img src="images/social/sms.jpg" alt="رسالة نصية" class="booking-icon">
+      👆 رسالة نصية
+    </a>
 
-         <hr>   
- 
-  
-    
-     <div class="contact-item">
-        <div class="contact-title" style="color:#0147AA"><strong>للحجز أرسل الإسم</strong> </div>
-     <div class="whatsapp-section">
-    <a href="https://wa.me/967730433592" target="_blank">
-      <img  src="images/social/whatsapp.jpeg" alt="واتساب" class="whatsapp-icon">
-    </a></div>   <a href="https://wa.me/967730433592" target="_blank" class="cta-button">برسالة واتساب  👆 </a>
-      <div class="whatsapp-section">
-    <a href="sms:+967730433592" target="_blank">
-      <img  src="images/social/sms.jpg" alt="رسالة نصية" class="whatsapp-icon">
-    </a></div>   <a href="sms:+967730433592" target="_blank" class="cta-button">برسالة نصية  👆🏼</a>   <div>     
-
-  </div> 
-
+    <!-- زر واتساب -->
+    <a href="https://wa.me/967730433592" target="_blank" class="booking-button whatsapp">
+      <img src="images/social/whatsapp.jpeg" alt="واتساب" class="booking-icon">
+      👆 رسالة واتساب
+    </a>
+  </div>
+</div>
 <footer style="background-color: #004D40; color: white; text-align: center; padding: 10px 4px;">
 
   <nav style= "padding: 10px 0;gap: 3px">
