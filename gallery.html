@@ -17,14 +17,11 @@
   <meta name="bingbot" content="index, follow">
   <meta name="language" content="ar">
   <meta property="og:locale" content="ar_AR">
-  
-  <meta name="geo.region" content="YE">
-  <meta name="geo.placename" content="Taiz">
-  <meta name="geo.position" content="13.5786;44.0211">
-  <meta name="ICBM" content="13.5786,44.0211">
-
-<!-- بيانات الطبيب -->
-<script type="application/ld+json">
+ <!-- البيانات الجغرافية --><meta name="geo.region" content="YE">
+<meta name="geo.placename" content="Taiz">
+<meta name="geo.position" content="13.5786;44.0211">
+<meta name="ICBM" content="13.5786,44.0211"><!-- بيانات الطبيب -->
+  <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": ["Person", "Physician"],
@@ -59,12 +56,28 @@
     "addressRegion": "تعز",
     "addressCountry": "YE"
   },
-  "telephone": "+967730433592"
+  "telephone": [
+    "+967777421224",
+    "+967730433592"
+  ],
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "telephone": "+967777421224",
+      "contactType": "customer service",
+      "areaServed": "YE",
+      "availableLanguage": ["ar", "en"]
+    },
+    {
+      "@type": "ContactPoint",
+      "telephone": "+967730433592",
+      "contactType": "customer service",
+      "areaServed": "YE",
+      "availableLanguage": ["ar", "en"]
+    }
+  ]
 }
-</script>
-
-<!-- بيانات العيادة -->
-<script type="application/ld+json">
+</script><!-- بيانات العيادة --><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "MedicalClinic",
@@ -72,7 +85,10 @@
   "description": "عيادة متخصصة في جراحات وتشخيص أمراض الأنف، الأذن، الحنجرة، الجيوب الأنفية، السمع، والتخاطب. أفضل دكتور ENT في تعز",
   "image": "https://ent.drmsharabi.com/images/clinic-logo.png",
   "url": "https://ent.drmsharabi.com/services",
-  "telephone": "+967730433592",
+  "telephone": [
+    "+967777421224",
+    "+967730433592"
+  ],
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "الحوبان - ركن مفرق ماوية، مبنى مختبرات دار الصحة",
@@ -147,10 +163,7 @@
     "worstRating": "1"
   }
 }
-</script>
-
-<!-- بيانات معرض الصور -->
-<script type="application/ld+json">
+</script><!-- بيانات معرض الصور --><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
@@ -192,8 +205,6 @@
   }
 }
 </script>
-
-
   <!-- ✅ تنسيقات CSS -->
 
   <style>
