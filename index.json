@@ -200,16 +200,15 @@
     "opens": "Closed",
     "closes": "Closed"
   }
-],
 "review": [
   {
     "@type": "Review",
     "author": {
       "@type": "Person",
-      "name": "محمد أحمد"
+      "name": "محمد الحميري"
     },
-    "datePublished": "2024-12-15",
-    "reviewBody": "دكتور ممتاز ومتمكن، التشخيص دقيق والعلاج فعّال. أنصح به بشدة.",
+    "datePublished": "2025-04-15",
+    "reviewBody": "دكتور مختار الشرعبي بصراحة أشوفه أفضل دكتور انف واذن وحنجرة في اليمن. كان عند أمي دوار ولفيت بها دكاترة كثير بدون فائدة، لكنه شخص حالتها من أول زيارة وعالجها بتمارين فقط، والنتيجة مذهلة.",
     "reviewRating": {
       "@type": "Rating",
       "ratingValue": "5",
@@ -221,13 +220,43 @@
     "@type": "Review",
     "author": {
       "@type": "Person",
-      "name": "أم عبدالرحمن"
+      "name": "عبدالملك الشميري"
     },
     "datePublished": "2025-01-22",
-    "reviewBody": "اهتمام رائع بالمرضى وشرح مفصل للحالة والعلاج.",
+    "reviewBody": "تشخيص دقيق وما يطلب إلا الضروري. لا يقترح عمليات إلا عند الحاجة الحقيقية. أنصح به بشدة.",
     "reviewRating": {
       "@type": "Rating",
-      "ratingValue": "4.8",
+      "ratingValue": "5",
+      "bestRating": "5",
+      "worstRating": "1"
+    }
+  },
+  {
+    "@type": "Review",
+    "author": {
+      "@type": "Person",
+      "name": "Om Ahmed"
+    },
+    "datePublished": "2023-04-03",
+    "reviewBody": "دكتور متمكن وشهرته على مستوى اليمن بسبب مهارته بالعمليات الجراحية بالمنظار. نعتز ونفتخر بوجوده في تعز.",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "5",
+      "bestRating": "5",
+      "worstRating": "1"
+    }
+  },
+  {
+    "@type": "Review",
+    "author": {
+      "@type": "Person",
+      "name": "طارق الحاشدي"
+    },
+    "datePublished": "2024-05-10",
+    "reviewBody": "أفضل دكتور في عمليات المناظير. دائمًا أنصح أصدقائي ومتابعيني بزيارة عيادته المتميزة.",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "5",
       "bestRating": "5",
       "worstRating": "1"
     }
