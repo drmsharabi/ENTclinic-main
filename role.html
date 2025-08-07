@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>بضوابط التشخيص والإستشارة في عيادة د. مختار الشرعبي</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet"> 
+  <style>
+    /* أنماط عامة */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Cairo', sans-serif;
+    }
+    
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.8;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    /* الترويسة */
+  header {
+      background-color: #004D40;
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 18px;
+      border-radius: 0 0 15px 15px;
+      box-shadow: 0 4px 12px rgba(0, 77, 64, 0.3);
+    }
+    
+    .header-logo img {
+      height: 55px;
+      width: auto;
+    }
+    
+    .header-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      /* زيادة المسافة بين السطور */
+      line-height: 1.8;
+    }
+    
+    .main-title {
+      font-size: 13px;
+      font-weight: bold;
+      color: #ffffff;
+      /* زيادة المسافة بين العنوان الرئيسي والعنوان الفرعي */
+      margin-bottom: 10px;
+    }
+    
+    .sub-title {
+      font-size: 13px;
+      color: #D0FFFC;
+    }
+
+    @media (min-width: 768px) {
+      .header-logo img {
+        height: 95px !important; /* تصغير حجم الصورة */
+      }
+      .main-title {
+        font-size: 28px;
+        /* زيادة المسافة بين السطور لسطح المكتب */
+        margin-bottom: 15px;
+      }
+      .sub-title {
+        font-size: 24px;
+      }
+      .header-text {
+        /* زيادة المسافة بين السطور لسطح المكتب */
+        line-height: 1.7;
+      }
+    }
+    /* شريط التنقل */
+    nav {
+      text-align: center;
+      font-size: 11px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin: 20px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      padding: 10px 0;
+      background-color: #37CCCE;
+      border-radius: 15px;
+    }
+    
+    .nav-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      text-decoration: none;
+      gap: 17px;
+    }
+    
+    .nav-link {
+      background-color: white;
+      padding: 8px 12px;
+      border-radius: 9px;
+      color: #004D40;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 0 3px rgba(243, 245, 212, 0.4);
+      font-size: 10px;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+    
+    .nav-link:hover {
+      background-color: #00A19D;
+      color: #00332E;
+    }
+    
+    @media (min-width: 768px) {
+      nav {
+        font-size: 16px;
+        padding: 15px 10px;
+      }
+      .nav-row {
+        gap: 45px;
+      }
+      .nav-link {
+        margin-top: 0;
+        padding: 12px 18px;
+        box-shadow: 0 0 3px rgba(243, 245, 212, 0.8);
+        border-radius: 20px;
+        font-size: 24px;
+      }
+    }
+    
+    /* المحتوى الرئيسي */
+    .statement-container {
+      background: linear-gradient(to bottom, #ffffff, #f0f8ff);
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 102, 204, 0.15);
+      overflow: hidden;
+      margin: 20px auto;
+      padding: 10px;
+      width: 99%;
+      max-width: 1200px;
+    }
+    
+    .statement-header {
+      text-align: center;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 3px solid #00709E;
+      position: relative;
+    }
+    
+    .statement-header h1 {
+      color: #A1115E;
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+    
+    .statement-header h2 {
+      color: #004D40;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+    
+    @media (min-width: 768px) {
+      .statement-header h1 {
+        font-size: 36px;
+      }
+      .statement-header h2 {
+        font-size: 24px;
+      }
+    }
+    
+    .statement-content {
+      margin: 30px 0;
+    }
+    
+    .statement-section {
+      margin-bottom: 40px;
+      padding: 15px;
+      background-color: #e6f7ff;
+      border-radius: 12px;
+      border-left: 5px solid #00709E;
+    }
+    
+    .statement-section-title {
+      color: #880A41;
+      font-size: 20px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .statement-section-title i {
+      margin-left: 10px;
+      font-size: 24px;
+    }
+      @media (min-width: 768px) {   
+       .statement-section-title {
+      font-size: 60px;
+      align-items: center;
+    }
+}
+    .statement-points {
+      margin: 20px 0;
+      padding: 0 5px;
+    }
+    
+    .statement-point {
+      background-color: white;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+      position: relative;
+      border-right: 4px solid #00A19D;
+    }
+    
+    .statement-point h3 {
+      color: #00709E;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    
+    .statement-point p {
+      font-size: 16px;
+      line-height: 1.7;
+      color: #444;
+    }
+    
+    .highlight-box {
+      background-color: #fffde7;
+      border: 2px solid #ffd600;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 30px 0;
+      position: relative;
+    }
+    
+    .highlight-box:before {
+      content: "!";
+      position: absolute;
+      top: -15px;
+      left: 20px;
+      background-color: #ffd600;
+      color: #333;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    
+    .example-box {
+      background-color: #e8f5e9;
+      border: 2px dashed #4caf50;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 30px 0;
+    }
+    
+    .example-box h3 {
+      color: #2e7d32;
+      text-align: center;
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
+    
+    .invitation-box {
+      background: linear-gradient(135deg, #00709E, #004D40);
+      color: white;
+      padding: 30px;
+      border-radius: 15px;
+      text-align: center;
+      margin: 40px 0;
+    }
+    
+    .invitation-box h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    
+    .invitation-box ul {
+      list-style-type: none;
+      margin: 30px 0;
+      padding: 0;
+    }
+    
+    .invitation-box li {
+      font-size: 18px;
+      margin-bottom: 15px;
+      padding-right: 25px;
+      position: relative;
+    }
+    
+    .invitation-box li:before {
+      content: "✓";
+      position: absolute;
+      right: 0;
+      top: 0;
+      background-color: #00A19D;
+      color: white;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+ 
+
+
+    .whatsapp-link {
+    white-space: nowrap; 
+      color: #004D40;
+      background-color: white;
+      border: 1.5px solid #004D40;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(65, 18, 57, 0.2);
+      width: fit-content;
+      display: block;
+      margin: 20px auto;
+      transition: all 0.3s ease;
+      text-align: center;
+      border-radius: 8px;
+      padding: 4px 9px;
+      font-size: 12px;
+      max-width: fit-content;
+      animation: pulse 3s infinite;
+    }
+    
+    .whatsapp-link:hover {
+      background-color: #128C7E;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+    
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+    
+    @media (min-width: 768px) {
+  .whatsapp-link  {
+        font-size: 30px;
+        border-radius: 12px !important;
+        margin: 20px auto;
+        padding: 5px 25px;
+      }
+    }    
+     
+    .clinic-info {
+      background-color: #e6f7ff;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 30px 0;
+      text-align: center;
+      border: 2px solid #00A19D;
+    }
+    
+    .clinic-info p {
+      font-size: 18px;
+      color: black;
+      margin: 10px 0;
+      font-weight: bold;
+    }
+      footer {
+      margin-top: 10px;
+      background-color: #004B8C;
+      color: white !important;
+      text-align: center;
+      padding: 10px 10px;
+      font-size: 9px;
+      line-height: 1.7;
+    }
+
+    footer a img {
+      width: 30px;
+      height: 30px;
+    }
+
+    @media (min-width: 768px) {
+      footer a img {
+        width: 70px;
+        height: 70px;
+      }
+    }
+    
+    .footer-icons {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      display: flex;
+      gap: 5px; 
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  .footer-p {
+      padding: 1px 2px;
+      border-radius: 8px;
+      border-top:1px solid white;font-size: 7px;
+      background-color: #004D40;
+      margin: 7px;
+      color: white !important;
+          }
+  
+    footer p {
+      padding: 1px 5px;
+      border-radius: 8px;
+      font-size: 9px;
+      background-color: #EEFFFE;
+      margin: 7px;
+      color: #004B8C !important;
+      font-weight: bold;
+    }
+    
+    @media (min-width: 768px) {
+      .footer-icons {
+        gap: 25px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+      }
+
+    }
+    
+  .footer-p {
+    font-size: 7px; /* حجم الجوال الافتراضي */
+  }
+
+  @media (min-width: 768px) {
+    .footer-p {
+      font-size: 1.8rem !important; /* استخدام وحدات rem للتحكم الدقيق */
+      transform: scale(0.85); /* تصغير الحجم باستخدام التحويل */
+      padding: 2px 5px !important; 
+      margin: 5px auto !important;
+      display: inline-block; /* ضروري لاستخدام transform */
+    }
+  }
+    /* العناوين والنصوص */
+    h1, h2, h3, h4 {
+      color: #004D40;
+    }
+    
+    p {
+      font-size: 16px;
+      margin: 15px 0;
+      color: #444;
+      line-height: 1.8;
+    }
+    
+    ul, ol {
+      padding-right: 25px;
+      margin: 15px 0;
+    }
+    
+    li {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+    
+    strong {
+      color: #00709E;
+    }
+    
+    /* أقسام خاصة */
+    .apology-section {
+      background-color: #ffebee;
+      border: 2px solid #f44336;
+      border-radius: 12px;
+      padding: 25px;
+      margin: 30px 0;
+      text-align: center;
+    }
+    
+    .apology-section h3 {
+      color: #d32f2f;
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+    
+    .steps-section {
+      margin: 40px 0;
+    }
+    
+    .step-card {
+      background-color: white;
+      border-radius: 12px;
+      padding: 25px;
+      margin: 20px 0;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+      border-left: 5px solid #00A19D;
+    }
+    
+    .step-number {
+      background-color: #004D40;
+      color: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 20px;
+      margin-left: 15px;
+      float: right;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header-logo">
+    <img src="images/clinic-logo.png" alt="شعار العيادة">
+    <div class="header-text">
+      <div class="main-title">عيادة د. مختار الشرعبي الإستشارية</div>
+      <div class="sub-title"> للأنف والأذن والحنجرة والرأس والعنق</div>
+    </div>
+  </header>
+
+  <nav>
+    <div class="nav-row">
+      <a href="index.html" class="nav-link">🏠 الرئيسية</a>
+      <a href="about.html" class="nav-link">📘 قصتنا</a>
+      <a href="services.html" class="nav-link">🩺 من خدماتنا</a>
+      <a href="gallery.html" class="nav-link">📷 معرض الصور</a>
+    </div>
+    <div class="nav-row">    
+      <a href="blog.html" class="nav-link">📚  المدونة</a>
+      <a href="testimonials.html" class="nav-link">💬 رأي الجمهور</a>
+      <a href="contact.html" class="nav-link">📍 تواصل معنا</a>
+      <a href="https://wa.me/967730433592" class="nav-link">✉️ إحجز الآن</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="statement-container">
+      <div class="statement-header">
+        <h1>بيان توضيح واعتذار</h1>
+        <h2>بخصوص إجراءات التشخيص واتخاذ القرار الجراحي</h2>
+      </div> <br>
+
+      <div class="apology-section">
+        <h3>🙏 مرضانا الكرام،</h3>
+        <p>
+          نحن نُقدّر ثقتكم الغالية بنا ونفهم تطلعكم للحصول على إجابات سريعة، لكن - <strong>سلامتكم فوق كل اعتبار</strong> - لذلك، نعتذر عن عدم إمكانية تقديم تشخيص دقيق أو استشارة طبية - عن بُعد - اعتمادًا على صور الأشعة أو التقارير فقط. فالصحة ليست لغزًا يُحل بلمسة زر، بل رحلة تشخيص دقيقة تبدأ بلقاء مباشر يُحيط بكل تفاصيل حالتكم.
+        </p>
+      </div>
+
+      <div class="statement-content">
+        <div class="statement-section">
+          <h2 class="statement-section-title">✋ لماذا لا نحبذ التشخيص عن بُعد</h2>
+          
+          <div class="statement-points">
+            <div class="statement-point">
+              <p>
+                <strong>لأن جسد الإنسان كتاب مفتوح</strong> تخبئ صفحاته أسرارًا لا تكشفها الصور وحدها.
+              </p>
+            </div>
+            
+            <div class="statement-point">
+              <p>
+                <strong>لأن الحدس الطبي قد يكتشف ما لا تراه الكاميرات:</strong> الحالة النفسية، التوتر والقلق، أو حتى نغمة صوت تُخبر قصصًا مختلفة.
+              </p>
+            </div>
+            
+            <div class="statement-point">
+              <p>
+                <strong>لأن الأعراض قد تتشابه بين عشرات الأمراض،</strong> والفحص المباشر هو البوصلة التي تُحدد الاتجاه الصحيح.
+              </p>
+            </div>
+            
+            <div class="statement-point">
+              <p>
+                <strong>لأننا نرى ونلمس علامات ودلائل مهمة</strong> لا يمكن للمريض وصفها عن بعد وبدونها قد نعطيكم تشخيصا مغايرا وعلاجا على ضوءه غير مجدي إن لم يكن له تأثير سلبي على حالتكم.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="statement-section">
+          <h2 class="statement-section-title">🚦 خطوات التشخيص الدقيق: رحلتنا معًا نحو العلاج الأمثل</h2>
+          
+          <div class="steps-section">
+            <div class="step-card">
+              <div class="step-number">1</div>
+              <h3>الحوار الأول: قصة جسدك تُروى بدقة</h3>
+              <p>نستمع إليكم بتركيز: متى بدأت الأعراض؟ كيف تتطور؟ ما الذي يُهدئها أو يُفاقمها؟ كل تفصيل قد يكون مفتاح الحل.</p>
+            </div>
+            
+            <div class="step-card">
+              <div class="step-number">2</div>
+              <h3>الفحص السريري: عين الطبيب التي ترى ما لا تراه الأشعة!</h3>
+              <p>هنا نلمس، نتحسس، ونكتشف العلامات الخفية، نجري المنظار للأماكن العميقة المخفية، تورّم طفيف، تغير في لون الإفرازات، أو رد فعل عصبي... إشارات قد تغير مسار العلاج تمامًا.</p>
+            </div>
+            
+            <div class="step-card">
+              <div class="step-number">3</div>
+              <h3>الفحوصات أو الأشعة الداعمة: قطع الأحجية الأخيرة</h3>
+              <p>الأشعة والتحاليل تُشبه "المُعين البصري" للطبيب، تؤكد التشخيص أو تستبعد الاحتمالات، لكنها لا تحل محل الحكمة الإنسانية في الربط بين الأعراض والفحص السريري.</p>
+            </div>
+          </div>
+          
+          <div class="highlight-box">
+            <h3>مثال توضيحي:</h3>
+            <p>بعض الدراسات الحديثة أظهرت أن ٣٠٪ من الأشخاص السليمين قد تظهر لديهم تغيرات في الأشعة المحورية للجيوب الأنفية مثلا دون أن يكون لها علاقة بشكوى المريض ولا تسبب له أي أعراض ولا داعي حتى لذكرها للمريض.</p>
+            <p>👈 لأجل هذا من الحكمة الإعتذار عن التجاوب مع استشارة غيبية بمجرد إرسال صورة أشعة أو نحوه دون إتخاذ كل ما سبق من إجراءات أساسية حرصا على سلامتكم..</p>
+          </div>
+        </div>
+
+        <div class="statement-section">
+          <h2 class="statement-section-title">💼 بخصوص الإستفسارات عن تكلفة العمليات الجراحية: شفافية تُبنى على الدقة</h2>
+          
+          <div class="statement-points">
+            <div class="statement-point">
+              <h3>✋ لا نُحبذ التخمين:</h3>
+              <p>تحديد التكلفة دون الكشف على المريض يُشبه تقدير سعر منزل من صورة خارجية!</p>
+            </div>
+            
+            <div class="statement-point">
+              <h3>📌 فكل حالة فريدة:</h3>
+              <p>
+                • درجة التعقيد، الوقت والجهد الذي تحتاجه<br>
+                • الإجراءات الإضافية التي قد يحتاجها المريض<br>
+                • الوضع الصحي العام للمريض<br>
+                كلها عوامل تُشكل الصورة الكاملة.
+              </p>
+            </div>
+            
+            <div class="statement-point">
+              <h3>✅ خطوات التقييم المالي:</h3>
+              <p>
+                1. تقييم شامل للحالة حضورياً<br>
+                2. تحليل دقيق لتفاصيل الحالة<br>
+                3. تحديد ما إذا كان المريض بحاجة للتدخل الجراحي<br>
+                4. استكشاف البدائل غير الجراحية أولاً<br>
+                5. إقرار خطة علاجية مخصصة تناسب وضعك الصحي والمادي
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="statement-section">
+          <h2 class="statement-section-title">⚖ قرار الجراحة: لماذا قد نختلف مع آراء أطباء آخرين؟</h2>
+          
+          <div class="statement-points">
+            <div class="statement-point">
+              <p>
+                <strong>نحن نحترم زملاءنا وقراراتهم</strong>، واختلاف قرارنا لا يعني بالضرورة أنهم مخطئين ونحن الصواب أو العكس..
+              </p>
+            </div>
+            
+            <div class="statement-point">
+              <p>
+                <strong>الطب - فن - قبل أن يكون علمًا!</strong> خبرات متراكمة ومدارس مختلفة قد تصل لاستنتاجات متباينة.
+              </p>
+            </div>
+            
+            <div class="statement-point">
+              <p>
+                <strong>لكننا نتحمل مسؤولية قراراتنا أمام الله ثم أمامكم</strong>، لذا لا نعتمد على قرار غيرنا بل نعتمد على تشخيصنا المباشر بعد:
+                <br>- الفحص التفصيلي
+                <br>- مراجعة كل الاحتمالات
+                <br>- تجربة كافة البدائل العلاجية الممكنة
+                <br>- وضع مصلحتكم فوق أي اعتبار
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="invitation-box">
+          <h2 style="color:yellow">💠 دعوة مفتوحة لكل من يرغب في الإستشارة الطبية</h2>
+          <p style="color:#B6FFF5">نفتح لكم أبواب عيادتنا للكشف المباشر.. حيث نعدكم:</p>
+          
+          <ul>
+            <li>تقييمًا شاملاً بمنهجية عالمية وبأحدث التقنيات والمناظير التشخيصية وأجهزة تقييم السمع</li>
+            <li>خطة علاجية ترسم معكم طريق التعافي خطوة بخطوة بكل شفافية ومصداقية</li>
+            <li>تكلفة ميسرة تراعي الظروف المعيشية الصعبة للمرضى</li>
+          </ul>
+          
+          
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  
+              <hr> 
+<a href="sms:+967730433592" target="_blank" class="whatsapp-link">📲 حجز موعد عبر الواتساب</a> <div>     
+
+
+        </div>
+    </div>
+
+
+    
+
+</div> <hr>
+
+    <a href="index.html"style=":color:#004D40" class="whatsapp-link">← عودة للصفحة الرئيسية</a></div>
+  </div>   <hr> 
+
+<footer style="background-color: #004D40; color: white; text-align: center; padding: 10px 4px;">
+
+ 
+     <p style="font-size:9px">📌 تعز، ركن مفرق ماوية , مبنى مختبرات دار الصحة
+    </p> 
+      
+<div class="footer-icons">
+
+    <a href="https://www.facebook.com/profile.php?id=100082372405434" target="_blank">
+      <img src="images/social/facebook.png" alt="فيسبوك" width="30" height="30" />
+    </a>
+
+    <a href="https://wa.me/967730433592" target="_blank">
+      <img src="images/social/whatsapp.png" alt="واتساب" width="30" height="30" />
+    </a>
+
+    <a href="https://youtube.com/@ENTsharabi" target="_blank">
+      <img src="images/social/youtube.png" alt="يوتيوب" width="30" height="30" />
+    </a>
+
+    <a href="https://www.instagram.com/dr.mokhtar_alsharabi" target="_blank">
+      <img src="images/social/instagram.png" alt="انستغرام" width="30" height="30" />
+    </a>
+
+    <a href="https://x.com/Dr_Alsharaabi" target="_blank">
+      <img src="images/social/x.png" alt="تويتر (إكس)" width="30" height="30" />
+    </a>
+
+    <a href="https://www.tiktok.com/@dr_mokhtar_sharabi" target="_blank">
+      <img src="images/social/tiktok.png" alt="تيك توك" width="30" height="30" />
+    </a>
+
+    <a href="mailto:drm9khtarnajy@gmail.com" target="_blank">
+            <img src="images/social/gmail.png" alt="بريد إلكتروني" width="30" height="30" />
+  </a>  </div>  
+  
+    <p class=" footer-p">© 2025 جميع الحقوق محفوظة - عيادة د. مختار الشرعبي</p>
+</footer>
+ </html> 
