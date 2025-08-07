@@ -75,11 +75,18 @@
     <priority>0.7</priority>
   </url>
   
-  <!-- المقال الجديد: فقدان حاسة الشم -->
+  <!-- المقال الجديد: فحص الروماتزم ASO -->
   <url>
-    <loc>https://ent.drmsharabi.com/blog-smell</loc>
+    <loc>https://ent.drmsharabi.com/blog-aso</loc>
     <lastmod>2025-08-04</lastmod>  <!-- تاريخ نشر المقالة -->
     <priority>0.7</priority>
   </url>
-
+  
+  <!-- المقال الجديد: فقدان حاسة الشم -->
+  <url>
+    <loc>https://ent.drmsharabi.com/blog-smell</loc>
+    <lastmod>2025-08-06</lastmod>  <!-- تاريخ نشر المقالة -->
+    <priority>0.7</priority>
+  </url>
+  
 </urlset>
