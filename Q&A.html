@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأسئلة الشائعة - عيادة د. مختار الشرعبي</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&subset=arabic&display=swap" rel="stylesheet">
+    <style>
+        /* استيراد خط Cairo */
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&subset=arabic&display=swap');
+        
+        /* تطبيق الخط على جميع العناصر */
+        * {
+            font-family: 'Cairo', sans-serif !important;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            direction: rtl;
+            background-color: #f9f9f9;
+            text-align: right;
+            background-color: #f0f7f6;
+            color: #333;
+            line-height: 1.7;
+        }
+        
+        /* إصلاح مشكلة الأيقونات */
+        i.fas, i.fab {
+            font-family: "Font Awesome 6 Free" !important;
+            font-style: normal;
+        }
+        
+        /* تحسين ظهور الأيقونات في القوائم */
+        .specialty-body li i {
+            font-family: "Font Awesome 6 Free" !important;
+            display: inline-block;
+            margin-left: 10px;
+        }
+        
+        /* إصلاح توجيه الأيقونات في بيئة RTL */
+        .fa-chevron-down:before {
+            content: "\f078";
+        }
+        
+        .fa-angle-left:before {
+            content: "\f105"; /* تعديل ليكون مناسب للغة العربية */
+        }
+
+        nav {
+            text-align: center;
+            font-size: 11px;
+            box-shadow: 0 6px 4px rgba(236, 235, 255, 0.9);
+            margin: 2px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+        
+        .nav-row {
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .nav-link {
+            background-color: #004D40;
+            padding: 2px 5px;
+            border-radius: 9px;
+            color: #E0F2F1;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 0 0 0 0.3px rgba(243, 245, 212, 4);
+            font-size: 10px;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        .nav-link:hover {
+            background-color: red;
+            color: #00332E;
+        }
+        
+        @media (min-width: 768px) {
+            nav {
+                font-size: 16px;
+                padding: 30px 10px;
+            }
+            .nav-row {
+                gap: 35px;
+            }
+            .nav-link {
+                margin-top: 20px;
+                padding: 12px 18px;
+                box-shadow: 0 0 0 0.8px rgba(243, 245, 212, 8);
+                border-radius: 20px;
+                font-size: 28px;
+            }
+        }
+        
+        header {
+            background-color: #004D40;
+            color: white;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 18px;
+        }
+        
+        .header-logo img {
+            height: 40px;
+            width: auto;
+            border-radius: 50%;
+            border: 1.5px solid #A8FFEF;
+        }
+        
+        .header-text {
+            display: flex;
+            line-height: 2.5;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        
+        .main-title {
+            font-size: 13px;
+            font-weight: bold;
+            color: #ffffff;
+            white-space: nowrap;
+        }
+        
+        .sub-title {
+            font-size: 10px;
+            color: #D0FFFC;
+            white-space: nowrap;
+        }
+        
+        @media (min-width: 768px) {
+            .main-title {
+                font-size: 30px !important;
+            }
+            .sub-title {
+                font-size: 23px !important;
+            }
+            .header-logo img {
+                height: 90px !important;
+            }
+        }
+        
+        :root {
+            --primary-color: #004B8C;
+            --secondary-color: #00796B;
+            --accent-color: #4CAF50;
+            --light-color: #B2DFDB;
+            --dark-color: #00251a;
+            --text-color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* ترويسة الصفحة */
+        .page-header {
+            text-align: center;
+            padding: 40px 0;
+            background-color: #F1FEFF;
+            border-radius: 0 0 20px 20px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .page-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+            color: #77023A;
+        }
+        
+        .page-header p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+            color: black;
+        }
+        
+        .page-header .icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #77023A;
+        }
+        
+        /* قسم الأسئلة الشائعة */
+        .faq-section {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            margin-bottom: 40px;
+        }
+        
+        .faq-item {
+            border-bottom: 1px solid #eaeaea;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        
+        .faq-question {
+            padding: 20px 25px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #77023A;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .faq-question:hover {
+            background-color: rgba(0, 75, 140, 0.05);
+        }
+        
+        .faq-question i {
+            font-size: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-answer {
+            padding: 0 25px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            background-color: #f9f9f9;
+            color: black;
+            line-height: 1.8;
+        }
+        
+        .faq-answer p {
+            margin-bottom: 15px;
+        }
+        
+        .faq-answer ul {
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .faq-answer li {
+            margin-bottom: 8px;
+        }
+        
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+            padding: 20px 25px;
+        }
+        
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+        
+        /* قسم الأسئلة حسب التخصص */
+        .specialties {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .specialty-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+        }
+        
+        .specialty-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .specialty-header {
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+        
+        .specialty-body {
+            padding: 20px;
+        }
+        
+        .specialty-body ul {
+            list-style-type: none;
+        }
+        
+        .specialty-body li {
+            padding: 10px 0;
+            border-bottom: 1px dashed #eee;
+            display: flex;
+            align-items: center;
+        }
+        
+        .specialty-body li:last-child {
+            border-bottom: none;
+        }
+        
+        .specialty-body li i {
+            color: var(--secondary-color);
+            font-size: 1.2rem;
+        }
+        
+        /* زر الحجز */
+        .booking-cta {
+            text-align: center;
+            padding: 40px 0;
+        }
+        
+        .booking-btn {
+            display: inline-block;
+            background: linear-gradient(to right, var(--secondary-color), var(--accent-color));
+            color: white;
+            text-decoration: none;
+            font-size: 1.3rem;
+            font-weight: 600;
+            padding: 15px 40px;
+            border-radius: 50px;
+            box-shadow: 0 5px 15px rgba(0, 121, 107, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .booking-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 121, 107, 0.4);
+        }
+        
+        .booking-btn i {
+            margin-left: 10px;
+        }
+        
+        /* تذييل الصفحة */
+        footer {
+            background-color: #004D40 !important;
+            color: white;
+            text-align: center;
+            padding: 30px 0 10px;
+            margin-top: 40px;
+            border-radius: 20px 20px 0 0;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 10px;
+            margin: 15px auto;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .social-icon {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            background-color: var(--accent-color);
+            transform: translateY(-5px);
+        }
+        
+        .social-icon img {
+            width: 24px;
+            height: 24px;
+        }
+        
+        .copyright {
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.8);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        /* العنوان الجغرافي - خلفية بيضاء تناسب المحتوى */
+        .address-card {
+            display: inline-block;
+            background-color: white;
+            color: #004B8C !important;
+            padding: 2px 20px;
+            border-radius: 30px;
+            margin: 10px auto;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-size: 12px;
+            line-height: 1.5;
+            max-width: 90%;
+        }
+        
+        /* مواعيد العمل */
+        .working-hours {
+            background-color: rgba(255, 255, 255, 0.15);
+            display: inline-block;
+            padding: 8px 15px;
+            border-radius: 20px;
+            margin: 10px auto;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        
+        /* حقوق النشر */
+        .copyright-container {
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            margin-top: 15px;
+            font-weight: 500;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 7px; /* حجم الموبايل الافتراضي */
+        }
+        
+        /* التصميم المتجاوب */
+        @media (max-width: 768px) {
+            .page-header h1 {
+                font-size: 2rem;
+            }
+            
+            .page-header p {
+                font-size: 1rem;
+            }
+            
+            .faq-question {
+                font-size: 1.1rem;
+                padding: 15px 20px;
+            }
+            
+            .specialty-header {
+                font-size: 1.1rem;
+                padding: 15px;
+            }
+            
+            .booking-btn {
+                font-size: 1.1rem;
+                padding: 12px 30px;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            /* تكبير عنوان العيادة في نسخة سطح المكتب */
+            .address-card {
+                font-size: 29px !important; /* حجم أكبر لسطح المكتب */
+                margin-top: 30px;
+                margin-bottom: 25px;
+                padding: 12px 30px !important;
+            }
+            
+            /* تكبير مواعيد العمل في نسخة سطح المكتب */
+            .working-hours {
+                font-size: 32px !important; /* حجم أكبر لسطح المكتب */
+                padding: 12px 25px !important;
+            }
+            
+            /* تصغير حقوق النشر في نسخة سطح المكتب */
+            .copyright-container {
+                font-size: 6px !important; /* حجم صغير لسطح المكتب */
+                padding: 12px;
+            }
+            
+            /* تكبير أيقونات التواصل الاجتماعي في سطح المكتب */
+            .social-icon {
+                width: 80px;
+                height: 80px;
+            }
+            
+            .social-icon img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header-logo">
+        <img src="images/clinic-logo.png" alt="شعار العيادة">
+        <div class="header-text">
+            <div class="main-title">عيادة د. مختار الشرعبي الإستشارية</div>
+            <div class="sub-title">الإستشارية للأنف والأذن والحنجرة والرأس والعنق،</div>
+        </div>
+    </header>
+    
+    <!-- ترويسة الصفحة -->
+    <div class="page-header">
+        <div class="container">
+            <i class="fas fa-question-circle icon"></i>
+            <h1>الأسئلة الشائعة</h1>
+            <p>هنا ستجد إجابات على أكثر الأسئلة شيوعاً حول أمراض الأنف والأذن والحنجرة وخدمات عيادتنا</p>
+        </div>
+    </div>
+    
+
+    <div class="container">
+        <!-- قسم الأسئلة الشائعة -->
+        <div class="faq-section">
+            <div class="faq-item active">
+                <div class="faq-question">
+                    ما هي الأمراض التي يعالجها د. مختار الشرعبي؟
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>د. مختار الشرعبي متخصص في تشخيص وعلاج جميع أمراض الأنف والأذن والحنجرة، بما في ذلك:</p>
+                    <ul>
+                        <li>التهابات الأذن الوسطى والداخلية والخارجية</li>
+                        <li>مشاكل السمع والطنين</li>
+                        <li>التهاب الجيوب الأنفية الحاد والمزمن</li>
+                        <li>انحراف الحاجز الأنفي وصعوبات التنفس</li>
+                        <li>مشاكل الحنجرة والصوت</li>
+                        <li>أورام الرأس والرقبة الحميدة والخبيثة</li>
+                        <li>الدوخة واضطرابات التوازن</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    كيف يمكنني حجز موعد في العيادة؟
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>يمكنك حجز موعد في العيادة بعدة طرق:</p>
+                    <ul>
+                        <li>إرسال رسالة نصية أو واتساب على الرقم: <strong>967730433592+</strong></li>
+                        <li>أو الرقم <strong>967777421224+</strong></li>    
+                        <li>زيارة العيادة مباشرة في العنوان: مفرق ماوية، مبنى مختبرات دار الصحة، تعز، اليمن</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    ما هي مواعيد العمل في العيادة؟
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>مواعيد عمل العيادة:</p>
+                    <ul>
+                        <li>الأحد إلى الخميس: من 10:00 صباحاً حتى 1:00 ظهراً</li>
+                        <li>الجمعة: عطلة</li>
+                    </ul>
+                    <p>بالنسبة للحالات الطارئة خارج أوقات العمل، يرجى مراسلة الدكتور مباشرة على نفس رقم العيادة.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    هل تقوم العيادة بإجراء العمليات الجراحية؟
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>نعم، تقوم العيادة بإجراء العديد من العمليات الجراحية المتخصصة في مجال الأنف والأذن والحنجرة، بالتنسيق مع المستشفيات المجاورة المؤهلة، منها:</p>
+                    <ul>
+                        <li>جراحات الأذن: تركيب أنابيب تهوية، ترميم طبلة الأذن، جراحات العظم الصدغي</li>
+                        <li>جراحات الأنف والجيوب الأنفية: رأب الحاجز الأنفي، استئصال اللحميات، جراحة الجيوب بالمنظار</li>
+                        <li>جراحات الحنجرة: استئصال اللوزتين واللحمية، جراحات الحبال الصوتية</li>
+                        <li>جراحات الرقبة: استئصال الغدد اللعابية، استئصال أورام الرقبة</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    ما هي الإجراءات المتبعة في العيادة للوقاية من كورونا؟
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>تتبع العيادة إجراءات صارمة للحفاظ على سلامة المرضى والكادر الطبي، تشمل:</p>
+                    <ul>
+                        <li>تعقيم جميع الأسطح والأدوات قبل وبعد كل مريض</li>
+                        <li>الالتزام بارتداء الكمامات من قبل جميع العاملين والمرضى</li>
+                        <li>توفير معقمات اليدين في جميع أنحاء العيادة</li>
+                        <li>التهوية الجيدة لجميع غرف العيادة</li>
+                        <li>تنظيم مواعيد المرضى لتقليل الازدحام في غرفة الانتظار</li>
+                        <li>قياس درجة الحرارة لكل مريض قبل الدخول للعيادة</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- قسم الأسئلة حسب التخصص -->
+        <h2 style="text-align: center; color: black; margin-bottom: 30px;">أسئلة متخصصة حسب المجال</h2>
+        
+        <div class="specialties">
+            <div class="specialty-card">
+                <div class="specialty-header">
+                    <i class="fas fa-ear"></i> أمراض الأذن والسمع
+                </div>
+                <div class="specialty-body">
+                    <ul>
+                        <li><i class="fas fa-angle-left"></i> ما هي أسباب طنين الأذن؟</li>
+                        <li><i class="fas fa-angle-left"></i> كيف يمكن علاج التهاب الأذن الوسطى؟</li>
+                        <li><i class="fas fa-angle-left"></i> ما هي أحدث علاجات فقدان السمع؟</li>
+                        <li><i class="fas fa-angle-left"></i> كيف يتم تنظيف الأذن بشكل صحيح؟</li>
+                        <li><i class="fas fa-angle-left"></i> ما هي أعراض ثقب طبلة الأذن؟</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="specialty-card">
+                <div class="specialty-header">
+                    <i class="fas fa-nose"></i> أمراض الأنف والجيوب
+                </div>
+                <div class="specialty-body">
+                    <ul>
+                        <li><i class="fas fa-angle-left"></i> كيف يتم تشخيص التهاب الجيوب الأنفية المزمن؟</li>
+                        <li><i class="fas fa-angle-left"></i> ما هي طرق علاج انحراف الحاجز الأنفي؟</li>
+                        <li><i class="fas fa-angle-left"></i> هل يمكن علاج حساسية الأنف بشكل نهائي؟</li>
+                        <li><i class="fas fa-angle-left"></i> ما هي أحدث جراحات تجميل الأنف؟</li>
+                        <li><i class="fas fa-angle-left"></i> كيف يمكن التخلص من الشخير أثناء النوم؟</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="specialty-card">
+                <div class="specialty-header">
+                    <i class="fas fa-throat"></i> أمراض الحنجرة والصوت
+                </div>
+                <div class="specialty-body">
+                    <ul>
+                        <li><i class="fas fa-angle-left"></i> ما هي أسباب بحة الصوت المستمرة؟</li>
+                        <li><i class="fas fa-angle-left"></i> كيف يتم علاج التهاب الحنجرة المزمن؟</li>
+                        <li><i class="fas fa-angle-left"></i> ما هي أورام الحنجرة وكيف يمكن اكتشافها مبكراً؟</li>
+                        <li><i class="fas fa-angle-left"></i> كيف يمكن تحسين جودة الصوت؟</li>
+                        <li><i class="fas fa-angle-left"></i> ما هي أسباب صعوبة البلع المستمرة؟</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- زر الحجز -->
+        <div class="booking-cta">
+            <a href="https://wa.me/967730433592" class="booking-btn">
+                احجز موعدك الآن <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </div>
+    
+    
+    
+    <footer style="background-color: #004D40; color: white; text-align: center;">
+
+        <nav style="padding: 10px 0; gap: 10px">
+            <div class="nav-row">
+                <a href="index.html" class="nav-link">🏠 الرئيسية</a>
+                <a href="about.html" class="nav-link">📘 قصتنا</a>
+                <a href="services.html" class="nav-link">🩺 من خدماتنا</a>
+                <a href="gallery.html" class="nav-link">📷 معرض الصور</a>
+            </div>
+            <div class="nav-row">    
+                <a href="blog.html" class="nav-link">📚 المدونة</a>
+                <a href="testimonials.html" class="nav-link">💬 رأي الجمهور</a>
+                <a href="contact.html" class="nav-link">📍تواصل معنا</a>
+                <a href="https://wa.me/967730433592" class="nav-link">✉️ إحجز الآن</a>
+            </div>
+        </nav>
+        
+        <div class="footer-address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <div class="address-card">
+                <span itemprop="streetAddress">مفرق ماوية، مبنى مختبرات دار الصحة</span>،
+                <span itemprop="addressLocality">تعز</span>،
+                <span itemprop="addressCountry">اليمن</span>
+            </div>
+        </div>
+        
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100082372405434" class="social-icon" target="_blank">
+                <img src="images/social/facebook.png" alt="فيسبوك">
+            </a>
+            <a href="https://wa.me/967730433592" class="social-icon" target="_blank">
+                <img src="images/social/whatsapp.png" alt="واتساب">
+            </a>
+            <a href="https://youtube.com/@ENTsharabi" class="social-icon" target="_blank">
+                <img src="images/social/youtube.png" alt="يوتيوب">
+            </a>
+            <a href="https://www.instagram.com/dr.mokhtar_alsharabi" class="social-icon" target="_blank">
+                <img src="images/social/instagram.png" alt="انستغرام">
+            </a>
+            <a href="https://x.com/Dr_Alsharaabi" class="social-icon" target="_blank">
+                <img src="images/social/x.png" alt="تويتر (إكس)" width="30" height="30" />
+            </a>
+            <a href="https://www.tiktok.com/@dr_mokhtar_sharabi" class="social-icon" target="_blank">
+                <img src="images/social/tiktok.png" alt="تيك توك" width="30" height="30" />
+            </a>
+            <a href="mailto:drm9khtarnajy@gmail.com" class="social-icon" target="_blank">
+                <img src="images/social/gmail.png" alt="بريد إلكتروني" width="30" height="30" />
+            </a>
+        </div>
+        
+        <div class="footer-section">
+            <h3 class="footer-title">مواعيد العمل</h3>
+            <p class="working-hours">
+                ⏰ الأحد - الخميس: 10:00 صباحاً - 1:00 ظهراً
+            </p>
+        </div>
+        
+        <div class="copyright-container">
+            © 2025 جميع الحقوق محفوظة - عيادة د. مختار الشرعبي
+        </div>
+    </footer>
+    
+    <script>
+        // تفعيل الأسئلة القابلة للطي
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                
+                question.addEventListener('click', () => {
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
