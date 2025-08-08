@@ -297,14 +297,14 @@
       shadow: 0 6px 4px rgba(236, 235, 255, 0.9);
       margin: 2px;display: flex;
       flex-direction: column;
-      gap: 15px;
+      gap: 25px;
     }
     .nav-row {
      text-decoration: underline; display: flex;
       justify-content: center;
       flex-wrap: wrap;
       text-decoration: none;
-      rgba(236, 235, 255, 0.9);gap: 17px;
+      rgba(236, 235, 255, 0.9);gap: 10px;
     }
     .nav-link {
      background-color: #004D40;
@@ -349,12 +349,16 @@
       gap: 18px;
     }
     .header-logo img {
-      height: 55px;
+      height: 40px;
       width: auto;
+           
+      border-radius: 50%;
+      border: 1.5px solid #A8FFEF;
+    }
     }
     .header-text {
       display: flex;
-      line-height: 2.2;
+      line-height: 2.5;
       flex-direction: column;
       align-items: flex-start;
     }
@@ -369,20 +373,10 @@
       color: #D0FFFC;
       white-space: nowrap;
     }
+
         @media (min-width: 768px) {
-      .header-logo img {
-        height: 80px;
-      }
-      .main-title {
-        font-size: 30px;
-      }
-      .sub-title {
-        font-size: 23px;
-      }
-    }
-        @media (min-width: 768px) {
-      .main-title { font-size: 40px !important; }
-      .sub-title { font-size: 29px !important; }
+      .main-title { font-size: 30px !important; }
+      .sub-title { font-size: 23px !important; }
       .header-logo img { height: 90px !important; }
     }
 
@@ -597,10 +591,22 @@ font-size: 34px!important
     padding: 6px 18px;
   }
   }
+   .pp-box  {
+    box-shadow: 0 0 3px rgba(92, 95, 96, 0.4);
+    border-radius:10px;
+    border-left: 2px solid #007D8E; 
+    padding: 10px 32px; 
+    margin: 20px 0; 
+    background-color: white;
+    
+    font-size: 12px;
+    color: #555;
+   }
+   
  .p-box  {
     box-shadow: 0 0 3px rgba(92, 95, 96, 0.4);
     border-radius:10px;
-    border-right: 1px solid #007D8E; 
+    border-right: 2px solid #007D8E; 
     padding: 10px 32px; 
     margin: 20px 0; 
     background-color: white;
@@ -651,7 +657,8 @@ font-size: 34px!important
   max-width: 100%;
   height: auto;
   border-radius: 12px;
-  box-shadow: 0 0 6px rgba(3, 95, 97, 0.4);
+  box-shadow: 0 0 6px rgba(3, 95, 97, 0.9);
+  border: 0.5px solid #A8FFEF;
   display: block;
   margin: 0; /* default: remove any margin */
 }
@@ -681,24 +688,24 @@ font-size: 34px!important
   }
 
   .profile-image {
-    flex: 0 0 43%;
+    flex: 0 0 49%;
     max-width: 400px;
   }
 
   .profile-image img {
-    width: 100%;
+    margin-top: 20px;width: 100%;
     height: auto;
     transform: none; /* cancel mobile shift */
   }
 
   .profile-text {
     flex: 1;
-    width: 60%;
+    width: 62%;
     padding: 0 10px;
   }
 
   .profile-text h2 {
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 10px;
   }
 
@@ -767,7 +774,7 @@ font-size: 34px!important
 
 .booking-button.sms {
   background-color: #ffffff;
-  color: #009688;
+  color: black;
   border: 2px solid #009688;
 }
 
@@ -776,13 +783,13 @@ font-size: 34px!important
 }
 
 .booking-button.whatsapp {
-  background-color: #009688;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: black;
   border: 2px solid #009688;
 }
 
 .booking-button.whatsapp:hover {
-  background-color: #00796B;
+  background-color: #e0f2f1;
 }
 
 .booking-icon {
@@ -818,62 +825,116 @@ font-size: 34px!important
     gap: 91px; 
 }
 }
-footer {
-      margin-top: 10px
-      ;background-color: #004B8C;
-      color: white !important;
-      text-align: center;
-      padding: 10px 10px;
-      font-size: 9px;
-      line-height: 1.7;
-    }
 
-footer a img {
-  width: 30px;
-  height: 30px;
+ footer {
+  background-color: #004D40 !important;
+  color: white !important;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 9px;
+  line-height: 1.7;
+  overflow: hidden;
 }
 
-@media (min-width: 768px) {
-  footer a img {
-    width: 70px;
-    height: 70px;
-  }
+/* العنوان الجغرافي - خلفية بيضاء تناسب المحتوى */
+.address-card {
+  display: inline-block;
+  background-color: white;
+  color: #004B8C !important;
+  padding: 2px 20px;
+  border-radius: 30px;
+  margin: 10px auto;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 12px;
+  line-height: 1.5;
+  max-width: 90%;
 }
-.footer-icons {
-  margin-top: 20px;
-  margin-bottom: 10px; /* للموبايل */
+
+/* مواعيد العمل */
+.working-hours {
+  background-color: rgba(255, 255, 255, 0.15);
+  display: inline-block;
+  padding: 8px 15px;
+  border-radius: 20px;
+  margin: 10px auto;
+  font-size: 12px;
+  font-weight: bold;
 }
-@media (min-width: 768px) {
-  .footer-icons {
-    margin-top: 40px;
-    margin-bottom: 30px; /* لسطح المكتب */
-  }
+
+/* حقوق النشر */
+.copyright-container {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  margin-top: 15px;
+  font-weight: 500;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 7px; /* حجم الموبايل الافتراضي */
 }
-.footer-icons {
+
+/* تنسيق أيقونات التواصل الاجتماعي */
+.social-icons {
   display: flex;
-      gap: 5px; 
-      justify-content: center;/
+  gap: 10px;
+  margin: 10px auto;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
- footer p {
-  padding: 1px 5px;border-radius:8px;font-size: 10px;background-color:#EEFFFE; margin: 7px; color: #004B8C !important; font-weight: bold;
+.social-icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
 }
-  footer p {
-  font-size: 9px;!important
-  }
+
+.social-icon:hover {
+  background-color: #00796B;
+  transform: translateY(-5px);
+}
+
+.social-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+/* تنسيق نسخة سطح المكتب */
 @media (min-width: 768px) {
-  .footer-icons {
-    gap: 25px; /* مسافة أكبر في سطح المكتب */
+  /* تكبير عنوان العيادة في نسخة سطح المكتب */
+  .address-card {
+    font-size: 29px !important; /* حجم أكبر لسطح المكتب */
+    margin-top: 30px;
+    margin-bottom: 25px;padding: 12px 30px !important;
   }
-  footer p {
-  font-size: 9px;!important
-  padding: 35px 5px;
-  border-radius: 20px
-  ;margin: 20px;
-    }
+  
+  /* تكبير مواعيد العمل في نسخة سطح المكتب */
+  .working-hours {
+    font-size: 32px !important; /* حجم أكبر لسطح المكتب */
+    padding: 12px 25px !important;
+  }
+  
+  /* تصغير حقوق النشر في نسخة سطح المكتب */
+  .copyright-container {
+    font-size: 6px !important; /* حجم صغير لسطح المكتب */
+    padding: 12px;
+  }
+  
+  /* تكبير أيقونات التواصل الاجتماعي في سطح المكتب */
+  .social-icon {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .social-icon img {
+    width: 50px;
+    height: 50px;
+  }
 }
- 
   
 
 </style>
@@ -936,7 +997,7 @@ footer a img {
 
 
 <h2>ما الذي يهدف إليه:</h2>
-<p>يهدف الدكتور مختار الشرعبي من خلال عيادته في محافظة تعز ، ركن مفرق ماوية إلى<ul class="p-box">
+<p>يهدف الدكتور مختار الشرعبي من خلال عيادته في محافظة تعز ، ركن مفرق ماوية إلى<ul class="pp-box">
     <li> تقديم خدمة طبية متكاملة تقوم على الثقة والدقة والرعاية الإنسانية </li>
     <li>  تشخيص ومعالجة كافة مشاكل الأنف والأذن والحنجرة، وإجراء
   <a href="gallery.html" class="certificate-link" aria-label="العمليات الجراحية المعقدة - اطلع على معرض الصور">
@@ -957,7 +1018,7 @@ footer a img {
   </ul>
   <h2> سمعة طيبة وثقة عالية : </h2>
  
-  <ul class="p-box">
+  <ul class="pp-box">
   <li>
     <em>
       <a href="testimonials.html" class="certificate-link" aria-label="آراء المرضى">مصداقية وشفافية</a>
@@ -1024,61 +1085,64 @@ footer a img {
     </a>
   </div>
 </div>
-<footer style="background-color: #004D40; color: white; text-align: center; padding: 10px 4px;">
 
-  <nav style= "padding: 10px 0;gap: 3px">
+<footer style="background-color: #004B8C; color: white; text-align: center;">
+
+  <nav style="padding: 10px 0; gap: 10px">
     <div class="nav-row">
       <a href="index.html" class="nav-link">🏠 الرئيسية</a>
       <a href="about.html" class="nav-link">📘 قصتنا</a>
       <a href="services.html" class="nav-link">🩺 من خدماتنا</a>
-      <a href="gallery.html" class="nav-link">📷 معرض الصور</a
+      <a href="gallery.html" class="nav-link">📷 معرض الصور</a>
     </div>
     <div class="nav-row">    
-       <a href="blog.html" class="nav-link">📚  المدونة</a>
+      <a href="blog.html" class="nav-link">📚 المدونة</a>
       <a href="testimonials.html" class="nav-link">💬 رأي الجمهور</a>
-   <a href="contact.html" class="nav-link">📍تواصل معنا</a>
-            
-   <a href="https://wa.me/967730433592" class="nav-link">✉️ إحجز الآن</a>
+      <a href="contact.html" class="nav-link">📍تواصل معنا</a>
+      <a href="https://wa.me/967730433592" class="nav-link">✉️ إحجز الآن</a>
     </div>
   </nav>
-<div class="footer-address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-  <p>
-    <span itemprop="streetAddress"> مفرق ماوية، مبنى مختبرات دار الصحة</span>,
-    <span itemprop="addressLocality">تعز</span>,
-    <span itemprop="addressCountry">اليمن</span>
-  </p>
-</div>
- 
   
-      
-<div class="footer-icons">
-
-    <a href="https://www.facebook.com/profile.php?id=100082372405434" target="_blank">
-      <img src="images/social/facebook.png" alt="فيسبوك" width="30" height="30" />
+  <div class="footer-address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+    <div class="address-card">
+      <span itemprop="streetAddress">مفرق ماوية، مبنى مختبرات دار الصحة</span>،
+      <span itemprop="addressLocality">تعز</span>،
+      <span itemprop="addressCountry">اليمن</span>
+    </div>
+  </div>
+  
+  <div class="social-icons">
+    <a href="https://www.facebook.com/profile.php?id=100082372405434" class="social-icon" target="_blank">
+      <img src="images/social/facebook.png" alt="فيسبوك">
     </a>
-
-    <a href="https://wa.me/967730433592" target="_blank">
-      <img src="images/social/whatsapp.png" alt="واتساب" width="30" height="30" />
+    <a href="https://wa.me/967730433592" class="social-icon" target="_blank">
+      <img src="images/social/whatsapp.png" alt="واتساب">
     </a>
-
-    <a href="https://youtube.com/@ENTsharabi" target="_blank">
-      <img src="images/social/youtube.png" alt="يوتيوب" width="30" height="30" />
+    <a href="https://youtube.com/@ENTsharabi" class="social-icon" target="_blank">
+      <img src="images/social/youtube.png" alt="يوتيوب">
     </a>
-
-    <a href="https://www.instagram.com/dr.mokhtar_alsharabi" target="_blank">
-      <img src="images/social/instagram.png" alt="انستغرام" width="30" height="30" />
+    <a href="https://www.instagram.com/dr.mokhtar_alsharabi" class="social-icon" target="_blank">
+      <img src="images/social/instagram.png" alt="انستغرام">
     </a>
-
-    <a href="https://x.com/Dr_Alsharaabi" target="_blank">
+    <a href="https://x.com/Dr_Alsharaabi" class="social-icon" target="_blank">
       <img src="images/social/x.png" alt="تويتر (إكس)" width="30" height="30" />
     </a>
-
-    <a href="https://www.tiktok.com/@dr_mokhtar_sharabi" target="_blank">
+    <a href="https://www.tiktok.com/@dr_mokhtar_sharabi" class="social-icon" target="_blank">
       <img src="images/social/tiktok.png" alt="تيك توك" width="30" height="30" />
     </a>
-
-    <a href="mailto:drm9khtarnajy@gmail.com" target="_blank">
-            <img src="images/social/gmail.png" alt="بريد إلكتروني" width="30" height="30" />
-  </a>  </div>  
+    <a href="mailto:drm9khtarnajy@gmail.com" class="social-icon" target="_blank">
+      <img src="images/social/gmail.png" alt="بريد إلكتروني" width="30" height="30" />
+    </a>
+  </div>
+  
+  <div class="footer-section">
+    <h3 class="footer-title">مواعيد العمل</h3>
+    <p class="working-hours">
+      ⏰ الأحد - الخميس: 10:00 صباحاً - 1:00 ظهراً
+    </p>
+  </div>
+  
+  <div class="copyright-container">
+    © 2025 جميع الحقوق محفوظة - عيادة د. مختار الشرعبي
   </div>
 </footer>
