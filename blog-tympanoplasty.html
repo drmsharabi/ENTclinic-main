@@ -78,20 +78,22 @@
 
 
 
-    <style>
+  <style>
     body {
       font-family: 'Cairo', sans-serif;
+        overflow-x: hidden; /* لمنع التمرير الأفقي */
       margin: 0;
       padding: 0;
       direction: rtl;
-      background-color: #f9f9f9;
       text-align: right;
+      background-color: #f9f9f9;
     }
+ /* ✅ NAV */
     nav {
      
      
-      text-align: center;
-      font-size: 11px;
+     text-align: center;
+      font-size: 13px;
       shadow: 0 6px 4px rgba(236, 235, 255, 0.9);
       margin: 2px;display: flex;
       flex-direction: column;
@@ -102,17 +104,17 @@
       justify-content: center;
       flex-wrap: wrap;
       text-decoration: none;
-      rgba(236, 235, 255, 0.9);gap: 17px;
+      rgba(236, 235, 255, 0.9);gap: 9px;
     }
     .nav-link {
      background-color: #004D40;
-      padding: 2px 5px;
-      border-radius: 9px;
+      padding: 2px 3px;
+      border-radius: 4px;
       color: #E0F2F1;
-      font-weight: bold;
+      
       text-decoration: none;
       box-shadow: 0 0 0 0.3px rgba(243, 245, 212, 4);
-      font-size: 10px;
+      font-size: 11px;
       transition: all 0.3s ease;
       display: inline-block;
     }
@@ -123,20 +125,21 @@
     @media (min-width: 768px) {
       nav {
         font-size: 16px;
-        padding: 30px 10px;
+        padding: 20px 10px;
     
       }
       .nav-row {
         gap: 35px;
-      }
+
+     margin-bottom: 10px;       }
       .nav-link {
         margin-top: 20px;padding: 12px 18px;
        box-shadow: 0 0 0 0.8px rgba(243, 245, 212, 8);
        border-radius: 20px; font-size: 28px;
-      }
+       
     }
-
-    header {
+    }
+   header {
       background-color: #004D40;
       color: white;
       padding: 20px;
@@ -178,7 +181,6 @@
         font-size: 29px;
       }
     }
-
     .container {
   max-width: 100%; /* بدلاً من 960px */
   margin: 15px auto;
@@ -188,15 +190,15 @@
 
     h1 {
       background-color: #EEFFFE;
-      color: #A1115E;
+      color: #C20041;
       border: 1px solid #004D40;
       text-align: center;
       padding: 5px;
       box-shadow: 0 9px 6px rgba(33, 95, 97, 0.7);
       border-radius: 9px;
-      font-size: 13px;
+      font-size: 17px;
       margin: 5px auto;
-      width: 90%;
+      width: 99%;
       max-width: 70%;
     }
    @media (min-width: 768px) {
@@ -205,15 +207,17 @@
  font-size: 47px;
  margin: 10px auto;
  padding-right: 20px;
+ width: 99%;
  }
   }
     h2 {
+      text-align: center;
       color: #004D40;
-      ;font-size: 13px;
+      ;font-size: 14px;
     }
         h3 {
       color: #00709E;
-      margin-top: 10px;
+     
       margin-right: 22px;
       font-size: 13px;
     }
@@ -243,16 +247,8 @@ hr {
       font-size: 12px;
      margin-right: 12px
     }
-  @media (min-width: 768px) {
-      ul {
-      margin-right: 45px;
-   font-size: 12px;
-      padding-right: 45px;
-    }
-       post a {
-          padding: 95px;font-size: 12px;
-     margin-right: 95px;
-         }
+  
+
 
   li {
     margin-top: 2px; /* قللت من 5px إلى 2px */
@@ -261,6 +257,7 @@ hr {
     margin-right: 20px; /* قللت من 40px */
     line-height: 1.4; /* للتحكم في المسافة بين الأسطر */
   }
+
    hr {
       hight: 6px;
       margin: 45px 0;   
@@ -271,12 +268,12 @@ hr {
       max-width: 600px !important;
       height: auto !important;
       display: block;
-      margin: 0 auto 20px;
+      margin: 20px auto ;
             box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
       border-radius: 12px;
     }
 .whatsapp-section {
-  background-color: white;
+  
   text-align: center;
   flex-wrap: wrap;
  display: flex;
@@ -286,7 +283,7 @@ hr {
 
 .whatsapp-icon {
   width: 70px;
-  height: 70px;
+  margin: 10px auto;height: 70px;
         box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
   object-fit: contain;
   animation: pulse 2s infinite; /* تطبيق تأثير النبض */
@@ -308,6 +305,7 @@ hr {
   .whatsapp-icon {
     width: 165px;
     height: 165px;
+    margin: 50px auto;
   }
   .whatsapp-section {
   flex-direction: row; 
@@ -315,65 +313,22 @@ hr {
     gap: 20px;
     }
 }
-     .whatsapp-link{
-  text-align: center;
-  margin: 10px 0;
-}
 
-.whatsapp-link {
-  text-align: center;
-  
-}
-
-.whatsapp-link a {
-  background-color: #00A19D;
-  color: white !important;  /* ✅ تم التصحيح هنا */
-  padding: 5px 12px 4px;
-  ;border-radius: 10px;
-  font-size: 12px;
-  font-weight: bold;
-  text-decoration: none;
-  display: inline-block;
-  line-height: 1.6;
-}
-
-@media (min-width: 768px) {
-  .whatsapp-link a {
-    margin-top: 20px
-    ;font-size: 35px;
-    border-radius: 16px;
-    padding: 6px 18px;
-  }
-}
-
-.post p {
-      color: #444;
-      margin: 6px 8px 8px;
-      font-size: 12px;
-      line-height: 1.6;
-    }
-
-    .post {
-  border-bottom: 0px solid #ddd;
-  padding: 20px 0;
-  margin-right: 0px;
-  margin-bottom: 0px; /* ⇦ هذه تضيف تباعداً بين المقالات */
-}
 .cta-button {
  white-space: nowrap; 
-  color: #004D40;
-    background-color: white;
-    border: 1.5px solid  #004D40;
+  color: black;
+    background-color: #D9FFF1;
+    border: 1px solid  #004D40;
     text-decoration: none;
     font-weight: bold;
     box-shadow: 0 4px 8px rgba(65, 18, 57, 0.2);
     width: fit-content;
     display: block;
-    margin: 20px auto;
+    margin: 10px auto;
     transition: all 0.3s ease;
     text-align: center;
     border-radius: 8px;
-    padding: 4px 9px;
+    padding: 2px 15px;
     font-size: 12px;
     max-width: fit-content;
     animation: pulse 3s infinite; /* تطبيق تأثير النبض */
@@ -393,7 +348,7 @@ hr {
 }
 
 .cta-button:hover {
-   margin: 10px auto; background-color: #f0fff0;
+   margin: 10px auto; background-color: #FAFFD4;
     max-width: fit-content;
     box-shadow: 0 6px 12px rgba(0, 128, 0, 0.3);
     font-size: 13px;
@@ -401,8 +356,6 @@ hr {
     margin-top: 0; 
     
 }
-
-
 /* تنسيق سطح المكتب */
 @media (min-width: 768px) {
     .cta-button {
@@ -413,6 +366,7 @@ hr {
         font-size: 30px;
         border-radius: 12px!important;
         margin: 20px auto;
+        margin-bottom: 60px;
     }
 }
 @media (min-width: 768px) {
@@ -423,105 +377,253 @@ font-size: 44px!important
       .cta-button {
    text-align: center important;
   } 
-    .post a {
-      text-decoration: underline;
-      font-weight: bold;
-      color: #004D40;
-      display: inline-block;
-      font-size: 16px;
-      font-style: italic;
-      margin-left: 10px
-      margin-right: 0px;
-      margin-top: 10px;
-      text-align: center;
-      text-align: right;
-    }
 
-    @media (min-width: 768px) {
-      .post a {
-        font-size: 50px;
-      }
-    }
 
-footer {
-      margin-top: 10px
-      ;background-color: #004B8C;
-      color: white !important;
-      text-align: center;
-      padding: 10px 10px;
-      font-size: 9px;
-      line-height: 1.7;
-    }
-
-footer a img {
-  width: 30px;
-  height: 30px;
-}
-
-@media (min-width: 768px) {
-  footer a img {
-    width: 70px;
-    height: 70px;
-  }
-}
-.footer-icons {
-  margin-top: 20px;
-  margin-bottom: 10px; /* للموبايل */
-}
-@media (min-width: 768px) {
-  .footer-icons {
-    margin-top: 40px;
-    margin-bottom: 30px; /* لسطح المكتب */
-  }
-}
-.footer-icons {
-  display: flex;
-      gap: 5px; 
-      justify-content: center;/
-  flex-wrap: wrap;
-}
-
- footer p {
-  padding: 1px 5px;border-radius:8px;font-size: 10px;background-color:#EEFFFE; margin: 7px; color: #004B8C !important; font-weight: bold;
-}
-  footer p {
-  font-size: 9px;!important
-  }
-@media (min-width: 768px) {
-  .footer-icons {
-    gap: 25px; /* مسافة أكبر في سطح المكتب */
-  }
-  footer p {
-  font-size: 9px;!important
-  padding: 35px 5px;
-  border-radius: 20px
-  ;margin: 20px;
-    }
-}
- 
+          
 
     
+
+
+    .imp-section {
+      background-color:#e6f7ff ;
+      padding: 15px;
+      margin: 15px 10px;
+      text-align: center;
+      color: black;
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+      position: right;
+      border-right: 4px solid red;
+    }
+    .subsection {
+      background-color: white;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+      position: relative;
+      border-right: 4px solid #00A19D;
+    }
+    
+    .subsection h3 {
+      color: #00709E;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+    
+    .subsection p {
+      font-size: 12px;
+      line-height: 1.7;
+      color: black;
+    }
+    .danger-section {
+      background-color: #ffebee;
+      border: 2px solid #f44336;
+      border-radius: 12px;
+      padding: 5px;
+      margin: 10px 0;
+      text-align: center;
+    }
+    
+
+     
+.main-content {
+  margin: 30px 10px;
+}
+
+.main-section {
+  margin-bottom: 20px;
+  padding: 5px;
+  background-color: #e6f7ff;
+  border-radius: 12px;
+  border-left: 5px solid #00709E;
+}
+  @media (min-width: 768px) {
+.main-section {
+    border-left: 9px solid #00709E;
+    border-radius: 40px;
+    padding: 30px 30px;
+    margin: 10px;
+  }
+    .subsection  {
+      border-right: 9px solid #00A19D;
+      padding: 10px;
+      font-size: 12px!important;
+    }
+   
+        .imp-section {
+      border-radius: 40px;
+         border-right: 9px solid red;
+         border-radius: 8px;
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+      margin: 40px;
+    padding: 30px 30px;
+      }
+   
+
+      .danger-section {
+      border-radius: 40px;
+      margin: 90px 0;
+    padding: 30px 30px;
+      }
+   .subsection {
+    border-radius: 40px;
+    padding: 25px;
+    margin: 25px 0;
+  }
+  
+  h3 {
+    font-size: 14px;
+  }
+  
+
+  }
+
+     
+.warning-box {
+  background-color: white;
+  border-right: 5px solid #ffc107;
+          box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
+ padding: 5px;
+  margin: 10px 0;
+  border-radius: 0 8px 8px 0;
+}
+  @media (min-width: 768px) {
+       .warning-box {
+      margin: 50px 0;
+       border-radius: 30px;
+      padding: 0 5px;
+    }
+  }
+
+ footer {
+ border-top: 4px solid white; 
+ background-color: #004D40 !important;
+  color: white !important;
+          box-shadow: 2px 0 2px 5px rgba(194, 0, 97, 22);
+  text-align: center;
+  padding: 10px 0;
+  font-size: 9px;
+  line-height: 1.7;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.address-card {
+  display: inline-block;
+  background-color: white;
+  color: #004B8C !important;
+  padding: 2px 20px;
+  border-radius: 30px;
+  
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 12px;
+  line-height: 1.5;
+  max-width: 90%;
+}
+
+.working-hours {
+  background-color: rgba(255, 255, 255, 0.15);
+  display: inline-block;
+  padding: 1px 15px;
+  border-radius: 20px;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.copyright-container {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  margin-top: 5px;
+  font-weight: 500;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 6px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin: 10px auto;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: #00796B;
+  transform: translateY(-5px);
+}
+
+.social-icon img {
+  width: 22px;
+  height: 22px;
+}
+@media (min-width: 768px) {
+ .address-card {
+    font-size: 34px !important;
+    margin: 10px auto;
+    padding: 5px 40px !important;
+  }
+  
+  .working-hours {
+    font-size: 28px !important;
+    padding: 5px 90px !important;
+  }
+  
+  .social-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .social-icon img {
+    width: 40px;
+    height: 40px;
+    gap: 60px;
+  }
+  
+  .copyright-container {
+    font-size: 6px !important;
+    padding: 11px;
+  }
+  }
+
   </style>
 </head>
+
 
 
 <body>
   <header class="header-logo">
     <img src="images/clinic-logo.png" alt="شعار العيادة">
     <div class="header-text">
-      <div class="main-title">
-          عيادة د. مختار الشرعبي الإستشارية</div>
+      <div class="main-title">عيادة د. مختار الشرعبي الإستشارية</div>
       <div class="sub-title"> للأنف والأذن والحنجرة والرأس والعنق</div>
     </div>
   </header>
-<div class="container">
-     
+
+   <div class="container">
   <h1>ترقيع غشاء طبلة الأذن</h1>
- <p>  <p style="color: blue">
-     ✍ دكتور/ مختار الشرعبي</p>
-       <br>
+        <p style="color: blue;text-align:center">✍️ دكتور / مختار الشرعبي</p>
+      
+
   <img style="display: block; margin:20px auto;" src="images/blog/tympanoplasty.jpeg" alt="ترقيع طبلة الأذن" class="blog-img" />
- <br>
+     <div class="main-content">
+        <div class="main-section">     <p><br>
   <h2>نبذة عن عملية ترقيع غشاء طبلة الأذن</h2>
   <p>
     غشاء طبلة الأذن هو غشاء رقيق يفصل الأذن الخارجية عن الأذن الوسطى، وله دور أساسي في نقل الصوت ومنع دخول الجراثيم والسوائل إلى الأذن الوسطى. وقد يتعرض هذا الغشاء للثقب أو التمزق نتيجة التهابات الأذن المتكررة، أو الحوادث، أو التعرض المفاجئ لتغيرات الضغط، مما يؤدي إلى ضعف في السمع، وخروج إفرازات من الأذن، وأحيانًا التهابات متكررة.
@@ -529,17 +631,17 @@ footer a img {
   <p>
     عملية ترقيع غشاء طبلة الأذن، المعروفة طبيًا باسم "رأب الطبلة" (Tympanoplasty)، هي إجراء جراحي يهدف إلى إغلاق الثقب الموجود في الطبلة باستخدام رقعة مأخوذة غالبًا من أنسجة المريض نفسه. تهدف العملية إلى:
   </p>
-  <ul>
-    <li>تحسين القدرة السمعية.</li>
+  <div class="subsection">
+  <ul> <li>تحسين القدرة السمعية.</li>
     <li>منع دخول الماء والجراثيم إلى الأذن الوسطى.</li>
     <li>تقليل خطر الالتهابات المزمنة.</li>
     <li>استعادة وظيفة الأذن الطبيعية.</li>
   </ul>
-  <p>
+  <p></div>
     تتراوح نسبة نجاح عملية ترقيع الطبلة بين <strong>80% إلى 95%</strong>، وتختلف من حالة لأخرى حسب عدة عوامل مهمة، من أبرزها:
   </p>
-<ul>
-    <li><strong>حجم الثقب ومدته:</strong> كلما كان الثقب أصغر وحديثًا، زادت فرص النجاح.</li>
+  <div class="subsection">
+  <ul>   <li><strong>حجم الثقب ومدته:</strong> كلما كان الثقب أصغر وحديثًا، زادت فرص النجاح.</li>
     <li><strong>حالة عظيمات الأذن الوسطى:</strong> إذا كانت سليمة وغير تالفة، تكون النتائج السمعية أفضل.</li>
     <li><strong>سلامة العصب السمعي:</strong> وجود ضعف في العصب قد يحد من تحسن السمع رغم نجاح الجراحة.</li>
     <li><strong>عمر المريض:</strong> الاستجابة تكون أفضل غالبًا في صغار السن.</li>
@@ -548,25 +650,25 @@ footer a img {
     <li><strong>مشاكل قناة استاكيوس:</strong> قد تؤثر على تهوية الأذن ونجاح العملية.</li>
     <li><strong>مشاكل الأنف والجيوب الأنفية:</strong> مثل انحراف الحاجز الأنفي، أو تضخم القرنيات، أو التهاب الجيوب المزمن قد تؤدي إلى فشل تهوية الأذن الوسطى عبر قناة استاكيوس، وبالتالي تؤثر على نتائج عملية الترقيع. لذلك، من الضروري <strong>تشخيص وعلاج أي خلل في الأنف</strong> قبل أو بالتزامن مع جراحة الأذن لضمان نتائج ناجحة طويلة الأمد.</li>
 </ul>
-  <p>.
+ </div> <p>
+    🔹 تُجرى هذه العملية عادةً تحت التخدير الموضعي باستخدام الميكروسكوب أو تقنيات حديثة مثل الجراحة بالمنظار، وتستغرق فترة الشفاء عدة أسابيع، مع تحسن تدريجي في السمع يبدأ غالبًا من 6 إلى 8 أسابيع بعد الجراحة، ويكتمل خلال 4 إلى 6 أشهر.
+  </p>
+</div>
+ 
+  <h2 style="background-color: white;border:1px solid black;">مميزات الجراحة بالمنظار</h2>
+   
+  <ul class="main-section">  <p>.
     🔹 تُجرى هذه العملية عادةً تحت التخدير الموضعي باستخدام الميكروسكوب أو تقنيات حديثة مثل الجراحة بالمنظار، وتستغرق فترة الشفاء عدة أسابيع، مع تحسن تدريجي في السمع يبدأ غالبًا من 6 إلى 8 أسابيع بعد الجراحة، ويكتمل خلال 4 إلى 6 أشهر.
   </p>
 
-  <h2>مميزات الجراحة بالمنظار</h2>
-   </ul>
-  <p>.
-    🔹 تُجرى هذه العملية عادةً تحت التخدير الموضعي باستخدام الميكروسكوب أو تقنيات حديثة مثل الجراحة بالمنظار، وتستغرق فترة الشفاء عدة أسابيع، مع تحسن تدريجي في السمع يبدأ غالبًا من 6 إلى 8 أسابيع بعد الجراحة، ويكتمل خلال 4 إلى 6 أشهر.
-  </p>
-
-  <h2>مميزات الجراحة بالمنظار</h2>
-  <ul>
-    <li><strong>تقنية أقل توغلاً:</strong> الجراحة بالمنظار تتطلب شقوقًا أصغر مقارنة بالجراحة التقليدية، مما يقلل من الألم والندوب.</li>
+  <div class="subsection">
+  <ul>    <li><strong>تقنية أقل توغلاً:</strong> الجراحة بالمنظار تتطلب شقوقًا أصغر مقارنة بالجراحة التقليدية، مما يقلل من الألم والندوب.</li>
     <li><strong>رؤية واضحة:</strong> توفر أدوات المنظار رؤية أفضل للأذن الداخلية، مما يساعد الجراح في إجراء العملية بدقة أكبر.</li>
     <li><strong>فترة تعافي أسرع:</strong> بسبب الطبيعة الأقل توغلاً للجراحة، يمكن للمرضى العودة إلى أنشطتهم اليومية بشكل أسرع.</li>
     <li><strong>تقليل المضاعفات:</strong> الجراحة بالمنظار تقلل من مخاطر العدوى والمضاعفات المرتبطة بالجراحة التقليدية.</li>
     <li><strong>تحسين نتائج السمع:</strong> يمكن أن تؤدي الجراحة الناجحة إلى تحسين كبير في القدرة السمعية للمريض.</li>
   </ul>
-    <div>
+    </div></div>
 
 
   
@@ -577,16 +679,15 @@ footer a img {
 </div>
 
     
-    <a href="https://youtu.be/2p9La2_KpV0?feature=shared" style="color:#004D40" class="cta-button" />
+    <a href="https://youtu.be/2p9La2_KpV0?feature=shared" style="color:black" class="cta-button" />
  شاهد نموذج عملياتنا </a>
 
 </div>
 <hr>
     <br>
-    </div>
-  <h2>نصائح للمريض بعد عملية ترقيع غشاء طبلة الأذن</h2>
-<ul>
-  <li>1. بالإمكان شرب سوائل بمجرد استيقاظك من التخدير. كذلك يمكن تناول الوجبات الخفيفة إذا كنت تستطيع دون الشعور بالغثيان أو القيء المؤقت. وتدريجيًا يمكنك تناول الأطعمة الصلبة.</li>
+      <div class="main-section" style="margin:10px 10px">
+ <h2>نصائح للمريض بعد عملية ترقيع غشاء طبلة الأذن</h2>   <div class="subsection">
+  <ul>  <li>1. بالإمكان شرب سوائل بمجرد استيقاظك من التخدير. كذلك يمكن تناول الوجبات الخفيفة إذا كنت تستطيع دون الشعور بالغثيان أو القيء المؤقت. وتدريجيًا يمكنك تناول الأطعمة الصلبة.</li>
 
   <li>2. حاول إبقاء رأسك مرفوعًا على 3 وسائد في الأسبوعين الأولين بعد العملية.</li>
 
@@ -611,71 +712,81 @@ footer a img {
   <li>12. الأذن مسدودة بمواد علاجية تذوب خلال شهر من العملية، وقد تلاحظ إفرازات مائية أو محمرة نتيجة ذوبانها. قد تلاحظ انخفاضًا في السمع أو تنميلًا أو وخزًا في الأذن، أو جفاف الفم وتغير الطعم، وطنين في الأذن. كلها أمور متوقعة وستختفي بمرور الوقت.</li>
 
   <li>14. نادرًا ما يُلاحظ تحسن السمع بعد الجراحة مباشرة، وذلك مؤقتًا بسبب تورم أنسجة الأذن وتكدّس في قناة الأذن. يمكن ملاحظة التحسن من 6 إلى 8 أسابيع بعد الجراحة، وقد يستغرق التحسن الأقصى من 4 إلى 6 أشهر.</li>
-</ul>
+</ul></div>
 
-<h2>❗ يجب العودة أو التواصل الفوري في الحالات التالية:</h2>
-<ul>
-  <li>1. نزيف مفرط أحمر فاتح لا يتوقف بالضغط مدة 10 دقائق.</li>
+<h2 style="color:#C20041">❗ يجب العودة أو التواصل الفوري في الحالات التالية:</h2>
+    <div class="subsection">
+  <ul>   <li>1. نزيف مفرط أحمر فاتح لا يتوقف بالضغط مدة 10 دقائق.</li>
   <li>2. دوار شديد ومتكرر أو إذا استمر لأكثر من 72 ساعة بعد الجراحة.</li>
   <li>3. خروج إفرازات صفراء كريهة الرائحة من الأذن أو الجرح خلف الأذن.</li>
   <li>4. عند حصول زكام أو احتقان في الأنف يجب استشارة طبيبك فورًا.</li>
-</ul>
-<hr>   
-
+</ul></div>
+ </div><br>
+        <div class="imp-section">
  <p><em> في عيادة <strong>د. مختار الشرعبي</strong> – تعز، ركن مفرق ماوية – نحرص على تقييم كل حالة بدقة وتقديم خطة علاجية شخصية تشمل الجانب الوقائي والنفسي والدوائي.</em></p>
-  <hr>    <a href="blog.html" style="color:#004D40" class="cta-button" />>← عودة لصفحة المدونة</a>
- <hr> 
+  </div>   <br>     
+  <div class="main-section" style="  border: 1px solid #00709E;background-color:white">               
+    <a href="blog.html" style="color:black" class="cta-button" />← عودة لصفحة المدونة</a>
+
     <a href="index.html"style=":color:#004D40" class="cta-button">← عودة للصفحة الرئيسية</a></div>
-  </div>  <hr> 
+  </div>   </div> 
+    <footer>
+    <nav>
+      <div class="nav-row">
+        <a href="index.html" class="nav-link">🏠 الرئيسية</a>
 
-<footer style="background-color: #004D40; color: white; text-align: center; padding: 10px 4px;">
-
-  <nav style= "padding: 10px 0;gap: 3px">
-    <div class="nav-row">
-      <a href="index.html" class="nav-link">🏠 الرئيسية</a>
-      <a href="about.html" class="nav-link">📘 قصتنا</a>
-      <a href="services.html" class="nav-link">🩺 من خدماتنا</a>
-      <a href="gallery.html" class="nav-link">📷 معرض الصور</a
+        <a href="services.html" class="nav-link">🩺 من خدماتنا</a>
+        <a href="gallery.html" class="nav-link">📷 معرض الصور</a>
+        <a href="testimonials.html" class="nav-link">💬 رأي الجمهور</a>
+      </div>
+      <div class="nav-row" style="margin-bottom:20px">    
+        <a href="about.html" class="nav-link">📘 قصتنا</a >       <a href="blog.html" class="nav-link">📚 المدونة</a>
+        <a href="contact.html" class="nav-link">📍تواصل معنا</a>
+        <a href="q&a.html" class="nav-link">✉️ الأسئلة الشائعة</a>
+      </div>
+    </nav>
+    
+    <div class="footer-address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+      <div class="address-card">
+        <span itemprop="streetAddress">مفرق ماوية، مبنى مختبرات دار الصحة</span>،
+        <span itemprop="addressLocality">تعز</span>،
+        <span itemprop="addressCountry">اليمن</span>
+      </div>
     </div>
-    <div class="nav-row">    
-       <a href="blog.html" class="nav-link">📚  المدونة</a>
-      <a href="testimonials.html" class="nav-link">💬 رأي الجمهور</a>
-   <a href="contact.html" class="nav-link">📍تواصل معنا</a>
-            
-   <a href="https://wa.me/967730433592" class="nav-link">✉️ إحجز الآن</a>
+    
+    <div class="social-icons">
+      <a href="https://www.facebook.com/profile.php?id=100082372405434" class="social-icon" target="_blank">
+        <img src="images/social/facebook.png" alt="فيسبوك">
+      </a>
+      <a href="https://wa.me/967730433592" class="social-icon" target="_blank">
+        <img src="images/social/whatsapp.png" alt="واتساب">
+      </a>
+      <a href="https://youtube.com/@ENTsharabi" class="social-icon" target="_blank">
+        <img src="images/social/youtube.png" alt="يوتيوب">
+      </a>
+      <a href="https://www.instagram.com/dr.mokhtar_alsharabi" class="social-icon" target="_blank">
+        <img src="images/social/instagram.png" alt="انستغرام">
+      </a>
+      <a href="https://x.com/Dr_Alsharaabi" class="social-icon" target="_blank">
+        <img src="images/social/x.png" alt="تويتر (إكس)" width="30" height="30" />
+      </a>
+      <a href="https://www.tiktok.com/@dr_mokhtar_sharabi" class="social-icon" target="_blank">
+        <img src="images/social/tiktok.png" alt="تيك توك" width="30" height="30" />
+      </a>
+      <a href="mailto:drm9khtarnajy@gmail.com" class="social-icon" target="_blank">
+        <img src="images/social/gmail.png" alt="بريد إلكتروني" width="30" height="30" />
+      </a>
     </div>
-  </nav>  
-     <p style="font-size:9px">📌 تعز، ركن مفرق ماوية , مبنى مختبرات دار الصحة
-    </p> 
-  <div class="footer-icons">
+     <div class="footer-section">
 
-    <a href="https://www.facebook.com/profile.php?id=100082372405434" target="_blank">
-      <img src="images/social/facebook.png" alt="فيسبوك" width="30" height="30" />
-    </a>
-
-    <a href="https://wa.me/967730433592" target="_blank">
-      <img src="images/social/whatsapp.png" alt="واتساب" width="30" height="30" />
-    </a>
-
-    <a href="https://youtube.com/@ENTsharabi" target="_blank">
-      <img src="images/social/youtube.png" alt="يوتيوب" width="30" height="30" />
-    </a>
-
-    <a href="https://www.instagram.com/dr.mokhtar_alsharabi" target="_blank">
-      <img src="images/social/instagram.png" alt="انستغرام" width="30" height="30" />
-    </a>
-
-    <a href="https://x.com/Dr_Alsharaabi" target="_blank">
-      <img src="images/social/x.png" alt="تويتر (إكس)" width="30" height="30" />
-    </a>
-
-    <a href="https://www.tiktok.com/@dr_mokhtar_sharabi" target="_blank">
-      <img src="images/social/tiktok.png" alt="تيك توك" width="30" height="30" />
-    </a>
-
-    <a href="mailto:drm9khtarnajy@gmail.com" target="_blank">
-            <img src="images/social/gmail.png" alt="بريد إلكتروني" width="30" height="30" />
-  </a>  </div>  
-  
-</footer>
- </html> 
+      <p class="working-hours" style="color">
+        ⏰مواعيد العمل: السبت - الخميس: 10:00 صباحاً - 1:00 ظهراً
+      </p>
+    </div>
+    
+    <div class="copyright-container">
+      © 2025 جميع الحقوق محفوظة - عيادة د. مختار الشرعبي
+    </div>
+  </footer>
+</body>
+</html>
