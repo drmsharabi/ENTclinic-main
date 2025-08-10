@@ -81,20 +81,23 @@
 
 
 
-    <style>
+ 
+  <style>
     body {
       font-family: 'Cairo', sans-serif;
+        overflow-x: hidden; /* لمنع التمرير الأفقي */
       margin: 0;
       padding: 0;
       direction: rtl;
-      background-color: #f9f9f9;
       text-align: right;
+      background-color: #f9f9f9;
     }
+ /* ✅ NAV */
     nav {
      
      
-      text-align: center;
-      font-size: 11px;
+     text-align: center;
+      font-size: 13px;
       shadow: 0 6px 4px rgba(236, 235, 255, 0.9);
       margin: 2px;display: flex;
       flex-direction: column;
@@ -105,17 +108,17 @@
       justify-content: center;
       flex-wrap: wrap;
       text-decoration: none;
-      rgba(236, 235, 255, 0.9);gap: 17px;
+      rgba(236, 235, 255, 0.9);gap: 9px;
     }
     .nav-link {
      background-color: #004D40;
-      padding: 2px 5px;
-      border-radius: 9px;
+      padding: 2px 3px;
+      border-radius: 4px;
       color: #E0F2F1;
-      font-weight: bold;
+      
       text-decoration: none;
       box-shadow: 0 0 0 0.3px rgba(243, 245, 212, 4);
-      font-size: 10px;
+      font-size: 11px;
       transition: all 0.3s ease;
       display: inline-block;
     }
@@ -126,20 +129,21 @@
     @media (min-width: 768px) {
       nav {
         font-size: 16px;
-        padding: 30px 10px;
+        padding: 20px 10px;
     
       }
       .nav-row {
         gap: 35px;
-      }
+
+     margin-bottom: 10px;       }
       .nav-link {
         margin-top: 20px;padding: 12px 18px;
        box-shadow: 0 0 0 0.8px rgba(243, 245, 212, 8);
        border-radius: 20px; font-size: 28px;
-      }
+       
     }
-
-    header {
+    }
+   header {
       background-color: #004D40;
       color: white;
       padding: 20px;
@@ -181,7 +185,6 @@
         font-size: 29px;
       }
     }
-
     .container {
   max-width: 100%; /* بدلاً من 960px */
   margin: 15px auto;
@@ -191,15 +194,15 @@
 
     h1 {
       background-color: #EEFFFE;
-      color: #A1115E;
+      color: #C20041;
       border: 1px solid #004D40;
       text-align: center;
       padding: 5px;
       box-shadow: 0 9px 6px rgba(33, 95, 97, 0.7);
       border-radius: 9px;
-      font-size: 13px;
+      font-size: 17px;
       margin: 5px auto;
-      width: 90%;
+      width: 99%;
       max-width: 70%;
     }
    @media (min-width: 768px) {
@@ -208,15 +211,17 @@
  font-size: 47px;
  margin: 10px auto;
  padding-right: 20px;
+ width: 99%;
  }
   }
     h2 {
+      text-align: center;
       color: #004D40;
-      ;font-size: 13px;
+      ;font-size: 14px;
     }
         h3 {
       color: #00709E;
-      margin-top: 10px;
+     
       margin-right: 22px;
       font-size: 13px;
     }
@@ -228,7 +233,7 @@
     }
 
 ul {
-  padding-right: 10px; /* تقليل من 15px */
+  padding-right: 5px; /* تقليل من 15px */
   margin-right: 0;
 }
 
@@ -246,16 +251,8 @@ hr {
       font-size: 12px;
      margin-right: 12px
     }
-  @media (min-width: 768px) {
-      ul {
-      margin-right: 45px;
-   font-size: 12px;
-      padding-right: 45px;
-    }
-       post a {
-          padding: 95px;font-size: 12px;
-     margin-right: 95px;
-         }
+  
+
 
   li {
     margin-top: 2px; /* قللت من 5px إلى 2px */
@@ -264,22 +261,16 @@ hr {
     margin-right: 20px; /* قللت من 40px */
     line-height: 1.4; /* للتحكم في المسافة بين الأسطر */
   }
+
    hr {
       hight: 6px;
       margin: 45px 0;   
     }
     }
-    .blog-img  {
-      width: 70% !important;
-      max-width: 600px !important;
-      height: auto !important;
-      display: block;
-      margin: 0 auto 20px;
-            box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
-      border-radius: 12px;
-    }
+
+
 .whatsapp-section {
-  background-color: white;
+  
   text-align: center;
   flex-wrap: wrap;
  display: flex;
@@ -289,7 +280,7 @@ hr {
 
 .whatsapp-icon {
   width: 70px;
-  height: 70px;
+  margin: 10px auto;height: 70px;
         box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
   object-fit: contain;
   animation: pulse 2s infinite; /* تطبيق تأثير النبض */
@@ -311,6 +302,7 @@ hr {
   .whatsapp-icon {
     width: 165px;
     height: 165px;
+    margin: 50px auto;
   }
   .whatsapp-section {
   flex-direction: row; 
@@ -318,65 +310,22 @@ hr {
     gap: 20px;
     }
 }
-     .whatsapp-link{
-  text-align: center;
-  margin: 10px 0;
-}
 
-.whatsapp-link {
-  text-align: center;
-  
-}
-
-.whatsapp-link a {
-  background-color: #00A19D;
-  color: white !important;  /* ✅ تم التصحيح هنا */
-  padding: 5px 12px 4px;
-  ;border-radius: 10px;
-  font-size: 12px;
-  font-weight: bold;
-  text-decoration: none;
-  display: inline-block;
-  line-height: 1.6;
-}
-
-@media (min-width: 768px) {
-  .whatsapp-link a {
-    margin-top: 20px
-    ;font-size: 35px;
-    border-radius: 16px;
-    padding: 6px 18px;
-  }
-}
-
-.post p {
-      color: #444;
-      margin: 6px 8px 8px;
-      font-size: 12px;
-      line-height: 1.6;
-    }
-
-    .post {
-  border-bottom: 0px solid #ddd;
-  padding: 20px 0;
-  margin-right: 0px;
-  margin-bottom: 0px; /* ⇦ هذه تضيف تباعداً بين المقالات */
-}
 .cta-button {
  white-space: nowrap; 
-  color: #004D40;
-    background-color: white;
-    border: 1.5px solid  #004D40;
+  color: black;
+    background-color: #D9FFF1;
+    border: 1px solid  #004D40;
     text-decoration: none;
     font-weight: bold;
     box-shadow: 0 4px 8px rgba(65, 18, 57, 0.2);
     width: fit-content;
     display: block;
-    margin: 20px auto;
+    margin: 10px auto;
     transition: all 0.3s ease;
     text-align: center;
     border-radius: 8px;
-    padding: 4px 9px;
+    padding: 2px 15px;
     font-size: 12px;
     max-width: fit-content;
     animation: pulse 3s infinite; /* تطبيق تأثير النبض */
@@ -396,7 +345,7 @@ hr {
 }
 
 .cta-button:hover {
-   margin: 10px auto; background-color: #f0fff0;
+   margin: 10px auto; background-color: #FAFFD4;
     max-width: fit-content;
     box-shadow: 0 6px 12px rgba(0, 128, 0, 0.3);
     font-size: 13px;
@@ -404,8 +353,6 @@ hr {
     margin-top: 0; 
     
 }
-
-
 /* تنسيق سطح المكتب */
 @media (min-width: 768px) {
     .cta-button {
@@ -416,6 +363,7 @@ hr {
         font-size: 30px;
         border-radius: 12px!important;
         margin: 20px auto;
+        margin-bottom: 60px;
     }
 }
 @media (min-width: 768px) {
@@ -426,112 +374,284 @@ font-size: 44px!important
       .cta-button {
    text-align: center important;
   } 
-    .post a {
-      text-decoration: underline;
-      font-weight: bold;
-      color: #004D40;
-      display: inline-block;
-      font-size: 16px;
-      font-style: italic;
-      margin-left: 10px
-      margin-right: 0px;
-      margin-top: 10px;
-      text-align: center;
-      text-align: right;
-    }
 
-    @media (min-width: 768px) {
-      .post a {
-        font-size: 50px;
-      }
-    }
 
-footer {
-      margin-top: 10px
-      ;background-color: #004B8C;
-      color: white !important;
-      text-align: center;
-      padding: 10px 10px;
-      font-size: 9px;
-      line-height: 1.7;
-    }
-
-footer a img {
-  width: 30px;
-  height: 30px;
-}
-
-@media (min-width: 768px) {
-  footer a img {
-    width: 70px;
-    height: 70px;
-  }
-}
-.footer-icons {
-  margin-top: 20px;
-  margin-bottom: 10px; /* للموبايل */
-}
-@media (min-width: 768px) {
-  .footer-icons {
-    margin-top: 40px;
-    margin-bottom: 30px; /* لسطح المكتب */
-  }
-}
-.footer-icons {
-  display: flex;
-      gap: 5px; 
-      justify-content: center;/
-  flex-wrap: wrap;
-}
-
- footer p {
-  padding: 1px 5px;border-radius:8px;font-size: 10px;background-color:#EEFFFE; margin: 7px; color: #004B8C !important; font-weight: bold;
-}
-  footer p {
-  font-size: 9px;!important
-  }
-@media (min-width: 768px) {
-  .footer-icons {
-    gap: 25px; /* مسافة أكبر في سطح المكتب */
-  }
-  footer p {
-  font-size: 9px;!important
-  padding: 35px 5px;
-  border-radius: 20px
-  ;margin: 20px;
-    }
-}
- 
+          
 
     
+
+
+    .imp-section {
+      background-color:#e6f7ff ;
+      padding: 15px;
+      margin: 15px 10px;
+      text-align: center;
+      color: black;
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+      position: right;
+      border-right: 4px solid red;
+    }
+    .subsection {
+      background-color: white;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+      position: relative;
+      border-right: 4px solid #00A19D;
+    }
+    
+    .subsection h3 {
+      color: #00709E;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+    
+    .subsection p {
+      font-size: 12px;
+      line-height: 1.7;
+      color: black;
+    }
+    .danger-section {
+      background-color: #ffebee;
+      border: 2px solid #f44336;
+      border-radius: 12px;
+      padding: 5px;
+      margin: 10px 0;
+      text-align: center;
+    }
+    
+
+     
+.main-content {
+  margin: 30px 10px;
+}
+
+.main-section {
+  margin-bottom: 20px;
+  padding: 5px;
+  background-color: #e6f7ff;
+  border-radius: 12px;
+  border-left: 5px solid #00709E;
+}
+  @media (min-width: 768px) {
+.main-section {
+    border-left: 9px solid #00709E;
+    border-radius: 40px;
+    padding: 30px 30px;
+    margin: 10px;
+  }
+    .subsection  {
+      border-right: 9px solid #00A19D;
+      padding: 10px;
+      font-size: 12px!important;
+    }
+   
+        .imp-section {
+      border-radius: 40px;
+         border-right: 9px solid red;
+         border-radius: 8px;
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+      margin: 40px;
+    padding: 30px 30px;
+      }
+   
+
+      .danger-section {
+      border-radius: 40px;
+      margin: 90px 0;
+    padding: 30px 30px;
+      }
+   .subsection {
+    border-radius: 40px;
+    padding: 25px;
+    margin: 25px 0;
+  }
+  ul{
+  margin: 10px 30
+}
+  h3 {
+    font-size: 14px;
+  }
+  
+  }
+
+     
+.warning-box {
+  background-color: white;
+  border-right: 5px solid #ffc107;
+          box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
+ padding: 5px;
+  margin: 10px 0;
+  border-radius: 0 8px 8px 0;
+}
+  @media (min-width: 768px) {
+       .warning-box {
+      margin: 50px 0;
+       border-radius: 30px;
+      padding: 0 5px;
+    }
+  }
+
+ footer {
+ border-top: 4px solid white; 
+ background-color: #004D40 !important;
+  color: white !important;
+          box-shadow: 2px 0 2px 5px rgba(194, 0, 97, 22);
+  text-align: center;
+  padding: 10px 0;
+  font-size: 9px;
+  line-height: 1.7;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.address-card {
+  display: inline-block;
+  background-color: white;
+  color: #004B8C !important;
+  padding: 2px 20px;
+  border-radius: 30px;
+  
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 12px;
+  line-height: 1.5;
+  max-width: 90%;
+}
+
+.working-hours {
+  background-color: rgba(255, 255, 255, 0.15);
+  display: inline-block;
+  padding: 1px 15px;
+  border-radius: 20px;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.copyright-container {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  margin-top: 5px;
+  font-weight: 500;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 6px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin: 10px auto;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: #00796B;
+  transform: translateY(-5px);
+}
+
+.social-icon img {
+  width: 22px;
+  height: 22px;
+}
+@media (min-width: 768px) {
+ .address-card {
+    font-size: 34px !important;
+    margin: 10px auto;
+    padding: 5px 40px !important;
+  }
+  
+  .working-hours {
+    font-size: 28px !important;
+    padding: 5px 90px !important;
+  }
+  
+  .social-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .social-icon img {
+    width: 40px;
+    height: 40px;
+    gap: 60px;
+  }
+  
+  .copyright-container {
+    font-size: 6px !important;
+    padding: 11px;
+  }
+  }
+.blog-img {
+  display: block;
+  max-width: 70%;
+  height: auto;
+  margin: 20px auto;
+  padding: 20px;
+  object-fit: contain;
+  border-radius: 82px;
+  box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
+}
+ @media (max-width: 768px) {
+  .blog-img {
+    max-width: 75%;
+    border-radius: 40px;
+    margin: 15px auto;
+  }
+  }
+  @media (max-width: 768px) {
+  .blog-img {
+    max-width: 75% !important;
+    border-radius: 40px !important;
+  }
+}
   </style>
 </head>
+
 
 
 <body>
   <header class="header-logo">
     <img src="images/clinic-logo.png" alt="شعار العيادة">
     <div class="header-text">
-      <div class="main-title">
-          عيادة د. مختار الشرعبي الإستشارية</div>
+      <div class="main-title">عيادة د. مختار الشرعبي الإستشارية</div>
       <div class="sub-title"> للأنف والأذن والحنجرة والرأس والعنق</div>
     </div>
   </header>
 
-<div class="container">
-  <h1>طنين الأذن: الأسباب والعلاج وطرق الوقاية</h1>
-      <p style="color: blue">
- ✍ دكتور/ مختار الشرعبي</p>
-      <p><br>
-  <img style="display: block; margin:20px auto;" src="images/blog/tinnitus.jpeg" alt="طنين الأذن" class="blog-img" >
+   <div class="container">
+       <h1>طنين الأذن: الأسباب والعلاج وطرق الوقاية</h1>
 
+        <p style="color: blue;text-align:center">✍️ دكتور / مختار الشرعبي</p>
+      
+
+<img src="images/blog/tinnitus.jpeg" alt="طنين الأذن" class="blog-img">
+     <div class="main-content">
+        <div class="main-section">     <p><br>
     <section>
       <h2>ما هو طنين الأذن؟</h2>
       <p>طنين الأذن هو إحساس بسماع صوت في إحدى الأذنين أو كلتيهما دون وجود مصدر خارجي لهذا الصوت. قد يكون الصوت على شكل <strong>رنين، صفير، طنين، أو أزيز</strong>. وهو عرض شائع، وقد يكون مؤقتًا أو دائمًا، خفيفًا أو مزعجًا يؤثر على جودة الحياة.</p>
     </section>
 
     <section>
-      <h2>🧠 الأسباب الشائعة لطنين الأذن</h2>
+      <div class="subsection">     <h2>🧠 الأسباب الشائعة لطنين الأذن</h2>
   <ul>     <li><strong>ضعف السمع المرتبط بتقدم العمر (Presbycusis):</strong><br>شائع فوق سن 60 سنة وقد يبدأ في أبكر من ذلك. يحدث بسبب تضرر الخلايا الحسية في الأذن الداخلية.</li>
         <li><strong>التعرض للأصوات العالية (Noise-induced hearing loss):</strong><br>نتيجة العمل في بيئات صاخبة أو سماعات الأذن بصوت مرتفع لفترات طويلة أو التعرض لصوت قوي كأصوات الإنفجارات. يُسبب تلفًا دائمًا في الشعيرات السمعية الدقيقة.</li>
         <li><strong>انسداد الأذن بالشمع (Earwax impaction):</strong><br>تراكم الشمع يمكن أن يُسبب ضغطًا على طبلة الأذن ويؤدي إلى الطنين.</li>
@@ -545,43 +665,44 @@ footer a img {
         <li><strong>إجهاد وتوتر نفسي (Stress & Anxiety):</strong><br>التوتر يمكن أن يفاقم الطنين أو يجعله أكثر ملاحظة.</li>
         <li><strong>مشاكل في الأوعية الدموية (Pulsatile tinnitus):</strong><br>مثل ارتفاع ضغط الدم، ضيق الشرايين، أو وجود تشوهات وعائية، وتكون الأصوات نابضة.</li>
         <li><strong>إصابات الرأس أو الرقبة:</strong><br>قد تؤثر على الأعصاب السمعية أو الدورة الدموية المغذية للأذن.</li>
-      </ul>
+      </ul></div>
       <p>
 
     <section>
       <h2>⏰ متى يجب زيارة الطبيب؟</h2>
-      <ul>
+      <div class="subsection">     <ul>
         <li>إذا استمر الطنين أكثر من أسبوعين</li>
         <li>إذا كان مصحوبًا بضعف سمع أو دوخة</li>
         <li>إذا كان نابضًا ومتزامنًا مع دقات القلب</li>
         <li>إذا بدأ بعد إصابة بالرأس</li>
         <li>إذا أثّر على النوم أو الحياة اليومية</li>
-      </ul>
+      </ul></div>
     </section>
 
+ 
     <section>
       <h2>🔬 كيف يتم التشخيص؟</h2>
-      <ul>
+        <div class="subsection">    <ul>
         <li>👂 فحص الأذن بالمنظار</li>
         <li>🧪 تخطيط السمع</li>
         <li>📸 تصوير بالرنين المغناطيسي عند الحاجة</li>
         <li>📈 قياس ضغط الأذن والتوازن</li>
-      </ul>
+      </ul></div>
     </section>
 
 <section>
     <h2>💊 استراتيجيات العلاج</h2>
-    
+      <div class="subsection">    
     <h3>1. علاج السبب الأساسي (إن وُجد):</h3>
-    <ul>
+       <div class="warning-box">   <ul>
         <li>إزالة شمع الأذن أو علاج الالتهابات أو ترقيع طبلة الأذن</li>
         <li>تعديل الأدوية المسببة للطنين بعد استشارة الطبيب</li>
         <li>علاج الحالات الصحية الكامنة (مثل اضطرابات الضغط أو الغدة الدرقية)</li>
         <li>في بعض الحالات، لا يُكتشف سبب واضح، مما يستدعي التعامل معه كحالة مزمنة</li>
-    </ul>
+    </ul></div>
 
     <h3>2. التعامل مع الطنين (إذا لم يُكتشف سبب):</h3>
-    <ul>
+       <div class="warning-box">   <ul>
         <li><strong>التجاهل (التطنيش):</strong><br>
             كلما زاد تركيزك على الطنين، زاد إدراكك له وازدادت حدته. العكس صحيح: تجاهله يقلل تأثيره.<br>
             افترض ان هناك ساعه حائط وانت تركز عليها بسمعك، سيزعجك صوتها.. لكن اذا لم يكن تركيزك عندها لن تشعر بصوتها،
@@ -604,75 +725,85 @@ footer a img {
         <li><strong>إعادة التفسير النفسي:</strong><br>
             تعامَل مع الصوت كأنه جزء من البيئة الخارجية (مثل صوت مكيف أو ساعة حائط)، وليس مشكلة داخلية.
         </li>
-    </ul>
+    </ul></div>
 
     <h3>3. ملاحظات هامة:</h3>
-    <ul>
+       <div class="warning-box">   <ul>
         <li>تجنَّب التوتر والقلق؛ فهما يزيدان الإحساس بالطنين.</li>
         <li>لا يوجد علاج واحد يناسب الجميع؛ قد تحتاج لتجربة عدة أساليب بمساعدة طبيبك.</li>
         <li>في بعض الحالات قد ننصح باستخدام سماعات طبية خاصه تخفف من حده الطنين.</li>
         <li>في معظم الحالات يكون السبب غير واضح او تكون اسباب بسيطه يمكن حلها لكن في بعض الحالات النادره قد يكون الطنين ناتجًا عن مشاكل صحية خطيرة (مثل اضطرابات الأوعية الدموية او اورام الدماغ،...)، لذا يُفضل الفحص الطبي الدوري.</li>
-    </ul>
+    </ul></div> </div></div>
 
-    <hr>
+          <div class="main-section">
     <h2><em>الخلاصة:</em><h2></h2><br>
-    الطنين تحدي يتطلب صبرًا وتكيّفًا. ركّز على تقليل تأثيره عبر تغيير ردود أفعالك النفسية، واستخدم أدوات مساعدة لإلهاء الدماغ. لا تتردد في استشارة أخصائي أنف وأذن وحنجرة أو معالج سمعي لوضع خطة علاجية مخصصة لك, وتذكر أن التعايش الفعّال مع الطنين ممكن عند اتباع الإرشادات الصحيحة</p>
+      <div class="subsection">    الطنين تحدي يتطلب صبرًا وتكيّفًا. ركّز على تقليل تأثيره عبر تغيير ردود أفعالك النفسية، واستخدم أدوات مساعدة لإلهاء الدماغ. لا تتردد في استشارة أخصائي أنف وأذن وحنجرة أو معالج سمعي لوضع خطة علاجية مخصصة لك, وتذكر أن التعايش الفعّال مع الطنين ممكن عند اتباع الإرشادات الصحيحة</p></div></div>
 </section> 
-<hr>
+      <div class="imp-section">
  <p><em> في عيادة <strong>د. مختار الشرعبي</strong> – تعز، ركن مفرق ماوية – نحرص على تقييم كل حالة بدقة وتقديم خطة علاجية شخصية تشمل الجانب الوقائي والنفسي والدوائي.</em></p>
-  <hr>    <a href="blog.html" style="color:#004D40" class="cta-button" />>← عودة لصفحة المدونة</a>
- <hr> 
+  </div>   <br>     
+  <div class="subsection" style="  border: 1px solid #00709E;background-color:white">               
+    <a href="blog.html" style="color:black" class="cta-button" />← عودة لصفحة المدونة</a>
+
     <a href="index.html"style=":color:#004D40" class="cta-button">← عودة للصفحة الرئيسية</a></div>
-  </div>  <hr> 
+  </div>   </div> 
+    <footer>
+    <nav>
+      <div class="nav-row">
+        <a href="index.html" class="nav-link">🏠 الرئيسية</a>
 
-<footer style="background-color: #004D40; color: white; text-align: center; padding: 10px 4px;">
-
-  <nav style= "padding: 10px 0;gap: 3px">
-    <div class="nav-row">
-      <a href="index.html" class="nav-link">🏠 الرئيسية</a>
-      <a href="about.html" class="nav-link">📘 قصتنا</a>
-      <a href="services.html" class="nav-link">🩺 من خدماتنا</a>
-      <a href="gallery.html" class="nav-link">📷 معرض الصور</a
+        <a href="services.html" class="nav-link">🩺 من خدماتنا</a>
+        <a href="gallery.html" class="nav-link">📷 معرض الصور</a>
+        <a href="testimonials.html" class="nav-link">💬 رأي الجمهور</a>
+      </div>
+      <div class="nav-row" style="margin-bottom:20px">    
+        <a href="about.html" class="nav-link">📘 قصتنا</a >       <a href="blog.html" class="nav-link">📚 المدونة</a>
+        <a href="contact.html" class="nav-link">📍تواصل معنا</a>
+        <a href="q&a.html" class="nav-link">✉️ الأسئلة الشائعة</a>
+      </div>
+    </nav>
+    
+    <div class="footer-address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+      <div class="address-card">
+        <span itemprop="streetAddress">مفرق ماوية، مبنى مختبرات دار الصحة</span>،
+        <span itemprop="addressLocality">تعز</span>،
+        <span itemprop="addressCountry">اليمن</span>
+      </div>
     </div>
-    <div class="nav-row">    
-       <a href="blog.html" class="nav-link">📚  المدونة</a>
-      <a href="testimonials.html" class="nav-link">💬 رأي الجمهور</a>
-   <a href="contact.html" class="nav-link">📍تواصل معنا</a>
-            
-   <a href="https://wa.me/967730433592" class="nav-link">✉️ إحجز الآن</a>
+    
+    <div class="social-icons">
+      <a href="https://www.facebook.com/profile.php?id=100082372405434" class="social-icon" target="_blank">
+        <img src="images/social/facebook.png" alt="فيسبوك">
+      </a>
+      <a href="https://wa.me/967730433592" class="social-icon" target="_blank">
+        <img src="images/social/whatsapp.png" alt="واتساب">
+      </a>
+      <a href="https://youtube.com/@ENTsharabi" class="social-icon" target="_blank">
+        <img src="images/social/youtube.png" alt="يوتيوب">
+      </a>
+      <a href="https://www.instagram.com/dr.mokhtar_alsharabi" class="social-icon" target="_blank">
+        <img src="images/social/instagram.png" alt="انستغرام">
+      </a>
+      <a href="https://x.com/Dr_Alsharaabi" class="social-icon" target="_blank">
+        <img src="images/social/x.png" alt="تويتر (إكس)" width="30" height="30" />
+      </a>
+      <a href="https://www.tiktok.com/@dr_mokhtar_sharabi" class="social-icon" target="_blank">
+        <img src="images/social/tiktok.png" alt="تيك توك" width="30" height="30" />
+      </a>
+      <a href="mailto:drm9khtarnajy@gmail.com" class="social-icon" target="_blank">
+        <img src="images/social/gmail.png" alt="بريد إلكتروني" width="30" height="30" />
+      </a>
     </div>
-  </nav>  
-     <p style="font-size:9px">📌 تعز، ركن مفرق ماوية , مبنى مختبرات دار الصحة
-    </p> 
-  <div class="footer-icons">
+     <div class="footer-section">
 
-    <a href="https://www.facebook.com/profile.php?id=100082372405434" target="_blank">
-      <img src="images/social/facebook.png" alt="فيسبوك" width="30" height="30" />
-    </a>
-
-    <a href="https://wa.me/967730433592" target="_blank">
-      <img src="images/social/whatsapp.png" alt="واتساب" width="30" height="30" />
-    </a>
-
-    <a href="https://youtube.com/@ENTsharabi" target="_blank">
-      <img src="images/social/youtube.png" alt="يوتيوب" width="30" height="30" />
-    </a>
-
-    <a href="https://www.instagram.com/dr.mokhtar_alsharabi" target="_blank">
-      <img src="images/social/instagram.png" alt="انستغرام" width="30" height="30" />
-    </a>
-
-    <a href="https://x.com/Dr_Alsharaabi" target="_blank">
-      <img src="images/social/x.png" alt="تويتر (إكس)" width="30" height="30" />
-    </a>
-
-    <a href="https://www.tiktok.com/@dr_mokhtar_sharabi" target="_blank">
-      <img src="images/social/tiktok.png" alt="تيك توك" width="30" height="30" />
-    </a>
-
-    <a href="mailto:drm9khtarnajy@gmail.com" target="_blank">
-            <img src="images/social/gmail.png" alt="بريد إلكتروني" width="30" height="30" />
-  </a>  </div>  
-  
-</footer>
- </html> 
+      <p class="working-hours" style="color">
+        ⏰مواعيد العمل: السبت - الخميس: 10:00 صباحاً - 1:00 ظهراً
+      </p>
+    </div>
+    
+    <div class="copyright-container">
+      © 2025 جميع الحقوق محفوظة - عيادة د. مختار الشرعبي
+    </div>
+  </footer>
+</body>
+</html>
