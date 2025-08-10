@@ -133,19 +133,19 @@
       shadow: 0 6px 4px rgba(236, 235, 255, 0.9);
       margin: 2px;display: flex;
       flex-direction: column;
-      gap: 25px;
+      gap: 15px;
     }
     .nav-row {
      text-decoration: underline; display: flex;
       justify-content: center;
       flex-wrap: wrap;
       text-decoration: none;
-      rgba(236, 235, 255, 0.9);gap: 10px;
+      rgba(236, 235, 255, 0.9);gap: 9px;
     }
     .nav-link {
      background-color: #004D40;
-      padding: 2px 5px;
-      border-radius: 9px;
+      padding: 2px 3px;
+      border-radius: 4px;
       color: #E0F2F1;
       
       text-decoration: none;
@@ -161,13 +161,13 @@
     @media (min-width: 768px) {
       nav {
         font-size: 16px;
-        padding: 30px 10px;
+        padding: 20px 10px;
     
       }
       .nav-row {
         gap: 35px;
 
-     margin-bottom: 20px;       }
+     margin-bottom: 10px;       }
       .nav-link {
         margin-top: 20px;padding: 12px 18px;
        box-shadow: 0 0 0 0.8px rgba(243, 245, 212, 8);
@@ -226,15 +226,15 @@
 
     h1 {
       background-color: #EEFFFE;
-      color: #A1115E;
+      color: #C20041;
       border: 1px solid #004D40;
       text-align: center;
       padding: 5px;
       box-shadow: 0 9px 6px rgba(33, 95, 97, 0.7);
       border-radius: 9px;
-      font-size: 13px;
+      font-size: 17px;
       margin: 5px auto;
-      width: 90%;
+      width: 99%;
       max-width: 70%;
     }
    @media (min-width: 768px) {
@@ -243,15 +243,16 @@
  font-size: 47px;
  margin: 10px auto;
  padding-right: 20px;
+ width: 99%;
  }
   }
     h2 {
       color: #004D40;
-      ;font-size: 13px;
+      ;font-size: 14px;
     }
         h3 {
       color: #00709E;
-      margin-top: 10px;
+     
       margin-right: 22px;
       font-size: 13px;
     }
@@ -287,10 +288,7 @@ hr {
    font-size: 12px;
       padding-right: 45px;
     }
-       post a {
-          padding: 95px;font-size: 12px;
-     margin-right: 95px;
-         }
+
 
   li {
     margin-top: 2px; /* قللت من 5px إلى 2px */
@@ -354,65 +352,22 @@ hr {
     gap: 20px;
     }
 }
-     .whatsapp-link{
-  text-align: center;
-  margin: 10px 0;
-}
 
-.whatsapp-link {
-  text-align: center;
-  
-}
-
-.whatsapp-link a {
-  background-color: #00A19D;
-  color: white !important;  /* ✅ تم التصحيح هنا */
-  padding: 5px 12px 4px;
-  ;border-radius: 10px;
-  font-size: 12px;
-  font-weight: bold;
-  text-decoration: none;
-  display: inline-block;
-  line-height: 1.6;
-}
-
-@media (min-width: 768px) {
-  .whatsapp-link a {
-    margin-top: 20px
-    ;font-size: 35px;
-    border-radius: 16px;
-    padding: 6px 18px;
-  }
-}
-
-.post p {
-      color: #444;
-      margin: 6px 8px 8px;
-      font-size: 12px;
-      line-height: 1.6;
-    }
-
-    .post {
-  border-bottom: 0px solid #ddd;
-  padding: 20px 0;
-  margin-right: 0px;
-  margin-bottom: 0px; /* ⇦ هذه تضيف تباعداً بين المقالات */
-}
 .cta-button {
  white-space: nowrap; 
   color: black;
-    background-color: #EEFAFF;
-    border: 1.5px solid  #004D40;
+    background-color: #D9FFF1;
+    border: 1px solid  #004D40;
     text-decoration: none;
     font-weight: bold;
     box-shadow: 0 4px 8px rgba(65, 18, 57, 0.2);
     width: fit-content;
     display: block;
-    margin: 20px auto;
+    margin: 10px auto;
     transition: all 0.3s ease;
     text-align: center;
     border-radius: 8px;
-    padding: 2px 9px;
+    padding: 2px 15px;
     font-size: 12px;
     max-width: fit-content;
     animation: pulse 3s infinite; /* تطبيق تأثير النبض */
@@ -450,6 +405,7 @@ hr {
         font-size: 30px;
         border-radius: 12px!important;
         margin: 20px auto;
+        margin-bottom: 60px;
     }
 }
 @media (min-width: 768px) {
@@ -460,84 +416,230 @@ font-size: 44px!important
       .cta-button {
    text-align: center important;
   } 
-    .post a {
-      text-decoration: underline;
-      font-weight: bold;
-      color: #004D40;
-      display: inline-block;
-      font-size: 1px;
-      font-style: italic;
-      margin-left: 10px
-      margin-right: 0px;
-      margin-top: 10px;
-      text-align: center;
-      text-align: right;
-    }
 
-    @media (min-width: 768px) {
-      .post a {
-        font-size: 50px;
-      }
-    }
 
- .post-section {
-     margin: 10px 20px;
-     box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
-        }
- footer {
-      margin-top: 10px
-      ;background-color: #004B8C;
-      color: white !important;
-      text-align: center;
-      padding: 10px 10px;
+          
+    .main-section-title {
+      color: #880A41;
+      font-size: 20px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+    }
     
-      line-height: 1.7;
-    }
 
-footer a img {
+
+    .imp-section {
+      background-color:#e6f7ff ;
+      padding: 15px;
+      margin-bottom: 15px;
+      
+      color: black;
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+      position: right;
+      border-right: 4px solid red;
+    }
+    .subsection {
+      background-color: white;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+      position: relative;
+      border-right: 4px solid #00A19D;
+    }
+    
+    .subsection h3 {
+      color: #00709E;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+    
+    .subsection p {
+      font-size: 12px;
+      line-height: 1.7;
+      color: #444;
+    }
+    .danger-section {
+      background-color: #ffebee;
+      border: 2px solid #f44336;
+      border-radius: 12px;
+      padding: 5px;
+      margin: 10px 0;
+      text-align: center;
+    }
+    
+
+     
+.main-content {
+  margin: 30px 0;
+}
+
+.main-section {
+  margin-bottom: 20px;
+  padding: 5px;
+  background-color: #e6f7ff;
+  border-radius: 12px;
+  border-left: 5px solid #00709E;
+}
+  @media (min-width: 768px) {
+.main-section {
+    border-radius: 40px;
+    padding: 30px 30px;
+    margin: 30px;
+  }
+        .imp-section {
+      border-radius: 40px;
+         border-right: 9px solid red;
+         border-radius: 8px;
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+      margin: 90px;
+    padding: 30px 30px;
+      }
+   
+
+      .danger-section {
+      border-radius: 40px;
+      margin: 90px 0;
+    padding: 30px 30px;
+      }
+   .subsection {
+    border-radius: 40px;
+    padding: 25px;
+    margin-bottom: 25px;
+  }
+  
+  h3 {
+    font-size: 14px;
+  }
+  
+
+  }
+
+     
+.warning-box {
+  background-color: white;
+  border-right: 5px solid #ffc107;
+          box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
+ padding: 5px;
+  margin: 10px 0;
+  border-radius: 0 8px 8px 0;
+}
+  @media (min-width: 768px) {
+       .warning-box {
+      margin: 50px 0;
+       border-radius: 30px;
+      padding: 0 5px;
+    }
+  }
+
+ footer {
+ border-top: 4px solid white; 
+ background-color: #004D40 !important;
+  color: white !important;
+          box-shadow: 2px 0 2px 5px rgba(194, 0, 97, 22);
+  text-align: center;
+  padding: 10px 0;
+  font-size: 9px;
+  line-height: 1.7;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.address-card {
+  display: inline-block;
+  background-color: white;
+  color: #004B8C !important;
+  padding: 2px 20px;
+  border-radius: 30px;
+  
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 12px;
+  line-height: 1.5;
+  max-width: 90%;
+}
+
+.working-hours {
+  background-color: rgba(255, 255, 255, 0.15);
+  display: inline-block;
+  padding: 1px 15px;
+  border-radius: 20px;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.copyright-container {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  margin-top: 5px;
+  font-weight: 500;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 6px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin: 10px auto;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon {
   width: 30px;
   height: 30px;
-}
-
-@media (min-width: 768px) {
-  footer a img {
-    width: 70px;
-    height: 70px;
-  }
-}
-.footer-icons {
-  margin-top: 20px;
-  margin-bottom: 10px; /* للموبايل */
-}
-@media (min-width: 768px) {
-  .footer-icons {
-    margin-top: 40px;
-    margin-bottom: 30px; /* لسطح المكتب */
-  }
-}
-.footer-icons {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
   display: flex;
-      gap: 5px; 
-      justify-content: center;/
-  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
 }
 
- footer p {
-  font-size: 9px
-  padding: 1px 1px;border-radius:8px;font-size: 10px;background-color:#EDFFF7; margin: 1px; color: #004B8C !important; font-weight: bold;
+.social-icon:hover {
+  background-color: #00796B;
+  transform: translateY(-5px);
 }
 
+.social-icon img {
+  width: 22px;
+  height: 22px;
+}
 @media (min-width: 768px) {
-  footer-icons {
-    gap: 5px; /* مسافة أكبر في سطح المكتب */
+ .address-card {
+    font-size: 34px !important;
+    margin: 10px auto;
+    padding: 5px 40px !important;
   }
-  .footer p {
-  font-size: 9.5px;!important
-  padding: 15px 15px;
-  border-radius: 20px
-  ;margin: 40px 20px;
-    }
-}
+  
+  .working-hours {
+    font-size: 28px !important;
+    padding: 5px 90px !important;
+  }
+  
+  .social-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .social-icon img {
+    width: 40px;
+    height: 40px;
+    gap: 60px;
+  }
+  
+  .copyright-container {
+    font-size: 6px !important;
+    padding: 11px;
+  }
+  }
+
   </style>
 </head>
 
@@ -554,142 +656,180 @@ footer a img {
 
    <div class="container">
   <h1>لحميات الأنف – الأنواع والعلاج</h1>  
-        <p style="color: blue"style="font-size:11px">✍️ دكتور / مختار الشرعبي</p>
+        <p style="color: blue;text-align:center">✍️ دكتور / مختار الشرعبي</p>
       
-      <p>يعاني الكثير من الأشخاص من انسداد الأنف وصعوبة التنفس، لكن الأسباب تختلف حسب الحالة. ومن أكثر الأسباب شيوعًا : انحراف الحاجز الأنفي واللحميات الأنفية:</p>    <p><strong>سنتطرق في هذا المقال إلى موضوع اللحميات الأنفية و الفروقات بين أنواعها</strong></p>    <h2>أنواع لحميات الأنف</h2>  
-  <ul class="post-section">  
+    <div class="main-content">
+        <div class="main-section">     <p>يعاني الكثير من الأشخاص من انسداد الأنف وصعوبة التنفس، لكن الأسباب تختلف حسب الحالة. ومن أكثر الأسباب شيوعًا : انحراف الحاجز الأنفي واللحميات الأنفية:</p>    
+     
+            <div class="subsection">  
+      <p><strong>سنتطرق في هذا المقال إلى موضوع اللحميات الأنفية و الفروقات بين أنواعها</strong></p>    <h2 style="color:#B70051; text-align:center">أنواع لحميات الأنف</h2>  
+        <div class="warning-box">
+              <ul>  
     <li>السلائل الأنفية (Nasal Polyps)</li>  
     <li>اللحمية البلعومية (Adenoid)</li>  
     <li>القرينات الأنفية (Turbinates)</li>   </ul>  
-<hr>    <h2 style="color: #00796B">1. اللحمية البلعومية</h2>  
+    </div> </div><br>
+  <h2 style="color: #00796B; text-align:center">1. اللحمية البلعومية</h2>  
     <img style="display: block; margin:20px auto;" src="images/blog/adenoid.jpeg" alt="اللحمية البلعومية" class="blog-img" />  
-  <p>نسيج لمفاوي يوجد طبيعيًا خلف الأنف (في البلعوم الأنفي)، ويساهم في المناعة لدى الأطفال. لكنها قد تتضخم وتسبب انسدادًا في مجرى التنفس.</p>    <p><strong>الأعراض:</strong></p>  
-    <ul class="post-section">  
+            <div class="subsection">  
+ <p>نسيج لمفاوي يوجد طبيعيًا خلف الأنف (في البلعوم الأنفي)، ويساهم في المناعة لدى الأطفال. لكنها قد تتضخم وتسبب انسدادًا في مجرى التنفس.</p>  
+              
+        <div class="warning-box"><p><h3>الأعراض:</h3></p>  
+    <ul>  
     <li>انسداد أنفي مزمن</li>  
     <li>تنفس عن طريق الفم</li>  
     <li>شخير أثناء النوم</li>  
     <li>التهابات متكررة في الأذن الوسطى</li>  
     <li>اضطرابات في النوم وتأخر النطق أحيانًا</li>  
-  </ul>    <p style="color:#880E4F"><strong>   ✓ إرتباط اللحمية باللوزتين:</strong> <p>في كثير من الحالات، يكون تضخم اللحمية البلعومية مترافقًا مع تضخم اللوزتين. وقد يتطلب العلاج استئصالًا مزدوجًا للحمية البلعومية واللوزتين لضمان تحسن أفضل.  </ul>    <p style="color:#880E4F"><strong>   ❌من الأخطاء الشائعة :</strong> <p>قيام بعض غير المختصين باستئصال اللوزتين فقط، رغم وجود تضخم واضح في اللحمية، مما يؤدي إلى:</p>  
-  <ul class="post-section"> 
+  </ul>   </div>
+        
+ <div class="warning-box"><p style="color:#880E4F"><h3>   ✓ إرتباط اللحمية باللوزتين:</h3> <p>في كثير من الحالات، يكون تضخم اللحمية البلعومية مترافقًا مع تضخم اللوزتين. وقد يتطلب العلاج استئصالًا مزدوجًا للحمية البلعومية واللوزتين لضمان تحسن أفضل.  </ul>  
+ 
+ </div>
+  <div class="danger-section"><p style="color:#880E4F"><h3 >   ❌من الأخطاء الشائعة :</h3> <p style="text-align: right;"><strong>قيام بعض غير المختصين باستئصال اللوزتين فقط، رغم وجود تضخم واضح في اللحمية، مما يؤدي إلى:</strong></p>  
+   <div>
+
+       <ul style="text-align: right;"> 
     <li>رد فعل مناعي وتضخم مضاعف في اللحمية</li>  
     <li>تفاقم أعراض الانسداد</li>  
-    <li>عدم تحسُّن الحالة أو زيادتها سوءًا</li>  
-  </ul>    <p><strong>دواعي الاستئصال:</strong></p>  
-    <ul class="post-section"> 
+    <li>عدم تحسُّن الحالة أو زيادتها سوءاً</li>  
+  </ul> </div>  
+        <div class="warning-box" style="background-color:white">
+<p><h3>دواعي الاستئصال:</h3></h3>  
+       
+    <ul style="text-align: right;"> 
     <li>انسداد تنفسي مزمن</li>  
     <li>توقف النفس الليلي</li>  
     <li>التهابات أذن متكررة</li>  
     <li>مشاكل سمعية ناتجة عن انسداد قناة استاكيوس</li>  
     <li>فشل العلاج الدوائي</li>  
- </ul> <hr>    <h2 style="color: #00796B">2. السلائل الأنفية</h2>  
+ </ul> <hr>   </div>
+   </div>
+   </div>    <br>    
+<h2 style="color: #00796B; text-align:center">2. السلائل الأنفية</h2>  
   <img style="display: block; margin:20px auto;" src="images/blog/polyps.jpeg" alt="السلائل الأنفية" class="blog-img" />  
-  <p>لحمية غير سرطانية تنمو من بطانة الأنف أو الجيوب نتيجة التهابات مزمنة أو تحسس شديد.</p>    <p><strong>الأعراض:</strong></p>  
-    <ul class="post-section"> 
+            <div class="subsection"> <p>لحمية غير سرطانية تنمو من بطانة الأنف أو الجيوب نتيجة التهابات مزمنة أو تحسس شديد.</p>    <p><h3>الأعراض:</h3></p>  
+  <div class="warning-box">   <ul> 
     <li>انسداد أنفي دائم</li>  
     <li>ضعف أو فقدان حاسة الشم</li>  
     <li>سيلان أنف مزمن</li>  
     <li>صداع أو ضغط في الوجه</li>  
-  </ul>    <p><strong>العلاج:</strong></p>  
+  </ul>  </div> 
+  <p><h3>العلاج:</h3></p>  
 
-  <ul class="post-section">   <li>دوائي: بخاخات الكورتيزون، مضادات التحسس، أدوية مضادة للالتهاب</li>  
+  <div class="warning-box"> <ul>   <li>دوائي: بخاخات الكورتيزون، مضادات التحسس، أدوية مضادة للالتهاب</li>  
     <li>جراحي: استئصال السلائل بمنظار الجيوب الأنفية تحت تخدير عام</li>  </ul> 
-  <br> <div class="whatsapp-section" style="margin-top: 5px">
+ </div>
+ <br> <div class="whatsapp-section" style="margin-top: 5px">
   <a href="https://youtu.be/i0Va72Gpp-s?feature=shared" target="_blank">
     <img src="images/social/youtube.jpeg" alt="يوتيوب" class="whatsapp-icon">
   </a>
 
     
-  </div>   <a href="https://youtu.be/i0Va72Gpp-s?feature=shared" style="color:#004D40" class="cta-button" />
+  </div>   <a href="https://youtu.be/i0Va72Gpp-s?feature=shared" style="color:black" class="cta-button" />
  شاهد نموذج عملياتنا </a>
 
-<hr>
-  <ul class="post-section">      <li>بعد العملية، يحتاج المريض إلى متابعة واستخدام بخاخات وقائية لتقليل عودة اللحميات.</li>   </ul> 
-      <hr><h2 style="color: #00796B">3. القرينات الأنفية</h2>  
+
+  <ul>      <li>بعد العملية، يحتاج المريض إلى متابعة واستخدام بخاخات وقائية لتقليل عودة اللحميات.</li>   </ul> 
+      </div>
+        <br>    
+
+                <h2 style="color: #00796B;text-align:center">3. القرينات الأنفية</h2>  
     <img style="display: block; margin:20px auto;" src="images/blog/turbinate.jpeg" alt="القرينات الأنفية" class="blog-img" />  
-  <p>هي تراكيب طبيعية في الأنف تقوم بترطيب وتدفئة الهواء الداخل وتنقيته.</p>    <p><strong>الأعراض:</strong></p>  
-    <ul class="post-section">   
+            <div class="subsection">  <p>هي تراكيب طبيعية في الأنف تقوم بترطيب وتدفئة الهواء الداخل وتنقيته.</p>  
+        <p><h3>الأعراض:</h3></p>  
+  <div class="warning-box">   <ul>   
     <li>انسداد أنفي مستمر</li>  
     <li>صوت أنفي عند الكلام</li>  
     <li>سعال مزمن</li>  
-</ul>    <p style="color:#880E4F"><strong> ⚠️ تنبيه:</strong></p> 
+</ul> </div>
+ <div class="danger-section">
+  <p><h3 style="color:black"> ⚠️ تنبيه:</h3></p> 
 <p style="color:#00709E">
-القرينات ليست لحميات، واستئصالها الكامل مضر. يُجرى فقط تصغير جزئي في حالات محددة.</p>    <p><strong>التدخل الجراحي للقرينات الأنفية:</strong></p>  
-    <ul class="post-section">   <li>يُجرى فقط عند فشل العلاج الدوائي</li>  
+<strong>القرينات ليست لحميات، واستئصالها الكامل مضر. يُجرى فقط تصغير جزئي في حالات محددة</strong>.</p>  </div>
+
+
+<p><h3>التدخل الجراحي للقرينات الأنفية:</h3></p>  
+ <div class="warning-box">   <ul>   <li>يُجرى فقط عند فشل العلاج الدوائي</li>  
 <li>تصغير جزئي وليس استئصالًا كاملاً</li>  
 <li>يجب أن يُجرى من قبل طبيب مختص</li>
-
-   <ul class="post-section">     <h2>طرق التشخيص</h2>  
-  <p>يتم التشخيص عبر الفحص السريري باستخدام المنظار، وقد تُطلب أشعة مقطعية في بعض الحالات لتحديد حجم ونوع اللحميات بدقة.</p>    <h2>ختامًا</h2>  
-  <p>  
-    التشخيص السليم والتقييم بالمنظار ضروري لتحديد سبب انسداد الأنف بدقة.<br>  
-</div> <p style="color:#880E4F; text-decoration: underline"><strong> ⚠️ تنبيه:</strong></p> 
-<p style="color:#00709E"> نحذر من إجراء عمليات على يد غير المختصين، فالتدخل الخاطئ قد يزيد من تعقيد الحالة.<p><br>
-
-  </div> 
-     <hr>   
- <p><em> في عيادة <strong>د. مختار الشرعبي</strong> – تعز، ركن مفرق ماوية – نحرص على تقييم كل حالة بدقة وتقديم خطة علاجية شخصية تشمل الجانب الوقائي والنفسي والدوائي.</em></p>
-<hr>          
-                
-    <a href="blog.html" style="color:#004D40" class="cta-button" />>← عودة لصفحة المدونة</a>
- <hr> 
-    <a href="index.html"style=":color:#004D40" class="cta-button">← عودة للصفحة الرئيسية</a></div>
-  </div> 
-  <footer style="background-color: #004D40; color: white; text-align: center; padding: 10px 4px;">
-
-  <nav style= "padding: 10px 0;gap: 3px">
-    <div class="nav-row">
-      <a href="index.html" class="nav-link">🏠 الرئيسية</a>
-      <a href="about.html" class="nav-link">📘 قصتنا</a>
-      <a href="services.html" class="nav-link">🩺 من خدماتنا</a>
-      <a href="gallery.html" class="nav-link">📷 معرض الصور</a>
-   </div>
-    <div class="nav-row">    
-       <a href="blog.html" class="nav-link">📚  المدونة</a>
-      <a href="testimonials.html" class="nav-link">💬 رأي الجمهور</a>
-   <a href="contact.html" class="nav-link">📍تواصل معنا</a>
-            
-   <a href="https://wa.me/967730433592" class="nav-link">✉️ إحجز الآن</a>
-    </div>
-  </nav>
-<div class="footer-address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-  <p>
-    <span itemprop="streetAddress" style="font-size:9.5px">ركن مفرق ماوية، مبنى مختبر دارالصحة</span>,
-    <span itemprop="addressLocality" style="font-size:9.5px">تعز</span>,
-    <span itemprop="addressCountry">اليمن</span>
-  </p>
-</div>
- 
-      
-<div class="footer-icons">
-
-    <a href="https://www.facebook.com/profile.php?id=100082372405434" target="_blank">
-      <img src="images/social/facebook.png" alt="فيسبوك" width="30" height="30" />
-    </a>
-
-    <a href="https://wa.me/967730433592" target="_blank">
-      <img src="images/social/whatsapp.png" alt="واتساب" width="30" height="30" />
-    </a>
-
-    <a href="https://youtube.com/@ENTsharabi" target="_blank">
-      <img src="images/social/youtube.png" alt="يوتيوب" width="30" height="30" />
-    </a>
-
-    <a href="https://www.instagram.com/dr.mokhtar_alsharabi" target="_blank">
-      <img src="images/social/instagram.png" alt="انستغرام" width="30" height="30" />
-    </a>
-
-    <a href="https://x.com/Dr_Alsharaabi" target="_blank">
-      <img src="images/social/x.png" alt="تويتر (إكس)" width="30" height="30" />
-    </a>
-
-    <a href="https://www.tiktok.com/@dr_mokhtar_sharabi" target="_blank">
-      <img src="images/social/tiktok.png" alt="تيك توك" width="30" height="30" />
-    </a>
-
-    <a href="mailto:drm9khtarnajy@gmail.com" target="_blank">
-            <img src="images/social/gmail.png" alt="بريد إلكتروني" width="30" height="30" />
-  </a>  </div>  
+</div></div></div>
+   <div class="main-section">    <h2>طرق التشخيص</h2> 
+ <div class="subsection"> <p>يتم التشخيص عبر الفحص السريري باستخدام المنظار، وقد تُطلب أشعة مقطعية في بعض الحالات لتحديد حجم ونوع اللحميات بدقة.</p>    </div>
+ <h2>ختامًا</h2>  
   
-</footer>
- </html> 
+            <div class="subsection"><p>  
+    التشخيص السليم والتقييم بالمنظار ضروري لتحديد سبب انسداد الأنف بدقة.<br>  
+</div>  <div class="danger-section">
+    <p><h3 style="color:black"> ⚠️ تنبيه:</h3></p> 
+<p style="color:#00709E"> <strong>نحذر من إجراء عمليات على يد غير المختصين، فالتدخل الخاطئ قد يزيد من تعقيد الحالة</strong><p>
+</div>
+  </div> 
+     <hr>    <div class="imp-section">
+ <p><em> في عيادة <strong>د. مختار الشرعبي</strong> – تعز، ركن مفرق ماوية – نحرص على تقييم كل حالة بدقة وتقديم خطة علاجية شخصية تشمل الجانب الوقائي والنفسي والدوائي.</em></p>
+  </div>   <br>     
+  <div class="main-section" style="  border: 1px solid #00709E;background-color:white">               
+    <a href="blog.html" style="color:black" class="cta-button" />← عودة لصفحة المدونة</a>
+
+    <a href="index.html"style=":color:#004D40" class="cta-button">← عودة للصفحة الرئيسية</a></div>
+  </div>   </div> 
+    <footer>
+    <nav>
+      <div class="nav-row">
+        <a href="index.html" class="nav-link">🏠 الرئيسية</a>
+
+        <a href="services.html" class="nav-link">🩺 من خدماتنا</a>
+        <a href="gallery.html" class="nav-link">📷 معرض الصور</a>
+        <a href="testimonials.html" class="nav-link">💬 رأي الجمهور</a>
+      </div>
+      <div class="nav-row" style="margin-bottom:20px">    
+        <a href="about.html" class="nav-link">📘 قصتنا</a >       <a href="blog.html" class="nav-link">📚 المدونة</a>
+        <a href="contact.html" class="nav-link">📍تواصل معنا</a>
+        <a href="q&a.html" class="nav-link">✉️ الأسئلة الشائعة</a>
+      </div>
+    </nav>
+    
+    <div class="footer-address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+      <div class="address-card">
+        <span itemprop="streetAddress">مفرق ماوية، مبنى مختبرات دار الصحة</span>،
+        <span itemprop="addressLocality">تعز</span>،
+        <span itemprop="addressCountry">اليمن</span>
+      </div>
+    </div>
+    
+    <div class="social-icons">
+      <a href="https://www.facebook.com/profile.php?id=100082372405434" class="social-icon" target="_blank">
+        <img src="images/social/facebook.png" alt="فيسبوك">
+      </a>
+      <a href="https://wa.me/967730433592" class="social-icon" target="_blank">
+        <img src="images/social/whatsapp.png" alt="واتساب">
+      </a>
+      <a href="https://youtube.com/@ENTsharabi" class="social-icon" target="_blank">
+        <img src="images/social/youtube.png" alt="يوتيوب">
+      </a>
+      <a href="https://www.instagram.com/dr.mokhtar_alsharabi" class="social-icon" target="_blank">
+        <img src="images/social/instagram.png" alt="انستغرام">
+      </a>
+      <a href="https://x.com/Dr_Alsharaabi" class="social-icon" target="_blank">
+        <img src="images/social/x.png" alt="تويتر (إكس)" width="30" height="30" />
+      </a>
+      <a href="https://www.tiktok.com/@dr_mokhtar_sharabi" class="social-icon" target="_blank">
+        <img src="images/social/tiktok.png" alt="تيك توك" width="30" height="30" />
+      </a>
+      <a href="mailto:drm9khtarnajy@gmail.com" class="social-icon" target="_blank">
+        <img src="images/social/gmail.png" alt="بريد إلكتروني" width="30" height="30" />
+      </a>
+    </div>
+     <div class="footer-section">
+
+      <p class="working-hours" style="color">
+        ⏰مواعيد العمل: السبت - الخميس: 10:00 صباحاً - 1:00 ظهراً
+      </p>
+    </div>
+    
+    <div class="copyright-container">
+      © 2025 جميع الحقوق محفوظة - عيادة د. مختار الشرعبي
+    </div>
+  </footer>
+</body>
+</html>
