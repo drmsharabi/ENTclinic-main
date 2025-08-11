@@ -104,11 +104,11 @@
       justify-content: center;
       flex-wrap: wrap;
       text-decoration: none;
-      rgba(236, 235, 255, 0.9);gap: 9px;
+      rgba(236, 235, 255, 0.9);gap: 19px;
     }
     .nav-link {
      background-color: #004D40;
-      padding: 2px 3px;
+      padding: 2px 8px;
       border-radius: 4px;
       color: #E0F2F1;
       
@@ -148,7 +148,10 @@
       justify-content: center;
       flex-wrap: wrap;
       gap: 18px;
+      border-radius: 0 0 25px 25px;
+      box-shadow: 0 4px 12px rgba(0, 77, 64, 0.3);
     }
+    
     .header-logo img {
       height: 55px;
       width: auto;
@@ -189,25 +192,27 @@
 }
 
     h1 {
-      background-color: #EEFFFE;
+      background-color: white;
       color: #C20041;
-      border: 1px solid #004D40;
+         border-right: 8px solid red;
+      border: 1px solid #01789B ;
       text-align: center;
       padding: 5px;
       box-shadow: 0 9px 6px rgba(33, 95, 97, 0.7);
       border-radius: 9px;
-      font-size: 17px;
+      font-size: 22px;
       margin: 5px auto;
-      width: 99%;
+      width: 80%;
       max-width: 70%;
     }
    @media (min-width: 768px) {
      h1{
+ border-right: 18px solid red;
  border-radius: 20px;
- font-size: 47px;
+ font-size: 67px;
  margin: 10px auto;
  padding-right: 20px;
- width: 99%;
+ width: 79%;
  }
   }
     h2 {
@@ -317,14 +322,14 @@ hr {
 .cta-button {
  white-space: nowrap; 
   color: black;
-    background-color: #D9FFF1;
+    background-color: white;
     border: 1px solid  #004D40;
     text-decoration: none;
     font-weight: bold;
     box-shadow: 0 4px 8px rgba(65, 18, 57, 0.2);
     width: fit-content;
     display: block;
-    margin: 10px auto;
+    margin: 20px auto;
     transition: all 0.3s ease;
     text-align: center;
     border-radius: 8px;
@@ -363,9 +368,9 @@ hr {
   display: block;
   
   max-width: fit-content;padding: 5px 25px 
-        font-size: 30px;
+        font-size: 40px;
         border-radius: 12px!important;
-        margin: 20px auto;
+        margin: 60px auto;
         margin-bottom: 60px;
     }
 }
@@ -378,31 +383,27 @@ font-size: 44px!important
    text-align: center important;
   } 
 
-
-          
-
-    
-
-
     .imp-section {
-      background-color:#e6f7ff ;
+      background-color:#00709E ;
       padding: 15px;
       margin: 15px 10px;
       text-align: center;
-      color: black;
-      border-radius: 8px;
+      color: white;
+      border-radius: 15px;
       box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
       position: right;
       border-right: 4px solid red;
     }
+
+                
     .subsection {
       background-color: white;
-      padding: 15px;
-      margin-bottom: 15px;
+      padding: 15px 10;
+      margin: 15px 0;
       border-radius: 8px;
-      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+       box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);;
       position: relative;
-      border-right: 4px solid #00A19D;
+      border-right: 4px solid #00709E;
     }
     
     .subsection h3 {
@@ -417,8 +418,9 @@ font-size: 44px!important
       color: black;
     }
     .danger-section {
-      background-color: #ffebee;
-      border: 2px solid #f44336;
+      background-color: #FFE6F8;
+          box-shadow: 0 0 6px rgba(0, 0, 97, 0.6);
+      border: 1px solid black;
       border-radius: 12px;
       padding: 5px;
       margin: 10px 0;
@@ -430,13 +432,23 @@ font-size: 44px!important
 .main-content {
   margin: 30px 10px;
 }
-
-.main-section {
+.main
+{
   margin-bottom: 20px;
   padding: 5px;
-  background-color: #e6f7ff;
+  background-color: #F2FAFF;
+  
+      box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
+      border-left: 5px solid  #00A19D
+      ;
+}
+.main-section {
+  margin-bottom: 20px 50px;
+  padding: 5px 0;
+  background-color: white;
   border-radius: 12px;
-  border-left: 5px solid #00709E;
+      box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
+      border-left: 5px solid white;
 }
   @media (min-width: 768px) {
 .main-section {
@@ -446,11 +458,19 @@ font-size: 44px!important
     margin: 10px;
   }
     .subsection  {
-      border-right: 9px solid #00A19D;
+      border-right: 9px solid #00709E;
       padding: 10px;
       font-size: 12px!important;
     }
+   .main
+{
+  
+  background-color: #F2FAFF;
+  
    
+      border-left: 9px solid  #00A19D
+      ;
+}
         .imp-section {
       border-radius: 40px;
          border-right: 9px solid red;
@@ -482,8 +502,8 @@ font-size: 44px!important
 
      
 .warning-box {
-  background-color: white;
-  border-right: 5px solid #ffc107;
+  background-color: #FCFCFF;
+  border-left: 5px solid #ffc107;
           box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
  padding: 5px;
   margin: 10px 0;
@@ -492,8 +512,8 @@ font-size: 44px!important
   @media (min-width: 768px) {
        .warning-box {
       margin: 50px 0;
-       border-radius: 30px;
-      padding: 0 5px;
+       border-radius: 40px;
+      padding: 15px 5px;
     }
   }
 
@@ -575,6 +595,12 @@ font-size: 44px!important
   height: 22px;
 }
 @media (min-width: 768px) {
+footer {
+ border-top: 9px solid white; 
+ background-color: #004D40 !important;
+  color: white !important;
+          box-shadow: 2px 0 2px 9px rgba(194, 0, 97, 22);
+          }
  .address-card {
     font-size: 34px !important;
     margin: 10px auto;
@@ -602,6 +628,111 @@ font-size: 44px!important
     padding: 11px;
   }
   }
+.booking-container {
+  border: 2px solid #009688;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  max-width: 100%;
+  margin: 10px ; /* هامش الجوانب في الموبايل */
+  font-family: 'Cairo', sans-serif;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.booking-title {
+  color: #0147AA;
+  font-weight: bold;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.booking-subtitle {
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.booking-numbers {
+  color: #880E4F;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 18px;
+  line-height: 1.6;
+}
+
+.booking-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.booking-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 3px 16px;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.booking-button.sms {
+  background-color: #f0fafa;
+  color: black;
+  border: 2px solid #009688;
+}
+
+.booking-button.sms:hover {
+  background-color: #e0f2f1;
+}
+
+.booking-button.whatsapp {
+  background-color: #f0fafa;
+  color: black;
+  border: 2px solid #009688;
+}
+
+.booking-button.whatsapp:hover {
+  background-color: #e0f2f1;
+}
+
+.booking-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+/* نسخة سطح المكتب */
+@media (min-width: 768px) {
+  .booking-container {
+    max-width: 90٪; /* تكبير العرض */
+    margin: 20px; /* هامش جوانب أكبر */
+  }
+  .booking-button {
+    font-size: 19px; /* تكبير الخط */
+    padding: 14px 22px; /* تكبير الأزرار */
+  }
+  .booking-icon {
+    width: 58px; /* تكبير الأيقونة */
+    height: 58px;
+  }
+  .booking-title {
+      font-size: 12px; 
+}
+ .booking-subtitle {
+      font-size: 11px; 
+}
+.booking-button {
+    font-size: 31px; 
+}
+.booking-buttons {
+    gap: 91px; 
+}
+}
 
   </style>
 </head>
@@ -609,6 +740,7 @@ font-size: 44px!important
 
 
 <body>
+      
   <header class="header-logo">
     <img src="images/clinic-logo.png" alt="شعار العيادة">
     <div class="header-text">
@@ -616,7 +748,7 @@ font-size: 44px!important
       <div class="sub-title"> للأنف والأذن والحنجرة والرأس والعنق</div>
     </div>
   </header>
-
+    <div class="main">
    <div class="container">
   <h1>ترقيع غشاء طبلة الأذن</h1>
         <p style="color: blue;text-align:center">✍️ دكتور / مختار الشرعبي</p>
@@ -624,12 +756,12 @@ font-size: 44px!important
 
   <img style="display: block; margin:20px auto;" src="images/blog/tympanoplasty.jpeg" alt="ترقيع طبلة الأذن" class="blog-img" />
      <div class="main-content">
-        <div class="main-section">     <p><br>
+        <div class="subsection">     <p><br>
   <h2>نبذة عن عملية ترقيع غشاء طبلة الأذن</h2>
   <p>
     غشاء طبلة الأذن هو غشاء رقيق يفصل الأذن الخارجية عن الأذن الوسطى، وله دور أساسي في نقل الصوت ومنع دخول الجراثيم والسوائل إلى الأذن الوسطى. وقد يتعرض هذا الغشاء للثقب أو التمزق نتيجة التهابات الأذن المتكررة، أو الحوادث، أو التعرض المفاجئ لتغيرات الضغط، مما يؤدي إلى ضعف في السمع، وخروج إفرازات من الأذن، وأحيانًا التهابات متكررة.
   </p>
-  <p><div class="subsection">
+  <p>
     عملية ترقيع غشاء طبلة الأذن، المعروفة طبيًا باسم "رأب الطبلة" (Tympanoplasty)، هي إجراء جراحي يهدف إلى إغلاق الثقب الموجود في الطبلة باستخدام رقعة مأخوذة غالبًا من أنسجة المريض نفسه. تهدف العملية إلى:
   </p>
   <div class="warning-box">
@@ -651,23 +783,24 @@ font-size: 44px!important
     <li><strong>مشاكل قناة استاكيوس:</strong> قد تؤثر على تهوية الأذن ونجاح العملية.</li>
     <li><strong>مشاكل الأنف والجيوب الأنفية:</strong> مثل انحراف الحاجز الأنفي، أو تضخم القرنيات، أو التهاب الجيوب المزمن قد تؤدي إلى فشل تهوية الأذن الوسطى عبر قناة استاكيوس، وبالتالي تؤثر على نتائج عملية الترقيع. لذلك، من الضروري <strong>تشخيص وعلاج أي خلل في الأنف</strong> قبل أو بالتزامن مع جراحة الأذن لضمان نتائج ناجحة طويلة الأمد.</li>
 </ul>
- </div> 
-</div>
  
-  <h2 style="background-color: white;border:1px solid black;">مميزات الجراحة بالمنظار</h2>
-   
-  <ul class="subsection">  <p>.
-    🔹 تُجرى هذه العملية عادةً تحت التخدير الموضعي باستخدام الميكروسكوب أو تقنيات حديثة مثل الجراحة بالمنظار، وتستغرق فترة الشفاء عدة أسابيع، مع تحسن تدريجي في السمع يبدأ غالبًا من 6 إلى 8 أسابيع بعد الجراحة، ويكتمل خلال 4 إلى 6 أشهر ، ومن التقنيات الحديثة في جراحة الأذن أن يتم إجراء <strong>عملية ترقيع طبلة الأذن بالمنظار</strong>
-  </p>
+</div>
 
-  <div class="warning-box">
+   <p>.
+    🔹 تُجرى هذه العملية عادةً تحت التخدير الموضعي باستخدام الميكروسكوب أو تقنيات حديثة مثل الجراحة بالمنظار، وتستغرق فترة الشفاء عدة أسابيع، مع تحسن تدريجي في السمع يبدأ غالبًا من 6 إلى 8 أسابيع بعد الجراحة، ويكتمل خلال 4 إلى 6 أشهر ، ومن التقنيات الحديثة في جراحة الأذن أن يتم إجراء <strong>عملية ترقيع طبلة الأذن بالمنظار</strong>
+   </p>
+     <div class="warning-box">
+ <div class="imp-section">
+  <h2 style="color:white">مميزات الجراحة بالمنظار</h2>
+   </div>
+
   <ul>    <li><strong>تقنية أقل توغلاً:</strong> الجراحة بالمنظار تتطلب شقوقًا أصغر مقارنة بالجراحة التقليدية، مما يقلل من الألم والندوب.</li>
     <li><strong>رؤية واضحة:</strong> توفر أدوات المنظار رؤية أفضل للأذن الداخلية، مما يساعد الجراح في إجراء العملية بدقة أكبر.</li>
     <li><strong>فترة تعافي أسرع:</strong> بسبب الطبيعة الأقل توغلاً للجراحة، يمكن للمرضى العودة إلى أنشطتهم اليومية بشكل أسرع.</li>
     <li><strong>تقليل المضاعفات:</strong> الجراحة بالمنظار تقلل من مخاطر العدوى والمضاعفات المرتبطة بالجراحة التقليدية.</li>
     <li><strong>تحسين نتائج السمع:</strong> يمكن أن تؤدي الجراحة الناجحة إلى تحسين كبير في القدرة السمعية للمريض.</li>
   </ul>
-    </div></div>
+  </div>   </div>
 
 
   
@@ -685,8 +818,8 @@ font-size: 44px!important
 <hr>
     <br>
       <div class="subsection" style="margin:10px 10px">
- <h2>نصائح للمريض بعد عملية ترقيع غشاء طبلة الأذن</h2>   <div class="warning-box">
-  <ul>  <li>1. بالإمكان شرب سوائل بمجرد استيقاظك من التخدير. كذلك يمكن تناول الوجبات الخفيفة إذا كنت تستطيع دون الشعور بالغثيان أو القيء المؤقت. وتدريجيًا يمكنك تناول الأطعمة الصلبة.</li>
+ <h2>نصائح للمريض بعد عملية ترقيع غشاء طبلة الأذن</h2>   
+      <div class="warning-box"><ul>  <li>1. بالإمكان شرب سوائل بمجرد استيقاظك من التخدير. كذلك يمكن تناول الوجبات الخفيفة إذا كنت تستطيع دون الشعور بالغثيان أو القيء المؤقت. وتدريجيًا يمكنك تناول الأطعمة الصلبة.</li>
 
   <li>2. حاول إبقاء رأسك مرفوعًا على 3 وسائد في الأسبوعين الأولين بعد العملية.</li>
 
@@ -712,19 +845,42 @@ font-size: 44px!important
 
   <li>14. نادرًا ما يُلاحظ تحسن السمع بعد الجراحة مباشرة، وذلك مؤقتًا بسبب تورم أنسجة الأذن وتكدّس في قناة الأذن. يمكن ملاحظة التحسن من 6 إلى 8 أسابيع بعد الجراحة، وقد يستغرق التحسن الأقصى من 4 إلى 6 أشهر.</li>
 </ul></div>
-
+<br>
 <h2 style="color:#C20041">❗ يجب العودة أو التواصل الفوري في الحالات التالية:</h2>
     <div class="danger-section">
   <ul>   <li>1. نزيف مفرط أحمر فاتح لا يتوقف بالضغط مدة 10 دقائق.</li>
   <li>2. دوار شديد ومتكرر أو إذا استمر لأكثر من 72 ساعة بعد الجراحة.</li>
   <li>3. خروج إفرازات صفراء كريهة الرائحة من الأذن أو الجرح خلف الأذن.</li>
   <li>4. عند حصول زكام أو احتقان في الأنف يجب استشارة طبيبك فورًا.</li>
-</ul></div>
- </div><br>
+</ul>
+ </div> </div><br>
         <div class="imp-section">
- <p><em> في عيادة <strong>د. مختار الشرعبي</strong> – تعز، ركن مفرق ماوية – نحرص على تقييم كل حالة بدقة وتقديم خطة علاجية شخصية تشمل الجانب الوقائي والنفسي والدوائي.</em></p>
-  </div>   <br>     
-  <div class="subsection" style="  border: 1px solid #00709E;background-color:white">               
+ <p style="color: white; border-radius: 20px"><em> في عيادة <strong>د. مختار الشرعبي</strong> – تعز، ركن مفرق ماوية – نحرص على تقييم كل حالة بدقة وتقديم خطة علاجية شخصية تشمل الجانب الوقائي والنفسي والدوائي.</em></p>
+  </div>   </div><br>     
+            <div class="booking-container">
+  <div class="booking-title">
+    للحجز في عيادة دكتور مختار الشرعبي
+  </div>
+  <div class="booking-subtitle">
+    أرسل الإسم برسالة على الأرقام
+  </div>
+  <div class="booking-numbers">
+    730433592<br>777421224
+  </div>
+  <div class="booking-buttons">
+    <!-- زر رسالة نصية -->
+    <a href="sms:+967730433592" target="_blank" class="booking-button sms">
+      <img src="images/social/sms.jpg" alt="رسالة نصية" class="booking-icon">
+      👆 رسالة نصية
+    </a>
+
+    <!-- زر واتساب -->
+    <a href="https://wa.me/967730433592" target="_blank" class="booking-button whatsapp">
+      <img src="images/social/whatsapp.jpeg" alt="واتساب" class="booking-icon">
+      👆 رسالة واتساب
+    </a>
+  </div>
+</div>    
     <a href="blog.html" style="color:black" class="cta-button" />← عودة لصفحة المدونة</a>
 
     <a href="index.html"style=":color:#004D40" class="cta-button">← عودة للصفحة الرئيسية</a></div>
