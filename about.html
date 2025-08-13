@@ -55,7 +55,7 @@
     "@id": "https://ent.drmsharabi.com/about#person",
     "name": "دكتور مختار الشرعبي",
     "url": "https://ent.drmsharabi.com/about",
-    "image": "https://ent.drmsharabi.com/images/dr-profile.jpeg",
+    "image": "https://ent.drmsharabi.com/images/dr.profile1.webP",
     "jobTitle": "استشاري جراحة الأنف والأذن والحنجرة",
     "worksFor": {
       "@type": "MedicalOrganization",
@@ -124,7 +124,7 @@
   "@id": "https://ent.drmsharabi.com/about#person",
   "name": "دكتور مختار الشرعبي",
   "url": "https://ent.drmsharabi.com/about",
-  "image": "https://ent.drmsharabi.com/images/dr-profile.jpeg",
+  "image": "https://ent.drmsharabi.com/images/dr.profile.webP",
   "jobTitle": "استشاري جراحة الأنف والأذن والحنجرة",
   "address": {
     "@type": "PostalAddress",
@@ -255,7 +255,7 @@
     }
     }
       header {
-      background-color: #004D40;
+      margin-bottom: 0;background-color: #004D40;
       color: white;
       padding: 20px;
       display: flex;
@@ -289,6 +289,9 @@
       white-space: nowrap;
     }
         @media (min-width: 768px) {
+          header {
+       border-radius: 0 0 55px 55px;
+          }
       .header-logo img {
         height: 110px;
       }
@@ -325,8 +328,8 @@
  border-right: 18px solid red;
  border-radius: 20px;
  font-size: 67px;
- margin: 10px auto;
- padding-right: 20px;
+ margin: 30px auto;
+ padding-right: 10px;
  width: 79%;
  }
   }
@@ -498,7 +501,7 @@ font-size: 44px!important
     .subsection {
       background-color: #EBFAFF;
       padding: 15px 10;
-      margin: 15px 15px;
+      margin: 0 5px;
       border-radius: 8px;
        box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);;
       position: relative;
@@ -531,19 +534,36 @@ font-size: 44px!important
 .main-content {
   margin: 30px 10px;
 }
-.main
-{
-  margin-bottom: 20px;
-  padding: 5px;
+.main{
+ border-right: 4px solid #00709E;
+ border-left: 4px solid #00709E;
+  margin:0 20px 20px 20px;
+  padding: 25px;
   background-color: #F2FAFF;
   
       box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
       border-left: 5px solid  #00A19D
       ;
 }
+.pic-section {
+  margin: 10px 10px;
+  padding: 0;
+  background-color: white;
+  border-radius: 12px;
+      box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
+      border-left: 5px solid white;
+}
+  @media (min-width: 768px) {
+.pic-section {
+   flex-wrap: wrap; border-left: 9px solid white;
+    border-radius: 20px;
+    padding: 0;
+    margin: 5px;
+  }
+  }
 .main-section {
-  margin-bottom: 20px 50px;
-  padding: 5px 0;
+  margin: 10 10px;
+  padding: 0;
   background-color: white;
   border-radius: 12px;
       box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
@@ -551,10 +571,10 @@ font-size: 44px!important
 }
   @media (min-width: 768px) {
 .main-section {
-    border-left: 9px solid #00709E;
-    border-radius: 40px;
-    padding: 30px 30px;
-    margin: 10px;
+    border-left: 9px solid white;
+    border-radius: 20px;
+    padding: 30px 30px 30px 0;
+    margin: 10px 30px;
   }
     .subsection  {
       margin: 20px 30px;border-right: 9px solid #00709E;
@@ -566,7 +586,7 @@ font-size: 44px!important
   
   background-color: #F2FAFF;
   
-   
+   margin: 0 70px 50px 70px;
       border-left: 9px solid  #00A19D
       ;
 }
@@ -601,20 +621,26 @@ font-size: 44px!important
 
      
 .warning-box {
-  background-color: #FCFCFF;
+  background-color: #F2FAFF;
   border-left: 5px solid #ffc107;
           box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
- padding: 5px;
-  margin: 10px 0;
+ padding: 5px 0;
+  margin: 10px 10px 10px 0;
   border-radius: 0 8px 8px 0;
 }
   @media (min-width: 768px) {
        .warning-box {
-      margin: 50px 0;
-       border-radius: 40px;
-      padding: 15px 5px;
+      margin: 50px 30 30px 0;
+       border-radius: 2px;
+    border-left: 12px solid #ffc107;
+      padding: 15px 15px;
     }
   }
+   @media (min-width: 768px) { 
+  warning-box {
+      margin-left: 0!important;
+  }
+   }
 
  footer {
  border-top: 4px solid white; 
@@ -729,18 +755,18 @@ footer {
   }
 .booking-container {
   background-color: #008190;
-  border-left: 5px solid #ffc107;
+  border-right:5px solid #ffc107;
           box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
           border-radius: 8px;
- padding: 40px 10px;
-  margin: 10px 10;
+ padding: 20px 20px;
+  margin: 20px 10;
   border-radius: 0 8px 8px 0;
 }
 
 .booking-title {
   color: yellow;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 16px;
   margin-bottom: 8px;
   text-align: center;
 }
@@ -829,7 +855,7 @@ footer {
 @media (min-width: 768px) {
   .booking-container {
     max-width: 90٪; /* تكبير العرض */
-   border-left: 9px solid #ffc107;
+   border-right: 9px solid #ffc107;
    border-radius: 18px;
    padding: 40px 10px; margin: 40px; /* هامش جوانب أكبر */
   }
@@ -855,15 +881,26 @@ footer {
 }
 }
 .main-image {
-  width: 70% !important;
-  max-width: 600px;   /* هذا اختياري للحفاظ على حد أقصى للعرض */
-  height: auto !important;
+  width: 95%;
+  max-width: 600px;
+  height: auto;
   display: block;
-  margin: 20px auto;
+  margin: 20px auto; /* زيادة الهامش الرأسي وتحسين المركز الأفقي */
   box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
   border-radius: 12px;
 }
 
+@media (min-width: 768px) {
+  .main-image {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    display: block;
+    margin: 20px auto; /* تأكد من استخدام auto للجانبين */
+    box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
+    border-radius: 32px;
+  }
+}
   </style>
 </head>
 
@@ -877,23 +914,23 @@ footer {
     </div>
   </header>
  
-  <div class="container">
+  
        <div class="main">
-          <br> 
+          
     <h1>قصتنـا</h1>
-<br>
-      <div class="main-section" style="border: 1px solid black">
-<img style="display: block; margin:20px auto;" src="images/endoscopy.jpeg" alt="صورة الدكتور مختار الشرعبي" class="main-image">
 
-<div class="subsection">
+      
+ <img src="images/endoscopy.jpeg" alt="صورة الدكتور مختار الشرعبي" class="main-image"> </div>
+       <div class="main-section">
+
     <p>في عالم مليء بالتحديات الصحية، تبرز عيادة د. مختار الشرعبي كوجهة رائدة في محافظة تعز، تقدم رعاية فائقة الجودة ومتخصصة في طب ومناظير الأنف والأذن والحنجرة والرأس والعنق.</p>
 
     <p>الدكتور مختار حاصل على درجة الدكتوراه المهنية (بورد عربي) من سوريا، وأجرى تدريبات عليا في جراحات المناظير الدقيقة داخل وخارج اليمن.</p>
-</div>
+
   <br>
 
       <h2>ما الذي يميزنا؟</h2>
-  <div class="subsection">    <ul>
+  <div class="warning-box">    <ul>
       <li>الدقة في التشخيص باستخدام مناظير متطورة</li>
       <li>خبرة واسعة تتجاوز 10 سنوات</li>
       <li>المتابعة الدقيقة للحالات المزمنة والمعقدة</li>
@@ -908,7 +945,7 @@ footer {
   <br>
 
     <h2>لماذا تختارنا؟</h2>
- <div class="subsection">   <ul>
+ <div class="warning-box">   <ul>
       <li>فريق طبي متخصص ومؤهل</li>
       <li>أجهزة طبية حديثة ومناظير عالية الدقة</li>
       <li>رعاية شاملة ومتابعة دقيقة للحالات</li>
@@ -918,11 +955,11 @@ footer {
 
 
 </div>
-                <hr>   
+                  
  
  
     </div> 
-  <br>
+  
 <div class="booking-container">
   <div class="booking-title">
     للحجز في عيادة دكتور مختار الشرعبي
@@ -946,8 +983,8 @@ footer {
       👆 رسالة واتساب
     </a>
   </div>
-</div>  <br>
-     <div href="index.html" style=":color:blue" class="cta-button"> ➡ عودة  للصفحة  الرئيسية</div><br></div>
+</div>  
+     <div href="index.html" style=":color:blue" class="cta-button"> ➡ عودة  للصفحة  الرئيسية</div></div>
    <footer>
     <nav>
       <div class="nav-row">
