@@ -42,7 +42,7 @@
   "@id": "https://ent.drmsharabi.com/about#person",
   "name": "دكتور مختار الشرعبي",
   "url": "https://ent.drmsharabi.com/about",
-  "image": "https://ent.drmsharabi.com/images/‪dr.profile1.webP,
+  "image": "https://ent.drmsharabi.com/images/dr-profile.jpeg",
   "jobTitle": "استشاري جراحة الأنف والأذن والحنجرة",
   "description": "دكتور مختار الشرعبي - استشاري متخصص في أمراض وجراحات الأنف، الأذن، الحنجرة، الجيوب الأنفية، السمع، الصداع في تعز",
   "mainEntityOfPage": {
@@ -304,11 +304,11 @@
       justify-content: center;
       flex-wrap: wrap;
       text-decoration: none;
-      rgba(236, 235, 255, 0.9);gap: 9px;
+      rgba(236, 235, 255, 0.9);gap: 19px;
     }
     .nav-link {
      background-color: #004D40;
-      padding: 2px 3px;
+      padding: 2px 8px;
       border-radius: 4px;
       color: #E0F2F1;
       
@@ -903,18 +903,19 @@ font-size: 34px!important
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 3px 16px;
+  padding: 5px 16px;
   font-weight: bold;
   font-size: 14px;
-  border-radius: 10px;
+         box-shadow: 0 2px 6px rgba(33, 95, 97, 0.7);
+         border-radius: 10px;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
 .booking-button.sms {
   background-color: #f0fafa;
-  color: black;
-  border: 2px solid #009688;
+       box-shadow: 0 2px 6px rgba(33, 95, 97, 0.7); color: black;
+  border: 0.5px solid #009688;
 }
 
 .booking-button.sms:hover {
@@ -924,7 +925,7 @@ font-size: 34px!important
 .booking-button.whatsapp {
   background-color: #f0fafa;
   color: black;
-  border: 2px solid #009688;
+  border: 0.5px solid #009688;
 }
 
 .booking-button.whatsapp:hover {
@@ -934,14 +935,33 @@ font-size: 34px!important
 .booking-icon {
   width: 30px;
   height: 30px;
-  border-radius: 50%;
+      border: 0.1px solid #009688;
+      box-shadow: 0 9px 6px rgba(33, 95, 97, 0.7);
+       border-radius: 5%;
+       animation: pulse 2s infinite; /* تطبيق تأثير النبض */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1); /* الحجم الأصلي */
+  }
+  50% {
+    transform: scale(1.1); /* تكبير الأيقونة بنسبة 10% */
+  }
+  100% {
+    transform: scale(1); /* العودة للحجم الأصلي */
+  }
+
+
 }
 
 /* نسخة سطح المكتب */
 @media (min-width: 768px) {
   .booking-container {
     max-width: 90٪; /* تكبير العرض */
-    margin: 20px; /* هامش جوانب أكبر */
+   border-left: 9px solid #ffc107;
+   border-radius: 18px;
+   padding: 40px 10px; margin: 40px; /* هامش جوانب أكبر */
   }
   .booking-button {
     font-size: 19px; /* تكبير الخط */
@@ -952,7 +972,7 @@ font-size: 34px!important
     height: 58px;
   }
   .booking-title {
-      font-size: 12px; 
+      font-size: 11px; 
 }
  .booking-subtitle {
       font-size: 11px; 
@@ -964,8 +984,15 @@ font-size: 34px!important
     gap: 91px; 
 }
 }
-
-
+.main-image {
+  width: 70% !important;
+  max-width: 600px;   /* هذا اختياري للحفاظ على حد أقصى للعرض */
+  height: auto !important;
+  display: block;
+  margin: 20px auto;
+  box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
+  border-radius: 12px;
+}
 footer {
  border-top: 4px solid white; 
  background-color: #004D40 !important;
@@ -1103,7 +1130,7 @@ footer {
 
  <div class="profile-section" style="background-color:#EBFAFF">
   <div class="profile-image">
-    <img src="images/‪dr.profile1.webP" alt="د. مختار الشرعبي">
+    <img src="images/dr.profile1.webP" alt="د. مختار الشرعبي">
   </div>
   <div class="profile-text" style="color:#007772">
     <h2 style="color:yellow">د. مختار عبده خالد الشرعبي</h2>
