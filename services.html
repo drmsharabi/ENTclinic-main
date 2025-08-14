@@ -22,19 +22,17 @@
 <meta name="geo.placename" content="Taiz">
 <meta name="geo.position" content="13.5786;44.0211">
 <meta name="ICBM" content="13.5786,44.0211">
-<!-- MedicalClinic Schema -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "MedicalClinic",
-  "name": "عيادة د. مختار الشرعبي - أفضل دكتور أنف وأذن وحنجرة في تعز",
-  "description": "عيادة متخصصة في جراحات وتشخيص أمراض الأنف، الأذن، الحنجرة، الجيوب الأنفية، السمع، والتخاطب. أفضل دكتور ENT في تعز",
+  "name": "عيادة د. مختار الشرعبي",
+  "url": "https://ent.drmsharabi.com",
   "image": "https://ent.drmsharabi.com/images/clinic-logo.png",
-  "url": "https://ent.drmsharabi.com/services",
-  "telephone": "+967730433592",
+  "description": "عيادة متخصصة في جراحات وتشخيص أمراض الأنف، الأذن، الحنجرة، الجيوب الأنفية، السمع، والتخاطب في تعز",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "الحوبان - ركن مفرق ماوية، مبنى مختبرات دار الصحة",
+    "streetAddress": "الحوبان، ركن مفرق ماوية، مبنى مختبرات دار الصحة",
     "addressLocality": "تعز",
     "addressRegion": "تعز",
     "addressCountry": "YE"
@@ -44,51 +42,22 @@
     "latitude": 13.5786,
     "longitude": 44.0211
   },
+  "telephone": ["+967777421224","+967730433592"],
+  "priceRange": "$$",
+  "openingHoursSpecification": [
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday","Monday","Tuesday","Wednesday","Thursday"],"opens":"10:00","closes":"13:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Friday","opens":"Closed","closes":"Closed"}
+  ],
   "medicalSpecialty": "Otolaryngologic",
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "خدمات العيادة",
     "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "MedicalProcedure",
-          "name": "جراحة الجيوب الأنفية بالمنظار",
-          "description": "أفضل جراحة للجيوب الأنفية في تعز باستخدام أحدث التقنيات العالمية"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "MedicalProcedure",
-          "name": "جراحة اللوزتين واللحمية بالليزر",
-          "description": "عمليات استئصال اللوزتين واللحمية للأطفال والكبار بأحدث الأساليب"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "MedicalProcedure",
-          "name": "علاج مشاكل السمع والطنين",
-          "description": "تشخيص وعلاج ضعف السمع وطنين الأذن باستخدام أحدث الأجهزة"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "MedicalProcedure",
-          "name": "جراحة تجميل الأنف",
-          "description": "عمليات تجميل الأنف التصحيحية والوظيفية بأفضل النتائج"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "MedicalProcedure",
-          "name": "علاج اضطرابات النطق والبلع",
-          "description": "برامج تأهيلية لعلاج مشاكل التخاطب والبلع عند الأطفال والكبار"
-        }
-      }
+      {"@type":"Offer","itemOffered":{"@type":"MedicalProcedure","name":"مناظير الأنف","description":"تشخيص وعلاج مشاكل الأنف والجيوب الأنفية باستخدام المنظار الحديث"}},
+      {"@type":"Offer","itemOffered":{"@type":"MedicalProcedure","name":"جراحة اللوزتين واللحمية","description":"استئصال اللوزتين واللحمية للأطفال والكبار بأحدث الأساليب"}},
+      {"@type":"Offer","itemOffered":{"@type":"MedicalProcedure","name":"ترقيع طبلة الأذن","description":"عمليات ترقيع الطبلة بدقة عالية لتصحيح ضعف السمع"}},
+      {"@type":"Offer","itemOffered":{"@type":"MedicalProcedure","name":"جراحة تجميل الأنف","description":"عمليات تجميل الأنف التصحيحية والوظيفية بأفضل النتائج"}},
+      {"@type":"Offer","itemOffered":{"@type":"MedicalProcedure","name":"علاج اضطرابات النطق والبلع","description":"برامج تأهيلية لعلاج مشاكل التخاطب والبلع عند الأطفال والكبار"}}
     ]
   },
   "sameAs": [
@@ -97,47 +66,20 @@
     "https://www.instagram.com/dr.mokhtar_alsharabi",
     "https://x.com/Dr_Alsharaabi",
     "https://www.tiktok.com/@dr_mokhtar_sharabi"
-  ],
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "127",
-    "bestRating": "5",
-    "worstRating": "1"
-  }
+  ]
 }
 </script>
 
-<!-- BreadcrumbList Schema - Corrected -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "الرئيسية",
-      "item": "https://ent.drmsharabi.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "خدماتنا", // الصفحة الحالية
-      "item": "https://ent.drmsharabi.com/services" // رابط الصفحة الحالية
-    }
+    {"@type":"ListItem","position":1,"name":"الرئيسية","item":"https://ent.drmsharabi.com"},
+    {"@type":"ListItem","position":2,"name":"خدماتنا","item":"https://ent.drmsharabi.com/services"}
   ]
 }
 </script>
-  <!-- ✅ Google Analytics افتراضي -->
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments); }
-  gtag('js', new Date());
-  gtag('config', 'G-68YMCJ2YM9');</script>
-<!-- ✅ Bing Webmaster -->
-<meta name="msvalidate.01" content="1D85A3CF640A717700AC703D02E5F75A" />
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-</head> 
 
   <!-- ✅ تنسيقات CSS -->
 
@@ -311,14 +253,6 @@
       max-width: 960px;
       margin: auto;
       background-color: white;
-    }
-    img.main-image {
-      width: 100% !important;
-      box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
-      height: auto !important;
-      display: block;
-      margin: 0 auto;
-      border-radius: 12px;
     }
 
     h1 {
@@ -922,11 +856,11 @@ footer {
 }
 }
 .main-image {
-  width: 95%;
+  width: 100%;
   max-width: 600px;
   height: auto;
   display: block;
-  margin: 20px auto; /* زيادة الهامش الرأسي وتحسين المركز الأفقي */
+  margin: 60px auto 10px auto; /* زيادة الهامش الرأسي وتحسين المركز الأفقي */
   box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
   border-radius: 12px;
 }
@@ -937,11 +871,10 @@ footer {
     max-width: 700px;
     height: auto;
     display: block;
-    margin: 20px auto; /* تأكد من استخدام auto للجانبين */
+    margin: 80px auto 10px auto; /* تأكد من استخدام auto للجانبين */
     box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
     border-radius: 32px;
   }
-
 
     .subsection  {
       margin: 20px 30px;border-right: 9px solid #00709E;
