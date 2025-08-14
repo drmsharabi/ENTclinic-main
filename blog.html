@@ -15,71 +15,94 @@
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
   
 
-            <!-- Blog Schema -->
+     
+
+<!-- بيانات منظمة لصفحة المدونة -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Blog",
-  "name": "مدونة د. مختار الشرعبي - استشاري الأنف والأذن والحنجرة",
-  "description": "مقالات طبية متخصصة في أمراض وجراحات الأنف والأذن والحنجرة، نصائح طبية، وأحدث التقنيات في مجال ENT",
+  "name": "مدونة د. مختار الشرعبي",
+  "description": "أحدث المقالات الطبية والتوعوية حول أمراض وجراحات الأنف والأذن والحنجرة، السمع، الصداع، واضطرابات النطق والبلع في تعز",
   "url": "https://ent.drmsharabi.com/blog",
-  "image": "https://ent.drmsharabi.com/images/blog-cover.jpg",
-  "inLanguage": "ar",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"الرئيسية","item":"https://ent.drmsharabi.com/"},
+      {"@type":"ListItem","position":2,"name":"المدونة","item":"https://ent.drmsharabi.com/blog"}
+    ]
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://ent.drmsharabi.com/blog"
+  },
   "publisher": {
-    "@type": "MedicalOrganization",
+    "@type": "MedicalClinic",
     "name": "عيادة د. مختار الشرعبي",
+    "description": "أفضل عيادة متخصصة في أمراض وجراحات الأنف والأذن والحنجرة في تعز",
     "url": "https://ent.drmsharabi.com",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://ent.drmsharabi.com/images/clinic-logo.png",
-      "width": 300,
-      "height": 100
-    }
+    "telephone": ["+967730433592","+967778940004"],
+    "email": "drmsharabi@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "الحوبان، مفرق ماوية، مبنى مختبرات دار الصحة",
+      "addressLocality": "تعز",
+      "addressRegion": "تعز",
+      "addressCountry": "YE",
+      "postalCode": "9675"
+    },
+    "geo": {"@type":"GeoCoordinates","latitude":13.5786,"longitude":44.0211},
+    "priceRange": "$$",
+    "openingHoursSpecification": [
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday","Monday","Tuesday","Wednesday"],"opens":"09:00","closes":"13:00"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday","Monday","Tuesday","Wednesday"],"opens":"16:00","closes":"20:00"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":"Thursday","opens":"09:00","closes":"13:00"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":"Friday","opens":"Closed","closes":"Closed"}
+    ],
+    "medicalSpecialty": "أنف وأذن وحنجرة",
+    "logo": "https://ent.drmsharabi.com/images/clinic-logo.png",
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=100082372405434",
+      "https://youtube.com/@ENTsharabi",
+      "https://www.instagram.com/dr.mokhtar_alsharabi",
+      "https://x.com/Dr_Alsharaabi",
+      "https://www.tiktok.com/@dr_mokhtar_sharabi"
+    ],
+    "aggregateRating": {"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"127","bestRating":"5","worstRating":"1"}
   },
   "author": {
     "@type": "Person",
-    "name": "د. مختار الشرعبي",
-    "url": "https://ent.drmsharabi.com/about"
-  }
-}
-</script>
-
-<!-- Breadcrumb Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "الرئيسية",
-      "item": "https://ent.drmsharabi.com/"
+    "@id": "https://ent.drmsharabi.com/about#person",
+    "name": "دكتور مختار الشرعبي",
+    "jobTitle": "استشاري جراحة الأنف والأذن والحنجرة",
+    "description": "استشاري متخصص في أمراض وجراحات الأنف، الأذن، الحنجرة، الجيوب الأنفية، السمع، الصداع في تعز",
+    "image": "https://ent.drmsharabi.com/images/dr-profile.jpeg",
+    "url": "https://ent.drmsharabi.com/about",
+    "telephone": "+967730433592",
+    "email": "drmsharabi@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "الحوبان، مفرق ماوية، مبنى مختبرات دار الصحة",
+      "addressLocality": "تعز",
+      "addressRegion": "تعز",
+      "addressCountry": "YE"
     },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "المدونة الطبية",
-      "item": "https://ent.drmsharabi.com/blog"
-    }
-  ]
-}
-</script>
-
-<!-- WebSite Schema with Search -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "عيادة د. مختار الشرعبي",
-  "url": "https://ent.drmsharabi.com",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://ent.drmsharabi.com/blog?q={search_term_string}",
-    "query-input": "required name=search_term_string"
+    "alumniOf": [
+      {"@type":"EducationalOrganization","name":"المجلس العربي للإختصاصات الصحية","url":"https://www.arabboard.org/"},
+      {"@type":"EducationalOrganization","name":"جامعة ذمار","url":"https://www.thuniv.net/"}
+    ],
+    "affiliation": {"@type":"Organization","name":"الأكاديمية الأمريكية لجراحة الأنف والأذن والحنجرة","url":"https://www.entnet.org/"},
+    "award": "أفضل طبيب أنف وأذن وحنجرة في تعز 2023",
+    "knowsLanguage": ["ar","en"],
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=100082372405434",
+      "https://youtube.com/@ENTsharabi",
+      "https://www.instagram.com/dr.mokhtar_alsharabi",
+      "https://x.com/Dr_Alsharaabi",
+      "https://www.tiktok.com/@dr_mokhtar_sharabi"
+    ]
   }
 }
-</script>
 </script>
   <!-- ✅ تنسيقات CSS -->
 
@@ -93,11 +116,11 @@
       background-color: #f9f9f9;
     }
  /* ✅ NAV */
-    nav {
+   nav {
      
      
-      text-align: center;
-      font-size: 11px;
+     text-align: center;
+      font-size: 13px;
       shadow: 0 6px 4px rgba(236, 235, 255, 0.9);
       margin: 2px;display: flex;
       flex-direction: column;
@@ -108,17 +131,17 @@
       justify-content: center;
       flex-wrap: wrap;
       text-decoration: none;
-      rgba(236, 235, 255, 0.9);gap: 17px;
+      rgba(236, 235, 255, 0.9);gap: 9px;
     }
     .nav-link {
      background-color: #004D40;
-      padding: 2px 5px;
-      border-radius: 9px;
+      padding: 2px 3px;
+      border-radius: 4px;
       color: #E0F2F1;
-      font-weight: bold;
+      
       text-decoration: none;
       box-shadow: 0 0 0 0.3px rgba(243, 245, 212, 4);
-      font-size: 10px;
+      font-size: 11px;
       transition: all 0.3s ease;
       display: inline-block;
     }
@@ -129,21 +152,23 @@
     @media (min-width: 768px) {
       nav {
         font-size: 16px;
-        padding: 30px 10px;
+        padding: 20px 10px;
     
       }
       .nav-row {
         gap: 35px;
-      }
+
+     margin-bottom: 10px;       }
       .nav-link {
         margin-top: 20px;padding: 12px 18px;
        box-shadow: 0 0 0 0.8px rgba(243, 245, 212, 8);
        border-radius: 20px; font-size: 28px;
-      }
+       
+    }
     }
 
-    header {
-      background-color: #004D40;
+       header {
+      margin-bottom: 0;background-color: #004D40;
       color: white;
       padding: 20px;
       display: flex;
@@ -151,7 +176,10 @@
       justify-content: center;
       flex-wrap: wrap;
       gap: 18px;
+      border-radius: 0 0 25px 25px;
+      box-shadow: 0 4px 12px rgba(0, 77, 64, 0.3);
     }
+    
     .header-logo img {
       height: 55px;
       width: auto;
@@ -174,8 +202,11 @@
       white-space: nowrap;
     }
         @media (min-width: 768px) {
+          header {
+       border-radius: 0 0 55px 55px;
+          }
       .header-logo img {
-        height: 80px;
+        height: 110px;
       }
       .main-title {
         font-size: 30px;
@@ -193,7 +224,7 @@
       font-size: 13px;
     }
     h1 {
-      background-color: #EEFFFE;
+      background-color: white;
       color: #A1115E;
       border: 1px solid #004D40;
       text-align: center;
@@ -219,11 +250,11 @@
       29px;
     }
     .blog-img  {
-      width: 70% !important;
-      max-width: 600px !important;
+      width: 100% !important;
+      max-width: 700px !important;
       height: auto !important;
       display: block;
-      margin: 0 auto 20px;
+      margin: 20 auto 20px;
       border-radius: 12px;
     }
 
@@ -307,25 +338,7 @@ font-size: 54px!important
       .cta-button {
    text-align: center important;
   } 
-    .post a {
-      text-decoration: underline;
-      font-weight: bold;
-      color: #00796B;
-      display: inline-block;
-      font-size: 16px;
-      font-style: italic;
-      margin-left: 10px
-      margin-right: 0px;
-      margin-top: 10px;
-      text-align: center;
-      text-align: right;
-    }
-
-    @media (min-width: 768px) {
-      .post a {
-        font-size: 50px;
-      }
-    }
+ 
 
 
 hr {
@@ -335,73 +348,340 @@ hr {
   border: none;   /* إزالة الحدود الافتراضية */
   background-color: #ddd; /* لون الخط */
 }
-    footer {
-      background-color: #004D40;
-      color: white;
-      text-align: center;
-      padding: 5px 0 10px;
-      font-size: 13px;
-      line-height: 1.7;
-    }
-.footer-icons {
-  margin-bottom: 20px; /* للموبايل */
-}
-
-@media (min-width: 768px) {
-  .footer-icons {
-    margin-bottom: 40px; /* لسطح المكتب */
-  }
-}
 footer {
-      margin-top: 10px
-      ;background-color: #004B8C;
-      color: white !important;
-      text-align: center;
-      padding: 10px 10px;
-      font-size: 11px;
-      line-height: 1.7;
-    }
-
-footer a img {
-  width: 20px;
-  height: 20px;
+ border-top: 4px solid white; 
+ background-color: #004D40 !important;
+  color: white !important;
+          box-shadow: 2px 0 2px 5px rgba(194, 0, 97, 22);
+  text-align: center;
+  padding: 10px 0;
+  font-size: 9px;
+  line-height: 1.7;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
 }
 
+.address-card {
+  display: inline-block;
+  background-color: white;
+  color: #004B8C !important;
+  padding: 2px 20px;
+  border-radius: 30px;
+  
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 12px;
+  line-height: 1.5;
+  max-width: 90%;
+}
+
+.working-hours {
+  background-color: rgba(255, 255, 255, 0.15);
+  display: inline-block;
+  padding: 1px 10px;
+  border-radius: 20px;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.copyright-container {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  margin-top: 5px;
+  font-weight: 500;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 6px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin: 10px auto;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: #00796B;
+  transform: translateY(-5px);
+}
+
+.social-icon img {
+  width: 22px;
+  height: 22px;
+}
 @media (min-width: 768px) {
-  footer a img {
+footer {
+ border-top: 9px solid white; 
+ background-color: #004D40 !important;
+  color: white !important;
+          box-shadow: 2px 0 2px 9px rgba(194, 0, 97, 22);
+          }
+ .address-card {
+    font-size: 34px !important;
+    margin: 10px auto;
+    padding: 5px 40px !important;
+  }
+  
+  .working-hours {
+    margin: 10px 10px;font-size: 28px !important;
+    padding: 5px 29px !important;
+    font-size: 12px;
+  }
+  
+  .social-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .social-icon img {
     width: 40px;
     height: 40px;
+    gap: 60px;
   }
-}
-.footer-icons {
-  margin-top: 20px;
-  margin-bottom: 10px; /* للموبايل */
-}
-@media (min-width: 768px) {
-  .footer-icons {
-    margin-top: 40px;
-    margin-bottom: 30px; /* لسطح المكتب */
+  
+  .copyright-container {
+    font-size: 6px !important;
+    padding: 11px;
   }
-}
-.footer-icons {
-  display: flex;
-      gap: 25px; 
-      justify-content: center;/
-  flex-wrap: wrap;
-}
- footer p {
-  padding: 1px 5px;border-radius:8px;font-size: 10px;background-color:#EEFFFE; margin: 7px; color: #004B8C !important; font-weight: bold;
-}
-@media (min-width: 768px) {
-  .footer-icons {
-    gap: 75px; /* مسافة أكبر في سطح المكتب */
   }
-  footer p {
-  font-size: 9px;!important
-  padding: 35px 5px;
-  border-radius: 20px
-  ;margin: 20px;
+
+  .imp-section {
+      background-color:#00709E ;
+      padding: 15px;
+      margin: 15px 10px;
+      text-align: center;
+      color: white;
+      border-radius: 15px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+      position: right;
+      border-right: 4px solid red;
     }
+
+                
+    .subsection {
+      background-color: white;
+      padding:0 0 0 0;
+      margin: 10px 10px;
+      border-radius: 8px;
+      
+      position: relative;
+      border-right: 4px solid #00709E;
+    }
+    
+    .subsection h3 {
+      color: #00709E;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+    
+
+    .danger-section {
+      background-color: #FFE6F8;
+          box-shadow: 0 0 6px rgba(0, 0, 97, 0.6);
+      border: 1px solid black;
+      border-radius: 12px;
+      padding: 5px;
+      margin: 10px 0;
+      text-align: center;
+    }
+    
+
+     
+.main-content {
+  margin: 30px 10px;
+}
+.main{
+ border-right: 4px solid #00709E;
+ border-left: 4px solid #00709E;
+  margin:0 20px 20px 20px;
+  border-radius: 0 0 20px 20px;
+  padding: 25px;
+  background-color: #F2FAFF;
+  
+      box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
+      border-left: 5px solid  #00A19D
+      ;
+}
+.pic-section {
+  margin: 10px 10px;
+  padding: 0;
+  background-color: white;
+  border-radius: 12px;
+      box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
+      border-left: 5px solid white;
+}
+  @media (min-width: 768px) {
+.pic-section {
+   flex-wrap: wrap; border-left: 9px solid white;
+    border-radius: 20px;
+    padding: 0;
+    margin: 5px;
+  }
+  }
+.main-section {
+  margin: 0 10px;
+  padding:0 20px;
+  background-color: white;
+  border-radius: 12px;
+      box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
+      border-left: 5px solid white;
+}
+ .warning-box a {
+       text-decoration: underline;
+      font-weight: bold;
+      color: #00796B;
+      display: inline-block;
+      font-size: 19px;
+      font-style: italic;
+      margin-left: 10px
+      margin-right: 1px;
+      margin-top: 10px;
+      text-align: right;
+     
+  
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  animation: horizontalShake 2s infinite;
+  display: inline-block; /* ضروري للاهتزاز الصحيح */
+}
+
+@keyframes horizontalShake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(5px); }
+  50% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+  100% { transform: translateX(0); }
+}
+    }
+ 
+      .warning-box p {
+      font-size: 12px;
+      line-height: 1.7;
+     padding-right: 10px; color: black;
+     text-align: right;
+     
+  
+}
+    
+    @media (min-width: 768px) {
+      .warning-box a {
+        font-size: 50px;
+      }
+    }
+
+ 
+  @media (min-width: 768px) {
+.main-section {
+    border-left: 9px solid white;
+    border-radius: 20px;
+    padding: 30px 30px 30px 0;
+    margin: 10px 30px;
+  }
+    .subsection  {
+      margin: 20px 30px;border-right: 9px solid #00709E;
+      padding: 10px 50px;
+      font-size: 12px!important;
+    }
+.main-content {
+  margin: 30px 10px;
+}
+
+.main{
+  border-radius: 0 0 50px 50px;
+  border-right: 4px solid #00709E;
+ border-left: 4px solid #00709E;
+  margin:0 20px 20px 20px;
+  padding: 5px;
+  background-color: #F2FAFF;
+  
+      box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
+      border-left: 5px solid  #00A19D
+      ;
+}
+        .imp-section {
+      border-radius: 40px;
+         border-right: 9px solid red;
+         border-radius: 8px;
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+      margin: 40px;
+    padding: 30px 30px;
+      }
+   
+
+      .danger-section {
+      border-radius: 40px;
+      margin: 90px 0;
+    padding: 30px 30px;
+      }
+   .subsection {
+    border-radius: 40px;
+    padding: 25px;
+    margin: 25px 20px;
+  }
+  }
+
+     
+.warning-box {
+  background-color: #F2FAFF;
+  border-left: 5px solid #ffc107;
+          box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
+ font-size:15px;
+ text-align: center;
+ padding: 5px 10px;
+  margin: 8px 0 8px 0;
+  border-radius: 20px 0 0;
+}
+  
+  @media (min-width: 768px) {
+       .warning-box {
+      margin: 50px 30 30px 0;
+       border-radius: 2px;
+   font-size:12px;
+    border-left: 12px solid #ffc107;
+      padding: 15px 15px;
+    }
+  }
+   @media (min-width: 768px) { 
+  warning-box {
+      font-size: 12px!important;
+  }
+   }
+
+.main-image {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  display: block;
+  margin: 20px auto 10px auto; /* زيادة الهامش الرأسي وتحسين المركز الأفقي */
+  box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
+  border-radius: 12px;
+}
+
+@media (min-width: 768px) {
+  .main-image {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    display: block;
+    margin: 30px auto 10px auto; /* تأكد من استخدام auto للجانبين */
+    box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
+    border-radius: 32px;
+  }
 }
   </style>
 </head>
@@ -415,105 +695,126 @@ footer a img {
       <div class="sub-title">الإستشارية للأنف والأذن والحنجرة والرأس والعنق،</div>
     </div>
   </header>
-
-<!-- ✅ CONTENT -->
-<div class="container">
+ 
+  
+       <div class="main">
   <h1>📚 المدونة الطبية</h1>
   <img src="images/blog/blog.jpeg" alt="ثقف نفسك" class="blog-img" />
+ </div><br>
+<div class="subsection">
+  <div class="warning-box"> 
+   <h2><a href="blog-polyps.html">💠  لحميات الأنف الأنواع والعلاج </h2></a>
  
-<div class="post">
-   <h2><a href="blog-polyps.html"> لحميات الأنف الأنواع والعلاج </h2></a>
+     <p>ما الفرق بين لحمية البلعوم، السلائل والقرينات ومتى يحتاج الأمر إلى جراحة؟.</p>
+ </div><br> 
  
-     </p style="margin-right:0px">ما الفرق بين لحمية البلعوم، السلائل والقرينات ومتى يحتاج الأمر إلى جراحة؟.
- <br> 
- <hr> 
 
     
-  <a href="blog-fluid-ear.html">تجمع السوائل في الأذن الوسطى – الأسباب والعلاج  ←</a> 
-    </p style="margin-right:10px">كيفية أعراض وعلامات أهم سبب لضعف السمع عنك الأطفال، وفاعلية أنبوب التهوية في حله.
+    <div class="warning-box"> 
+   <h2><a href="blog-fluid-ear.html">💠 تجمع السوائل في الأذن الوسطى – الأسباب والعلاج  ←</a> </h2> 
+    </p style="margin-right:10px">ما هي أعراض وعلامات أهم سبب لضعف السمع عند الأطفال، وطريقة معالجته - وفاعلية أنبوب التهوية في حله.
+</p></div>
+<br>
+<div class="warning-box"> 
+  <h2><a href="blog-tinnitus">💠 طنين الأذن - الأسباب وطرق التغلب عليه</a></h2>
+  <p>استراتيجيات طبية ونفسية للتعايش مع طنين الأذن المزمن.</p>
+</div><br>
 
-<hr>
-    <h2><a href="blog-tinnitus">طنين الأذن - الأسباب وطرق التغلب عليه  ←</h2></a>
-    </p style="margin-right:10px">استراتيجيات طبية ونفسية للتعايش مع طنين الأذن المزمن.
-<hr>
-      <h2><a href="blog-tympanoplasty">عملية ترقيع غشاء طبلة الأذن  ←</h2></a>
-      </p style="margin-right:10px">متى يُنصح بتقنية المنظار لإصلاح غشاء الطبلة؟...
-<hr>
-    <h2><a href="blog-migraine">صداع الشقيقة.. حقائق ونصائح  ←</h2></a></h2>
-      </p style="margin-right:10px">ما الذي يجعل صداع الشقيقة مختلفًا؟...
-<hr>
-  <h2><a href="blog-snoring">الشخير – مشكلة أكبر مما تتصور  ←</h2></a>
-    </p style="margin-right:10px">تعرف على الأسباب الصحية والحلول الممكنة بطرق علمية وفعالة..
-<hr>
-  <h2><a href="blog-tonsil">دواعي إستئصال اللوزتين   ←</h2></a>
-    </p style="margin-right:10px">متى يكون ضرر اللوزتين أكبر من نفعها ، وبالتالي يستلزم إزالتها تعرف على دواعي الإستئصال.. 
-<hr><br>
-    <h2><a href="blog-smell">فقدان حاسة الشم   ←</h2></a>
-    </p style="margin-right:10px">عندما تختفي  الروائح: دليلك لفهم فقدان حاسة الشم واستعادتها.. 
-<hr>    
-    <h2><a href="blog-aso">فحص الروماتزم (ASO)   ←</h2></a>
-</p style="margin-right:10px">
- فحص الروماتزم وعلاقته باللوزتين والحمى الروماتيزمية، ودور استئصال اللوزتين، 
-<hr>
+<div class="warning-box"> 
+  <h2><a href="blog-tympanoplasty">💠 عملية ترقيع غشاء طبلة الأذن</a></h2>
+  <p>متى يُنصح بتقنية المنظار لإصلاح غشاء الطبلة؟...</p>
+</div><br>
+
+<div class="warning-box"> 
+  <h2><a href="blog-migraine">💠 صداع الشقيقة.. حقائق ونصائح</a></h2>
+  <p>ما الذي يجعل صداع الشقيقة مختلفًا؟...</p>
+</div><br>
+
+<div class="warning-box"> 
+  <h2><a href="blog-snoring">💠 الشخير – مشكلة أكبر مما تتصور</a></h2>
+  <p>تعرف على الأسباب الصحية والحلول الممكنة بطرق علمية وفعالة..</p>
+</div><br>
+
+<div class="warning-box"> 
+  <h2><a href="blog-tonsil">💠 دواعي إستئصال اللوزتين</a></h2>
+  <p>متى يكون ضرر اللوزتين أكبر من نفعها، وبالتالي يستلزم إزالتها تعرف على دواعي الإستئصال..</p>
+</div><br>
+
+<div class="warning-box"> 
+  <h2><a href="blog-smell">💠 فقدان حاسة الشم</a></h2>
+  <p>عندما تختفي الروائح: دليلك لفهم فقدان حاسة الشم واستعادتها..</p>
+</div><br>
+
+<div class="warning-box"> 
+  <h2><a href="blog-aso">💠 فحص الروماتزم (ASO)</a></h2>
+  <p>فحص الروماتزم وعلاقته باللوزتين والحمى الروماتيزمية، ودور استئصال اللوزتين،</p>
+</div><br>
 </div>
-      <div class="cta-button">
-    <a href="index.html" style="color:#880A41">← عودة للصفحة الرئيسية</a></div>
- </div>
+<br>
+<div class="cta-text" style="text-align: center;">
+    <a href="index.html" class="cta-button">العودة للرئيسية ←</a>
+</div>
+<br>
 
-<footer style="background-color: #004D40; color: white; text-align: center; padding: 10px 10px;">
+<footer>
+    <nav>
+      <div class="nav-row">
+        <a href="index.html" class="nav-link">🏠 الرئيسية</a>
 
-  <nav style= "padding: 10px 0;gap: 3px">
-    <div class="nav-row">
-      <a href="index.html" class="nav-link">🏠 الرئيسية</a>
-      <a href="about.html" class="nav-link">📘 قصتنا</a>
-      <a href="services.html" class="nav-link">🩺 من خدماتنا</a>
-      <a href="gallery.html" class="nav-link">📷 معرض الصور</a
+        <a href="services.html" class="nav-link">🩺 من خدماتنا</a>
+        <a href="gallery.html" class="nav-link">📷 معرض الصور</a>
+        <a href="testimonials.html" class="nav-link">💬 رأي الجمهور</a>
+      </div>
+      <div class="nav-row" style="margin-bottom:20px">    
+        <a href="about.html" class="nav-link">📘 قصتنا</a >       <a href="blog.html" class="nav-link">📚 المدونة</a>
+        <a href="contact.html" class="nav-link">📍تواصل معنا</a>
+        <a href="q&a.html" class="nav-link">✉️ الأسئلة الشائعة</a>
+      </div>
+    </nav>
+    
+    <div class="footer-address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+      <div class="address-card">
+        <span itemprop="streetAddress">ركن مفرق ماوية، مبنى مختبرات دار الصحة</span>،
+        <span itemprop="addressLocality">تعز</span>،
+        <span itemprop="addressCountry">اليمن</span>
+      </div>
     </div>
-    <div class="nav-row">    
-       <a href="blog.html" class="nav-link">📚  المدونة</a>
-      <a href="testimonials.html" class="nav-link">💬 رأي الجمهور</a>
-   <a href="contact.html" class="nav-link">📍تواصل معنا</a>
+    
             
-   <a href="https://wa.me/967730433592" class="nav-link">✉️ إحجز الآن</a>
+  <div class="social-icons">
+      <a href="https://www.facebook.com/profile.php?id=100082372405434" class="social-icon" target="_blank">
+        <img src="images/social/facebook.webP" alt="فيسبوك">
+      </a>
+      <a href="https://wa.me/967730433592" class="social-icon" target="_blank">
+        <img src="images/social/whatsapp1.webP" alt="واتساب">
+      </a>
+      <a href="https://youtube.com/@ENTsharabi" class="social-icon" target="_blank">
+        <img src="images/social/youtube.webP" alt="يوتيوب">
+      </a>
+      <a href="https://www.instagram.com/dr.mokhtar_alsharabi" class="social-icon" target="_blank">
+        <img src="images/social/instagram.webP" alt="انستغرام">
+      </a>
+      <a href="https://x.com/Dr_Alsharaabi" class="social-icon" target="_blank">
+        <img src="images/social/x.webP" alt="تويتر (إكس)" width="30" height="30" />
+      </a>
+      <a href="https://www.tiktok.com/@dr_mokhtar_sharabi" class="social-icon" target="_blank">
+        <img src="images/social/tiktok.webP" alt="تيك توك" width="30" height="30" />
+      </a>
+      <a href="mailto:drm9khtarnajy@gmail.com" class="social-icon" target="_blank">
+        <img src="images/social/gmail.webP" alt="بريد إلكتروني" width="30" height="30" />
+      </a>
     </div>
-  </nav>
-<div class="footer-address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-  <p>
-    <span itemprop="streetAddress"> مفرق ماوية، مختبرات دار الصحة</span>,
-    <span itemprop="addressLocality">تعز</span>,
-    <span itemprop="addressCountry">اليمن</span>
-  </p>
-</div>
- 
-      
-<div class="footer-icons">
+    </div>
+     <div class="footer-section">
 
-    <a href="https://www.facebook.com/profile.php?id=100082372405434" target="_blank">
-      <img src="images/social/facebook.png" alt="فيسبوك" width="30" height="30" />
-    </a>
-
-    <a href="https://wa.me/967730433592" target="_blank">
-      <img src="images/social/whatsapp.png" alt="واتساب" width="30" height="30" />
-    </a>
-
-    <a href="https://youtube.com/@ENTsharabi" target="_blank">
-      <img src="images/social/youtube.png" alt="يوتيوب" width="30" height="30" />
-    </a>
-
-    <a href="https://www.instagram.com/dr.mokhtar_alsharabi" target="_blank">
-      <img src="images/social/instagram.png" alt="انستغرام" width="30" height="30" />
-    </a>
-
-    <a href="https://x.com/Dr_Alsharaabi" target="_blank">
-      <img src="images/social/x.png" alt="تويتر (إكس)" width="30" height="30" />
-    </a>
-
-    <a href="https://www.tiktok.com/@dr_mokhtar_sharabi" target="_blank">
-      <img src="images/social/tiktok.png" alt="تيك توك" width="30" height="30" />
-    </a>
-
-    <a href="mailto:drm9khtarnajy@gmail.com" target="_blank">
-            <img src="images/social/gmail.png" alt="بريد إلكتروني" width="30" height="30" />
-  </a>  </div>  
-  </div>
-</footer>
+      <p class="working-hours">
+        ⏰مواعيد العمل: السبت - الخميس: 10:00 صباحاً - 1:00 ظهراً
+      </p>
+    </div>
+    
+    <div class="copyright-container">
+      © 2025 جميع الحقوق محفوظة - عيادة د. مختار الشرعبي
+    </div>
+  </footer>
+</body>
+</html>
