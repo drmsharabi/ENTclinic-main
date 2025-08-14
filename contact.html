@@ -716,7 +716,7 @@ footer {
  border-right: 4px solid #00709E;
  border-left: 4px solid #00709E;
   margin:0 20px 20px 20px;
-  padding: 25px;
+  padding: 5px;
   background-color: #F2FAFF;
   
       box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
@@ -897,6 +897,27 @@ footer {
     gap: 91px; 
 }
 }
+.main-image {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  display: block;
+  margin: 20px auto 10px auto; /* زيادة الهامش الرأسي وتحسين المركز الأفقي */
+  box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
+  border-radius: 12px;
+}
+
+@media (min-width: 768px) {
+  .main-image {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    display: block;
+    margin: 30px auto 10px auto; /* تأكد من استخدام auto للجانبين */
+    box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
+    border-radius: 32px;
+  }
+}
   </style>
 </head>
 
@@ -913,11 +934,12 @@ footer {
   
        <div class="main">
                   
-     <h1>  تواصل معنا</h1><br>
+     <h1>  تواصل معنا</h1>
       <div style="width: 80%; max-width: 800px; margin: auto; overflow: hidden; border-radius: 12px;">
-        <img src="images/clinic-building.jpeg" alt="مبنى العيادة" style="width: 100%; height: auto; display: block;" />
-    <br>
-    </div> </div>
+        <img src="images/clinic-building.jpeg" alt="مبنى العيادة"
+        class="main-image">
+    
+  <br>  </div> </div>
         <div class="warning-box">   <h2>العنـوان :</h2>
        
       <div class="subsection"><strong> تعز، ركن مفرق ماوية، الشارع العام، مبنى مختبرات دار الصحة<p><strong>
