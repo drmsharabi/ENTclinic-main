@@ -306,11 +306,11 @@
       justify-content: center;
       flex-wrap: wrap;
       text-decoration: none;
-      rgba(236, 235, 255, 0.9);gap: 9px;
+      rgba(236, 235, 255, 0.9);gap: 15px;
     }
     .nav-link {
      background-color: #004D40;
-      padding: 2px 3px;
+      padding: 2px 9px;
       border-radius: 4px;
       color: #E0F2F1;
       
@@ -490,7 +490,7 @@ h1 {
      h1{
  border-right: 18px solid red;
  border-radius: 20px;
- font-size: 47px;
+ font-size: 37px;
  margin: 20px auto;
  padding-right: 20px;
  width: 79%;
@@ -498,7 +498,7 @@ h1 {
   }
    
         h2 {
-     padding: 15px; color: #227A9E;
+     padding: 25px; color: #227A9E;
       font-size: 14px;
     }
     p, li {
@@ -602,7 +602,7 @@ font-size: 34px!important
     padding: 6px 18px;
   }
   }
-   .pwarning-box  {
+   .warning-box  {
     box-shadow: 0 0 3px rgba(92, 95, 96, 0.4);
     border-radius:10px;
     border-left: 2px solid #007D8E; 
@@ -620,12 +620,12 @@ font-size: 34px!important
           box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
  padding: 5px;
   margin: 40px 0;
-  border-radius: 0 8px 8px 0;
+  border-radius: 0 40px 0 40px;
 }
   @media (min-width: 768px) {
        .warning-box {
-      margin: 50px 0;
-       border-radius: 40px;
+      margin: 90px 0;
+       border-radius:0 90px 0 90px;
       padding: 15px 5px;
     }
   }
@@ -712,7 +712,7 @@ font-size: 34px!important
       ;
 }
 .main-section {
-  margin-bottom: 20px 50px;
+    margin: 0 5px 20px 5px;
   padding: 5px 0;
   background-color: white;
   border-radius: 12px;
@@ -795,8 +795,11 @@ font-size: 34px!important
   width: 100%;
   max-width: 100%;
   height: auto;
+  align-items: left;
+  margin-right: 0;
+   padding: ;-right: 0;
   border-radius: 2px;
-    boxbox-shadow: 0 0 3px rgba(1, 91, 121, 0.9);
+    boxbox-shadow: 0 0 3px rgba(1, 91, 121, 0.2);
   margin: 2px;
 }
 
@@ -816,7 +819,7 @@ font-size: 34px!important
 /* نسخة سطح المكتب */
 @media (min-width: 768px) {
   .profile-section {
-    flex-direction: row;
+    border: 1.5px solid black;flex-direction: row;
     justify-content: space-between;
       border-radius: 20px;
       align-items: flex-start;
@@ -838,13 +841,13 @@ font-size: 34px!important
     width: 100%;
     height: auto;
     border-radius: 20px;
-      box-shadow: 0 0 8px rgba(1, 91, 121, 0.9);
+      box-shadow: 0 0 8px rgba(1, 91, 121, 0.2);
   }
 
   .profile-text {
     flex: 0 0 55%;
-    padding: 5px;
-    border-radius: 20px;
+    padding: 25px;
+    border-radius: 20px; box-shadow: 0 0 8px rgba(255, 255,255, 0.2);
   }
 
   .profile-text h2 {
@@ -854,7 +857,8 @@ font-size: 34px!important
   }
 
   .profile-text p {
-    font-size: 13px;
+    font-size: 15px;
+    line-height: 1.9;
   }
 }
 
@@ -879,7 +883,7 @@ font-size: 34px!important
 .booking-title {
   color: #0147AA;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 13px;
   margin-bottom: 8px;
 }
 
@@ -893,14 +897,14 @@ font-size: 34px!important
   color: #B3005C;
   font-size: 13px;
   font-weight: bold;
-  margin-bottom: 18px;
+  margin-bottom: 28px;
   line-height: 1.6;
 }
 
 .booking-buttons {
   display: flex;
   justify-content: center;
-  gap: 12px;
+  gap: 22px;
   flex-wrap: wrap;
 }
 
@@ -968,19 +972,20 @@ font-size: 34px!important
   
   text-align: center;
   max-width: 100%;
-  padding: 50px 10px;
-  margin: 10px 10;
-  border-radius: 0 8px 8px 0;
+  padding: 50px 40px;
+  margin: 20px 70px ; 
+  border-radius: 90px 0 28px 0;
   font-family: 'Cairo', sans-serif;
   background-color: white;
   box-sizing: border-box;
 }
 .booking-numbers {
-  font-size: 15px;
+  font-size: 12px;
+  margin-bottom: 90px;
 }
    .booking-button {
     font-size: 19px; /* تكبير الخط */
-    padding: 18px 22px; /* تكبير الأزرار */
+    padding: 18px 12px; /* تكبير الأزرار */
   }
   .booking-icon {
     width: 58px; /* تكبير الأيقونة */
@@ -1029,10 +1034,10 @@ footer {
   color: #004B8C !important;
   padding: 2px 20px;
   border-radius: 30px;
-  
+  margin-bottom: 10px;
   font-weight: bold;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.5;
   max-width: 90%;
 }
@@ -1043,7 +1048,7 @@ footer {
   padding: 1px 15px;
   border-radius: 20px;
   color: white;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: bold;
 }
 
@@ -1053,13 +1058,13 @@ footer {
   margin-top: 5px;
   font-weight: 500;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
-  font-size: 6px;
+  font-size: 7px;
 }
 
 .social-icons {
   display: flex;
   gap: 10px;
-  margin: 10px auto;
+  margin: 10px 10px;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -1068,12 +1073,15 @@ footer {
 .social-icon {
   width: 30px;
   height: 30px;
+  
+  box-shadow: 0 0 15px rgba(, 33, 38, 0.8);
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #004852;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
+   border: 1px solid #55A699;
 }
 
 .social-icon:hover {
@@ -1084,6 +1092,7 @@ footer {
 .social-icon img {
   width: 22px;
   height: 22px;
+  
 }
 @media (min-width: 768px) {
  footer {
@@ -1104,14 +1113,17 @@ footer {
   }
   
   .social-icon {
-    width: 60px;
-    height: 60px;
+   ; width: 70px;
+    height: 70px;
+    border: 2px solid #55A699;
+    margin: 15px;
+    
   }
-  
+
   .social-icon img {
-    width: 40px;
-    height: 40px;
-    gap: 60px;
+    width: 50px;
+    height: 50px;
+    
   }
   
   .copyright-container {
@@ -1119,8 +1131,28 @@ footer {
     padding: 11px;
   }
   }
+  @media (min-width: 768px) {
+    .social-icon {
+       gap: 190px!important !important;
+  }
+}
+ .main-h {
+      border-right: 4px solid #00709E;
+ border-left: 4px solid #00709E;
+  margin:0 20px 0 20px;
+  padding: 25px;
+  background-color: #F2FAFF;
   
-
+      box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
+      border-left: 5px solid  #00A19D
+      ;
+}
+@media (min-width: 768px) {
+    .main-h {
+       margin: 0 60px 0 60px;;
+  }
+}
+ 
 </style>
 </head>
 
@@ -1133,17 +1165,17 @@ footer {
     </div>
   </header>
  
- <div class="main">
- <br>
+ <div class="main-h">       
+ 
     <h1>من هو الدكتور مختار الشرعبي؟</h1> 
 
-     <br>
+ </div>     
  
  
 
       <div class="main-section" style="border: 1px solid black">
 
- <div class="profile-section" style="background-color:#EBFAFF">
+ <div class="profile-section" style="background-color:#EBFAFF ;padding-right:0">
   <div class="profile-image">
     <img src="images/dr.profile1.webP" alt="د. مختار الشرعبي">
   </div>
@@ -1160,7 +1192,7 @@ footer {
 </div> 
  <div class="subsection">
         <h2 style="color:#015B79;text-align:center">نبذه عن د. مختار الشرعبي ..</h2>
-    <p>استشاري متخصص في طب وجراحة ومناظير الأنف والأذن والحنجرة والرأس والعنق في محافظة تعز – اليمن.
+    <p style="margin-right:15px">استشاري متخصص في طب وجراحة ومناظير الأنف والأذن والحنجرة والرأس والعنق في محافظة تعز – اليمن.
       يقدم د. مختار الشرعبي رعاية طبية متخصصة تستند إلى خبرة علمية وعملية تمتد لعشر سنوات، مع استخدام أحدث الأجهزة والمناظير التشخيصية و الجراحية.</p>
    <div class="warning-box">    
       <h2>المؤهلات والخبرة:</h2>
@@ -1233,14 +1265,14 @@ footer {
 <div  class="cta-button">
   <a href="https://youtube.com/@ENTsharabi" aria-label="موقنا على يوتيوب" target="_blank" style="color: #016B8E">👁 شاهد عملياتنا على YouTube</a></div>
   </div>    
-     <div  class="main">
+     <div  class="warning-box">
      <h2>     📍     موقع العيادة :   </h2>   
  <p>     تتميز العيادة بموقع جغرافي وسطي مناسب لكل المواطنين سواءاُ في القرى أو المدينة أو والمحافظات المجاورة،</p>   
-  <div class="warning-box">        <a href="contact.html" class="certificate-link" aria-label="إطلع على تفاصيل موقع العيادة" style="padding-right:20px">العنوان :   </a>  
+  <br>  <div class="main-h" style="background-color:white;border-radius: 70px 7px 0 7px">        <a href="contact.html" class="certificate-link" aria-label="إطلع على تفاصيل موقع العيادة" style="padding-right:20px">العنوان :   </a>  
     <p><strong>      محافظة تعز </strong> ، الحوبان،<strong> ركن مفرق ماوية</strong>, الشارع العام،  – مبنى مختبرات دار الصحة، – اليمن </p>   </p>  </div>   <br>
        </div>
  
-</div>  <blockquote class="warning-box" style=" border-right: 4px solid red; background-color:#007D8E;color:white; margin-right:10px ;padding:10px ;font-size:13px;text-align:center">
+</div>  <blockquote class="warning-box" style=" border-right: 4px solid red; background-color:#007D8E;color:white; margin:30px 20px ;padding:10px ;font-size:13px;text-align:center">
     <em>“إذا كنت تبحث عن أفضل دكتور أنف وأذن وحنجرة في اليمن أو استشاري حنجرة موثوق في تعز، فإن الدكتور مختار الشرعبي هو خيارك الأمثل</em>  </blockquote>
 
   
@@ -1258,7 +1290,7 @@ footer {
     أرسل الإسم برسالة على الأرقام
   </div>
   <div class="booking-numbers">
-    730433592<br>777421224
+    +967730433592 - +967777421224
   </div>
   <div class="booking-buttons">
     <!-- زر رسالة نصية -->
@@ -1274,8 +1306,7 @@ footer {
     </a>
   </div>
 </div>  <br></div>
-  
-   <footer>
+    <footer>
     <nav>
       <div class="nav-row">
         <a href="index.html" class="nav-link">🏠 الرئيسية</a>
@@ -1293,13 +1324,13 @@ footer {
     
     <div class="footer-address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
       <div class="address-card">
-        <span itemprop="streetAddress">مفرق ماوية، مبنى مختبرات دار الصحة</span>،
+        <span itemprop="streetAddress">ركن مفرق ماوية، مبنى مختبرات دار الصحة</span>،
         <span itemprop="addressLocality">تعز</span>،
         <span itemprop="addressCountry">اليمن</span>
       </div>
     </div>
     
- <div class="social-icons">
+ <div class="social-icons" style="gap:10px">
       <a href="https://www.facebook.com/profile.php?id=100082372405434" class="social-icon" target="_blank">
         <img src="images/social/facebook.webP" alt="فيسبوك">
       </a>
@@ -1321,6 +1352,13 @@ footer {
       <a href="mailto:drm9khtarnajy@gmail.com" class="social-icon" target="_blank">
         <img src="images/social/gmail.webP" alt="بريد إلكتروني" width="30" height="30" />
       </a>
+    </div>
+    </div>
+     <div class="footer-section">
+
+      <p class="working-hours" style="color">
+        ⏰مواعيد العمل: السبت - الخميس: 10:00 صباحاً - 1:00 ظهراً
+      </p>
     </div>
     
     <div class="copyright-container">
