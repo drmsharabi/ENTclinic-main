@@ -127,7 +127,7 @@
     
       }
       .nav-row {
-        gap: 35px;
+        gap: 30px;
 
      margin-bottom: 10px;       }
       .nav-link {
@@ -186,7 +186,10 @@
       }
     }
     .container {
-  max-width: 100%; /* بدلاً من 960px */
+ align-content: center;
+ align-items: center;
+ justify-items: center;
+ max-width: 100%; /* بدلاً من 960px */
   margin: 15px auto;
   padding: 7px; /* تقليل الحشوة */
   box-sizing: border-box; /* مهم جداً */
@@ -301,7 +304,7 @@ hr {
     transform: scale(1); /* الحجم الأصلي */
   }
   50% {
-    transform: scale(1.1); /* تكبير الأيقونة بنسبة 10% */
+    transform: scale(1.1); /* تكبير الأيقونة بنسبة 10% *
   }
   100% {
     transform: scale(1); /* العودة للحجم الأصلي */
@@ -393,7 +396,7 @@ font-size: 44px!important
 
     .imp-section {
       background-color:#FFFAEC ;
-      padding: 5px;
+      padding: 2px 5px;
       margin: 15px 10px;
       text-align: center;
       color: black;
@@ -425,7 +428,7 @@ font-size: 44px!important
     }
     .danger-section {
       background-color: #ffebee;
-      border: 2px solid #f44336;
+      border: 0.5px solid black;
       border-radius: 12px;
       padding: 5px;
       margin: 10px 10px;
@@ -447,19 +450,28 @@ font-size: 44px!important
       ;
 }
 .main-section {
-  margin: 5px;
-  padding: 5px;
+  margin: 15px;
+  padding: 1px 5px 1px 5px;
   background-color: #e6f7ff;
   border-radius: 12px;
             box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
-  border-right: 5px solid #00709E;
+  border-right: 1px solid #00709E;
 }
   @media (min-width: 768px) {
 .main-section {
-    border-left: 9px solid #00709E;
+    border-left: 1px solid #00709E;
     border-radius: 40px;
-    padding: 30px 30px;
-    margin-bottom: 0;
+    padding: 1px 1px 1px 31px;
+   margin: 40px;
+  }
+  .main-section ul{
+  padding: 10px;
+  margin: 30px;
+  }
+  .main-section h2{
+  padding: 10px 3px;
+  margin: 10px 3px;
+  text-align: center;
   }
    .main {
   margin: 0 50px;
@@ -478,7 +490,7 @@ font-size: 44px!important
      text-align: right; 
      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
       margin:0 40px 40px 40px;
-    padding: 30px 60px;
+    padding: 5px 60px;
       }
    
 
@@ -543,7 +555,7 @@ font-size: 44px!important
   color: #004B8C !important;
   padding: 2px 20px;
   border-radius: 30px;
-  
+  margin-bottom: 10px;
   font-weight: bold;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   font-size: 13px;
@@ -567,13 +579,13 @@ font-size: 44px!important
   margin-top: 5px;
   font-weight: 500;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
-  font-size: 6px;
+  font-size: 7px;
 }
 
 .social-icons {
   display: flex;
   gap: 10px;
-  margin: 10px auto;
+  margin: 10px 10px;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -582,12 +594,15 @@ font-size: 44px!important
 .social-icon {
   width: 30px;
   height: 30px;
+  
+  box-shadow: 0 0 15px rgba(, 33, 38, 0.8);
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #004852;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
+   border: 1px solid #55A699;
 }
 
 .social-icon:hover {
@@ -598,8 +613,15 @@ font-size: 44px!important
 .social-icon img {
   width: 22px;
   height: 22px;
+  
 }
 @media (min-width: 768px) {
+ footer {
+ border-top: 9px solid white; 
+ background-color: #004D40 !important;
+  color: white !important;
+          box-shadow: 2px 0 2px 9px rgba(194, 0, 97, 22);
+          }
  .address-card {
     font-size: 34px !important;
     margin: 10px auto;
@@ -612,21 +634,46 @@ font-size: 44px!important
   }
   
   .social-icon {
-    width: 60px;
-    height: 60px;
+   ; width: 70px;
+    height: 70px;
+    border: 2px solid #55A699;
+    margin: 15px;
+    
   }
-  
+
   .social-icon img {
-    width: 40px;
-    height: 40px;
-    gap: 60px;
+    width: 50px;
+    height: 50px;
+    
   }
+   }
   
   .copyright-container {
     font-size: 6px !important;
     padding: 11px;
   }
   }
+  @media (min-width: 768px) {
+    .social-icon {
+       gap: 190px!important !important;
+  }
+}
+ .main-h {
+      border-right: 4px solid #00709E;
+ border-left: 4px solid #00709E;
+  margin:0 20px 0 20px;
+  padding: 25px;
+  background-color: #F2FAFF;
+  
+      box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
+      border-left: 5px solid  #00A19D
+      ;
+}
+@media (min-width: 768px) {
+    .main-h {
+       margin: 0 60px 0 60px;
+  }
+}
 .blog-img {
     width: 100%;
   max-width: 700px;
@@ -638,19 +685,14 @@ font-size: 44px!important
 }
 
 
- .info-box {
-      background-color: #EEFFFE;
-      border: 1px solid #00A19D;
-      border-radius: 10px;
-      padding: 15px;
-      margin: 15px 10;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
+
 
         .fact-table {
-      width: 100%;
+     background-color: white;justify-items: center;
+     align-items: center;
+     width: 100%;
       border-collapse: collapse;
-      margin: 20px 10px;
+      margin: 20px 20px;
     }
     
     .fact-table th, .fact-table td {
@@ -710,7 +752,8 @@ font-size: 44px!important
       <div class="sub-title"> للأنف والأذن والحنجرة والرأس والعنق</div>
     </div>
   </header>
-      <div class="main">
+  
+       <div class="main-h">
    
          <h1> فحص الروماتزم (ASO)    وعلاقته باللوزتين</h1>
         <p style="color: blue;text-align:center">✍️ دكتور / مختار الشرعبي</p>
@@ -719,14 +762,14 @@ font-size: 44px!important
 <img src="images/blog/aso.jpg" alt="فحص ASO " class="blog-img" style="border-radius:12px">
  </div>
 
-    <section>
+    
           <br>
       <h2 style="color: #C20041">ما هو فحص ASO؟</h2>
-      <p>فحص دم يقيس <strong>الأجسام المضادة</strong> ضد سموم "بكتيريا المكورة العقدية" (Group A Streptococcus). ببساطة: يُظهر إذا تعرّض جسمك لهذه البكتيريا سابقًا.</p>
+      <p style="padding:10px">فحص دم يقيس <strong>الأجسام المضادة</strong> ضد سموم "بكتيريا المكورة العقدية" (Group A Streptococcus). ببساطة: يُظهر إذا تعرّض جسمك لهذه البكتيريا سابقًا.</p>
           <br>
-    </section>
+    
         <div class="main-section">  
-    <section>
+    
       <div class="subsection">      
       <h2>لماذا يرتفع مستوى فحص ASO؟</h2>   </div>
         <div class="imp-section" style="text-align: right">    <h3>الأسباب الرئيسية للارتفاع:</h3>
@@ -742,18 +785,18 @@ font-size: 44px!important
       
        </div>
    <br>   <br>  
-    <section>
+    
           
             <div class="subsection">      
       <h2>   <h2>ماذا يعني ارتفاع ف ASO؟</h2>
    </div>           <ul>
         <li>دليل على عدوى قد تكون <strong>سابقة أو حديثة</strong></li>
         <li>لا يعني وجود عدوى نشطة الآن: الأجسام المضادة تبقى مرتفعة لـ شهور أو سنوات بعد الشفاء ❗ </li>
-      </ul></div>
-    </section>      
-   <br>           <h2 style="background-color:white; border:1px solid black ;color:red;padding: 2px 3px">حقائق هامة يغفل عنها الكثيرون</h2>
-        
-     <div class="danger-section" style="text-align:right">
+      </ul></div>  <br> 
+                 <div class="subsection" style="margin-bottom:0;border-left:4px solid #f44336;">
+           <h2>حقائق هامة يغفل عنها الكثيرون</h2>
+           </div>
+     <div class="danger-section" style="text-align:right;margin-top:0;">
 <ol>
           <li><strong>اللوزتان ليستا المصدر الوحيد:</strong> البكتيريا قد تصيب الجيوب الأنفية، الحلق، اللثة، الأذن أو الجلد</li>
           <li><strong>بعد استئصال اللوزتين:</strong>
@@ -778,7 +821,7 @@ font-size: 44px!important
       </div>
    <br>
   
-    <section>
+    
     
                
             <div class="main-section">        
@@ -793,8 +836,7 @@ font-size: 44px!important
   
     
 
-<section>      
-      <h2 style="background-color:white">🧠  متى يكون الفحص مفيدًا؟</h2>
+      <h2>🧠  متى يكون الفحص مفيدًا؟</h2>
       
       <p>يستخدمه طبيبك كـ <strong>قطعة واحدة من الأحجية</strong> مع:</p>
    <br>        
@@ -805,8 +847,8 @@ font-size: 44px!important
         <li>فحوصات داعمة (مسحة الحلق، تخطيط القلب عند الضرورة)</li>
       </ul>
       
-    
-</div> <br></div> <br>
+  
+</div> <br></div> <br>    <div class="main-section" style="background-color: white;border:0;border-radius:0">
       <table class="fact-table">
         <thead>
           <tr>
@@ -816,11 +858,11 @@ font-size: 44px!important
         </thead>
         <tbody>
           <tr>
-            <td><strong>ارتفاع ASO ≠ تشخيص حمى روماتيزمية</strong></td>
+            <td><strong>ارتفاع ASO لا يعتبر تشخيص حمى روماتيزمية</strong></td>
             <td><strong>يشير لتعرض سابق للبكتيريا فقط</strong></td>
           </tr>
           <tr>
-            <td><strong>الاستئصال ≠ منع روماتيزم القلب</strong></td>
+            <td><strong>لا يتم الاستئصال لغرض منع روماتيزم القلب</strong></td>
             <td><strong>الوقاية تتطلب بنسلين طويل المفعول عند التشخيص المؤكد</strong></td>
           </tr>
           <tr>
@@ -828,31 +870,36 @@ font-size: 44px!important
             <td><strong>لا يدل على فشل العملية</strong></td>
           </tr>
           <tr>
-            <td><strong>لا قرار علاجي بمجرد الارتفاع</strong></td>
+            <td><strong>إرتفاع نتيجة الفحص لا تستدعي إستئصال اللوزتين أو  قرار علاجي بإبر الروماتزم كل 21 يوم</strong></td>
             <td><strong>القرارات تعتمد على الأعراض والتاريخ المرضي</strong></td>
           </tr>
+                    <tr>
+            <td><strong>استئصال اللوزتين لا يعالج روماتيزم القلب بعد حدوث الإصابة </strong></td>
+            <td><strong>يتم استئصالها يهدف إلى تقليل فرص العدوى بالبكتيريا المسببة وبالتالي تقليل نسبة حدوث إنتكاسات ثانوية لاحقة.  </strong></td>
+          </tr>
         </tbody>
-      </table>
+      </table> </div>
     <br>
 
         <h3>🩺 نصائح طبية من د. مختار الشرعبي :
-       <div class="warning-box" style="background-color: #009DB5 ;color:white; padding:20px">
+      </h3>   <div class="warning-box" style="background-color: #009DB5 ;color:white; padding:20px">
         <ul>
           <li> لا تُفسّر نتائج فحص ASO بنفسك - السياق الطبي كله مهم</li>
           <li> لا تتخذ قرارًا بشأن الاستئصال أو البنسلين بناءً على الرقم فقط</li>
           <li> فحص ASO مجرد جزء من التشخيص ولا يُعتمد عليه بمفرده أبدًا</li>
         </ul>
       </div>
-       <br>
-</section> 
+  <hr>      <br>
+
       <div class="imp-section">
  <p><em> في عيادة <strong>د. مختار الشرعبي</strong> – تعز، ركن مفرق ماوية – نحرص على تقييم كل حالة بدقة وتقديم خطة علاجية شخصية تشمل الجانب الوقائي والنفسي والدوائي.</em></p>
-  </div>   <br>     
-  <div class="subsection" style="  border: 1px solid #00709E;background-color:white">               
-    <a href="blog.html" style="color:black" class="cta-button" />← عودة لصفحة المدونة</a>
+  </div> <hr>      
+         
 
-    <a href="index.html"style=":color:#004D40" class="cta-button">← عودة للصفحة الرئيسية</a></div>
-  
+    <a href="blog.html" style="color:black" class="cta-button" />← عودة لصفحة المدونة</a>
+<hr> 
+    <a href="index.html"style=":color:#004D40" class="cta-button">← عودة للصفحة الرئيسية</a>
+  <br> 
     <footer>
     <nav>
       <div class="nav-row">
