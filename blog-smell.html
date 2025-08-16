@@ -256,7 +256,7 @@
 
 
     h1 {
-      background-color: #EEFFFE;
+      background-color: white;
       color: #A1115E;
       border: 1px solid #004D40;
       text-align: center;
@@ -334,15 +334,24 @@ hr {
       margin: 45px 0;   
     }
     }
-    .blog-img  {
-      width: 70% !important;
-      max-width: 600px !important;
-      height: auto !important;
-      display: block;
-      margin: 0 auto 20px;
-            box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
-      border-radius: 12px;
-    }
+.blog-img {
+    width: 100%;
+  max-width: 700px;
+  height: auto;
+  display: block;
+  margin: 20px auto 10px auto; /* زيادة الهامش الرأسي وتحسين المركز الأفقي */
+  box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
+  border-radius: 23px;
+}
+         @media (max-width: 768px) {
+  .blog-img {
+    max    width: 100%;
+    max-width: 700px;
+    
+    box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
+    border-radius: 32px;
+  }
+}
 .whatsapp-section {
   background-color: white;
   text-align: center;
@@ -516,7 +525,9 @@ font-size: 44px!important
             display: flex;
             flex-wrap: wrap;
             gap: 30px;
+            border-right: 5px solid #01789B;
             margin: 30px 0;
+            -shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
         }
         
         .cause-card {
@@ -636,8 +647,23 @@ font-size: 44px!important
         margin: 70px 0; /* زيادة 40% */
         border-radius: 25px; /* زوايا أكثر نعومة */
     }
-
- 
+   .main-h {
+      border-right: 4px solid #00709E;
+ border-left: 4px solid #00709E;
+  margin:0 20px 0 20px;
+  padding: 25px;
+  background-color: #F2FAFF;
+  
+      box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
+      border-left: 5px solid  #00A19D
+      ;
+}
+@media (min-width: 768px) {
+    .main-h {
+       margin: 0 60px 0 60px;
+  }
+}
+    
 footer {
  border-top: 4px solid white; 
  background-color: #004D40 !important;
@@ -659,7 +685,7 @@ footer {
   color: #004B8C !important;
   padding: 2px 20px;
   border-radius: 30px;
-  
+  margin-bottom: 10px;
   font-weight: bold;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   font-size: 13px;
@@ -683,13 +709,13 @@ footer {
   margin-top: 5px;
   font-weight: 500;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
-  font-size: 6px;
+  font-size: 7px;
 }
 
 .social-icons {
   display: flex;
   gap: 10px;
-  margin: 10px auto;
+  margin: 10px 10px;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -698,12 +724,15 @@ footer {
 .social-icon {
   width: 30px;
   height: 30px;
+  
+  box-shadow: 0 0 15px rgba(, 33, 38, 0.8);
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #004852;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
+   border: 1px solid #55A699;
 }
 
 .social-icon:hover {
@@ -714,8 +743,15 @@ footer {
 .social-icon img {
   width: 22px;
   height: 22px;
+  
 }
 @media (min-width: 768px) {
+ footer {
+ border-top: 9px solid white; 
+ background-color: #004D40 !important;
+  color: white !important;
+          box-shadow: 2px 0 2px 9px rgba(194, 0, 97, 22);
+          }
  .address-card {
     font-size: 34px !important;
     margin: 10px auto;
@@ -728,22 +764,26 @@ footer {
   }
   
   .social-icon {
-    width: 60px;
-    height: 60px;
+   ; width: 70px;
+    height: 70px;
+    border: 2px solid #55A699;
+    margin: 15px;
+    
   }
-  
+
   .social-icon img {
-    width: 40px;
-    height: 40px;
-    gap: 60px;
+    width: 50px;
+    height: 50px;
+    
   }
+   }
   
   .copyright-container {
     font-size: 6px !important;
     padding: 11px;
   }
   }
-    
+
   </style>
 </head>
 
@@ -757,15 +797,15 @@ footer {
       <div class="sub-title"> للأنف والأذن والحنجرة والرأس والعنق</div>
     </div>
   </header>
+       <div class="main-h">
 
-   <div class="container">
        <br>
   <h1>فقدان حاسة الشم.. الأسباب وطرق العلاج</h1>
   
-      <p style="color: blue;font-size:11px;text-align:center">✍️ دكتور / مختار الشرعبي</p><br>
-  <div>  <img style="display: block; margin:20px auto;" src="images/blog/smell.webP" alt="حاسة الشم" style="width: 70%; height: auto; display: block;" class="blog-img" />
+      <p style="color: blue;font-size:11px;text-align:center">✍️ دكتور / مختار الشرعبي</p>
+  <div>  <img style="display: block; margin:5px auto;" src="images/blog/smell.webP" alt="حاسة الشم" style="width: 70%; height: auto; display: block;" class="blog-img" />
     </div>
-    
+     </div>
             <br>
  <h2 style="text-align: center ;margin:15px"class="section-title">عندما تختفي الروائح: دليلك لفهم فقدان حاسة الشم واستعادتها</h2>
             <p class="intro">هل فكرت يوماً كيف ستكون الحياة بدون رائحة القهوة الصباحية، عطر الزهور، أو حتى رائحة الطعام الشهي؟ اكتشف أسباب فقدان حاسة الشم وطرق استعادتها</p>
