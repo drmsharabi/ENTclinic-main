@@ -654,7 +654,7 @@ font-size: 34px!important
 
     .imp-section {
       background-color:#00709E ;
-      padding: 15px 10px;
+      padding: 15px 15px;
       margin: 15px 10px;
       text-align: center;
       color: white;
@@ -668,7 +668,7 @@ font-size: 34px!important
     .subsection {
       background-color: white;
       padding: 15px 10;
-      margin: 15px 0;
+      margin: 15px 5px;
       border-radius: 8px;
        box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);;
       position: relative;
@@ -712,21 +712,23 @@ font-size: 34px!important
       ;
 }
 .main-section {
-    margin: 0 5px 20px 5px;
-  padding: 5px 0;
+      padding: 30px 30px;
+    margin: 10px 0;
+  padding:  5px 0;
   background-color: white;
   border-radius: 12px;
-      box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
+          border-left: 9px solid #00709E;
       border-left: 5px solid white;
 }
   @media (min-width: 768px) {
 .main-section {
     border-left: 9px solid #00709E;
     border-radius: 40px;
-    padding: 30px 30px;
+    padding: 30px 20px;
     margin: 10px;
   }
     .subsection  {
+      margin: 5px ;
       border-right: 9px solid #00709E;
       padding: 10px;
       font-size: 12px!important;
@@ -742,7 +744,7 @@ font-size: 34px!important
 }
         .imp-section {
       border-radius: 40px;
-         border-right: 9px solid red;
+         border-right: 7px solid red;
          border-radius: 8px;
       box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
       margin: 40px 10px;
@@ -775,97 +777,97 @@ font-size: 34px!important
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #EBFAFF;
-  border: 1px solid #004D40;
-  padding: 5px;
-  margin: 20px 10px;
-  border: 1px solid black;
-   
-  border-radius: 12px;
-  overflow: visible;
-}
-
-.profile-image {
-  display: flex;
-  justify-content: right;
-  width: 100%;
+  background-color:  white;
+  
+  padding: 5px 0 0 15px;
+  margin: 20px 40px 5px 20px;  
+  box-shadow:0 0 4px rgba(0, 119, 96, 0.7);
+  border-radius: 8px;
+  overflow: visible; /* allow image to shift outside */
 }
 
 .profile-image img {
-  width: 100%;
+  bowidth: 100%;
   max-width: 100%;
   height: auto;
-  align-items: left;
-  margin-right: 0;
-   padding: ;-right: 0;
-  border-radius: 2px;
-    boxbox-shadow: 0 0 3px rgba(1, 91, 121, 0.2);
-  margin: 2px;
+  
+  border-radius: 40px 0 40px 0;
+border: 1px solid #007772;
+ 
+ display: block;
+  margin: 10px 10px 0px 10px; /* default: remove any margin */
 }
 
 .profile-text {
-  background-color: #007772;
-  border-radius: 5px;
+ shadow: 0 0 6px rgba(3, 95, 97, 0.4);
+ 
+ background-color: #006472;
+  border-radius: 40px 0 40px  0;
   font-family: 'Cairo', sans-serif;
+  margin: 0 30px 0 20px;
   color: white;
   text-align: right;
   line-height: 1.7;
   width: 100%;
-  padding: 10px;
+  padding: 20px 15px 0 5px;
   box-sizing: border-box;
-  border-right: 9px solid red;
 }
-
-/* نسخة سطح المكتب */
-@media (min-width: 768px) {
-  .profile-section {
-    border: 1.5px solid black;flex-direction: row;
-    justify-content: space-between;
-      border-radius: 20px;
-      align-items: flex-start;
-    background-color: #EBFAFF;padding: 50px auto;
-    margin: 30px auto;
-    max-width: 1000px;
-    gap: 0;
-    box-shadow: 0 0 3px rgba(33, 95, 57, 0.9);
-  }
-
-  .profile-image {
-    flex: 0 0 45%;
-    max-width: 55%;
- 
-      justify-content: right;
-  }
-
-  .profile-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 20px;
-      box-shadow: 0 0 8px rgba(1, 91, 121, 0.2);
-  }
-
-  .profile-text {
-    flex: 0 0 55%;
-    padding: 25px;
-    border-radius: 20px; box-shadow: 0 0 8px rgba(255, 255,255, 0.2);
-  }
-
   .profile-text h2 {
-    font-size: 23px;
+    font-size: 15px;
     margin-bottom: 20px;
     padding-bottom: 23px;
   }
 
   .profile-text p {
-    font-size: 15px;
+    font-size: 12px;
     line-height: 1.9;
   }
-}
 
-/* نسخة الموبايل */
+/* نسخة سطح المكتب */
+@media (min-width: 768px) {
+  .profile-section {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+    margin: 10px 0;
+    max-width: 1000px;
+    gap: 1px; 
+  }
+
+  .profile-image {
+  margin: 0; align-items: center;
+   flex: 0 0 43%;
+    
+
+  }
+
+  .profile-image img {
+    width: 150%;
+    border: 5px solid green;height: auto;
+    transform: none; 
+    border-radius: 0 0 70px  0;
+  }
+
+  .profile-text {
+    flex: 1;
+    width: 70%;
+    padding: 10px ;
+  }
+
+  .profile-text h2 {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .profile-text p {
+    font-size: 10px;
+  }
+}
+ 
 @media (max-width: 767px) {
   .profile-image img {
-    width: 100%;
+    transform: translateX(10px);
   }
 }
 .booking-container {
@@ -874,29 +876,33 @@ font-size: 34px!important
   padding: 20px;
   text-align: center;
   max-width: 100%;
-  margin: 10px ; /* هامش الجوانب في الموبايل */
+  margin: 10px ;  
   font-family: 'Cairo', sans-serif;
   background-color: white;
   box-sizing: border-box;
 }
 
 .booking-title {
-  color: #0147AA;
+  color: yellow;
   font-weight: bold;
+  text-shadow: 0 3px 1px rgba(3, 25, 83, 0.7);
   font-size: 13px;
   margin-bottom: 8px;
 }
 
 .booking-subtitle {
+  color: white;
+  text-shadow: 0 3px 1px rgba(3, 25, 83, 0.7);
   font-weight: bold;
   font-size: 12px;
   margin-bottom: 15px;
 }
 
 .booking-numbers {
-  color: #B3005C;
-  font-size: 13px;
-  font-weight: bold;
+  color: #FFE6FD;
+  font-size: 11px;
+ text-shadow: 0 3px 1px rgba(3, 25, 83, 0.7);
+   font-weight: bold;
   margin-bottom: 28px;
   line-height: 1.6;
 }
@@ -1125,6 +1131,7 @@ footer {
     height: 50px;
     
   }
+   }
   
   .copyright-container {
     font-size: 6px !important;
@@ -1149,7 +1156,7 @@ footer {
 }
 @media (min-width: 768px) {
     .main-h {
-       margin: 0 60px 0 60px;;
+       margin: 0 60px 0 60px;
   }
 }
  
@@ -1173,9 +1180,9 @@ footer {
  
  
 
-      <div class="main-section" style="border: 1px solid black">
+      <div class="main-section">
 
- <div class="profile-section" style="background-color:#EBFAFF ;padding-right:0">
+ <div class="profile-section">
   <div class="profile-image">
     <img src="images/dr.profile1.webP" alt="د. مختار الشرعبي">
   </div>
@@ -1189,10 +1196,10 @@ footer {
       • خبرة أكثر من 10 سنوات في علاج أمراض وجراحات الأنف والأذن والحنجرة
     </p>
   </div><br>
-</div> 
- <div class="subsection">
-        <h2 style="color:#015B79;text-align:center">نبذه عن د. مختار الشرعبي ..</h2>
-    <p style="margin-right:15px">استشاري متخصص في طب وجراحة ومناظير الأنف والأذن والحنجرة والرأس والعنق في محافظة تعز – اليمن.
+</div> <br>
+
+        <h2 style="color:#B3005C;text-align:center">نبذه عن د. مختار الشرعبي ..</h2>
+ <div class="subsection">    <p style="margin-right:15px">استشاري متخصص في طب وجراحة ومناظير الأنف والأذن والحنجرة والرأس والعنق في محافظة تعز – اليمن.
       يقدم د. مختار الشرعبي رعاية طبية متخصصة تستند إلى خبرة علمية وعملية تمتد لعشر سنوات، مع استخدام أحدث الأجهزة والمناظير التشخيصية و الجراحية.</p>
    <div class="warning-box">    
       <h2>المؤهلات والخبرة:</h2>
@@ -1214,7 +1221,7 @@ footer {
   <a href="images/A-cert..jpg" target="_blank" class="certificate-link" aria-label="اطلع على صورة شهادة العضوية">.   الأكاديمية الأمريكية  </a>  </em>  والجمعية اليمنية لجراحة.   الأنف والأذن والحنجرة.</li>
 </ul>.</div>
 
-   <div class="warning-box"> 
+   <div class="warning-box" style="background-color: white"> 
 
 <h2>ما الذي يهدف إليه:</h2>
 <p>يهدف الدكتور مختار الشرعبي من خلال عيادته في محافظة تعز ، ركن مفرق ماوية إلى<ul>
@@ -1236,7 +1243,7 @@ footer {
     
     <li>تقديم <strong>خصومات كبيرة للحالات غير القادرة</strong> والتعامل بمرونة مع الظروف المادية للمرضى.</li>
   </ul></div>
-    <div class="warning-box">  <h2> سمعة طيبة وثقة عالية : </h2>
+    <div class="warning-box" style="background-color: white">  <h2> سمعة طيبة وثقة عالية : </h2>
  
   <ul>
   <li>
@@ -1250,12 +1257,11 @@ footer {
   </li>
 </ul>
 
-<!-- تم إخراج هذا الرابط من قائمة ul ليكون في مكان مستقل -->
 <div class="certificate-link" style="font-size:13px; text-align:center;">
   <em>
     <a href="about.html" class="cta-link" style="color: blue;">إقرأ المزيد ←</a>
   </em></div>
-</div>
+</div></div>
  <br> 
 
     <div class="whatsapp-section" style="margin-top: 5px; flex-direction: column;">
@@ -1265,24 +1271,25 @@ footer {
 <div  class="cta-button">
   <a href="https://youtube.com/@ENTsharabi" aria-label="موقنا على يوتيوب" target="_blank" style="color: #016B8E">👁 شاهد عملياتنا على YouTube</a></div>
   </div>    
-     <div  class="warning-box">
+
+     <div  class="warning-box" style="border:0">
      <h2>     📍     موقع العيادة :   </h2>   
  <p>     تتميز العيادة بموقع جغرافي وسطي مناسب لكل المواطنين سواءاُ في القرى أو المدينة أو والمحافظات المجاورة،</p>   
-  <br>  <div class="main-h" style="background-color:white;border-radius: 70px 7px 0 7px">        <a href="contact.html" class="certificate-link" aria-label="إطلع على تفاصيل موقع العيادة" style="padding-right:20px">العنوان :   </a>  
+  <br>  <div class="main-h" style="background-color:white;border-radius: 70px 7px 0 7px">   <blockquote>      <a href="contact.html" class="certificate-link" aria-label="إطلع على تفاصيل موقع العيادة" style="padding-right:20px">العنوان :   </a>  
     <p><strong>      محافظة تعز </strong> ، الحوبان،<strong> ركن مفرق ماوية</strong>, الشارع العام،  – مبنى مختبرات دار الصحة، – اليمن </p>   </p>  </div>   <br>
-       </div>
+      </blockquote> 
  
-</div>  <blockquote class="warning-box" style=" border-right: 4px solid red; background-color:#007D8E;color:white; margin:30px 20px ;padding:10px ;font-size:13px;text-align:center">
+  <blockquote class="warning-box" style=" border-right: 4px solid red; background-color:#007772;color:#F5FFC5; margin:30px 20px ;padding:10px ;font-size:13px;text-align:center">
     <em>“إذا كنت تبحث عن أفضل دكتور أنف وأذن وحنجرة في اليمن أو استشاري حنجرة موثوق في تعز، فإن الدكتور مختار الشرعبي هو خيارك الأمثل</em>  </blockquote>
 
   
-<div>
+<div></div>
     
-
+</div>
  
     </div> </div>
   <br>
-<div class="booking-container">
+<div class="booking-container" style="background-color:#007772" >
   <div class="booking-title">
     للحجز في عيادة دكتور مختار الشرعبي
   </div>
