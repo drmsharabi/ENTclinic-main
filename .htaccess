@@ -1,39 +1,41 @@
-# توجيه صفحة 404
+# =============================
+# صفحة 404 مخصصة
+# =============================
 ErrorDocument 404 /404.html
+
+# =============================
+# تفعيل إعادة كتابة الروابط
+# =============================
 RewriteEngine On
 
 # =============================================
-# إعادة التوجيهات الدائمة (301) للموقع القديم
+# إعادة التوجيه الدائمة (301) للنطاق القديم
 # =============================================
 
-# 1. توجيه النطاق القديم + مسارات /ENTclinic معًا
+# 1. إعادة توجيه النطاق القديم بالكامل إلى الجديد
 RewriteCond %{HTTP_HOST} ^drmsharabi\.github\.io$ [NC]
-RewriteRule ^ENTclinic(?:/(.*))?$ https://ent.drmsharabi.com/$1 [R=301,L,NE]
+RewriteRule ^(.*)$ https://ent.drmsharabi.com/$1 [R=301,L,NE]
 
-# 2. توجيه مسارات /ENTclinic من أي نطاق (بما في ذلك الجديد)
+# 2. إعادة توجيه أي مسارات /ENTclinic (لأي نطاق)
 RewriteRule ^ENTclinic(?:/(.*))?$ https://ent.drmsharabi.com/$1 [R=301,L,NE]
-
-# (تم إزالة التوجيهات القديمة باستخدام Redirect لأنها تسبب تضاربًا)
 
 # =============================================
 # تحسينات SEO وهيكلة URL
 # =============================================
 
-# 1. إزالة index.html من نهاية المسارات
+# 1. إزالة index.html من نهاية الروابط
 RewriteCond %{THE_REQUEST} /index\.html [NC]
 RewriteRule ^(.*?)index\.html$ /$1 [L,R=301,NC,NE]
 
-# 2. إزالة امتداد .html (القاعدة الأصلية)
+# 2. إزالة امتداد .html من الروابط (للتصفح بدون الامتداد)
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html [L]
 
-# 3. إزالة الشرطة المائلة الزائدة (توحيد المسارات بدون /)
+# 3. إزالة الشرطة المائلة الزائدة
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_URI} (.+)/$
 RewriteRule ^ %1 [R=301,L]
-
-# (تم إزالة قاعدة إضافة الشرطة المائلة لتجنب الحلقة اللانهائية)
 
 # =============================================
 # إعدادات الأمان والأداء
@@ -45,7 +47,7 @@ RedirectMatch 404 /\..*$
 # 2. تعطيل فهرسة المجلدات
 Options -Indexes
 
-# 3. ضغط الملفات
+# 3. ضغط الملفات لتحسين الأداء
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript
 </IfModule>
