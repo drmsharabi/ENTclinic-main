@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="canonical" href="https://ent.drmsharabi.com/gallery" />
-  <title>معرض الصور | د. مختار الشرعبي - استشاري الأنف والأذن والحنجرة</title>
-  <meta name="description" content="شاهد نتائج حقيقية لعمليات الأنف والأذن والحنجرة التي أجراها د. مختار الشرعبي في تعز باستخدام المنظار والتقنيات الحديثة." />
+  <title>شاهد نتائج جراحاتنا | صور لعمليات د. مختار الشرعبي</title>
+<meta name="description" content="شاهد نتائج جراحات الأنف والأذن الدقيقة الناجحة في تعز. تصفح معرض الصور قبل وبعد لعمليات د. مختار الشرعبي التي أجريت بأحدث المناظير الطبية." /> 
   <meta property="og:title" content="معرض الصور | د. مختار الشرعبي - استشاري الأنف والأذن والحنجرة" />
   <meta property="og:description" content="صور واقعية من غرفة العمليات لنتائج عمليات دقيقة في الأنف والأذن والحنجرة على يد د. مختار الشرعبي." />
   <meta property="og:image" content="https://ent.drmsharabi.com/images/clinic-logo.png" />
@@ -128,7 +128,7 @@
       background-color: #f9f9f9;
       text-align: right;
     }
-    nav {
+     nav {
      
      
      text-align: center;
@@ -143,14 +143,14 @@
       justify-content: center;
       flex-wrap: wrap;
       text-decoration: none;
-      rgba(236, 235, 255, 0.9);gap: 9px;
+      rgba(236, 235, 255, 0.9);gap: 15px;
     }
     .nav-link {
-     background-color: #004D40;
-      padding: 2px 3px;
+     background: linear-gradient(35deg, #00999C, #004C57);
+      padding: 2px 9px;
       border-radius: 4px;
       color: #E0F2F1;
-      
+      text-shadow: 0 3px 1px rgba(3, 25, 83, 0.7);
       text-decoration: none;
       box-shadow: 0 0 0 0.3px rgba(243, 245, 212, 4);
       font-size: 11px;
@@ -179,7 +179,7 @@
     }
     }
    header {
-      background-color: #004D40;
+      background: linear-gradient(35deg, #004C57, #00999C);
       color: white;
       padding: 20px;
       display: flex;
@@ -341,29 +341,7 @@ h2 {
 
  }
 
-.image-caption::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 50px;
-  height: 3px;
-  background: #A1115E;
- 
-       box-shadow: 0 9px 6px rgba(33, 95, 97, 0.7); border-radius: 3px;
-}
 
-/* تأثيرات إضافية للوصف */
-.image-caption::after {
-  content: "";
-  position: absolute;
-  bottom: 10px;
-  right: 20px;
-  width: 30px;
-  height: 30px;
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23A1115E" opacity="0.2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>') no-repeat;
-}
 
 /* التنسيق للجوال */
 @media (max-width: 768px) {
@@ -377,10 +355,7 @@ h2 {
     min-height: 340px;
   }
   
-  .image-caption {
-    padding: 15px;
-    font-size: 16px;
-  }
+
 }
 
 /* التنسيق لشاشات متوسطة */
@@ -400,23 +375,10 @@ h2 {
     min-height: 400px;
   }
   
-  .image-caption {
-    font-size: 18px;
-    padding: 45px;
-  }
+
 }
 
-/* أنيميشن عند التحميل */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+
 
 .gallery-item {
   animation: fadeInUp 0.6s ease forwards;
@@ -440,74 +402,11 @@ h2 {
     font-size: 16px !important;
   }
 }
-.cta-button {
- white-space: nowrap; 
-  color: #004D40;
-    background-color: white;
-    border: 1.5px solid  #004D40;
-    text-decoration: none;
-    font-weight: bold;
-    box-shadow: 0 4px 8px rgba(65, 18, 57, 0.2);
-    width: fit-content;
-    display: block;
-    margin: 20px auto;
-    transition: all 0.3s ease;
-    text-align: center;
-    border-radius: 8px;
-    padding: 4px 9px;
-    font-size: 13px;
-    max-width: fit-content;
-    animation: pulse 3s infinite; /* تطبيق تأثير النبض */
-}
 
-@keyframes pulse {
-  0% {
-    transform: scale(1); /* الحجم الأصلي */
-  }
-  50% {
-    transform: scale(1.1); /* تكبير الأيقونة بنسبة 10% */
-  }
-  100% {
-    transform: scale(1); /* العودة للحجم الأصلي */
-  }
-
-}
-
-.cta-button:hover {
-   margin: 10px auto; background-color: #f0fff0;
-    max-width: fit-content;
-    box-shadow: 0 6px 12px rgba(0, 128, 0, 0.3);
-    font-size: 13px;
-    transform: translateY(-2px);
-    margin-top: 0; 
-    
-}
-
-
-/* تنسيق سطح المكتب */
-@media (min-width: 768px) {
-    .cta-button {
-       .
-  display: block;
-  
-  max-width: fit-content;padding: 5px 25px 
-        font-size: 40px;
-        border-radius: 12px!important;
-        margin: 20px auto;
-    }
-}
-@media (min-width: 768px) {
- .cta-button {
-font-size: 54px!important
-}
-}
-      .cta-button {
-   text-align: center important;
-  } 
 
  footer {
  border-top: 4px solid white; 
- background-color: #004D40 !important;
+ background: linear-gradient(35deg, #004C57, #00999C);
   color: white !important;
           box-shadow: 2px 0 2px 5px rgba(194, 0, 97, 22);
   text-align: center;
@@ -526,10 +425,10 @@ font-size: 54px!important
   color: #004B8C !important;
   padding: 2px 20px;
   border-radius: 30px;
-  
+  margin-bottom: 10px;
   font-weight: bold;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.5;
   max-width: 90%;
 }
@@ -540,7 +439,7 @@ font-size: 54px!important
   padding: 1px 15px;
   border-radius: 20px;
   color: white;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: bold;
 }
 
@@ -550,13 +449,13 @@ font-size: 54px!important
   margin-top: 5px;
   font-weight: 500;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
-  font-size: 6px;
+  font-size: 7px;
 }
 
 .social-icons {
   display: flex;
   gap: 10px;
-  margin: 10px auto;
+  margin: 10px 10px;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -565,12 +464,15 @@ font-size: 54px!important
 .social-icon {
   width: 30px;
   height: 30px;
+  
+  box-shadow: 0 0 15px rgba(, 33, 38, 0.8);
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
+   background: linear-gradient(35deg, #00999C, #004C57);
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
+   border: 1px solid #55A699;
 }
 
 .social-icon:hover {
@@ -581,9 +483,10 @@ font-size: 54px!important
 .social-icon img {
   width: 22px;
   height: 22px;
+  
 }
 @media (min-width: 768px) {
-footer {
+ footer {
  border-top: 9px solid white; 
  background-color: #004D40 !important;
   color: white !important;
@@ -601,21 +504,30 @@ footer {
   }
   
   .social-icon {
-    width: 60px;
-    height: 60px;
+   ; width: 70px;
+    height: 70px;
+    border: 2px solid #55A699;
+    margin: 15px;
+    
   }
-  
+
   .social-icon img {
-    width: 40px;
-    height: 40px;
-    gap: 60px;
+    width: 50px;
+    height: 50px;
+    
   }
+   }
   
   .copyright-container {
     font-size: 6px !important;
     padding: 11px;
   }
   }
+  @media (min-width: 768px) {
+    .social-icon {
+       gap: 190px!important !important;
+  }
+}
 .booking-container {
   background-color: #008190;
   border-right:5px solid #ffc107;
@@ -878,37 +790,144 @@ footer {
 
      
 .warning-box {
-  background-color: #F2FAFF;
+  background-color: white;
+color: black;
+  border: 2px solid white;
   border-left: 5px solid #ffc107;
-          box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
+          box-shadow: 0 0 6px rgba(3, 53, 197, 0.6);
  font-size:15px;
  text-align: center;
- padding: 5px 0;
-  margin: 10px 10px 10px 0;
-  border-radius: 0 8px 8px 0;
+ padding: 10px 10px;
+  margin: 10px 10px 5px 5px;
+  border-radius:  25px 10px 0 0px;
 }
   @media (min-width: 768px) {
        .warning-box {
-      margin: 50px 30 30px 0;
-       border-radius: 2px;
-   font-size:12px;
-    border-left: 12px solid #ffc107;
-      padding: 15px 15px;
+      margin: 20px 0 20px 10px;
+       border-radius: 45px 0 0 0;
+   font-size:7px;
+    
+      padding: 10px 20px 10px 10px;
     }
-  }
+            }
+            .gallery {
+  display: grid;
+ border: 1px solid #1A8CDC; background-color: #F2FAFF;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  align-items: start;
+  padding: 30px 10px;
+  max-width: 1400px;
+  margin: 0 5px;
+}
+
+.gallery {
   
-   @media (min-width: 768px) { 
-  warning-box {
-      font-size: 12px!important;
+ border: 2px solid #1A8CDC !important;}
+ }
+        .image-container {
+           border:2px solid  green ;
+           margin: 10px 10px;
+            background: white;
+            padding:20px 15px 5px 15px;
+            border-radius: 8px 8px 20px;
+             box-shadow: 0 2px 6px rgba(0, 25, 39, 0.4);  font-size:15px;
+
   }
+          .image-container {
+  
+  background-color: white!important;
+    }
+                .image-container    img {
+            align-items: center;max-width: 95%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 4px;
+            border: 1px solid black;
+            box-shadow: 0 2px 6px rgba(3, 53, 197, 0.6);
+            
+        }
+        
+ 
+   @media (min-width: 768px) { 
+  .warning-box {
+      font-size: 9px!important;
+  }
+  .gallery img {
+   width: 95%;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 32px 12px 0 0;
+  transition: transform 0.5s ease;
+  margin-top: 0;
+}
+        .image-container {
+            margin: 0;
+            padding: 30px 0 0 0;
+            border:2px solid  green;
+            background-color: white;
+     }  
    }
+        .note {
+              box-shadow: 0 2px 6px rgba(3, 53, 197, 0.6);
+              font-size:15px;
+             background: linear-gradient(35deg, #004C57, #00999C);
+            border-right: 4px solid red;
+            padding:  5px 0 10px 5px;
+            margin: 20px 0 0 0;
+            border-radius: 0 0 20px;
+        }
+          @media (min-width: 768px) {
+       .note {
+              margin: 30px 0 0 0;
+       border-radius: 50px 0 0 0;
+   font-size:10px;
+    border-right: 10px solid red;
+      padding: 5px;
+    }
+        }
+          .image-container {
+      border: 1px solid black!important;
+      box-shadow: 0 2px 6px rgba(3, 53, 197, 0.6);
+      padding-top: 10px;
+      border-radius: 8px 8px 20px;
+  }
+
+             .img-title {
+              
+      padding: 5px;
+      background: linear-gradient(35deg, #004C57, #00999C);
+      color:white;border: 2px solid #CCE4F5;
+      font-size: 14px ;
+      border-radius: 15px 40px 15px 40px;
+      text-align: center;
+      margin: 0 40px;
+      }
+      
+ @media (min-width: 768px) {
+     .container p {
+       margin-right: 90px;padding: 35px; font-size: 22px !important; /* تكبير حجم الفقرات */
+      }
+      
+       .img-title {
+       border-radius: 15px 80px 15px 80px;
+       padding: 5px;
+      
+      color:white;border: 2px solid #CCE4F5;
+      font-size: 14px ;
+      font-size: 15px;
+      text-align: center;
+      margin: 0 70px;
+      }
+ }
   </style>
 </head>
 
 
 <body>
   <header class="header-logo">
-    <img src="images/clinic-logo.png" alt="شعار العيادة">
+    <img src="images/clinic-logo.png" alt="شعار العيادة" style="border-radius:50%">
     <div class="header-text">
       <div class="main-title">عيادة د. مختار الشرعبي الإستشارية</div>
       <div class="sub-title">الإستشارية للأنف والأذن والحنجرة والرأس والعنق،</div>
@@ -919,68 +938,81 @@ footer {
        <div class="main">
                   
      <h1>معرض الصور</h1>
-    <h2 style="text-align:center; color:#black; margin-bottom:10px;">نماذج من نتائج عملياتنا</h2>
-<p style="text-align:center; font-size:14px; color:#444; margin-bottom:30px;">
+    
+ <p style="text-align:center; font-size:14px; color:#444; margin-bottom:30px;">
 في هذا المعرض نوثق بعضًا من العمليات التي أُجريت باستخدام تقنيات المنظار الحديثة، وتشمل عمليات ترقيع الطبلة، تجميل الأنف، إصلاح كسور الأنف، وغيرها من الإجراءات المتقدمة التي نُفذت في عيادة د. مختار الشرعبي بمحافظة تعز.
 </p></div>
+    <br> 
+   <div class="img-title">نماذج من نتائج عملياتنا</div>  <br> 
 <div class="gallery">
-  <div class="image-box">
+  <div class="image-container">
     <img src="images/operations/tympanoplasty.webP" alt="نتيجة ترقيع الطبلة 1" onclick="openLightbox(this.src, this.alt)">
+     
+       <div class="note">   
     <div class="warning-box">عملية ترقيع ثقــب طبـلة الأذن بالمنظار</div>
-  </div>
-<div class="image-box">
+  </div> </div>
+<div class="image-container">
     <img src="images/operations/fess.webP" alt="نتيجة عملية جيوب أنفية5" onclick="openLightbox(this.src, this.alt)">
-            <div class="warning-box"> استئصال لحمية الجيوب الأنفية بالمنظار</div>
+               <div class="note">   
+    <div class="warning-box"> استئصال لحمية الجيوب الأنفية بالمنظار</div>
+  </div>
   </div>
   
-  
 
- <div class="image-box">
+ <div class="image-container">
     <img src="images/operations/plastic.webP" alt="نتيجة اصلاح جراحة تجميلية للاذن " onclick="openLightbox(this.src, this.alt)">
-    <div class="warning-box"> جراحة تجميلية لإصابة الأذن
-  </div></div>
+       <div class="note">   
+    <div class="warning-box"> الجراحــة التجميليـة لجروح الأذن
+  </div></div></div>
   
 
-  <div class="image-box">
+  <div class="image-container">
     <img src="images/operations/foreign.webP" alt="نتيجة إخراج جسم غريب بالمنظار 4" onclick="openLightbox(this.src, this.alt)">
-            <div class="warning-box" > إخراج جسم غريب بالمرئ المنظار </div>
-  </div>
+         <div class="note">   
+    <div class="warning-box">إخراج جسم غريب بالمرئ بالمنظار </div>
+  </div></div>
 
-  <div class="image-box">
+  <div class="image-container">
     <img src="images/operations/rhinoplasty.webP" alt="نتيجة تجميل الأنف 2" onclick="openLightbox(this.src, this.alt)">
-        <div class="warning-box"> عملية  تجميل تشوهات الأنف </div>
-  </div>
-  <div class="image-box">
+           <div class="note">   
+    <div class="warning-box"> عملية  تجميل تشوهات الأنف </div>
+    </div></div>
+  <div class="image-container">
     <img src="images/operations/rhinoplasty1.webP" alt="نتيجة تجميل الأنف1 6" onclick="openLightbox(this.src, this.alt)">
-            <div class="warning-box">عملية  تجميل تشوهات الأنف</div>
-  </div>
-
-  <div class="image-box">
+               <div class="note">   
+    <div class="warning-box">عملية  تجميل تشوهات الأنف</div>
+  </div>  
+</div>
+  <div class="image-container">
     <img src="images/operations/nasal-fracture2.webP" alt="نتيجة اصلاح كسر الأنف1 7" onclick="openLightbox(this.src, this.alt)">
-            <div class="warning-box">الجراحة التجميلية لإصابات الأنف </div>
+               <div class="note">   
+    <div class="warning-box">الجراحة التجميلية لإصابات الأنف </div>
   </div>
-
-  <div class="image-box">
+</div>
+  <div class="image-container">
     <img src="images/operations/Nasal-fracture.webP" alt="نتيجة اصلاح كسر الأنف 8" onclick="openLightbox(this.src, this.alt)">
-            <div class="warning-box">عملية اصلاح كسر الأنف</div>
-  </div>
+               <div class="note">   
+    <div class="warning-box">عملية اصلاح كسر عظم الأنف</div>
+  </div></div>
 
-  <div class="image-box">
+  <div class="image-container">
     <img src="images/operations/ootoplasty.webP" alt="نتيجة تجميل الأذن 9" onclick="openLightbox(this.src, this.alt)">
-            <div class="warning-box">الجراحة التجميلية للأذن</div>
-  </div>
-  <div class="image-box">
+               <div class="note">   
+    <div class="warning-box">الجراحة التجميلية للأذن</div>
+  </div></div>
+  <div class="image-container">
     <img src="images/operations/rhinoplastic.webP" alt="نتيجة اصلاح جرح الأنف 10" onclick="openLightbox(this.src, this.alt)">
-            <div class="warning-box">الجراحة التجميلية الأنف</div>
-  </div>
+               <div class="note">   
+    <div class="warning-box">الجراحة التجميلية للأنف</div>
+  </div></div>
 
 
 </div>
- </div>
-    
-  <div class="cta-button">
-    <a href="index.html" style="color: black">← العودة للرئيسية</a>
-  </div><br>    
+
+ 
+    <br>   
+  <div class="img-title">
+    <a href="index.html" style="color: white">← العودة للرئيسية</a> </div><br>    
 <footer>
     <nav>
       <div class="nav-row">
