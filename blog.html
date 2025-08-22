@@ -135,7 +135,7 @@
      text-align: center;
       font-size: 13px;
       shadow: 0 6px 4px rgba(236, 235, 255, 0.9);
-      margin: 0;display: flex;
+      margin: 2px;display: flex;
       flex-direction: column;
       gap: 15px;
     }
@@ -148,13 +148,13 @@
     }
     .nav-link {
      background: linear-gradient(35deg, #00999C, #004C57);
-      padding: 2px 5px;
+      padding: 2px 6px;
       border-radius: 4px;
       color: #E0F2F1;
       text-shadow: 0 3px 1px rgba(3, 25, 83, 0.7);
       text-decoration: none;
       box-shadow: 0 0 0 0.3px rgba(243, 245, 212, 4);
-      font-size: 11px;
+      font-size: 10px;
       transition: all 0.3s ease;
       display: inline-block;
     }
@@ -169,19 +169,21 @@
     
       }
       .nav-row {
-        gap: 40px;
+        gap: 35px;
 
      margin-bottom: 10px;       }
       .nav-link {
         margin-top: 20px;padding: 12px 18px;
        box-shadow: 0 0 0 0.8px rgba(243, 245, 212, 8);
-       border-radius: 20px; font-size: 32px;
+       border-radius: 20px; font-size: 28px;
        
     }
     }
    header {
-      background: linear-gradient(35deg, #00999C, #004C57);
-
+      
+  background: linear-gradient(35deg, #00999C, #004C57);
+  text-shadow: 0 3px 1px rgba(3, 25, 83, 0.7);
+      background-color: #004D40;
       color: white;
       padding: 20px;
       display: flex;
@@ -211,64 +213,21 @@
     }
     .sub-title {
       font-size: 10px;
-      color: #D0FFFC;
+      color: #FFFEF1;
       white-space: nowrap;
     }
-        @media (min-width: 768px) {
+                @media (min-width: 768px) {
           header {
        border-radius: 0 0 55px 55px;
-          }
-      .header-logo img {
+          }   
+                  .header-logo img {
         height: 110px;
       }
       .main-title {
         font-size: 30px;
       }
       .sub-title {
-        font-size: 23px;
-      }
-    }
-
-    header {
-      background-color: #004D40;
-      color: white;
-      padding: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-    .header-logo img {
-      height: 45px;
-      width: auto;
-    }
-    .header-text {
-      display: flex;
-      line-height: 2.2;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    .main-title {
-      font-size: 13px;
-      font-weight: bold;
-      color: #ffffff;
-      white-space: nowrap;
-    }
-    .sub-title {
-      font-size: 10px;
-      color: #D0FFFC;
-      white-space: nowrap;
-    }
-        @media (min-width: 768px) {
-      .header-logo img {
-        height: 100px;
-      }
-      .main-title {
-        font-size: 30px;
-      }
-      .sub-title {
-        font-size: 23px;
+        font-size: 29px;
       }
     }
     .container {
@@ -532,10 +491,10 @@ footer {
                 
     .subsection {
       background-color: white;
-      padding:0 0 0 0;
+      padding:10px 0 0 0;
       margin: 10px 10px;
       border-radius: 8px;
-      
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
       position: relative;
       border-right: 4px solid #00709E;
     }
@@ -626,6 +585,7 @@ footer {
     }
  
       .warning-box p {
+      
       font-size: 12px;
       line-height: 1.7;
      padding-right: 10px; color: black;
@@ -650,6 +610,7 @@ footer {
   }
     .subsection  {
       margin: 20px 30px;border-right: 9px solid #00709E;
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
       padding: 10px 50px;
       font-size: 12px!important;
     }
@@ -669,6 +630,12 @@ footer {
       border-left: 5px solid  #00A19D
       ;
 }
+    .main {
+     font-size: 12px;  margin: 0 50px 0 50px;
+         border-right: 7px solid #3E67B6;
+ border-left: 7px solid #3E67B6;
+  }
+    
         .imp-section {
       border-radius: 40px;
          border-right: 9px solid red;
@@ -699,7 +666,7 @@ footer {
  font-size:15px;
  text-align: center;
  padding: 5px 10px;
-  margin: 8px 0 8px 0;
+  margin: 18px 0 8px 10px;
   border-radius: 20px 0 0;
 }
   
