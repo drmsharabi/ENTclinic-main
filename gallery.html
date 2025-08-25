@@ -27,11 +27,20 @@
   "description": "شاهد نتائج عمليات الأنف والأذن والحنجرة التي أجراها د. مختار الشرعبي في تعز",
   "url": "https://ent.drmsharabi.com/gallery",
   "primaryImageOfPage": {
-    "@type": "ImageObject",
-    "url": "https://ent.drmsharabi.com/images/clinic-logo.png",
-    "width": 1200,
-    "height": 630
+{
+  "@type": "ImageObject",
+  "url": "https://ent.drmsharabi.com/images/clinic-logo.png",
+  "width": {
+    "@type": "QuantitativeValue",
+    "value": 1200,
+    "unitText": "px"
   },
+  "height": {
+    "@type": "QuantitativeValue",
+    "value": 630,
+    "unitText": "px"
+  }
+}
   "breadcrumb": {
     "@type": "BreadcrumbList",
     "itemListElement": [
@@ -103,11 +112,13 @@
 },   
     "priceRange": "$$",
     "openingHoursSpecification": [
-      {"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday","Monday","Tuesday","Wednesday"],"opens":"09:00","closes":"13:00"},
-      {"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday","Monday","Tuesday","Wednesday"],"opens":"16:00","closes":"20:00"},
-      {"@type":"OpeningHoursSpecification","dayOfWeek":"Thursday","opens":"09:00","closes":"13:00"},
-      {"@type":"OpeningHoursSpecification","dayOfWeek":"Friday","opens":"Closed","closes":"Closed"}
-    ],
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Saturday","Sunday","Monday","Tuesday","Wednesday","Thursday"],
+          "opens": "10:00:00",
+          "closes": "13:00:00"
+        }
+      ]
     "medicalSpecialty": "أنف وأذن وحنجرة",
     "logo": "https://ent.drmsharabi.com/images/clinic-logo.png",
     "sameAs": [
@@ -147,7 +158,7 @@
       justify-content: center;
       flex-wrap: wrap;
       text-decoration: none;
-      rgba(236, 235, 255, 0.9);gap: 15px;
+      rgba(236, 235, 255, 0.9);gap: 8px;
     }
     .nav-link {
      background: linear-gradient(35deg, #00999C, #004C57);
@@ -157,7 +168,7 @@
       text-shadow: 0 3px 1px rgba(3, 25, 83, 0.7);
       text-decoration: none;
       box-shadow: 0 0 0 0.3px rgba(243, 245, 212, 4);
-      font-size: 11px;
+      font-size: 10px;
       transition: all 0.3s ease;
       display: inline-block;
     }
@@ -167,12 +178,12 @@
     }
     @media (min-width: 768px) {
       nav {
-        font-size: 16px;
+        font-size: 6px;
         padding: 20px 10px;
     
       }
       .nav-row {
-        gap: 35px;
+        gap: 15px;
 
      margin-bottom: 10px;       }
       .nav-link {
@@ -288,19 +299,24 @@ h2 {
 /* أنماط أساسية للمعرض */
 .gallery {
   display: grid;
+ border: 1px solid #1A8CDC; background-color: #F2FAFF;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 30px;
   align-items: start;
-  padding: 30px;
+  padding: 30px 10px;
   max-width: 1400px;
-  margin: 0 auto;
+  margin: 0 5px;
 }
 
-.gallery-item {
+.gallery {
+  
+ border: 1px solid #1A8CDC !important;}
+ 
+ .gallery-item {
   display: flex;
   flex-direction: column;
   height: 100%;
-  border: 2px solid black;min-height: 380px;
+  min-height: 30px;
   background: white;
   border-radius: 12px;
   overflow: hidden;
@@ -315,35 +331,16 @@ h2 {
 }
 
 .gallery img {
-  width: 100%;
-  height: auto;
+   width: 90%;
+  height: 200px;
   object-fit: cover;
   border-radius: 12px 12px 0 0;
   transition: transform 0.5s ease;
 }
-
-.gallery-item:hover img {
-  transform: scale(1.03);
-}
- .image-caption {
-    width: 100% !important; /* يشغل العرض بالكامل */
-  max-width: 100% !important; /* إزالة أي تحديد سابق للعرض */
-  margin: 15px auto 0 !important; /* توسيط أفقي مع هامش علوي */
-  padding: 20px 15px !important;
-  text-align: center !important;
- font-size: 17px;
-  color: #004B8C;
-  background: linear-gradient(to bottom, #D0D9F9, #e6f0f8);
-  border-top: 1px solid rgba(0, 75, 140, 0.1);
-  position: relative;
-  flex-grow: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 1.5;
-}
-
- }
+    .gallery img:hover {
+      transform: scale(1.8);
+      background-color: #f1f1f1;
+    }
 
 
 
@@ -351,38 +348,57 @@ h2 {
 @media (max-width: 768px) {
   .gallery {
     grid-template-columns: 1fr;
+    margin: 0px;
+    border: 3px solid #1A8CDC;
     padding: 20px 15px;
     gap: 25px;
   }
   
   .gallery-item {
-    min-height: 340px;
+    height: auto;
   }
   
 
 }
 
 /* التنسيق لشاشات متوسطة */
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (max-width: 769px) and  {
   .gallery {
-    grid-template-columns:  minmax(1, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(680px, 1fr));
   }
 }
 
 /* تأثيرات خاصة للعرض على سطح المكتب */
 @media (min-width: 1025px) {
   .gallery {
-    grid-template-columns: repeat(auto-fill, minmax(1, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   }
   
   .gallery-item {
     min-height: 400px;
   }
   
-
+  .image-caption {
+    font-size: 18px;
+    padding: 45px;
+  }
+      .gallery img:hover {
+      transform: scale(2.8);
+      background-color: #f1f1f1;
+    }
 }
 
-
+/* أنيميشن عند التحميل */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 .gallery-item {
   animation: fadeInUp 0.6s ease forwards;
@@ -399,14 +415,6 @@ h2 {
   text-align: center;
   margin: 10px 0;
 }
-
-@media (max-width: 768px) {
-  .image-caption {
-    padding: 15px 10px !important;
-    font-size: 16px !important;
-  }
-}
-
 
  footer {
  border-top: 4px solid white; 
@@ -432,7 +440,7 @@ h2 {
   margin-bottom: 10px;
   font-weight: bold;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.5;
   max-width: 90%;
 }
@@ -444,7 +452,7 @@ h2 {
   border-radius: 20px;
   color: white;
   font-size: 12px;
-  font-weight: bold;
+  
 }
 
 .copyright-container {
@@ -504,7 +512,7 @@ h2 {
   
   .working-hours {
     font-size: 28px !important;
-    padding: 5px 90px !important;
+    padding: 5px 40px !important;
   }
   
   .social-icon {
@@ -807,7 +815,7 @@ color: black;
 }
   @media (min-width: 768px) {
        .warning-box {
-      margin: 20px 0 20px 10px;
+      margin: 20px 0 20px 30px;
        border-radius: 45px 0 0 0;
    font-size:7px;
     
@@ -897,6 +905,35 @@ color: black;
       padding-top: 10px;
       border-radius: 8px 8px 20px;
   }
+ .back-link {
+  text-align: center;
+  margin: 10px 0;
+}
+
+
+.back-link a {
+  background-color: #A1115E;
+  color: white;
+  padding: 5px 9px;
+  border-radius: 20px;
+  border: 2px solid white;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 3px 1px rgba(32, 0, 19, 0.5);
+  line-height: 1.6;
+  max-width: fit-content;
+  animation: pulse 3s infinite; /* تطبيق تأثير النبض */
+}
+/* سطح المكتب */
+@media (min-width: 768px) {
+  .back-link a {
+    border-radius: 30px;margin: 10px;font-size: 35px;
+    font-size: 40px;border-radius: 16px;
+    padding: 6px 18px;
+  }
+    }
 
              .img-title {
               
@@ -904,9 +941,10 @@ color: black;
       background: linear-gradient(35deg, #004C57, #00999C);
       color:white;border: 2px solid #CCE4F5;
       font-size: 14px ;
-      border-radius: 15px 40px 15px 40px;
+      border-radius:  40px  0 20px 20px;
       text-align: center;
-      margin: 0 40px;
+     border-right: 9px solid #A1115E;
+      margin: 0 50px;
       }
       
  @media (min-width: 768px) {
@@ -915,7 +953,7 @@ color: black;
       }
       
        .img-title {
-       border-radius: 15px 80px 15px 80px;
+       border-radius: 80px 0 15px 40px;
        padding: 5px;
       
       color:white;border: 2px solid #CCE4F5;
@@ -923,6 +961,7 @@ color: black;
       font-size: 15px;
       text-align: center;
       margin: 0 70px;
+      border-right: 19px solid #A1115E;
       }
  }
   </style>
@@ -943,7 +982,7 @@ color: black;
                   
      <h1>معرض الصور</h1>
     
- <p style="text-align:center; font-size:14px; color:#444; margin-bottom:30px;">
+ <p style="text-align:center; font-size:12px; color:#444; margin-bottom:30px;font-weight: bold;">
 في هذا المعرض نوثق بعضًا من العمليات التي أُجريت باستخدام تقنيات المنظار الحديثة، وتشمل عمليات ترقيع الطبلة، تجميل الأنف، إصلاح كسور الأنف، وغيرها من الإجراءات المتقدمة التي نُفذت في عيادة د. مختار الشرعبي بمحافظة تعز.
 </p></div>
     <br> 
@@ -1015,7 +1054,7 @@ color: black;
 
  
     <br>   
-  <div class="img-title">
+  <div class="back-link">
     <a href="index.html" style="color: white">← العودة للرئيسية</a> </div><br>    
 <footer>
     <nav>
@@ -1037,8 +1076,7 @@ color: black;
       <div class="address-card">
         <span itemprop="streetAddress">ركن مفرق ماوية، مبنى مختبرات دار الصحة</span>،
         <span itemprop="addressLocality">تعز</span>،
-        <span itemprop="addressCountry">اليمن</span>
-      </div>
+        <span itemprop="addressCountry">اليمن</span></div>
     </div>
     
             
@@ -1065,7 +1103,7 @@ color: black;
         <img src="images/social/gmail.webP" alt="بريد إلكتروني" width="30" height="30" />
       </a>
     </div>
-    </div>
+    
      <div class="footer-section">
 
       <p class="working-hours" style="color">
