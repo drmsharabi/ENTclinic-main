@@ -224,7 +224,7 @@
      text-align: center;
       font-size: 13px;
       shadow: 0 6px 4px rgba(236, 235, 255, 0.9);
-      margin: 2px;display: flex;
+      margin: 1px;display: flex;
       flex-direction: column;
       gap: 15px;
     }
@@ -233,11 +233,11 @@
       justify-content: center;
       flex-wrap: wrap;
       text-decoration: none;
-      rgba(236, 235, 255, 0.9);gap: 15px;
+      rgba(236, 235, 255, 0.9);gap: 10px;
     }
     .nav-link {
      background: linear-gradient(35deg, #00999C, #004C57);
-      padding: 2px 9px;
+      padding: 2px 6px;
       border-radius: 4px;
       color: #E0F2F1;
       text-shadow: 0 3px 1px rgba(3, 25, 83, 0.7);
@@ -810,46 +810,44 @@ border: 3px solid white;
   }
 }
 .booking-container {
-  border: 2px solid #009688;
-  border-radius: 15px;
-  padding: 20px;
-  text-align: center;
-  max-width: 100%;
-  margin: 10px ;  
-  font-family: 'Cairo', sans-serif;
-  background-color: white;
-  box-sizing: border-box;
+  background-color: #008190;
+  border-right:5px solid #ffc107;
+          box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
+          border-radius: 8px;
+ padding: 20px 20px;
+  margin: 20px 10;
+  border-radius: 38px 0 38px 0;
 }
 
 .booking-title {
   color: yellow;
   font-weight: bold;
-  text-shadow: 0 3px 1px rgba(3, 25, 83, 0.7);
-  font-size: 13px;
+  font-size: 16px;
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .booking-subtitle {
-  color: white;
-  text-shadow: 0 3px 1px rgba(3, 25, 83, 0.7);
   font-weight: bold;
-  font-size: 12px;
+ color: white; 
+ font-size: 11px;
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .booking-numbers {
-  color: #FFE6FD;
-  font-size: 11px;
- text-shadow: 0 3px 1px rgba(3, 25, 83, 0.7);
-   font-weight: bold;
-  margin-bottom: 28px;
+  color: #D6FFF6;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 18px;
   line-height: 1.6;
+  text-align: center;
 }
 
 .booking-buttons {
   display: flex;
   justify-content: center;
-  gap: 22px;
+  gap: 12px;
   flex-wrap: wrap;
 }
 
@@ -857,19 +855,20 @@ border: 3px solid white;
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 8px 16px;
+  padding: 5px 16px;
   font-weight: bold;
   font-size: 14px;
-  box-shadow: 0 0 1px rgba(33, 95, 97, 0.7);
+         box-shadow: 0 2px 6px rgba(33, 95, 97, 0.7);
          border-radius: 10px;
   text-decoration: none;
   transition: all 0.3s ease;
+  margin: 20px auto;
 }
 
 .booking-button.sms {
   background-color: #f0fafa;
        box-shadow: 0 2px 6px rgba(33, 95, 97, 0.7); color: black;
-  border: 0.5px solid #009688;
+  border: 2px solid #009688;
 }
 
 .booking-button.sms:hover {
@@ -879,7 +878,8 @@ border: 3px solid white;
 .booking-button.whatsapp {
   background-color: #f0fafa;
   color: black;
-  border: 0.5px solid #009688;
+  border: 2px solid #009688;
+  margin-top: 0;
 }
 
 .booking-button.whatsapp:hover {
@@ -892,49 +892,38 @@ border: 3px solid white;
       border: 0.1px solid #009688;
       box-shadow: 0 9px 6px rgba(33, 95, 97, 0.7);
        border-radius: 5%;
-       animation: pulse 2s infinite;
-
+       animation: pulse 2s infinite; /* تطبيق تأثير النبض */
 }
 
 @keyframes pulse {
   0% {
-    transform: scale(1);  }
+    transform: scale(1); /* الحجم الأصلي */
+  }
   50% {
-    transform: scale(1.1);   }
+    transform: scale(1.1); /* تكبير الأيقونة بنسبة 10% */
+  }
   100% {
-    transform: scale(1);
+    transform: scale(1); /* العودة للحجم الأصلي */
   }
 
 
 }
 
+/* نسخة سطح المكتب */
 @media (min-width: 768px) {
- .booking-container {
-  border: 2px solid #009688;
-  
-  
-  text-align: center;
-  max-width: 100%;
-  padding: 50px 40px;
-  margin: 20px 70px ; 
-  border-radius: 90px 0 28px 0;
-  font-family: 'Cairo', sans-serif;
-  background-color: white;
-  box-sizing: border-box;
-}
-.booking-numbers {
-  font-size: 12px;
-  margin-bottom: 90px;
-}
-   .booking-button {
-    font-size: 19px; 
-
-    padding: 18px 12px; 
-    /
+  .booking-container {
+    max-width: 90٪; /* تكبير العرض */
+   border-right: 9px solid #ffc107;
+   border-radius: 68px 10px;
+   padding: 40px 10px; margin: 40px; /* هامش جوانب أكبر */
+  }
+  .booking-button {
+    font-size: 19px; /* تكبير الخط */
+    padding: 14px 22px; 
+    margin: 30px auto;
   }
   .booking-icon {
-    width: 58px; 
-    */
+    width: 58px; /* تكبير الأيقونة */
     height: 58px;
   }
   .booking-title {
@@ -1229,8 +1218,8 @@ footer {
     <p><strong>      محافظة تعز </strong> ، الحوبان،<strong> ركن مفرق ماوية</strong>, الشارع العام،  – مبنى مختبرات دار الصحة، – اليمن </p>   </div>   <br>
       
  
-  <blockquote class="warning-box" style=" border-right: 4px solid red;  background: linear-gradient(35deg, #00999C, #004C57);color:white; margin:30px 20px ;padding:10px ;font-size:13px;text-align:center">
-    <em>“إذا كنت تبحث عن أفضل دكتور أنف وأذن وحنجرة في اليمن أو استشاري حنجرة موثوق في تعز، فإن الدكتور مختار الشرعبي هو خيارك الأمثل</em>  </blockquote>
+  <blockquote class="warning-box" style=" border-right: 4px solid red;  background: linear-gradient(35deg, #00999C, #004C57);color:white; margin:30px 20px ;padding:15px ;font-size:13px;text-align:center">
+    <em>“إذا كنت تبحث عن أفضل دكتور أنف وأذن وحنجرة في اليمن أو استشاري حنجرة موثوق في تعز، فإن الدكتور<strong> مختار الشرعبي  </strong>  هو خيارك الأمثل</em>  </blockquote>
 
   
 <div></div>
