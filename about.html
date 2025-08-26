@@ -17,6 +17,7 @@
 <meta property="og:image" content="https://ent.drmsharabi.com/images/clinic-logo.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:alt" content="شعار عيادة د. مختار الشرعبي">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
 <meta property="og:type" content="website">
 <script type="application/ld+json">
 {
@@ -125,11 +126,12 @@
   <style>
     body{
       font-family: 'Cairo', sans-serif;
+        overflow-x: hidden; /* لمنع التمرير الأفقي */
       margin: 0;
       padding: 0;
       direction: rtl;
-      background-color: #f9f9f9;
       text-align: right;
+      background-color: #FCFFFE;
     }
        nav {
      
@@ -149,14 +151,16 @@
       rgba(236, 235, 255, 0.9);gap: 15px;
     }
     .nav-link {
-     background: linear-gradient(35deg, #00999C, #004C57);
-      padding: 2px 9px;
+     background: linear-gradient(135deg, #00999C, #003A4A);
+      padding: 2px 6px;
       border-radius: 4px;
       color: #E0F2F1;
       text-shadow: 0 3px 1px rgba(3, 25, 83, 0.7);
       text-decoration: none;
-      box-shadow: 0 0 0 0.3px rgba(243, 245, 212, 4);
-      font-size: 11px;
+      border-block: 1px solid #89DFF6;
+      box-shadow: 0 3px 1px rgba(1, 53, 83, .7);
+      font-weight: blod;
+      font-size: 10px;
       transition: all 0.3s ease;
       display: inline-block;
     }
@@ -171,20 +175,23 @@
     
       }
       .nav-row {
-        gap: 35px;
+        gap: 45px;
 
      margin-bottom: 10px;       }
+     
       .nav-link {
-        margin-top: 20px;padding: 12px 18px;
-       box-shadow: 0 0 0 0.8px rgba(243, 245, 212, 8);
+        padding: 5px 15px;margin-top: 20px;
+        
+       box-shadow: 0 8px 1px rgba(1, 53, 83, .7);
        border-radius: 20px; font-size: 28px;
-       
+       border-block: 2px solid #89DFF6;
+       padding: 3px 15px;
     }
     }
       header {
       margin-bottom: 0;
         background: linear-gradient(35deg, #00999C, #004C57);
-
+  border-bottom: 1px solid #C0F0FF;
       color: white;
       padding: 20px;
       display: flex;
@@ -193,7 +200,7 @@
       flex-wrap: wrap;
       gap: 18px;
       border-radius: 0 0 25px 25px;
-      box-shadow: 0 4px 12px rgba(0, 77, 64, 0.3);
+        box-shadow: 0 3px 24px rgba(0,71,51,.8);
     }
     
     .header-logo img {
@@ -232,36 +239,12 @@
       }
     }
     .container {
-  max-width: 100%; /* بدلاً من 960px */
-  margin: 15px auto;
-  padding: 7px; /* تقليل الحشوة */
-  box-sizing: border-box; /* مهم جداً */
-}
-
-    h1 {
-      background-color: white;
-      color: #C20041;
-         border-right: 8px solid red;
-      border: 1px solid #01789B ;
-      text-align: center;
-      padding: 5px;
-      box-shadow: 0 9px 6px rgba(33, 95, 97, 0.7);
-      border-radius: 9px;
-      font-size: 22px;
-      margin: 5px auto;
-      width: 80%;
-      max-width: 70%;
+        max-width: 920px; margin: auto; background: var(--card);
+      border: 1px solid #e5eaf1; border-radius: 18px; padding: 28px 26px 22px;
+      box-shadow: 0 8px 24px rgba(13,71,161,.06);
     }
-   @media (min-width: 768px) {
-     h1{
- border-right: 18px solid red;
- border-radius: 20px;
- font-size: 67px;
- margin: 30px auto;
- padding-right: 10px;
- width: 79%;
- }
-  }
+
+    
     h2 {
       text-align: center;
       color: #004D40;
@@ -275,7 +258,7 @@
     }
     p {
       font-size: 12px;
-      padding: 7px;line-height: 1.8;
+      padding: 10px;line-height: 1.8;
       margin-right: 7px;
       color: #333;
     }
@@ -287,6 +270,7 @@ ul {
 
 li {
   margin-right: 5px; /* تقليل من 12px */
+  font-size: 12px;
 }
 hr {
   margin: 15px 0 15 ;  /* هامش علوي وسفلي صغير (5px) وبدون هوامش جانبية */
@@ -295,21 +279,20 @@ hr {
   border: none;   /* إزالة الحدود الافتراضية */
   background-color: #ddd; /* لون الخط */
 }
-    li {
-      font-size: 12px;
-     margin-right: 12px
-    }
-  
 
 
+
+@media (min-width: 768px) {
   li {
     margin-top: 2px; /* قللت من 5px إلى 2px */
     font-size: 12px;
     padding: 5px 10px; /* بدلاً من 40px في جميع الجهات */
     margin-right: 20px; /* قللت من 40px */
-    line-height: 1.4; /* للتحكم في المسافة بين الأسطر */
+    line-height: 1.7; /* للتحكم في المسافة بين الأسطر */
   }
-
+ p {
+     padding: 20px;
+ }
    hr {
       hight: 6px;
       margin: 45px 0;   
@@ -361,11 +344,11 @@ hr {
 .cta-button {
  white-space: nowrap; 
   color: black;
-    background-color: #D4FFEA;
+    background-color: white;
     border: 1px solid  #004D40;
     text-decoration: none;
     font-weight: bold;
-    box-shadow: 0 4px 8px rgba(65, 18, 57, 0.2);
+     box-shadow: 1px 2px 4px rgba(0,71,51,0.8);
     width: fit-content;
     display: block;
     margin: 20px auto;
@@ -421,7 +404,7 @@ font-size: 44px!important
       text-align: center;
       color: white;
       border-radius: 15px;
-      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 3px 8px rgba(0,71,51,.8);
       position: right;
       border-right: 4px solid red;
     }
@@ -432,7 +415,7 @@ font-size: 44px!important
       padding: 15px 10;
       margin: 0 5px;
       border-radius: 8px;
-       box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);;
+       box-shadow: 0 0 6px rgba(0,71,51,.8);
       position: relative;
       border-right: 4px solid #00709E;
     }
@@ -470,7 +453,7 @@ font-size: 44px!important
   padding: 25px;
   background-color: #F2FAFF;
   
-      box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
+      box-shadow: 0 0 6px rgba(0,71,51,.8);
       border-left: 5px solid  #00A19D
       ;
 }
@@ -495,7 +478,7 @@ font-size: 44px!important
   padding: 0;
   background-color: white;
   border-radius: 12px;
-      box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
+      box-shadow: 0 0 6px rgba(0,71,51,.8);
       border-left: 5px solid white;
 }
   @media (min-width: 768px) {
@@ -523,7 +506,7 @@ font-size: 44px!important
       border-radius: 40px;
          border-right: 9px solid red;
          border-radius: 8px;
-      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+     box-shadow: 2px 2px 4px rgba(0,71,61,.5);
       margin: 40px;
     padding: 30px 30px;
       }
@@ -540,7 +523,7 @@ font-size: 44px!important
     margin: 25px 0;
   }
   ul{
-  margin: 10px 30
+  padding: 30px;margin: 10px 30px
 }
   h3 {
     font-size: 14px;
@@ -550,26 +533,63 @@ font-size: 44px!important
 
      
 .warning-box {
-  background-color: #F2FAFF;
-  border-left: 5px solid #ffc107;
-          box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
- padding: 5px 0;
-  margin: 10px 10px 10px 0;
-  border-radius: 0 8px 8px 0;
-}
+        margin-top: 22px; background: #f2f7ff; border: 1px solid #d9e6ff; border-radius: 14px;
+      padding: 16px 14px; font-size: 1rem;
+      box-shadow: 0 2px 4px rgba(0,71,61,.2);
+      margin: 10px ;
+        border-right: 5px solid #5996C3;
+    }
   @media (min-width: 768px) {
        .warning-box {
-      margin: 50px 30 30px 0;
+      margin: 50px 30px 30px 0;
        border-radius: 2px;
     border-left: 12px solid #ffc107;
-      padding: 15px 15px;
+      padding: 15px 35px;
     }
   }
-   @media (min-width: 768px) { 
-  warning-box {
-      margin-left: 0!important;
+
+       .wrap {
+      max-width: 920px; margin: 10px; background: var(--card);
+      border: 1px solid #e5eaf1; border-radius: 18px; padding: 8px 6px 22px;
+      box-shadow: 0 8px 14px rgba(13,71,111,.5);
+    }
+       @media (min-width: 768px) { 
+  .wrap {
+      margin: 20px 40px;
   }
    }
+  h1 {
+      background-color: #EEF4FB;
+      color: var(--accent)
+         border-right: 8px solid red;
+      border: 1px solid #01789B ;
+      text-align: center;
+      padding: 5px;
+      box-shadow: 0 9px 6px rgba(33, 95, 97, 0.7);
+      border-radius: 9px;
+      font-size: 22px;
+      margin: 5px auto;
+      width: 80%;
+      max-width: 70%;
+    }
+   @media (min-width: 768px) {
+     h1{
+ border-right: 18px solid red;
+ border-radius: 20px;
+ font-size: 67px;
+ margin: 30px auto;
+ padding-right: 10px;
+ width: 79%;
+ }
+  }
+    .tag { color: var(--accent); font-weight: 700;
+    border-left: 3px solid yellow}
+    ol { margin: 0; padding: 0 1.2rem; }
+    li { margin: 14px 0; font-weight: 700; }
+    li .details { font-weight: 400; margin-top: 8px; }
+    .details ul { margin: 6px 0 0 0; padding-inline-start: 1.2rem; }
+    .details li { font-weight: 400; margin: 6px 0; }
+ 
 
  footer {
  border-top: 4px solid white; 
@@ -637,6 +657,8 @@ font-size: 44px!important
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
+box-shadow: 0 3px 3px rgba(1, 53, 83, .9);
+      border-block: 1px solid #89DFF6;
 }
 
 .social-icon:hover {
@@ -667,14 +689,17 @@ footer {
   }
   
   .social-icon {
-    width: 60px;
-    height: 60px;
+     margin-right: 10px;width: 70px;
+    height: 70px;
+    box-shadow: 0 8px 3px rgba(1, 53, 83, .9);
+      border-block: 2px solid #89DFF6;
+        gap: 80px;
   }
   
   .social-icon img {
-    width: 40px;
-    height: 40px;
-    gap: 60px;
+    width: 50px;
+    height: 50px;
+    gap: 80px;
   }
   
   .copyright-container {
@@ -785,10 +810,10 @@ footer {
 /* نسخة سطح المكتب */
 @media (min-width: 768px) {
   .booking-container {
-    max-width: 90٪; /* تكبير العرض */
+    max-width: 40٪; /* تكبير العرض */
    border-right: 9px solid #ffc107;
    border-radius: 68px 10px;
-   padding: 40px 10px; margin: 40px; /* هامش جوانب أكبر */
+   padding: 40px 10px; margin: 40px 80px; /* هامش جوانب أكبر */
   }
   .booking-button {
     font-size: 19px; /* تكبير الخط */
@@ -846,44 +871,40 @@ footer {
     </div>
   </header>
  
-  
-       <div class="main">
+    <div class="wrap" aria-labelledby="title">
+    <h1 id="title">✅ <span class="tag"> قصتنــا</span></h1>
           
-    <h1>قصتنـا</h1>
+
 
       
  <img src="images/endoscopy.jpeg" alt="صورة الدكتور مختار الشرعبي" class="main-image"> </div>
-       <div class="main-section">
-
-    <p>في عالم مليء بالتحديات الصحية، تبرز عيادة د. مختار الشرعبي كوجهة رائدة في محافظة تعز، تقدم رعاية فائقة الجودة ومتخصصة في طب ومناظير الأنف والأذن والحنجرة والرأس والعنق.</p>
-
-    <p>الدكتور مختار حاصل على درجة الدكتوراه المهنية (بورد عربي) من سوريا، وأجرى تدريبات عليا في جراحات المناظير الدقيقة داخل وخارج اليمن.</p>
-
-  <br>
-
-      <h2>ما الذي يميزنا؟</h2>
-  <div class="warning-box">    <ul>
-      <li>الدقة في التشخيص باستخدام مناظير متطورة</li>
+    <p></div><br>
+    في ظل التحديات الصحية المتزايدة، تبرز <strong>عيادة الدكتور مختار الشرعبي الاستشارية للأنف والأذن والحنجرة</strong> كمركز رائد للرعاية الطبية المتخصصة في محافظة 
+    <strong>تعز – اليمن</strong>. تأسست العيادة لتقديم خدمات متقدمة في علاج أمراض الأنف والأذن والحنجرة والرأس والعنق، معتمدة على خبرة طبية واسعة وتقنيات حديثة جعلتها وجهة مفضلة لمرضى تعز والمحافظات المجاورة مثل 
+    <strong>إب، الضالع، الحديدة، ولحج</strong>.</p>
+    <div class="wrap" style="padding:1px;margin:0 30px">
+ 
+   <h2>ما الذي يميزنا؟</h2>
+  </div>
+      <div class="wrap" >
+  <p>    بفضل الدمج بين الخبرة الطبية والتقنيات الحديثة والرؤية الإنسانية، أصبحت <strong>عيادة الدكتور مختار الشرعبي</strong> الخيار المفضل للمرضى الباحثين عن رعاية طبية موثوقة ومتخصصة
+  </p> 
+  <div class="warning-box">   
+  <ul style="padding: 10px 20px 10px 3px">   <li>الدقة في التشخيص باستخدام مناظير متطورة</li>
       <li>خبرة واسعة تتجاوز 10 سنوات</li>
       <li>المتابعة الدقيقة للحالات المزمنة والمعقدة</li>
       <li>الالتزام بالمعايير الطبية العالمية والإنسانية</li>
       <li>تنوع الخدمات بين علاجية وتشخيصية وجراحية</li>
       <li>أحدث التقنيات في جراحات الجيوب الأنفية، الأذن، اضطرابات البلع، الصوت، التنفس</li>
+            <li>أسعار مدروسة تراعي الظروف المعيشية</li>
     </ul> 
-        <div class="cta-button" style="background-color:white">
+ </div>       <div class="cta-button" style="background-color:white">
       <a style="color: blue" href="services.html">📋 استعرض جميع الخدمات</a>
-    </div> </div>
+    </div> 
   
-  <br>
-
-    <h2>لماذا تختارنا؟</h2>
- <div class="warning-box">   <ul>
-      <li>فريق طبي متخصص ومؤهل</li>
-      <li>أجهزة طبية حديثة ومناظير عالية الدقة</li>
-      <li>رعاية شاملة ومتابعة دقيقة للحالات</li>
-      <li>أسعار مدروسة تراعي الظروف المعيشية</li>
-    </ul>
-</div>
+  
+</div><br>
+    <h2> طريـقــة الحجـز في العيـادة</h2>
 
 
 </div>
@@ -915,9 +936,9 @@ footer {
       👆 رسالة واتساب
     </a>
   </div>
-</div>  
+</div>  <hr>
      <div href="index.html" style=":color:blue" class="cta-button"> ➡ عودة  للصفحة  الرئيسية</div>
-   <footer>
+ <hr>  <footer>
     <nav>
       <div class="nav-row">
         <a href="index.html" class="nav-link">🏠 الرئيسية</a>
