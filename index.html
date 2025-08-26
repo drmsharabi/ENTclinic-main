@@ -852,6 +852,48 @@ border: 1px solid #e5eaf1;
   flex-wrap: wrap;
 }
 
+.booking-container {
+  background-color: #008190;
+  border-right:5px solid #ffc107;
+          box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
+          border-radius: 8px;
+ padding: 20px 20px;
+  margin: 20px 10;
+  border-radius: 38px 0 38px 0;
+}
+
+.booking-title {
+  color: yellow;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.booking-subtitle {
+  font-weight: bold;
+ color: white; 
+ font-size: 11px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.booking-numbers {
+  color: #D6FFF6;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 18px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.booking-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
 .booking-button {
   display: flex;
   align-items: center;
@@ -878,9 +920,8 @@ border: 1px solid #e5eaf1;
 
 .booking-button.whatsapp {
   background-color: #f0fafa;
-  color: black;
+        box-shadow: 0 2px 6px rgba(33, 95, 97, 0.7); color: black;
   border: 2px solid #009688;
-  margin-top: 0;
 }
 
 .booking-button.whatsapp:hover {
@@ -913,11 +954,10 @@ border: 1px solid #e5eaf1;
 /* نسخة سطح المكتب */
 @media (min-width: 768px) {
   .booking-container {
-    max-width: 90٪; /* تكبير العرض */
+    max-width: 40٪; /* تكبير العرض */
    border-right: 9px solid #ffc107;
    border-radius: 68px 10px;
-   padding: 40px 10px; margin: 40px; /* هامش جوانب أكبر */
-  }
+   padding: 40px 10px; margin: 40px; }
   .booking-button {
     font-size: 19px; /* تكبير الخط */
     padding: 14px 22px; 
@@ -934,7 +974,8 @@ border: 1px solid #e5eaf1;
       font-size: 11px; 
 }
 .booking-button {
-    font-size: 31px; 
+    font-size: 31px;
+    border-radius: 20px;
 }
 .booking-buttons {
     gap: 91px; 
