@@ -13,7 +13,7 @@
   <meta property="og:url" content="https://ent.drmsharabi.com/contact" />
   <meta property="og:type" content="website" />
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
-  <script type="application/ld+json">
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "MedicalClinic",
@@ -35,12 +35,19 @@
   },
   "telephone": ["+967777421224", "+967730433592"],
   "priceRange": "$$",
-  "openingHoursSpecification": {
+  "openingHoursSpecification": [{
     "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Saturday","Sunday","Monday","Tuesday","Wednesday","Thursday"],
-    "opens": "10:00",
-    "closes": "13:00"
-  },
+    "dayOfWeek": [
+      "https://schema.org/Saturday",
+      "https://schema.org/Sunday",
+      "https://schema.org/Monday",
+      "https://schema.org/Tuesday",
+      "https://schema.org/Wednesday",
+      "https://schema.org/Thursday"
+    ],
+    "opens": "10:00:00",
+    "closes": "13:00:00"
+  }],
   "sameAs": [
     "https://www.facebook.com/profile.php?id=100082372405434",
     "https://youtube.com/@ENTsharabi",
