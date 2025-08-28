@@ -310,12 +310,18 @@
  padding-right: 20px;
  width: 99%;
  }
-  }
+
+   }
      h2 {
       padding:0 5px;text-align:center;
       color: #004D40;
       ;font-size: 10px;
     }
+       @media (min-width: 768px) {
+          h2 {
+          margin: 30px auto;
+  }
+  }
   h3 {
     border:  1px solid white;box-shadow: 0 0 6px rgba(0, 0, 97, 0.8);
       margin: 30px 8px 0 8px;
@@ -380,7 +386,7 @@ hr {
 
    hr {
       hight: 4px;
-      margin: 45px 70px;   
+      margin: 85px ;   
     }
     }
     .blog-img  {
@@ -521,14 +527,15 @@ font-size: 44px!important
     }
       .subsection {
       padding: 30px 30px;
-    margin: 10px 0;
+    margin: 10px 3px;
   padding:  5px 2px;
   background-color: #f2f7ff;
+     box-shadow: 0 0 1px rgba(13,71,61,.5);
   border-radius: 15px;
-          border-left: 9px solid #00709E;
-      border-left: 5px solid white;
-           border: 1px solid #e5eaf1;
-      box-shadow: 0 0 6px rgba(3, 95, 97, 0.1);
+         
+     
+          
+      box-shadow: 0 0 6px rgba(3, 55, 97, 0.9);
 }
   @media (min-width: 768px) {
 .subsection {
@@ -537,7 +544,7 @@ font-size: 44px!important
    align-content: center;
    width: 100%;
    
-    border-radius: 80px;
+    border-radius: 90px;
     padding: 30px 10px;
     margin: 10px 20px;
   }
@@ -567,7 +574,7 @@ font-size: 44px!important
      align-items: center;
    align-content: center;
     padding: 10px 10px;
-    margin:0 10px 25px 10px;
+    margin:5px 10px 25px 10px;
            borde-rightr: 2px solid #00749A;
        box-shadow: 0 8px 14px rgba(13,71,61,.5);
        
@@ -581,7 +588,7 @@ font-size: 44px!important
 
    max-width: 95%; align-items: center;
    align-content: center;
-   margin:0 10px 5px  10px;
+   margin:20px 10px 5px  10px;
       
       padding: 10px;
       font-size: 12px!important;
@@ -611,43 +618,42 @@ font-size: 44px!important
 
      
       .main-h {
-      border-right: 2px solid #008EA1;
- 
-  
   margin:0 20px 0 20px;
-  padding: 25px;
-  background: linear-gradient(35deg, #FBFDFC, #F3FCFD); 
-  border-radius: 0 0 40px 40px;
+  padding:20px 0 25px 25px;
+  background: #D4F6FF 
+    text-align: center; font-size: 12px;
+       
+       border-radius: 0 0 40px 40px!important;
        box-shadow: 0 2px 6px rgba(3, 95, 97, 0.6);
-      border-left: 5px solid  #00A19D
-      ;
+    text-align: center; font-size: 12px;
 }
+     
       .main-h {
-         text-align: center; font-size: 12px;
+     border: 0!important;
       }
       
 @media (min-width: 768px) {
     .main-h {
      font-size: 12px;  margin: 0 50px 0 50px;
          border-right: 7px solid #3E67B6;
- border-left: 7px solid #A42250;
+ 
   }
     }
-              .main-h p {
+              .main-h {
       font-size: 11px!important;
+      background-color: #D4F6FF;
       }
  .warning-box {
-  background: linear-gradient(35deg, #FEFFE8, #FBFDFC); 3px solid #ffc107;
-      box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
+  background: linear-gradient(35deg, #FEFFE8, #FBFDFC); border:0 ;
+      box-shadow: 0 0 6px rgba(3, 35, 97, 0.6);
  padding: 5px 10px;
   margin:  0 15px 30px 15px;
   border-radius:0 0 18px 18px;
-        border: 4px solid  linear-gradient(to right, var(--primary-color), var(--secondary-color));;
 
 }
   @media (min-width: 768px) {
        .warning-box {
-      border-left: 7px solid #ffc107;
+      border-left: 7px solid #DAF7FF;
       margin: 0 20px70px 70px;
        border-radius: 30px;
       padding: 10px;
@@ -784,14 +790,14 @@ footer {
       padding: 5px 15px;
       background-color:#D60067;
       color:white;
-      border: 2px solid #DEF5F0;
-      font-size: 13px ;
-        box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
-      border-radius: 15px 20px 15px 20px;
+      border: 1px solid white;
+      font-size: 14px ;
+        box-shadow: 0 0 6px rgba(0, 15, 27, 0.6);
+      border-radius: 5px 20px 5px 20px;
       text-align: center;
       margin: 0 20px;
       }
-      
+   @media (min-width: 768px) {     
        .img-title {
        border-radius: 15px 80px 15px 80px;
        padding: 5px;
@@ -991,7 +997,7 @@ footer {
     </div>
    </header>
 
-       <div class="subsection" style="margin-top:0;padding-top:0">        <div class="main-h" style="margin-top:0;border-left:3px solid #3C7AB6">           
+       <div class="subsection" style="margin-top:0;padding-top:0">        <div class="main-h" style="margin-top:0;">           
   <h1>لحميات الأنف – الأنواع والعلاج</h1>  
         <p style="color: blue;text-align:center;font-size:12px">✍️ دكتور / مختار الشرعبي</p>
         
@@ -1001,27 +1007,27 @@ footer {
 </strong>
      </p> </div> 
    <br> 
- <div class="warning-box"> 
-      <p>     يعاني الكثير من الأشخاص من انسداد الأنف وصعوبة التنفس، لكن الأسباب تختلف حسب الحالة. ومن أكثر الأسباب شيوعًا :
-      <ul><li>
+ 
+      <p>  <strong> يعاني الكثير من الأشخاص من انسداد الأنف وصعوبة التنفس، لكن الأسباب تختلف حسب الحالة. ومن أكثر الأسباب شيوعًا :</strong>   </p>
+      <ul style="margin-right:30px"><li>
           انحراف الحاجز الأنفي</li><li> واللحميات الأنفية</li> </ul>   
-     </div> 
-      <h2 style="color:#B70051; text-align:center">أنواع لحميات الأنف</h2>  
-<div class="main-section"> 
-              <ul>  
+     
+     <br><div class="main-section" style="background:linear-gradient(to right, var(--primary-color), var(--secondary-color))">  <h2 style="text-align:center; margin-top:10px;color: black ; background: yellow; padding:5px;font-size:14px; margin: 0 30px;border-radius:20px">أنواع لحميات الأنف</h2>  
+
+              <ul style="color:white;text-align:center">
     <li>السلائل الأنفية (Nasal Polyps)</li>  
     <li>اللحمية البلعومية (Adenoid)</li>  
     <li>القرينات الأنفية (Turbinates)</li>   </ul>  
     </div>  <hr> 
       
-   <h2  class="img-title" >  1. اللحمية البلعومية </h2>  
+   <h2  class="img-title">  1. اللحمية البلعومية </h2>  
     <img style="display: block; margin:40px auto;" src="images/blog/adenoid.jpeg" alt="اللحمية البلعومية" class="blog-img" />  
    <div class="main-section">  
  <p>🔹
 <strong>  ما هي؟
 </strong></p>
 <p> 
-     هي نسيج لمفاوي يوجد طبيعيًا خلف الأنف (في البلعوم الأنفي)، ويساهم في المناعة لدى الأطفال. لكنها قد تتضخم وتسبب انسدادًا في مجرى التنفس.</p>  
+     هي نسيج لمفاوي يوجد طبيعيًا - في مرحلة الطفولة خصوصاً -خلف الأنف (في البلعوم الأنفي)، ويساهم في المناعة لدى الأطفال. لكنها قد تتضخم وتسبب انسدادًا في مجرى التنفس.</p>  
               
  <h3 style="color: white;">الأعراض:</h3>  
         <div class="warning-box">   <ul>  
@@ -1057,7 +1063,7 @@ footer {
        </div> 
        
  <h3 style="color: white;">دواعي الاستئصال:</h3> 
-<div class="warning-box" style="background-color:white">
+<div class="warning-box" style="background:#DAF7FF">
            
        
     <ul style="text-align: right;"> 
@@ -1067,8 +1073,8 @@ footer {
     <li>مشاكل سمعية بسبب تراكم السوائل في الأذن الوسطى  نتيجة انسداد قناة استاكيوس</li>  
     <li>فشل العلاج الدوائي</li>  
  </ul>  
- <p style="font-size:12px;text-align:center"><strong>
-🔹 تُجرى العملية تحت التخدير العام.</strong></p></div>
+ </div><p style="font-size:12px;text-align:center"><strong>
+🔹 تُجرى العملية تحت التخدير العام ويغادر المريض المستشفى بعد ساعتين من العملية.</strong></p>
    </div>
       <hr>  
    <h2  class="img-title" >
@@ -1095,10 +1101,12 @@ footer {
  <a href="https://youtu.be/i0Va72Gpp-s?feature=shared" style="color:black" >
 🎥 شاهد نموذج عملياتنا </a>
 </div>  
-  </div>    
-  <ul>      <li>بعد العملية، يحتاج المريض إلى متابعة واستخدام بخاخات وقائية لتقليل عودة اللحميات.</li>   </ul> 
-      </div>
-        <br>    
+  </div> <p style="font-size:12px;text-align:center"><strong>
+🔹 تُجرى العملية تحت التخدير العام ويغادر المريض المستشفى بعد ساعتين من العملية.</strong></p>
+    
+  <p style="font-size:12px;text-align:center"><strong> 🔹 بعد العملية، يحتاج المريض إلى متابعة واستخدام بخاخات وقائية لتقليل عودة اللحميات.</strong></p>
+      </div> 
+          
 
               <hr>        <h2  class="img-title" >3. القرينات الأنفية</h2>  
     <img style="display: block; margin:40px auto;" src="images/blog/turbinate.jpeg" alt="القرينات الأنفية" class="blog-img" />  
@@ -1134,13 +1142,14 @@ footer {
     </li>
         
     </ul>
-
-      <p> 🔹 <strong>الأعراض عند التضخم:</strong>  
+<h3>الأعراض عند التضخم:</h3>  
+    <div class="warning-box">  
  </p>  <ul>   
     <li>انسداد أنفي مستمر</li>  
     <li>صوت أنفي عند الكلام</li>  
-    <li> صداع أو ألم منطقة الأنف والجبهة  </li>
-</ul> 
+    <li>سعال مزمن</li>
+    <li>صداع </li>
+</ul> </div>
            <div class="step-number" style="background-color:white;padding:-5px">  ⚠️</div>
     <div class="danger-section">
   <p style="font-size:15px"><strong> ️ تنبيه:</strong></p> 
@@ -1148,23 +1157,25 @@ footer {
 القرينات ليست لحميات واستئصالها الكامل مضر. يُجرى فقط تصغير جزئي في حالات محددة</p>  </div>
 
  <h3 style="color: white;font-size:12px">التدخل الجراحي للقرينات الأنفية:</h3>
- <div class="warning-box">   <ul>   <li>يُجرى فقط عند فشل العلاج الدوائي</li>  
+<div class="warning-box" style="background:#DAF7FF">   <ul>   <li>يُجرى فقط عند فشل العلاج الدوائي</li>  
 <li>تصغير جزئي وليس استئصالًا كاملاً</li>  
 <li>يجب أن يُجرى من قبل طبيب مختص</li></ul>
-</div></div> 
-    <div class="main-section">    <h3 style="text-align:center">طرق التشخيص</h3> 
- 
-
-    <div class="warning-box"> 
- <strong>يتم التشخيص عبر الفحص السريري باستخدام المنظار، وقد تُطلب أشعة مقطعية في بعض الحالات لتحديد حجم ونوع اللحميات بدقة.</strong> </div> </div> 
-<hr> <h3 style="text-align:center">ختامًا</h3>  
-  
-            <div class="warning-box" style="background-color:#FEFFE8"><p>  
-   <strong> التشخيص السليم والتقييم بالمنظار ضروري لتحديد سبب انسداد الأنف بدقة.</strong>  
+</div><p style="font-size:12px;text-align:center"><strong>
+🔹 تُجرى العملية تحت التخدير العام ويغادر المريض المستشفى بعد ساعتين من العملية.</strong></p>
+    </div> 
+<br><hr>
+<div class="main-section" style="background-color:#DAF7FF"> 
+           <h2 style="color:#B70051; text-align:center;font-size:14px">طرق التشخيص</h2>  
+<p>   
+ <strong>يتم التشخيص عبر الفحص السريري باستخدام المنظار، وقد تُطلب أشعة مقطعية في بعض الحالات لتحديد حجم ونوع اللحميات بدقة.</strong> </p></div> <br></div> 
+<hr> 
+ <div class="booking-container" style="background:linear-gradient(to right, var(--primary-color), var(--secondary-color));">
+     <h3 style="text-align:center; margin-top:0;color: black ; background: yellow; padding:5px">ختامًا</h3>  
+  <p style="color:white;text-align:center">  التشخيص السليم والتقييم بالمنظار ضروري لتحديد سبب انسداد الأنف بدقة.</p>
   </div>  <hr>
-             <div class="step-number" style="background-color:white;padding:-5px">  ⚠️</div>
+             <div class="step-number" style="background-color:white;padding:-10px">  ⚠️</div>
     <div class="danger-section">
-  <p style="font-size:15px"><strong> ️ تنبيه:</strong></p> 
+  <p style="font-size:13px"><strong> ️ تنبيه:</strong></p> 
 <p> نحذر من إجراء عمليات على يد غير المختصين، فالتدخل الخاطئ قد يزيد من تعقيد الحالة<p>
 </div>
 
