@@ -19,8 +19,9 @@
  <!-- ✅ وسوم تحديد الموقع الجغرافي -->
 <meta name="geo.region" content="YE" />
 <meta name="geo.placename" content="Taiz" />
-<meta name="geo.position" content="13.654188;44.130363">
-<meta name="ICBM" content="13.654188,44.130363">
+<meta name="geo.position" content="13.5786;44.0211" />
+<meta name="ICBM" content="13.5786, 44.0211" />
+
 <!-- ✅ بيانات منظمة: المقال -->
 <script type="application/ld+json">
 {
@@ -96,11 +97,11 @@
     "addressLocality": "تعز",
     "addressCountry": "YE"
   },
-"geo": {
-  "@type": "GeoCoordinates",
-  "latitude": 13.654188,
-  "longitude": 44.130363
-},   
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 13.5786,
+    "longitude": 44.0211
+  },
   "telephone": "+967730433592",
   "sameAs": [
     "https://www.facebook.com/profile.php?id=100082372405434",
@@ -124,7 +125,7 @@
       background-color: #FCFFFE;
     }
  /* ✅ NAV */
- nav {
+       nav {
      
      
      text-align: center;
@@ -139,23 +140,26 @@
       justify-content: center;
       flex-wrap: wrap;
       text-decoration: none;
-      rgba(236, 235, 255, 0.9);gap: 10px;
+      rgba(236, 235, 255, 0.9);gap: 15px;
     }
     .nav-link {
-     background: linear-gradient(35deg, #00999C, #004C57);
+  background: linear-gradient(to left, var(--secondary-color), var(--accent-color));  
+      color: white;
       padding: 2px 6px;
       border-radius: 4px;
-      color: #E0F2F1;
-      text-shadow: 0 3px 1px rgba(3, 25, 83, 0.7);
+      text-shadow: 1px 1px 1px rgba(3, 27, 33, 0.9);
+         font-weight: bold;
       text-decoration: none;
-      box-shadow: 0 0 0 0.3px rgba(243, 245, 212, 4);
-      font-size: 10px;
+      border-block: 0.7px solid #89DFF6;
+      box-shadow: 0 3px 3px rgba(1, 3, 23, .7);
+      font-weight: blod;
+      font-size: 9px;
       transition: all 0.3s ease;
       display: inline-block;
     }
     .nav-link:hover {
-      background-color: red;
-      color: #00332E;
+      background-color: #EEED62;
+      color: red;
     }
     @media (min-width: 768px) {
       nav {
@@ -164,15 +168,68 @@
     
       }
       .nav-row {
-        gap: 35px;
+        gap: 45px;
 
      margin-bottom: 10px;       }
+     
       .nav-link {
-        margin-top: 20px;padding: 12px 18px;
-       box-shadow: 0 0 0 0.8px rgba(243, 245, 212, 8);
+        padding: 5px 15px;margin-top: 20px;
+        
+       box-shadow: 0 8px 1px rgba(1, 53, 83, .7);
        border-radius: 20px; font-size: 28px;
-       
+       border-block: 2px solid #89DFF6;
+       padding: 3px 15px;
     }
+    }
+      header {
+      margin-bottom: 0;
+                background: linear-gradient(to left, var(--secondary-color), var(--accent-color));  
+  border-bottom: 1px solid #C0F0FF;
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 18px;
+      border-radius: 0 0 25px 25px;
+        box-shadow: 0 3px 24px rgba(0,71,51,.8);
+    }
+    
+    .header-logo img {
+      height: 55px;
+      width: auto;
+    }
+    .header-text {
+      display: flex;
+      line-height: 2.2;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .main-title {
+      font-size: 13px;
+      font-weight: bold;
+      color: #ffffff;
+      white-space: nowrap;
+    }
+    .sub-title {
+      font-size: 13px;
+      color: #D0FFFC;
+      white-space: nowrap;
+    }
+        @media (min-width: 768px) {
+          header {
+       border-radius: 0 0 55px 55px;
+          }
+      .header-logo img {
+        height: 110px;
+      }
+      .main-title {
+        font-size: 30px;
+      }
+      .sub-title {
+        font-size: 29px;
+      }
     }
    header {
       
@@ -240,7 +297,7 @@
       padding: 5px;
       box-shadow: 0 9px 6px rgba(33, 95, 97, 0.7);
       border-radius: 9px;
-      font-size: 17px;
+      font-size: 19px;
       margin: 5px auto;
       width: 99%;
       max-width: 70%;
@@ -254,17 +311,30 @@
  width: 99%;
  }
   }
-    h2 {
-      padding: 5px;text-align:center;
+    .main-section h2 {
+      padding:0 5px;text-align:center;
       color: #004D40;
-      ;font-size: 14px;
+      ;font-size: 10px;
     }
-        h3 {
-      color: #00709E;
-     -align:center;
-      margin-right: 32px;
-      font-size: 13px;
+  h3 {
+    border:  1px solid white;box-shadow: 0 0 6px rgba(0, 0, 97, 0.8);
+      margin: 30px 8px 0 8px;
+      background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  
+            padding:10px  20px;
+            text-align: center;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border-radius: 20px 20px 5px 5px;
+              color: white;
     }
+    @media  (min-width: 768px) {
+    h3 {
+    font-size: 13px; margin: 60px 15px 0 15px;
+     border-radius: 40px 40px 20px 20px;
+ }
+  }
+    
     p {
       font-size: 12px;
       padding: 7px;line-height: 1.8;
@@ -363,7 +433,7 @@ hr {
     margin: 50px auto;
   }
   .whatsapp-section {
-  flex-direction: row; 
+  flex-direction: column; 
     justify-content: center;
     gap: 20px;
     }
@@ -435,14 +505,7 @@ font-size: 44px!important
 
 
           
-    .main-section-title {
-      color: #880A41;
-      font-size: 20px;
-      margin-bottom: 20px;
-      display: flex;
-      align-items: center;
-    }
-    
+  
 
 
     .imp-section {
@@ -456,23 +519,31 @@ font-size: 44px!important
       position: right;
       border-right: 4px solid red;
     }
-    .subsection {
-     margin: 10px; background-color: white;
-      padding: 5px;
-      margin-bottom: 15px;
-      border-radius: 8px;
-      box-shadow: 0 0 6px rgba(3, 95, 97, 0.3);
+      .subsection {
+      padding: 30px 30px;
+    margin: 10px 0;
+  padding:  5px 2px;
+  background-color: #f2f7ff;
+  border-radius: 15px;
+          border-left: 9px solid #00709E;
+      border-left: 5px solid white;
+           border: 1px solid #e5eaf1;
+      box-shadow: 0 0 6px rgba(3, 95, 97, 0.1);
+}
+  @media (min-width: 768px) {
+.subsection {
+    background-color: #f2f7ff;
+   max-width: 95%;align-items: center;
+   align-content: center;
+   width: 100%;
+   
+    border-radius: 80px;
+    padding: 30px 10px;
+    margin: 10px 20px;
+  }
+  }
+  
 
-      position: relative;
-      border-right: 4px solid #00A19D;
-    }
-    
-    .subsection h3 {
-      color: #00709E;
-      font-size: 13px;
-     margin-right: 20px;
-      margin-bottom: 10px;
-    }
     
 
     .danger-section {
@@ -491,28 +562,33 @@ font-size: 44px!important
 }
 
 .main-section {
-   box-shadow: 0 1px 6px rgba(3, 95, 97, 0.6);
-   margin: 10px;
-  font-size: 12px;margin-bottom: 20px;
-  padding: 5px;
-  background-color: #e6f7ff;
-  border-radius: 12px;
-  border-right: 5px solid #00709E;
-}
-    .main-section p {
-      font-size: 12px;
-      line-height: 1.7;
-      color: #444;
-    }
-  @media (min-width: 768px) {
-.main-section {
-    border-radius: 40px;
-    padding: 30px 40px;
-    margin: 15px 20px;
-  }
-    .main-section p {
+             
+   border-radius: 5px ;
+     align-items: center;
+   align-content: center;
+    padding: 10px 10px;
+    margin:0 10px 25px 10px;
+           borde-rightr: 2px solid #00749A;
+       box-shadow: 0 8px 14px rgba(13,71,61,.5);
+       
+       background-color: white;
+       
+  }            
+
+      
+        @media (min-width: 768px) { 
+  .main-section {
+
+   max-width: 95%; align-items: center;
+   align-content: center;
+   margin:0 10px 5px  10px;
+      
+      padding: 10px;
       font-size: 12px!important;
-      }
+             borde-rightr: 2px solid #00749A;
+       box-shadow: 0 8px 14px rgba(13,71,111,.5);
+    }
+        
 
         .imp-section {
       border-radius: 40px;
@@ -527,19 +603,9 @@ font-size: 44px!important
       .danger-section {
       border-radius: 40px;
       margin: 90px 30px;
-    padding: 30px 30px;
+    padding: 10px 30px;
       }
-   .subsection {
-    border-radius: 30px;
-    padding: 25px;
-    margin: 45px;
-    border-right: 8px solid #00A19D;
-  }
-  
-  h3 {
-    font-size: 14px;
-  }
-  
+
 
   }
 
@@ -574,21 +640,31 @@ font-size: 44px!important
   background: linear-gradient(35deg, #FEFFE8, #FBFDFC); 3px solid #ffc107;
       box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
  padding: 5px 10px;
-  margin: 30px 15px;
-  border-radius: 0 18px 3px 0;
-        border-left: 7px solid #ffc107;
+  margin:  0 15px 30px 15px;
+  border-radius:0 0 18px 18px;
+        border: 4px solid  linear-gradient(to right, var(--primary-color), var(--secondary-color));;
+
 }
   @media (min-width: 768px) {
        .warning-box {
       border-left: 7px solid #ffc107;
-      margin: 50px 20px;
+      margin: 0 20px70px 70px;
        border-radius: 30px;
-      padding: 15px;
+      padding: 10px;
     }
   }
+      :root {
+            --primary-color: #01596B;
+            --secondary-color: #01849F;
+            --accent-color: #005464;
+            --light-color: #0194B2;
+            --dark-color: #032E3B;
+            --text-color: #333;
+        }
+        
  footer {
  border-top: 4px solid white; 
- background: linear-gradient(35deg, #004C57, #00999C);
+         background: linear-gradient(to right, var(--secondary-color), var(--accent-color));  
   color: white !important;
           box-shadow: 2px 0 2px 5px rgba(194, 0, 97, 22);
   text-align: center;
@@ -617,6 +693,7 @@ font-size: 44px!important
 
 .working-hours {
   background-color: rgba(255, 255, 255, 0.15);
+  margin: 0 auto;
   display: inline-block;
   padding: 1px 15px;
   border-radius: 20px;
@@ -627,7 +704,7 @@ font-size: 44px!important
 
 .copyright-container {
   background-color: rgba(0, 0, 0, 0.2);
-  padding: 10px;
+  padding: 3px10px;
   margin-top: 5px;
   font-weight: 500;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
@@ -645,13 +722,15 @@ font-size: 44px!important
 
 .social-icon {
   width: 30px;
-  height: 30px;
+  height: 27px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
+box-shadow: 0 3px 3px rgba(1, 53, 83, .9);
+      border-block: 1px solid #89DFF6;
 }
 
 .social-icon:hover {
@@ -665,8 +744,8 @@ font-size: 44px!important
 }
 @media (min-width: 768px) {
 footer {
- border-top: 9px solid white; 
- background-color: #004D40 !important;
+ border-top: 12px solid white; 
+        background: linear-gradient(to right, var(--secondary-color), var(--accent-color));  
   color: white !important;
           box-shadow: 2px 0 2px 9px rgba(194, 0, 97, 22);
           }
@@ -682,19 +761,22 @@ footer {
   }
   
   .social-icon {
-    width: 60px;
-    height: 60px;
+     margin: 10px 5px;width: 70px;
+    height: 70px;
+    box-shadow: 0 8px 3px rgba(1, 53, 83, .9);
+      border-block: 2px solid #89DFF6;
+        gap: 80px;
   }
   
   .social-icon img {
-    width: 40px;
-    height: 40px;
-    gap: 60px;
+    width: 50px;
+    height: 50px;
+    gap: 80px;
   }
   
   .copyright-container {
     font-size: 6px !important;
-    padding: 11px;
+    padding: 5px 11px;
   }
   }
             .img-title {
@@ -721,6 +803,179 @@ footer {
       margin: 0 50px;
       }
  }
+  .steps-section {
+      margin: 40px 0;
+    }
+    
+    .step-card {
+      background-color: white;
+      border-radius: 12px;
+      padding: 25px;
+      margin: 20px 0;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+      border-left: 5px solid #00A19D;
+    }
+    
+    .step-number {
+      background-color: red;
+      color: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 30px;
+      margin-left: 15px;
+      float: right;
+      padding-bottom: 5px;
+      margin-top:-15px;
+      margin-right:50px;
+      }
+   @media (min-width: 768px) {
+     .step-number {
+       margin-top:-15px;
+      margin-right:50px;
+          width: 130px;
+      height: 120px;
+     font-size: 90px;
+     margin-right:150px;
+      }
+   }
+       strong {
+      color: #00709E;
+      padding-right; 50px;
+    }
+    .booking-container {
+       background: linear-gradient(to left, var(--secondary-color), var(--accent-color)); 
+  border-right:5px solid #ffc107;
+          box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
+          border-radius: 8px;
+ padding: 20px 20px;
+  margin: 20px 10px;
+  border-radius: 38px 0 38px 0;
+}
+
+.booking-title {
+  color: yellow;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.booking-subtitle {
+  font-weight: bold;
+ color: white; 
+ font-size: 11px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.booking-numbers {
+  color: #D6FFF6;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 18px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.booking-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.booking-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 16px;
+  font-weight: bold;
+  font-size: 14px;
+         box-shadow: 0 2px 6px rgba(33, 95, 97, 0.7);
+         border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin: 20px auto;
+}
+
+.booking-button.sms {
+  background-color: #f0fafa;
+       box-shadow: 0 2px 6px rgba(33, 95, 97, 0.7); color: black;
+  border: 2px solid #009688;
+}
+
+.booking-button.sms:hover {
+  background-color: #e0f2f1;
+}
+
+.booking-button.whatsapp {
+  background-color: #f0fafa;
+        box-shadow: 0 2px 6px rgba(33, 95, 97, 0.7); color: black;
+  border: 2px solid #009688;
+}
+
+.booking-button.whatsapp:hover {
+  background-color: #e0f2f1;
+}
+
+.booking-icon {
+  width: 30px;
+  height: 30px;
+      border: 0.1px solid #009688;
+      box-shadow: 0 9px 6px rgba(33, 95, 97, 0.7);
+       border-radius: 5%;
+       animation: pulse 2s infinite; /* تطبيق تأثير النبض */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1); /* الحجم الأصلي */
+  }
+  50% {
+    transform: scale(1.1); /* تكبير الأيقونة بنسبة 10% */
+  }
+  100% {
+    transform: scale(1); /* العودة للحجم الأصلي */
+  }
+
+
+}
+
+/* نسخة سطح المكتب */
+@media (min-width: 768px) {
+  .booking-container {
+    max-width: 40٪; /* تكبير العرض */
+   border-right: 9px solid #ffc107;
+   border-radius: 68px 10px;
+   padding: 40px 10px; margin: 40px; }
+  .booking-button {
+    font-size: 19px; /* تكبير الخط */
+    padding: 14px 22px; 
+    margin: 30px auto;
+  }
+  .booking-icon {
+    width: 58px; /* تكبير الأيقونة */
+    height: 58px;
+  }
+  .booking-title {
+      font-size: 11px; 
+}
+ .booking-subtitle {
+      font-size: 11px; 
+}
+.booking-button {
+    font-size: 31px;
+    border-radius: 20px;
+}
+.booking-buttons {
+    gap: 91px; 
+}
+}
 
   </style>
 </head>
@@ -736,31 +991,40 @@ footer {
     </div>
    </header>
 
-          <div class="main-h" style="border-left:3px solid #3C7AB6">           
+       <div class="subsection" style="margin-top:0;padding-top:0">        <div class="main-h" style="margin-top:0;border-left:3px solid #3C7AB6">           
   <h1>لحميات الأنف – الأنواع والعلاج</h1>  
         <p style="color: blue;text-align:center;font-size:12px">✍️ دكتور / مختار الشرعبي</p>
-        <br>
- <p style="font-size:12px"><strong>يعاني الكثير من الأشخاص من انسداد الأنف وصعوبة التنفس، لكن الأسباب تختلف حسب الحالة. ومن أكثر الأسباب شيوعًا : انحراف الحاجز الأنفي واللحميات الأنفية</strong>
+        
+ <p style="font-size:12px"><strong>
+     
+          في هذا المقال نشرح الفرق بين أنواع لحميات الأنف من حيث الوظيفة والموقع والأعراض، ومتى يحتاج المريض للتدخل الجراحي.
+</strong>
      </p> </div> 
  </p>    <br> 
- <div class="main-section"> 
-      <p>سنتطرق في هذا المقال إلى موضوع اللحميات الأنفية و الفروقات بين أنواعها</p>    
-      
+ <div class="warning-box"> 
+      <p>     يعاني الكثير من الأشخاص من انسداد الأنف وصعوبة التنفس، لكن الأسباب تختلف حسب الحالة. ومن أكثر الأسباب شيوعًا :
+      <ul><li>
+          انحراف الحاجز الأنفي</li><li> واللحميات الأنفية</li> </ul>   
+     </div> 
       <h2 style="color:#B70051; text-align:center">أنواع لحميات الأنف</h2>  
-        <div class="warning-box">
+<div class="main-section"> 
               <ul>  
     <li>السلائل الأنفية (Nasal Polyps)</li>  
     <li>اللحمية البلعومية (Adenoid)</li>  
     <li>القرينات الأنفية (Turbinates)</li>   </ul>  
-    </div> </div><br> <hr> 
-     <br> 
-   <div class="img-title"><h2 style="color:white;padding:3px 10px">  1. اللحمية البلعومية</div>  <br></h2>  
+    </div>  <hr> 
+      
+   <div class="img-title"><h2 style="color:white;padding:3px 10px">  1. اللحمية البلعومية</div>  </h2>  
     <img style="display: block; margin:40px auto;" src="images/blog/adenoid.jpeg" alt="اللحمية البلعومية" class="blog-img" />  
-  <br> <div class="main-section">  
- <p>نسيج لمفاوي يوجد طبيعيًا خلف الأنف (في البلعوم الأنفي)، ويساهم في المناعة لدى الأطفال. لكنها قد تتضخم وتسبب انسدادًا في مجرى التنفس.</p>  
+   <div class="main-section">  
+ <p>🔹
+<strong>  ما هي؟
+</strong></p>
+<p> 
+     هي نسيج لمفاوي يوجد طبيعيًا خلف الأنف (في البلعوم الأنفي)، ويساهم في المناعة لدى الأطفال. لكنها قد تتضخم وتسبب انسدادًا في مجرى التنفس.</p>  
               
-        <div class="warning-box"><p><h3>الأعراض:</h3></p>  
-    <ul>  
+ <h3 style="color: white;">الأعراض:</h3>  
+        <div class="warning-box">   <ul>  
     <li>انسداد أنفي مزمن</li>  
     <li>تنفس عن طريق الفم</li>  
     <li>شخير أثناء النوم</li>  
@@ -768,94 +1032,167 @@ footer {
     <li>اضطرابات في النوم وتأخر النطق أحيانًا</li>  
   </ul>   </div>
         
- <div class="warning-box"><p style="color:#880E4F"><h3>   ✓ إرتباط اللحمية باللوزتين:</h3> <p>في كثير من الحالات، يكون تضخم اللحمية البلعومية مترافقًا مع تضخم اللوزتين. وقد يتطلب العلاج استئصالًا مزدوجًا للحمية البلعومية واللوزتين لضمان تحسن أفضل.  </ul>  
+         <h3 style="color: white;">   ✓ إرتباط اللحمية باللوزتين:</h3> 
+ <div class="warning-box">
+ <p>في كثير من الحالات، يكون تضخم اللحمية البلعومية مترافقًا مع تضخم اللوزتين. وقد يتطلب العلاج استئصالًا مزدوجًا للحمية البلعومية واللوزتين لضمان تحسن أفضل.  </ul>  
  
  </div>
-  <div class="danger-section"><p style="color:#880E4F"><h3 >   ❌من الأخطاء الشائعة :</h3> <p style="text-align: right;"><strong>قيام بعض غير المختصين باستئصال اللوزتين فقط، رغم وجود تضخم واضح في اللحمية، مما يؤدي إلى:</strong></p>  
+ 
+
+              <div class="step-number"> x</div> <div class="danger-section"><p style="color:#880E4F">
+<p style="text-align: right;">
+  
+        <p style="font-size:15px">
+  <strong> من الأخطاء الشائعة </strong></p>قيام بعض غير المختصين باستئصال اللوزتين فقط، رغم وجود تضخم واضح في اللحمية، مما يؤدي إلى:</strong>
+  
+ </p>  
    <div>
 
        <ul style="text-align: right;"> 
     <li>رد فعل مناعي وتضخم مضاعف في اللحمية</li>  
     <li>تفاقم أعراض الانسداد</li>  
     <li>عدم تحسُّن الحالة أو زيادتها سوءاً</li>  
-  </ul> </div>  
-        <div class="warning-box" style="background-color:white">
-<p><h3>دواعي الاستئصال:</h3></h3>  
+  </ul><p><strong>
+ وهذا ما نلاحظه في العديد من الحالات التي تُجرى فيها جراحة لوز دون تقييم دقيق للحمية البلعومية من قبل أطباء غير مختصين في الأنف والأذن والحنجرة.</strong></p> </div>  
+       </div> 
+       
+ <h3 style="color: white;">دواعي الاستئصال:</h3></h3>  
+<div class="warning-box" style="background-color:white">
+           
        
     <ul style="text-align: right;"> 
     <li>انسداد تنفسي مزمن</li>  
     <li>توقف النفس الليلي</li>  
     <li>التهابات أذن متكررة</li>  
-    <li>مشاكل سمعية ناتجة عن انسداد قناة استاكيوس</li>  
+    <li>مشاكل سمعية بسبب تراكم السوائل في الأذن الوسطى  نتيجة انسداد قناة استاكيوس</li>  
     <li>فشل العلاج الدوائي</li>  
- </ul>   </div>
+ </ul>  
+ <p style="font-size:12px;text-align:center"><strong>
+🔹 تُجرى العملية تحت التخدير العام.</strong></p></div>
    </div>
-   </div>    <br>  <hr>  
+      <hr>  
    <div class="img-title"><h2 style="color:white;padding:3px 10px">
-2. السلائل الأنفية</h2> </div>  <br>  
+2. السلائل الأنفية</h2> </div>  
   <img style="display: block; margin:40px auto;" src="images/blog/polyps.jpeg" alt="السلائل الأنفية" class="blog-img" />  
-  <br> <div class="main-section"> <p>لحمية غير سرطانية تنمو من بطانة الأنف أو الجيوب نتيجة التهابات مزمنة أو تحسس شديد.</p>    <h3>الأعراض:</h3>
+   <div class="main-section"> <p>لحمية غير سرطانية تنمو من بطانة الأنف أو الجيوب نتيجة التهابات مزمنة أو تحسس شديد.</p>     <h3 style="color: white;">الأعراض:</h3>
   <div class="warning-box">   <ul> 
     <li>انسداد أنفي دائم</li>  
     <li>ضعف أو فقدان حاسة الشم</li>  
     <li>سيلان أنف مزمن</li>  
     <li>صداع أو ضغط في الوجه</li>  
   </ul>  </div> 
-  <h3>العلاج:</h3> 
+   <h3 style="color: white;">العلاج:</h3> 
 
   <div class="warning-box"> <ul>   <li>دوائي: بخاخات الكورتيزون، مضادات التحسس، أدوية مضادة للالتهاب</li>  
-    <li>جراحي: استئصال السلائل بمنظار الجيوب الأنفية تحت تخدير عام</li>  </ul> 
+    <li>جراحي: استئصال السلائل بتقنية منظار الجيوب الأنفية تحت تخدير عام</li>  </ul> 
  </div>
- <br> <div class="whatsapp-section" style="margin-top: 5px padding:10px">
+  <div class="whatsapp-section" style="margin-top: 5px padding:10px">
   <a href="https://youtu.be/i0Va72Gpp-s?feature=shared" target="_blank">
     <img src="images/social/youtube.jpeg" alt="يوتيوب" class="whatsapp-icon" style="margin:15px">
   </a>
 
     
 <a href="https://youtu.be/i0Va72Gpp-s?feature=shared" style="color:black" class="cta-button" />
- شاهد نموذج عملياتنا </a>
+🎥 شاهد نموذج عملياتنا </a>
 
- <br> </div>    <br> 
+  </div>    
   <ul>      <li>بعد العملية، يحتاج المريض إلى متابعة واستخدام بخاخات وقائية لتقليل عودة اللحميات.</li>   </ul> 
       </div>
         <br>    
 
-              <hr>     <div class="img-title"><h2 style="color:white;padding:3px 10px">3. القرينات الأنفية</h2></div>  <br>    
+              <hr>     <div class="img-title"><h2 style="color:white;padding:3px 10px">3. القرينات الأنفية</h2></div>   
     <img style="display: block; margin:40px auto;" src="images/blog/turbinate.jpeg" alt="القرينات الأنفية" class="blog-img" />  
- <br>  <div class="main-section">  <p>هي تراكيب طبيعية في الأنف تقوم بترطيب وتدفئة الهواء الداخل وتنقيته.</p>  
-        <h3>الأعراض:</h3>  
-  <div class="warning-box">   <ul>   
+  <div class="main-section">  
+ 
+ <p>🔹
+<strong>  ما هي؟
+</strong></p>
+<p>
+هي تراكيب طبيعية موجودة لدى كل إنسان داخل الأنف،.ولا تشكل أي خطورة ولا يستدعي القلق في حال تم ملاحظتها من خلال النظر داخل تجويف الأنف ، بل وجودها له فائدة كبيرة ودور كبير في حماية وتحسين جودة النفي.</p>  
+<ul>🔹<strong>  وظيفتها:
+</strong></ul>
+<li>
+ترطيب وتدفئة الهواء الداخل
+</li><li>
+تنقيته من الغبار والميكروبات
+</li><li>
+تنظيم تدفق الهواء داخل الأنف
+</li></ul>
+<p>🔹 <strong>
+أسباب التضخم :  
+</strong>
+ </p>
+<p style="font-size:13px;text-align:center">
+قد تتضخم القرينات نتيجة أحد التالي:</p> 
+<ul style="margin-right:20px">
+    <li>
+التحسس الأنفي المزمن
+    </li><li>
+التهابات متكررة
+    </li><li>
+انحراف في الحاجز الأنفي
+    </li>
+        
+    </ul>
+
+      <p> 🔹 <strong>الأعراض عند التضخم:</strong>  
+ </p>  <ul>   
     <li>انسداد أنفي مستمر</li>  
     <li>صوت أنفي عند الكلام</li>  
     <li>سعال مزمن</li>  
-</ul> </div><br>
- <div class="danger-section">
-  <p><h3 style="color:black"> ⚠️ تنبيه:</h3></p> 
-<p style="color:#00709E">
-<strong>القرينات ليست لحميات، واستئصالها الكامل مضر. يُجرى فقط تصغير جزئي في حالات محددة</strong>.</p>  </div>
+</ul> 
+           <div class="step-number" style="background-color:white;padding:-5px">  ⚠️</div>
+    <div class="danger-section">
+  <p style="font-size:15px"><strong> ️ تنبيه:</strong></p> 
+<p>
+القرينات ليست لحميات واستئصالها الكامل مضر. يُجرى فقط تصغير جزئي في حالات محددة</p>  </div>
 
-<br>
-<h3>التدخل الجراحي للقرينات الأنفية:</h3>
+ <h3 style="color: white;font-size:12px">التدخل الجراحي للقرينات الأنفية:</h3>
  <div class="warning-box">   <ul>   <li>يُجرى فقط عند فشل العلاج الدوائي</li>  
 <li>تصغير جزئي وليس استئصالًا كاملاً</li>  
 <li>يجب أن يُجرى من قبل طبيب مختص</li>
-</div></div></div>
-  <hr>  <br> <div class="main-section">    <h2 style="text-align:center">طرق التشخيص</h2> 
- <div class="subsection" style="background-color:white"> <p><strong>يتم التشخيص عبر الفحص السريري باستخدام المنظار، وقد تُطلب أشعة مقطعية في بعض الحالات لتحديد حجم ونوع اللحميات بدقة.</strong></p>    </div> </div> <br> 
-<hr><br> <h2 style="text-align:center">ختامًا</h2>  
-  
-            <div class="subsection" style="background-color:#FEFFE8"><p>  
-   <strong> التشخيص السليم والتقييم بالمنظار ضروري لتحديد سبب انسداد الأنف بدقة.</strong>  
-  </div>  <br> <hr><br><div class="danger-section">
-    <h3 style="color:black"> ⚠️ تنبيه:</h3>
-<p style="color:#00709E"> <strong>نحذر من إجراء عمليات على يد غير المختصين، فالتدخل الخاطئ قد يزيد من تعقيد الحالة</strong><p>
-</div>
-<br><hr><br>
- <blockquote class="warning-box" style=" border-right: 4px solid red;  background: linear-gradient(35deg, #00999C, #004C57);color:white; margin:30px 20px ;padding:10px ;font-size:13px;text-align:center">
-    <em> في عيادة <strong>د. مختار الشرعبي</strong> – تعز، ركن مفرق ماوية – نحرص على تقييم كل حالة بدقة وتقديم خطة علاجية شخصية تشمل الجانب الوقائي والنفسي والدوائي.
-</em>  </blockquote>
+</div></div> 
+    <div class="main-section">    <h3 style="text-align:center">طرق التشخيص</h3> 
+ 
 
-  </div>   <br>     
+    <div class="warning-box"> 
+ <strong>يتم التشخيص عبر الفحص السريري باستخدام المنظار، وقد تُطلب أشعة مقطعية في بعض الحالات لتحديد حجم ونوع اللحميات بدقة.</strong> </div> </div> 
+<hr> <h3 style="text-align:center">ختامًا</h3>  
+  
+            <div class="warning-box" style="background-color:#FEFFE8"><p>  
+   <strong> التشخيص السليم والتقييم بالمنظار ضروري لتحديد سبب انسداد الأنف بدقة.</strong>  
+  </div>  <hr>
+             <div class="step-number" style="background-color:white;padding:-5px">  ⚠️</div>
+    <div class="danger-section">
+  <p style="font-size:15px"><strong> ️ تنبيه:</strong></p> 
+<p> نحذر من إجراء عمليات على يد غير المختصين، فالتدخل الخاطئ قد يزيد من تعقيد الحالة<p>
+</div>
+
+</div><hr>
+ <div class="booking-container">
+  <div class="booking-title">
+         في عيادة <strong style="color:yellow">د. مختار الشرعبي</strong>  </div>
+  <div class="booking-subtitle" style="color:#D6FCFF; font-size:13px">تعز، ركن مفرق ماوية</div> <p style="color:white;text-align:center"> نحرص على تقييم كل حالة بدقة وتقديم خطة علاجية مناسبة بإذن الله،  تشمل الجانب الوقائي والنفسي والدوائي،  والتعامل بمرونة مع الظروف المادية للمرضى </p>
+ 
+ <div class="booking-title" style="font-size:13px">
+للحجز أرسل الإسم برسالة على الأرقام
+  </div>
+  <div class="booking-numbers">
+    730433592<br>777421224
+  </div>
+  <div class="booking-buttons">
+    <!-- زر رسالة نصية -->
+    <a href="l:+967730433592" target="_blank" class="booking-button sms">
+      <img src="images/social/sms.webP" alt="رسالة نصية" class="booking-icon">
+      👆 رسالة نصية
+    </a>
+
+    <!-- زر واتساب -->
+    <a href="https://wa.me/967730433592" target="_blank" class="booking-button whatsapp">
+      <img src="images/social/whatsapp.webP" alt="واتساب" class="booking-icon">
+      👆 رسالة واتساب
+    </a>
+  </div> </div>   <br>     
   
     <a href="blog.html" style="color:black" class="cta-button" />← عودة لصفحة المدونة</a>
  <hr> 
@@ -867,14 +1204,14 @@ footer {
       <div class="nav-row">
         <a href="index.html" class="nav-link">🏠 الرئيسية</a>
 
-        <a href="services.html" class="nav-link">🩺 من خدماتنا</a>
+        <a href="services.html" class="nav-link">⚕️ من خدماتنا</a>
         <a href="gallery.html" class="nav-link">📷 معرض الصور</a>
         <a href="testimonials.html" class="nav-link">💬 رأي الجمهور</a>
       </div>
       <div class="nav-row" style="margin-bottom:20px">    
-        <a href="about.html" class="nav-link">📘 قصتنا</a >       <a href="blog.html" class="nav-link">📚 المدونة</a>
-        <a href="contact.html" class="nav-link">📍تواصل معنا</a>
-        <a href="q&a.html" class="nav-link">✉️ الأسئلة الشائعة</a>
+        <a href="about.html" class="nav-link">📝 قصتنا</a >       <a href="blog.html" class="nav-link">📚 المدونة</a>
+        <a href="contact.html" class="nav-link">📲 تواصل  معنا</a>
+        <a href="q&a.html" class="nav-link">⁉️ الأسئلة الشائعة</a>
       </div>
     </nav>
     
@@ -914,7 +1251,7 @@ footer {
      <div class="footer-section">
 
       <p class="working-hours" style="color">
-        ⏰مواعيد العمل: السبت - الخميس: 10:00 صباحاً - 1:00 ظهراً
+        ⏰ مواعيد العمل: السبت - الخميس: 10:00 صباحاً - 1:00 ظهراً
       </p>
     </div>
     
