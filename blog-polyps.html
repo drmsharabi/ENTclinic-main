@@ -122,7 +122,7 @@
       padding: 0;
       direction: rtl;
       text-align: right;
-      background-color: #FCFFFE;
+      background-color: #FAFFEA;
     }
  /* ✅ NAV */
        nav {
@@ -183,8 +183,7 @@
     }
       header {
       margin-bottom: 0;
-                background: linear-gradient(to left, var(--secondary-color), var(--accent-color));  
-  border-bottom: 1px solid #C0F0FF;
+      background: linear-gradient(to left, var(--secondary-color), var(--accent-color));  
       color: white;
       padding: 20px;
       display: flex;
@@ -192,8 +191,10 @@
       justify-content: center;
       flex-wrap: wrap;
       gap: 18px;
-      border-radius: 0 0 25px 25px;
-        box-shadow: 0 3px 24px rgba(0,71,51,.8);
+      border-radius: 0 0 80px;
+        box-shadow:  3px 24px rgba(0,71,51,.8);
+        margin-bottom:3px;
+        border-bottom: 1px solid #FAFFEA;
     }
     
     .header-logo img {
@@ -361,12 +362,12 @@ hr {
   box-shadow: 0 2px 2px rgba(3, 95, 97, 0.6);
   padding: 1;     /* إزالة أي padding */
   height: 1px;    /* ارتفاع الخط نفسه */
-  border: 12px solid #FCFFFE;
+  border: 1px solid #FCFFFE;
   background-color: #FCFFFE; /* لون الخط */
 }
     li {
       font-size: 12px;
-     margin-right: 12px
+     margin: 2px
     }
   @media (min-width: 768px) {
       ul {
@@ -385,8 +386,8 @@ hr {
   }
 
    hr {
-      hight: 4px;
-      margin: 85px ;   
+      hight: 1px;
+      margin: 85px 10px ;   
     }
     }
     .blog-img  {
@@ -527,7 +528,7 @@ font-size: 44px!important
     }
       .subsection {
       padding: 30px 30px;
-    margin: 10px 3px;
+    margin: 10px 7px;
   padding:  5px 2px;
   background-color: #f2f7ff;
      box-shadow: 0 0 1px rgba(13,71,61,.5);
@@ -549,7 +550,11 @@ font-size: 44px!important
     margin: 10px 20px;
   }
   }
-  
+  @media (min-width: 768px) {
+.subsection {
+    margin: 5px 15px!important;
+}
+}
 
     
 
@@ -570,11 +575,11 @@ font-size: 44px!important
 
 .main-section {
              
-   border-radius: 5px ;
+   border-radius: 15px ;
      align-items: center;
    align-content: center;
     padding: 10px 10px;
-    margin:5px 10px 25px 10px;
+    margin:5px 3px 25px 3px;
            borde-rightr: 2px solid #00749A;
        box-shadow: 0 8px 14px rgba(13,71,61,.5);
        
@@ -588,7 +593,7 @@ font-size: 44px!important
 
    max-width: 95%; align-items: center;
    align-content: center;
-   margin:20px 10px 5px  10px;
+   margin:20px 9px 5px  9px;
       
       padding: 10px;
       font-size: 12px!important;
@@ -620,7 +625,7 @@ font-size: 44px!important
       .main-h {
   margin:0 20px 0 20px;
   padding:20px 0 25px 25px;
-  background: #D4F6FF 
+  background: white 
     text-align: center; font-size: 12px;
        
        border-radius: 0 0 40px 40px!important;
@@ -641,13 +646,13 @@ font-size: 44px!important
     }
               .main-h {
       font-size: 11px!important;
-      background-color: #D4F6FF;
+      background-color: white;
       }
  .warning-box {
   background: linear-gradient(35deg, #FEFFE8, #FBFDFC); border:0 ;
       box-shadow: 0 0 6px rgba(3, 35, 97, 0.6);
  padding: 5px 10px;
-  margin:  0 15px 30px 15px;
+  margin:  0 15px 10px 15px;
   border-radius:0 0 18px 18px;
 
 }
@@ -1000,123 +1005,40 @@ footer {
        <div class="subsection" style="margin-top:0;padding-top:0">        <div class="main-h" style="margin-top:0;">           
   <h1>لحميات الأنف – الأنواع والعلاج</h1>  
         <p style="color: blue;text-align:center;font-size:12px">✍️ دكتور / مختار الشرعبي</p>
-        
- <p style="font-size:12px"><strong>
+         </div> 
+         <br>
+         <div class="main-section">             
+ <p style="font-size:12px;padding:20px;text-align:center;line-height:1.9"><strong>
      
           في هذا المقال نشرح الفرق بين أنواع لحميات الأنف من حيث الوظيفة والموقع والأعراض، ومتى يحتاج المريض للتدخل الجراحي.
 </strong>
-     </p> </div> 
-   <br> 
- 
-      <p>  <strong> يعاني الكثير من الأشخاص من انسداد الأنف وصعوبة التنفس، لكن الأسباب تختلف حسب الحالة. ومن أكثر الأسباب شيوعًا :</strong>   </p>
+     </p>
+  </div>   <br> 
+        
+      <p style="text-align: center;font-size:13px">   يعاني الكثير من الأشخاص من انسداد الأنف وصعوبة التنفس، لكن الأسباب تختلف حسب الحالة. ومن أكثر الأسباب شيوعًا :</strong>   </p>
       <ul style="margin-right:30px"><li>
           انحراف الحاجز الأنفي</li><li> واللحميات الأنفية</li> </ul>   
      
      <br><div class="main-section" style="background:linear-gradient(to right, var(--primary-color), var(--secondary-color))">  <h2 style="text-align:center; margin-top:10px;color: black ; background: yellow; padding:5px;font-size:14px; margin: 0 30px;border-radius:20px">أنواع لحميات الأنف</h2>  
 
               <ul style="color:white;text-align:center">
-    <li>السلائل الأنفية (Nasal Polyps)</li>  
-    <li>اللحمية البلعومية (Adenoid)</li>  
-    <li>القرينات الأنفية (Turbinates)</li>   </ul>  
-    </div>  <hr> 
-      
-   <h2  class="img-title">  1. اللحمية البلعومية </h2>  
-    <img style="display: block; margin:40px auto;" src="images/blog/adenoid.jpeg" alt="اللحمية البلعومية" class="blog-img" />  
-   <div class="main-section">  
- <p>🔹
-<strong>  ما هي؟
-</strong></p>
-<p> 
-     هي نسيج لمفاوي يوجد طبيعيًا - في مرحلة الطفولة خصوصاً -خلف الأنف (في البلعوم الأنفي)، ويساهم في المناعة لدى الأطفال. لكنها قد تتضخم وتسبب انسدادًا في مجرى التنفس.</p>  
-              
- <h3 style="color: white;">الأعراض:</h3>  
-        <div class="warning-box">   <ul>  
-    <li>انسداد أنفي مزمن</li>  
-    <li>تنفس عن طريق الفم</li>  
-    <li>شخير أثناء النوم</li>  
-    <li>التهابات متكررة في الأذن الوسطى</li>  
-    <li>اضطرابات في النوم وتأخر النطق أحيانًا</li>  
-  </ul>   </div>
-        
-         <h3 style="color: white;">   ✓ إرتباط اللحمية باللوزتين:</h3> 
- <div class="warning-box">
- <p>في كثير من الحالات، يكون تضخم اللحمية البلعومية مترافقًا مع تضخم اللوزتين. وقد يتطلب العلاج استئصالًا مزدوجًا للحمية البلعومية واللوزتين لضمان تحسن أفضل.  </p>  
- 
- </div>
- 
-
-              <div class="step-number"> x</div> <div class="danger-section"><p style="color:#880E4F">
-<p style="text-align: right;">
-  
-        <p style="font-size:15px">
-  <strong> من الأخطاء الشائعة </strong></p><p>قيام بعض غير المختصين باستئصال اللوزتين فقط، رغم وجود تضخم واضح في اللحمية، مما يؤدي إلى:
-  
- </p>  
-   <div>
-
-       <ul style="text-align: right;"> 
-    <li>رد فعل مناعي وتضخم مضاعف في اللحمية</li>  
-    <li>تفاقم أعراض الانسداد</li>  
-    <li>عدم تحسُّن الحالة أو زيادتها سوءاً</li>  
-  </ul><p><strong>
- وهذا ما نلاحظه في العديد من الحالات التي تُجرى فيها جراحة لوز دون تقييم دقيق للحمية البلعومية من قبل أطباء غير مختصين في الأنف والأذن والحنجرة.</strong></p> </div>  
-       </div> 
-       
- <h3 style="color: white;">دواعي الاستئصال:</h3> 
-<div class="warning-box" style="background:#DAF7FF">
-           
-       
-    <ul style="text-align: right;"> 
-    <li>انسداد تنفسي مزمن</li>  
-    <li>توقف النفس الليلي</li>  
-    <li>التهابات أذن متكررة</li>  
-    <li>مشاكل سمعية بسبب تراكم السوائل في الأذن الوسطى  نتيجة انسداد قناة استاكيوس</li>  
-    <li>فشل العلاج الدوائي</li>  
- </ul>  
- </div><p style="font-size:12px;text-align:center"><strong>
-🔹 تُجرى العملية تحت التخدير العام ويغادر المريض المستشفى بعد ساعتين من العملية.</strong></p>
-   </div>
-      <hr>  
-   <h2  class="img-title" >
-2. السلائل الأنفية</h2>
-  <img style="display: block; margin:40px auto;" src="images/blog/polyps.jpeg" alt="السلائل الأنفية" class="blog-img" />  
-   <div class="main-section"> <p>لحمية غير سرطانية تنمو من بطانة الأنف أو الجيوب نتيجة التهابات مزمنة أو تحسس شديد.</p>     <h3 style="color: white;">الأعراض:</h3>
-  <div class="warning-box">   <ul> 
-    <li>انسداد أنفي دائم</li>  
-    <li>ضعف أو فقدان حاسة الشم</li>  
-    <li>سيلان أنف مزمن</li>  
-    <li>صداع أو ضغط في الوجه</li>  
-  </ul>  </div> 
-   <h3 style="color: white;">العلاج:</h3> 
-
-  <div class="warning-box"> <ul>   <li>دوائي: بخاخات الكورتيزون، مضادات التحسس، أدوية مضادة للالتهاب</li>  
-    <li>جراحي: استئصال السلائل بتقنية منظار الجيوب الأنفية تحت تخدير عام</li>  </ul> 
- </div>
-  <div class="whatsapp-section" style="margin-top: 5px padding:10px">
-  <a href="https://youtu.be/i0Va72Gpp-s?feature=shared" target="_blank">
-    <img src="images/social/youtube.jpeg" alt="يوتيوب" class="whatsapp-icon" style="margin:15px">
-  </a>
-
- <div class="cta-button"> 
- <a href="https://youtu.be/i0Va72Gpp-s?feature=shared" style="color:black" >
-🎥 شاهد نموذج عملياتنا </a>
-</div>  
-  </div> <p style="font-size:12px;text-align:center"><strong>
-🔹 تُجرى العملية تحت التخدير العام ويغادر المريض المستشفى بعد ساعتين من العملية.</strong></p>
-    
-  <p style="font-size:12px;text-align:center"><strong> 🔹 بعد العملية، يحتاج المريض إلى متابعة واستخدام بخاخات وقائية لتقليل عودة اللحميات.</strong></p>
-      </div> 
-          
-
-              <hr>        <h2  class="img-title" >3. القرينات الأنفية</h2>  
+        <li>القرينات الأنفية (Turbinates)</li> 
+        <li>السلائل الأنفية (Nasal Polyps)</li>  
+    <li>لحمية البلعوم الأنفي (Adenoid)</li>  
+  </ul>  
+    </div> 
+     <hr>
+   <br> 
+            <h2  class="img-title" >1. القرينات الأنفية</h2>  
     <img style="display: block; margin:40px auto;" src="images/blog/turbinate.jpeg" alt="القرينات الأنفية" class="blog-img" />  
-  <div class="main-section">  
- 
+  <div class="main-section">          
  <p>🔹
 <strong>  ما هي؟
 </strong></p>
 <p>
-هي تراكيب طبيعية موجودة لدى كل إنسان داخل الأنف،.ولا تشكل أي خطورة ولا يستدعي القلق في حال تم ملاحظتها من خلال النظر داخل تجويف الأنف ، بل وجودها له فائدة كبيرة ودور كبير في حماية وتحسين جودة النفس .</p> <p>
+هي تراكيب طبيعية موجودة لدى كل إنسان داخل الأنف، وعددها ثلاثة في كل تجويف تتصل بالجدار الجانبي لتجويف الأنف لتشكل ما يشبه الرفوف الأنفية ، ولا تشكل أي خطورة ولا يستدعي القلق في حال تم ملاحظتها من خلال النظر داخل تجويف الأنف ، بل وجودها له فائدة كبيرة ودور كبير في حماية وتحسين جودة النفس .</p> 
+<hr>
+<p>
 🔹<strong>  وظيفتها:
 </strong></p>
 <ul><li>
@@ -1126,10 +1048,7 @@ footer {
 </li><li>
 تنظيم تدفق الهواء داخل الأنف
 </li></ul>
-<p>🔹 <strong>
-أسباب التضخم :  
-</strong>
- </p>
+<hr>
 <p style="font-size:13px;text-align:center">
 قد تتضخم القرينات نتيجة أحد التالي:</p> 
 <ul style="margin-right:20px">
@@ -1149,13 +1068,13 @@ footer {
     <li>صوت أنفي عند الكلام</li>  
     <li>سعال مزمن</li>
     <li>صداع </li>
-</ul> </div>
+</ul> </div><br>
            <div class="step-number" style="background-color:white;padding:-5px">  ⚠️</div>
     <div class="danger-section">
   <p style="font-size:15px"><strong> ️ تنبيه:</strong></p> 
 <p>
 القرينات ليست لحميات واستئصالها الكامل مضر. يُجرى فقط تصغير جزئي في حالات محددة</p>  </div>
-
+<br>
  <h3 style="color: white;font-size:12px">التدخل الجراحي للقرينات الأنفية:</h3>
 <div class="warning-box" style="background:#DAF7FF">   <ul>   <li>يُجرى فقط عند فشل العلاج الدوائي</li>  
 <li>تصغير جزئي وليس استئصالًا كاملاً</li>  
@@ -1163,12 +1082,100 @@ footer {
 </div><p style="font-size:12px;text-align:center"><strong>
 🔹 تُجرى العملية تحت التخدير العام ويغادر المريض المستشفى بعد ساعتين من العملية.</strong></p>
     </div> 
-<br><hr>
-<div class="main-section" style="background-color:#DAF7FF"> 
-           <h2 style="color:#B70051; text-align:center;font-size:14px">طرق التشخيص</h2>  
-<p>   
- <strong>يتم التشخيص عبر الفحص السريري باستخدام المنظار، وقد تُطلب أشعة مقطعية في بعض الحالات لتحديد حجم ونوع اللحميات بدقة.</strong> </p></div> <br></div> 
-<hr> 
+<hr> <br>
+ 
+   
+  <br> <h2  class="img-title" >
+2. السلائل الأنفية</h2>
+  <img style="display: block; margin:40px auto;" src="images/blog/polyps.jpeg" alt="السلائل الأنفية" class="blog-img" />  
+   <div class="main-section">
+      <p style="text-align:center"><strong>لحمية غير سرطانية تنمو من بطانة الأنف أو الجيوب نتيجة التهابات مزمنة أو تحسس شديد.</strong></p>     <h3 style="color: white;">الأعراض:</h3>
+  <div class="warning-box">   <ul> 
+    <li>انسداد أنفي دائم</li>  
+    <li>ضعف أو فقدان حاسة الشم</li>  
+    <li>سيلان أنف مزمن</li>  
+    <li>صداع أو ضغط في الوجه</li>  
+  </ul>  </div> <br>
+   <h3 style="color: white;">العلاج:</h3> 
+
+  <div class="warning-box"> <ul>   <li>دوائي: بخاخات الكورتيزون، مضادات التحسس، أدوية مضادة للالتهاب</li>  
+    <li>جراحي: استئصال السلائل بتقنية منظار الجيوب الأنفية تحت تخدير عام</li>  </ul> 
+ </div>
+  <div class="whatsapp-section" style="margin-top: 5px padding:10px">
+  <a href="https://youtu.be/i0Va72Gpp-s?feature=shared" target="_blank">
+    <img src="images/social/youtube.jpeg" alt="يوتيوب" class="whatsapp-icon" style="margin:15px">
+  </a>
+
+ <div class="cta-button"> 
+ <a href="https://youtu.be/i0Va72Gpp-s?feature=shared" style="color:black" >
+🎥 شاهد نموذج عملياتنا </a>
+</div>  
+  </div> <p style="font-size:12px"><strong>
+🔹 تُجرى العملية تحت التخدير العام ويغادر المريض المستشفى بعد ساعتين من العملية.</strong></p>
+    
+  <p style="font-size:12px;"><strong> 🔹 بعد العملية، يحتاج المريض إلى متابعة واستخدام بخاخات وقائية لتقليل عودة اللحميات.</strong></p>
+      </div> 
+          
+
+
+<br> 
+<h2  class="img-title">  3. لحمية البلعوم الأنفي  </h2>  
+    <img style="display: block; margin:40px auto;" src="images/blog/adenoid.jpeg" alt="اللحمية البلعومية" class="blog-img" />  
+   <div class="main-section">  
+ <p>🔹
+<strong>  ما هي؟
+</strong></p>
+<p> 
+     هي نسيج لمفاوي يوجد طبيعيًا - في مرحلة الطفولة خصوصاً -خلف الأنف (في البلعوم الأنفي)، ويساهم في المناعة لدى الأطفال. لكنها قد تتضخم وتسبب انسدادًا في مجرى التنفس.</p>  
+              
+ <h3 style="color: white;">الأعراض:</h3>  
+        <div class="warning-box">   <ul>  
+    <li>انسداد أنفي مزمن</li>  
+    <li>تنفس عن طريق الفم</li>  
+    <li>شخير أثناء النوم</li>  
+    <li>التهابات متكررة في الأذن الوسطى</li>  
+    <li>اضطرابات في النوم وتأخر النطق أحيانًا</li>  
+  </ul>   </div>
+  <br>      
+         <h3 style="color: white;">   ✓ إرتباط اللحمية باللوزتين:</h3> 
+<div class="warning-box" style="background:#DAF7FF"> 
+ <p>في كثير من الحالات، يكون تضخم اللحمية البلعومية مترافقًا مع تضخم اللوزتين. وقد يتطلب العلاج استئصالًا مزدوجًا للحمية البلعومية واللوزتين لضمان تحسن أفضل.  </p>  
+ 
+ </div>
+ 
+<br>
+              <div class="step-number"> x</div> <div class="danger-section"><p style="color:#880E4F">
+<p style="text-align: right;">
+  
+        <p style="font-size:15px">
+  <strong> من الأخطاء الشائعة </strong></p><p>قيام بعض غير المختصين باستئصال اللوزتين فقط، رغم وجود تضخم واضح في اللحمية، مما يؤدي إلى:
+  
+ </p>  
+   <div>
+
+       <ul style="text-align: right;"> 
+    <li>رد فعل مناعي وتضخم مضاعف في اللحمية</li>  
+    <li>تفاقم أعراض الانسداد</li>  
+    <li>عدم تحسُّن الحالة أو زيادتها سوءاً</li>  
+  </ul><p><strong>
+ وهذا ما نلاحظه في العديد من الحالات التي تُجرى فيها جراحة لوز دون تقييم دقيق للحمية البلعومية من قبل أطباء غير مختصين في الأنف والأذن والحنجرة.</strong></p> </div>  
+       </div> 
+   <br>    
+ <h3 style="color: white;">دواعي الاستئصال:</h3> 
+<div class="warning-box" style="background:#DAF7FF">
+           
+       
+    <ul style="text-align: right;"> 
+    <li>انسداد تنفسي مزمن</li>  
+    <li>توقف النفس الليلي</li>  
+    <li>التهابات أذن متكررة</li>  
+    <li>مشاكل سمعية بسبب تراكم السوائل في الأذن الوسطى  نتيجة انسداد قناة استاكيوس</li>  
+    <li>فشل العلاج الدوائي</li>  
+ </ul>  
+ </div><p style="font-size:12px;text-align:center"><strong>
+🔹 تُجرى العملية تحت التخدير العام ويغادر المريض المستشفى بعد ساعتين من العملية.</strong></p>
+   </div>
+      <hr>  
  <div class="booking-container" style="background:linear-gradient(to right, var(--primary-color), var(--secondary-color));">
      <h3 style="text-align:center; margin-top:0;color: black ; background: yellow; padding:5px">ختامًا</h3>  
   <p style="color:white;text-align:center">  التشخيص السليم والتقييم بالمنظار ضروري لتحديد سبب انسداد الأنف بدقة.</p>
