@@ -139,17 +139,18 @@
 }
 </script>
   <!-- ✅ تنسيقات CSS -->
-
-  <style>
-    body {
+ <style>
+   body {
       font-family: 'Cairo', sans-serif;
+        overflow-x: hidden; /* لمنع التمرير الأفقي */
       margin: 0;
       padding: 0;
       direction: rtl;
-      background-color: #f9f9f9;
       text-align: right;
+      background-color: #E8F4FC;
     }
-     nav {
+ /* ✅ NAV */
+       nav {
      
      
      text-align: center;
@@ -164,43 +165,52 @@
       justify-content: center;
       flex-wrap: wrap;
       text-decoration: none;
-      rgba(236, 235, 255, 0.9);gap: 8px;
+      rgba(236, 235, 255, 0.9);gap: 15px;
     }
     .nav-link {
-     background: linear-gradient(35deg, #00999C, #004C57);
-      padding: 2px 9px;
+  background: linear-gradient(to left, var(--secondary-color), var(--accent-color));  
+      color: white;
+      padding: 2px 6px;
       border-radius: 4px;
-      color: #E0F2F1;
-      text-shadow: 0 3px 1px rgba(3, 25, 83, 0.7);
+      text-shadow: 1px 1px 1px rgba(3, 27, 33, 0.9);
+         font-weight: bold;
       text-decoration: none;
-      box-shadow: 0 0 0 0.3px rgba(243, 245, 212, 4);
-      font-size: 10px;
+      border-block: 0.7px solid #89DFF6;
+      box-shadow: 0 3px 3px rgba(1, 3, 23, .7);
+      font-weight: blod;
+      font-size: 9px;
       transition: all 0.3s ease;
       display: inline-block;
     }
     .nav-link:hover {
-      background-color: red;
-      color: #00332E;
+      background-color: #EEED62;
+      color: red;
     }
     @media (min-width: 768px) {
       nav {
-        font-size: 6px;
+        font-size: 16px;
         padding: 20px 10px;
     
       }
       .nav-row {
-        gap: 15px;
+        gap: 45px;
 
      margin-bottom: 10px;       }
+     
       .nav-link {
-        margin-top: 20px;padding: 12px 18px;
-       box-shadow: 0 0 0 0.8px rgba(243, 245, 212, 8);
+        padding: 5px 15px;margin-top: 20px;
+        
+       box-shadow: 0 8px 1px rgba(1, 53, 83, .7);
        border-radius: 20px; font-size: 28px;
-       
+       border-block: 2px solid #89DFF6;
+       padding: 3px 15px;
     }
     }
-   header {
-      background: linear-gradient(35deg, #004C57, #00999C);
+    
+      header {
+      margin-bottom: 4px;
+                background: linear-gradient(to left, var(--secondary-color), var(--accent-color));  
+  border-bottom: 1px solid #C0F0FF;
       color: white;
       padding: 20px;
       display: flex;
@@ -209,7 +219,7 @@
       flex-wrap: wrap;
       gap: 18px;
       border-radius: 0 0 25px 25px;
-      box-shadow: 0 4px 12px rgba(0, 77, 64, 0.3);
+        box-shadow: 0 13px 6px rgba(0,31,51,.4);
     }
     
     .header-logo img {
@@ -229,7 +239,7 @@
       white-space: nowrap;
     }
     .sub-title {
-      font-size: 10px;
+      font-size: 13px;
       color: #D0FFFC;
       white-space: nowrap;
     }
@@ -241,20 +251,20 @@
         height: 110px;
       }
       .main-title {
-        font-size: 30px;
+        font-size: 29px;
       }
       .sub-title {
-        font-size: 23px;
+        font-size: 30px;
       }
     }
     h1 {
-      background-color: white;
-      color: #A1115E;
-      border: 1px solid #004D40;
+      background-color: #A1115E;
+      color: white;
+      border: 1px solid white;
       text-align: center;
       padding: 5px;
       box-shadow: 0 9px 6px rgba(33, 95, 97, 0.7);
-      border-radius: 9px;
+      border-radius: 14px;
       font-size: 18px;
       margin: 15px auto;
       width: 90%;
@@ -303,257 +313,16 @@ h2 {
  }
       /* أنماط المعرض */
 /* أنماط أساسية للمعرض */
-.gallery {
-  display: grid;
- border: 1px solid #1A8CDC; background-color: #F2FAFF;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 30px;
-  align-items: start;
-  padding: 30px 10px;
-  max-width: 1400px;
-  margin: 0 5px;
-}
 
-.gallery {
-  
- border: 1px solid #1A8CDC !important;}
- 
- .gallery-item {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  min-height: 30px;
-  background: white;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0, 75, 140, 0.1);
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
-  position: relative;
-}
-
-.gallery-item:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 20px rgba(0, 75, 140, 0.15);
-}
-
-.gallery img {
-   width: 90%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 12px 12px 0 0;
-  transition: transform 0.5s ease;
-}
-    .gallery img:hover {
-      transform: scale(1.8);
-      background-color: #f1f1f1;
-    }
-
-
-
-/* التنسيق للجوال */
-@media (max-width: 768px) {
-  .gallery {
-    grid-template-columns: 1fr;
-    margin: 0px;
-    border: 3px solid #1A8CDC;
-    padding: 20px 15px;
-    gap: 25px;
-  }
-  
-  .gallery-item {
-    height: auto;
-  }
-  
-
-}
-
-/* التنسيق لشاشات متوسطة */
-@media (max-width: 769px) and  {
-  .gallery {
-    grid-template-columns: repeat(auto-fill, minmax(680px, 1fr));
-  }
-}
-
-/* تأثيرات خاصة للعرض على سطح المكتب */
-@media (min-width: 1025px) {
-  .gallery {
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  }
-  
-  .gallery-item {
-    min-height: 400px;
-  }
-  
-  .image-caption {
-    font-size: 18px;
-    padding: 45px;
-  }
-      .gallery img:hover {
-      transform: scale(2.8);
-      background-color: #f1f1f1;
-    }
-}
-
-/* أنيميشن عند التحميل */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.gallery-item {
-  animation: fadeInUp 0.6s ease forwards;
-  opacity: 0;
-}
-
-.gallery-item:nth-child(1) { animation-delay: 0.1s; }
-.gallery-item:nth-child(2) { animation-delay: 0.2s; }
-.gallery-item:nth-child(3) { animation-delay: 0.3s; }
-.gallery-item:nth-child(4) { animation-delay: 0.4s; }
-.gallery-item:nth-child(5) { animation-delay: 0.5s; }
-.gallery-item:nth-child(6) { animation-delay: 0.6s; }
- .back-link {
-  text-align: center;
-  margin: 10px 0;
-}
-
- footer {
- border-top: 4px solid white; 
- background: linear-gradient(35deg, #004C57, #00999C);
-  color: white !important;
-          box-shadow: 2px 0 2px 5px rgba(194, 0, 97, 22);
-  text-align: center;
-  padding: 10px 0;
-  font-size: 9px;
-  line-height: 1.7;
-  overflow: hidden;
-  width: 100%;
-  box-sizing: border-box;
-  margin: 0;
-}
-
-.address-card {
-  display: inline-block;
-  background-color: white;
-  color: #004B8C !important;
-  padding: 2px 20px;
-  border-radius: 30px;
-  margin-bottom: 10px;
-  font-weight: bold;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  font-size: 12px;
-  line-height: 1.5;
-  max-width: 90%;
-}
-
-.working-hours {
-  background-color: rgba(255, 255, 255, 0.15);
-  display: inline-block;
-  padding: 1px 15px;
-  border-radius: 20px;
-  color: white;
-  font-size: 12px;
-  
-}
-
-.copyright-container {
-  background-color: rgba(0, 0, 0, 0.2);
-  padding: 10px;
-  margin-top: 5px;
-  font-weight: 500;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  font-size: 7px;
-}
-
-.social-icons {
-  display: flex;
-  gap: 10px;
-  margin: 10px 10px;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-.social-icon {
-  width: 30px;
-  height: 30px;
-  
-  box-shadow: 0 0 15px rgba(, 33, 38, 0.8);
-  border-radius: 50%;
-   background: linear-gradient(35deg, #00999C, #004C57);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
-   border: 1px solid #55A699;
-}
-
-.social-icon:hover {
-  background-color: #00796B;
-  transform: translateY(-5px);
-}
-
-.social-icon img {
-  width: 22px;
-  height: 22px;
-  
-}
-@media (min-width: 768px) {
- footer {
- border-top: 9px solid white; 
- background-color: #004D40 !important;
-  color: white !important;
-          box-shadow: 2px 0 2px 9px rgba(194, 0, 97, 22);
-          }
- .address-card {
-    font-size: 34px !important;
-    margin: 10px auto;
-    padding: 5px 40px !important;
-  }
-  
-  .working-hours {
-    font-size: 28px !important;
-    padding: 5px 40px !important;
-  }
-  
-  .social-icon {
-   ; width: 70px;
-    height: 70px;
-    border: 2px solid #55A699;
-    margin: 15px;
-    
-  }
-
-  .social-icon img {
-    width: 50px;
-    height: 50px;
-    
-  }
-   }
-  
-  .copyright-container {
-    font-size: 6px !important;
-    padding: 11px;
-  }
-  }
-  @media (min-width: 768px) {
-    .social-icon {
-       gap: 190px!important !important;
-  }
-}
-.booking-container {
-  background-color: #008190;
+   .booking-container {
+      background: linear-gradient(to left, var(--secondary-color), var(--accent-color));  
+      border: 1px solid #80E9FF;
   border-right:5px solid #ffc107;
           box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
           border-radius: 8px;
  padding: 20px 20px;
-  margin: 20px 10;
-  border-radius: 0 8px 8px 0;
+  margin: 20px 10px;
+  border-radius: 38px 0 38px 0;
 }
 
 .booking-title {
@@ -599,6 +368,7 @@ h2 {
          border-radius: 10px;
   text-decoration: none;
   transition: all 0.3s ease;
+  margin: 20px auto;
 }
 
 .booking-button.sms {
@@ -613,7 +383,7 @@ h2 {
 
 .booking-button.whatsapp {
   background-color: #f0fafa;
-  color: black;
+        box-shadow: 0 2px 6px rgba(33, 95, 97, 0.7); color: black;
   border: 2px solid #009688;
 }
 
@@ -647,14 +417,14 @@ h2 {
 /* نسخة سطح المكتب */
 @media (min-width: 768px) {
   .booking-container {
-    max-width: 90٪; /* تكبير العرض */
+    max-width: 40٪; /* تكبير العرض */
    border-right: 9px solid #ffc107;
-   border-radius: 18px;
-   padding: 40px 10px; margin: 40px; /* هامش جوانب أكبر */
-  }
+   border-radius: 68px 10px;
+   padding: 40px 10px; margin: 40px; }
   .booking-button {
     font-size: 19px; /* تكبير الخط */
-    padding: 14px 22px; /* تكبير الأزرار */
+    padding: 14px 22px; 
+    margin: 30px auto;
   }
   .booking-icon {
     width: 58px; /* تكبير الأيقونة */
@@ -667,12 +437,131 @@ h2 {
       font-size: 11px; 
 }
 .booking-button {
-    font-size: 31px; 
+    font-size: 31px;
+    border-radius: 20px;
 }
 .booking-buttons {
     gap: 91px; 
 }
 }
+
+ footer {
+ border-top: 4px solid white; 
+         background: linear-gradient(to right, var(--secondary-color), var(--accent-color));  
+  color: white !important;
+          box-shadow: 2px 0 2px 5px rgba(194, 0, 97, 22);
+  text-align: center;
+  padding: 10px 0;
+  font-size: 9px;
+  line-height: 1.7;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.address-card {
+  display: inline-block;
+  background-color: white;
+  color: #004B8C !important;
+  padding: 2px 20px;
+  border-radius: 30px;
+  
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 12px;
+  line-height: 1.5;
+  max-width: 90%;
+}
+
+.working-hours {
+  background-color: rgba(255, 255, 255, 0.15);
+  margin: 0 auto;
+  display: inline-block;
+  padding: 1px 15px;
+  border-radius: 20px;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.copyright-container {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 3px10px;
+  margin-top: 5px;
+  font-weight: 500;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 6px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin: 10px auto;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon {
+  width: 30px;
+  height: 27px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+box-shadow: 0 3px 3px rgba(1, 53, 83, .9);
+      border-block: 1px solid #89DFF6;
+}
+
+.social-icon:hover {
+  background-color: #00796B;
+  transform: translateY(-5px);
+}
+
+.social-icon img {
+  width: 22px;
+  height: 22px;
+}
+@media (min-width: 768px) {
+footer {
+ border-top: 12px solid white; 
+        background: linear-gradient(to right, var(--secondary-color), var(--accent-color));  
+  color: white !important;
+          box-shadow: 2px 0 2px 9px rgba(194, 0, 97, 22);
+          }
+ .address-card {
+    font-size: 34px !important;
+    margin: 10px auto;
+    padding: 5px 40px !important;
+  }
+  
+  .working-hours {
+    font-size: 28px !important;
+    padding: 5px 90px !important;
+  }
+  
+  .social-icon {
+     margin: 10px 5px;width: 70px;
+    height: 70px;
+    box-shadow: 0 8px 3px rgba(1, 53, 83, .9);
+      border-block: 2px solid #89DFF6;
+        gap: 80px;
+  }
+  
+  .social-icon img {
+    width: 50px;
+    height: 50px;
+    gap: 80px;
+  }
+  
+  .copyright-container {
+    font-size: 6px !important;
+    padding: 5px 11px;
+  }
+  }
 
   .imp-section {
       background-color:#00709E ;
@@ -687,27 +576,30 @@ h2 {
     }
 
                 
-    .subsection {
-      background-color: white;
-      padding: 15px 10;
-      margin: 0 5px;
-      border-radius: 8px;
-       box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);;
-      position: relative;
-      border-right: 4px solid #00709E;
-    }
-    
-    .subsection h3 {
-      color: #00709E;
-      font-size: 13px;
-      margin-bottom: 10px;
-    }
-    
-    .subsection p {
-      font-size: 12px;
-      line-height: 1.7;
-      color: black;
-    }
+      .subsection {
+      padding: 30px 30px;
+    margin: 10px 7px;
+  padding:  0 12px;
+  background-color: #f2f7ff;
+     box-shadow: 0 0 1px rgba(13,71,61,.5);
+  border-radius: 15px;
+         
+     
+          
+      box-shadow: 0 0 6px rgba(3, 55, 97, 0.9);
+}
+  @media (min-width: 768px) {
+.subsection {
+    background-color: #f2f7ff;
+   max-width: 95%;align-items: center;
+   align-content: center;
+   width: 90%;
+   
+    border-radius: 90px;
+    padding: 30px 10px;
+    margin: 10px 20px;
+  }
+  }
     .danger-section {
       background-color: #FFE6F8;
           box-shadow: 0 0 6px rgba(0, 0, 97, 0.6);
@@ -723,17 +615,7 @@ h2 {
 .main-content {
   margin: 30px 10px;
 }
-.main{
- border-right: 4px solid #00709E;
- border-left: 4px solid #00709E;
-  margin:0 20px 20px 20px;
-  padding: 25px;
-  background-color: #F2FAFF;
-  
-      box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
-      border-left: 5px solid  #00A19D
-      ;
-}
+
 .pic-section {
   margin: 10px 10px;
   padding: 0;
@@ -765,25 +647,11 @@ h2 {
     padding: 30px 30px 30px 0;
     margin: 10px 30px;
   }
-    .subsection  {
-      margin: 20px 30px;border-right: 9px solid #00709E;
-      padding: 10px 50px;
-      font-size: 12px!important;
-    }
+ 
 .main-content {
   margin: 30px 10px;
 }
-.main{
- border-right: 4px solid #00709E;
- border-left: 4px solid #00709E;
-  margin:0 20px 20px 20px;
-  padding: 25px;
-  background-color: #F2FAFF;
-  
-      box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
-      border-left: 5px solid  #00A19D
-      ;
-}
+
         .imp-section {
       border-radius: 40px;
          border-right: 9px solid red;
@@ -802,7 +670,7 @@ h2 {
    .subsection {
     border-radius: 40px;
     padding: 25px;
-    margin: 25px 0;
+    margin: 25px 20px 25px 20px;
   }
   }
 
@@ -810,60 +678,75 @@ h2 {
 .warning-box {
   background-color: white;
 color: black;
-  border: 2px solid white;
-  border-left: 5px solid #ffc107;
-          box-shadow: 0 0 6px rgba(3, 53, 197, 0.6);
+  border: 1px solid #007FBC;
+  border-top: 7px solid #2AB8FC;
+     box-shadow: 0 0 6px rgba(3, 35, 97, 0.6);
  font-size:15px;
  text-align: center;
  padding: 10px 10px;
-  margin: 10px 10px 5px 5px;
-  border-radius:  25px 10px 0 0px;
+  margin: 0 20px 0 20px;
+  border-radius:  0 0 25px 25px;
 }
   @media (min-width: 768px) {
        .warning-box {
       margin: 20px 0 20px 30px;
-       border-radius: 45px 0 0 0;
+        margin-top: 120px;
+        border-radius: 45px 0 45px 0;
    font-size:7px;
     
       padding: 10px 20px 10px 10px;
+         box-shadow: 0 0 9px rgba(3, 35, 97, 0.9);
     }
             }
             .gallery {
   display: grid;
- border: 1px solid #1A8CDC; background-color: #F2FAFF;
+ border: 1px solid #80E9FF; 
+ background-color: #026696;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 30px;
   align-items: start;
-  padding: 30px 10px;
+  padding: 0 10px;
   max-width: 1400px;
   margin: 0 5px;
+  justify-content: center;
+  border-right: 15px;
 }
 
 .gallery {
-  
- border: 2px solid #1A8CDC !important;}
+  padding-top:5px ;
+ border: 1px solid #80E9FF !important;
+    box-shadow: 0 4px 12px rgba(15, 35, 80, 0.6);
  }
         .image-container {
-           border:2px solid  green ;
-           margin: 10px 10px;
-            background: white;
-            padding:20px 15px 5px 15px;
-            border-radius: 8px 8px 20px;
-             box-shadow: 0 2px 6px rgba(0, 25, 39, 0.4);  font-size:15px;
+           border: 2px solid #1A8CDC ;
+         
+
 
   }
-          .image-container {
-  
-  background-color: white!important;
-    }
+    .image-container {
+
+        width: fit-content;
+        margin: 1px auto;
+    border: 1px solid #1A8CDC ;
+              padding-top: 20px;
+      
+            background-color: #EBF5FC;
+            padding:2px 15px 5px 15px;
+            border-radius: 8px 8px 20px 20px;
+            padding-bottom: 20px;
+            
+               
+     
+            }
                 .image-container    img {
-            align-items: center;max-width: 95%;
+            align-items: center;max-width: 100%;
             height: auto;
             display: block;
-            margin: 0 auto;
-            border-radius: 4px;
-            border: 1px solid black;
-            box-shadow: 0 2px 6px rgba(3, 53, 197, 0.6);
+            margin: 10px  auto 11px auto;
+            border-radius: 5px 5px 0 0;
+            background-color: #F1F9FC;
+            
+            box-shadow: 0 4px 2px rgba(15, 35, 80, 0.6);
             
         }
         
@@ -871,46 +754,28 @@ color: black;
    @media (min-width: 768px) { 
   .warning-box {
       font-size: 9px!important;
+    
   }
   .gallery img {
-   width: 95%;
-  height: 340px;
+   width: 100%;
+  height: 300px;
   object-fit: cover;
   border-radius: 32px 12px 0 0;
   transition: transform 0.5s ease;
-  margin-top: 0;
+  border:2px solid  #88DDFF;
+     box-shadow: 0 0 9px rgba(3, 35, 97, 0.8);
+  
 }
         .image-container {
-            margin: 0;
-            padding: 30px 0 0 0;
-            border:2px solid  green;
-            background-color: white;
+            margin-top: 20px;
+            padding: 0 0 0 0;
+            
+            background-color: #026696;
+             
+  
      }  
    }
-        .note {
-              box-shadow: 0 2px 6px rgba(3, 53, 197, 0.6);
-              font-size:15px;
-             background: linear-gradient(35deg, #004C57, #00999C);
-            border-right: 4px solid red;
-            padding:  5px 0 10px 5px;
-            margin: 20px 0 0 0;
-            border-radius: 0 0 20px;
-        }
-          @media (min-width: 768px) {
-       .note {
-              margin: 30px 0 0 0;
-       border-radius: 50px 0 0 0;
-   font-size:10px;
-    border-right: 10px solid red;
-      padding: 5px;
-    }
-        }
-          .image-container {
-      border: 1px solid black!important;
-      box-shadow: 0 2px 6px rgba(3, 53, 197, 0.6);
-      padding-top: 10px;
-      border-radius: 8px 8px 20px;
-  }
+
  .back-link {
   text-align: center;
   margin: 10px 0;
@@ -921,9 +786,9 @@ color: black;
   background-color: #A1115E;
   color: white;
   padding: 5px 9px;
-  border-radius: 20px;
+  border-radius: 10px;
   border: 2px solid white;
-  font-size: 22px;
+  font-size: 14px;
   font-weight: bold;
   text-decoration: none;
   display: inline-block;
@@ -943,33 +808,78 @@ color: black;
 
              .img-title {
               
-      padding: 5px;
-      background: linear-gradient(35deg, #004C57, #00999C);
-      color:white;border: 2px solid #CCE4F5;
+      padding: 5px 15px;
+     
+      border: 2px solid #CCE4F5;
       font-size: 14px ;
       border-radius:  40px  0 20px 20px;
       text-align: center;
-     border-right: 9px solid #A1115E;
-      margin: 0 50px;
+     border-right: 4px solid white;
+      margin: 0 20px;
+          background-color: #1797B2;
+          color:white;
+            box-shadow: 0 3px 1px rgba(32, 0, 19, 0.5);
       }
       
  @media (min-width: 768px) {
      .container p {
        margin-right: 90px;padding: 35px; font-size: 22px !important; /* تكبير حجم الفقرات */
       }
-      
+ 
        .img-title {
-       border-radius: 80px 0 15px 40px;
-       padding: 5px;
+       border-radius: 80px 0 40px 40px;
+       padding: 5px 10px;
       
-      color:white;border: 2px solid #CCE4F5;
+      color:white;
+      border: 2px solid #00999C;
       font-size: 14px ;
       font-size: 15px;
       text-align: center;
-      margin: 0 70px;
-      border-right: 19px solid #A1115E;
+      margin: 0 50px;
+      border-right: 9px solid white;
+      border-bottom: 7px solid white;
       }
  }
+       .main-h {
+  margin:0 20px 0 20px;
+  padding: 20px 25px 0 25px;
+  background: white ;
+    text-align: center; font-size: 12px;
+          border-radius:  0  0 40px 40px;
+            box-shadow: 0 0 9px rgba(3, 35, 97, 0.6);
+    text-align: center; font-size: 12px;
+    
+}
+     
+ 
+      
+@media (min-width: 768px) {
+    .main-h {
+         font-size: 11px!important;
+      background-color: white; margin: 0 50px 0 50px;
+         box-shadow: 0 0 9px rgba(3, 35, 97, 0.6);
+
+  }
+    }
+     :root {
+            --primary-color: #01596B;
+            --secondary-color: #01849F;
+            --accent-color: #005464;
+            --light-color: #0194B2;
+            --dark-color: #032E3B;
+            --text-color: #333;
+        }
+        
+              strong {
+      color: #00709E;
+      padding: 15px;
+              }
+                     .main-h {
+  padding-bottom: 10px;
+  font-size: 11px;
+                }       .subsection {
+  padding-top:0 !important;
+                       }
   </style>
 </head>
 
@@ -979,102 +889,123 @@ color: black;
     <img src="images/clinic-logo.png" alt="شعار العيادة" style="border-radius:50%">
     <div class="header-text">
       <div class="main-title">عيادة د. مختار الشرعبي الإستشارية</div>
-      <div class="sub-title">الإستشارية للأنف والأذن والحنجرة والرأس والعنق،</div>
+      <div class="sub-title"> للأنف والأذن والحنجرة والرأس والعنق</div>
     </div>
   </header>
  
   
-       <div class="main">
-                  
+        <div class="subsection" style="margin-top:0;padding-top:5px">        <div class="main-h" style="margin-top:0;">           
      <h1>معرض الصور</h1>
     
- <p style="text-align:center; font-size:12px; color:#444; margin-bottom:30px;font-weight: bold;">
-في هذا المعرض نوثق بعضًا من العمليات التي أُجريت باستخدام تقنيات المنظار الحديثة، وتشمل عمليات ترقيع الطبلة، تجميل الأنف، إصلاح كسور الأنف، وغيرها من الإجراءات المتقدمة التي نُفذت في عيادة د. مختار الشرعبي بمحافظة تعز.
+ <p style="text-align:center; font-size:12px; color:#444; margin-bottom:30px;font-weight: bold;"><strong>
+في هذا المعرض نوثق بعضًا من العمليات التي أُجريت باستخدام تقنيات المنظار الحديثة، وتشمل عمليات ترقيع الطبلة، تجميل الأنف، إصلاح كسور الأنف، وغيرها من الإجراءات المتقدمة التي نُفذت في عيادة د. مختار الشرعبي بمحافظة تعز.</strong>
 </p></div>
     <br> 
    <div class="img-title">نماذج من نتائج عملياتنا</div>  <br> 
-<div class="gallery">
+<div class="gallery" style="border-radius:15px ;padding-bottom:15px">
   <div class="image-container">
-    <img src="images/operations/tympanoplasty.webP" alt="نتيجة ترقيع الطبلة 1" onclick="openLightbox(this.src, this.alt)">
+    <img src="images/operations/tympanoplasty.webP" alt="نتيجة ترقيع الطبلة 1">
      
-       <div class="note">   
+  </div>    
     <div class="warning-box">عملية ترقيع ثقــب طبـلة الأذن بالمنظار</div>
-  </div> </div>
+  
 <div class="image-container">
     <img src="images/operations/fess.webP" alt="نتيجة عملية جيوب أنفية5" onclick="openLightbox(this.src, this.alt)">
-               <div class="note">   
-    <div class="warning-box"> استئصال لحمية الجيوب الأنفية بالمنظار</div>
-  </div>
-  </div>
+             
+ </div>   <div class="warning-box"> استئصال لحمية الجيوب الأنفية بالمنظار</div>
+  
+  
   
 
  <div class="image-container">
     <img src="images/operations/plastic.webP" alt="نتيجة اصلاح جراحة تجميلية للاذن " onclick="openLightbox(this.src, this.alt)">
-       <div class="note">   
-    <div class="warning-box"> الجراحــة التجميليـة لجروح الأذن
-  </div></div></div>
+  
+ 
+  </div>   <div class="warning-box"> الجراحــة التجميليـة لجروح الأذن</div>
   
 
   <div class="image-container">
     <img src="images/operations/foreign.webP" alt="نتيجة إخراج جسم غريب بالمنظار 4" onclick="openLightbox(this.src, this.alt)">
-         <div class="note">   
-    <div class="warning-box">إخراج جسم غريب بالمرئ بالمنظار </div>
-  </div></div>
+  
+ 
+  </div>   <div class="warning-box">إخراج جسم غريب بالمرئ بالمنظار </div>
 
   <div class="image-container">
     <img src="images/operations/rhinoplasty.webP" alt="نتيجة تجميل الأنف 2" onclick="openLightbox(this.src, this.alt)">
-           <div class="note">   
-    <div class="warning-box"> عملية  تجميل تشوهات الأنف </div>
-    </div></div>
+ 
+    </div>     
+    <div class="warning-box"> عملية  تجميل تشوهات الأنف</div>
   <div class="image-container">
     <img src="images/operations/rhinoplasty1.webP" alt="نتيجة تجميل الأنف1 6" onclick="openLightbox(this.src, this.alt)">
-               <div class="note">   
-    <div class="warning-box">عملية  تجميل تشوهات الأنف</div>
-  </div>  
+ 
+  </div>                
+    <div class="warning-box">عملية  تجميل تشوهات الأنف
 </div>
   <div class="image-container">
     <img src="images/operations/nasal-fracture2.webP" alt="نتيجة اصلاح كسر الأنف1 7" onclick="openLightbox(this.src, this.alt)">
-               <div class="note">   
-    <div class="warning-box">الجراحة التجميلية لإصابات الأنف </div>
-  </div>
+  
+  </div>            
+     <div class="warning-box">الجراحة التجميلية لإصابات الأنف 
 </div>
   <div class="image-container">
     <img src="images/operations/Nasal-fracture.webP" alt="نتيجة اصلاح كسر الأنف 8" onclick="openLightbox(this.src, this.alt)">
-               <div class="note">   
-    <div class="warning-box">عملية اصلاح كسر عظم الأنف</div>
-  </div></div>
+  
+  </div>             
+     <div class="warning-box">عملية اصلاح كسر عظم الأنف</div>
 
   <div class="image-container">
     <img src="images/operations/ootoplasty.webP" alt="نتيجة تجميل الأذن 9" onclick="openLightbox(this.src, this.alt)">
-               <div class="note">   
+ 
+  </div>              
     <div class="warning-box">الجراحة التجميلية للأذن</div>
-  </div></div>
   <div class="image-container">
     <img src="images/operations/rhinoplastic.webP" alt="نتيجة اصلاح جرح الأنف 10" onclick="openLightbox(this.src, this.alt)">
-               <div class="note">   
-    <div class="warning-box">الجراحة التجميلية للأنف</div>
-  </div></div>
-
-
-</div>
-
+  
+  </div>                
+    <div class="warning-box"style="margin-bottom:15px">الجراحة التجميلية للأنف</div>
+</div><br></div>
  
     <br>   
-  <div class="back-link">
-    <a href="index.html" style="color: white">← العودة للرئيسية</a> </div><br>    
-<footer>
+ <div class="booking-container">
+ 
+ <div class="booking-title" style="font-size:13px">
+للحجز أرسل الإسم برسالة على الأرقام
+  </div>
+  <div class="booking-numbers">
+    730433592<br>777421224
+  </div>
+  <div class="booking-buttons">
+    <!-- زر رسالة نصية -->
+    <a href="l:+967730433592" target="_blank" class="booking-button sms">
+      <img src="images/social/sms.webP" alt="رسالة نصية" class="booking-icon">
+      👆 رسالة نصية
+    </a>
+
+    <!-- زر واتساب -->
+    <a href="https://wa.me/967730433592" target="_blank" class="booking-button whatsapp">
+      <img src="images/social/whatsapp.webP" alt="واتساب" class="booking-icon">
+      👆 رسالة واتساب
+    </a>
+  </div> </div>   <br>     
+  
+ 
+ 
+ <div class="back-link">  <a href="index.html" > عودة للصفحة الرئيسية ← </a>
+</div>
+  <br>
+  <footer>
     <nav>
       <div class="nav-row">
         <a href="index.html" class="nav-link">🏠 الرئيسية</a>
 
-        <a href="services.html" class="nav-link">🩺 من خدماتنا</a>
+        <a href="services.html" class="nav-link">⚕️ من خدماتنا</a>
         <a href="gallery.html" class="nav-link">📷 معرض الصور</a>
         <a href="testimonials.html" class="nav-link">💬 رأي الجمهور</a>
       </div>
       <div class="nav-row" style="margin-bottom:20px">    
-        <a href="about.html" class="nav-link">📘 قصتنا</a >       <a href="blog.html" class="nav-link">📚 المدونة</a>
-        <a href="contact.html" class="nav-link">📍تواصل معنا</a>
-        <a href="q&a.html" class="nav-link">✉️ الأسئلة الشائعة</a>
+        <a href="about.html" class="nav-link">📝 قصتنا</a >       <a href="blog.html" class="nav-link">📚 المدونة</a>
+        <a href="contact.html" class="nav-link">📲 تواصل  معنا</a>
+        <a href="q&a.html" class="nav-link">⁉️ الأسئلة الشائعة</a>
       </div>
     </nav>
     
@@ -1082,11 +1013,12 @@ color: black;
       <div class="address-card">
         <span itemprop="streetAddress">ركن مفرق ماوية، مبنى مختبرات دار الصحة</span>،
         <span itemprop="addressLocality">تعز</span>،
-        <span itemprop="addressCountry">اليمن</span></div>
+        <span itemprop="addressCountry">اليمن</span>
+      </div>
     </div>
     
             
- <div class="social-icons">
+     <div class="social-icons">
       <a href="https://www.facebook.com/profile.php?id=100082372405434" class="social-icon" target="_blank">
         <img src="images/social/facebook.webP" alt="فيسبوك">
       </a>
@@ -1113,7 +1045,7 @@ color: black;
      <div class="footer-section">
 
       <p class="working-hours" style="color">
-        ⏰مواعيد العمل: السبت - الخميس: 10:00 صباحاً - 1:00 ظهراً
+        ⏰ مواعيد العمل: السبت - الخميس: 10:00 صباحاً - 1:00 ظهراً
       </p>
     </div>
     
