@@ -643,6 +643,83 @@ footer {
   color: white !important;
   text-decoration: none;
 }
+   @keyframes example {
+    40% {
+        background-color: #FF86BB;
+        left: 0;
+        transform: rotateZ(0deg);
+    }
+    70% {
+        background-color: #7FFCFF;
+        left: calc(100% - 100px);
+        transform: rotateZ(0deg);
+    }
+    
+    100% {
+        background-color: yellow;
+        left: 0;
+        transform: rotateZ(0deg);
+    }
+}
+ .booking-button.sms  {
+    animation-name: example;
+    animation-duration: 3s;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example2 {
+    40% {
+        background-color: yellow;
+        left: 0;
+        transform: rotateZ(0deg);
+    }
+    70% {
+        background-color: #FF86BB;
+        left: calc(100% - 50px);
+        transform: rotateZ(0deg);
+    }
+    
+    100% {
+        background-color: #7FFCFF;
+        left: 0;
+        transform: rotateZ(0deg);
+    }
+}
+
+ .booking-button.whatsapp  {
+    animation-name: example2;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example3 {
+    30% {
+        background-color: #07ADC8;
+        left: 0;
+        transform: rotateZ(0deg);
+    }
+    50% {
+        background-color: #8352FF;
+        left: calc(100% - 100px);
+        transform: rotateZ(0deg);
+    }
+    
+    100% {
+        background-color:red ;
+        left: 0;
+        transform: rotateZ(0deg);
+    }
+}
+
+ .cta-button  {
+    animation-name: example3;
+    animation-duration: 4s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+}
+
 .whatsapp-section {
   
   text-align: center;
