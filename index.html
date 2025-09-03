@@ -6,7 +6,7 @@
   <link rel="canonical" href="https://ent.drmsharabi.com/" />
   <meta name="google-site-verification" content="OTHsEOu7NBogbgEGqMwxn-Dy5M9SiuiZVHU4YLs_0-c" />
 
-  <title>الصفحة الرسمية للدكتور مختار الشرعبي | إستشاري أنف أذن حنجرة</title>
+  <title>عيادة د. مختار الشرعبي | استشاري أنف وأذن وحنجرة ممتاز في تعز</title>
   <meta name="description" content="عيادة د. مختار الشرعبي للأنف والأذن والحنجرة في تعز. خدمة متكاملة بتقنيات ومناظير حديثة لعلاج أمراض الأنف والأذن والحنجرة بخبرة وكفاءة عالية في محافظة تعز.">
 
   <meta name="robots" content="index, follow">
@@ -477,7 +477,7 @@
  border-top: 4px solid white; 
          background: linear-gradient(to right, var(--secondary-color), var(--accent-color));  
   color: white !important;
-          box-shadow: 2px 0 2px 5px rgba(194, 0, 97, 22);
+       box-shadow: 2px 0 2px 5px rgba(194, 0, 97, 22);
   text-align: center;
   padding: 10px 0;
   font-size: 9px;
@@ -486,35 +486,27 @@
   width: 100%;
   box-sizing: border-box;
   margin: 0;
+  border-radius: 5px 5px 0 0;
 }
 
 .address-card {
-  display: inline-block;
-  background-color: white;
-  color: #004B8C !important;
+ 
+  background-color: rgba(0, 0, 0, 0.05);
+  color: white !important;
   padding: 2px 20px;
-  border-radius: 30px;
-  
-  font-weight: bold;
+  border-block: 1px solid white;
+     box-shadow: 2px 0 2px 5px rgba(194, 0, 97, 22);
+    display: inline-block;
+    max-width: 90%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   font-size: 12px;
   line-height: 1.5;
-  max-width: 90%;
+  letter-spacing: 1px;
+  
 }
 
-.working-hours {
+.copyright-container{
   background-color: rgba(255, 255, 255, 0.15);
-  margin: 0 auto;
-  display: inline-block;
-  padding: 1px 15px;
-  border-radius: 20px;
-  color: white;
-  font-size: 10px;
-  font-weight: bold;
-}
-
-.copyright-container {
-  background-color: rgba(0, 0, 0, 0.2);
   padding: 3px10px;
   margin-top: 5px;
   font-weight: 500;
@@ -522,6 +514,18 @@
   font-size: 6px;
 }
 
+.working-hours {
+  background-color: yellow;
+  padding: 3px10px;
+  margin-top: 5px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 6px;
+  color: black;
+    font-weight: bold;
+}
+ 
 .social-icons {
   display: flex;
   gap: 10px;
@@ -590,8 +594,7 @@ footer {
     padding: 5px 11px;
   }
   }
-    
-.cta-button {
+  .cta-button {
   white-space: nowrap;
   background: #A00153;
   color: white !important;
@@ -607,18 +610,8 @@ footer {
   border-radius: 8px 20px 8px 20px;
   padding: 5px 25px;
   max-width: fit-content;
-  animation: shake 2s infinite;
-  font-size: 44px; /* حجم الخط لسطح المكتب */
+  font-size: 44px; /* حجم الخط الافتراضي لسطح المكتب */
 }
-.cta-button:hover {
-   margin: 10px auto; background-color: #FAFFD4;
-    max-width: fit-content;
-    box-shadow: 0 6px 12px rgba(0, 128, 0, 0.3);
-    font-size: 13px;
-    transform: translateY(-2px);
-    margin-top: 0; 
-}
-
 
 /* حجم الخط للموبايل */
 @media (max-width: 767px) {
@@ -627,11 +620,51 @@ footer {
   }
 }
 
-/* الحركة الاهتزازية */
-@keyframes shake {
-  0%, 100% { transform: translateX(0); }
-  25% { transform: translateX(5px); }
-  75% { transform: translateX(-5px); }
+@keyframes example3 {
+  0% {
+    background-color: #07ADC8;
+    transform: scale(0.8) translateX(0);
+    left: 0;
+  }
+  30% {
+    background-color: #07ADC8;
+    transform: scale(0.8) translateX(0);
+    left: 5px;
+  }
+  50% {
+    background-color: #8352FF;
+    left: calc(100% - 200px);
+    transform: scale(0.8) translateX(0);
+  }
+  70% {
+    background-color: #8352FF;
+    transform: scale(0.8) translateX(1px);
+  }
+  85% {
+    transform: scale(0.8) translateX(-45px);
+  }
+  100% {
+    background-color: red;
+    left: 0;
+    transform: scale(0.8) translateX(-5px);
+  }
+}
+
+.cta-button {
+  animation-name: example3;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.cta-button:hover {
+  margin: 10px auto;
+  background-color: #FAFFD4;
+  max-width: fit-content;
+  box-shadow: 0 6px 12px rgba(0, 128, 0, 0.3);
+  transform: translateY(-2px);
+  margin-top: 0;
 }
 
 /* عند النقر يكبر 20% */
@@ -643,82 +676,86 @@ footer {
   color: white !important;
   text-decoration: none;
 }
-   @keyframes example {
+@keyframes example {
+    0% {
+        opacity: 1; /* يبدأ غير مرئي */
+    }
+    20% {
+        opacity: 1; /* يظهر سريعًا */
+    }
     40% {
         background-color: #FF86BB;
-        left: 0;
+        left: 1;
         transform: rotateZ(0deg);
+        opacity: 1; /* يبقى مرئيًا */
+    }
+    50% {
+        opacity: 0; /* يبدأ في الاختفاء */
     }
     70% {
         background-color: #7FFCFF;
         left: calc(100% - 100px);
         transform: rotateZ(0deg);
+        opacity: 1; /* يصبح شبه transparent */
     }
-    
+    80% {
+        opacity: 1; /* يعود للظهور */
+    }
     100% {
-        background-color: yellow;
+        background-color: #7FFCFF;
         left: 0;
         transform: rotateZ(0deg);
+        opacity: 1; /* يعود مرئيًا بالكامل */
     }
 }
  .booking-button.sms  {
     animation-name: example;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-delay: 0;
     animation-iteration-count: infinite;
 }
 
 @keyframes example2 {
+    0% {
+        opacity: 1; /* يبدأ غير مرئي */
+    }
+    20% {
+        opacity: 1; /* يظهر سريعًا */
+    }
     40% {
-        background-color: yellow;
-        left: 0;
+        background-color: #FF86BB;
+        left: 1;
         transform: rotateZ(0deg);
+        opacity: 1; /* يبقى مرئيًا */
+    }
+    50% {
+        opacity: 0; /* يبدأ في الاختفاء */
     }
     70% {
-        background-color: #FF86BB;
-        left: calc(100% - 50px);
+        background-color: #7FFCFF;
+        left: calc(100% - 100px);
         transform: rotateZ(0deg);
+        opacity: 1; /* يصبح شبه transparent */
     }
-    
+    80% {
+        opacity: 1; /* يعود للظهور */
+    }
     100% {
         background-color: #7FFCFF;
         left: 0;
         transform: rotateZ(0deg);
+        opacity: 1; /* يعود مرئيًا بالكامل */
     }
 }
+   
 
  .booking-button.whatsapp  {
     animation-name: example2;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-delay: 3s;
     animation-iteration-count: infinite;
 }
-
-@keyframes example3 {
-    30% {
-        background-color: #07ADC8;
-        left: 0;
-        transform: rotateZ(0deg);
-    }
-    50% {
-        background-color: #8352FF;
-        left: calc(100% - 100px);
-        transform: rotateZ(0deg);
-    }
-    
-    100% {
-        background-color:red ;
-        left: 0;
-        transform: rotateZ(0deg);
-    }
-}
-
- .cta-button  {
-    animation-name: example3;
-    animation-duration: 4s;
-    animation-delay: 3s;
-    animation-iteration-count: infinite;
-}
+ 
 
 .whatsapp-section {
   
@@ -735,23 +772,14 @@ footer {
   height: 60px;
   box-shadow: 0 1px 4px rgba(0, 62, 57, 0.9);
   object-fit: contain;
-  animation: pulse 2s infinite; 
+  animation: shake 2s infinite; 
   
 }
 
-@keyframes pulse {
-  0% {
-    transform: scale(1); 
-    
-  }
-  50% {
-    transform: scale(1.1); 
-    
-  }
-  100% {
-    transform: scale(1); 
-     */
-  }
+@keyframes shake {
+  0%, 100% { transform:scale(1)  translateX(0); }
+  25% { transform: scale(1.2);  translateX(5px);opacity: 0  }
+  75% { transform:scale(1) translateX(-5px);opacity: 1   }
 }
 
 @media (min-width: 768px) {
@@ -800,29 +828,35 @@ footer {
     .certificate-link {
     color: blue;
         }
- 
+
 h1 {
       background-color: white;
-      border: 1px solid #01789B ;
-      color: #C20041;
-         border-right: 8px solid red;
+      border-top: solid white;
+      border: 2px solid white;
+     
+      color: #C30056;
+         
+        
       text-align: center;
-      padding: 5px;
-      box-shadow: 0 9px 6px rgba(33, 95, 97, 0.7);
-      border-radius: 9px;
+      padding: 2px 15px;
+      box-shadow: 0 0 6px rgba(0, 25, 37, 0.7);
+      border-radius:15px;
       font-size: 15px;
-      margin: 15px auto;
-      width: 80%;
-      max-width: 70%;
+      margin: 0 auto;
+      width: 100%;
+      padding: 0 15px;
+      max-width: fit-content;
     }
    @media (min-width: 768px) {
      h1{
- border-right: 18px solid red;
- border-radius: 20px;
- font-size: 37px;
- margin: 20px auto;
+ padding: 0 !important
+  border: 7px solid white;
+ border-radius: 10px;
+ font-size: 47px;
+ margin: 20px 0;
  
- width: 79%;
+ 
+
  }
  h3{
      margin-top: 60px!important;
@@ -859,7 +893,7 @@ font-size: 44px!important
 
 
  .warning-box {
-     background: #f2f7ff; border: 1px solid #d9e6ff; border-radius:0 0  14px;
+     background_color: #f2f7ff; border: 1px solid #d9e6ff; border-radius:0 0  14px;
       padding: 16px 14px; font-size: 1rem;
       box-shadow: 0 8px 14px rgba(13,71,111,.5);
       margin: 0 10px;
@@ -887,13 +921,13 @@ font-size: 44px!important
   
  hr {
   margin: 25px 0; 
-  padding: 0;   
+  padding: 10px;   
   
-  height: 3px;  
+  height: 0;
   
-  border: 1px; 
+   
   
-  background-color: #ddd;
+  background-color: white;
  
 }
 @media (min-width: 768px) {
@@ -937,10 +971,10 @@ font-size: 44px!important
 
 
        h3 {
-      border:  1px solid white;box-shadow: 0 0 6px rgba(0, 0, 97, 0.8);
+   border:  1px solid white;box-shadow: 0 0 6px rgba(0, 0, 97, 0.8);
       margin: 5px 8px 0 8px; background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
             color: white;
-            padding:10px  20px;
+            padding:3px  20px;
             text-align: center;
             font-size: 1.1rem;
             font-weight: 600;
@@ -1050,6 +1084,7 @@ font-size: 44px!important
 }
   h3 {
     font-size: 13px;
+    
   }
   
   }
@@ -1216,12 +1251,83 @@ border-bottom: 5px solid #81DFFD;
   .wrap {
       margin: 20px 40px;
   }
-   }
+ 
  
    h3{
-     margin-top:60px!important;
+     margin-top:90px!important;
    }
-   }
+     }
+  body {
+  background: #E8F4FC;
+  font-family: 'Cairo', sans-serif;
+  text-align: center;
+}
+
+/* الصندوق العلوي */
+.box1 {
+  background: #E8F4FC;
+  color: #fff;
+  padding: 20px;
+  border-radius: 0;
+  width: 320px;
+  margin: 0 auto ; /* ترك مسافة أسفل */
+  position: relative;
+  opacity: 0;
+ 
+}
+
+/* الصندوق السفلي */
+.box2 {
+  background: #50A3F4;
+  color: #1976D2;
+  padding: 1px;
+  border-radius: 15px;
+  width: fit-content;
+  margin: 0 auto;
+  position: relative;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  
+}
+
+/* الخطوط الوردية المعلقة */
+.box2::before,
+.box2::after {
+  content: "";
+    box-shadow: 0 0 7px rgba(13,41,31,.3);
+  position: absolute;
+  top: -45px;        /* يبدأ من فوق الصندوق الثاني */
+  width: 3px;        /* سمك الخط */
+  height: 45px;      /* الطول */
+  background: hotpink;
+   
+     border-left: 1px solid green; 
+}
+
+/* الخط الأيسر */
+.box2::before {
+  left: 40px;        /* نقطة البداية من يسار الصندوق */
+  transform: rotate(-25deg);
+}
+
+/* الخط الأيمن */
+.box2::after {
+  right: 40px;       /* نقطة البداية من يمين الصندوق */
+  transform: rotate(25deg);
+}
+@media (min-width: 768px) {
+    
+        .box2 {
+            width: fit-content;
+            padding: 0;
+            border-radius: 40px;
+            margin-top: 20px;
+     
+            }
+            .box2::before,
+.box2::after {
+     height: 60px; 
+            top: -60px;  
+            }
 </style>
 </head>
 
@@ -1233,10 +1339,13 @@ border-bottom: 5px solid #81DFFD;
       <div class="sub-title"> للأنف والأذن والحنجرة والرأس والعنق</div>
     </div>
   </header>
-  <div class="subsection">    
-     
- 
-    <h1>من هو الدكتور مختار الشرعبي؟</h1>
+   
+   <div class="box1">
+</div>
+
+<div class="box2">
+  <h1>من هو الدكتور مختار الشرعبي؟</h1>
+</div>
 
  <div class="profile-section">
   <div class="profile-image">
@@ -1258,7 +1367,7 @@ border-bottom: 5px solid #81DFFD;
         <h2 style="color:#B3005C;text-align:center">نبذه عن د. مختار الشرعبي ..</h2>
 <p style="margin-right:15px;text-align:center">استشاري متخصص في طب وجراحة ومناظير الأنف والأذن والحنجرة والرأس والعنق في محافظة تعز – اليمن.
       يقدم د. مختار الشرعبي رعاية طبية متخصصة تستند إلى خبرة علمية وعملية تمتد لعشر سنوات، مع استخدام أحدث الأجهزة والمناظير التشخيصية و الجراحية.</p>
-  
+  <br> 
       <h3>المؤهلات والخبرة:</h3>
              <div class="warning-box">    
 <ul>
@@ -1278,8 +1387,21 @@ border-bottom: 5px solid #81DFFD;
   <li>عضوية  .
   <a href="images/A-cert..jpg" target="_blank" class="certificate-link" aria-label="اطلع على صورة شهادة العضوية">.   الأكاديمية الأمريكية  </a>    والجمعية اليمنية لجراحة.   الأنف والأذن والحنجرة.</li>
 </ul></div>
-
- 
+<hr>
+   <div class="whatsapp-section" style="margin-top: 5px; flex-direction: column;">
+  <a href="https://youtu.be/i0Va72Gpp-s?feature=shared" target="_blank">
+    <img style="margin-bottom:20px" src="images/social/youtube.jpeg" alt="يوتيوب" class="whatsapp-icon">
+  </a>
+<div  class="cta-box">
+<a href="https://youtube.com/@ENTsharabi" 
+   aria-label="موقعنا على يوتيوب" 
+   target="_blank" 
+   onclick="gtag('event', 'click', {
+       'event_category': 'YouTube',
+       'event_label': 'شاهد عملياتنا على يوتيوب'
+   });" >
+   👁 شاهد عملياتنا على يوتيوب
+</a></div></div> <hr>  
 
 <h3>ما الذي يهدف إليه:</h3>
   <div class="warning-box" style="background-color: #DAF7FF"> 
@@ -1296,6 +1418,7 @@ border-bottom: 5px solid #81DFFD;
 مما يسهل للمرضى تكالف وتعب السفر بعيداً للبحث عنها ،
   وبتكاليف تراعي الظروف المعيشية لذوي الدخل المحدود ..</li>
 <li>  الرقي بمستوى الخدمات الصحية في محافظة تعز والمحافظات المجاورة لجعل العيادة الخيار الأنسب لكل من يبحث عن أفضل دكتور استشاري متخصص في اليمن</li></ul></div>
+ <br> 
 <h3>
     التزام مجتمعي وإنساني  </h3>
     <div class="warning-box"> 
@@ -1306,6 +1429,7 @@ border-bottom: 5px solid #81DFFD;
     
     <li>تقديم <strong>خصومات كبيرة للحالات غير القادرة</strong> والتعامل بمرونة مع الظروف المادية للمرضى.</li>
   </ul></div>
+   <br> 
   <h3> سمعة طيبة وثقة عالية : </h3>
  
     <div class="warning-box" style="background-color: #DAF7FF"> 
@@ -1323,13 +1447,13 @@ border-bottom: 5px solid #81DFFD;
 </ul>
 </div>
 <div class="certificate-link" style="font-size:13px; text-align:center;">
-  <em>
-  <div class="cta-button"> <a href="about.html" class="cta-link" style="color: blue;margin:10px auto">إقرأ المزيد ←</a>
+
+  <div class="cta-button">  <em> <a href="about.html" class="cta-link" style="color: blue;margin:10px auto">إقرأ المزيد ←</a>
   </em>
 </div></div>
  
 
-</div><br>
+</div></div><hr>
 
          <h3>     📍     موقع العيادة :   </h3>   
          <div  class="warning-box" style="border-radius:0">
@@ -1338,30 +1462,17 @@ border-bottom: 5px solid #81DFFD;
     <div ="background-color:white;border:1px solid green;border-radius: 12px 7px  5px; margin:0 20px;padding:5px 10px">       <a href="contact.html" class="certificate-link" aria-label="إطلع على تفاصيل موقع العيادة" style="padding-right:20px">العنوان :   </a>  
     <p><strong>      محافظة تعز </strong> ، الحوبان،<strong> ركن مفرق ماوية</strong>, الشارع العام،  – مبنى مختبرات دار الصحة، – اليمن </p>   </div>   
       
- </div><br></div>
- <br>
-  <blockquote class="warning-box" style="   background-color: #f2f7ff;text-align:center ;margin:20px;border-radius;16px" >
-    <em>“إذا كنت تبحث عن أفضل دكتور أنف وأذن وحنجرة في اليمن أو استشاري حنجرة موثوق في تعز، فإن <strong style="color:red"> الدكتور مختار الشرعبي  </strong>  هو خيارك الأمثل</em>  </blockquote>
+ </div>
+  <hr>
+  <div class="warning-box" style="   background-color: white;text-align:center ;margin:20px;border-radius;0" >
+    <em>“إذا كنت تبحث عن أفضل دكتور أنف وأذن وحنجرة في اليمن أو استشاري حنجرة موثوق في تعز، فإن <strong style="color:red"> الدكتور مختار الشرعبي  </strong>  هو خيارك الأمثل</em>  </div>
 
   
 </div>
- <br>   
-    <div class="whatsapp-section" style="margin-top: 5px; flex-direction: column;">
-  <a href="https://youtu.be/i0Va72Gpp-s?feature=shared" target="_blank">
-    <img style="margin-bottom:20px" src="images/social/youtube.jpeg" alt="يوتيوب" class="whatsapp-icon">
-  </a>
-<div  class="cta-button">
-<a href="https://youtube.com/@ENTsharabi" 
-   aria-label="موقعنا على يوتيوب" 
-   target="_blank" 
-   onclick="gtag('event', 'click', {
-       'event_category': 'YouTube',
-       'event_label': 'شاهد عملياتنا على يوتيوب'
-   });">
-   👁 شاهد عملياتنا على يوتيوب
-</a></div>
+ <hr>   
+  
   </div>    
-   <br>   
+   
   <div class="booking-container">
   <div class="booking-title">
     للحجز في عيادة دكتور مختار الشرعبي
@@ -1383,13 +1494,13 @@ border-bottom: 5px solid #81DFFD;
       <img src="images/social/whatsapp.webP" alt="واتساب" class="booking-icon">
       👆 رسالة واتساب
     </a>
-  </div> </div>   <br>     
+  </div> </div>   <hr>     
   
  
  
  <div class="cta-button">  <a href="index.html" > عودة للصفحة الرئيسية ← </a>
 </div>
-  <br>
+  <hr>
   <footer>
     <nav>
       <div class="nav-row">
@@ -1408,7 +1519,7 @@ border-bottom: 5px solid #81DFFD;
     
     <div class="footer-address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
       <div class="address-card">
-        <span itemprop="streetAddress">ركن مفرق ماوية، مبنى مختبرات دار الصحة</span>،
+        <span itemprop="streetAddress" ">ركن مفرق ماوية، مبنى مختبرات دار الصحة</span>،
         <span itemprop="addressLocality">تعز</span>،
         <span itemprop="addressCountry">اليمن</span>
       </div>
