@@ -295,6 +295,8 @@
     .header-logo img {
       height: 55px;
       width: auto;
+      border-radius: 50%;
+             border: 1px solid #A8FFEF;
     }
     .header-text {
       display: flex;
@@ -319,6 +321,8 @@
           }
       .header-logo img {
         height: 110px;
+        border-radius: 50%;
+             border: 2px solid #A8FFEF;
       }
       .main-title {
         font-size: 29px;
@@ -377,7 +381,7 @@
 .booking-buttons {
   display: flex;
   justify-content: center;
-  gap: 12px;
+  gap: 8px;
   flex-wrap: wrap;
 }
 
@@ -388,7 +392,7 @@
    max-width: fit-content;
   align-items: center;
   gap: 8px;
-  padding: 3px 16px;
+  padding: 1px 16px;
   font-weight: bold;
   font-size: 14px;
          box-shadow: 0 2px 6px rgba(33, 95, 97, 0.7);
@@ -412,6 +416,7 @@
   background-color: #f0fafa;
         box-shadow: 0 2px 6px rgba(33, 95, 97, 0.7); color: black;
   border: 2px solid #009688;
+  padding:2px auto ;
 }
 
 .booking-button.whatsapp:hover {
@@ -423,6 +428,7 @@
   height: 30px;
       border: 0.1px solid #009688;
       box-shadow: 0 9px 6px rgba(33, 95, 97, 0.7);
+      margin:4px auto 0 auto ;
        border-radius: 5%;
        animation: pulse 2s infinite; /* تطبيق تأثير النبض */
 }
@@ -447,15 +453,22 @@
     max-width: 40٪; /* تكبير العرض */
    border-right: 9px solid #ffc107;
    border-radius: 68px 10px;
-   padding: 40px 10px; margin: 40px; }
+   padding: 1px 10px; margin: 40px; }
   .booking-button {
     font-size: 19px; /* تكبير الخط */
-    padding: 14px 22px; 
+    padding: 4px 22px; 
     margin: 30px auto;
   }
+   .booking-button  {
+       padding:0 10px 10px 10px;
+      
+         }
   .booking-icon {
     width: 58px; /* تكبير الأيقونة */
     height: 58px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    height: fit-content;
   }
   .booking-title {
       font-size: 11px; 
@@ -607,7 +620,7 @@ footer {
   margin: 20px auto;
   transition: transform 0.3s ease;
   text-align: center;
-  border-radius: 8px 20px 8px 20px;
+  border-radius: 30% 5px 5px 30%;
   padding: 5px 25px;
   max-width: fit-content;
   font-size: 44px; /* حجم الخط الافتراضي لسطح المكتب */
@@ -826,7 +839,8 @@ footer {
 
 
     .certificate-link {
-    color: blue;
+    color: #009FC2;
+    font-size: 12px;
         }
 
 h1 {
@@ -905,13 +919,14 @@ font-size: 44px!important
        @media (min-width: 768px) {
        .warning-box {  
               border-radius: 30px;
+              
           
     border: 1px solid #01556C;
       padding: 15px 15px;
       max-width: 94%;
       
-         margin:0 15px 35px 15px;
-         margin-bottom: 50px;
+         margin:0 15px 15px 15px;
+         margin-bottom: 20px;
             position: center;
 
   
@@ -961,7 +976,7 @@ font-size: 44px!important
     border-radius: 15px ;
      align-items: center;
    align-content: center;
-    padding: 25px 5px;
+   padding: 30px 5px 40px 5px;
     margin: 25px 8px;
            borde-rightr: 2px solid #00749A;
        box-shadow: 0 8px 14px rgba(13,71,111,.5);
@@ -1020,7 +1035,7 @@ font-size: 44px!important
      
 }
 .subsection {
-      width: : 95%%;padding: 30px 30px;
+      width: : 95%;padding: 30px 30px;
     margin: 10px 5px;
   padding:  5px 2px;
   background-color: #f2f7ff;
@@ -1160,6 +1175,7 @@ border-bottom: 5px solid #81DFFD;
     max-width: 1000px;
     gap: 0;
   }
+
   .profile-image {
    
     flex: 0 0 38%;
@@ -1184,7 +1200,6 @@ border-bottom: 5px solid #81DFFD;
     border-radius:20px 0 40px;
     box-shadow: 0 0 4px rgba(0,55,35,.8);
   }
-
 
   .profile-text {
   margin-right: 3px;
@@ -1257,26 +1272,20 @@ border-bottom: 5px solid #81DFFD;
      margin-top:90px!important;
    }
      }
-  body {
-  background: #E8F4FC;
-  font-family: 'Cairo', sans-serif;
-  text-align: center;
-}
 
-/* الصندوق العلوي */
 .box1 {
   background: #E8F4FC;
   color: #fff;
   padding: 20px;
   border-radius: 0;
-  width: 320px;
+  width: fit-content;
   margin: 0 auto ; /* ترك مسافة أسفل */
   position: relative;
   opacity: 0;
  
 }
 
-/* الصندوق السفلي */
+
 .box2 {
   background: #50A3F4;
   color: #1976D2;
@@ -1289,7 +1298,7 @@ border-bottom: 5px solid #81DFFD;
   
 }
 
-/* الخطوط الوردية المعلقة */
+
 .box2::before,
 .box2::after {
   content: "";
@@ -1333,6 +1342,29 @@ border-bottom: 5px solid #81DFFD;
    letter-spacing: 0;
   }
               }
+              .warning-box a{
+              font-size:12px;
+              color: #0084B5;
+              font-weight: 
+              550;
+              margin: auto 5px;
+           }  
+              @media (min-width: 768px) {
+     
+  
+                      .certificate-link {
+              font-size:42px;
+              margin-bottom: 40px;
+           }   
+                       .warning-box a{
+              font-size:12px;
+              color: #0084B5;
+              font-weight: 500;
+           }  
+           }     
+              .main-section {
+                  padding: 80px auto;
+                    }              
 </style>
 </head>
 
@@ -1378,19 +1410,19 @@ border-bottom: 5px solid #81DFFD;
 <ul>
   <li>  
   <a href="images/S-cert..jpg" target="_blank" class="certificate-link" aria-label="اطلع على صورة شهادة الدكتوراه المهنية">
-.     دكتوراه مهنية
-  </a>. في أمراض وجراحة ومناظير الأنف والأذن والحنجرة والرأس والعنق،
+دكتوراه مهنية
+  </a> في أمراض وجراحة ومناظير الأنف والأذن والحنجرة والرأس والعنق،
   </li>
 <li>
   حاصل على 
   <a href="images/B-cert..jpg" target="_blank" class="certificate-link" aria-label="اطلع على صورة شهادة البورد العربي">
- .   شهادة البورد العربي
+شهادة البورد العربي
   </a> 
   (الزمالة العربية) من المجلس.
 العربي للإختصاصات الصحية التابع لجامعة الدول العربية في سوريا .. والتي تعتبر إحدى أرفع الشهادات العربية والعالمية..</li>
   <li>دورات متقدمة في الجراحة التنظيرية للأنف والأذن والحنجرة وقاع الجمجمة من جامعة عين شمس في القاهرة - جمهورية مصر العربية .</li>
-  <li>عضوية  .
-  <a href="images/A-cert..jpg" target="_blank" class="certificate-link" aria-label="اطلع على صورة شهادة العضوية">.   الأكاديمية الأمريكية  </a>    والجمعية اليمنية لجراحة.   الأنف والأذن والحنجرة.</li>
+  <li>عضوية  
+  <a href="images/A-cert..jpg" target="_blank" class="certificate-link" aria-label="اطلع على صورة شهادة العضوية">   الأكاديمية الأمريكية  </a>    والجمعية اليمنية لجراحة.   الأنف والأذن والحنجرة.</li>
 </ul></div>
 <hr>
    <div class="whatsapp-section" style="margin-top: 5px; flex-direction: column;">
@@ -1404,8 +1436,8 @@ border-bottom: 5px solid #81DFFD;
    onclick="gtag('event', 'click', {
        'event_category': 'YouTube',
        'event_label': 'شاهد عملياتنا على يوتيوب'
-   });" >
-   👁 شاهد عملياتنا على يوتيوب
+   });" class="certificate-link" style="color: #00AFD5">  ️ <strong>
+ 🎦 شاهد عملياتنا على يوتيوب</strong>
 </a></div></div> <hr>  
 
 <h3>ما الذي يهدف إليه:</h3>
@@ -1450,10 +1482,10 @@ border-bottom: 5px solid #81DFFD;
     تطبيق <strong>بروتوكولات علاجية عالمية</strong> وفق أحدث الدراسات والأبحاث
   </li>
 </ul>
-</div>
+</div><br>
 <div class="certificate-link" style="font-size:13px; text-align:center;">
 
-  <div class="cta-button">  <em> <a href="about.html" class="cta-link" style="color: blue;margin:10px auto">إقرأ المزيد ←</a>
+  <div class="certificate-link">  <em> <a href="about.html" class="cta-link" style="color: #009FC2;font-size:14px">  <strong> إقرأ المزيد ←  </strong> </a>
   </em>
 </div></div>
  
@@ -1512,7 +1544,7 @@ border-bottom: 5px solid #81DFFD;
         <a href="index.html" class="nav-link">🏠 الرئيسية</a>
 
         <a href="services.html" class="nav-link">🏥 من خدماتنا</a>
-        <a href="gallery.html" class="nav-link">🖼️ معرض الصور</a>
+        <a href="gallery.html" class="nav-link">📸️ معرض الصور</a>
         <a href="testimonials.html" class="nav-link">💬 رأي الجمهور</a>
       </div>
       <div class="nav-row" style="margin-bottom:20px">    
