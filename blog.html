@@ -130,7 +130,7 @@
       background-color: #E8F4FC;
     }
  /* ✅ NAV */
-       nav {
+      nav {
      
      
      text-align: center;
@@ -155,8 +155,8 @@
       text-shadow: 1px 1px 1px rgba(3, 27, 33, 0.9);
          font-weight: bold;
       text-decoration: none;
-      border-block: 0.7px solid #89DFF6;
-      box-shadow: 0 3px 3px rgba(1, 3, 23, .7);
+      border-block: 0.5px solid #89DFF6;
+      box-shadow: 0 3px 3px rgba(1, 3, 23, .2);
       font-weight: blod;
       font-size: 9px;
       transition: all 0.3s ease;
@@ -173,16 +173,16 @@
     
       }
       .nav-row {
-        gap: 15px;
+        gap: 25px;
 
      margin-bottom: 10px;       }
      
       .nav-link {
         padding: 5px 15px;margin-top: 20px;
         
-       box-shadow: 0 8px 1px rgba(1, 53, 83, .7);
+       box-shadow: 0 8px 1px rgba(1, 53, 83, .3);
        border-radius: 20px; font-size: 28px;
-       border-block: 2px solid #89DFF6;
+       border-block: 1px solid #89DFF6;
        padding: 3px 15px;
     }
     }
@@ -205,6 +205,8 @@
     .header-logo img {
       height: 55px;
       width: auto;
+      border-radius: 50%;
+             border: 1px solid #A8FFEF;
     }
     .header-text {
       display: flex;
@@ -229,6 +231,8 @@
           }
       .header-logo img {
         height: 110px;
+        border-radius: 50%;
+             border: 2px solid #A8FFEF;
       }
       .main-title {
         font-size: 29px;
@@ -248,7 +252,6 @@
         }
         
     
-
           .booking-container {
       background: linear-gradient(to left, var(--secondary-color), var(--accent-color));  
       border: 1px solid #80E9FF;
@@ -288,7 +291,7 @@
 .booking-buttons {
   display: flex;
   justify-content: center;
-  gap: 12px;
+  gap: 8px;
   flex-wrap: wrap;
 }
 
@@ -299,7 +302,7 @@
    max-width: fit-content;
   align-items: center;
   gap: 8px;
-  padding: 3px 16px;
+  padding: 1px 16px;
   font-weight: bold;
   font-size: 14px;
          box-shadow: 0 2px 6px rgba(33, 95, 97, 0.7);
@@ -313,7 +316,46 @@
   background-color: #f0fafa;
        box-shadow: 0 2px 6px rgba(33, 95, 97, 0.7); color: black;
   border: 2px solid #009688;
+     animation-name: example;
+    animation-duration: 2s;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
 }
+
+@keyframes example {
+    0% {
+        opacity: 1; /* يبدأ غير مرئي */
+    }
+    20% {
+        opacity: 1; /* يظهر سريعًا */
+    }
+    40% {
+        background-color: #FF86BB;
+        left: 1;
+        transform: rotateZ(0deg);
+        opacity: 1; /* يبقى مرئيًا */
+    }
+    50% {
+        opacity: 0; /* يبدأ في الاختفاء */
+    }
+    70% {
+        background-color: #7FFCFF;
+        left: calc(100% - 100px);
+        transform: rotateZ(0deg);
+        opacity: 1; /* يصبح شبه transparent */
+    }
+    80% {
+        opacity: 1; /* يعود للظهور */
+    }
+    100% {
+        background-color: #7FFCFF;
+        left: 0;
+        transform: rotateZ(0deg);
+        opacity: 1; /* يعود مرئيًا بالكامل */
+    }
+}
+ 
+
 
 .booking-button.sms:hover {
   background-color: #e0f2f1;
@@ -323,7 +365,48 @@
   background-color: #f0fafa;
         box-shadow: 0 2px 6px rgba(33, 95, 97, 0.7); color: black;
   border: 2px solid #009688;
+  padding:2px auto ;
+    animation-name: example2;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
 }
+
+@keyframes example2 {
+    0% {
+        opacity: 1; /* يبدأ غير مرئي */
+    }
+    20% {
+        opacity: 1; /* يظهر سريعًا */
+    }
+    40% {
+        background-color: #FF86BB;
+        left: 1;
+        transform: rotateZ(0deg);
+        opacity: 1; /* يبقى مرئيًا */
+    }
+    50% {
+        opacity: 0; /* يبدأ في الاختفاء */
+    }
+    70% {
+        background-color: #7FFCFF;
+        left: calc(100% - 100px);
+        transform: rotateZ(0deg);
+        opacity: 1; /* يصبح شبه transparent */
+    }
+    80% {
+        opacity: 1; /* يعود للظهور */
+    }
+    100% {
+        background-color: #7FFCFF;
+        left: 0;
+        transform: rotateZ(0deg);
+        opacity: 1; /* يعود مرئيًا بالكامل */
+    }
+}
+   
+
+ 
 
 .booking-button.whatsapp:hover {
   background-color: #e0f2f1;
@@ -334,6 +417,7 @@
   height: 30px;
       border: 0.1px solid #009688;
       box-shadow: 0 9px 6px rgba(33, 95, 97, 0.7);
+      margin:4px auto 0 auto ;
        border-radius: 5%;
        animation: pulse 2s infinite; /* تطبيق تأثير النبض */
 }
@@ -358,24 +442,28 @@
     max-width: 40٪; /* تكبير العرض */
    border-right: 9px solid #ffc107;
    border-radius: 68px 10px;
-   padding: 40px 10px; margin: 40px; }
+   padding: 1px 10px; margin: 40px; }
   .booking-button {
     font-size: 19px; /* تكبير الخط */
-    padding: 14px 22px; 
+    padding: 4px 22px; 
     margin: 30px auto;
   }
+   .booking-button  {
+       padding:0 10px 10px 10px;
+      
+         }
   .booking-icon {
     width: 58px; /* تكبير الأيقونة */
     height: 58px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    height: fit-content;
   }
   .booking-title {
-      font-size: 31px; 
+      font-size: 11px; 
 }
  .booking-subtitle {
-      font-size: 21px; 
-}
-.booking-numbers {
-      font-size: 21px; 
+      font-size: 11px; 
 }
 .booking-button {
     font-size: 31px;
@@ -386,12 +474,11 @@
 }
 } 
     
-    
-  footer {
+ footer {
  border-top: 4px solid white; 
          background: linear-gradient(to right, var(--secondary-color), var(--accent-color));  
   color: white !important;
-          box-shadow: 2px 0 2px 5px rgba(194, 0, 97, 22);
+       box-shadow: 2px 0 2px 5px rgba(194, 0, 97, 22);
   text-align: center;
   padding: 10px 0;
   font-size: 9px;
@@ -400,41 +487,49 @@
   width: 100%;
   box-sizing: border-box;
   margin: 0;
+  border-radius: 5px 5px 0 0;
 }
 
 .address-card {
-  display: inline-block;
-  background-color: white;
-  color: #004B8C !important;
-  padding: 2px 20px;
-  border-radius: 30px;
-  
-  font-weight: bold;
+ max-width: 90%;
+  background-color: #01768E ;
+  padding: 2px 10px;
+  border-block: 0.5px solid white;
+     box-shadow: 2px 0 2px 5px rgba(194, 0, 97, 22);
+    display: inline-block;
+    max-width: 90%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   font-size: 12px;
   line-height: 1.5;
-  max-width: 90%;
+  letter-spacing: 1px;
+   border-radius:0 0 10px 10px ;
+  
 }
 
-.working-hours {
+.copyright-container{
   background-color: rgba(255, 255, 255, 0.15);
-  margin: 0 auto;
-  display: inline-block;
-  padding: 1px 15px;
-  border-radius: 20px;
-  color: white;
-  font-size: 10px;
-  font-weight: bold;
-}
-
-.copyright-container {
-  background-color: rgba(0, 0, 0, 0.2);
   padding: 3px10px;
   margin-top: 5px;
   font-weight: 500;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
-  font-size: 6px;
+  font-size: 5px;
 }
+
+   .working-hours {
+            background-color: yellow;
+            padding: 3px 20px;
+            margin-top: 5px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 9px;
+            color: black;
+            font-weight: bold;
+            border-radius: 20px 20px 0 0;
+            text-align: center;
+            display: inline-block;
+            white-space: nowrap;
+        }
 
 .social-icons {
   display: flex;
@@ -478,16 +573,30 @@ footer {
     font-size: 34px !important;
     margin: 10px auto;
     padding: 5px 40px !important;
+    border-block: 0.8px solid white;
+    border-radius:0 0 40px 40px ;
   }
   
-  .working-hours {
-    font-size: 28px !important;
-    padding: 5px 90px !important;
-  }
-  
+ 
+
+            .working-hours {
+                font-size: 24px;
+                padding: 5px 40px;
+                display: inline-block;
+                margin: 15px auto;
+                border-radius: 50px 50px 0 0;
+                white-space: nowrap;
+                max-width: 90%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        
+
+     
+        
   .social-icon {
      margin: 10px 5px;width: 70px;
-    height: 70px;
+    height: 60px;
     box-shadow: 0 8px 3px rgba(1, 53, 83, .9);
       border-block: 2px solid #89DFF6;
         gap: 80px;
@@ -500,11 +609,175 @@ footer {
   }
   
   .copyright-container {
-    font-size: 6px !important;
+    font-size: 5px !important;
     padding: 5px 11px;
   }
   }
+     @media (min-width: 992px) {
+            .working-hours {
+                padding: 5px 60px;
+                font-size: 18px;
+            }
+     }
+
+        @media (max-width: 767px) {
+            .working-hours {
+                font-size: 9px;
+                padding: 3px 15px;
+            }
+        }
+  .cta-button {
+  white-space: nowrap;
+  background: #A00153;
+  color: white !important;
+  border: 2px solid white;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 8px 14px rgba(13,71,111,.5);
+  width: fit-content;
+  display: block;
+  margin: 20px auto;
+  transition: transform 0.3s ease;
+  text-align: center;
+  border-radius: 30% 5px 5px 30%;
+  padding: 5px 25px;
+  max-width: fit-content;
+  font-size: 44px; 
+  animation-name: example3;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes example3 {
+  0% {
+    background-color: #07ADC8;
+    transform: scale(0.8) translateX(0);
+    left: 0;
+  }
+  30% {
+    background-color: #07ADC8;
+    transform: scale(0.8) translateX(0);
+    left: 5px;
+  }
+  50% {
+    background-color: #8352FF;
+    left: calc(100% - 200px);
+    transform: scale(0.8) translateX(0);
+  }
+  70% {
+    background-color: #8352FF;
+    transform: scale(0.8) translateX(1px);
+  }
+  85% {
+    transform: scale(0.8) translateX(-45px);
+  }
+  100% {
+    background-color: red;
+    left: 0;
+    transform: scale(0.8) translateX(-5px);
+  }
+}
+
+
+
+/* حجم الخط للموبايل */
+@media (max-width: 767px) {
+  .cta-button {
+    font-size: 14px;
+  }
+}
+
+
+.cta-button:hover {
+  margin: 10px auto;
+  background-color: #FAFFD4;
+  max-width: fit-content;
+  box-shadow: 0 6px 12px rgba(0, 128, 0, 0.3);
+  transform: translateY(-2px);
+  margin-top: 0;
+}
+
+/* عند النقر يكبر 20% */
+.cta-button:active {
+  transform: scale(1.2);
+}
+
+.cta-button a {
+  color: white !important;
+  text-decoration: none;
+}
+
+.whatsapp-section {
   
+  text-align: center;
+  flex-wrap: wrap;
+ display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.whatsapp-icon {
+  background-color: #F4FCFF;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 1px 4px rgba(0, 62, 57, 0.9);
+  object-fit: contain;
+  animation: shake 2s infinite; 
+  
+}
+
+@keyframes shake {
+  0%, 100% { transform:scale(1)  translateX(0); }
+  25% { transform: scale(1.2);  translateX(0);opacity: 1  }
+  40% { transform:scale(1) translateX(25px);opacity: 0  }
+    60% { transform:scale(1) translateX(-25px);opacity: 1   }
+        80% { transform:scale(1) translateX(0);opacity: 1   }
+  100% { transform:scale(1) translateX(1px);opacity: 1   }
+}
+
+@media (min-width: 768px) {
+  .whatsapp-icon {
+    width: 185px;
+    height: 185px;
+  }
+  .whatsapp-section {
+  flex-direction: row; 
+    justify-content: center;
+    gap: 20px;
+    }
+}
+     .whatsapp-link{
+  text-align: center;
+  margin: 10px 0;
+}
+
+.whatsapp-link {
+  text-align: center;
+  
+}
+
+.whatsapp-link a {
+  background: linear-gradient(to right, var(--secondary-color), var(--accent-color));
+            color: white; !important;  
+  padding: 5px 12px 4px;
+  ;border-radius: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .whatsapp-link a {
+    margin-top: 20px
+    ;font-size: 35px;
+    border-radius: 16px;
+    padding: 6px 18px;
+  }
+}
+
     h1 {
       background-color: white;
       color: #A1115E;
@@ -582,135 +855,6 @@ h2 {
  .subsection     {
      margin-top:0 !important;
  }
-}
-.cta-button {
-  white-space: nowrap;
-  background: #A00153;
-  color: white !important;
-  border: 2px solid white;
-  text-decoration: none;
-  font-weight: bold;
-  box-shadow: 0 8px 14px rgba(13,71,111,.5);
-  width: fit-content;
-  display: block;
-  margin: 20px auto;
-  transition: transform 0.3s ease;
-  text-align: center;
-  border-radius: 8px 20px 8px 20px;
-  padding: 5px 25px;
-  max-width: fit-content;
-  animation: shake 2s infinite;
-  font-size: 44px; /* حجم الخط لسطح المكتب */
-}
-.cta-button:hover {
-   margin: 10px auto; background-color: #FAFFD4;
-    max-width: fit-content;
-    box-shadow: 0 6px 12px rgba(0, 128, 0, 0.3);
-    font-size: 13px;
-    transform: translateY(-2px);
-    margin-top: 0; 
-}
-
-
-/* حجم الخط للموبايل */
-@media (max-width: 767px) {
-  .cta-button {
-    font-size: 14px;
-    margin:  60px auto;
-  }
-}
-
-/* الحركة الاهتزازية */
-@keyframes shake {
-  0%, 100% { transform: translateX(0); }
-  25% { transform: translateX(5px); }
-  75% { transform: translateX(-5px); }
-}
-
-/* عند النقر يكبر 20% */
-.cta-button:active {
-  transform: scale(1.2);
-}
-
-.cta-button a {
-  color: white !important;
-  text-decoration: none;
-}
-@keyframes example {
-    40% {
-        background-color: #FF86BB;
-        left: 0;
-        transform: rotateZ(0deg);
-    }
-    70% {
-        background-color: #7FFCFF;
-        left: calc(100% - 100px);
-        transform: rotateZ(0deg);
-    }
-    
-    100% {
-        background-color: yellow;
-        left: 0;
-        transform: rotateZ(0deg);
-    }
-}
- .booking-button.sms  {
-    animation-name: example;
-    animation-duration: 3s;
-    animation-delay: 0;
-    animation-iteration-count: infinite;
-}
-
-@keyframes example2 {
-    40% {
-        background-color: yellow;
-        left: 0;
-        transform: rotateZ(0deg);
-    }
-    70% {
-        background-color: #FF86BB;
-        left: calc(100% - 50px);
-        transform: rotateZ(0deg);
-    }
-    
-    100% {
-        background-color: #7FFCFF;
-        left: 0;
-        transform: rotateZ(0deg);
-    }
-}
-
- .booking-button.whatsapp  {
-    animation-name: example2;
-    animation-duration: 3s;
-    animation-delay: 3s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes example3 {
-    30% {
-        background-color: #07ADC8;
-        left: 0;
-        transform: rotateZ(0deg);
-    }
-    50% {
-        background-color: #8352FF;
-        left: calc(100% - 100px);
-        transform: rotateZ(0deg);
-    }
-    
-    100% {
-        background-color:red ;
-        left: 0;
-        transform: rotateZ(0deg);
-    }
-}
-
- .cta-button  {
-    animation-name: example3;
-    animation-duration: 4s;
-    animation-delay: 3s;
-    animation-iteration-count: infinite;
 }
 
     .blog-container {
