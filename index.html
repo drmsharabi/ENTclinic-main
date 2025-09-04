@@ -605,22 +605,22 @@
   font-size: 6px;
 }
 
-.working-hours {
-  background-color: yellow;
-  padding: 3px 20px;
-  margin-top: 5px;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  font-size: 10px;
-  color: black;
-    font-weight: bold;
-    border-radius: 20px 20px 0 0;
-    text-align: center;
-    display: inline-block;
-    
-}
- 
+   .working-hours {
+            background-color: yellow;
+            padding: 3px 20px;
+            margin-top: 5px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 9px;
+            color: black;
+            font-weight: bold;
+            border-radius: 20px 20px 0 0;
+            text-align: center;
+            display: inline-block;
+            white-space: nowrap;
+        }
+
 .social-icons {
   display: flex;
   gap: 10px;
@@ -667,19 +667,23 @@ footer {
     border-radius:0 0 30px 30px ;
   }
   
-  .working-hours {
-    font-size: 18px !important;
-    max-inline-size: fit-content;
-    padding: 3px 70px !important;
-    display: block;
-   flex: wrap;
-    margin:15px auto;
-    border-radius: 50px 50px 0 0;
-  }
-              .working-hours {
-    font-size: 6px !important;
-   letter-spacing: 0;
-  }
+ 
+
+            .working-hours {
+                font-size: 16px;
+                padding: 5px 40px;
+                display: inline-block;
+                margin: 15px auto;
+                border-radius: 50px 50px 0 0;
+                white-space: nowrap;
+                max-width: 90%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        
+
+     
+        
   .social-icon {
      margin: 10px 5px;width: 70px;
     height: 60px;
@@ -699,6 +703,19 @@ footer {
     padding: 5px 11px;
   }
   }
+     @media (min-width: 992px) {
+            .working-hours {
+                padding: 5px 60px;
+                font-size: 18px;
+            }
+     }
+
+        @media (max-width: 767px) {
+            .working-hours {
+                font-size: 10px;
+                padding: 3px 15px;
+            }
+        }
   .cta-button {
   white-space: nowrap;
   background: #A00153;
