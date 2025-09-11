@@ -217,7 +217,7 @@
       padding: 0;
       direction: rtl;
       text-align: right;
-      background-color: #E8F4FC;
+      background-color: #F7FAFF;
     }
  /* ✅ NAV */
        nav {
@@ -729,7 +729,7 @@ footer {
   margin: 20px auto;
   transition: transform 0.3s ease;
   text-align: center;
-  border-radius: 30% 5px 5px 30%;
+  border-radius: 30%;
   padding: 5px 25px;
   max-width: fit-content;
   font-size: 44px; 
@@ -760,7 +760,7 @@ footer {
     transform: scale(0.8) translateX(1px);
   }
   85% {
-    transform: scale(0.8) translateX(-45px);
+    transform: scale(0.8) translateX:0;
   }
   100% {
     background-color: red;
@@ -774,7 +774,8 @@ footer {
 /* حجم الخط للموبايل */
 @media (max-width: 767px) {
   .cta-button {
-    font-size: 14px;
+    font-size: 12px;
+    
   }
 }
 
@@ -796,6 +797,7 @@ footer {
 .cta-button a {
   color: white !important;
   text-decoration: none;
+  padding: 5px auto;
 }
 
 .whatsapp-section {
@@ -948,13 +950,13 @@ font-size: 44px!important
 
 
  .warning-box {
-     background_color: #F2F7FF; border: 1px solid #d9e6ff; border-radius:0 0  14px;
-      padding: 16px 14px; font-size: 1rem;
-      box-shadow: 0 8px 14px rgba(13,71,111,.5);
+     background_color: #F2F7FF; border: 1px solid #5783D8; border-radius:0 0  14px;
+      padding: 16px 8px; font-size: 1rem;
+      box-shadow: 0 0 14px rgba(13,71,35,.1);
       margin: 0 10px;
-        border: 1px solid #5996C3;
+        
              background-color: #fffde7;
-      border: 0.5px solid #ffd600;
+      border: 0.5px solid #5783D8;
       position: relative;
     }
        @media (min-width: 768px) {
@@ -1018,9 +1020,9 @@ font-size: 44px!important
      align-items: center;
    align-content: center;
    padding: 30px 5px 40px 5px;
-    margin: 25px 8px;
+    margin: 25px 10px;
            borde-rightr: 2px solid #00749A;
-       box-shadow: 0 8px 14px rgba(13,71,111,.5);
+       box-shadow: 0 0 14px rgba(13,71,111,.5);
        
        background-color: white;
   }            
@@ -1075,28 +1077,36 @@ font-size: 44px!important
     color: #00108E;
      
 }
-.subsection {
-      width: : 95%;padding: 30px 30px;
-    margin: 10px 5px;
+     .subsection {
+      padding: 30px 30px;
+    margin: 10px 7px;
   padding:  5px 2px;
   background-color: #f2f7ff;
+     box-shadow: 0 0 1px rgba(13,71,61,.5);
   border-radius: 15px;
-          border-left: 9px solid #00709E;
-      border-left: 5px solid white;
-           border: 1px solid #e5eaf1;
-      box-shadow: 0 0 6px rgba(3, 35, 57, 0.8);
+         
+     font-weight: 600;
+          
+      box-shadow: 0 0 6px rgba(3, 55, 97, 0.9);
 }
   @media (min-width: 768px) {
 .subsection {
-   max-width: 95%;
-   align-items: center;
+    background-color: #f2f7ff;
+   max-width: 95%;align-items: center;
    align-content: center;
-   width: 95%;
-   margin: 10px 0 0 10px;
-    border-radius: 80px;
+   width: 100%;
+   
+    border-radius: 90px;
     padding: 30px 10px;
     margin: 10px 20px;
   }
+  }
+  @media (min-width: 768px) {
+.subsection {
+    margin: 5px 15px!important;
+}
+
+
          h3 {
              border-radius: 20px 20px 0 0;
          }
@@ -1489,7 +1499,7 @@ border-bottom: 5px solid #81DFFD;
    onclick="gtag('event', 'click', {
        'event_category': 'YouTube',
        'event_label': 'شاهد عملياتنا على يوتيوب'
-   });" class="certificate-link" style="background-color: white;color:#016D9A">  ️ <strong>
+   });" class="certificate-link" style="background-color: white;color:#9A0763">  ️ <strong>
  🎦 شاهد عملياتنا على يوتيوب</strong>
 </a></div></div> <hr>  
 
@@ -1549,15 +1559,15 @@ border-bottom: 5px solid #81DFFD;
          <div  class="warning-box" style="border-radius:0">
 
  <p>     تتميز العيادة بموقع جغرافي وسطي مناسب لكل المواطنين سواءاُ في القرى أو المدينة أو والمحافظات المجاورة،</p>   
-    <div ="background-color:white;border:1px solid green;border-radius: 12px 7px  5px; margin:0 20px;padding:5px 10px">      <a href="about.html" class="cta-link" style="color: #D4177B;background-color:#F2F7FF;font-size:14px;text-align: center;
+   <a href="about.html" class="cta-link" style="color: white;background-color:#D4177B;font-size:14px;text-align: center;
     display: block;
     margin: 10px auto;
-    font-weight: 600;">  <strong>  العنوان ←  </stron> :   </a>  
+    font-weight: 600;width:fit-content;padding:2px 10px;border-radius:20px;max-width: 70%">  <strong>  العنوان ←  </stron> :   </a>  
     <p><strong>      محافظة تعز </strong> ، الحوبان،<strong> ركن مفرق ماوية</strong>, الشارع العام،  – مبنى مختبرات دار الصحة، – اليمن </p>   </div>   
       
  </div>
   <hr>
-  <div class="warning-box" style="   background-color: white;text-align:center ;margin:20px;border-radius;0" >
+  <div class="warning-box" style="   background-color: white;text-align:center ;margin:30px;border-radius;0" >
     <em>“إذا كنت تبحث عن أفضل دكتور أنف وأذن وحنجرة في اليمن أو استشاري حنجرة موثوق في تعز، فإن <strong style="color:red" style="padding:30px; font-size:12px"> الدكتور مختار الشرعبي  </strong>  هو خيارك الأمثل</em>  </div>
 
   
@@ -1566,7 +1576,7 @@ border-bottom: 5px solid #81DFFD;
   
   </div>    
    
-  <div class="booking-container">
+  <div class="booking-container"style="padding-top:15px">
   <div class="booking-title">
     للحجز في عيادة دكتور مختار الشرعبي
   </div>
