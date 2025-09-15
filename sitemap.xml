@@ -91,7 +91,13 @@
 
   <!-- صفحة الأسئلة -->
   <url>
-    <loc>https://ent.drmsharabi.com/q&amp;a</loc>
+    <loc>https://ent.drmsharabi.com/q&a;a</loc>
+    <lastmod>2025-08-08T00:00:00+00:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://ent.drmsharabi.com/role;a</loc>
     <lastmod>2025-08-08T00:00:00+00:00</lastmod>
     <priority>0.7</priority>
   </url>
