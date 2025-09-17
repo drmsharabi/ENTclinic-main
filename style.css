@@ -1,0 +1,54 @@
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #003366;
+    direction: rtl;
+    text-align: right;
+}
+header {
+    background-color: #e0f0ff;
+    padding: 1em;
+    text-align: center;
+}
+.logo {
+    width: 80px;
+    height: 80px;
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+.hero-img {
+    max-width: 200px;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+.whatsapp-btn {
+    display: inline-block;
+    margin-top: 1em;
+    background-color: #25D366;
+    color: white;
+    padding: 0.7em 1.5em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.clinic-photo {
+    padding: 1em;
+    text-align: center;
+}
+.clinic-photo img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+}
