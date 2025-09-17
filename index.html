@@ -658,6 +658,7 @@ box-shadow: 0 3px 3px rgba(1, 53, 83, .9);
 .social-icon img {
   width: 22px;
   height: 22px;
+  
 }
 @media (min-width: 768px) {
 footer {
@@ -1671,5 +1672,15 @@ border-bottom: 5px solid #81DFFD;
       © 2025 جميع الحقوق محفوظة - عيادة د. مختار الشرعبي
     </div>
   </footer>
+  <script>
+document.addEventListener("DOMContentLoaded", function() {
+    const allImages = document.querySelectorAll('img');
+    allImages.forEach(img => {
+        if (!img.hasAttribute('loading')) {
+            img.setAttribute('loading', 'lazy');
+        }
+    });
+});
+</script>
 </body>
 </html>
