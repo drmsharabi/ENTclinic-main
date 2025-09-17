@@ -1,1360 +1,140 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- العنوان -->
-<title>التهاب الأذن الوسطى: ارتشاح وتجمع السوائل | د. مختار الشرعبي</title>
-
-<!-- وصف الميتا -->
-<meta name="description" content="تعرف على التهاب الأذن الوسطى: ارتشاح وتجمع السوائل في الأذن الوسطى، أسبابه، الأعراض، وطرق العلاج الفعّالة بما في ذلك استخدام المنظار والقسطرة. إعداد د. مختار الشرعبي - استشاري الأنف والأذن والحنجرة." />
-
-<!-- الكلمات المفتاحية -->
-<meta name="keywords" content="التهاب الأذن الوسطى, ارتشاح الأذن الوسطى, تجمع السوائل في الأذن, علاج التهاب الأذن الوسطى, دكتور مختار الشرعبي, أنف وأذن وحنجرة تعز, أفضل دكتور بالأذن" />
-
-<!-- canonical -->
-<link rel="canonical" href="https://ent.drmsharabi.com/blog-fluid-ear" />
-
-<!-- OG Tags محسّنة للواتساب وفيسبوك -->
-<meta property="og:title" content="التهاب الأذن الوسطى: ارتشاح وتجمع السوائل | د. مختار الشرعبي" />
-<meta property="og:description" content="تعرف على التهاب الأذن الوسطى: ارتشاح وتجمع السوائل في الأذن الوسطى، أسبابه، الأعراض، وطرق العلاج الفعّالة بما في ذلك استخدام المنظار والقسطرة. إعداد د. مختار الشرعبي - استشاري الأنف والأذن والحنجرة." />
-<meta property="og:image" content="https://ent.drmsharabi.com/images/blog/grommet.jpeg" />
-<meta property="og:image:width" content="1098" />
-<meta property="og:image:height" content="1048" />
-<meta property="og:image:alt" content="التهاب الأذن الوسطى - ارتشاح وتجمع السوائل - د. مختار الشرعبي" />
-<meta property="og:url" content="https://ent.drmsharabi.com/blog-fluid-ear" />
-<meta property="og:type" content="article" />
-<meta property="og:locale" content="ar_YE" />
-<meta property="og:site_name" content="عيادة د. مختار الشرعبي" />
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="التهاب الأذن الوسطى: ارتشاح وتجمع السوائل | د. مختار الشرعبي" />
-<meta name="twitter:description" content="تعرف على التهاب الأذن الوسطى: ارتشاح وتجمع السوائل في الأذن الوسطى، أسبابه، الأعراض، وطرق العلاج الفعّالة بما في ذلك استخدام المنظار والقسطرة. إعداد د. مختار الشرعبي - استشاري الأنف والأذن والحنجرة." />
-<meta name="twitter:image" content="https://ent.drmsharabi.com/images/blog/grommet.jpeg" />
-<meta name="twitter:site" content="@ClinicTwitter" />
-<meta name="twitter:creator" content="@DrSharabi" />
-
-<!-- البيانات الجغرافية -->
-<meta name="geo.region" content="YE" />
-<meta name="geo.placename" content="Taiz" />
-<meta name="geo.position" content="13.654188;44.130363" />
-<meta name="ICBM" content="13.654188,44.130363" />
-
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
-
-<!-- BreadcrumbList JSON-LD -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {"@type": "ListItem","position": 1,"name": "الرئيسية","item": "https://ent.drmsharabi.com/"},
-    {"@type": "ListItem","position": 2,"name": "المدونة الطبية","item": "https://ent.drmsharabi.com/blog"},
-    {"@type": "ListItem","position": 3,"name": "التهاب الأذن الوسطى: ارتشاح وتجمع السوائل","item": "https://ent.drmsharabi.com/blog-fluid-ear"}
-  ]
-}
-</script>
-
-<!-- BlogPosting JSON-LD محسّن -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "mainEntityOfPage": {"@type": "WebPage","@id": "https://ent.drmsharabi.com/blog-fluid-ear"},
-  "headline": "التهاب الأذن الوسطى: ارتشاح وتجمع السوائل",
-  "alternativeHeadline": "التهاب الأذن الوسطى: التشخيص والعلاج بالمنظار والقسطرة",
-  "description": "تعرف على التهاب الأذن الوسطى: ارتشاح وتجمع السوائل في الأذن الوسطى، أسبابه، الأعراض، وطرق العلاج الفعّالة بما في ذلك استخدام المنظار والقسطرة. إعداد د. مختار الشرعبي - استشاري الأنف والأذن والحنجرة.",
-  "mainEntity": {
-    "@type": "MedicalCondition",
-    "name": "التهاب الأذن الوسطى: ارتشاح وتجمع السوائل",
-    "url": "https://ent.drmsharabi.com/blog-fluid-ear"
-  },
-  "image": {"@type": "ImageObject","url": "https://ent.drmsharabi.com/images/blog/grommet.jpeg","width": 1098,"height": 1048},
-  "author": {
-    "@type": "Person",
-    "name": "د. مختار الشرعبي",
-    "url": "https://ent.drmsharabi.com",
-    "affiliation": {"@type": "MedicalOrganization","name": "عيادة د. مختار الشرعبي"}
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "عيادة د. مختار الشرعبي",
-    "logo": {"@type": "ImageObject","url": "https://ent.drmsharabi.com/images/clinic-logo.png","width": 167,"height": 176}
-  },
-  "datePublished": "2025-09-12T00:00:00+03:00",
-  "dateModified": "2025-09-12T00:00:00+03:00",
-  "keywords": "التهاب الأذن الوسطى, ارتشاح الأذن الوسطى, تجمع السوائل في الأذن, علاج التهاب الأذن الوسطى, Dr Mokhtar Al-Sharabi, ENT Taiz"
-}
-</script>
-
-<!-- MedicalClinic JSON-LD -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "MedicalClinic",
-  "name": "عيادة د. مختار الشرعبي",
-  "url": "https://ent.drmsharabi.com",
-  "image": "https://ent.drmsharabi.com/images/clinic-logo.png",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "ركن مفرق ماوية، مبنى مختبرات دار الصحة",
-    "addressLocality": "تعز",
-    "addressCountry": "YE"
-  },
-  "geo": {"@type": "GeoCoordinates","latitude": 13.654188,"longitude": 44.130363},
-  "telephone": "+967730433592",
-  "sameAs": [
-    "https://www.facebook.com/profile.php?id=100082372405434",
-    "https://youtube.com/@ENTsharabi",
-    "https://www.instagram.com/dr.mokhtar_alsharabi",
-    "https://x.com/Dr_Alsharaabi",
-    "https://www.tiktok.com/@dr_mokhtar_sharabi"
-  ]
-}
-</script>
-
-<!-- ✅ تنسيقات CSS -->
-
-
-
-  <style>
-   body {
-      font-family: 'Cairo', sans-serif;
-        overflow-x: hidden; /* لمنع التمرير الأفقي */
-      margin: 0;
-      padding: 0;
-      direction: rtl;
-      text-align: right;
-      background-color: #E8F4FC;
-    }
- /* ✅ NAV */
-       nav {
-     
-     
-     text-align: center;
-      font-size: 13px;
-      shadow: 0 6px 4px rgba(236, 235, 255, 0.9);
-      margin: 2px;display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-    .nav-row {
-     text-decoration: underline; display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      text-decoration: none;
-      rgba(236, 235, 255, 0.9);gap: 15px;
-    }
-    .nav-link {
-  background: linear-gradient(to left, var(--secondary-color), var(--accent-color));  
-      color: white;
-      padding: 2px 6px;
-      border-radius: 4px;
-      text-shadow: 1px 1px 1px rgba(3, 27, 33, 0.9);
-         font-weight: bold;
-      text-decoration: none;
-      border-block: 0.7px solid #89DFF6;
-      box-shadow: 0 3px 3px rgba(1, 3, 23, .7);
-      font-weight: blod;
-      font-size: 9px;
-      transition: all 0.3s ease;
-      display: inline-block;
-    }
-    .nav-link:hover {
-      background-color: #EEED62;
-      color: red;
-    }
-    @media (min-width: 768px) {
-      nav {
-        font-size: 16px;
-        padding: 20px 10px;
-    
-      }
-      .nav-row {
-        gap: 15px;
-
-     margin-bottom: 10px;       }
-     
-      .nav-link {
-        padding: 5px 15px;margin-top: 20px;
-        
-       box-shadow: 0 8px 1px rgba(1, 53, 83, .7);
-       border-radius: 20px; font-size: 28px;
-       border-block: 2px solid #89DFF6;
-       padding: 3px 15px;
-    }
-    }
-    
-      header {
-      margin-bottom: 4px;
-                background: linear-gradient(to left, var(--secondary-color), var(--accent-color));  
-  border-bottom: 1px solid #C0F0FF;
-      color: white;
-      padding: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 18px;
-      border-radius: 0 0 25px 25px;
-        box-shadow: 0 13px 6px rgba(0,31,51,.4);
-    }
-    
-    .header-logo img {
-      height: 55px;
-      width: auto;
-    }
-    .header-text {
-      display: flex;
-      line-height: 2.2;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    .main-title {
-      font-size: 13px;
-      font-weight: bold;
-      color: #ffffff;
-      white-space: nowrap;
-    }
-    .sub-title {
-      font-size: 13px;
-      color: #D0FFFC;
-      white-space: nowrap;
-    }
-        @media (min-width: 768px) {
-          header {
-       border-radius: 0 0 55px 55px;
-          }
-      .header-logo img {
-        height: 110px;
-      }
-      .main-title {
-        font-size: 29px;
-      }
-      .sub-title {
-        font-size: 30px;
-      }
-    }
-    
-      :root {
-            --primary-color: #01596B;
-            --secondary-color: #01849F;
-            --accent-color: #005464;
-            --light-color: #0194B2;
-            --dark-color: #032E3B;
-            --text-color: #333;
-        }
-        
-    
-     .booking-container {
-      background: linear-gradient(to left, var(--secondary-color), var(--accent-color));  
-      border: 1px solid #80E9FF;
-  border-right:5px solid #ffc107;
-          box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
-          border-radius: 8px;
- padding: 20px 20px;
-  margin: 20px 10px;
-  border-radius: 38px 0 38px 0;
-}
-
-.booking-title {
-  color: yellow;
-  font-weight: bold;
-  font-size: 16px;
-  margin-bottom: 8px;
-  text-align: center;
-}
-
-.booking-subtitle {
-  font-weight: bold;
- color: white; 
- font-size: 11px;
-  margin-bottom: 15px;
-  text-align: center;
-}
-
-.booking-numbers {
-  color: #D6FFF6;
-  font-size: 12px;
-  font-weight: bold;
-  margin-bottom: 18px;
-  line-height: 1.6;
-  text-align: center;
-}
-
-.booking-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-
-.booking-button {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 5px 16px;
-  font-weight: bold;
-  font-size: 14px;
-         box-shadow: 0 2px 6px rgba(33, 95, 97, 0.7);
-         border-radius: 10px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  margin: 20px auto;
-}
-
-.booking-button.sms {
-  background-color: #f0fafa;
-       box-shadow: 0 2px 6px rgba(33, 95, 97, 0.7); color: black;
-  border: 2px solid #009688;
-}
-
-.booking-button.sms:hover {
-  background-color: #e0f2f1;
-}
-
-.booking-button.whatsapp {
-  background-color: #f0fafa;
-        box-shadow: 0 2px 6px rgba(33, 95, 97, 0.7); color: black;
-  border: 2px solid #009688;
-}
-
-.booking-button.whatsapp:hover {
-  background-color: #e0f2f1;
-}
-
-.booking-icon {
-  width: 30px;
-  height: 30px;
-      border: 0.1px solid #009688;
-      box-shadow: 0 9px 6px rgba(33, 95, 97, 0.7);
-       border-radius: 5%;
-       animation: pulse 2s infinite; /* تطبيق تأثير النبض */
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1); /* الحجم الأصلي */
-  }
-  50% {
-    transform: scale(1.1); /* تكبير الأيقونة بنسبة 10% */
-  }
-  100% {
-    transform: scale(1); /* العودة للحجم الأصلي */
-  }
-
-
-}
-
-/* نسخة سطح المكتب */
-@media (min-width: 768px) {
-  .booking-container {
-    max-width: 40٪; /* تكبير العرض */
-   border-right: 9px solid #ffc107;
-   border-radius: 68px 10px;
-   padding: 40px 10px; margin: 40px; }
-  .booking-button {
-    font-size: 19px; /* تكبير الخط */
-    padding: 14px 22px; 
-    margin: 30px auto;
-  }
-  .booking-icon {
-    width: 58px; /* تكبير الأيقونة */
-    height: 58px;
-  }
-  .booking-title {
-      font-size: 11px; 
-}
- .booking-subtitle {
-      font-size: 11px; 
-}
-.booking-button {
-    font-size: 31px;
-    border-radius: 20px;
-}
-.booking-buttons {
-    gap: 91px; 
-}
-} 
-    
-  footer {
- border-top: 4px solid white; 
-         background: linear-gradient(to right, var(--secondary-color), var(--accent-color));  
-  color: white !important;
-          box-shadow: 2px 0 2px 5px rgba(194, 0, 97, 22);
-  text-align: center;
-  padding: 10px 0;
-  font-size: 9px;
-  line-height: 1.7;
-  overflow: hidden;
-  width: 100%;
-  box-sizing: border-box;
-  margin: 0;
-}
-
-.address-card {
-  display: inline-block;
-  background-color: white;
-  color: #004B8C !important;
-  padding: 2px 20px;
-  border-radius: 30px;
-  
-  font-weight: bold;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  font-size: 12px;
-  line-height: 1.5;
-  max-width: 90%;
-}
-
-.working-hours {
-  background-color: rgba(255, 255, 255, 0.15);
-  margin: 0 auto;
-  display: inline-block;
-  padding: 1px 15px;
-  border-radius: 20px;
-  color: white;
-  font-size: 10px;
-  font-weight: bold;
-}
-
-.copyright-container {
-  background-color: rgba(0, 0, 0, 0.2);
-  padding: 3px10px;
-  margin-top: 5px;
-  font-weight: 500;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  font-size: 6px;
-}
-
-.social-icons {
-  display: flex;
-  gap: 10px;
-  margin: 10px auto;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-.social-icon {
-  width: 30px;
-  height: 27px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
-box-shadow: 0 3px 3px rgba(1, 53, 83, .9);
-      border-block: 1px solid #89DFF6;
-}
-
-.social-icon:hover {
-  background-color: #00796B;
-  transform: translateY(-5px);
-}
-
-.social-icon img {
-  width: 22px;
-  height: 22px;
-}
-@media (min-width: 768px) {
-footer {
- border-top: 12px solid white; 
-        background: linear-gradient(to right, var(--secondary-color), var(--accent-color));  
-  color: white !important;
-          box-shadow: 2px 0 2px 9px rgba(194, 0, 97, 22);
-          }
- .address-card {
-    font-size: 34px !important;
-    margin: 10px auto;
-    padding: 5px 40px !important;
-  }
-  
-  .working-hours {
-    font-size: 28px !important;
-    padding: 5px 90px !important;
-  }
-  
-  .social-icon {
-     margin: 10px 5px;width: 70px;
-    height: 70px;
-    box-shadow: 0 8px 3px rgba(1, 53, 83, .9);
-      border-block: 2px solid #89DFF6;
-        gap: 80px;
-  }
-  
-  .social-icon img {
-    width: 50px;
-    height: 50px;
-    gap: 80px;
-  }
-  
-  .copyright-container {
-    font-size: 6px !important;
-    padding: 5px 11px;
-  }
-  }
-  
-.cta-button {
- white-space: nowrap; 
-  background: green;
-  color: white !important;
-   border: 2px solid white;
-    text-decoration: none;
-    font-weight: bold;
-    box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
-    width: fit-content;
-    display: block;
-    margin: 10px auto;
-    transition: all 0.3s ease;
-    text-align: center;
-    border-radius: 8px;
-    padding: 2px 15px;
-    font-size: 12px;
-    max-width: fit-content;
-    animation: pulse 3s infinite; /* تطبيق تأثير النبض */
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1); /* الحجم الأصلي */
-  }
-  50% {
-    transform: scale(1.1); /* تكبير الأيقونة بنسبة 10% */
-  }
-  100% {
-    transform: scale(1); /* العودة للحجم الأصلي */
-  }
-
-}
-
-.cta-button:hover {
-   margin: 10px auto; background-color: #FAFFD4;
-    max-width: fit-content;
-    box-shadow: 0 6px 12px rgba(0, 128, 0, 0.3);
-    font-size: 13px;
-    transform: translateY(-2px);
-    margin-top: 0; 
-    
-}
-/* تنسيق سطح المكتب */
-@media (min-width: 768px) {
-    .cta-button {
-       .
-  display: block;
-  
-  max-width: fit-content;padding: 5px 25px 
-        font-size: 30px;
-        border-radius: 12px!important;
-        margin: 60px auto;
-       
-    }
-}
-@media (min-width: 768px) {
- .cta-button {
-font-size: 44px!important
-}
-}
-   .cta-button a {
-    background: green;
- color: white!important;
-   }
-    .container {
-  max-width: 100%; /* بدلاً من 960px */
-  margin: 15px auto;
-  padding: 7px; /* تقليل الحشوة */
-  box-sizing: border-box; /* مهم جداً */
-}
-
- @keyframes example {
-    40% {
-        background-color: #FF86BB;
-        left: 0;
-        transform: rotateZ(0deg);
-    }
-    70% {
-        background-color: #7FFCFF;
-        left: calc(100% - 100px);
-        transform: rotateZ(0deg);
-    }
-    
-    100% {
-        background-color: yellow;
-        left: 0;
-        transform: rotateZ(0deg);
-    }
-}
- .booking-button.sms  {
-    animation-name: example;
-    animation-duration: 3s;
-    animation-delay: 0;
-    animation-iteration-count: infinite;
-}
-
-@keyframes example2 {
-    40% {
-        background-color: yellow;
-        left: 0;
-        transform: rotateZ(0deg);
-    }
-    70% {
-        background-color: #FF86BB;
-        left: calc(100% - 50px);
-        transform: rotateZ(0deg);
-    }
-    
-    100% {
-        background-color: #7FFCFF;
-        left: 0;
-        transform: rotateZ(0deg);
-    }
-}
-
- .booking-button.whatsapp  {
-    animation-name: example2;
-    animation-duration: 3s;
-    animation-delay: 3s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes example3 {
-    30% {
-        background-color: #07ADC8;
-        left: 0;
-        transform: rotateZ(0deg);
-    }
-    50% {
-        background-color: #8352FF;
-        left: calc(100% - 100px);
-        transform: rotateZ(0deg);
-    }
-    
-    100% {
-        background-color:red ;
-        left: 0;
-        transform: rotateZ(0deg);
-    }
-}
-
- .cta-button  {
-    animation-name: example3;
-    animation-duration: 4s;
-    animation-delay: 3s;
-    animation-iteration-count: infinite;
-}
-    h1 {
-      background-color: white;
-      color: #C20041;
-      border: 1px solid #004D40;
-      text-align: center;
-      padding: 5px;
-      box-shadow: 0 9px 6px rgba(33, 95, 97, 0.7);
-      border-radius: 9px;
-      font-size: 16px;
-      margin: 5px auto;
-      width: 99%;
-      max-width: 70%;
-       margin-top: 20px;
-    }
-   @media (min-width: 768px) {
-     h1{
- border-radius: 20px;
- font-size: 45px;
- margin: 10px auto;
- padding-right: 20px;
- width: 99%;
- margin-top: 40px;
- }
-  }
-    h2 {
-      padding: 5px;text-align:center;
-      color: #85084C;
-      ;font-size: 14px;
-    }
-        h3 {
-      color: #00709E;
-     -align:center;
-      margin-right: 12px;
-      font-size: 12px;
-    }
-    p {
-      font-size: 12px;
-      padding: 7px;line-height: 1.8;
-      margin-right: 7px;
-      color: #333;
-    }
-
-ul {
-  padding-right: 10px; /* تقليل من 15px */
-  margin-right: 0;
-}
-
-li {
-  margin-right: 5px; /* تقليل من 12px */
-}
-hr {
- color: #FCFFFE; margin: 15px 0 35px ;  /* هامش علوي وسفلي صغير (5px) وبدون هوامش جانبية */
-  box-shadow: 0 2px 2px rgba(3, 95, 97, 0.6);
-  padding: 1;     /* إزالة أي padding */
-  height: 1px;    /* ارتفاع الخط نفسه */
-  border: 6px solid #FCFFFE;
-  background-color: #FCFFFE; /* لون الخط */
-}
-    li {
-      font-size: 12px;
-     margin-right: 12px
-    }
-  @media (min-width: 768px) {
-      ul {
-      margin-right: 25px;
-   font-size: 12px;
-      padding-right: 45px;
-    }
-
-h2{
-    margin-right: 10px;
-}
-h3{
-    font-size: 12;
-}
-  li {
-    margin-top: 2px; /* قللت من 5px إلى 2px */
-    font-size: 12px;
-    padding: 5px 10px; /* بدلاً من 40px في جميع الجهات */
-    margin-right: 20px; /* قللت من 40px */
-    line-height: 1.4; /* للتحكم في المسافة بين الأسطر */
-  }
-
-   hr {
-      hight: 2px;
-      margin: 45px 30px;   
-    }
-    }
-         .blog-img  {
-  width: 100%;
-  max-width: 700px;
-  height: auto;
-  display: block;
-  margin: 20px auto 20px auto;
-      
-      border-radius: 10px 10px 30px  30px;
-     box-shadow: 0 0 8px rgba(3, 35, 27, 0.9);
-     border: 2px solid white;
-    }
-
-    @media (min-width: 768px) {
-      .post a {
-        font-size: 22px;
-      }
-          .blog-img {
-      margin: 80px auto;
-           border: 3px solid white;
-     border-radius: 20px 20px 60px  60px;
-      box-shadow: 0 0 9px rgba(3, 35, 97, 0.6);
-      }
-    }
-.whatsapp-section {
-  background-color: white;
-  text-align: center;
-  flex-wrap: wrap;
- display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.whatsapp-icon {
-  width: 70px;
- border: 0.5px solid black; margin: 10px auto;height: 70px;
-           box-shadow: 0 1px 3px rgba(1, 147, 147, 0.3);
-  object-fit: contain;
-  animation: pulse 2s infinite; /* تطبيق تأثير النبض */
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1); /* الحجم الأصلي */
-  }
-  50% {
-    transform: scale(1.1); /* تكبير الأيقونة بنسبة 10% */
-  }
-  100% {
-    transform: scale(1); /* العودة للحجم الأصلي */
-  }
-}
-
-@media (min-width: 768px) {
-  .whatsapp-icon {
-    width: 165px;
-    height: 165px;
-    margin: 50px auto;
-  }
-  .whatsapp-section {
-  flex-direction: row; 
-    justify-content: center;
-    gap: 20px;
-    }
-}
-
-
-  
-
-          
-    .main-section-title {
-      color: #880A41;
-      font-size: 20px;
-      margin-bottom: 20px;
-      display: flex;
-      align-items: center;
-    }
-    
-
-
-    .imp-section {
-      background-color:#e6f7ff ;
-      padding: 5px;
-      margin-bottom: 15px;
-      
-      color: black;
-      border-radius: 8px;
-      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-      position: right;
-      border-right: 4px solid red;
-    }
-    .subsection {
-      background-color: white;
-      padding: 15px 5px;
-      margin: 25px 7px  45px 6px;
-      
-      border-radius:5px 8px;
-     box-shadow: 0 0 5px rgba(111, 145, 177, 0.9);
-      position: relative;
-      border-right: 3px solid #00A19D;
-      
-    }
-    
-    .subsection h3 {
-      color: #00709E;
-      font-size: 13px;
-      margin-bottom: 10px;
-    }
-    
-    .subsection p {
-      font-size: 12px;
-      line-height: 1.7;
-      color: black;
-    }
-    
-
-     
-.main-content {
-  margin: 30px 0;
-  border: 1px solid black;
-}
-
-.main-section {
-   box-shadow: 0 1px 6px rgba(3, 95, 97, 0.6);
-   margin: 15px;
-  font-size: 12px;margin-bottom: 20px;
-  padding: 25px;
-  background-color: #e6f7ff;
-  border-radius: 12px;
-  border-left: 5px solid #00709E;
-}
-    .main-section p {
-      font-size: 12px;
-      line-height: 1.7;
-      color: #444;
-    }
-  @media (min-width: 768px) {
-.main-section {
-    border-radius: 40px;
-    padding: 30px 40px;
-    margin: 15px 20px;
-  }
-    .main-section p {
-      font-size: 12px!important;
-      }
-
-        .imp-section {
-      border-radius: 40px;
-         border-right: 9px solid red;
-         border-radius: 8px;
-      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
-      margin: 90px;
-    padding: 30px 30px;
-      }
-   
-
-      .danger-section {
-      border-radius: 40px;
-      margin: 90px 30px;
-    padding: 30px 30px;
-      }
-   .subsection {
-    border-radius: 30px;
-    padding: 15px;
-    margin: 45px 15px;
-    border-right: 8px solid #00A19D;
-    margin-top: 90px;
-  }
-       .subsection ul {
-      margin-right: 25px;
-   font-size: 12px;
-      padding-right: 15px;
-    }
-  
-  h3 {
-    font-size: 14px;
-  }
-  
-
-  }
-
-     
-          .main-h {
-  
-  
-  margin:0 20px 0 20px;
-  padding: 15px;
-  background: linear-gradient(35deg, #FBFDFC, #F3FCFD); 
-  border-radius: 0 0 40px 40px;
-       box-shadow: 0 0 6px rgba(3, 25, 97, 0.6);
-    
-      ;
-}
-      .main-h {
-         text-align: center; font-size: 12px;
-      }
-      
-@media (min-width: 768px) {
-    .main-h {
-     font-size: 12px;  margin: 0 50px 0 50px;
-   #3E67B6;
- 
-  }
-    }
-              .main-h p {
-      font-size: 11px!important;
-      }
- .warning-box {
-  background: linear-gradient(35deg, #ECF3FF, #ECF3FF);
-  border:0.5px solid black;
-      box-shadow: 0 0 16px rgba(3, 35, 97, 0.6);
- padding: 5px 10px;
-  margin: 20px 3px;
-  border-radius: 0 18px 3px 0;
-        border-left: 1px solid white;
-}
-  @media (min-width: 768px) {
-       .warning-box {
-      border-left: 2px solid white;
-      margin: 50px 10px;
-       border-radius: 30px;
-      padding: 25px;
-      margin-top: 90px;
-    }
-  }
- 
-
-            .img-title {
-              
-      padding: 5px 5px;
-      background-color:#39A1B6;
-      color:white;
-      border: 2px solid #DEF5F0;
-      font-size: 14px ;
-        box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
-      border-radius: 15px 40px 15px 40px;
-      text-align: center;
-      margin: 0 20px;
-      }
-      
-       .img-title {
-       border-radius: 15px 80px 15px 80px;
-       padding: 5px;
-      
-      color:white;border: 2px solid #CCE4F5;
-      font-size: 14px ;
-      font-size: 15px;
-      text-align: center;
-      margin: 0 50px;
-      }
- }
-
-  </style>
-</head>
-
-
-
-<body>
-  <header class="header-logo">
-    <img src="images/clinic-logo.png" alt="شعار العيادة">
-    <div class="header-text">
-      <div class="main-title">عيادة د. مختار الشرعبي الإستشارية</div>
-      <div class="sub-title"> للأنف والأذن والحنجرة والرأس والعنق</div>
-    </div>
-   </header>
-
-          <div class="main-h">           
-  <h1>تجمع السوائل في الأذن الوسطى </h1>
-        <p style="color: blue;text-align:center;font-size:12px">✍️ دكتور / مختار الشرعبي</p>
-        
-
-  <div>  <img src="images/blog/grommet1.gif" alt="عملية زراعة الأنبوب" 
-     loading="lazy" class="blog-img" width="568" height="320">
-
-</div> </div>
- <br>
-     <h2 style="color:#85084C"> 
-   لا تتجاهل  علامات وجود ارتشاح سوائل خلف طبلة الأذن عند طفلك..</h2>
-         <div class="main-content">        
-
-     <div class="subsection" style="border:0; background-color:white;margin: 10px">   <p style="margin:20px; text-align:center">تجمع السوائل في الأذن الوسطى (الارتشاح) هو حالة شائعة خصوصًا عند الأطفال، وقد تكون مزمنة دون أعراض واضحة في بدايتها.
- ويحدث غالباّ نتيجة ضعف تهوية الأذن الوسطى بسبب إنسداد قناة التصريف (استاكيوس)
- التي تصل بين البلعوم الأنفي وتجويف الأذن الوسطى. </p> 
-
-  <p style="margin:10px; text-align:center;color:#006767">
- <strong>
-يعد هذا التجمع سببًا رئيسيًا لانخفاض السمع المؤقت وتأخر النطق عند الأطفال. </strong></p>  </div>
- <p style="margin:10px">
-              
-        
-  في مثل هذه الحالات، قد يوصي طبيب الأنف والأذن والحنجرة بإجراء زراعة أنبوب تهوية الأذن (Ear Grommet)، وهو حل جراحي بسيط  ومؤقت وفعّال لاستعادة الوظيفة الطبيعية للأذن. في حال فشلت الطرق العلاجية البديلة.. 
-  </p>  
- 
-       <div class="subsection">         
-  <h2>ما الأسباب الشائعة؟</h2>  
-  
-  
-  <ul>   
-    <li>
-التهابات الأذن المتكررة: تؤدي العدوى المتكررة إلى التهاب الأنسجة وزيادة إنتاج السوائل.
-  </li>   <li>
-انسداد قناة استاكيوس: قد يحدث انسداد نتيجة التهابات ( كالزكام )، او تضخم اللحمية البلعومية، أو أورام البلعوم الأنفي - عند الكبار خاصة - مما يمنع تصريف السوائل.
-  </li>   <li>
-الحساسية: يمكن أن تؤدي الحساسية إلى زيادة الإفرازات المخاطية، مما يسهم في تجمع السوائل.
-  </li>   <li>
-التغيرات في ضغط الهواء: التغيرات المفاجئة في الضغط مثل الطيران أو الغوص يمكن أن تؤثر على الأذن الوسطى.
-  </li>   <li>
-التعرض للفيروسات: بعض الفيروسات قد تسبب التهابات تؤدي إلى تجمع السوائل.
-    <li>
-العوامل البيئية: مثل التعرض للدخان أو التلوث يمكن أن تزيد من خطر التهابات الأذن.
- </li>    <li>
-وجود مشاكل في الجهاز المناعي: ضعف الجهاز المناعي يمكن أن يزيد من احتمالية الإصابة بالتهابات
-    </li>
-
-    <li>
-        الرضاعة بوضعية خاطئة (خصوصًا للرضع).</li> </ul> </div>  
-      
-  </div>
-        <div class="subsection">
-      <h2>ما الأعراض المتوقعة؟</h2>  
-   
- 
-<p> <strong> يمكن أن تشير عدة علامات إلى وجود ارتشاح سوائل خلف طبلة الأذن عند الأطفال. من المهم مراقبة هذه العلامات للتدخل المبكر إذا لزم الأمر. تشمل العلامات الشائعة ما يلي:
-</strong></p>
-<ul> <li>
-ألم متكرر في الأذن: قد يشكو الطفل من ألم أو انزعاج في الأذن.
-</li>  <li>
-صعوبة في السمع: .. :
-
-</li>  <li>
-                احد العلامات التالية او أكثر:
-<ul>  <li>
-1 . تلاحظه يسمعك جيداً في بعض الأحيان والبعض الآخر لا يستجيب لكلامك
-
-</li>  <li>
-2 . يدنو قريباً من التلفاز أو يريده بصوت أعلى مما يريده من حوله
-
-</li>  <li>
-3 . يطلب منك تكرار الكلام
-
-
-4 . يشكوا مدرسيه من عدم التفاعل معهم كزملائه مع تدني مستواه الدراسي
-</li>  <li>
-
-5 . لا يستجيب لطلباتك كالعادة أو تحس أنه لا يعير الاهتمام لكلامك
-
-</li>  <li>
-6 . يبدأ بالتحدث بصوت أعلى من السابق
-
-</li>  <li>
-7. يحاول النظر لك جيداً أثناء الكلام لفهمك من حركة شفاهك
-
-</li>  <li>
-8 . التأخر في الكلام أو التحدث بطريقة مختلفة عن الآخرين
-
-</li>  <li>
-9 . يشكو من أوجاع أو ضوضاء في أذنه
-
-</li>  <li>
-10 . يدفع أذنه بيده للأمام عند السماع
-</li>  </ul>
-</li>  
- <li>
-تكرار التهابات الأذن: تكرار حدوث التهابات الأذن الوسطى قد يكون علامة على وجود سوائل. 
-</li>  <li>
-    
-صعوبة في النوم: قد يواجه الطفل صعوبة في النوم بسبب الألم أو الانزعاج في الأذن  </li>   </ul> 
-
-
-
-  
-  </div>
-        <div class="subsection">
-  <h2>كيف يتم التشخيص؟</h2>  
-  
-  <ul>
-      <li>التاريخ الطبي: يجب جمع معلومات عن الأعراض والتاريخ الصحي للطفل، بما في ذلك أي التهابات سابقة في الأذن.
-</li>
-<li>
-الفحص البدني: يتضمن فحص الأذن باستخدام المنظار للكشف عن وجود سوائل أو علامات التهاب.
-</li><li>
-اختبارات السمع: قد يتم إجراء اختبارات سمع وقياس مرونة الطبلة لتحديد تأثير السوائل على قدرة الطفل على السمع.
-</li><li>
-الأشعة: في بعض الحالات، قد يتم استخدام الأشعة السينية لاكتشاف السبب كوجود تضخم باللحمية البلعومية مثلا ..
-          
-      </li>
-      </ul>
- 
-   
-</div>
-      <div class="subsection">
-              <h2>ما هو العلاج؟</h2>            
-  <ul>  
-    <li>
-        المراقبة: في بعض الحالات، يمكن أن يُنصح بمراقبة الحالة لمدة معينة دون علاج، خاصة إذا كانت الأعراض خفيفة وظهرت لاول مرة بعد حدوث نزلة برد عند الطفل . .
-</li><li>
-الأدوية: قد تُستخدم مسكنات الألم أو مضادات الالتهابات و بخاخات الأنف  لتخفيف الأعراض وتحسين تهوية قناة استاكيوس ..  في بعض الحالات، يمكن وصف المضادات الحيوية إذا كان هناك التهاب.
-</li><li>
-العلاج الطبيعي: بعض الأطفال قد يستفيدون من العلاج الطبيعي لتحسين وضع الأذن الوسطى.
-
- كنفخ البالون بشكل متكرر ، ومضغ العلك ، وكذلك النفخ عبر الانف مع اقفال الفم والانف (للاطفال الكبر سنا" القادرين على ذلك).
-</li><li>
-التدخل الجراحي: إذا استمرت المشكلة لفترة طويلة أو كانت هناك نقص سمع ملحوظ ومستمر لأكثر من ٣ أشهر ، قد يحتاج الطفل إلى إجراء جراحة لوضع أنابيب تهوية مؤقته في الأذن.. إضافة لإزالة اللحمية البلعومية إذا كانت متضخمة..
-.</li>  </ul>
-   </div>       </div>   <div class="subsection">
-              <h2>ما هو أنبوب التهوية؟</h2>           
-  
- <br>  <img  src="images/blog/grommet.jpeg" alt="انبو تهوية الاذن"  class="blog-img" style="width:80%" /><br><p>هو أنبوب صغير مصنوع من البلاستيك أو المعدن (بحجم رأس عود الكبريت)، يُزرع جراحيًا في طبلة الأذن لفتح ممر مؤقت بين الأذن الخارجية والوسطى. يعمل هذا الأنبوب على:</p> 
-<div class="warning-box"> 
-<ul>  
-    <li>
- تصريف السوائل المتراكمة خلف الطبلة.  
-</li>       
-<li> موازنة الضغط داخل الأذن الوسطى.  
-
-</li>       <li> منع تكرار الالتهابات.  
-</div>
-</div>
- 
-   <div class="subsection">
-<h3>
-متى نلجأ لزراعة الأنبوب</h3>
-   <p> 
-يُوصى بهذا الإجراء في الحالات التالية:</p>    
-<ul>       <li> 
-- التهاب الأذن الوسطى المزمن مع تجمع السوائل (Glue Ear) لمدة تزيد عن ٣ أشهر.  
-</li>       <li>
-- تكرار التهابات الأذن الحادة (أكثر من ٤ مرات سنويًا).  
-</li>       <li>
-- ضعف السمع المؤثر على تطور الكلام والتعليم (خاصةً لدى الأطفال).  
-</li>       <li>
-- فشل العلاجات الدوائية مثل المضادات الحيوية أو البخاخات الأنفية
- </div>  <br>
- 
-    <div class="whatsapp-section" style="margin-top: 5px; flex-direction: column;">
-  <a href="https://youtu.be/2p9La2_KpV0?feature=shared" target="_blank">
-      <img src="images/social/youtube.jpeg" alt="يوتيوب" class="whatsapp-icon">
-  </a>
-
-  <a href="https://youtu.be/2p9La2_KpV0?feature=shared" 
-   aria-label="موقعنا على يوتيوب" 
-   target="_blank" 
-   
-   onclick="gtag('event', 'click', {
-       'event_category': 'YouTube',
-       'event_label': 'شاهد عملياتنا على يوتيوب'
-   });" class="cta-button a"> 
-   👁 شاهد نموذج إحدى عملياتنا
-</a></div></div>
-</div>
-      <div class="subsection"><h2>
-          
-      
-كيفية إجراء العملية  :</h2>      
-<ul>       <li> 
-<strong>1. </strong> التخدير: تُجرى العملية عادةً تحت تخدير عام خفيف (خاصةً للأطفال) أو تخدير موضعي للبالغين.  
-</li>       <li>
-<strong>2. شق صغير: </strong>يقوم الطبيب بعمل فتحة دقيقة في طبلة الأذن باستخدام مجهر جراحي.  
-</li>       <li>
-<strong>3. إزالة السوائل:</strong> يتم شفط السوائل المتراكمة في الأذن الوسطى.  
-</li>       <li>
-<strong>4. زراعة الأنبوب:</strong> يُثبت الأنبوب في الفتحة ليسمح بالتهوية.  
-</li>       <li>
-</strong>5. المدة:</strong> تستغرق العملية حوالي ١٠–١٥ دقيقة لكل أذن.
-</li>       </ul> </div>
- <div class="subsection"> 
- <h2>
-المميزات المتوقعة بعد الزراعة :</h2><ul><li>
-- تحسن ملحوظ في السمع خلال أيام.  
-</li>       <li>
-- تقليل التهابات الأذن بنسبة تصل إلى ٨٠٪.  
-</li>       <li>
-- تحسين النطق والتعلم لدى الأطفال.  
-</li>       <li>
-- استعادة نشاط الطفل الطبيعي (مثل السباحة بعد استشارة الطبيب). </li>       </ul> 
-
-</div>
-
- <div class="subsection"> 
-<h2>
-نصائح ما بعد الزراعة :</h2>
-<ul>       <li>
-- تجنب دخول الماء: استخدام سدادات أذن أثناء الاستحمام أو السباحة.  
-</li>       <li>
-- المتابعة الدورية:  في حال خروج افرازات من الاذن إضافة إلى متابعة دورية كل ٣ أشهر  لفحص وضع الأنبوب ووظيفته. . وازالته في حال كان قد سقط من غشاء الطبلة إلى تجويف الاذن الخارجية.
-</li>       <li>
-- العلاجات المساعدة: مثل بخاخات الأنف الستيرويدية لتقليل التورم.  
-</li>       <li>
-- ملاحظة خروج الأنبوب: غالبًا يسقط تلقائيًا ويهاجر مع صمغ الاذن للخارج ، وبالامكان التقاطه من بوبة الاذن بسهولة .. بعد ٦–١٨ شهرًا، وتلتئم الطبلة تلقائيًا. في حال لم يخرج تلقائيا بعد سقوطه يتم ازالته من قبل الجراح ببساطة أثناء المتابعة الدورية
-</li>       </ul></div>
- <div class="subsection"> 
-<h2>       
- المضاعفات المحتملة (نادرة): </h2>
- <ul>       <li>
-- تسرب سوائل من الأذن (عادةً مؤقت).  
-</li>       <li>
-- التهاب موضعي حول الأنبوب.  
-</li>       <li>
-- تكون ثقب دائم في الطبلة  يحتاج لعملية ترقيع طبلة الأذن (في حالات نادرة).  
-
-</li>  
-  <li>
-عودة تجمع السوائل بعد سقوط الأنبوب والتآم الطبلة، مما يستدعي إعادة تركيب الأنبوب من جديد . 
-</li>    
-</ul></div>
-    
-   <div class="subsection"> 
-  <h2>أسئلة شائعة:</h2>
- <ul>
-  <li>
-    <strong>- هل العملية مؤلمة؟</strong>
-    <br>لا، فالعملية تجرى تحت التخدير العام.
-  </li>
-  <li>
-    <strong>- هل تترك ندبة؟</strong>
-    <br>لا، فالفتحة مجهرية وتلتئم تلقائيًا.
-  </li>
-  <li>
-    <strong>- متى يعود الطفل للمدرسة؟</strong>
-    <br>في اليوم التالي إذا لم تكن هناك مضاعفات
-  </li>
-  <li>
-    <strong>- متى يغادر الطفل المستشفى؟</strong>
-    <br>بعد ساعتين من العملية إذا لم تكن هناك مضاعفات.
-  </li>
-</ul>
-</div>
-</div></div>
-
- 
-  </div>   
-  
-    <div class="warning-box" style="background:#F8FFC2;margin:20px;">
-    <h2 style="color:#047584">
-         في عيادة <strong style="color:#990B3E;font-size:14px">د. مختار الشرعبي</strong> </h2> 
-  <p class="booking-subtitle" style=" font-size:13px;color:#3D0299">تعز، ركن مفرق ماوية</p>
-   <em> <p style="color:black;text-align:center"> نحرص على تقييم كل حالة بدقة وتقديم خطة علاجية مناسبة بإذن الله،  تشمل الجانب الوقائي والنفسي والدوائي،  والتعامل بمرونة مع الظروف المادية للمرضى </p>
- </em>    
-</div>  <br>
-   <div class="booking-container">
-
- <div class="booking-title" style="font-size:13px">
-للحجز أرسل الإسم برسالة على الأرقام
-  </div>
-  <div class="booking-numbers">
-    730433592<br>777421224
-  </div>
-  <div class="booking-buttons">
-    <!-- زر رسالة نصية -->
-    <a href="sms:+967730433592" target="_blank" class="booking-button sms">
-      <img src="images/social/sms.webP" alt="رسالة نصية" class="booking-icon">
-      👆 رسالة نصية
-    </a>
-
-    <!-- زر واتساب -->
-    <a href="https://wa.me/967730433592" target="_blank" class="booking-button whatsapp">
-      <img src="images/social/whatsapp.webP" alt="واتساب" class="booking-icon">
-      👆 رسالة واتساب
-    </a>
-  </div> </div>  <br>     
-  
-    <a href="blog.html" style="color:black" class="cta-button a">← عودة لصفحة المدونة</a>
- <hr> 
-    <a href="index.html" style=":color:#004D40" class="cta-button a">← عودة للصفحة الرئيسية</a>
-  <br>
- <footer>
-    <nav>
-      <div class="nav-row">
-        <a href="index.html" class="nav-link">🏠 الرئيسية</a>
-
-        <a href="services.html" class="nav-link">🩺 من خدماتنا</a>
-        <a href="gallery.html" class="nav-link">📷 معرض الصور</a>
-        <a href="testimonials.html" class="nav-link">💬 رأي الجمهور</a>
-      </div>
-      <div class="nav-row" style="margin-bottom:20px">    
-        <a href="about.html" class="nav-link">📘 قصتنا</a >       <a href="blog.html" class="nav-link">📚 المدونة</a>
-        <a href="contact.html" class="nav-link">📍تواصل معنا</a>
-        <a href="q&a.html" class="nav-link">✉️ الأسئلة الشائعة</a>
-      </div>
-    </nav>
-    
-    <div class="footer-address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-      <div class="address-card">
-        <span itemprop="streetAddress">ركن مفرق ماوية، مبنى مختبرات دار الصحة</span>،
-        <span itemprop="addressLocality">تعز</span>،
-        <span itemprop="addressCountry">اليمن</span>
-      </div>
-    </div>
-    
-            
-  <div class="social-icons">
-      <a href="https://www.facebook.com/profile.php?id=100082372405434" class="social-icon" target="_blank">
-        <img src="images/social/facebook.webP" alt="فيسبوك">
-      </a>
-      <a href="https://wa.me/967730433592" class="social-icon" target="_blank">
-        <img src="images/social/whatsapp1.webP" alt="واتساب">
-      </a>
-      <a href="https://youtube.com/@ENTsharabi" class="social-icon" target="_blank">
-        <img src="images/social/youtube.webP" alt="يوتيوب">
-      </a>
-      <a href="https://www.instagram.com/dr.mokhtar_alsharabi" class="social-icon" target="_blank">
-        <img src="images/social/instagram.webP" alt="انستغرام">
-      </a>
-      <a href="https://x.com/Dr_Alsharaabi" class="social-icon" target="_blank">
-        <img src="images/social/x.webP" alt="تويتر (إكس)" width="30" height="30" />
-      </a>
-      <a href="https://www.tiktok.com/@dr_mokhtar_sharabi" class="social-icon" target="_blank">
-        <img src="images/social/tiktok.webP" alt="تيك توك" width="30" height="30" />
-      </a>
-      <a href="mailto:drm9khtarnajy@gmail.com" class="social-icon" target="_blank">
-        <img src="images/social/gmail.webP" alt="بريد إلكتروني" width="30" height="30" />
-      </a>
-    </div>
-    </div>
-     <div class="footer-section">
-
-      <p class="working-hours">
-        ⏰مواعيد العمل: السبت - الخميس: 10:00 صباحاً - 1:00 ظهراً
-      </p>
-    </div>
-    
-    <div class="copyright-container">
-      © 2025 جميع الحقوق محفوظة - عيادة د. مختار الشرعبي
-    </div>
-  </footer>
-</body>
-</html>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- الصفحة الرئيسية -->
+  <url>
+    <loc>https://ent.drmsharabi.com/</loc>
+    <lastmod>2025-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- من نحن -->
+  <url>
+    <loc>https://ent.drmsharabi.com/about</loc>
+    <lastmod>2025-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- خدماتنا -->
+  <url>
+    <loc>https://ent.drmsharabi.com/services</loc>
+    <lastmod>2025-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- معرض الصور -->
+  <url>
+    <loc>https://ent.drmsharabi.com/gallery</loc>
+    <lastmod>2025-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- آراء المرضى -->
+  <url>
+    <loc>https://ent.drmsharabi.com/testimonials</loc>
+    <lastmod>2025-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- تواصل معنا -->
+  <url>
+    <loc>https://ent.drmsharabi.com/contact</loc>
+    <lastmod>2025-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- المدونة -->
+  <url>
+    <loc>https://ent.drmsharabi.com/blog</loc>
+    <lastmod>2025-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- مقالات المدونة -->
+  <url>
+    <loc>https://ent.drmsharabi.com/blog-polyps</loc>
+    <lastmod>2025-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://ent.drmsharabi.com/blog-fluid-ear</loc>
+    <lastmod>2025-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://ent.drmsharabi.com/blog-tinnitus</loc>
+    <lastmod>2025-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://ent.drmsharabi.com/blog-tympanoplasty</loc>
+    <lastmod>2025-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://ent.drmsharabi.com/blog-tonsil</loc>
+    <lastmod>2025-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://ent.drmsharabi.com/blog-aso</loc>
+    <lastmod>2025-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://ent.drmsharabi.com/blog-smell</loc>
+    <lastmod>2025-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://ent.drmsharabi.com/blog-migraine</loc>
+    <lastmod>2025-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://ent.drmsharabi.com/blog-snoring</loc>
+    <lastmod>2025-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- أسئلة وأجوبة -->
+  <url>
+    <loc>https://ent.drmsharabi.com/q&a</loc>
+    <lastmod>2025-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- الدور الوظيفي -->
+  <url>
+    <loc>https://ent.drmsharabi.com/role</loc>
+    <lastmod>2025-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
