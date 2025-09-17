@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- الصفحة الرئيسية -->
   <url>
     <loc>https://ent.drmsharabi.com/</loc>
     <lastmod>2025-09-17</lastmod>
@@ -9,7 +8,6 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- من نحن -->
   <url>
     <loc>https://ent.drmsharabi.com/about</loc>
     <lastmod>2025-09-17</lastmod>
@@ -17,7 +15,6 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- خدماتنا -->
   <url>
     <loc>https://ent.drmsharabi.com/services</loc>
     <lastmod>2025-09-17</lastmod>
@@ -25,7 +22,6 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- معرض الصور -->
   <url>
     <loc>https://ent.drmsharabi.com/gallery</loc>
     <lastmod>2025-09-17</lastmod>
@@ -33,7 +29,6 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- آراء المرضى -->
   <url>
     <loc>https://ent.drmsharabi.com/testimonials</loc>
     <lastmod>2025-09-17</lastmod>
@@ -41,7 +36,6 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- تواصل معنا -->
   <url>
     <loc>https://ent.drmsharabi.com/contact</loc>
     <lastmod>2025-09-17</lastmod>
@@ -49,7 +43,6 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- المدونة -->
   <url>
     <loc>https://ent.drmsharabi.com/blog</loc>
     <lastmod>2025-09-17</lastmod>
@@ -57,7 +50,6 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- مقالات المدونة -->
   <url>
     <loc>https://ent.drmsharabi.com/blog-polyps</loc>
     <lastmod>2025-09-17</lastmod>
@@ -121,7 +113,6 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- أسئلة وأجوبة -->
   <url>
     <loc>https://ent.drmsharabi.com/q&amp;a</loc>
     <lastmod>2025-09-17</lastmod>
@@ -129,7 +120,6 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- الدور الوظيفي -->
   <url>
     <loc>https://ent.drmsharabi.com/role</loc>
     <lastmod>2025-09-17</lastmod>
