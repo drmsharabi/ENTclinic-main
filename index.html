@@ -207,28 +207,29 @@
 
  <style>
 
+/* ===== خط Cairo محلي باستخدام TTF فقط ===== */
 @font-face {
     font-family: 'Cairo';
-    src: url('font/Cairo-Regular.woff2') format('woff2'),
-         url('font/Cairo-Regular.ttf') format('truetype');
+    src: url('font/Cairo-regular.ttf') format('truetype');
     font-weight: 400;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Cairo';
-    src: url('font/Cairo-Bold.woff2') format('woff2'),
-         url('font/Cairo-Bold.ttf') format('truetype');
+    src: url('font/Cairo-Bold.ttf') format('truetype');
     font-weight: 700;
     font-display: swap;
 }
 
+/* ===== تطبيق الخط على كل العناصر ===== */
 body, h1, h2, h3, h4, h5, h6, p, span, a, li, div, nav, header, footer, 
 .main-title, .sub-title, .nav-link, .booking-title, .booking-subtitle,
 .contact-title, .test-cairo {
     font-family: 'Cairo', 'Segoe UI', Tahoma, sans-serif !important;
 }
 
+/* باقي الCSS الخاص بك يبقى كما هو */
 body {
     overflow-x: hidden;
     margin: 0;
@@ -239,27 +240,6 @@ body {
     line-height: 1.6;
 }
 
-
-
-.test-cairo {
-    font-family: 'Cairo', sans-serif !important;
-    font-weight: 700;
-    color: #c30056;
-    padding: 10px;
-    text-align: center;
-    border: 2px solid #00709E;
-    margin: 10px;
-    border-radius: 8px;
-}
-
-.test-cairo-regular {
-    font-family: 'Cairo', sans-serif !important;
-    font-weight: 400;
-    color: #00709E;
-    padding: 10px;
-    text-align: center; 
-}
-  
        nav {
    
      
@@ -275,7 +255,7 @@ body {
       justify-content: center;
       flex-wrap: wrap;
       text-decoration: none;
-      rgba(236, 235, 255, 0.9);gap: 15px;
+      rgba(236, 235, 255, 0.9);gap: 5px;
     }
     .nav-link {
   background: linear-gradient(to left, var(--secondary-color), var(--accent-color));  
