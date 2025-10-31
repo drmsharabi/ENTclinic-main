@@ -4,8 +4,9 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+
 <link rel="canonical" href="https://ent.drmsharabi.com/" />
 <meta name="google-site-verification" content="OTHsEOu7NBogbgEGqMwxn-Dy5M9SiuiZVHU4YLs_0-c" />
 
@@ -212,30 +213,49 @@
 
 
  <style>
-       body {
-            font-family: 'Cairo', 'Segoe UI', Tahoma, sans-serif !important;
-            overflow-x: hidden;
-            margin: 0;
-            padding: 0;
-            direction: rtl;
-            text-align: right;
-            background-color: #F7FAFF;
-        }
-        
-        /* اختبر الخط بإضافة هذا */
-        .test-font {
-            font-family: 'Cairo', sans-serif !important;
-            font-weight: 700;
-        }
-        
-        /* أزل أو علّق قاعدة @font-face مؤقتاً للاختبار */
-        /* @font-face {
-          font-family: 'MyFont';
-          src: url('../fonts/myfont.woff2') format('woff2'),
-               url('../fonts/myfont.woff') format('woff');
- /* ✅ NAV */
+     * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cairo', 'Segoe UI', Tahoma, sans-serif;
+    direction: rtl;
+    text-align: right;
+    background-color: #F7FAFF;
+    overflow-x: hidden;
+    line-height: 1.6;
+         
+            ;
+            
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a, li, div, nav, header, footer {
+    font-family: 'Cairo', 'Segoe UI', Tahoma, sans-serif;
+}
+
+.test-cairo {
+    font-family: 'Cairo', sans-serif !important;
+    font-weight: 700;
+    color: #c30056;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #00709E;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.test-cairo-regular {
+    font-family: 'Cairo', sans-serif !important;
+    font-weight: 400;
+    color: #00709E;
+    padding: 10px;
+    text-align: center; 
+}
+  
        nav {
-     
+   
      
      text-align: center;
       font-size: 13px;
@@ -976,16 +996,16 @@ font-size: 44px!important
     }
        @media (min-width: 768px) {
        .warning-box {  
-              border-radius: 30px;
+              border-radius: 0 0 50px 50px;
               
           
     border: 1px solid #01556C;
       padding: 15px 15px;
-      max-width: 94%;
+      max-width: 99%;
       
-         margin:0 15px 15px 15px;
+         margin:0 25px 15px 25px;
          margin-bottom: 20px;
-            position: center;
+            position: relative;
 
   
     }
@@ -1126,14 +1146,16 @@ font-size: 44px!important
              border-radius: 20px 20px 0 0;
          }
      .main-section  {
-      max-width: 95%; align-items: center;
+           position: relative;
+      max-width: 99%; align-items: center;
    align-content: center;
-   margin:0 10px 5px  10px;
+   margin:0 25px 5px  25px;
       
       padding: 10px;
       font-size: 12px!important;
-             borde-rightr: 2px solid #00749A;
-       box-shadow: 0 8px 14px rgba(13,71,111,.5);
+             borde-rightr: 7px solid #00749A;
+       box-shadow: 0 8px 14px rgba(13,71,111,.9);
+         position: center;
     }
    .main
 {
@@ -1186,6 +1208,7 @@ font-size: 44px!important
   border-radius: 8px;
   overflow: visible;
   
+  
 }
 
 .profile-image img {
@@ -1234,7 +1257,7 @@ border-bottom: 5px solid #81DFFD;
     align-items: stretch;         /* يخليهم بنفس الارتفاع */
     width: 92%;
     padding: 1px;
-    margin: 80px 15px 10px 35px;
+    margin: 80px 35px 10px 35px;
     max-width: 1000px;
     gap: 0;
     border: 5px solid white;
@@ -1635,11 +1658,11 @@ border-bottom: 5px solid #81DFFD;
       </div>
     </nav>
     
-    <div class="footer-address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+   <div class="footer-address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
       <div class="address-card">
-         <span itemprop="addressLocality">تعز</span>،
-       <span itemprop="addressCountry">اليمن</span>
-        <span itemprop="addressCountry">اليمن</span>
+        <span itemprop="streetAddress">ركن مفرق ماوية، مبنى مختبرات دار الصحة</span>،
+        <span itemprop="addressLocality">تعز</span>،
+        <span itemprop="addressCountry">اليمن</span
       </div>
     </div>
     
