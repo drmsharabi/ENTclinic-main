@@ -12,7 +12,7 @@
   <meta property="og:image" content="https://ent.drmsharabi.com/images/clinic-logo.png" />
   <meta property="og:url" content="https://ent.drmsharabi.com/contact" />
   <meta property="og:type" content="website" />
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -59,8 +59,31 @@
 </script>
 
    <style>
+   
+/* ===== خط Cairo محلي باستخدام TTF فقط ===== */
+@font-face {
+    font-family: 'Cairo';
+    src: url('font/Cairo-regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cairo';
+    src: url('font/Cairo-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+}
+
+/* ===== تطبيق الخط على كل العناصر ===== */
+body, h1, h2, h3, h4, h5, h6, p, span, a, li, div, nav, header, footer, 
+.main-title, .sub-title, .nav-link, .booking-title, .booking-subtitle,
+.contact-title, .test-cairo {
+    font-family: 'Cairo', 'Segoe UI', Tahoma, sans-serif !important;
+}
+
    body {
-      font-family: 'Cairo', sans-serif;
+  
         overflow-x: hidden; /* لمنع التمرير الأفقي */
       margin: 0;
       padding: 0;
@@ -97,7 +120,7 @@
       border-block: 0.5px solid #89DFF6;
       box-shadow: 0 3px 3px rgba(1, 3, 23, .2);
       font-weight: blod;
-      font-size: 9px;
+      font-size: 8px;
       transition: all 0.3s ease;
       display: inline-block;
     }
