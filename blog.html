@@ -857,9 +857,11 @@ h2 {
  }
 }
 
-    .blog-container {
+   .blog-container {
+    position: relative;
+    flex: wrap;
       max-width: 1200px;
-      margin: 40px auto;
+      margin: 40px  5px auto 10px;
       padding: 0 20px;
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -867,11 +869,15 @@ h2 {
     }
 
     .blog-card {
+       position: center;
+       
       background: #fff;
       border-radius: 16px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       overflow: hidden;
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      margin: 10px 0 20px 20px;
+      transition: transform 0.25s ease,
+      box-shadow 0.25s ease;
       display: flex;
       flex-direction: column;
       height: 100%;
@@ -883,10 +889,16 @@ h2 {
     }
 
     .blog-card img {
+        
       width: 100%;
+      border-radius: 16px;
+      
+      margin: 0 auto;
       height: 200px;
       object-fit: cover;
       border-bottom: 4px solid #003366;
+      box-shadow: -5 0 4px rgba(0,30,35,0.5);
+      
     }
 
     .blog-card .content {
