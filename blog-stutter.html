@@ -131,7 +131,7 @@
       padding: 0;
       direction: rtl;
       text-align: right;
-      background-color: #E8F4FC;
+      background-color: white;
     }
  /* ✅ NAV */
           nav {
@@ -327,7 +327,7 @@
             
               margin: 30px 5px;
           padding:  5px 5px;
-            background: white;
+            background: #E8F4FC;
             border-radius: 15px;
             box-shadow: 0 0px 14px rgba(13,71,111,.9);
         }
@@ -354,10 +354,10 @@
         .article-section {
             margin: 30px 5px;
             padding: 15px;
-            background-color: #E8FAFF;
+            background-color: white;
             border-radius: 10px;
             border: 0.5px solid green;
-            box-shadow: 0 0px 14px rgba(13,71,111,.1);
+            box-shadow: 0 0px 14px rgba(90,114,122,1);
         }
         @media (min-width: 768px) {
           .article-container {
@@ -450,7 +450,7 @@ h3{
             font-size: 22px;
             margin-bottom: 15px;
             padding-bottom: 8px;
-            border-bottom: 1px solid #E0E0E0;
+            border-bottom: 2px solid #E0E0E0;
         }
 
         .highlight-box {
@@ -555,7 +555,46 @@ h3{
             color: black;
             background-color: #f0fafa;
             border: 2px solid #009688;
+               animation-name: example2;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example2 {
+    0% {
+        opacity: 1; /* يبدأ غير مرئي */
+    }
+    20% {
+        opacity: 1; /* يظهر سريعًا */
+    }
+    40% {
+        background-color: #FF86BB;
+        left: 1;
+        transform: rotateZ(0deg);
+        opacity: 1; /* يبقى مرئيًا */
+    }
+    50% {
+        opacity: 0; /* يبدأ في الاختفاء */
+    }
+    70% {
+        background-color: #7FFCFF;
+        left: calc(100% - 100px);
+        transform: rotateZ(0deg);
+        opacity: 1; /* يصبح شبه transparent */
+    }
+    80% {
+        opacity: 1; /* يعود للظهور */
+    }
+    100% {
+        background-color: #7FFCFF;
+        left: 0;
+        transform: rotateZ(0deg);
+        opacity: 1; /* يعود مرئيًا بالكامل */
+    }
+}
         }
+        
 
         .booking-button:hover {
             background-color: #e0f2f1;
@@ -894,71 +933,88 @@ footer {
       box-shadow: 0 0 9px rgba(3, 35, 97, 0.6);
       }
     }
-    
-.cta-button {
- white-space: nowrap; 
-  background: green;
+  .cta-button {
+  white-space: nowrap;
+  background: #A00153;
   color: white !important;
-   border: 2px solid white;
-    text-decoration: none;
-    font-weight: bold;
-    box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
-    width: fit-content;
-    display: block;
-    margin: 10px auto;
-    transition: all 0.3s ease;
-    text-align: center;
-    border-radius: 8px;
-    padding: 2px 15px;
-    font-size: 12px;
-    max-width: fit-content;
-    animation: pulse 3s infinite; /* تطبيق تأثير النبض */
+  border: 2px solid white;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 8px 14px rgba(13,71,111,.5);
+  width: fit-content;
+  display: block;
+  margin: 20px auto;
+  transition: transform 0.3s ease;
+  text-align: center;
+  border-radius: 30% 5px 5px 30%;
+  padding: 5px 25px;
+  max-width: fit-content;
+  font-size: 44px; 
+  animation-name: example3;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
-
-@keyframes pulse {
+@keyframes example3 {
   0% {
-    transform: scale(1); /* الحجم الأصلي */
+      
+    background-color: #07ADC8;
+    transform: scale(0.8) translateX(0);
+    left: 0;
+  }
+  30% {
+    background-color: #07ADC8;
+    transform: scale(0.8) translateX(0);
+    left: 5px;
   }
   50% {
-    transform: scale(1.1); /* تكبير الأيقونة بنسبة 10% */
+    background-color: #8352FF;
+    left: calc(100% - 200px);
+    transform: scale(0.8) translateX(0);
+  }
+  70% {
+    background-color: #8352FF;
+    transform: scale(0.8) translateX(1px);
+  }
+  85% {
+    transform: scale(0.8) translateX(-45px);
   }
   100% {
-    transform: scale(1); /* العودة للحجم الأصلي */
+    background-color: red;
+    left: 0;
+    transform: scale(0.8) translateX(-5px);
   }
-
 }
+
+
+
+/* حجم الخط للموبايل */
+@media (max-width: 767px) {
+  .cta-button {
+    font-size: 14px;
+  }
+}
+
 
 .cta-button:hover {
-   margin: 10px auto; background-color: #FAFFD4;
-    max-width: fit-content;
-    box-shadow: 0 6px 12px rgba(0, 128, 0, 0.3);
-    font-size: 13px;
-    transform: translateY(-2px);
-    margin-top: 0; 
-    
+  margin: 10px auto;
+  background-color: #FAFFD4;
+  max-width: fit-content;
+  box-shadow: 0 6px 12px rgba(0, 128, 0, 0.3);
+  transform: translateY(-2px);
+  margin-top: 0;
 }
-/* تنسيق سطح المكتب */
-@media (min-width: 768px) {
-    .cta-button {
-       .
-  display: block;
-  
-  max-width: fit-content;padding: 5px 25px 
-        font-size: 30px;
-        border-radius: 12px!important;
-        margin: 60px auto;
-       
-    }
+
+/* عند النقر يكبر 20% */
+.cta-button:active {
+  transform: scale(1.2);
 }
-@media (min-width: 768px) {
- .cta-button {
-font-size: 44px!important
+
+.cta-button a {
+  color: white !important;
+  text-decoration: none;
 }
-}
-   .cta-button a {
-    background: green;
- color: white!important;
-   }
      h1 {
       background-color: white;
       color: #C20041;
@@ -983,6 +1039,35 @@ font-size: 44px!important
  margin-top: 40px;
  }
   }
+          .main-h {
+  
+  
+  margin:0 20px 0 20px;
+  padding: 15px;
+  background: white; 
+  border-radius: 0 0 40px 40px;
+       box-shadow: 0 0 6px rgba(3, 25, 97, 0.6);
+       border: 0.5px solid green;
+           box-shadow: 0 0 16px rgba(3, 35, 97, 0.6);
+    
+      ;
+}
+      .main-h {
+          border:1px solid green;
+         text-align: center; font-size: 12px;
+      }
+      
+@media (min-width: 768px) {
+    .main-h {
+     font-size: 12px;  margin: 0 50px 0 50px;
+   #3E67B6;
+ 
+  }
+    }
+              .main-h p {
+      font-size: 11px!important;
+      }
+  
     </style>
 </head>
 <body>
@@ -993,7 +1078,8 @@ font-size: 44px!important
       <div class="sub-title"> للأنف والأذن والحنجرة والرأس والعنق</div>
     </div>
   </header>
-  
+    <main role="article-section" >
+ 
        <div class="main-h">           
   <h1>  التأتأة عند الأطفال: دليل الآباء لفهمها والتعامل معها </h1>
         <p style="color: blue;text-align:center;font-size:12px">✍️ دكتور / مختار الشرعبي</p>
@@ -1004,15 +1090,15 @@ font-size: 44px!important
 
 </div> </div>
  <br>
-    <div class="article-container">
+    <div class="article-section" style="margin-top:0; background-color:#F3FCFF;padding:5px;border-radius:20px;align-content:center">
      
 
-        <div class="article-section">
-            <h2 class="section-title">مقدمة</h2>
-            <p>كمختصين في صحة الأنف والأذن والحنجرة في عيادة الدكتور مختار الشرعبي، نلتقي كثيرًا بآباء قلقين بشأن تلعثم أو تأتأة أطفالهم. التأتأة هي أكثر من مجرد "تكرار لحرف أو كلمة"، فهي اضطراب في طلاقة الكلام يمكن أن يؤثر على ثقة الطفل وسلوكه.</p>
-            <p>نقدم لكم في هذا المقال دليلاً مبسطاً لفهم التأتأة عند الأطفال، متى تكون مرحلة طبيعية، ومتى تستدعي الانتباه والعلاج.</p>
-        </div>
+ 
+            <h2 class="section-title">مقدمة</h2> 
+            <p style="padding: 20px ;font-weight:600; -size:15px">كمختصين في صحة الأنف والأذن والحنجرة في عيادة الدكتور مختار الشرعبي، نلتقي كثيرًا بآباء قلقين بشأن تلعثم أو تأتأة أطفالهم. التأتأة هي أكثر من مجرد "تكرار لحرف أو كلمة"، فهي اضطراب في طلاقة الكلام يمكن أن يؤثر على ثقة الطفل وسلوكه.</p> <hr>
+            <p style="padding: 20px ;font-weight:600 ;text-align:center;color:#0378B5; font-size:15px;background-color:#008FB5;border-radius:10px;margin:20px; color:white"><em>نقدم لكم في هذا المقال دليلاً مبسطاً لفهم التأتأة عند الأطفال، متى تكون مرحلة طبيعية، ومتى تستدعي الانتباه والعلاج</em>.</p>
 
+  
         <div class="article-section">
             <h2 class="section-title">ما هي التأتأة؟</h2>
             <p>التأتأة (أو التلعثم) هي اضطراب في إيقاع الكلام، حيث يتعطل تدفق الكلمات الطبيعي. وقد تظهر على أشكال مختلفة:</p>
@@ -1075,8 +1161,8 @@ font-size: 44px!important
             </ul>
         </div>
 
-        <h2 class="section-title">نصائح للآباء للتعامل مع الطفل الذي يتأتئ</h2>
-            <div class="tips-list">
+        <h2 class="section-title" style="background-color:#008FB5;border-radius:10px;margin:20px; color:white">نصائح للآباء للتعامل مع الطفل الذي يتأتئ</h2>
+            <div class="tips-list" style="background-color:#FEFFDB">
                 <ol>
                     <li><strong>استمع باهتمام:</strong> ركز على ما يقوله الطفل وليس كيف يقوله. حافظ على التواصل البصري وأعطه الوقت لإنهاء جمله.</li>
                     <li><strong>لا تقاطعه:</strong> لا تكمل الجمل نيابة عنه، فهذا قد يزيد من إحساسه بالإحباط.</li>
@@ -1087,16 +1173,16 @@ font-size: 44px!important
                 </ol>
             </div>
         
-
-        <div class="article-section">
+ </div>  
+        <div class="tips-list" >
             <h2 class="section-title">خاتمة</h2>
             <p>التأتأة عند الأطفال، وإن كانت مصدر قلق، إلا أن فهمها هو أول طريق الحل. في عيادة <strong>الدكتور مختار الشرعبي</strong>، نحن هنا لتقديم الاستشارة والتقييم الدقيق، وتوجيهكم إلى أفضل السبل لمساعدة أطفالكم على تخطي هذه المرحلة والتواصل بثقة وطلاقة.</p>
             <p><strong>لا تتردد في استشارتنا لأي استفسار، فصحة طفلك ورفاهيته هي أهم ما يهمنا.</strong></p>
-           </div>  
-            <div class="highlight-box">
+          
+       </main>    <br>  <hr>     <div class="highlight-box" style="margin:20px ">
                 <p style="font-size;15px"><em> <strong>ملاحظة</strong>: هذه المقالة لأغراص توعوية عامة ولا تغني عن الاستشارة الطبية الشخصية من قبل المختصين.</em></p>
            
-        </div>
+        </div>  <hr>   <br> 
 </div>
         <div class="booking-container">
             <div class="booking-title">في عيادة د. مختار الشرعبي</div>
@@ -1109,7 +1195,7 @@ font-size: 44px!important
                 <a href="https://wa.me/967730433592" target="_blank" class="booking-button">💬 واتساب</a>
             </div>
         </div>
-   <br>
+   <br>  <hr>   
     <a href="blog.html" style="color:black" class="cta-button a">← عودة لصفحة المدونة</a>
  <hr> 
     <a href="index.html" style=":color:#004D40" class="cta-button a">← عودة للصفحة الرئيسية</a>
