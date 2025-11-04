@@ -42,7 +42,6 @@
 <meta name="ICBM" content="13.654188,44.130363" />
 
 <!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
 
 <!-- BreadcrumbList JSON-LD -->
 <script type="application/ld+json">
@@ -109,6 +108,29 @@
   ]
 }
 </script>
+  
+<style>
+@font-face {
+    font-family: 'Cairo';
+    src: url('font/Cairo-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cairo';
+    src: url('font/Cairo-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+}
+
+/* ✅ تطبيق الخط على كل عناصر الصفحة */
+body, h1, h2, h3, h4, h5, h6,
+p, a, span, div, nav, header, footer,
+button, input, textarea, li {
+    font-family: 'Cairo', sans-serif !important;
+}
+</style>
 <!-- ✅ تنسيقات CSS -->
 
 
