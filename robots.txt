@@ -4,7 +4,5 @@ Disallow:
 Sitemap: https://ent.drmsharabi.com/sitemap.xml
 
 # Block access to system files
-Disallow: /.git/
-Disallow: /.github/
 Disallow: /.htaccess
 Disallow: /config/
