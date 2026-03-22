@@ -572,7 +572,7 @@
 
         .cta-button {
             white-space: nowrap;
-            background: #A00153;
+             background: #7a0040;
             color: white !important;
             border: 2px solid white;
             text-decoration: none;
@@ -587,6 +587,7 @@
             padding: 5px 25px;
             font-size: 16px;
             animation: example3 3s infinite ease-in-out;
+            color: white;
         }
 
         @keyframes example3 {
@@ -901,6 +902,16 @@
                 font-size: 18px;
             }
         }
+        .cta-button {
+  background: #7a0040;  /* درجة أغمق من #A00153 */
+  color: white;
+  /* باقي الخصائص كما هي */
+}
+
+.cta-button:hover {
+  background: #5c0030;  /* أغمق أيضًا عند المرور */
+  color: white;
+}
     </style>
 </head>
 <body>
