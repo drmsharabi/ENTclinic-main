@@ -82,25 +82,25 @@ button, input, textarea, li {
             justify-content: center;
             flex-wrap: wrap;
             text-decoration: none;
-            rgba(236, 235, 255, 0.9);gap: 5px;
+            rgba(236, 235, 255, 0.9);gap: 7px;
           }
           .nav-link {
         background: linear-gradient(to left, var(--secondary-color), var(--accent-color));
             color: white;
-            padding: 2px 6px;
+            padding: 2px 3px;
             border-radius: 4px;
             text-shadow: 1px 1px 1px rgba(3, 27, 33, 0.9);
                font-weight:bold;
             text-decoration: none;
             border-block: 0.5px solid #89DFF6;
             box-shadow: 0 3px 3px rgba(1, 3, 23, .2);
-            font-weight: blod;
+            
             font-size: 9px;
             transition: all 0.3s ease;
             display: inline-block;
           }
           .nav-link:hover {
-            background-color: #EEED62;
+            background-color: white;
             color: red;
           }
           @media (min-width: 768px) {
@@ -414,6 +414,7 @@ button, input, textarea, li {
       }
             }
 
+     
        footer {
        border-top: 4px solid white;
                background: linear-gradient(to right, var(--secondary-color), var(--accent-color));
@@ -457,7 +458,7 @@ button, input, textarea, li {
 
          .working-hours {
                   background-color: yellow;
-                  padding: 3px 20px;
+                  padding: 1px 20px;
                   margin-top: 5px;
                   font-weight: 500;
                   letter-spacing: 0.5px;
@@ -465,7 +466,7 @@ button, input, textarea, li {
                   font-size: 9px;
                   color: black;
                   font-weight: bold;
-                  border-radius: 20px 20px 0 0;
+                  border-radius: 15px 15px 0 0;
                   text-align: center;
                   display: inline-block;
                   white-space: nowrap;
@@ -550,10 +551,23 @@ button, input, textarea, li {
         }
 
         .copyright-container {
-          font-size: 12px !important;
+          font-size: 15px !important;
           padding: 5px 11px;
         }
         }
+           @media (min-width: 992px) {
+                  .working-hours {
+                      padding: 5px 60px;
+                      font-size: 18px;
+                  }
+           }
+
+              @media (max-width: 767px) {
+                  .working-hours {
+                      font-size: 9px;
+                      padding: 3px 15px;
+                  }
+              }
            @media (min-width: 992px) {
                   .working-hours {
                       padding: 5px 60px;
@@ -654,172 +668,34 @@ button, input, textarea, li {
         padding: 5px auto;
       }
 
-      .whatsapp-section {
-
-        text-align: center;
-        flex-wrap: wrap;
-       display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .whatsapp-icon {
-        background-color: #F4FCFF;
-        width: 60px;
-        height: 60px;
-        box-shadow: 0 1px 4px rgba(0, 62, 57, 0.9);
-        object-fit: contain;
-        animation: shake 2s infinite;
-
-      }
-
-      @keyframes shake {
-        0%, 100% { transform:scale(1)  translateX(0); }
-        25% { transform: scale(1.2);  translateX(0);opacity: 1  }
-        40% { transform:scale(1) translateX(25px);opacity: 0  }
-          60% { transform:scale(1) translateX(-25px);opacity: 1   }
-              80% { transform:scale(1) translateX(0);opacity: 1   }
-        100% { transform:scale(1) translateX(1px);opacity: 1   }
-      }
-
-      @media (min-width: 768px) {
-        .whatsapp-icon {
-          width: 185px;
-          height: 185px;
-        }
-        .whatsapp-section {
-        flex-direction: row;
-          justify-content: center;
-          gap: 20px;
-          }
-      }
-           .whatsapp-link{
-        text-align: center;
-        margin: 10px 0;
-      }
-
-      .whatsapp-link {
-        text-align: center;
-
-      }
-
-      .whatsapp-link a {
-        background: linear-gradient(to right, var(--secondary-color), var(--accent-color));
-                  color: white; !important;
-        padding: 5px 12px 4px;
-        ;border-radius: 10px;
-        font-size: 12px;
-        font-weight: bold;
-        text-decoration: none;
-        display: inline-block;
-        line-height: 1.6;
-      }
-
-      @media (min-width: 768px) {
-        .whatsapp-link a {
-          margin-top: 20px
-          ;font-size: 35px;
-          border-radius: 16px;
-          padding: 6px 18px;
-        }
-      }
 
 
-          .back-link {
-          color: #004978;
-          font-size: 12px;
+       
 
-              }
-         @media (min-width: 768px) {
-
-
-                            .back-link {
-                    font-size: 33px!important;
-                    
-                 }
-                            }
-                                     .back-link {
-          color: #004978!important;
-                                      }
-
-      h1 {
-            background-color: white;
-            border-top: solid white;
-            border: 2px solid white;
-
-            color: #C30056;
-
-
-            text-align: center;
-            padding: 2px 15px;
-            box-shadow: 0 0 6px rgba(0, 25, 37, 0.7);
-            border-radius:15px;
-            font-size: 15px;
-            margin: 0 auto;
-            width: 100%;
-            padding: 0 15px;
-            max-width: fit-content;
-          }
-                      h3 {
-         border:  1px solid white;box-shadow: 0 0 6px rgba(0, 0, 97, 0.8);
-            margin: 5px 8px 0 8px; background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
-                  color: white;
-                  padding:3px  20px;
-                  text-align: center;
-                  font-size: 1.1rem;
-                  font-weight: 600;
-                  border-radius: 10px 10px 0 0;
-          }
-         @media (min-width: 768px) {
-           h1{
-       padding: 0 !important
-        border: 7px solid white;
-       border-radius: 10px;
-       font-size: 47px;
-       margin: 20px 0;
-
-
-
-       }
-       h3{
-           margin-top: 60px!important;
-           border-radius: 60px 60px 0 0;
-       }
-        }
-
+   
                      h2 {
+                         margin-top: -2px;
            padding:5px 25px;
-           color: var(--secondary-color);
-            font-size: 18px;
+           color: white;
+            font-size: 16px;
+             background-color: var(--secondary-color);
+             border-radius:3px 2px 20px 20px;
+             margin: 0;
           }
-          p, li {
-            margin-top: 10px;
-            font-size: 12px;
-            line-height: 1.8;padding: 4px;
+           li {
+        
+            font-size: 14px;
+            
+            padding: 4px;
+            margin-right: 20px;
+            font-weight: 600;
+            margin-top: 0;
             
           }
           ul {
             padding-right: 20px;
           }
-            .contact-title {
-                  white-space: nowrap;
-                  text-align: center;
-
-                  color: #C00060;
-                  font-size: 15px;
-                  margin-bottom: 18px;
-                  font-weight: 500;
-              }
-
-          @media (min-width: 768px) {
-       .contact-title {
-      font-size: 44px!important
-      }
-                   h2 {
-           padding:5px 25px; color: #227A9E;
-            font-size: 34px;
-          }
-      }
+        
 
 
        hr {
@@ -833,20 +709,32 @@ button, input, textarea, li {
         background-color: white;
 
       }
-      @media (min-width: 768px) {
+                  p {
+            padding: 1px 20px;
+                  }
+       @media (min-width: 768px) {
         hr {
             margin: 65px 0;
                 }
             p {
-            padding: 20px 60px;
-            font-size: 22!important;
+            padding: 35px 30px 0 ;
           }
         p {;
-            font-size: 23!important;
+            font-size: 26!important;
         }
             ul {
             padding-right: 40px;
               font-size: 21px;
+          }
+             
+                               h2 {
+          margin: -2px -10 ;
+           margin-top: -2px;
+           
+            font-size: 26px;
+          font-weight: 700;
+           border-radius:0 0  30px 30px;
+           padding: 20px;
           }
                 li {
            
@@ -873,27 +761,16 @@ button, input, textarea, li {
              
            }  
                       }  
-       
-    .imp-section {
-      background-color:#00709E ;
-      padding: 15px;
-      margin: 15px 10px;
-      text-align: center;
-      color: white;
-      border-radius: 15px;
-      box-shadow: 0 3px 8px rgba(0,71,51,.8);
-      position: right;
-      border-right: 4px solid red;
-    }
-
+  
                 
   .subsection {
-      width: : 95%%;padding: 30px 30px;
-    margin: 10px 15px;
-  padding:  5px 12px;
+      width: : 95%%;
+      
+    margin: 0 15px 10px 15px;
+  padding:  0 1px 5px 1px;
   background-color: white;
-  border-radius: 15px;
-          border-right: 4px solid   #2AAECF;
+  border-radius:0 0 15px 15px;
+         
      
          
       box-shadow: 0 0 6px rgba(3, 35, 57, 0.2);
@@ -902,196 +779,88 @@ button, input, textarea, li {
 .subsection {
    max-width: 95%;
    align-items: center;
-   align-content: center;
-  
-   margin: 30px;
-    border-radius: 80px;
-    padding: 30px 30px;
+   
+   margin: 30px 60px;
+    border-radius:0 0 80px  ;
+    padding: 5px 5px 10px 0 ;
   
   }
   }
     
-    
-    .danger-section {
-      background-color: #FFE6F8;
-          box-shadow: 0 0 6px rgba(0, 0, 97, 0.6);
-      border: 1px solid black;
-      border-radius: 12px;
-      padding: 5px;
-      margin: 10px 0;
-      text-align: center;
-    }
-    
+   
 
      
 .main-content {
   margin: 30px 10px;
 }
-.main{
- border-right: 4px solid #00709E;
- border-left: 4px solid #00709E;
-  margin:0 20px 20px 20px;
+
+
+   
+  ul{
+  padding: 10px;margin: 5px 20px
+
+  }
+  
+  }
+
+       h1 {
+            background-color: white;
+            border-top: solid white;
+            border: 2px solid white;
+
+            color: #C30056;
+
+
+            text-align: center;
+            padding: 2px 15px;
+            box-shadow: 0 0 6px rgba(0, 25, 37, 0.7);
+            border-radius:15px;
+            font-size: 15px;
+            margin: 0 auto;
+            width: 100%;
+            padding: 0 15px;
+            max-width: fit-content;
+          }
+         @media (min-width: 768px) {
+           h1{
+       padding: 0 !important
+        border: 7px solid white;
+       border-radius: 10px;
+       font-size: 47px;
+       margin: 20px 0;
+
+
+
+       }
+  }
+
+   
+ .main-h {
+      border-right: 4px solid #01789B;
+
+  margin:0 20px 0 20px;
   padding: 25px;
   background-color: #F2FAFF;
   
-      box-shadow: 0 0 6px rgba(0,71,51,.8);
-      border-left: 5px solid  #00A19D
-      ;
-}
-.pic-section {
-  margin: 10px 10px;
-  padding: 0;
-  background-color: white;
-  border-radius: 12px;
       box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
-      border-left: 5px solid white;
+      border-left: 5px solid  #01789B;
+   border-radius: 0 0 30px 30px;
 }
-  @media (min-width: 768px) {
-.pic-section {
-   flex-wrap: wrap; border-left: 9px solid white;
-    border-radius: 20px;
-    padding: 0;
-    margin: 5px;
+@media (min-width: 768px) {
+    .main-h {
+       margin: 0 60px 0 60px;
+        border-left: 8px solid  #01789B ;
+        border-right: 8px solid  #01789B ;
   }
-  }
-.main-section {
-  margin: 10 10px;
-  padding: 0;
-  background-color: white;
-  border-radius: 12px;
-      box-shadow: 0 0 6px rgba(0,71,51,.8);
-      border-left: 5px solid white;
 }
-  @media (min-width: 768px) {
-.main-section {
-    border-left: 9px solid white;
-    border-radius: 20px;
-    padding: 30px 30px 30px 0;
-    margin: 10px 30px;
-  }
-    
-    }
-   .main
-{
-  
-  background-color: #F2FAFF;
-  
-   margin: 0 70px 50px 70px;
-      border-left: 9px solid  #00A19D
-      ;
-}
-        .imp-section {
-      border-radius: 40px;
-         border-right: 9px solid red;
-         border-radius: 8px;
-     box-shadow: 2px 2px 4px rgba(0,71,61,.5);
-      margin: 40px;
-    padding: 30px 30px;
-      }
-   
-
-      .danger-section {
-      border-radius: 40px;
-      margin: 90px 0;
-    padding: 30px 30px;
-      }
-   
-  ul{
-  padding: 30px;margin: 10px 30px
-
-  }
-  
-  }
-
+     ul {
+            margin-top: ;: 1px !important;
+          }
+            ul {
+            padding-top: ;: 1px !important;
+          }
+          
      
- .warning-box {
-   font-size: 1rem;
-      box-shadow: 0 8px 14px rgba(13,71,111,.5);
-      margin: 0 10px;
-        border: 1px solid #5996C3;
-          
-      position: relative;
-    }
-        
-       .warning-box {
-           : 1px solid #5783D8; border-radius:14px 0 14px 0;
-            padding: 6px 8px; font-size: 1rem;
-            box-shadow: 0 0 14px rgba(13,71,35,0.3);
-            margin: 0 10px;font-size: 12px;
-
-                   background-color: #FFFEF1;
-            border-right: 3px solid red;
-            position: relative;
-          }
-            
-               .warning-box a{
-                    font-size:12px;
-                    color: #0084B5;
-                    font-weight: 500;
-                 }
-             @media (min-width: 768px) {
-             .warning-box {
-                    border-radius: 30px 0 30px 0;
-            padding: 15px 25px;
-            width: fit-content;
-                                  border-right: 3px solid red;
-                
-                 font-size: 24px;
-
-
-          }
-  
-       
-
-          
-               .warning-box a{
-                    font-size:22px;
-                    color: #0084B5;
-                    font-weight: 500;
-                 }
-                             .warning-box li {
-                    font-size: 22px!important;
-                    
-                 }
-                  .warning-box p {
-                    font-size: 22px!important;
-                    
-                 }
-        }
-  h1 {
-      background-color: #EEF4FB;
-      color: #950554;
-         border-right: 8px solid red;
-      border: 1px solid #01789B ;
-      text-align: center;
-      padding: 5px;
-      box-shadow: 0 9px 6px rgba(33, 95, 97, 0.7);
-      border-radius: 9px;
-      font-size: 22px;
-      margin: 5px auto;
-      width: 80%;
-      max-width: 70%;
-    }
-   @media (min-width: 768px) {
-     h1{
- border-right: 18px solid red;
- border-radius: 20px;
- font-size: 67px;
- margin: 30px auto;
- padding-right: 10px;
- width: 79%;
- }
-  }
-    .tag { color: var(--accent); font-weight: 700;
-    border-left: 3px solid yellow}
-    ol { margin: 0; padding: 0 1.2rem; }
-    li { margin: 4px 0; font-weight: 700; }
-    li .details { font-weight: 400; margin-top: 2px; }
-    .details ul { margin: 2px 0 0 0; padding-inline-start: 1.2rem; }
-    .details li { font-weight: 400; margin: 2px 0; }
- 
-
-
 .main-image {
   width: 70% !important;
   max-width: 600px;  
@@ -1101,57 +870,6 @@ button, input, textarea, li {
   box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
   border-radius: 12px;
 }
-   
- .main-h {
-      border-right: 4px solid #00A19D;
- border-left: 4px solid #065BB4;
-  margin:0 20px 0 20px;
-  padding: 25px;
-  background-color: #F2FAFF;
-  
-      box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
-      border-left: 5px solid  #00A19D
-      ;
-}
-@media (min-width: 768px) {
-    .main-h {
-       margin: 0 60px 0 60px;
-  }
-}
-             .wrap {
-   border-radius: 0 0 5px 5px ;
-     align-items: center;
-   align-content: center;
-    padding: 10px 10px;
-    margin:0 10px 25px 10px;
-           borde-rightr: 2px solid #00749A;
-       box-shadow: 0 8px 14px rgba(13,71,61,.5);
-       
-       background-color: white;
-  }            
-
-      
-        @media (min-width: 768px) { 
-  .wrap {
-
-nn     max-width: 95%; align-items: center;
-   align-content: center;
-   margin:0 10px 5px  10px;
-      
-      padding: 10px;
-      font-size: 12px!important;
-             borde-rightr: 2px solid #00749A;
-       box-shadow: 0 8px 14px rgba(13,71,111,.5);
-    }
-        }
-       :root {
-            --primary-color: #01596B;
-            --secondary-color: #01849F;
-            --accent-color: #005464;
-            --light-color: #0194B2;
-            --dark-color: #032E3B;
-            --text-color: #333;
-        }
   
 @media (min-width: 768px) {
   .main-image {
@@ -1165,6 +883,37 @@ nn     max-width: 95%; align-items: center;
   }
    
 }
+ h1 {
+            background-color: white;
+            border-top: solid white;
+            border: 2px solid white;
+
+            color: #C30056;
+
+
+            text-align: center;
+            padding: 2px 15px;
+            box-shadow: 0 0 6px rgba(0, 25, 37, 0.7);
+            border-radius:15px;
+            font-size: 15px;
+            margin: 0 auto;
+            width: 100%;
+            padding: 0 15px;
+            max-width: fit-content;
+          }
+         @media (min-width: 768px) {
+           h1{
+       padding: 0 !important
+        border: 7px solid white;
+       border-radius: 10px;
+       font-size: 47px;
+       margin: 20px 0;
+
+
+
+       }
+  }
+
   </style>
 
 
@@ -1185,8 +934,8 @@ nn     max-width: 95%; align-items: center;
  <img src="images/endoscopy.jpeg" alt="صورة الدكتور مختار الشرعبي" class="main-image"> </div>
     
 
-<h2 style="text-align:center"> مرحباً بكم  في عيادة  <steond> دكتور مختار الشرعبي </strong> الإستشارية 
- </h2> 
+<p style="text-align:center ; footer:700;color:red"> مرحباً بكم  في عيادة  <steond> دكتور مختار الشرعبي </strong> الإستشارية 
+ </p> 
    <p style=" color: #333; margin-bottom: 20px ">
  
     في ظل التحديات الصحية المتزايدة، تبرز <strong>عيادة الدكتور مختار الشرعبي الاستشارية للأنف والأذن والحنجرة</strong> كمركز رائد للرعاية الطبية المتخصصة في محافظة 
@@ -1208,7 +957,7 @@ nn     max-width: 95%; align-items: center;
    <br>
 <div class="subsection"> 
   <h2>
-       <div class="warning-box ">
+       <di<>
     إشراف طبي بخبرة عالية
   </h2>
    
@@ -1217,28 +966,29 @@ nn     max-width: 95%; align-items: center;
   </p>
  </div>
       <br>
+   
 <div class="subsection"> 
-<h2>
-       <div class="warning-box ">
+
+     <h2>
+       <di< style="align-items:center">
     تقنيات حديثة ورعاية متطورة
  </h2>
-  
-  <p style="margin-bottom: 20px;">
-    تعتمد العيادة على أحدث الأجهزة والمناظير التشخيصية والجراحية لضمان تشخيص دقيق وخطط علاجية فعّالة، وتشمل تجهيزاتها:
-  </p>
+  <p>
+      يحرص <strong>الدكتور مختار عبده الشرعبي</strong>
+     على تقديم رعاية طبية متكاملة وتوفير   <a href="services.html" > <strong>كافة الخدمات</strong>   </a> الطبية في مجال الأنف والأذن والحنجرة باستخدام
+<strong>أحدث     الأجهزة والمناظير التشخيصية والجراحية</strong> لضمان تشخيص دقيق وخطط علاجية فعّالة،  وتوفير عناء السفر للمرضى الذين كانو يضطرون للسفر خارج المحافضة للبحث عنها </p> <p><strong>.. وتشمل تجهيزاتها: </p>
+ </strong> 
   <ul>
     <li>مناظير دقيقة للأنف والأذن والحنجرة.</li>
     <li>أجهزة رقمية حديثة لتقييم السمع وفق المعايير الألمانية.</li>
-    <li>تجهيزات متقدمة لإجراء     <a href="gallery.html" >📋 الجراحات النوعية</a> مثل جراحة الجيوب الأنفية بالمنظار، ترقيع طبلة الأذن، وتصحيح انحراف الحاجز الأنفي وغيرها من العمليات النوعية بأحدث التقنيات
-   </li> </ul>
-  <div class="back-link" style="text-align:center">
-    <a href="services.html" style=" text-align: center">📋 استعرض جميع الخدمات</a>
-  </div> 
-<br> </div></div>
+    <li>تجهيزات متقدمة لإجراء     <a href="gallery.html" ><strong>📋 الجراحات النوعية  </strong></a> مثل جراحة الجيوب الأنفية بالمنظار، ترقيع طبلة الأذن، وتصحيح انحراف الحاجز الأنفي وغيرها من العمليات النوعية بأحدث التقنيات
+   </li> </ul> </p>
+ 
+ </div></div>
       <br>
 <div class="subsection"> 
 <h2>
-       <div class="warning-box ">
+       <di<>
       
     التزام إنساني ومصداقية عالية
   </h2>
@@ -1251,27 +1001,32 @@ nn     max-width: 95%; align-items: center;
        <br>
 <div class="subsection"> 
 <h2>
-       <div class="warning-box ">
+       <di<>
   
     وجهة موثوقة لعلاج أمراض الأنف والأذن والحنجرة
        </h2> 
     <p style="margin-bottom: 20px;">
 بفضل الدمج بين الخبرة الطبية والتقنيات الحديثة والرؤية الإنسانية، أصبحت <strong>عيادة الدكتور مختار الشرعبي</strong> الخيار المفضل للمرضى الباحثين عن رعاية طبية موثوقة ومتخصصة.
-  <a href="testimonials.html" >📋     ويصفها الكثيرون    </a>  .
+  <a href="testimonials.html" > <strong>📋     ويصفها الكثيرون </strong>   </a>  .
 أنها الوجهة المثالية لعلاج أمراض ومشاكل الأنف والأذن والحنجرة في محافظة تعز وما حولها.
   </p>
 </div> 
   <br>
-       <br>
-<div class="subsection"> 
+       <br><div class="subsection"> 
 <h2>
-       <div class="warning-box ">
-  
+       <di<>
     📍 موقع العيادة
   </h2>
+  
 
-  <p >
-    <strong>العنوان:</strong> ركن مفرق ماوية – مبنى مختبرات دار الصحة، تعز – اليمن.
+  <p >  <a
+          href="https://maps.app.goo.gl/QkJ4ynAf3jjxdw8W6"
+          class="cta-link"
+         
+        >
+          <strong> العنوان←:</strong>
+        </a>
+    ركن مفرق ماوية – مبنى مختبرات دار الصحة، محافظة تعز ، أمام مستشفى الرفاعي الحديث – اليمن.
   </p>
 
 
@@ -1307,7 +1062,7 @@ nn     max-width: 95%; align-items: center;
 
     </main>
     
-      <footer>
+         <footer>
         <nav>
           <div class="nav-row">
             <a href="index.html" class="nav-link">🏠 الرئيسية</a>
