@@ -143,7 +143,7 @@ button, input, textarea, li {
           }
           .nav-link:hover {
             background-color: white;
-            color: red;
+            color: #930156;
           }
           @media (min-width: 768px) {
             nav {
@@ -537,143 +537,163 @@ button, input, textarea, li {
                       padding: 3px 15px;
                   }
               }
-.cta-button {
- white-space: nowrap; 
-  background: #A00153;
-  color: white !important;
-   border: 2px solid white;
-    text-decoration: none;
-    font-weight: bold;
-    box-shadow: 0 0 6px rgba(3, 95, 97, 0.6);
-    width: fit-content;
-    display: block;
-    margin: 10px auto;
-    transition: all 0.3s ease;
-    text-align: center;
-    border-radius: 8px;
-    padding: 2px 15px;
-    font-size: 12px;
-    max-width: fit-content;
-    animation: pulse 3s infinite; /* تطبيق تأثير النبض */
-}
+        .cta-button {
+        white-space: nowrap;
+        background: #A00153;
+        color: white !important;
+        border: 2px solid white;
+        text-decoration: none;
+        font-weight: bold;
+        box-shadow: 0 8px 14px rgba(13,71,111,.5);
+        width: fit-content;
+        display: block;
+        margin: 20px auto;
+        transition: transform 0.3s ease;
+        text-align: center;
+        border-radius: 20%;
+        padding: 5px 25px;
+        max-width: fit-content;
+        font-size: 44px;
+        animation-name: example3;
+        animation-duration: 3s;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+      }
+      @keyframes example3 {
+        0% {
+          background-color: #07ADC8;
+          transform: scale(0.8) translateX(0);
+          left: 0;
+        }
+        30% {
+          background-color: #07ADC8;
+          transform: scale(0.8) translateX(0);
+          left: 5px;
+        }
+        50% {
+          background-color: #8352FF;
+          left: calc(100% - 200px);
+          transform: scale(0.8) translateX(0);
+        }
+        70% {
+          background-color: #8352FF;
+          transform: scale(0.8) translateX(1px);
+        }
+        85% {
+          transform: scale(0.8) translateX:0;
+        }
+        100% {
+          background-color: red;
+          left: 0;
+          transform: scale(0.8) translateX(-5px);
+        }
+      }
 
-@keyframes pulse {
-  0% {
-    transform: scale(1); /* الحجم الأصلي */
-  }
-  50% {
-    transform: scale(1.1); /* تكبير الأيقونة بنسبة 10% */
-  }
-  100% {
-    transform: scale(1); /* العودة للحجم الأصلي */
-  }
 
-}
 
-.cta-button:hover {
-   margin: 10px auto; background-color: #FAFFD4;
-    max-width: fit-content;
-    box-shadow: 0 6px 12px rgba(0, 128, 0, 0.3);
-    font-size: 13px;
-    transform: translateY(-2px);
-    margin-top: 0; 
-    
-}
-/* تنسيق سطح المكتب */
-@media (min-width: 768px) {
-    .cta-button {
-       .
-  display: block;
-  
-  max-width: fit-content;padding: 5px 25px 
-        font-size: 30px;
-        border-radius: 12px!important;
-        margin: 60px auto;
-       
-    }
-}
-@media (min-width: 768px) {
- .cta-button {
-font-size: 44px!important
-}
-}
+      /* حجم الخط للموبايل */
+      @media (max-width: 767px) {
+        .cta-button {
+          font-size: 12px;
+          padding: auto 20px;
+          border-radius: 20;
 
- @keyframes example {
-    40% {
-        background-color: #FF86BB;
-        left: 0;
-        transform: rotateZ(0deg);
-    }
-    70% {
-        background-color: #7FFCFF;
-        left: calc(100% - 100px);
-        transform: rotateZ(0deg);
-    }
-    
-    100% {
-        background-color: yellow;
-        left: 0;
-        transform: rotateZ(0deg);
-    }
-}
- .booking-button.sms  {
-    animation-name: example;
-    animation-duration: 3s;
-    animation-delay: 0;
-    animation-iteration-count: infinite;
-}
+        }
+      }
 
-@keyframes example2 {
-    40% {
-        background-color: yellow;
-        left: 0;
-        transform: rotateZ(0deg);
-    }
-    70% {
-        background-color: #FF86BB;
-        left: calc(100% - 50px);
-        transform: rotateZ(0deg);
-    }
-    
-    100% {
-        background-color: #7FFCFF;
-        left: 0;
-        transform: rotateZ(0deg);
-    }
-}
 
- .booking-button.whatsapp  {
-    animation-name: example2;
-    animation-duration: 3s;
-    animation-delay: 3s;
-    animation-iteration-count: infinite;
-}
+      .cta-button:hover {
+        margin: 10px auto;
+        background-color: #FAFFD4;
+        max-width: fit-content;
+        box-shadow: 0 6px 12px rgba(0, 128, 0, 0.3);
+        transform: translateY(-2px);
+        margin-top: 0;
+      }
 
-@keyframes example3 {
-    30% {
-        background-color: #07ADC8;
-        left: 0;
-        transform: rotateZ(0deg);
-    }
-    50% {
-        background-color: #8352FF;
-        left: calc(100% - 100px);
-        transform: rotateZ(0deg);
-    }
-    
-    100% {
-        background-color:red ;
-        left: 0;
-        transform: rotateZ(0deg);
-    }
-}
+      /* عند النقر يكبر 20% */
+      .cta-button:active {
+        transform: scale(1.2);
+      }
 
- .cta-button  {
-    animation-name: example3;
-    animation-duration: 4s;
-    animation-delay: 3s;
-    animation-iteration-count: infinite;
-}
+      .cta-button a {
+        color: white !important;
+        text-decoration: none;
+        padding: 5px auto;
+      }
+
+      .whatsapp-section {
+
+        text-align: center;
+        flex-wrap: wrap;
+       display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .whatsapp-icon {
+        background-color: #F4FCFF;
+        width: 60px;
+        height: 60px;
+        box-shadow: 0 1px 4px rgba(0, 62, 57, 0.9);
+        object-fit: contain;
+        animation: shake 2s infinite;
+
+      }
+
+      @keyframes shake {
+        0%, 100% { transform:scale(1)  translateX(0); }
+        25% { transform: scale(1.2);  translateX(0);opacity: 1  }
+        40% { transform:scale(1) translateX(25px);opacity: 0  }
+          60% { transform:scale(1) translateX(-25px);opacity: 1   }
+              80% { transform:scale(1) translateX(0);opacity: 1   }
+        100% { transform:scale(1) translateX(1px);opacity: 1   }
+      }
+
+      @media (min-width: 768px) {
+        .whatsapp-icon {
+          width: 185px;
+          height: 185px;
+        }
+        .whatsapp-section {
+        flex-direction: row;
+          justify-content: center;
+          gap: 20px;
+          }
+      }
+           .whatsapp-link{
+        text-align: center;
+        margin: 10px 0;
+      }
+
+      .whatsapp-link {
+        text-align: center;
+
+      }
+
+      .whatsapp-link a {
+        background: linear-gradient(to right, var(--secondary-color), var(--accent-color));
+                  color: white; !important;
+        padding: 5px 12px 4px;
+        ;border-radius: 10px;
+        font-size: 12px;
+        font-weight: bold;
+        text-decoration: none;
+        display: inline-block;
+        line-height: 1.6;
+      }
+
+      @media (min-width: 768px) {
+        .whatsapp-link a {
+          margin-top: 20px
+          ;font-size: 35px;
+          border-radius: 16px;
+          padding: 6px 18px;
+        }
+      }
+
+
 .statement-container {
   background: linear-gradient(to bottom, #ffffff, #f0f8ff);
   border-radius: 15px;
@@ -933,7 +953,7 @@ h1, h3, h4 {
   color: #004D40;
 }
   h2  {
-      color: red;
+      color: #930156;
       background-color: non;
       
 }
@@ -1124,7 +1144,7 @@ html, body {
   overflow-x: hidden;
 }
   .step-number {
-            background-color: red;
+            background-color: #930156;
             color: white;
             width: 40px;
             height: 40px;
@@ -1380,7 +1400,7 @@ html, body {
       <li>جهاز CPAP للحالات الشديدة.</li>
       <li>أجهزة الفم: تدفع الفك للأمام لفتح المجرى الهوائي.</li>
     </ul>
-       <div class="step-number" style="background-color: white; color: red; border: 1px solid black;">⚠️</div>
+       <div class="step-number" style="background-color: white; color: #930156; border: 1px solid black;">⚠️</div>
     <div class="tip-card" style="background-color: #FFE6F8">
     <h2>✨ متى تحتاج جراحة؟</h2>
     <p>
