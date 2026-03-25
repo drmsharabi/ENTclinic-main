@@ -1,0 +1,121 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+<header>
+  <!-- يمكنك وضع محتوى الرأس الخاص بموقعك هنا -->
+</header>
+
+<main class="wp-block-query">
+  <h2 class="wp-block-query-title" style="padding: 40px 0 0; margin-bottom: 20px; text-align: center;">ابحث في الموقع</h2>
+
+  <!-- حقل البحث -->
+  <div style="max-width: 600px; margin: 0 auto 20px;">
+    <input type="text" id="searchInput" placeholder="أدخل كلمة البحث..." style="width: 100%; padding: 10px; font-size: 1rem; border: 1px solid #dfdfdf; border-radius: 4px;">
+  </div>
+
+  <!-- منطقة عرض النتائج -->
+  <div class="wp-block-group" style="padding-top:20px">
+    <div id="searchResults" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;"></div>
+  </div>
+
+  <div id="noResultsMessage" style="text-align: center; padding: 40px; display: none;">
+    <p>لا توجد نتائج مطابقة للبحث.</p>
+  </div>
+</main>
+
+<!-- wp:template-part {"slug":"footer","area":"footer"} /-->
+<footer>
+  <!-- محتوى التذييل -->
+</footer>
+
+<style>
+  .search-item {
+    background: #ffffff;
+    border: 1px solid #eaeef5;
+    border-radius: 12px;
+    padding: 20px;
+    transition: all 0.2s ease;
+    width: calc(33.333% - 20px);
+    min-width: 250px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+  }
+  .search-item:hover {
+    border-color: #cbd5e1;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+  .search-item a {
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #1e3a8a;
+    display: block;
+    margin-bottom: 8px;
+  }
+  .search-item p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #334155;
+    line-height: 1.5;
+  }
+  @media (max-width: 768px) {
+    .search-item {
+      width: 100%;
+    }
+  }
+</style>
+
+<script>
+  // قراءة كلمة البحث من الرابط (مثل ?q=كلمة)
+  const urlParams = new URLSearchParams(window.location.search);
+  const queryParam = urlParams.get('q');
+
+  // تحميل فهرس البحث
+  fetch('/search-index.json')
+    .then(response => response.json())
+    .then(pages => {
+      const searchInput = document.getElementById('searchInput');
+      const resultsDiv = document.getElementById('searchResults');
+      const noResultsDiv = document.getElementById('noResultsMessage');
+
+      // دالة لعرض النتائج بناءً على الكلمة المدخلة
+      function performSearch(query) {
+        const searchQuery = query.trim().toLowerCase();
+        if (searchQuery === '') {
+          resultsDiv.innerHTML = '';
+          noResultsDiv.style.display = 'none';
+          return;
+        }
+
+        const results = pages.filter(page =>
+          page.title.toLowerCase().includes(searchQuery) ||
+          page.content.toLowerCase().includes(searchQuery)
+        );
+
+        if (results.length === 0) {
+          resultsDiv.innerHTML = '';
+          noResultsDiv.style.display = 'block';
+        } else {
+          noResultsDiv.style.display = 'none';
+          resultsDiv.innerHTML = results.map(page => `
+            <div class="search-item">
+              <a href="${page.url}">${page.title}</a>
+              <p>${page.content.substring(0, 100)}${page.content.length > 100 ? '...' : ''}</p>
+            </div>
+          `).join('');
+        }
+      }
+
+      // عند الكتابة في الحقل
+      searchInput.addEventListener('input', function() {
+        performSearch(this.value);
+      });
+
+      // إذا كانت هناك كلمة بحث في الرابط، نضعها في الحقل وننفذ البحث
+      if (queryParam) {
+        searchInput.value = decodeURIComponent(queryParam);
+        performSearch(searchInput.value);
+      }
+    })
+    .catch(error => {
+      console.error('خطأ في تحميل فهرس البحث:', error);
+      document.getElementById('searchResults').innerHTML = '<p style="text-align:center;">حدث خطأ في تحميل محتوى البحث. تأكد من وجود ملف search-index.json في الجذر.</p>';
+    });
+</script>
