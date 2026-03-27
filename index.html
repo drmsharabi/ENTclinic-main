@@ -210,15 +210,6 @@
         ]
       }
     </script>
-
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-68YMCJ2YM9");
-    </script>
     <meta name="msvalidate.01" content="1D85A3CF640A717700AC703D02E5F75A" />
     <style>
       @font-face {
@@ -259,23 +250,29 @@
     </style>
     <style>
 
-      body {
+     body {
+            background: linear-gradient(145deg, #eef2f7 0%, #d9e0e8 100%);
+            font-family: 'Cairo', 'Tajawal', 'Segoe UI', 'Noto Naskh Arabic', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: #1a2c3e;
+            margin: 0;
+      padding: 0;
+          
+        }
+        body {
+            margin: 0!important;
+        }
+         body {
+            padding: 0!important;
+        }
 
-          overflow-x: hidden;
-          margin: 0;
-          padding: 0;
-          direction: rtl;
-          text-align: right;
-          background-color: #F7FAFF;
-          line-height: 1.6;
-      }
 
              nav {
 
 
            text-align: center;
             font-size: 13px;
-            shadow: 0 6px 4px rgba(236, 235, 255, 0.9);
+            shadow: 0 1px 4px rgba(236, 235, 255, 0.9);
             margin: 2px;display: flex;
             flex-direction: column;
             gap: 15px;
@@ -285,17 +282,17 @@
             justify-content: center;
             flex-wrap: wrap;
             text-decoration: none;
-            rgba(236, 235, 255, 0.9);gap: 7px;
+            text-shadow: 1px 1px 1px  rgba(236, 235, 255, 0.9);gap: 7px;
           }
           .nav-link {
-        background: linear-gradient(to left, var(--secondary-color), var(--accent-color));
+        background: linear-gradient(to left, var(--primary-color), var(--accent-color));
             color: white;
             padding: 2px 3px;
             border-radius: 4px;
             text-shadow: 1px 1px 1px rgba(3, 27, 33, 0.9);
                font-weight:bold;
             text-decoration: none;
-            border-block: 0.5px solid #89DFF6;
+            border-block: 0.5px solid #B4E4F6;
             box-shadow: 0 3px 3px rgba(1, 3, 23, .2);
             
             font-size: 9px;
@@ -330,7 +327,7 @@
             header {
             margin-bottom: 4px;
                       background: linear-gradient(to left, var(--secondary-color), var(--accent-color));
-        border-bottom: 1px solid #C0F0FF;
+        border-bottom: 3px solid var(--border-color);
             color: white;
             padding: 20px;
             display: flex;
@@ -357,12 +354,12 @@
           .main-title {
             font-size: 13px;
             font-weight: bold;
-            color: #ffffff;
+            color:  var(--tertiary-color);;
             white-space: nowrap;
           }
           .sub-title {
             font-size: 13px;
-            color: #D0FFFC;
+            color: var(--light-color);
             white-space: nowrap;
           }
               @media (min-width: 768px) {
@@ -383,12 +380,16 @@
           }
 
             :root {
-                  --primary-color: #01596B;
-                  --secondary-color: #01849F;
-                  --accent-color: #005464;
-                  --light-color: #0194B2;
-                  --dark-color: #032E3B;
+                  --primary-color: #003843;
+                  --secondary-color: #052F49;
+                  --accent-color: #041F30;
+                  --light-color: #B4E4F6;
+                  --dark-color: #5F0037;
                   --text-color: #333;
+                  --tertiary-color: #FFEDB6;
+                  --border-color:#eab308
+                  --body-color: #f1f5f9
+                  
               }
 
 
@@ -635,7 +636,7 @@
 
       .address-card {
        max-width: 90%;
-        background-color: #01768E ;
+         background: var(--primary-color);
         padding: 2px 10px;
         border-block: 0.5px solid white;
            box-shadow: 2px 0 2px 5px rgba(194, 0, 97, 22);
@@ -714,10 +715,12 @@
                 box-shadow: 2px 0 2px 9px rgba(194, 0, 97, 22);
                 }
        .address-card {
-          font-size: 34px !important;
+          font-size: 30px !important;
           margin: 10px auto;
-          padding: 5px 40px !important;
+          padding: 10px 40px !important;
           border-block: 0.8px solid white;
+         
+          
           border-radius:0 0 40px 40px ;
         }
 
@@ -947,7 +950,7 @@
           .certificate-link {
           color: #004978;
           font-size: 12px;
-
+          color:var(--dark-color);
               }
          @media (min-width: 768px) {
 
@@ -1026,7 +1029,7 @@
            background_color: #106D9A; border: 1px solid #5783D8; border-radius:0 0  14px;
             padding: 16px 8px; font-size: 1rem;
             box-shadow: 0 0 14px rgba(13,71,35,.1);
-            margin: 0 10px;font-size: 12px;
+            margin: 0 20px;font-size: 12px;
 
                    background-color: #fffde7;
             border: 0.5px solid #5783D8;
@@ -1105,12 +1108,12 @@
 
 
              h3 {
-         border:  1px solid white;box-shadow: 0 0 6px rgba(0, 0, 97, 0.8);
-            margin: 5px 8px 0 8px; background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
-                  color: white;
+       
+            margin: 5px 8px 0 28px; background: linear-gradient(to right, var(--light-color), var(--body-color));
+                  color: black;
                   padding:3px  20px;
                   text-align: center;
-                  font-size: 1.1rem;
+                  font-size: 0.9rem;
                   font-weight: 600;
                   border-radius: 10px 10px 0 0;
           }
@@ -1197,7 +1200,9 @@
 
                h3 {
                    border-radius: 20px 20px 0 0;
+                   
                }
+               
            .main-section  {
                  position: relative;
             max-width: 99%; align-items: center;
@@ -1239,7 +1244,8 @@
         margin: 10px 30
       }
         h3 {
-          font-size: 26px;
+          font-size: 16px;
+          margin-bottom: 30px;
 
         }
           .main-section p {
@@ -1523,7 +1529,7 @@
                     color: #0084B5;
                     font-weight:
                     550;
-                    margin: auto 5px;
+                    
                  }
                     @media (min-width: 768px) {
 
@@ -1549,7 +1555,7 @@
                         padding: 80px auto;
                           }
                             .certificate-link {
-          color: #004978!important;
+          color: blue!important;
           
 
               }
@@ -1614,10 +1620,275 @@
 }
 
 
-      
-  
+ 
+
+        /* Main container - modified as requested */
+        .resume-card {
+            max-width: 100%;
+            margin: 0 5px;
+            background: #ffffff;
+            border-radius: 2rem;
+            box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.25), 0 8px 18px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            transition: all 0.2s ease;
+            padding: 10px;
+            align-content: center;
+        }
+
+        /* Header section with grid layout (as per user modifications) */
+        .experience-header {
+            background: #0f2b3d;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 2rem 2.5rem;
+            border-bottom: 5px solid #eab308;
+        }
+
+        .experience-header h2 {
+            color: #570C49;
+            font-size: 2rem;
+            font-weight: 800;
+            letter-spacing: -0.3px;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin: 0;
+            line-height: 1.3;
+            white-space: nowrap;
+        }
+
+        .experience-header h2 i {
+            color: #eab308;
+            font-size: 2rem;
+            background: rgba(255,255,240,0.12);
+            padding: 0.5rem;
+            border-radius: 1rem;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* subtle subtitle - modified for grid */
+        .subhead {
+            color: #cbd5e1;
+            font-size: 1rem;
+            margin: 0;
+            font-weight: 500;
+            text-align: right;
+            border-right: none;
+            padding-right: 0;
+            border-left: 3px solid #eab308;
+            padding-left: 1rem;
+        }
+
+        /* experience list container */
+        .experience-list {
+            padding: 2rem 2.2rem;
+            background: #fefefe;
+        }
+
+        /* individual item styling */
+        .exp-item {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #e2edf2;
+            transition: transform 0.2s, box-shadow 0.2s;
+            
+        }
+
+        .exp-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        /* date column */
+        .exp-date {
+            flex: 0 0 180px;
+            background: #f1f5f9;
+            border-radius: 2rem;
+            padding: 0.6rem 1rem;
+            text-align: center;
+            align-self: flex-start;
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #0f2b3d;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.6rem;
+            box-shadow: inset 0 1px 1px rgba(0,0,0,0.02), 0 2px 4px rgba(0,0,0,0.02);
+            border: 1px solid #e0edf2;
+        }
+
+        .exp-date i {
+            color: #eab308;
+            font-size: 1rem;
+             
+        }
+
+        /* content column */
+        .exp-content {
+            flex: 1;
+            min-width: 220px;
+        }
+
+        .exp-title {
+            font-size: 1.35rem;
+            font-weight: 800;
+            color: #0f2b3d;
+            margin-bottom: 0.75rem;
+            line-height: 1.4;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.65rem;
+            flex-wrap: wrap;
+        }
+
+        .exp-title i {
+            color: #eab308;
+            font-size: 1.4rem;
+            margin-top: 0.2rem;
+        }
+
+        .exp-description {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #2c475c;
+            background-color: #f1f5f9;
+            padding: 0.75rem 1rem;
+            border-radius: 1.25rem;
+            line-height: 1.65;
+            border-right: 3px solid #eab308;
+            margin-top: 0.25rem;
+            transition: background 0.2s;
+            
+        }
+
+        .exp-description strong,
+        .exp-description b {
+            color: #0f2b3d;
+            font-weight: 700;
+        }
+
+        .badge-light a{
+              background: var(--body-color);;
+            border-radius: 2rem;
+            padding: 0.2rem 0.9rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 0.6rem;
+            color: blue;
+             border: 1px solid var(--primary-color);
+        }
+                .badge-light:hover a {
+                    color: white;
+                     background: var(--dark-color);
+}
+         .exp-item:hover {
+           
+            border-radius: 1.5rem;
+            padding-right: 0.5rem;
+            transition: all 0.25s ease;
+        }
+
+        /* Responsive design - applying all user modifications */
+        @media (max-width: 780px) {
+            .experience-header {
+                padding: 1.5rem;
+            }
+            .experience-header h2 {
+                font-size: 1.7rem;
+            }
+            .experience-list {
+                padding: 1.5rem;
+            }
+            .exp-item {
+                flex-direction: column;
+                gap: 0.8rem;
+                margin-bottom: 1rem;
+                padding-bottom: 1.5rem;
+            }
+            .exp-date {
+                flex: none;
+                background-color: #e9edf2;   /* replaced undefined variable with solid color */
+                width: fit-content;
+                font-size: 0.95rem;
+                padding: 0.4rem 1rem;
+                align-self: flex-start;
+                margin-top: 40px;
+                color:var(--dark-color);
+            }
+            .exp-title {
+                font-size: 1.2rem;
+            }
+            .exp-description {
+                font-size: 0.95rem;
+                padding: 0.6rem 0.9rem;
+               
+            }
+        }
+
+        @media (max-width: 480px) {
+            .exp-title i {
+                font-size: 1.8rem;
+            }
+            .exp-date {
+                margin: 24px !important;  /* corrected spelling */
+            }
+            .exp-description {
+                font-size: 1.3rem;   /* adjusted from 1.6rem for better readability on small screens */
+                
+            }
+        }
+
+        /* print support */
+        @media print {
+           
+            .resume-card {
+                box-shadow: none;
+                border: 1px solid #ccc;
+            }
+            .exp-date {
+                background: #f0f0f0;
+                border: 1px solid #ccc;
+            }
+            .exp-item {
+                break-inside: avoid;
+            }
+        }
+
+        ::selection {
+            background: #eab30840;
+            color: #0f2b3d;
+        }
+
+        /* Additional media for header grid collapse */
+        @media (max-width: 768px) {
+            .experience-header {
+                grid-template-columns: 1fr;
+                gap: 0.8rem;
+                text-align: center;
+            }
+            .experience-header .subhead {
+                border-left: none;
+                border-right: 3px solid #eab308;
+                padding-right: 1rem;
+                text-align: center;
+            }
+            .experience-header h2 {
+                white-space: normal;
+                justify-content: center;
+            }
+        }
     </style>
-  </head>
+</head>
+
 
   <body>
     <header class="header-logo">
@@ -1672,8 +1943,8 @@
           </p>
         </div>
       </div>
-      <br />
-      <div class="main-section">
+      <br>
+     
         <h2 style="color: #b3005c; text-align: center">نبذه عن د. مختار الشرعبي ..</h2>
         <p style="margin-right: 15px; text-align: center">
           استشاري متخصص في طب وجراحة ومناظير الأنف والأذن والحنجرة والرأس والعنق في محافظة تعز – اليمن. يقدم د. مختار
@@ -1681,52 +1952,129 @@
           التشخيصية و الجراحية.
         </p>
         <br />
-        <h3>المؤهلات والخبرة:</h3>
-        <div class="warning-box">
-          <ul>
-            <li>
-              <a
+      
+        
+        
+        
+<div class="resume-card">
+    <div class="experience-header">
+        <h1>
+            <i class="fas fa-briefcase"></i> 
+            الخبرة العملية
+        </h1>
+        <br>
+        <div class="subhead">
+            <i class="fas fa-stethoscope"></i> الإنجازات الأكاديمية والمهنية في جراحة الأنف والأذن والحنجرة
+        </div>
+    </div>
+
+    <div class="experience-list">
+        <!-- العنصر الأول: الدكتوراه المهنية 2016-2021 -->
+        <div class="exp-item">
+            <div class="exp-date">
+                <i class="far fa-calendar-alt"></i> 
+                2016 – 2021
+            </div>
+            <div class="exp-content">
+                <div class="exp-title">
+                    <i class="fas fa-user-graduate"></i> 
+                    دكتوراه مهنية في أمراض وجراحة ومناظير الأنف والأذن والحنجـرة والرأس والعنق
+                </div>
+                <div class="exp-description">
+                    <i class="fas fa-microscope" style="margin-left: 0.5rem; color:#eab308;"></i>
+                    شهادة دكتوراه مهنية متخصصة في مجال أمراض وجراحة ومناظير الأنف والأذن والحنجرة والرأس والعنق، 
+                    تشمل التدريب الجراحي المتقدم، المناظير التشخيصية والعلاجية، وجراحات الرأس والعنق الدقيقة.
+                    <span class="badge-light"><i class="fas fa-certificate"></i>  <a
                 href="images/S-cert..jpg"
                 target="_blank"
-                class="certificate-link"
+                
                 aria-label="اطلع على صورة شهادة الدكتوراه المهنية"
-              >
-                دكتوراه مهنية
-              </a>
-              في أمراض وجراحة ومناظير الأنف والأذن والحنجرة والرأس والعنق،
-            </li>
-            <li>
-              حاصل على
-              <a
+              >تدريب سريري وبحثي مكثف</a></span>
+                </div>
+            </div>
+        </div>
+<hr>
+        <!-- العنصر الثاني: البورد العربي (بورد عربي) 2016-2021 مع التفاصيل الكاملة (محافظة على النص الأصلي) -->
+        <div class="exp-item">
+            <div class="exp-date">
+                <i class="far fa-calendar-alt"></i> 
+                2016 – 2021
+            </div>
+            <div class="exp-content">
+                <div class="exp-title">
+                    <i class="fas fa-award"></i> 
+                    شهادة البورد العربي (بورد عربي)
+                </div>
+                <div class="exp-description">
+                    <i class="fas fa-flag-checkered" style="margin-left: 0.5rem; color:#eab308;"></i>
+                    شهادة البورد العربي (بورد عربي) في أمراض وجراحة ومناظير الأنف والأذن والحنجـرة والرأس والعنق - سوريا - 
+                    من المجلس العربي للاختصاصات الصحية ؛  اعتماد الجامعة العربية – تدريب متخصص وفق أعلى المعايير.
+                   
+                    <span class="badge-light"><i class="fas fa-hand-holding-heart"></i>  <a
                 href="images/B-cert..jpg"
                 target="_blank"
-                class="certificate-link"
+               
                 aria-label="اطلع على صورة شهادة البورد العربي"
               >
                 شهادة البورد العربي
               </a>
-              (الزمالة العربية) من المجلس. العربي للإختصاصات الصحية التابع لجامعة الدول العربية في سوريا .. والتي تعتبر
-              إحدى أرفع الشهادات العربية والعالمية..
-            </li>
-            <li>
-              دورات متقدمة في الجراحة التنظيرية للأنف والأذن والحنجرة وقاع الجمجمة من جامعة عين شمس في القاهرة - جمهورية
-              مصر العربية .
-            </li>
-            <li>
+                    </span>
+                </div>
+            </div>
+        </div>
+<hr>
+        <!-- العنصر الثالث: دورات عليا دولي 2019 -->
+        <div class="exp-item">
+            <div class="exp-date">
+                <i class="far fa-calendar-alt"></i> 
+                2019
+            </div>
+            <div class="exp-content">
+                <div class="exp-title">
+                    <i class="fas fa-chalkboard-user"></i> 
+                    دورات عليا دولي في جراحة المناظير المتقدمة
+                </div>
+                <div class="exp-description">
+                    <i class="fas fa-laptop-medical" style="margin-left: 0.5rem; color:#eab308;"></i>
+                    دورات عليا دولي في جراحة مناظير الأنف والأذن والحنجـرة وقاع الجمجمة. 
+                    برنامج تدريبي متقدم بأحدث التقنيات الجراحية بالمناظير الداخلية وجراحات قاعدة الجمجمة،
+                    بإشراف خبراء عالميين في مجال جراحة الأنف والأذن والحنجرة.
+                    <span class="badge-light"><i class="fas fa-hand-holding-heart"></i> شهادة معتمدة دولياً</span>
+                </div>
+            </div> </div>
+             <br> <hr>
+              <div class="exp-item">
+            <div class="exp-date">
+                <i class="far fa-calendar-alt"></i> 
+                 2025
+            </div>
+            <div class="exp-content">
+                <div class="exp-title">
+                    <i class="fas fa-chalkboard-user"></i> 
+                    عضوية الأكاديمية الإمريكية
+                
+             </div>
+                <div class="exp-description">
+                    <i class="fas fa-laptop-medical" style="margin-left: 0.5rem; color:#eab308;"></i>
               عضوية
-              <a
-                href="images/A-cert..jpg"
-                target="_blank"
-                class="certificate-link"
-                aria-label="اطلع على صورة شهادة العضوية"
-              >
+             
                 الأكاديمية الأمريكية
               </a>
-              والجمعية اليمنية لجراحة. الأنف والأذن والحنجرة.
-            </li>
-          </ul>
+              والجمعية اليمنية لجراحة. الأنف والأذن والحنجرة
+                    <span class="badge-light"><i class="fas fa-hand-holding-heart"></i> <a
+                href="images/A-cert..jpg"
+                target="_blank"
+                
+                aria-label="اطلع على صورة شهادة العضوية"
+              > شهادة معتمدة دولياً</span>
+                </div>
+            </div>
         </div>
-        <hr />
+    </div>
+
+ 
+        
+        <hr>
         <div class="whatsapp-section" style="margin-top: 5px; flex-direction: column">
           <a href="https://youtube.com/@ENTsharabi" target="_blank">
             <img style="margin-bottom: 30px" src="images/social/youtube.jpeg" alt="يوتيوب" class="whatsapp-icon" />
@@ -1749,11 +2097,14 @@
               <strong>🎦 شاهد عملياتنا على يوتيوب</strong>
             </a>
           </div>
-        </div>
-        <hr />
-
-        <h3>ما الذي يهدف إليه:</h3>
-        <div class="warning-box" style="background-color: #EEFBFF">
+        </div> </div>
+        <hr>
+<div class="resume-card">
+      <div class="experience-list">
+        <h3>
+            <i class="fas fa-briefcase"></i> 
+        ما الذي يهدف إليه:</h3>
+        <div class="exp-description">
           <p>يهدف الدكتور مختار الشرعبي من خلال عيادته في محافظة تعز ، ركن مفرق ماوية إلى</p>
 
           <ul>
@@ -1778,7 +2129,7 @@
         </div>
         <br />
         <h3>التزام مجتمعي وإنساني</h3>
-        <div class="warning-box">
+                <div class="exp-description">
           <ul>
             <li>
               تقديم
@@ -1796,7 +2147,7 @@
         <br />
         <h3>سمعة طيبة وثقة عالية :</h3>
 
-        <div class="warning-box" style="background-color: #EEFBFF">
+                <div class="exp-description">
           <ul>
             <li>
               <em>
@@ -1810,18 +2161,17 @@
               وفق أحدث الدراسات والأبحاث
             </li>
           </ul>
-        </div>
+        
         <br />
-        <div class="certificate-link" style="font-size: 13px; text-align: center; background-color: #f2f7ff">
-          <em>
-            <a href="about.html" class="cta-link" style="color: #d4177b; background-color: #f2f7ff">
-              <strong>إقرأ المزيد ←</strong>
+                            <span class="badge-light"><i class="fas fa-certificate"></i>  <a
+            href="about.html" class="badge-light" >
+             إقرأ المزيد ←
             </a>
-          </em>
-        </div>
+         
+        </div></div>
       </div>
 
-      <hr />
+      <hr>
 
       <h3>📍 موقع العيادة :</h3>
       <div class="warning-box" style="border-radius: 0">
@@ -1962,4 +2312,4 @@
       </script>
     </strong>
   </body>
-</html>
+  </html>
