@@ -379,18 +379,18 @@
             }
           }
 
-            :root {
-                  --primary-color: #003843;
-                  --secondary-color: #052F49;
-                  --accent-color: #041F30;
-                  --light-color: #B4E4F6;
-                  --dark-color: #5F0037;
-                  --text-color: #333;
-                  --tertiary-color: #FFEDB6;
-                  --border-color:#eab308
-                  --body-color: #f1f5f9
-                  
-              }
+  :root {
+            --primary-color: #003843;
+            --secondary-color: #052F49;
+            --accent-color: #041F30;
+            --light-color: #B4E4F6;
+            --dark-color: #5F0037;
+            --text-color: #00678D;
+            --tertiary-color: #fffde7;
+            --border-color: #eab308;
+            --body-color: #f1f5f9;
+            --link-color: #0080B0;
+        }
 
 
                 .booking-container {
@@ -790,91 +790,7 @@
 
       
 
-        .cta-button {
-        white-space: nowrap;
-        background: #A00153;
-        color: white !important;
-        border: 2px solid white;
-        text-decoration: none;
-        font-weight: bold;
-        box-shadow: 0 8px 14px rgba(13,71,111,.5);
-        width: fit-content;
-        display: block;
-        margin: 20px auto;
-        transition: transform 0.3s ease;
-        text-align: center;
-        border-radius: 20%;
-        padding: 5px 25px;
-        max-width: fit-content;
-        font-size: 44px;
-        animation-name: example3;
-        animation-duration: 3s;
-        animation-delay: 1s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
-      }
-      @keyframes example3 {
-        0% {
-          background-color: #07ADC8;
-          transform: scale(0.8) translateX(0);
-          left: 0;
-        }
-        30% {
-          background-color: #07ADC8;
-          transform: scale(0.8) translateX(0);
-          left: 5px;
-        }
-        50% {
-          background-color: #8352FF;
-          left: calc(100% - 200px);
-          transform: scale(0.8) translateX(0);
-        }
-        70% {
-          background-color: #8352FF;
-          transform: scale(0.8) translateX(1px);
-        }
-        85% {
-          transform: scale(0.8) translateX:0;
-        }
-        100% {
-          background-color: red;
-          left: 0;
-          transform: scale(0.8) translateX(-5px);
-        }
-      }
 
-
-
-      /* حجم الخط للموبايل */
-      @media (max-width: 767px) {
-        .cta-button {
-          font-size: 12px;
-          padding: auto 20px;
-          border-radius: 20;
-
-        }
-      }
-
-
-      .cta-button:hover {
-        margin: 10px auto;
-        background-color: #FAFFD4;
-        max-width: fit-content;
-        box-shadow: 0 6px 12px rgba(0, 128, 0, 0.3);
-        transform: translateY(-2px);
-        margin-top: 0;
-      }
-
-      /* عند النقر يكبر 20% */
-      .cta-button:active {
-        transform: scale(1.2);
-      }
-
-      .cta-button a {
-        color: white !important;
-        text-decoration: none;
-        padding: 5px auto;
-      }
 
       .whatsapp-section {
 
@@ -1002,7 +918,7 @@
             font-size: 24px;
           }
           p, li {
-            margin-top: 10px;font-size: 11px;
+            margin-top: 10px;font-size: 13px;
             line-height: 1.8;
           }
           ul {
@@ -1054,23 +970,24 @@
 
 
        hr {
-        margin: 25px 0;
-        padding: 10px;
+        margin: 15px 0;
+        padding: 0 10px;
 
         height: 0;
-
-
-
-        background-color: white;
-
-      }
+ }
+      hr {
+                height: 0!important;
+ }
+ 
       @media (min-width: 768px) {
         hr {
-            margin: 65px 0;
+            margin-bottom: 25px ;
+            height: 0;
                 }
+                
             p {
             
-            font-size: 22!important;
+            font-size: 32!important;
           }
             ul {
             padding-right: 40px;
@@ -1078,7 +995,7 @@
           }
                 li {
            
-            font-size: 21!important;
+            font-size: 24!important;
           }
       }
 
@@ -1119,11 +1036,6 @@
           }
 
 
-          .main-section p {
-            font-size: 12px;
-            line-height: 1.7;
-            color: black;
-          }
           .danger-section {
             background-color: #FFF2EF;
                 box-shadow: 0 0 6px rgba(0, 0, 97, 0.6);
@@ -1209,7 +1121,7 @@
          align-content: center;
          margin:0 25px 5px  25px;
 
-            padding: 10px;
+            padding: 10px 20px;
             font-size: 12px!important;
                    borde-rightr: 7px solid #00749A;
              box-shadow: 0 8px 14px rgba(13,71,111,.9);
@@ -1248,14 +1160,10 @@
           margin-bottom: 30px;
 
         }
-          .main-section p {
-            font-size: 23px;
-            line-height: 1.8;
-
-          }
+        
           li {
             
-            font-size: 21px!;
+            font-size: 26px;
           }
 
         }
@@ -1345,7 +1253,7 @@
 
           padding:1px;
           border-radius: 30px 10px 10px 30px;
-              border: 5px solid var(--primary-color);
+              border: 5px solid var(--border-color);
             background-color:white;
 
 
@@ -1453,7 +1361,7 @@
 
 
          h3{
-           margin-top:90px!important;
+           margin-top:30px!important;
            font-size: 26px;
          }
            }
@@ -1540,11 +1448,11 @@
                     font-weight: 500;
                  }
                              .warning-box li {
-                    font-size: 22px!important;
+                    font-size: 24px!important;
                     
                  }
                   .warning-box p {
-                    font-size: 22px!important;
+                    font-size: 24px!important;
                     
                  }
                      .profile-text p {
@@ -1552,10 +1460,10 @@
                  }
                     }
                     .main-section {
-                        padding: 80px auto;
+                        padding: 80px 20px;
                           }
                             .certificate-link {
-          color: blue!important;
+          color: var(--link-color)!important;
           
 
               }
@@ -1621,21 +1529,20 @@
 
 
  
-
-        /* Main container - modified as requested */
+  
+        /* ===== REUSABLE COMPONENTS ===== */
         .resume-card {
-            max-width: 100%;
-            margin: 0 5px;
-            background: #ffffff;
+            max-width: 1280px;
+            margin: 20px auto;
+            background: var(--body-color);
             border-radius: 2rem;
             box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.25), 0 8px 18px rgba(0, 0, 0, 0.05);
             overflow: hidden;
             transition: all 0.2s ease;
             padding: 10px;
-            align-content: center;
         }
 
-        /* Header section with grid layout (as per user modifications) */
+        /* ===== HEADER (GRID) ===== */
         .experience-header {
             background: #0f2b3d;
             display: grid;
@@ -1643,11 +1550,13 @@
             align-items: center;
             gap: 1.5rem;
             padding: 2rem 2.5rem;
-            border-bottom: 5px solid #eab308;
+            border-bottom: 5px solid var(--border-color);
+            border-radius: 20px 20px 0 0;
+           
         }
 
         .experience-header h2 {
-            color: #570C49;
+            color: var(--tertiary-color);
             font-size: 2rem;
             font-weight: 800;
             letter-spacing: -0.3px;
@@ -1660,206 +1569,260 @@
         }
 
         .experience-header h2 i {
-            color: #eab308;
+            color: var(--border-color);
             font-size: 2rem;
-            background: rgba(255,255,240,0.12);
+            background: rgba(255, 255, 240, 0.12);
             padding: 0.5rem;
             border-radius: 1rem;
-            align-items: center;
-            text-align: center;
         }
 
-        /* subtle subtitle - modified for grid */
         .subhead {
             color: #cbd5e1;
             font-size: 1rem;
             margin: 0;
             font-weight: 500;
             text-align: right;
-            border-right: none;
-            padding-right: 0;
-            border-left: 3px solid #eab308;
+            border-left: 3px solid var(--light-color);
             padding-left: 1rem;
         }
 
-        /* experience list container */
+        /* ===== EXPERIENCE LIST ===== */
         .experience-list {
-            padding: 2rem 2.2rem;
-            background: #fefefe;
+            padding: 2rem 1.5rem;
+            background-color: var(--body-color);
         }
 
-        /* individual item styling */
         .exp-item {
             display: flex;
             flex-wrap: wrap;
             gap: 1.5rem;
-            margin-bottom: 2.5rem;
-            padding-bottom: 2rem;
-            border-bottom: 1px solid #e2edf2;
-            transition: transform 0.2s, box-shadow 0.2s;
-            
+            margin-bottom: 2rem;
+            padding-bottom: 1.8rem;
+            border-bottom: 1px solid #dce7ec;
+            background-color: transparent;
+            width: 100%;
         }
 
-        .exp-item:last-child {
-            border-bottom: none;
-            margin-bottom: 0;
-            padding-bottom: 0;
-        }
-
-        /* date column */
+        /* تاريخ الخبرة */
         .exp-date {
             flex: 0 0 180px;
-            background: #f1f5f9;
+            background: white;
             border-radius: 2rem;
             padding: 0.6rem 1rem;
             text-align: center;
             align-self: flex-start;
             font-weight: 700;
-            font-size: 1.1rem;
+            font-size: 1rem;
             color: #0f2b3d;
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            gap: 0.6rem;
-            box-shadow: inset 0 1px 1px rgba(0,0,0,0.02), 0 2px 4px rgba(0,0,0,0.02);
+            gap: 0.5rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
             border: 1px solid #e0edf2;
+            height: fit-content;
         }
 
         .exp-date i {
-            color: #eab308;
-            font-size: 1rem;
-             
+            color: var(--border-color);
         }
 
-        /* content column */
+        /* محتوى الخبرة */
         .exp-content {
             flex: 1;
-            min-width: 220px;
+            min-width: 200px;
         }
 
         .exp-title {
-            font-size: 1.35rem;
+            font-size: 1.25rem;
             font-weight: 800;
-            color: #0f2b3d;
-            margin-bottom: 0.75rem;
-            line-height: 1.4;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
             display: flex;
-            align-items: flex-start;
-            gap: 0.65rem;
+            align-items: center;
             flex-wrap: wrap;
+            gap: 0.65rem;
         }
 
         .exp-title i {
-            color: #eab308;
-            font-size: 1.4rem;
-            margin-top: 0.2rem;
+            color: var(--border-color);
+            font-size: 1.2rem;
         }
 
         .exp-description {
             font-size: 1rem;
             font-weight: 500;
             color: #2c475c;
-            background-color: #f1f5f9;
             padding: 0.75rem 1rem;
-            border-radius: 1.25rem;
+            border-radius: 1.25rem 0 1.25rem 0;
             line-height: 1.65;
-            border-right: 3px solid #eab308;
-            margin-top: 0.25rem;
-            transition: background 0.2s;
+            border-right: 3px solid var(--primary-color);
+            background-color: white;
+            margin-top: 0.5rem;
+        }
+
+        .badge-light {
+            display: inline-block;
+            margin-top: 0.75rem;
+        }
+
+        .badge-light a,
+        .badge-light span {
+            background: white;
+            border-radius: 2rem;
+            padding: 0.3rem 1rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            border: 1px solid var(--light-color);
+            text-color: var(--link-color);
+            text-decoration: none;
+            transition: all 0.2s ease;
             
         }
 
-        .exp-description strong,
-        .exp-description b {
-            color: #0f2b3d;
-            font-weight: 700;
+        .badge-light a:hover {
+            background: var(--dark-color);
+            color: white;
+            border-color: var(--dark-color);
         }
 
-        .badge-light a{
-              background: var(--body-color);;
-            border-radius: 2rem;
-            padding: 0.2rem 0.9rem;
-            font-size: 0.8rem;
-            font-weight: 600;
+     
+        .badge-light a {
             display: inline-block;
-            margin-top: 0.6rem;
-            color: blue;
-             border: 1px solid var(--primary-color);
-        }
-                .badge-light:hover a {
-                    color: white;
-                     background: var(--dark-color);
-}
-         .exp-item:hover {
-           
-            border-radius: 1.5rem;
-            padding-right: 0.5rem;
-            transition: all 0.25s ease;
+            background-color: white;
+            color: var(--link-color);
+            padding: 10px 20px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: bold;
+            border: 0.5px solid var(--primary-color);
+            transition: 0.2s;
         }
 
-        /* Responsive design - applying all user modifications */
-        @media (max-width: 780px) {
+        .badge-light a :hover {
+            background-color: #eab308;
+            color: #1e2a3a;
+        }
+
+   
+       
+
+        hr {
+            margin: 1rem 0;
+            border: 0;
+            height: 1px;
+            background: linear-gradient(to right, transparent, #ccc, transparent);
+        }
+
+        /* ===== RESPONSIVE (جميع الشاشات) ===== */
+        @media (max-width: 1024px) {
             .experience-header {
-                padding: 1.5rem;
+                padding: 1.5rem 2rem;
             }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 12px;
+            }
+
+            .experience-header {
+                grid-template-columns: 1fr;
+                gap: 0.8rem;
+                text-align: center;
+                padding: 1.2rem;
+            }
+
             .experience-header h2 {
-                font-size: 1.7rem;
+                white-space: normal;
+                justify-content: center;
+                font-size: 1.6rem;
             }
-            .experience-list {
-                padding: 1.5rem;
+
+            .subhead {
+                border-left: none;
+                border-right: 3px solid var(--border-color);
+                padding-right: 1rem;
+                text-align: center;
+                font-size: 0.9rem;
             }
+
             .exp-item {
                 flex-direction: column;
                 gap: 0.8rem;
-                margin-bottom: 1rem;
-                padding-bottom: 1.5rem;
+                margin-bottom: 1.5rem;
+                padding-bottom: 1.2rem;
             }
+
             .exp-date {
                 flex: none;
-                background-color: #e9edf2;   /* replaced undefined variable with solid color */
                 width: fit-content;
-                font-size: 0.95rem;
+                font-size: 0.85rem;
                 padding: 0.4rem 1rem;
-                align-self: flex-start;
-                margin-top: 40px;
-                color:var(--dark-color);
+                margin-top: 0;
             }
+
             .exp-title {
-                font-size: 1.2rem;
+                font-size: 1.15rem;
             }
+
             .exp-description {
-                font-size: 0.95rem;
-                padding: 0.6rem 0.9rem;
-               
+                font-size: 0.9rem;
+                padding: 0.6rem;
+            }
+
+            .experience-list {
+                padding: 1rem;
             }
         }
 
         @media (max-width: 480px) {
-            .exp-title i {
-                font-size: 1.8rem;
+            .resume-card {
+                padding: 6px;
+                margin: 12px auto;
             }
-            .exp-date {
-                margin: 24px !important;  /* corrected spelling */
+
+            .experience-header h2 {
+                font-size: 1.3rem;
             }
+
+            .exp-title {
+                font-size: 1rem;
+            }
+
             .exp-description {
-                font-size: 1.3rem;   /* adjusted from 1.6rem for better readability on small screens */
-                
+                font-size: 0.85rem;
+            }
+
+            .badge-light a {
+                font-size: 0.25rem;
+                padding: 0.2rem 0.8rem;
+            }
+
+         
+            h3 {
+                font-size: 1.1rem;
             }
         }
 
-        /* print support */
+        /* طباعة */
         @media print {
-           
+            body {
+                background: white;
+                padding: 0;
+            }
             .resume-card {
                 box-shadow: none;
                 border: 1px solid #ccc;
+                margin: 0;
             }
-            .exp-date {
-                background: #f0f0f0;
-                border: 1px solid #ccc;
-            }
-            .exp-item {
-                break-inside: avoid;
+            .badge-light a,
+           
+                display: none;
+                
             }
         }
 
@@ -1867,25 +1830,47 @@
             background: #eab30840;
             color: #0f2b3d;
         }
-
-        /* Additional media for header grid collapse */
-        @media (max-width: 768px) {
-            .experience-header {
-                grid-template-columns: 1fr;
-                gap: 0.8rem;
-                text-align: center;
-            }
-            .experience-header .subhead {
-                border-left: none;
-                border-right: 3px solid #eab308;
-                padding-right: 1rem;
-                text-align: center;
-            }
-            .experience-header h2 {
-                white-space: normal;
-                justify-content: center;
-            }
+        @media (min-width: 769px) {
+    .exp-date {
+        margin-top: 55px; /* يزيد المسافة من الأعلى */
+    }
+}
+   * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
+
+        body {
+            background-color: #e9f0f5;
+            font-family: system-ui, 'Segoe UI', 'Cairo', 'Tahoma', sans-serif;
+            padding: 20px;
+            line-height: 1.5;
+        }
+ .badge-light a {
+             box-shadow: 0 8px 14px rgba(13,71,111,.1);
+        width: fit-content;
+         white-space: nowrap
+        display: block;
+        margin: 20px auto;
+        transition: transform 0.3s ease;
+        text-decoration: underline;
+        text-align: center;
+        align-items:  center;
+        justify-items: center;
+        padding: 5px 25px;
+        max-width: fit-content;
+        font-size: 12px;
+        color: var(--link-color);
+ }
+  @media (min-width: 769px) {
+       .badge-light a {
+     font-size:  36px;
+ }
+ .badge-light  {
+     font-size:  12px;
+ }
+ }
     </style>
 </head>
 
@@ -1905,11 +1890,13 @@
         <h1>من هو الدكتور مختار الشرعبي؟</h1>
       </div>
 <br>
-        <div class="main-section" style="color: blue; text-align: center; align-content: center; align-items: center">
-        <p style="margin-top: 10px; color: black"><strong>الموقع الالكتروني الرسمي للعيادة:</strong></p>
-        <a href="https://drmokhtarent.org/" target="_blank" style="text-decoration: underline; font-weight;700" class="cta-button">
+      
+        <p style="margin-top: 10px; color: black;text-align:center"><strong>الموقع الالكتروني الرسمي للعيادة:</strong></p>
+      <div class="badge-light" style=" display: flex;
+    flex-direction: column;
+    align-items: center" > <em><a href="https://drmokhtarent.org/" target="_blank" style="text-decoration: underline; font-weight;700" class="badge-light a">
           drmokhtarent.org
-        </a>
+        </a> </em> 
       </div>
       <br>
      
@@ -1946,274 +1933,217 @@
       <br>
      
         <h2 style="color: #b3005c; text-align: center">نبذه عن د. مختار الشرعبي ..</h2>
-        <p style="margin-right: 15px; text-align: center">
+        <p style="margin-right: 15px; text-align: center;font-size:14px">
           استشاري متخصص في طب وجراحة ومناظير الأنف والأذن والحنجرة والرأس والعنق في محافظة تعز – اليمن. يقدم د. مختار
           الشرعبي رعاية طبية متخصصة تستند إلى خبرة علمية وعملية تمتد لعشر سنوات، مع استخدام أحدث الأجهزة والمناظير
           التشخيصية و الجراحية.
         </p>
-        <br />
+        <br>
       
         
         
         
+
 <div class="resume-card">
     <div class="experience-header">
-        <h1>
-            <i class="fas fa-briefcase"></i> 
+        <h2>
+            <i class="fas fa-briefcase"></i>
             الخبرة العملية
-        </h1>
-        <br>
+        </h2>
         <div class="subhead">
             <i class="fas fa-stethoscope"></i> الإنجازات الأكاديمية والمهنية في جراحة الأنف والأذن والحنجرة
         </div>
     </div>
 
     <div class="experience-list">
-        <!-- العنصر الأول: الدكتوراه المهنية 2016-2021 -->
+        <!-- دكتوراه مهنية -->
         <div class="exp-item">
             <div class="exp-date">
-                <i class="far fa-calendar-alt"></i> 
+                <i class="far fa-calendar-alt"></i>
                 2016 – 2021
             </div>
             <div class="exp-content">
                 <div class="exp-title">
-                    <i class="fas fa-user-graduate"></i> 
+                    <i class="fas fa-user-graduate"></i>
                     دكتوراه مهنية في أمراض وجراحة ومناظير الأنف والأذن والحنجـرة والرأس والعنق
                 </div>
                 <div class="exp-description">
                     <i class="fas fa-microscope" style="margin-left: 0.5rem; color:#eab308;"></i>
-                    شهادة دكتوراه مهنية متخصصة في مجال أمراض وجراحة ومناظير الأنف والأذن والحنجرة والرأس والعنق، 
+                    شهادة دكتوراه مهنية متخصصة في مجال أمراض وجراحة ومناظير الأنف والأذن والحنجرة والرأس والعنق،
                     تشمل التدريب الجراحي المتقدم، المناظير التشخيصية والعلاجية، وجراحات الرأس والعنق الدقيقة.
-                    <span class="badge-light"><i class="fas fa-certificate"></i>  <a
-                href="images/S-cert..jpg"
-                target="_blank"
-                
-                aria-label="اطلع على صورة شهادة الدكتوراه المهنية"
-              >تدريب سريري وبحثي مكثف</a></span>
+                    <div class="badge-light">
+                       <a href="images/S-cert..jpg" target="_blank" aria-label="اطلع على صورة شهادة الدكتوراه المهنية">
+                            <i class="fas fa-certificate"></i>                       <em>   تدريب سريري وبحثي مكثف
+                    </em>     </a> 
+                    </div>
                 </div>
             </div>
         </div>
-<hr>
-        <!-- العنصر الثاني: البورد العربي (بورد عربي) 2016-2021 مع التفاصيل الكاملة (محافظة على النص الأصلي) -->
+
+        <!-- البورد العربي -->
         <div class="exp-item">
             <div class="exp-date">
-                <i class="far fa-calendar-alt"></i> 
+                <i class="far fa-calendar-alt"></i>
                 2016 – 2021
             </div>
             <div class="exp-content">
                 <div class="exp-title">
-                    <i class="fas fa-award"></i> 
-                    شهادة البورد العربي (بورد عربي)
+                    <i class="fas fa-award"></i>
+                    شهادة الزمالة العربية (بورد عربي)
                 </div>
                 <div class="exp-description">
                     <i class="fas fa-flag-checkered" style="margin-left: 0.5rem; color:#eab308;"></i>
-                    شهادة البورد العربي (بورد عربي) في أمراض وجراحة ومناظير الأنف والأذن والحنجـرة والرأس والعنق - سوريا - 
-                    من المجلس العربي للاختصاصات الصحية ؛  اعتماد الجامعة العربية – تدريب متخصص وفق أعلى المعايير.
-                   
-                    <span class="badge-light"><i class="fas fa-hand-holding-heart"></i>  <a
-                href="images/B-cert..jpg"
-                target="_blank"
-               
-                aria-label="اطلع على صورة شهادة البورد العربي"
-              >
-                شهادة البورد العربي
-              </a>
-                    </span>
+                    شهادة البورد العربي (بورد عربي) في أمراض وجراحة ومناظير الأنف والأذن والحنجـرة والرأس والعنق - سوريا -
+                    من المجلس العربي للاختصاصات الصحية ؛ اعتماد الجامعة العربية – تدريب متخصص وفق أعلى المعايير.
+                    <div class="badge-light">
+                        <a href="images/B-cert..jpg" target="_blank" aria-label="اطلع على صورة شهادة البورد العربي">
+                            <i class="fas fa-hand-holding-heart"></i> <em>  شهادة البورد العربي
+                    </em>     </a> 
+                    </div>
                 </div>
             </div>
         </div>
-<hr>
-        <!-- العنصر الثالث: دورات عليا دولي 2019 -->
-        <div class="exp-item">
+        
+        <!-- دورات عليا دولي 2019 -->
+    
+           <div class="exp-item">
             <div class="exp-date">
-                <i class="far fa-calendar-alt"></i> 
-                2019
+                <i class="far fa-calendar-alt"></i>
+                2016 – 2021
             </div>
             <div class="exp-content">
                 <div class="exp-title">
-                    <i class="fas fa-chalkboard-user"></i> 
-                    دورات عليا دولي في جراحة المناظير المتقدمة
+                    <i class="fas fa-award"></i>
+                    
+                    دورات عليا دولي في جراحة المناظير المتقدمة)
                 </div>
                 <div class="exp-description">
-                    <i class="fas fa-laptop-medical" style="margin-left: 0.5rem; color:#eab308;"></i>
-                    دورات عليا دولي في جراحة مناظير الأنف والأذن والحنجـرة وقاع الجمجمة. 
+                    <i class="fas fa-flag-checkered" style="margin-left: 0.5rem; color:#eab308;"></i>
+                     .دورات عليا في جراحة مناظير الأنف والأذن والحنجـرة وقاع الجمجمة.
                     برنامج تدريبي متقدم بأحدث التقنيات الجراحية بالمناظير الداخلية وجراحات قاعدة الجمجمة،
-                    بإشراف خبراء عالميين في مجال جراحة الأنف والأذن والحنجرة.
-                    <span class="badge-light"><i class="fas fa-hand-holding-heart"></i> شهادة معتمدة دولياً</span>
+                    بإشراف خبراء عالميين.
+                    <div class="badge-light">
+                        <a href="images/e-cert..jpg" target="_blank" aria-label="اطلع على صورة شهادة الدورات">
+                            <i class="fas fa-hand-holding-heart"></i> <em>  شهادة معتمدة دولياً
+                      </em>   </a> 
+                    </div>
                 </div>
-            </div> </div>
-             <br> <hr>
-              <div class="exp-item">
+            </div>
+        </div>
+
+      
+          <!-- عضوية الأكاديمية الأمريكية 2025 -->
+       
+           <div class="exp-item">
             <div class="exp-date">
-                <i class="far fa-calendar-alt"></i> 
-                 2025
+                <i class="far fa-calendar-alt"></i>
+                2016 – 2021
             </div>
             <div class="exp-content">
                 <div class="exp-title">
-                    <i class="fas fa-chalkboard-user"></i> 
-                    عضوية الأكاديمية الإمريكية
-                
-             </div>
-                <div class="exp-description">
-                    <i class="fas fa-laptop-medical" style="margin-left: 0.5rem; color:#eab308;"></i>
-              عضوية
-             
-                الأكاديمية الأمريكية
-              </a>
-              والجمعية اليمنية لجراحة. الأنف والأذن والحنجرة
-                    <span class="badge-light"><i class="fas fa-hand-holding-heart"></i> <a
-                href="images/A-cert..jpg"
-                target="_blank"
-                
-                aria-label="اطلع على صورة شهادة العضوية"
-              > شهادة معتمدة دولياً</span>
+                    <i class="fas fa-award"></i>
+                 
+                    عضوية الأكاديمية الأمريكية
                 </div>
+                <div class="exp-description">
+                    <i class="fas fa-flag-checkered" style="margin-left: 0.5rem; color:#eab308;">
+                        </i>
+                    عضوية الأكاديمية الأمريكية والجمعية اليمنية لجراحة الأنف والأذن والحنجرة
+                      <div class="badge-light">
+                        <a href="images/e-cert..jpg" target="_blank" aria-label="اطلع على صورة شهادة العضوية">
+                            <i class="fas fa-hand-holding-heart"> </i> <em>  شهادة معتمدة دولياً
+                       </em>   </a>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+</div>
+</div>
+    <hr>
+
+      <div class="whatsapp-section" style="margin-top: 5px; flex-direction: column">
+          <a href="https://youtube.com/@ENTsharabi" target="_blank">
+            <img style="margin-bottom: 30px" src="images/social/youtube.jpeg" alt="يوتيوب" class="whatsapp-icon" />
+          </a> </div>
+           
+                 <div class="badge-light " style=" display: flex;
+    flex-direction: column;
+    align-items: center">  <em><a href="https://youtube.com/@ENTsharabi"
+              aria-label="موقعنا على يوتيوب"
+              target="_blank">  ️
+           🎦 شاهد عملياتنا على يوتيوب
+          </a> </em></div>
+         
+        <hr>
+
+<!-- البطاقة الثانية: الأهداف -->
+<div class="resume-card">
+    <br>
+    <div class="experience-header">
+        <h2>
+            <i class="fas fa-bullseye"></i>
+            ما الذي يهدف إليه:
+        </h2>
+       
+        <div class="subhead">
+            <i class="fas fa-stethoscope"></i> الإسهام في رفع مستوى الخدمات الطبية في تعز والمحافظات المجاورة
+        </div>
+    </div>
+     <br>
+    <div class="experience-list" style="padding-top: 0;">
+        <div class="exp-description" style="margin-top: 0;">
+            <p>يهدف الدكتور مختار الشرعبي من خلال عيادته في محافظة تعز، ركن مفرق ماوية إلى:</p>
+            <ul style="margin-right: 1.5rem; margin-top: 0.5rem;">
+                <li>تقديم خدمة طبية متكاملة تقوم على الثقة والدقة والرعاية الإنسانية</li>
+                <li>تشخيص ومعالجة كافة مشاكل الأنف والأذن والحنجرة، وإجراء
+                    <a href="gallery.html" class="badge-light" style="  color: var(--link-color);"><em> العمليات  الجراحية المعقدة</em> </a>
+                    بكل كفاءة وخبرة. مما يسهل للمرضى تكاليف وتعب السفر، وبأسعار تراعي الظروف المعيشية.
+                </li>
+                <li>الرقي بمستوى الخدمات الصحية في محافظة تعز والمحافظات المجاورة لجعل العيادة الخيار الأنسب لكل من يبحث عن أفضل دكتور استشاري متخصص في اليمن</li>
+            </ul>
+        </div>
+
+        <h3 style="margin-top: 1rem; margin-right: 0.5rem;">التزام مجتمعي وإنساني</h3>
+        <div class="exp-description">
+            <ul style="margin-right: 1.5rem;">
+                <li>تقديم <strong>استشارات منخفضة التكلفة</strong> لغير القادرين.</li>
+                <li>تقديم <strong>خصومات كبيرة للحالات غير القادرة</strong> والتعامل بمرونة مع الظروف المادية للمرضى.</li>
+            </ul>
+        </div>
+
+        <h3 style="margin-top: 1rem; margin-right: 0.5rem;">سمعة طيبة وثقة عالية :</h3>
+        <div class="exp-description">
+            <ul style="margin-right: 1.5rem;">
+                <li><em><a href="testimonials.html" class="badge-light" style="  color: var(--link-color);"><em>مصداقية وشفافية</em></a> في شرح خطة العلاج والتكاليف دون أي رسوم خفية.</li>
+                <li>تطبيق <strong>بروتوكولات علاجية عالمية</strong> وفق أحدث الدراسات والأبحاث.</li>
+            </ul>
+            <div class="badge-light" style="margin-top: 0.5rem;">
+                <a href="about.html">إقرأ المزيد ←</a>
             </div>
         </div>
     </div>
+</div>
 
- 
-        
-        <hr>
-        <div class="whatsapp-section" style="margin-top: 5px; flex-direction: column">
-          <a href="https://youtube.com/@ENTsharabi" target="_blank">
-            <img style="margin-bottom: 30px" src="images/social/youtube.jpeg" alt="يوتيوب" class="whatsapp-icon" />
-          </a>
-          <div class="cta-box">
-            <a
-              href="https://youtube.com/@ENTsharabi"
-              aria-label="موقعنا على يوتيوب"
-              target="_blank"
-              onclick="
-                gtag('event', 'click', {
-                  event_category: 'YouTube',
-                  event_label: 'شاهد عملياتنا على يوتيوب',
-                })
-              "
-              class="cta-button"
-              style="background-color: white; color: #9a0763"
-            >
-              ️
-              <strong>🎦 شاهد عملياتنا على يوتيوب</strong>
-            </a>
-          </div>
-        </div> </div>
-        <hr>
-<div class="resume-card">
-      <div class="experience-list">
-        <h3>
-            <i class="fas fa-briefcase"></i> 
-        ما الذي يهدف إليه:</h3>
-        <div class="exp-description">
-          <p>يهدف الدكتور مختار الشرعبي من خلال عيادته في محافظة تعز ، ركن مفرق ماوية إلى</p>
-
-          <ul>
-            <li>تقديم خدمة طبية متكاملة تقوم على الثقة والدقة والرعاية الإنسانية</li>
-            <li>
-              تشخيص ومعالجة كافة مشاكل الأنف والأذن والحنجرة، وإجراء
-              <a
-                href="gallery.html"
-                class="certificate-link"
-                aria-label="العمليات الجراحية المعقدة - اطلع على معرض الصور"
-              >
-                العمليات الجراحية المعقدة
-              </a>
-              بكل كفاءة وخبرة. مما يسهل للمرضى تكالف وتعب السفر بعيداً للبحث عنها ، وبتكاليف تراعي الظروف المعيشية لذوي
-              الدخل المحدود ..
-            </li>
-            <li>
-              الرقي بمستوى الخدمات الصحية في محافظة تعز والمحافظات المجاورة لجعل العيادة الخيار الأنسب لكل من يبحث عن
-              أفضل دكتور استشاري متخصص في اليمن
-            </li>
-          </ul>
-        </div>
-        <br />
-        <h3>التزام مجتمعي وإنساني</h3>
-                <div class="exp-description">
-          <ul>
-            <li>
-              تقديم
-              <strong>استشارات منخفضة التكلفة</strong>
-              لغير القادرين.
-            </li>
-
-            <li>
-              تقديم
-              <strong>خصومات كبيرة للحالات غير القادرة</strong>
-              والتعامل بمرونة مع الظروف المادية للمرضى.
-            </li>
-          </ul>
-        </div>
-        <br />
-        <h3>سمعة طيبة وثقة عالية :</h3>
-
-                <div class="exp-description">
-          <ul>
-            <li>
-              <em>
-                <a href="testimonials.html" class="certificate-link" aria-label="آراء المرضى">مصداقية وشفافية</a>
-              </em>
-              في شرح خطة العلاج والتكاليف دون أي رسوم خفية.
-            </li>
-            <li>
-              تطبيق
-              <strong>بروتوكولات علاجية عالمية</strong>
-              وفق أحدث الدراسات والأبحاث
-            </li>
-          </ul>
-        
-        <br />
-                            <span class="badge-light"><i class="fas fa-certificate"></i>  <a
-            href="about.html" class="badge-light" >
-             إقرأ المزيد ←
-            </a>
-         
-        </div></div>
-      </div>
-
-      <hr>
-
-      <h3>📍 موقع العيادة :</h3>
-      <div class="warning-box" style="border-radius: 0">
-        <p> تتميز العيادة بموقع جغرافي وسطي مناسب لكل المواطنين سواءاُ في القرى أو المدينة أو والمحافظات المجاورة، </p>
-        <a
-          href="https://maps.app.goo.gl/QkJ4ynAf3jjxdw8W6"
-          class="cta-link"
-          style="
-            color: white;
-            background-color: #d4177b;
-            text-align: center;
-            display: block;
-            margin: 10px auto;
-            font-weight: 600;
-            width: fit-content;
-            padding: 2px 10px;
-            border-radius: 20px;
-          "
-        >
-          <strong>العنوان ← :</strong>
-        </a>
-        <strong>
-          <p style="text-align: center">
-          محافظة تعز</strong>
-            ، الحوبان،
-            <strong>ركن مفرق ماوية</strong>
-            , الشارع العام، – مبنى مختبرات دار الصحة، – اليمن
-          </p>
-        </strong>
-      </div>
-        
-      
-        <hr>
-        <div class="warning-box" style="   background-color: white;text-align:center ;margin:30px;border-radius;0">
-          <em>
+<!-- الموقع -->
+<div class="resume-card" style="padding: 1.2rem;">
+    <h3>📍 موقع العيادة :</h3>
+    <div class="warning-box" style="border-radius: 1rem; background: #fff;">
+        <p>تتميز العيادة بموقع جغرافي وسطي مناسب لكل المواطنين سواء في القرى أو المدينة أو المحافظات المجاورة.</p>
+      <div  class="badge-light a">  <a href="https://maps.app.goo.gl/QkJ4ynAf3jjxdw8W6" target="_blank">
+            <strong>العنوان ← :</strong>
+        </a></div>
+        <p style="margin-top: 12px;"><strong>محافظة تعز</strong>، الحوبان، <strong>ركن مفرق ماوية</strong>، الشارع العام – مبنى مختبرات دار الصحة – اليمن</p>
+    </div>
+ </div>
+    <div class="warning-box" style=" text-align: center; margin-top: 20px;">
+        <em>
             “إذا كنت تبحث عن أفضل دكتور أنف وأذن وحنجرة في اليمن أو استشاري حنجرة موثوق في تعز، فإن
-            <strong style="color: red">الدكتور مختار الشرعبي</strong>
-            هو خيارك الأمثل
-          </em>
-        </div>
-
-        <hr />
+            <strong style="color: #d4177b;">الدكتور مختار الشرعبي</strong> هو خيارك الأمثل”
+        </em>
+    </div>
+    <hr>
+  
 
         <div class="booking-container" style="padding-top: 15px">
           <div class="booking-title">للحجز في عيادة دكتور مختار الشرعبي</div>
@@ -2237,11 +2167,13 @@
         </div>
         <hr />
 
-        <div class="cta-button"><a href="index.html">عودة للصفحة الرئيسية ←</a></div>
-        <hr />
-      </strong>
+        <div class="badge-light " style=" display: flex;
+    flex-direction: column;
+    align-items: center" ><a href="index.html">عودة للصفحة الرئيسية ←</a></div>
+        <hr>
+ 
     </main>
-    <strong>
+    
       <footer>
         <nav>
           <div class="nav-row">
@@ -2312,4 +2244,4 @@
       </script>
     </strong>
   </body>
-  </html>
+</html>
