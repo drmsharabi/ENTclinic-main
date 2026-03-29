@@ -1791,11 +1791,7 @@
                 border: 1px solid #ccc;
                 margin: 0;
             }
-            .badge-link,
-           
-                display: none;
-                
-            }
+          
         }
 
         ::selection {
@@ -1823,35 +1819,9 @@
             padding: 20px;
             line-height: 1.5;
         }
- .badge-link a{
-             box-shadow: 0 8px 14px rgba(13,71,111,.1);
-        width: fit-content;
-         white-space: nowrap
-        display: block;
-        margin: 20px auto;
-        transition: transform 0.3s ease;
-        border: 1px solid var(--link-color);
-        border-radius: 5px;
-        text-decoration: underline;
-        text-align: center;
-        align-items:  center;
-        justify-items: center;
-        padding: 1px 5px;
-        max-width: fit-content;
-        font-size: 12px;
-        color: var(--link-color);
-        background-color: white;
-          border-right: 5px solid var(--dark-color);
-          
-       
-        
- }
+
   @media (min-width: 769px) {
-       .badge-link a {
-     font-size:  26px;
-     padding:5px 10px;
-     border-radius: 15px;
- }
+     
  .exp-title {
                 font-size: 1.85rem!important;
             }
@@ -1866,32 +1836,89 @@
 
  }
   }
- 
+  /* =============================
+   الحاوية لتوسيط الزر
+============================= */
+.badge-link {
+  display: flex;              /* تجعل الحاوية flex */
+  justify-content: center;    /* توسيط الزر أفقياً */
+  margin: 20px 0;
+  width: 100%;
+}
 
+/* =============================
+   تصميم الزر نفسه
+============================= */
+.badge-link a {
+  display: inline-block;        /* يسمح بالتحكم في الحجم والـ padding */
+  white-space: nowrap;          /* منع انكسار النص */
+  max-width: 100%;
 
-     
-        .badge-link {
-            display: inline-block;
-            background-color:   var(--body-color);
-            color: var(--link-color);
-            font-size: 12px;
-            padding: 3px 5px;
-         
-            text-decoration: none;
-            font-weight: bold;
-            
-            transition: 0.2s;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
 
-          
-        }
+  color: var(--link-color);      /* اللون الأساسي للنص */
+  background-color: #fff;        /* خلفية الزر */
+  
+  border: 1px solid var(--link-color);
+  border-right: 5px solid var(--dark-color);
+  border-radius: 10px;
 
-        .badge-link :hover {
-            background-color:
-                        background-color:  var(--tertiary-color);
-            color: red;
-        }
-             
-        
+  box-shadow: 0 6px 12px rgba(13, 71, 111, 0.08);
+  transition: all 0.3s ease;
+}
+
+/* =============================
+   عند المرور بالماوس (hover)
+============================= */
+.badge-link a:hover {
+  background-color: var(--tertiary-color);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 18px rgba(13, 71, 111, 0.15);
+}
+
+/* =============================
+   عند الضغط على الزر (active)
+============================= */
+.badge-link a:active {
+  background-color: var(--dark-color);
+  color: #fff;
+  transform: scale(0.97);
+}
+
+/* =============================
+   عند التركيز (focus) للوحة المفاتيح
+============================= */
+.badge-link a:focus {
+  outline: 2px solid var(--link-color);
+  outline-offset: 2px;
+}
+
+/* =============================
+   الشاشات الكبيرة
+============================= */
+@media (min-width: 768px) {
+  .badge-link a {
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 14px;
+  }
+}
+
+/* =============================
+   الشاشات الصغيرة جداً
+============================= */
+@media (max-width: 480px) {
+  .badge-link a {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+}
           .certificate-link a{
         
           margin: auto 3px;
@@ -1911,6 +1938,9 @@
                  }
                  
                             }
+                            .certificate-link {
+  color: var(--link-color);
+}
 
     </style>
 </head>
@@ -1934,22 +1964,22 @@
       
         <p style="margin-top: 10px; color: black;text-align:center"><strong>الموقع الالكتروني الرسمي للعيادة:</strong></p>
         <br>
-      <div class="badge-link" style=" display: flex;
-    flex-direction: column;
-    align-items: center" > <em><a href="https://drmokhtarent.org/" target="_blank" style="text-decoration: underline; font-weight;700" >
-          drmokhtarent.org
-        </a> </em> 
-      </div>
+   <div class="badge-link">
+  <a href="https://drmokhtarent.org/" target="_blank" rel="noopener noreferrer">
+    <em>drmokhtarent.org</em>
+  </a>
+</div>
       <br>
-     
-<div class="search-box">
+  <div class="search-box">
   <form class="search-form" action="/search.html" method="get">
     <input type="text" name="q" class="search-input" placeholder="ابحث في الموقع...">
-    <button type="submit" class="search-button">
-      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-0.59 4.23-1.57L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14Z" fill="white" alt="زر البحث"/>
+    
+    <button type="submit" class="search-button" aria-label="بحث">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-0.59 4.23-1.57L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14Z" fill="white"/>
       </svg>
     </button>
+
   </form>
 </div>
 <br>
@@ -2074,7 +2104,7 @@
             </div>
         </div>
 
-      
+       <hr>
           <!-- عضوية الأكاديمية الأمريكية 2025 -->
        
            <div class="exp-item">
@@ -2110,13 +2140,12 @@
             <img style="margin-bottom: 30px" src="images/social/youtube.jpeg" alt="يوتيوب" class="whatsapp-icon" />
           </a> </div>
            
-                   <div class="badge-link" style=" display: flex;
-    flex-direction: column;
-    align-items: center" > <em><a  <a href="https://youtube.com/@ENTsharabi"
+                     
+ <div class="badge-link">  <a href="https://youtube.com/@ENTsharabi"
               aria-label="موقعنا على يوتيوب"
               target="_blank"> <em> ️
            🎦 شاهد عملياتنا على يوتيوب
-       </a> </em>   </div>
+   </em>     </a>   </div>
          
         <hr>
 
@@ -2140,7 +2169,7 @@
             <ul style="margin-right: 1.5rem; margin-top: 0.5rem;">
                 <li>تقديم خدمة طبية متكاملة تقوم على الثقة والدقة والرعاية الإنسانية</li>
                 <li>تشخيص ومعالجة كافة مشاكل الأنف والأذن والحنجرة، وإجراء
-                    <a href="gallery.html" class="certificate-link" style="  color: var(--link-color);"><em> العمليات  الجراحية المعقدة</em> </a>
+                    <a href="gallery.html" class="certificate-link"><em> العمليات  الجراحية المعقدة</em> </a>
                     بكل كفاءة وخبرة. مما يسهل للمرضى تكاليف وتعب السفر، وبأسعار تراعي الظروف المعيشية.
                 </li>
                 <li>الرقي بمستوى الخدمات الصحية في محافظة تعز والمحافظات المجاورة لجعل العيادة الخيار الأنسب لكل من يبحث عن أفضل دكتور استشاري متخصص في اليمن</li>
@@ -2156,15 +2185,24 @@
         </div>
 
         <h3 style="margin-top: 1rem; margin-right: 0.5rem;">سمعة طيبة وثقة عالية :</h3>
-        <div class="exp-description">
-            <ul style="margin-right: 1.5rem;">
-                <li><em><a href="testimonials.html" class="certificate-link" style="  color: var(--link-color);"><em>مصداقية وشفافية</em></a> في شرح خطة العلاج والتكاليف دون أي رسوم خفية.</li>
-                <li>تطبيق <strong>بروتوكولات علاجية عالمية</strong> وفق أحدث الدراسات والأبحاث.</li>
-            </ul>
+     
+            <div class="exp-description">
+  <ul>
+    <li>
+      <a href="testimonials.html" class="certificate-link">
+        <em>مصداقية وشفافية</em>
+      </a>
+      في شرح خطة العلاج والتكاليف دون أي رسوم خفية.
+    </li>
+    
+    <li>
+      تطبيق <strong>بروتوكولات علاجية عالمية</strong> وفق أحدث الدراسات والأبحاث.
+    </li>
+  </ul>
+</div>
             <br>
- <div class="badge-link" style=" display: flex;
-    flex-direction: column;
-    align-items: center" > <em><a href="about.html">إقرأ المزيد ←</a>
+      
+ <div class="badge-link"><a href="about.html"><em>إقرأ المزيد ←</em></a>
             </div>
         </div>
     </div>
@@ -2175,8 +2213,8 @@
     <h3>📍 موقع العيادة :</h3>
     <div class="warning-box" style="border-radius: 1rem; background: #fff;">
         <p>تتميز العيادة بموقع جغرافي وسطي مناسب لكل المواطنين سواء في القرى أو المدينة أو المحافظات المجاورة.</p>
-     <div class="badge-link" style="margin-top: 0.5rem;">  
-        <a href="https://maps.app.goo.gl/QkJ4ynAf3jjxdw8W6" target="_blank" class=>
+         
+ <div class="badge-link">
             <strong>📌 العنوان ← :</strong>
         </a></div>
         <p style="margin-top: 12px;"><strong>محافظة تعز</strong>، الحوبان، <strong>ركن مفرق ماوية</strong>، الشارع العام – مبنى مختبرات دار الصحة – اليمن</p>
@@ -2211,10 +2249,13 @@
             👆 رسالة واتساب
           </a>
         </div>
-        <hr />
-   <div class="badge-link" style=" display: flex;
-    flex-direction: column;
-    align-items: center" > <em><a href="index.html">عودة للصفحة الرئيسية ←</a>  </em>  </div>
+        <hr>
+        
+ <div class="badge-link">
+  <a href="index.html">
+    <em>← عودة للصفحة الرئيسية</em>
+  </a>
+</div>
         <hr>
  
     </main>
@@ -2289,4 +2330,4 @@
       </script>
     </strong>
   </body>
-  </html>
+</html>
