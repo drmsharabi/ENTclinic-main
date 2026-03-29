@@ -1844,6 +1844,7 @@
   justify-content: center;    /* توسيط الزر أفقياً */
   margin: 20px 0;
   width: 100%;
+
 }
 
 /* =============================
@@ -1860,22 +1861,23 @@
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  border: 1px solid var(--link-color);
-  border-right: 5px solid var(--dark-color);
+ background: linear-gradient(135deg, var(--link-color), var(--dark-color));
+  color: #fff;
+  
+  border: 1px solid white;
+
   border-radius: 10px;
 
-  box-shadow: 0 6px 12px rgba(13, 71, 111, 0.08);
+  box-shadow: 0 6px 12px rgba(13, 71, 111, 0.8);
   transition: all 0.3s ease;
-  background-color: #0080B0;
-  color: #ffffff;
-  border: none;
+  
 }
 
 /* =============================
    عند المرور بالماوس (hover)
 ============================= */
 .badge-link a:hover {
-  background-color: var(--tertiary-color);
+  background-color: var(--text-color);
   color: #fff;
   transform: translateY(-2px);
   box-shadow: 0 10px 18px rgba(13, 71, 111, 0.15);
@@ -1895,6 +1897,7 @@
 ============================= */
 .badge-link a:focus {
   outline: 2px solid var(--link-color);
+   color: #fff;
   outline-offset: 2px;
 }
 
@@ -1940,7 +1943,6 @@
                             .certificate-link {
   color: var(--link-color);
 }
-
     </style>
 </head>
 
