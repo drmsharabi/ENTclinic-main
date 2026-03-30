@@ -135,6 +135,7 @@ fetchpriority="high">
 </p>
 </div>
 <hr>
+
 <!-- العودة للرئيسية -->
 <div style="text-align: center; margin: 30px 0 10px;" class="badge-link">
 <a href="index.html" style="border: 1px solid var(--light1-color);">← العودة للرئيسية</a>
@@ -193,10 +194,15 @@ fetchpriority="high">
 <p class="working-hours" style="color">⏰ مواعيد العمل: السبت - الخميس: 10:00 صباحاً - 1:00 ظهراً</p>
 </div>
 <div class="copyright-container">© 2025 جميع الحقوق محفوظة - عيادة د. مختار الشرعبي</div>
-</footer>
-<script>
-document.addEventListener(DOMContentLoaded,function (){constallimages:document.querySelectorAll(img);allimagesforeachimg:> { if (!img.hasAttribute(loading)) { img.setAttribute(loading,"lazy")}
-      </script>
-    
+</footer><script>
+document.addEventListener("DOMContentLoaded", function() {
+  var allImages = document.querySelectorAll("img");
+  allImages.forEach(function(img) {
+    if (!img.hasAttribute("loading")) {
+      img.setAttribute("loading", "lazy");
+    }
+  });
+});
+</script>
   </body>
 </html>
