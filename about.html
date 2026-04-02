@@ -55,10 +55,8 @@ body{background:#fff;font-family:'Cairo','Tajawal','Segoe UI','Noto Naskh Arabic
 <a href="faq.html" class="nav-link">❔ الأسئلة الشائعة</a>
 </div>
 </nav>
-<header>
-<div class="header-logo">
-<img src="images/clinic-logo.png" alt="شعار عيادة د. مختار الشرعبي" onerror="this.src='https://placehold.co/100x100?text=عيادة'" style="loading="lazy" height="101" width="96">
-</div>
+<header class="header-logo">
+<img src="images/clinic-logo.png" alt="شعار العيادة" />
 <div class="header-text">
 <div class="main-title">عيادة د. مختار الشرعبي الإستشارية</div>
 <div class="sub-title">للأنف والأذن والحنجرة والرأس والعنق</div>
@@ -195,14 +193,15 @@ fetchpriority="high">
 </div>
 <div class="copyright-container">© 2025 جميع الحقوق محفوظة - عيادة د. مختار الشرعبي</div>
 </footer><script>
-document.addEventListener("DOMContentLoaded", function() {
-  var allImages = document.querySelectorAll("img");
-  allImages.forEach(function(img) {
-    if (!img.hasAttribute("loading")) {
-      img.setAttribute("loading", "lazy");
-    }
-  });
+document.addEventListener('DOMContentLoaded', function () {
+    const allimages = document.querySelectorAll('img');
+    allimages.forEach(img => {
+        if (!img.hasAttribute('loading')) {
+            img.setAttribute('loading', 'lazy');
+        }
+    });
 });
+
 </script>
   </body>
 </html>
