@@ -697,9 +697,15 @@ target="_blank"> <em> ️
         <a href="contact.html" class="nav-link">📍 تواصل معنا</a>
         <a href="q&a.html" class="nav-link">⁉️ الأسئلة</a>
     </div>
-</nav>
-<script>
-document.addEventListener(DOMContentLoaded,function (){constallimages:document.querySelectorAll(img);allimagesforeachimg:> { if (!img.hasAttribute(loading)) { img.setAttribute(loading,"lazy")}
+</nav><script>
+document.addEventListener('DOMContentLoaded', function () {
+    const allimages = document.querySelectorAll('img');
+    allimages.forEach(img => {
+        if (!img.hasAttribute('loading')) {
+            img.setAttribute('loading', 'lazy');
+        }
+    });
+});
 </script>
 </body>
 </html>
